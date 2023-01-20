@@ -7,11 +7,11 @@ module.exports = {
   siteName: "Minimalism",
   shortName: "Minimalism",
   motto: "Simplicity is the ultimate sophistication.",
-  authorName: "Autore",
+  authorName: "Andrew Long",
   siteDescription: "",
   sitekeyword: "",
-  creationDate: "02/02/2022", // change this data
-  url: process.env.URL || "https://www.marcomicale.eu", // change this url
+  creationDate: "02/12/2022", // change this data
+  url: process.env.URL || "https://anaru.nz", // change this url
   robots: "index, follow",
   //
   // Color App
@@ -26,7 +26,7 @@ module.exports = {
   //
   // Social Network
   //
-  twitterUser: "", 
+  twitterUser: "http://twitter.com/socialspace", 
   facebookUser: "",
   githubUser: "",
   telegramkUser: "",
