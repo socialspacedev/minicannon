@@ -26,9 +26,9 @@ module.exports = {
   //
   // Social Network
   //
-  twitterUser: "http://twitter.com/socialspace", 
-  facebookUser: "",
-  githubUser: "",
+  twitterUser: "socialspace", 
+  facebookUser: "andrewlslong",
+  githubUser: "socialspacedev",
   telegramkUser: "",
-  linkedinkUser: "",
+  linkedinkUser: "andrewlslong",
 };
