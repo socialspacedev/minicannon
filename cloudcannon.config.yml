@@ -8,12 +8,16 @@ collections_config:
   post:
     path: blog
     output: true
+    _enabled_editors:
+      - visual
+      - content
   pages:
     path: .
     output: true
     filter: strict
     _enabled_editors:
       - visual
+      - content
   data:
     path: /_11ty/_data/
     output: false
