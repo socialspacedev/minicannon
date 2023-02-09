@@ -3,10 +3,10 @@ module.exports = {
   // Website Meta
   //  
   language: "it-IT",
-  lang: "it",
-  siteName: "Minimalism",
-  shortName: "Minimalism",
-  motto: "Simplicity is the ultimate sophistication.",
+  lang: "en",
+  siteName: "anaru.nz",
+  shortName: "Anaru",
+  motto: "Minimalist website built on CloudCannon.",
   authorName: "Andrew Long",
   siteDescription: "",
   sitekeyword: "",
@@ -21,7 +21,7 @@ module.exports = {
   //
   // Contact me
   //
-  mail: "marcomicale@gmail.com",
+  mail: "me@anaru.nz",
   telephone: "",
   //
   // Social Network
