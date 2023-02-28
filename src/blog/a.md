@@ -11,7 +11,7 @@ luogo: Palermo
 layout: article.njk
 permalink: blog/{{ title | slugify }}.html
 ---
-<div class="lead">
+<div class="lead editable">
 Until now, trying to style an article, document, or blog post with Tailwind has been a tedious task that required a keen eye for typography and a lot of complex custom CSS.</div>
 
 By default, Tailwind removes all of the default browser styling from paragraphs, headings, lists and more. This ends up being really useful for building application UIs because you spend less time undoing user-agent styles, but when you *really are* just trying to style some content that came from a rich-text editor in a CMS or a markdown file, it can be surprising and unintuitive.
