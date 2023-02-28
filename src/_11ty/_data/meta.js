@@ -2,13 +2,13 @@ module.exports = {
   //
   // Website Meta
   //  
-  language: "it-IT",
+  language: "en-GB",
   lang: "en",
   siteName: "anaru.nz",
   shortName: "Anaru",
   motto: "Minimalist website built on CloudCannon.",
   authorName: "Andrew Long",
-  siteDescription: "",
+  siteDescription: "Home site for Andrew Long",
   sitekeyword: "",
   creationDate: "02/12/2022", // change this data
   url: process.env.URL || "https://anaru.nz", // change this url
