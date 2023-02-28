@@ -8,6 +8,9 @@ collections_config:
   post:
     path: blog
     output: true
+    _enabled_editors:
+      - visual
+      - content
   pages:
     path: .
     output: true
@@ -39,7 +42,7 @@ paths:
   collections: 
   layouts: /_11ty/_layouts/
   static: /_11ty/_static/
-  uploads: /_11ty/_static/_uploads
+  uploads: /_11ty/_uploads
   includes: /_11ty/_includes/
   pages: 
 
