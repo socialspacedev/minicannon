@@ -39,7 +39,7 @@ paths:
   collections: 
   layouts: /_11ty/_layouts/
   static: /_11ty/_static/
-  uploads: uploads
+  uploads: /_11ty/_static/uploads
   includes: /_11ty/_includes/
   pages: 
 
