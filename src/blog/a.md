@@ -1,8 +1,6 @@
 ---
 title: My First Blog Post
-description: >-
-  This is the first post on my blog, lorem ipsum dolor sit amet consectetur
-  adipisicing elit.
+description: This is the first post on my blog.
 tags:
   - post
   - personal
@@ -11,8 +9,7 @@ luogo: Palermo
 layout: article.njk
 permalink: blog/{{ title | slugify }}.html
 ---
-<div class="lead editable">
-Until now, trying to style an article, document, or blog post with Tailwind has been a tedious task that required a keen eye for typography and a lot of complex custom CSS.</div>
+<div class="lead editable">Until now, trying to style an article, document, or blog post with Tailwind has been a tedious task that required a keen eye for typography and a lot of complex custom CSS.</div>
 
 By default, Tailwind removes all of the default browser styling from paragraphs, headings, lists and more. This ends up being really useful for building application UIs because you spend less time undoing user-agent styles, but when you *really are* just trying to style some content that came from a rich-text editor in a CMS or a markdown file, it can be surprising and unintuitive.
 
@@ -170,42 +167,7 @@ I almost forgot to mention links, like [this link to the Tailwind CSS website](h
 
 We even included table styles, check it out:
 
-<table>
-        <thead>
-          <tr>
-            <th>Wrestler</th>
-            <th>Origin</th>
-            <th>Finisher</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Bret "The Hitman" Hart</td>
-            <td>Calgary, AB</td>
-            <td>Sharpshooter</td>
-          </tr>
-          <tr>
-            <td>Stone Cold Steve Austin</td>
-            <td>Austin, TX</td>
-            <td>Stone Cold Stunner</td>
-          </tr>
-          <tr>
-            <td>Randy Savage</td>
-            <td>Sarasota, FL</td>
-            <td>Elbow Drop</td>
-          </tr>
-          <tr>
-            <td>Vader</td>
-            <td>Boulder, CO</td>
-            <td>Vader Bomb</td>
-          </tr>
-          <tr>
-            <td>Razor Ramon</td>
-            <td>Chuluota, FL</td>
-            <td>Razor's Edge</td>
-          </tr>
-        </tbody>
-      </table>
+<table><thead><tr><th>Wrestler</th><th>Origin</th><th>Finisher</th></tr></thead><tbody><tr><td>Bret "The Hitman" Hart</td><td>Calgary, AB</td><td>Sharpshooter</td></tr><tr><td>Stone Cold Steve Austin</td><td>Austin, TX</td><td>Stone Cold Stunner</td></tr><tr><td>Randy Savage</td><td>Sarasota, FL</td><td>Elbow Drop</td></tr><tr><td>Vader</td><td>Boulder, CO</td><td>Vader Bomb</td></tr><tr><td>Razor Ramon</td><td>Chuluota, FL</td><td>Razor's Edge</td></tr></tbody></table>
 
 We also need to make sure inline code looks good, like if I wanted to talk about `<span>` elements or tell you the good news about `@tailwindcss/typography`.
 
