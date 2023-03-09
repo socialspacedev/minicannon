@@ -6,7 +6,7 @@ module.exports = {
   lang: "en",
   siteName: "anaru.nz",
   shortName: "Anaru",
-  motto: "Minimalist website built on CloudCannon.",
+  motto: "Minimalist website built on CloudCannon and 11ty.",
   authorName: "Andrew Long",
   siteDescription: "Home site for Andrew Long",
   sitekeyword: "",
