@@ -25,7 +25,13 @@ collections_config:
 # Control which collections are displayed in the CloudCannon site navigation,
 # and how those collections are grouped.
 collection_groups:
-
+ - heading: Blogging
+    collections:
+      - posts
+      - drafts
+  - heading: Other
+    collections:
+      - pages
 
 # Set this to true to disable auto-detection of collections.
 collections_config_override: false
@@ -45,7 +51,7 @@ paths:
   static: /_11ty/_static/
   uploads: /_11ty/_static/img/
   includes: /_11ty/_includes/
-  pages: /_11ty/
+  pages: /_11ty/src
 
 # Lets you control the look and behaviour of the Source Editor.
 source_editor:
