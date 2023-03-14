@@ -6,8 +6,8 @@ permalink: '{{ title | slugify }}.html'
 eleventyNavigation:
   key: '{{ title | slugify }}'
   title: Blog
-  order: 3
+  order: 6
 ---
 # Blog
 
-<div class="lead">On this page you will find an anthology of thoughts, considerations, jokes of various kinds and also some more serious articles. I hope you enjoy reading them as much as I enjoyed writing them.</div>
+<div class="lead">A collection of posts from my old Tumblr site way back to 2008.</div>
