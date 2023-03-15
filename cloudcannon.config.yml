@@ -6,13 +6,13 @@
 # CloudCannon configuration specific to those collections.
 collections_config:
   post:
-    path: blog
+    path: /src/blog
     output: true
     _enabled_editors:
       - visual
       - content
   pages:
-    path: /src/
+    path: /src/pages
     output: true
     filter: strict
     _enabled_editors:
