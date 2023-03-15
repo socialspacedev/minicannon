@@ -12,7 +12,7 @@ collections_config:
       - visual
       - content
   pages:
-    path: .
+    path: /src/
     output: true
     filter: strict
     _enabled_editors:
