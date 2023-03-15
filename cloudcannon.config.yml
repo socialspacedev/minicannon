@@ -20,7 +20,7 @@ collections_config:
       - content
   data:
     path: /_11ty/_data/
-    output: true
+    output: false
 
 # Control which collections are displayed in the CloudCannon site navigation,
 # and how those collections are grouped.
