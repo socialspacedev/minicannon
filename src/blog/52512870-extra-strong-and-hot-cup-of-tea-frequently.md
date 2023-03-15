@@ -1,3 +1,16 @@
+
+---
+title: Extra strong and hot tea
+description: This is a post originally from Tumblr.
+tags:
+  - post
+  - personal
+date: 2008-10-01T00:00:00Z
+luogo: Palermo
+layout: article.njk
+permalink: blog/{{ title | slugify }}.html
+---
+
 +++
 date = 2008-10-01T00:16:00.000Z
 slug = "extra-strong-and-hot-cup-of-tea-frequently"
