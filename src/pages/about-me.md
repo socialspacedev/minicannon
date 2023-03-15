@@ -13,4 +13,4 @@ eleventyNavigation:
 
 Pākeha based in Otepoti New Zealand. Customer experience at CloudCannon. Parent. Cat owner. Noise maker. Records.
 
-<img src="/img/Chill-ape.jpeg" width="400" height="400" />
+<img width="400" height="400" src="/img/Chill-ape.jpeg" />
