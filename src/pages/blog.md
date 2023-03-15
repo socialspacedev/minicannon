@@ -1,7 +1,7 @@
 ---
 title: Blog
 layout: blog.njk
-keyword: test
+keyword: blog
 permalink: '{{ title | slugify }}.html'
 eleventyNavigation:
   key: '{{ title | slugify }}'
