@@ -7,7 +7,7 @@ permalink: '{{ title | slugify }}.html'
 eleventyNavigation:
   key: '{{ title | slugify }}'
   title: Gigs
-  order: 4
+  order: 7
 ---
 # Gigs
 
