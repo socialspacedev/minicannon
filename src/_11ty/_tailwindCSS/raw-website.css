@@ -35,7 +35,7 @@
     @apply text-center items-center;
   }
   nav > ul {
-  /*  @apply flex flex-row gap-5; */
+    @apply flex flex-row gap-5;
   }
   nav li {
     @apply cursor-pointer tracking-wide;

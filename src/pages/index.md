@@ -1,7 +1,7 @@
 ---
 title: index
 layout: page.njk
-keyword: test
+keyword: index
 permalink: '{{ title | slugify }}.html'
 eleventyNavigation:
   key: '{{ title | slugify }}'
