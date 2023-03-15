@@ -1,13 +1,13 @@
 ---
 title: gigs
 layout: page.njk
-keyword: about
+keyword: gigs
 tags: pages
 permalink: '{{ title | slugify }}.html'
 eleventyNavigation:
   key: '{{ title | slugify }}'
-  title: About me
-  order: 2
+  title: Gigs
+  order: 4
 ---
 # Gigs
 
