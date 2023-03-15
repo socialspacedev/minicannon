@@ -1,5 +1,5 @@
 ---
-title: gigs
+title: Gigs
 layout: page.njk
 keyword: gigs
 tags: pages
@@ -52,6 +52,9 @@ Here are some gigs I've been to over the last 30 years or so.
 * Shifting Sands
 * Opposite Sex
 * Dark Matter
+* Typical Melanoma
+* Schoolfriend
+* Seafog
 * Cake Kitchen
 * HDU
 * Jay Clarkson
