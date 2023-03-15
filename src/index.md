@@ -10,4 +10,4 @@ eleventyNavigation:
 ---
 # Home Page
 
-<img width="4032" height="3024" src="static/img/coast.png" />
+<img width="4032" height="3024" src="img/coast.png" />
