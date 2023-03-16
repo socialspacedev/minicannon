@@ -2,7 +2,7 @@
 title: Blog
 layout: blog.njk
 keyword: blog
-permalink: blog.anaru.nz
+permalink: http://blog.anaru.nz
 eleventyNavigation:
   key: '{{ title | slugify }}'
   title: Blog
