@@ -1,6 +1,7 @@
 ---
 title: Index
 layout: page.njk
+description: 'Home page'
 keyword: index
 permalink: '{{ title | slugify }}.html'
 eleventyNavigation:
