@@ -31,4 +31,5 @@ module.exports = {
   githubUser: "socialspacedev",
   telegramkUser: "",
   linkedinkUser: "andrewlslong",
+  instagramUser: "socialspace",
 };
