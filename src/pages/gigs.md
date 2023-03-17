@@ -11,7 +11,7 @@ eleventyNavigation:
 ---
 # Gigs
 
-Here are some gigs I've been to over the last 30 years or so.
+Here are some bands I've been to over the last 30 years or so.
 
 ## **NZ acts**
 
