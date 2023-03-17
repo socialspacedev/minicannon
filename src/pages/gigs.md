@@ -11,7 +11,7 @@ eleventyNavigation:
 ---
 # Gigs
 
-Here are some bands I've been to over the last 30 years or so.
+Some bands I've seen over the last 30 years or so.
 
 ## **NZ acts**
 
@@ -97,6 +97,7 @@ Here are some bands I've been to over the last 30 years or so.
 
 ## **International acts**
 
+* Stereolab
 * The Brian Jonestown Massacre
 * The Wedding Present
 * Buzzcocks
