@@ -32,4 +32,5 @@ module.exports = {
   telegramkUser: "",
   linkedinkUser: "andrewlslong",
   instagramUser: "socialspace",
+  lastfmUser: "socialspace",
 };
