@@ -11,4 +11,6 @@ eleventyNavigation:
 ---
 # About Me
 
-Pākeha based in Otepoti New Zealand. Customer experience at CloudCannon. Parent. Cat owner. Noise maker. Records. <img width="400" height="400" alt="Planet of the chill" src="/img/Chill-ape.jpeg" style="align:center;" />
+I'm a pākeha based in Otepoti, New Zealand. I'm currently Head of Customer Experience at CloudCannon. A Parent. A Cat owner. Intermittent noise maker and collector of records.
+
+[<img alt="Life and Death Brigade" src="/img/snip20230317-17.png" width="1276" height="717" />](https://www.youtube.com/watch?v=4-oQencpvfI)
