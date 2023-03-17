@@ -5,7 +5,7 @@
 # Here you can define your collections, as well as any
 # CloudCannon configuration specific to those collections.
 collections_config:
-  post:
+  posts:
     path: /src/blog
     output: true
     _enabled_editors:
