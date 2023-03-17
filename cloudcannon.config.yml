@@ -39,12 +39,12 @@ source:
 # The locations of various types of files within your site.
 # Each path is relative to your site's source folder.
 paths:
-  data: /_11ty/_data/
+  data: /src/_11ty/_data/
   collections: 
-  layouts: /_11ty/_layouts/
-  static: /_11ty/_static/
-  uploads: /_11ty/_static/img/
-  includes: /_11ty/_includes/
+  layouts: /src/_11ty/_layouts/
+  static: /src/_11ty/_static/
+  uploads: /src/_11ty/_static/img/
+  includes: /src/_11ty/_includes/
   pages: /src/pages
 
 # Lets you control the look and behaviour of the Source Editor.
