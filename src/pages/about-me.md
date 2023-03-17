@@ -14,4 +14,4 @@ eleventyNavigation:
 I'm a pākeha based in Otepoti, New Zealand. I'm currently Head of Customer Experience at CloudCannon. A Parent. A Cat owner. Intermittent noise maker and collector of records.
 <!-- [<img alt="Life and Death Brigade" width="1276" height="717" src="img/snip20230317-17.png" />](https://www.youtube.com/watch?v=4-oQencpvfI) -->
 
-<iframe width="640" height="480" src="https://www.youtube.com/watch?v=4-oQencpvfI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+<iframe width="100%" height="440" src="https://www.youtube.com/embed/4-oQencpvfI" title="Life and Death Brigade" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
