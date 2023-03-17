@@ -1,7 +1,7 @@
 ---
 title: Index
 layout: page.njk
-description: 'Home page'
+description: 'A CloudCannon 11ty website by Andrew Long'
 keyword: index
 permalink: '{{ title | slugify }}.html'
 eleventyNavigation:
