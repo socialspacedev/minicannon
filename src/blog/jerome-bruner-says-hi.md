@@ -1,6 +1,6 @@
 ---
 title: Jerome Bruner says hi!
-description: This is a post originally from Tumblr.
+description: A short dedication to the former cognitive psychologist Jerome Bruner.
 tags:
   - post
   - personal
