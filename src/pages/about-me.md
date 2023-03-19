@@ -1,12 +1,12 @@
 ---
-title: About me
+title: About
 layout: page.njk
 keyword: about
 tags: pages
 permalink: '{{ title | slugify }}.html'
 eleventyNavigation:
   key: '{{ title | slugify }}'
-  title: About me
+  title: About
   order: 2
 ---
 # About Me
