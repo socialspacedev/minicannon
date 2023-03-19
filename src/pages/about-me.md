@@ -11,11 +11,7 @@ eleventyNavigation:
 ---
 # About
 
-I'm a pākeha based in Otepoti, New Zealand. I'm Head of Customer Experience at <a target="_blank" rel="noopener" href="https://cloudcannon.com">CloudCannon</a>. A Parent. A Cat owner. An elderly footballer. Intermittent noise maker and collector of records. Formally, a business owner, academic, radio host, Tāmaki Makaurau citizen and other forgotten things.
-
-<img src="/img/me-sideon.PNG" width="2346" height="1795" alt="An aged fellow concentrating on taking a selfie" title="It me." />
-
-Hit the social media links in the footer for more 👇🏻
+I'm a pākeha based in Otepoti, New Zealand. I'm Head of Customer Experience at <a target="_blank" rel="noopener" href="https://cloudcannon.com">CloudCannon</a>. A Parent. A Cat owner. An elderly footballer. Intermittent noise maker and collector of records. Formally, a business owner, academic, radio host, Tāmaki Makaurau citizen and other forgotten things.​​​​​<img width="100%" alt="An aged fellow concentrating on taking a selfie" title="It me." src="/img/me-sideon.PNG" />Hit the social media links in the footer for more 👇🏻
 
 ## Why Ānaru?
 
