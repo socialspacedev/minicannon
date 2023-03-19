@@ -11,10 +11,6 @@ eleventyNavigation:
 ---
 # Stuff
 
-Collected stuff from other sites.
-
-## Gigs
-
 Some bands I've seen over the last 30 years or so.
 
 ### **NZ acts**
