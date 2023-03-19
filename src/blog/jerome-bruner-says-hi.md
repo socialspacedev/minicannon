@@ -7,7 +7,7 @@ tags:
   - bruner
   - tumblr
 date: 2016-06-10T15:02:00Z
-luogo: Posted
+luogo: Originally posted
 layout: article.njk
 permalink: blog/{{ title | slugify }}.html
 ---
