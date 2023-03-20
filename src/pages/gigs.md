@@ -11,7 +11,7 @@ eleventyNavigation:
 ---
 # Stuff
 
-Some bands I've seen over the last 30 years or so.
+Some bands I've seen over the years.
 
 ### **NZ acts**
 
