@@ -21,6 +21,8 @@ collections_config:
   data:
     path: /src/_11ty/_includes
     output: false
+     _enabled_editors:
+      - source
 
 # Control which collections are displayed in the CloudCannon site navigation,
 # and how those collections are grouped.
