@@ -1,3 +1,4 @@
 #/bin/bash
 
 npm install -g npm@9.6.2
+npm i nunjucks-parser
