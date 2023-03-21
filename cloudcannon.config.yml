@@ -18,9 +18,9 @@ collections_config:
     _enabled_editors:
       - visual
       - content
-  data:
-    path: _11ty/_includes
-    output: false
+  # data:
+  #  path: _11ty/_includes
+  #  output: false
 
 # Control which collections are displayed in the CloudCannon site navigation,
 # and how those collections are grouped.
