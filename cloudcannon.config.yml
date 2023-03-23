@@ -11,9 +11,9 @@ collections_config:
     _enabled_editors:
       - visual
       - content
-    schemas:
-      default:
-        path: _11ty/_layouts/article.njk
+#   schemas:
+#      default:
+#        path: _11ty/_layouts/article.njk
   pages:
     path: pages
     output: true
@@ -21,9 +21,9 @@ collections_config:
     _enabled_editors:
       - visual
       - content
-    schemas:
-      default:
-        path: _11ty/_layouts/page.njk
+#   schemas:
+#      default:
+#        path: _11ty/_layouts/page.njk
   # data:
   #  path: _11ty/_includes
   #  output: false
