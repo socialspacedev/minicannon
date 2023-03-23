@@ -106,7 +106,6 @@ Some bands I've seen over the years.
 * Alex Chilton
 * Faith no More
 * Janes Addiction
-* Sound Garden
 * The Breeders
 * The Pixies
 * The Cramps
