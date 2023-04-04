@@ -20,8 +20,8 @@ collections_config:
       - content
   meta:
     path: _11ty/_data
-    output: true
-    filter: strict
+    output: false
+#    filter: strict
     _enabled_editors:
       - content
 #   schemas:
