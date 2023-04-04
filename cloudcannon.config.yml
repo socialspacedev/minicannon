@@ -21,7 +21,9 @@ collections_config:
   meta:
     path: _11ty/_data
     output: false
-#    filter: strict
+    filter:
+      include:
+        - meta.js
     _enabled_editors:
       - content
 #   schemas:
