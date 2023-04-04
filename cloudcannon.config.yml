@@ -22,8 +22,7 @@ collections_config:
     path: _11ty/_data
     output: true
     filter: strict
-     _enabled_editors:
-      - source
+    _enabled_editors:
       - content
 #   schemas:
 #      default:
