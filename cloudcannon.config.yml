@@ -25,7 +25,7 @@ collections_config:
       include:
         - meta.js
     _enabled_editors:
-      - content
+      - source
 #   schemas:
 #      default:
 #        path: _11ty/_layouts/page.njk
