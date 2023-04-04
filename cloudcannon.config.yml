@@ -19,9 +19,12 @@ collections_config:
       - visual
       - content
   meta:
-    path: 11ty/_data
+    path: _11ty/_data
     output: true
     filter: strict
+     _enabled_editors:
+      - source
+      - content
 #   schemas:
 #      default:
 #        path: _11ty/_layouts/page.njk
