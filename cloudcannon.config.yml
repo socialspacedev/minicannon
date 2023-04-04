@@ -19,7 +19,7 @@ collections_config:
       - visual
       - content
   meta:
-    path: _data
+    path: 11ty/_data
     output: true
     filter: strict
 #   schemas:
