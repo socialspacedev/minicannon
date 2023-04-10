@@ -15,7 +15,7 @@ collections_config:
     path: pages
     output: true
     filter: strict
-      exclude:
+    exclude:
       - chat.md
     _enabled_editors:
       - visual
