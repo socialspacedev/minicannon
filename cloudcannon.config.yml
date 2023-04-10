@@ -16,7 +16,7 @@ collections_config:
     output: true
     filter: strict
     exclude:
-      - chat.md
+      - pages/chat.md
     _enabled_editors:
       - visual
       - content
