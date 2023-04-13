@@ -65,3 +65,7 @@ source_editor:
 # Timezone of your site in IANA format. This is used by date and datetime inputs
 # within the CloudCannon Data Editor.
 timezone: NZST
+
+# Import the Eleventy Nunjucks Snippets:
+_snippets_imports:
+  eleventy_nunjucks: true
