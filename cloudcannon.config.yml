@@ -10,7 +10,7 @@ collections_config:
     output: true
     schemas:
       default:
-        path: _11ty/schemas/article.md
+        path: schemas/article.md
     _enabled_editors:
       - visual
       - content
