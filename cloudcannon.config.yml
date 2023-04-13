@@ -8,7 +8,7 @@ collections_config:
   posts:
     schemas:
       default:
-        path: schemas/article.md
+        path: _11ty/schemas/article.md
     path: blog
     output: true
     _enabled_editors:
