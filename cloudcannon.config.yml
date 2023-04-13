@@ -29,12 +29,6 @@ collections_config:
         - meta.js
     _enabled_editors:
       - source
-#   schemas:
-#      default:
-#        path: _11ty/_layouts/page.njk
-  # data:
-  #  path: _11ty/_includes
-  #  output: false
 
 # Control which collections are displayed in the CloudCannon site navigation,
 # and how those collections are grouped.
