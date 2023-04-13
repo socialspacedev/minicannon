@@ -6,11 +6,11 @@
 # CloudCannon configuration specific to those collections.
 collections_config:
   posts:
+    path: blog
+    output: true
     schemas:
       default:
         path: _11ty/schemas/article.md
-    path: blog
-    output: true
     _enabled_editors:
       - visual
       - content
