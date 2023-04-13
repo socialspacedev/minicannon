@@ -26,10 +26,6 @@ collections_config:
         - meta.js
     _enabled_editors:
       - source
-  articles:
-    schemas:
-      default:
-        path: schemas/article.md
 
 # Control which collections are displayed in the CloudCannon site navigation,
 # and how those collections are grouped.
