@@ -69,5 +69,5 @@ timezone: NZST
 # Import the Eleventy Nunjucks Snippets:
 _snippets_imports:
   eleventy_nunjucks: true
-      exclude:
+    exclude:
       - eleventy_nunjucks_raw
