@@ -11,7 +11,9 @@ type: website
 <body>
     {% include "nav.njk" %}
     <main>
+      <div class="content">
         {{content | safe}}
+      </div>
     </main>
     {% include "footer.njk" %}
 </body>
