@@ -31,4 +31,4 @@ If you want to work or collaborate with me, here's how I roll:
 
 ## Hit me up
 
-<form method="post" action="/success.html"><label>Your email</label> <input type="text" name="email" /><p><label>Your name</label> <input type="text" name="name" /></p><p><label>Your message</label></p><textarea name="message"></textarea> <input type="hidden" value="my-contact-form" name="inbox_key" /> <input type="text" style="display: none;" name="_gotcha" /> <p><input type="submit" value="Send Message" /></p></form>
+<form method="post" action="/success.html"><label>Your email</label> <input type="text" name="email" /><p><label>Your name</label> <input type="text" name="name" /></p><p><label>Your message</label><textarea name="message"></textarea></p> <input type="hidden" value="my-contact-form" name="inbox_key" /> <input type="text" style="display: none;" name="_gotcha" /><p><input type="submit" value="Send Message" /></p></form>
