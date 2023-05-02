@@ -21,7 +21,8 @@
     "11ty",
     "Tailwindcss",
     "SEO",
-    "PWA"
+    "PWA",
+    "CloudCannon"
   ],
   "author": "Marco Micale <marcomicale@gmail.com> (https://www.marcomicale.eu/)",
   "license": "MIT",
