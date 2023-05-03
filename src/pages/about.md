@@ -36,10 +36,13 @@ If you want to work or collaborate with me, here's how I roll:
 ## Hubspot
 
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+
 <script>
   hbspt.forms.create({
     region: "na1",
     portalId: "23772892",
     formId: "f5a60e63-a24b-4b7a-96ac-7f588abfe432"
   });
-</script>
+</script><!-- Start of HubSpot Embed Code -->
+
+<script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/23772892.js"></script><!-- End of HubSpot Embed Code -->
