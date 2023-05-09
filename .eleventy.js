@@ -19,8 +19,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(socialImages);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(readingTime);
-  eleventyConfig.addPlugin(pluginBookshop({
-    bookshopLocations: ["_component-library"], 
+  eleventyConfig.addPlugin(pluginBookshop({bookshopLocations: ["_component-library"],})); 
 
   // Non badare ai file di questa cartella
   eleventyConfig.ignores.delete("src/_11ty/_social/**/*.*");
@@ -68,17 +67,4 @@ module.exports = function (eleventyConfig) {
       output: "./public/",
     },
   };
-};
-
-// Adding Bookshop
-const pluginBookshop = require("@bookshop/eleventy-bookshop");
-
-module.exports = function (eleventyConfig) {
-  // ...
-
-  eleventyConfig.addPlugin(pluginBookshop({
-    bookshopLocations: ["_component-library"],  
-  }));
-
-  // ...
 };
