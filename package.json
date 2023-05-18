@@ -21,7 +21,8 @@
     "11ty",
     "Tailwindcss",
     "SEO",
-    "PWA"
+    "PWA",
+    "CloudCannon"
   ],
   "author": "Marco Micale <marcomicale@gmail.com> (https://www.marcomicale.eu/)",
   "license": "MIT",
@@ -40,6 +41,7 @@
     "tailwindcss": "^3.0.24"
   },
   "dependencies": {
+    "@bookshop/eleventy-bookshop": "^3.4.1",
     "puppeteer": "^19.7.5"
   }
 }
