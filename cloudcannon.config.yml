@@ -21,7 +21,7 @@ collections_config:
     _enabled_editors:
       - visual
       - content
-   schemas:
+    schemas:
       default:
         path: schemas/page.md
   # data:
