@@ -1,0 +1,6 @@
+#!/bin/bash
+
+npm i puppeteer
+npm audit fix
+npm install -g npm@10.2.0
+npx update-browserslist-db@latest
