@@ -53,6 +53,7 @@ paths:
   uploads: _11ty/_static/img/
   includes: _11ty/_includes/
   pages: pages
+  schemas: schemas
 
 # Lets you control the look and behaviour of the Source Editor.
 source_editor:
