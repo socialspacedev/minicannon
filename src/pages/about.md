@@ -1,5 +1,9 @@
 ---
+_schema: default
 title: About
+description: What is this page about?
+date:
+luogo: Posted
 layout: page.njk
 keyword: about
 tags: pages
