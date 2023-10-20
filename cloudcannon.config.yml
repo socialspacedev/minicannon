@@ -22,7 +22,7 @@ collections_config:
     path: pages
     output: true
     filter: strict
-    icon: post
+    icon: article
     _enabled_editors:
       - visual
       - content
@@ -54,7 +54,7 @@ paths:
   static: _11ty/_static/
   uploads: _11ty/_static/img/
   includes: _11ty/_includes/
-  pages: pages
+#  pages: pages
 
 # Lets you control the look and behaviour of the Source Editor.
 source_editor:
