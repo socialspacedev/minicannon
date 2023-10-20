@@ -8,7 +8,7 @@ collections_config:
   posts:
     schemas:
       default:
-        path: schemas/post.md
+        path: src/schemas/post.md
         remove_extra_inputs: false
     path: blog
     output: true
@@ -19,7 +19,7 @@ collections_config:
   pages:
     schemas:
       default:
-        path: schemas/page.md
+        path: src/schemas/page.md
         remove_extra_inputs: false
     path: pages
     output: true
