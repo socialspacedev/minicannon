@@ -11,6 +11,7 @@ collections_config:
         path: schemas/post.md
     path: blog
     output: true
+    icon: post
     _enabled_editors:
       - visual
       - content
@@ -21,6 +22,7 @@ collections_config:
     path: pages
     output: true
     filter: strict
+    icon: article
     _enabled_editors:
       - visual
       - content
