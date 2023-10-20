@@ -32,5 +32,7 @@ module.exports = {
   linkedinkUser: "andrewlslong",
   instagramUser: "socialspace",
   lastfmUser: "socialspace",
-  threadsUser: "@socialspace"
+  threadsUser: "@socialspace",
+  bskyUser: "socialspace",
+  mastodonUser: "socialspace",
 };
