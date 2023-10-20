@@ -32,7 +32,3 @@ If you want to work or collaborate with me, here's how I roll:
 * I like learning, solving problems and executing.
 * I'm not a big fan of the orthodox or status quo (by nature).
 * I can't help but care so heart-lead and often unflinchingly open.
-
-## Hit me up
-
-<form method="post" action="/success.html"><label>Your email</label> <input type="text" name="email" /><p><label>Your name</label> <input type="text" name="name" /></p><p><label>Your message</label><textarea name="message"></textarea></p> <input type="hidden" value="my-contact-form" name="inbox_key" /> <input type="text" style="display: none;" name="_gotcha" /><p><input type="submit" value="Send Message" /></p></form>
