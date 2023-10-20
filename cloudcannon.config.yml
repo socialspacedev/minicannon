@@ -22,7 +22,7 @@ collections_config:
     path: pages
     output: true
     filter: strict
-    icon: article
+    icon: post
     _enabled_editors:
       - visual
       - content
