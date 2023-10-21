@@ -26,11 +26,13 @@ module.exports = {
   //
   // Social Network
   //
-  twitterUser: "socialspace", 
   facebookUser: "andrewlslong",
   githubUser: "socialspacedev",
   telegramkUser: "",
   linkedinkUser: "andrewlslong",
   instagramUser: "socialspace",
   lastfmUser: "socialspace",
+  threadsUser: "@socialspace",
+  bskyUser: "socialspace",
+  mastodonUser: "socialspace",
 };
