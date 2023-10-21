@@ -33,7 +33,7 @@ _inputs:
   date:
     type: datetime
     instance_value: NOW
-
+  
 # Control which collections are displayed in the CloudCannon site navigation,
 # and how those collections are grouped.
 collection_groups:

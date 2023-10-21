@@ -18,7 +18,7 @@ He died over the weekend.
 
 I am shocked.
 
-I miss him but I’ve missed him for a while. He used to work down the corridor where we would shoot the breeze about the <a target="_blank" href="hthttp://www.brianjonestownmassacre.com/">Brian Jonestown Massacre</a> (he introduced me to this band and I’ll be forever grateful), iPods, great British menus, Subarus, glassy icons, type, digital photography, buildings and bush (me) versus barren-rock-strewn landscapes (him) … pretty much anything, anytime.
+I miss him but I’ve missed him for a while. He used to work down the corridor where we would shoot the breeze about the <a target="_blank" href="http://www.brianjonestownmassacre.com/">Brian Jonestown Massacre</a> (he introduced me to this band and I’ll be forever grateful), iPods, great British menus, Subarus, glassy icons, type, digital photography, buildings and bush (me) versus barren-rock-strewn landscapes (him) … pretty much anything, anytime.
 
 His dry, mischevious humour was precise and witty but you had to be quick else you missed these softly delivered remarks. The moderation of the tone barely concealed the stength of the bite they often comprised. Funny.
 

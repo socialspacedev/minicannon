@@ -117,6 +117,7 @@ Some bands I've seen over the years.
 * Bob Mould
 * Mark Mcguire
 * Nirvana
+* The Jesus Lizard
 * Smashing Pumpkins
 * Massive Attack
 * The Veils
