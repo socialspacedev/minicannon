@@ -33,6 +33,7 @@ _inputs:
   date:
     type: datetime
     instance_value: NOW
+  image_file: /_11ty/_static/img/
   
 # Control which collections are displayed in the CloudCannon site navigation,
 # and how those collections are grouped.
