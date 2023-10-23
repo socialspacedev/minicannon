@@ -13,6 +13,8 @@ collections_config:
     path: blog
     output: true
     icon: post
+    create:
+      path: '/_11ty/_static/img/[filename]'    
     _enabled_editors:
       - visual
       - content
@@ -33,6 +35,7 @@ _inputs:
   date:
     type: datetime
     instance_value: NOW
+  image_file: /_11ty/_static/img/
   
 # Control which collections are displayed in the CloudCannon site navigation,
 # and how those collections are grouped.
