@@ -5,4 +5,5 @@ tags:
   - post
 date:
 luogo: Posted
+type: article
 ---
