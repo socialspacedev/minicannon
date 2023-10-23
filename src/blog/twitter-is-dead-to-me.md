@@ -11,5 +11,3 @@ luogo: Posted
 ![](/img/twitter-dead.png)
 
 If X/Twitter is over for you too, I recommend the free desktop app&nbsp;<a target="_blank" rel="noopener" href="https://redact.dev/">Redact</a> for removing all your tweets, replies, likes, media, lists, etc. Any trace that you did anything on this service will be gone.&nbsp;
-
-<img src="/img/waggle.gif" width="120" height="120" />
