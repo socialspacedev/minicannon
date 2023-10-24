@@ -12,6 +12,7 @@ collections_config:
         remove_extra_inputs: false
     path: blog
     output: true
+    description: Blog posts about all things under the sun
     icon: post
     create:
       path: '/_11ty/_static/img/[filename]'    
@@ -26,9 +27,19 @@ collections_config:
     path: pages
     output: true
     filter: strict
+    description: Fascinating pages of this 'ere website
     icon: article
     _enabled_editors:
       - visual
+  meta-data:
+    path: _11ty/_data
+    output: false
+    description: Metadata for site layouts and other data
+    icon: settings_applications
+    disable_add: true
+    disable_add_folder: true
+    _enabled_editors:
+      - data
 
 # Inputs
 _inputs:
@@ -69,6 +80,7 @@ source_editor:
 # within the CloudCannon Data Editor.
 timezone: NZST
 
+# Choose toolbar options for content editor
 _editables:
   text:
     italic: true
@@ -106,5 +118,8 @@ _editables:
     image_size_attributes: true
     snippet: true
 
+# Needed to use 11ty snippets
 _snippets_imports:
-  eleventy_liquid: true
+  eleventy_nunjucks:
+    exclude:
+      - eleventy_nunjucks_raw

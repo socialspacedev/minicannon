@@ -4,6 +4,7 @@ const socialImages = require("@11tyrocks/eleventy-plugin-social-images");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const readingTime = require("eleventy-plugin-reading-time");
 const pluginBookshop = require("@bookshop/eleventy-bookshop");
+const yaml = require("js-yaml");
 
 // Helper packages
 const htmlmin = require("html-minifier");
@@ -19,7 +20,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(socialImages);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(readingTime);
-  eleventyConfig.addPlugin(pluginBookshop({bookshopLocations: ["_component-library"],})); 
+  eleventyConfig.addPlugin(pluginBookshop({bookshopLocations: ["_component-library"],}));
+  
+  // Add YAML extension to use for data file
+  eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
 
   // Non badare ai file di questa cartella
   eleventyConfig.ignores.delete("src/_11ty/_social/**/*.*");
