@@ -12,6 +12,7 @@ collections_config:
         remove_extra_inputs: false
     path: blog
     output: true
+    description: Individual blog posts
     icon: post
     create:
       path: '/_11ty/_static/img/[filename]'    
@@ -26,9 +27,15 @@ collections_config:
     path: pages
     output: true
     filter: strict
+    description: Pages of website
     icon: article
     _enabled_editors:
       - visual
+  meta-data:
+    path: _11ty/_data
+    output: false
+    description: Metadata for site layouts and other data
+    icon: settings_applications
 
 # Inputs
 _inputs:
