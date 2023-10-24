@@ -28,7 +28,6 @@ module.exports = {
   //
   facebookUser: "andrewlslong",
   githubUser: "socialspacedev",
-  telegramkUser: "",
   linkedinkUser: "andrewlslong",
   instagramUser: "socialspace",
   lastfmUser: "socialspace",
