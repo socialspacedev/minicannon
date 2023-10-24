@@ -121,8 +121,5 @@ _editables:
 # Needed to use 11ty snippets
 _snippets_imports:
   eleventy_liquid: true
-  
-_snippets:
-  custom_snippet:
-    template: eleventy_nunjucks_shortcode_positional_args
-    inline: false
+     exclude:
+      - eleventy_nunjucks_raw
