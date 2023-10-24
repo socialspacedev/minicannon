@@ -120,6 +120,6 @@ _editables:
 
 # Needed to use 11ty snippets
 _snippets_imports:
-  eleventy_liquid: true
-     exclude:
+  eleventy_nunjucks:
+    exclude:
       - eleventy_nunjucks_raw
