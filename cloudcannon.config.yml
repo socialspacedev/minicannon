@@ -16,7 +16,6 @@ collections_config:
     icon: post
     text_key: heading
     subtext_key: author
-    icon: event_available
     image_key: thumbnail
     image_size: contain
     create:
@@ -41,6 +40,10 @@ collections_config:
     output: false
     description: Metadata for site layouts and other data
     icon: settings_applications
+    disable_add: true
+    disable_add_folder: true
+    _enabled_editors:
+      - data
 
 # Inputs
 _inputs:
