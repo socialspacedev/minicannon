@@ -31,6 +31,7 @@ collections_config:
     icon: article
     _enabled_editors:
       - visual
+      - content
   meta-data:
     path: _11ty/_data
     output: false
