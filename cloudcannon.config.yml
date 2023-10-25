@@ -14,8 +14,8 @@ collections_config:
     output: true
     description: Blog posts about all things under the sun
     icon: post
-    create:
-      path: '/_11ty/_static/img/[filename]'    
+#    create:
+#      path: '/_11ty/_static/img/[filename]'    
     _enabled_editors:
       - visual
       - content
