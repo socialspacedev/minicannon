@@ -14,8 +14,6 @@ collections_config:
     output: true
     description: Blog posts about all things under the sun
     icon: post
-    create:
-      path: '/_11ty/_static/img/[filename]'    
     _enabled_editors:
       - visual
       - content
@@ -31,6 +29,7 @@ collections_config:
     icon: article
     _enabled_editors:
       - visual
+      - content
   meta-data:
     path: _11ty/_data
     output: false
@@ -78,7 +77,7 @@ source_editor:
 
 # Timezone of your site in IANA format. This is used by date and datetime inputs
 # within the CloudCannon Data Editor.
-timezone: NZST
+timezone: Pacific/Auckland
 
 # Choose toolbar options for content editor
 _editables:
