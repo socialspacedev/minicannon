@@ -1,4 +1,4 @@
-language: en-GB
+language: en-NZ
 lang: en
 siteName: anaru.nz
 shortName: Anaru
@@ -7,7 +7,7 @@ authorName: Andrew Long
 siteDescription: Home site for Andrew Long
 sitekeyword: Personal
 creationDate: 2022-02-12T00:00:00Z
-url: ${process.env.URL || 'https://anaru.nz'}
+url: https://anaru.nz
 robots: index, follow
 themeColor: '#000000'
 backgroundColor: '#000000'
