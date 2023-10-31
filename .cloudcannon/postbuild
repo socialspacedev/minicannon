@@ -1,3 +1,5 @@
+#!/bin/bash
+
 ##npx @bookshop/generate
 
 [[ -n $RUN_JAMPACK ]] && npm run polish
