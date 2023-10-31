@@ -1,3 +1,4 @@
 #!/bin/bash
 
+npx -y pagefind --site public
 ##npx @bookshop/generate
