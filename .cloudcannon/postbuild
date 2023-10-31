@@ -2,4 +2,4 @@
 
 ##npx @bookshop/generate
 
-[[ -n $RUN_JAMPACK ]] && npm run polish
+##[[ -n $RUN_JAMPACK ]] && npm run polish
