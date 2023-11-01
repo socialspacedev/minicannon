@@ -72,7 +72,6 @@
   #search {
     @apply border border-gray-300 rounded;
   }
-  }
   .social {
     @apply flex flex-row gap-5 grow justify-evenly;
   }
