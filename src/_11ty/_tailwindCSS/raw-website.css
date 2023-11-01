@@ -70,7 +70,7 @@
     @apply grow text-center;
   }
   #search {
- @apply h-6;
+    @apply text-white border none;
   }
   .social {
     @apply flex flex-row gap-5 grow justify-evenly;
