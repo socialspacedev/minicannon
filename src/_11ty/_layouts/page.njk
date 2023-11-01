@@ -7,6 +7,15 @@ type: website
 <!DOCTYPE html>
 <html lang="en">
 {% include "head-website.njk" %}
+<!-- Pagefind -->
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+<script src="/pagefind/pagefind-ui.js"></script>
+<div id="search"></div>
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#search", showSubResults: true });
+    });
+</script>
 <!-- Start Body -->
 <body>
     {% include "nav.njk" %}
