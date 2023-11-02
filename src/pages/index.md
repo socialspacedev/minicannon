@@ -1,8 +1,13 @@
 ---
+_schema: default
 title: Index
-layout: page.njk
 description: A CloudCannon 11ty website by Andrew Long.
+date:
+luogo: Posted
+type: website
+layout: page.njk
 keyword: index
+tags: pages
 permalink: '{{ title | slugify }}.html'
 eleventyNavigation:
   key: '{{ title | slugify }}'

@@ -14,12 +14,16 @@ eleventyNavigation:
   title: Search
   order: 5
 ---
-## Search
+# Search
+
+This search page uses CloudCannon's opensource static search solution <a target="_blank" rel="noopener" href="https://pagefind.app/">PageFind</a>. It currently indexes pages and blog posts only.
 
 <!-- Pagefind -->
-<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
-<script src="/pagefind/pagefind-ui.js"></script>
-<div id="search"></div>
+
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+
+<div> </div>
+
 <script>
     window.addEventListener('DOMContentLoaded', (event) => {
         new PagefindUI({ element: "#search", showSubResults: true });
