@@ -20,12 +20,7 @@ This search page uses CloudCannon's opensource static search solution <a target=
 
 <!-- Pagefind -->
 
-<link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
-
-<div> </div>
-
-<script>
-    window.addEventListener('DOMContentLoaded', (event) => {
+<div id="search"><div class="cms-embed" data-cms-embed="PHNjcmlwdD4KICAgIHdpbmRvdy5hZGRFdmVudExpc3RlbmVyKCdET01Db250ZW50TG9hZGVkJywgKGV2ZW50KSA9Jmd0OyB7CiAgICAgICAgbmV3IFBhZ2VmaW5kVUkoeyBlbGVtZW50OiAiI3NlYXJjaCIsIHNob3dTdWJSZXN1bHRzOiB0cnVlIH0pOwogICAgfSk7Cjwvc2NyaXB0Pg=="><script>
+    window.addEventListener('DOMContentLoaded', (event) =&gt; {
         new PagefindUI({ element: "#search", showSubResults: true });
-    });
-</script>
+    });</script></div></div>
