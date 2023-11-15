@@ -17,8 +17,3 @@ eleventyNavigation:
 # Search
 
 This search page uses CloudCannon's opensource static search solution <a target="_blank" rel="noopener" href="https://pagefind.app/">PageFind</a>. It currently indexes pages and blog posts only.
-<script>
-  window.addEventListener('DOMContentLoaded', (event) =&gt; {
-  new PagefindUI({ element: "#search", showSubResults: true });
-  });
-</script>
