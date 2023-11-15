@@ -12,13 +12,6 @@ type: website
     {% include "nav.njk" %}
     <main data-pagefind-body>
         {{content | safe}}
-      <!-- Pagefind -->
-        <div id="search"></div>
-          <script>
-            window.addEventListener('DOMContentLoaded', (event) =&gt; {
-            new PagefindUI({ element: "#search", showSubResults: true });
-            });
-          </script>
     </main>
     {% include "footer.njk" %}
 </body>
