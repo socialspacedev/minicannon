@@ -94,9 +94,9 @@
 --pagefind-ui-border-radius: 8px;
 --pagefind-ui-image-border-radius: 8px;
 --pagefind-ui-image-box-ratio: 3 / 2;
---pagefind-ui-font: {@apply font-serif;}
---pagefind-ui__result-title:#ffffff;
---pagefind-ui__result-link:#ffffff;
+--pagefind-ui-font: serif;
+--pagefind-ui-result-title:#ffffff;
+--pagefind-ui-result-link:#ffffff;
 
 @media screen(sm) {
   html {
