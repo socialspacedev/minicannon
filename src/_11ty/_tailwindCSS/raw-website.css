@@ -100,8 +100,37 @@
 
 .pagefind-ui.svelte-e9gkc3 {
     width: 100%;
-    color: cadetblue; 
+    color: #000; 
     font-family: var(--pagefind-ui-font)
+}
+
+.pagefind-ui__search-clear.svelte-1d60ae3 {
+    position: absolute;
+    top: calc(3px * var(--pagefind-ui-scale));
+    right: calc(3px * var(--pagefind-ui-scale));
+    height: calc(58px * var(--pagefind-ui-scale));
+    padding: 0 calc(15px * var(--pagefind-ui-scale)) 0 calc(2px * var(--pagefind-ui-scale));
+    color: #fff;
+    font-size: calc(14px * var(--pagefind-ui-scale));
+    cursor: pointer;
+    background-color: var(--pagefind-ui-background);
+    border-radius: var(--pagefind-ui-border-radius)
+}
+
+.pagefind-ui__search-input.svelte-1d60ae3 {
+    height: calc(64px * var(--pagefind-ui-scale));
+    padding: 0 calc(70px * var(--pagefind-ui-scale)) 0 calc(54px * var(--pagefind-ui-scale));
+    background-color: var(--pagefind-ui-background);
+    border: var(--pagefind-ui-border-width) solid var(--pagefind-ui-border);
+    border-radius: var(--pagefind-ui-border-radius);
+    font-size: calc(21px * var(--pagefind-ui-scale));
+    position: relative;
+    appearance: none;
+    -webkit-appearance: none;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: 700
 }
 
 @media screen(sm) {
