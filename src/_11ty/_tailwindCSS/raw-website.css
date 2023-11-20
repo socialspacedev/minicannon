@@ -133,6 +133,12 @@
     font-weight: 700
 }
 
+.search {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto
+}
+
 @media screen(sm) {
   html {
     @apply px-6 text-lg;
