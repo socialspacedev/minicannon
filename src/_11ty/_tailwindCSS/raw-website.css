@@ -139,6 +139,12 @@
     margin: 0 auto
 }
 
+form {
+    display: block;
+    margin-top: 0em;
+    width: 1000%;
+}
+
 @media screen(sm) {
   html {
     @apply px-6 text-lg;
