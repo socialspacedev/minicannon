@@ -1,0 +1,26 @@
+---
+title: Search page
+description: This is a search page only
+keyword: search
+type: website
+---
+<!DOCTYPE html>
+<html lang="en">
+{% include "head-website.njk" %}
+<!-- Start Body -->
+<body>
+    {% include "nav.njk" %}
+    <main data-pagefind-body>
+        {{content | safe}}
+      <!-- Pagefind -->
+        <div id="search"></div>
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#search", showSubResults: true });
+    });
+</script>
+    </main>
+    {% include "footer.njk" %}
+</body>
+<!-- End Body -->
+</html>
