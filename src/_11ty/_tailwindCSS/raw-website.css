@@ -488,7 +488,7 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
   :root {
     --pagefind-ui-primary: #eeeeee;
     --pagefind-ui-text: #eeeeee;
-    --pagefind-ui-background: #ffffff;
+    --pagefind-ui-background: #000000;
     --pagefind-ui-border: #152028;
     --pagefind-ui-tag: #152028;
   }
