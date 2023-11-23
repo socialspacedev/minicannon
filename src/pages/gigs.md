@@ -1,7 +1,7 @@
 ---
 _schema: default
 title: Stuff
-description: What is this page about?
+description: Random information so there's some content.
 date:
 luogo: Posted
 type: website
