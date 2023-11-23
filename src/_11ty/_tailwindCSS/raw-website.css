@@ -484,7 +484,7 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
     --pagefind-ui-font: inherit
 }
 
-body.dark {
+dark:root {
   --pagefind-ui-primary: #eeeeee;
   --pagefind-ui-text: #eeeeee;
   --pagefind-ui-background: #152028;
