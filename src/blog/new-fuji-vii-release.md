@@ -1,14 +1,15 @@
 ---
 _schema: default
-title: Add your catchy title
-description: What is this post about?
+title: Terraqueous Globe – New from Fuji VII
+description: Recorded in response to the new NZ coalition government plans.
 tags:
   - post
-date: 2023-11-28T10:36:16+13:00
+  - music
+  - bandcamp
+date: 2023-11-28T10:41:33+13:00
 luogo: Posted
 type: article
 layout: article.njk
 permalink: blog/{{ title | slugify }}.html
 ---
-
-<iframe style="border: 0; width: 100; height: 588px; display: flex; justify-content: center;" src="https://bandcamp.com/EmbeddedPlayer/album=2180942122/size=large/bgcol=ffffff/linkcol=333333/transparent=true/" seamless><a href="https://fujivii.bandcamp.com/album/terraqueous-globe">Terraqueous Globe by Fuji VII</a></iframe>
+<iframe style="border: 0; width: 100%; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/album=2180942122/size=large/bgcol=ffffff/linkcol=333333/transparent=true/" seamless><a href="https://fujivii.bandcamp.com/album/terraqueous-globe">Terraqueous Globe by Fuji VII</a></iframe>
