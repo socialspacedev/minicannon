@@ -12,6 +12,6 @@ type: article
 layout: article.njk
 permalink: blog/{{ title | slugify }}.html
 ---
-New release from Fuji VII.
+This is the new release from <a href="https://fujivii.bandcamp.com/album/terraqueous-globe" title="Fuji VII Terraqueous Globe min-album" target="_blank" rel="noopener">Fuji VII</a> comprising 4 improvised guitar tracks. These performances are sound experiments post-<a href="https://dunedinsound.com/gigs/lines-of-flight-2023-show-2/#surface_of_the_earth" title="Surface of the Earth playing live at Lines of Flight 2023" target="_blank" rel="noopener">Surface of the Earth</a> in Dunedin. in response to the increasingly dire state of the world and destructive plans of the 2023 NZ coalition government.
 
 <iframe style="border: 0; width: 100%; height: 500px;" src="https://bandcamp.com/EmbeddedPlayer/album=2180942122/size=large/bgcol=ffffff/linkcol=333333/transparent=true/" seamless><a href="https://fujivii.bandcamp.com/album/terraqueous-globe">Terraqueous Globe by Fuji VII</a></iframe>
