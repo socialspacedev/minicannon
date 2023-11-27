@@ -1,15 +1,13 @@
-# Read the CloudCannon documentation for more information on how to use this file:
-# https://cloudcannon.com/documentation/articles/setting-global-configuration/?ssg=Eleventy
-
-# Collections are related sets of content files, typically grouped by folder.
-# Here you can define your collections, as well as any
-# CloudCannon configuration specific to those collections.
+source: src
+paths:
+  uploads: _11ty/_static/img/
+  static: _11ty/_static/
+  collections:
+  data: _11ty/_data/
+  layouts: _11ty/_layouts/
+  includes: _11ty/_includes/
 collections_config:
   posts:
-    schemas:
-      default:
-        path: .cloudcannon/schemas/post.md
-        remove_extra_inputs: false
     path: blog
     output: true
     description: Blog posts about all things under the sun
@@ -17,107 +15,120 @@ collections_config:
     _enabled_editors:
       - visual
       - content
-  pages:
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
     schemas:
       default:
-        path: .cloudcannon/schemas/page.md
+        path: .cloudcannon/schemas/post.md
+        reorder_inputs: true
+        hide_extra_inputs: false
+        remove_empty_inputs: false
         remove_extra_inputs: false
+        icon: notes
+  pages:
     path: pages
     output: true
     filter: strict
     description: Fascinating pages of this 'ere website
     icon: article
+    _editables: {}
     _enabled_editors:
       - visual
       - content
+    _inputs: {}
+    _select_data: {}
+    _structures: {}
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    schemas:
+      default:
+        path: .cloudcannon/schemas/page.md
+        reorder_inputs: true
+        hide_extra_inputs: false
+        remove_empty_inputs: false
+        remove_extra_inputs: false
+        icon: notes
   meta-data:
     path: _11ty/_data
     output: false
     description: Metadata for site layouts and other data
     icon: settings_applications
-    disable_add: true
-    disable_add_folder: true
     _enabled_editors:
       - data
-
-# Inputs
+    disable_add: true
+    disable_add_folder: true
+    disable_file_actions: false
 _inputs:
   date:
     type: datetime
     instance_value: NOW
-  image_file: /_11ty/_static/img/
-  
-# Control which collections are displayed in the CloudCannon site navigation,
-# and how those collections are grouped.
-collection_groups:
-
-
-# Set this to true to disable auto-detection of collections.
-collections_config_override: false
-
-# Control which data sets are available to populate select and multiselect inputs.
-data_config:
-
-# Base path to your source files, relative to the root folder of your repository.
-source: src
-
-
-# The locations of various types of files within your site.
-# Each path is relative to your site's source folder.
-paths:
-  data: _11ty/_data/
-  collections: 
-  layouts: _11ty/_layouts/
-  static: _11ty/_static/
-  uploads: _11ty/_static/img/
-  includes: _11ty/_includes/
-
-# Lets you control the look and behaviour of the Source Editor.
-source_editor:
-
-# Timezone of your site in IANA format. This is used by date and datetime inputs
-# within the CloudCannon Data Editor.
-timezone: Pacific/Auckland
-
-# Choose toolbar options for content editor
+    cascade: true
+  image_file:
+    '0': /
+    '1': _
+    '2': '1'
+    '3': '1'
+    '4': t
+    '5': 'y'
+    '6': /
+    '7': _
+    '8': s
+    '9': t
+    '10': a
+    '11': t
+    '12': i
+    '13': c
+    '14': /
+    '15': i
+    '16': m
+    '17': g
+    '18': /
+    type: auto
+    cascade: true
+_select_data: {}
+_structures: {}
 _editables:
   text:
     italic: true
   block:
     format: p h3
-    undo: true
+    image_size_attributes: true
     redo: true
+    undo: true
   content:
     blockquote: true
     bold: true
+    bulletedlist: true
+    center: align-center
+    code: true
+    copyformatting: true
+    embed: true
     format: p h1 h2 h3 h4 h5 h6 pre address div
+    horizontalrule: true
+    image: true
+    image_size_attributes: true
+    indent: true
     italic: true
+    justify: align-justify
+    left: align-left
+    link: true
+    numberedlist: true
+    outdent: true
+    redo: true
+    removeformat: true
+    right: align-right
+    snippet: true
     strike: true
     subscript: true
     superscript: true
-    underline: true
-    link: true
-    bulletedlist: true
-    indent: true
-    numberedlist: true
-    outdent: true
-    code: true
-    embed: true
-    horizontalrule: true
-    image: true
     table: true
+    underline: true
     undo: true
-    redo: true
-    removeformat: true
-    copyformatting: true
-    left: align-left
-    center: align-center
-    right: align-right
-    justify: align-justify
-    image_size_attributes: true
-    snippet: true
-
-# Needed to use 11ty snippets
+data_config: {}
+timezone: Pacific/Auckland
+collections_config_override: false
 _snippets_imports:
   eleventy_nunjucks:
     exclude:
