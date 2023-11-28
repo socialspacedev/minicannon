@@ -1,13 +1,14 @@
 ---
+_schema: default
 title: Jerome Bruner says hi!
 description: A short dedication to the former cognitive psychologist Jerome Bruner.
 tags:
   - post
-  - personal
-  - bruner
   - tumblr
+  - academic
 date: 2016-06-10T15:02:00Z
 luogo: Originally posted
+type: article
 layout: article.njk
 permalink: blog/{{ title | slugify }}.html
 ---
@@ -25,12 +26,9 @@ On the very same night, he replied back to me (he was in his 90s at this point!)
 
 > From: Jerome S Bruner<br>Sent: Tue 21/07/2009 2:17 a.m.<br>To: Andrew Long<br>Subject: Re: Life is tweet.
 >
->
 > Dear Mr. Long:
 >
->
 > Thanks for those thoughtful reflections on self-defining narratives. It’s a rich topic and I hope you’ll go on pursuing it. I’m delighted that my writings have been of some help to you.
->
 >
 > Best wishes. <br> jb
 

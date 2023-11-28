@@ -1,14 +1,16 @@
 ---
+_schema: default
 title: Bruce Rapson McLennan
 description: >-
   An obituary for an old mate first published in 2008 and rescued from the
   Wayback machine.
 tags:
   - post
-  - personal
   - tumblr
+  - obituary
 date: 2008-06-03T15:02:00Z
 luogo: Originally posted
+type: article
 layout: article.njk
 permalink: blog/{{ title | slugify }}.html
 ---
@@ -24,8 +26,7 @@ His dry, mischevious humour was precise and witty but you had to be quick else y
 
 He was dedicated to morning tea which was good because he liked espresso alot. We talked about the qualities of good espresso many times; strength and purity is key! A short-walk and a cigarette around the School of Business always followed.
 
-He moved out of <a target="_blank" href="http://www.otago.ac.nz/">here</a> a few months ago to a new <a target="_blank" href="http://www.agresearch.co.nz/">job</a>. He liked maps and technology so a GIS career was a perfect fit. A cruel irony then this turn of events. We planned to keep in touch despite the physical separation but our conversations tailed off (despite our mutual use of multiplex communication). Sadly.
- <img width="100%" src="/img/mclennan.jpg" />
+He moved out of <a target="_blank" href="http://www.otago.ac.nz/">here</a> a few months ago to a new <a target="_blank" href="http://www.agresearch.co.nz/">job</a>. He liked maps and technology so a GIS career was a perfect fit. A cruel irony then this turn of events. We planned to keep in touch despite the physical separation but our conversations tailed off (despite our mutual use of multiplex communication). Sadly. <img width="100%" src="/img/mclennan.jpg" />
 
 I saw him for the last time about two weeks ago. He seemed relaxed and happy; clearly the new job was working out as were opportunities to take more photographs of the Central Otago landscape (he had a healthy obsession with the shist and hills).
 
