@@ -727,6 +727,6 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
 }
 
 /* Bandcamp widget override */
-.inline_player {
-    max-width: 100% !important;
+.inline_player #player {
+    max-width: 1000px !important;
 }
