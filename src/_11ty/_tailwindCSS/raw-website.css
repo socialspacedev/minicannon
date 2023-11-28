@@ -611,6 +611,12 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
     background: var(--pagefind-ui-background)
 }
 
+/* Bandcamp widget override */ 
+/* #player.inline_player.size_large.download.albumplayer { */
+#player.inline_player.size_large.download.albumplayer.override {  
+    max-width: none;
+}
+
 @media screen(sm) {
   html {
     @apply px-6 text-lg;
@@ -722,10 +728,4 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
   .social {
     @apply grow-0 gap-9 justify-end;
   }
-}
-
-/* Bandcamp widget override */ 
-/* #player.inline_player.size_large.download.albumplayer { */
-#player.inline_player.override {  
-    max-width: none;
 }
