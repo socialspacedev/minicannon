@@ -69,8 +69,6 @@
   .credit {
     @apply grow text-center;
   }
-  #search {
-  }
   .social {
     @apply flex flex-row gap-5 grow justify-evenly;
   }
@@ -611,6 +609,13 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
     border-color: var(--pagefind-ui-primary);
     color: var(--pagefind-ui-primary);
     background: var(--pagefind-ui-background)
+}
+
+/* Bandcamp widget override */ 
+/* #player.inline_player.size_large.download.albumplayer { */
+#bandcamp {  
+    max-width: 700px; 
+    margin: auto;
 }
 
 @media screen(sm) {
