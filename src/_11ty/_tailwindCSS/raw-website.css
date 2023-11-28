@@ -725,3 +725,8 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
     @apply grow-0 gap-9 justify-end;
   }
 }
+
+/* Bandcamp widget override */
+#player {
+    max-width: 100%;
+}
