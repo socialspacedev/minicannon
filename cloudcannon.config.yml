@@ -12,9 +12,25 @@ collections_config:
     output: true
     description: Blog posts about all things under the sun
     icon: post
+    _editables: {}
     _enabled_editors:
       - visual
       - content
+    _inputs:
+      tags:
+        type: multiselect
+        options:
+          allow_create: true
+          empty_type: array
+          values:
+            - post
+            - music
+            - social media
+            - tumblr
+          value_key:
+        cascade: true
+    _select_data: {}
+    _structures: {}
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
