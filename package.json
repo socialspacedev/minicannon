@@ -12,7 +12,7 @@
     "eleventy": "eleventy",
     "social-images": "eleventy-social-images --outputDir public --imageDir /img/social --dataFile ./src/_11ty/_social/pages.json --templatePath ./src/_11ty/_social/template.html --stylesPath ./src/_11ty/_social/social.css --width 1280 --height 720 --deviceScaleFactor 1",
     "dev:css": "npx tailwindcss -i src/_11ty/_tailwindCSS/raw-website.css -o public/css/style.css --watch --minify",
-    "dev:11ty": "eleventy --serve --watch",
+    "dev:11ty": "eleventy --serve --watch"
   },
   "keywords": [
     "Website",
@@ -38,6 +38,6 @@
     "tailwindcss": "^3.0.24"
   },
   "dependencies": {
-    "@bookshop/eleventy-bookshop": "^3.8.1",
+    "@bookshop/eleventy-bookshop": "^3.8.1"
   }
 }
