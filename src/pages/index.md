@@ -1,7 +1,7 @@
 ---
 _schema: default
-title: Index
-description: A CloudCannon 11ty website by Andrew Long.
+title: Home
+description: A minimal CloudCannon and 11ty website by and about Andrew Long.
 date:
 luogo: Posted
 type: website
