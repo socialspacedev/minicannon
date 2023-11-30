@@ -60,7 +60,18 @@ collections_config:
     _enabled_editors:
       - visual
       - content
-    _inputs: {}
+    _inputs:
+      keywords:
+        type: multiselect
+        options:
+          allow_create: true
+          empty_type: array
+          values:
+            - music
+            - media
+            - personal
+          value_key:
+        cascade: true
     _select_data: {}
     _structures: {}
     disable_add: false
