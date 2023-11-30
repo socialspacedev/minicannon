@@ -2,7 +2,7 @@ language: en-NZ
 lang: en
 siteName: anaru.nz
 shortName: Anaru
-motto: Minimalist website built on CloudCannon and 11ty.
+motto: Minimalist website about me
 authorName: Andrew Long
 siteDescription: Home site for Andrew Long
 sitekeyword: Personal
