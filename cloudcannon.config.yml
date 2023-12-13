@@ -142,7 +142,6 @@ _editables:
 data_config: {}
 timezone: Pacific/Auckland
 collections_config_override: false
+# Import the Eleventy Liquid Snippets:
 _snippets_imports:
-  eleventy_nunjucks:
-    exclude:
-      - eleventy_nunjucks_raw
+  eleventy_liquid: true

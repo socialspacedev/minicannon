@@ -4,7 +4,7 @@ title: About
 description: What is this page about?
 date:
 luogo: Posted
-layout: page.njk
+layout: page.liquid
 keyword: about
 tags: pages
 permalink: '{{ title | slugify }}.html'

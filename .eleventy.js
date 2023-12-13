@@ -2,7 +2,7 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const socialImages = require("@11tyrocks/eleventy-plugin-social-images");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
-const readingTime = require("eleventy-plugin-reading-time");
+const timeToRead = require('eleventy-plugin-time-to-read');
 const pluginBookshop = require("@bookshop/eleventy-bookshop");
 const yaml = require("js-yaml");
 
@@ -19,7 +19,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(socialImages);
   eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addPlugin(readingTime);
   eleventyConfig.addPlugin(pluginBookshop({bookshopLocations: ["_component-library"],}));
   
   // Add YAML extension to use for data file
@@ -58,6 +57,26 @@ module.exports = function (eleventyConfig) {
 
   // Data Feed
   eleventyConfig.addLiquidFilter("dateToRfc3339", pluginRss.dateToRfc3339);
+
+  // Time to read for liquid
+  eleventyConfig.addPlugin(timeToRead, {
+    speed: '1000 characters per minute',
+    language: 'en',
+    style: 'long',
+    type: 'unit',
+    hours: 'auto',
+    minutes: true,
+    seconds: false,
+    digits: 1,
+    output: function(data) {
+      return data.timing;
+    }
+  });
+  
+// Safe stopped working with Liquid so trying this
+  eleventyConfig.addFilter("safe", function(content) {
+    return content;
+  });
 
   // e alla fine
   return {

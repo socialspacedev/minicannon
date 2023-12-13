@@ -1,7 +1,7 @@
 AddDefaultCharset UTF-8   
 AddDefaultCharset ISO-8859-1
 
-DefaultLanguage it-IT
+DefaultLanguage en-EN
 
 Header set Cache-Control "max-age=300, public"
 

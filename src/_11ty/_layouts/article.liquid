@@ -1,0 +1,28 @@
+---
+title: "Blog article"
+description: "Description of a blog article"
+tags: "post"
+date: "Created"
+luogo: "Posted"
+type: "article"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+{% include "head-article.liquid" %}
+<!-- Start Body -->
+<body>
+    {% include "nav.liquid" %}
+    <article data-pagefind-body>
+        <small class="info">
+            {{ luogo }}&nbsp;
+            <time datetime="{{ page.date }}">{{ page.date | readableDate }}</time>&nbsp;&ndash;&nbsp;
+            {{ content | timeToRead }}&nbsp;to&nbsp;read
+        </small>
+        <h1>{{ title }}</h1>
+        {{ content | safe }}
+    </article>
+    {% include "footer.liquid" %}
+</body>
+<!-- End Body -->
+</html>

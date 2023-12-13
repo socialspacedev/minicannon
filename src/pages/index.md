@@ -5,7 +5,7 @@ description: A minimal CloudCannon and 11ty website by and about Andrew Long.
 date:
 luogo: Posted
 type: website
-layout: page.njk
+layout: page.liquid
 keyword: index
 tags: pages
 permalink: '{{ title | slugify }}.html'

@@ -5,7 +5,7 @@ description: Random information so there's some content.
 date:
 luogo: Posted
 type: website
-layout: page.njk
+layout: page.liquid
 keyword: gigs, media, music
 tags: pages
 permalink: '{{ title | slugify }}.html'

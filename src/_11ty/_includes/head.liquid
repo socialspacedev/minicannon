@@ -1,25 +1,53 @@
-<!-- Titolo Automatizzato -->
-{%- set pageTitle %}{% if title %}{{title}} {% endif %} - {{meta.siteName}} {% endset -%}
-<!-- Descrizione Automatizzata -->
-{%- set pageDescription %}{% if description %}{{description}} {% else %}{{meta.siteDescription}} {% endif %}{% endset -%}
-<!-- Social Immagine -->
-{%- set pageSocialImg %}{{meta.url}} /img/social/{% if title %}{{title | slug}} {% else %}home{% endif %}.png{% endset -%}
-<!-- Url della pagina -->
-{%- set pageUrls %}{{meta.url}} {{page.url}} {% endset -%}
-<!-- Start Head -->
+{% comment %}
+  Titolo Automatizzato
+{% endcomment %}
+{% assign pageTitle = title | default: '' -%}
+{% assign pageTitle = pageTitle | append: ' - ' | append: meta.siteName -%}
+
+{% comment %}
+  Descrizione Automatizzata
+{% endcomment %}
+{% assign pageDescription = description | default: '' -%}
+{% assign pageDescription = pageDescription | append: meta.siteDescription | default: '' -%}
+
+{% comment %}
+  Social Immagine
+{% endcomment %}
+{% assign pageSocialImg = meta.url | append: '/img/social/' | append: (title | slug) | append: '.png' -%}
+
+{% comment %}
+  Url della pagina
+{% endcomment %}
+{% assign pageUrls = meta.url | append: ' ' | append: page.url -%}
+
+{% comment %}
+  Start Head
+{% endcomment %}
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-<!-- About Page -->
-    <title>{{pageTitle}} </title>
+
+    {% comment %}
+      About Page
+    {% endcomment %}
+    <title>{{pageTitle}}</title>
     <meta name="description" content="{{pageDescription}}" />
     <meta name="keywords" content="{{pageKeyword}}" />
     <meta name="creation_Date" content="{{meta.creationDate}}" />
-<!-- Robot -->
+
+    {% comment %}
+      Robot
+    {% endcomment %}
     <meta name="robots" content="{{meta.robots}}" />
-<!-- Autore -->
+
+    {% comment %}
+      Autore
+    {% endcomment %}
     <meta name="author" content="{{meta.authorName}}" />
-<!-- Font -->
+
+    {% comment %}
+      Font
+    {% endcomment %}
     <link rel="preconnect" href="https://fonts.gstatic.com/" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300;400;500;600;700;800&subset=latin-ext&display=swap" />
@@ -27,25 +55,41 @@
     <noscript>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300;400;500;600;700;800&subset=latin-ext&display=swap" />
     </noscript>
-<!-- CSS -->
+
+    {% comment %}
+      CSS
+    {% endcomment %}
     <link rel="preload" href="{{'/css/style.css' | url}}" as="style" />
     <link rel="stylesheet" href="{{'/css/style.css' | url}}" media="all" />
-<!-- Sitemap -->
-    <link rel="sitemap" type="application/rss+xml" title="RSS Feed for {{meta.siteName}} " href="{{'/feed.xml' | url}}" />
-<!-- Favicon -->
-    <link rel="shortcut icon" href="{{'/favicon/favicon.ico' | url}} " sizes="any" />
-  <!--  <link rel="icon" type="image/svg+xml" href="{{'/favicon/safari-pinned-tab.svg' | url}}" /> -->
-<!-- Social -->
-    <!-- Open Graph -->
+
+    {% comment %}
+      Sitemap
+    {% endcomment %}
+    <link rel="sitemap" type="application/rss+xml" title="RSS Feed for {{meta.siteName}}" href="{{'/feed.xml' | url}}" />
+
+    {% comment %}
+      Favicon
+    {% endcomment %}
+    <link rel="shortcut icon" href="{{'/favicon/favicon.ico' | url}}" sizes="any" />
+
+    {% comment %}
+      Social
+    {% endcomment %}
+    {% comment %}
+      Open Graph
+    {% endcomment %}
     <meta property="og:type" content="{{type}}" />
     <meta property="og:locale" content="{{meta.language}}" />
-    <meta property="og:image" content="{{pageSocialImg}} " />
+    <meta property="og:image" content="{{pageSocialImg}}" />
     <meta property="og:image:width" content="1280" />
     <meta property="og:image:height" content="720" />
     <meta property="og:title" content="{{pageTitle}}" />
     <meta property="og:description" content="{{pageDescription}}" />
     <meta property="og:url" content="{{meta.url}}" />
     <meta property="og:image:alt" content="Image for social sharing" />
-    <!-- Facebook -->
+
+    {% comment %}
+      Facebook
+    {% endcomment %}
     <meta property="fb:admins" content="{{meta.facebookUsername}}" />
 </head>
