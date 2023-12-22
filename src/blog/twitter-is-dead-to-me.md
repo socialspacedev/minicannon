@@ -8,7 +8,7 @@ tags:
 date: 2023-10-20T03:03:36Z
 luogo: Posted
 type: article
-layout: article.njk
+layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
 ---
 ![](/img/twitter-dead.png)

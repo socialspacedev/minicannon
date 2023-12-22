@@ -6,6 +6,8 @@ paths:
   data: _11ty/_data/
   layouts: _11ty/_layouts/
   includes: _11ty/_includes/
+_enabled_editors:
+      - visual
 collections_config:
   posts:
     path: blog
@@ -142,7 +144,6 @@ _editables:
 data_config: {}
 timezone: Pacific/Auckland
 collections_config_override: false
+# Import the Eleventy Liquid Snippets:
 _snippets_imports:
-  eleventy_nunjucks:
-    exclude:
-      - eleventy_nunjucks_raw
+  eleventy_liquid: true

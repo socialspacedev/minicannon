@@ -1,0 +1,27 @@
+---
+title: "Search page"
+description: "This is a search page only"
+keyword: "search"
+type: "website"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  {% include "head-website.liquid" %}
+  <!-- Start Body -->
+  <body>
+    {% include "nav.liquid" %}
+      <main data-pagefind-body>
+      {{ content }}
+      <!-- Pagefind -->
+      <div id="search"></div>
+      <script>
+            window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#search", showSubResults: true });
+            });
+      </script>
+    </main>
+    {% include "footer.liquid" %}
+  </body>
+<!-- End Body -->
+</html>
