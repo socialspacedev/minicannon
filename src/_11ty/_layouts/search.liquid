@@ -7,21 +7,21 @@ type: "website"
 
 <!DOCTYPE html>
 <html lang="en">
-{% include "head-website.liquid" %}
-<!-- Start Body -->
-<body>
+  {% include "head-website.liquid" %}
+  <!-- Start Body -->
+  <body>
     {% include "nav.liquid" %}
-    <main data-pagefind-body>
-        {{ content | safe }}
+      <main data-pagefind-body>
+      {{ content }}
       <!-- Pagefind -->
-        <div id="search"></div>
-<script>
-    window.addEventListener('DOMContentLoaded', (event) => {
+      <div id="search"></div>
+      <script>
+            window.addEventListener('DOMContentLoaded', (event) => {
         new PagefindUI({ element: "#search", showSubResults: true });
-    });
-</script>
+            });
+      </script>
     </main>
     {% include "footer.liquid" %}
-</body>
+  </body>
 <!-- End Body -->
 </html>

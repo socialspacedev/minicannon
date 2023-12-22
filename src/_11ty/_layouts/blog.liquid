@@ -7,28 +7,28 @@ type: "website"
 
 <!DOCTYPE html>
 <html lang="en">
-{% include "head-website.liquid" %}
-<!-- Start Body -->
-<body>
+  {% include "head-website.liquid" %}
+  <!-- Start Body -->
+  <body>
     {% include "nav.liquid" %}
     <main>
+          {{ content }}
         <ul class="elenco-posts">
-            <li class="posts">
-                {{ content | safe }}
-            </li>
-            {%- for post in collections.post reversed -%}
-            <li class="posts">
-                <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
-                <p>{{ post.data.description | safe }}</p>
-                <small class="info">
-                    <time datetime="{{ post.date }}">{{ post.date | readableDate }}</time>&nbsp;&nbsp;&ndash;&nbsp;
-                    {{ post.content | timeToRead }}&nbsp;to&nbsp;read
-                </small>
-            </li>
-            {%- endfor -%}
-        </ul>
+        {%- for post in collections.post reversed -%}
+          <li class="posts">
+            <h2>
+              <a href="{{ post.url }}">{{ post.data.title }}</a>
+            </h2>
+            <p>{{ post.data.description }}</p>
+            <small class="info">
+              <time datetime="{{ post.date }}">{{ post.date | readableDate }}</time>&nbsp;&nbsp;&ndash;&nbsp;
+              {{ post.content | timeToRead }}&nbsp;to&nbsp;read
+            </small>
+          </li>
+        {%- endfor -%}
+      </ul>
     </main>
     {% include "footer.liquid" %}
-</body>
+  </body>
 <!-- End Body -->
 </html>

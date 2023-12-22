@@ -28,9 +28,9 @@
   .title {
     @apply text-center font-extrabold text-3xl;
   }
-  .motto {
+  /*.motto {
     @apply tracking-wide text-center;
-  }
+  }*/
   nav {
     @apply text-center items-center;
   }

@@ -5,12 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "run-p dev:*",
-    "go!": "run-s clean css:* eleventy",
+    "go!": "run-s clean css eleventy",
     "clean": "rimraf public",
-    "css:website": "npx tailwindcss -i src/_11ty/_tailwindCSS/raw-website.css -o public/css/style.css --minify",
-    "css:social-img": "npx tailwindcss -i src/_11ty/_tailwindCSS/raw-social.css -o ./src/_11ty/_social/social.css --minify",
-    "eleventy": "eleventy",
-    "social-images": "eleventy-social-images --outputDir public --imageDir /img/social --dataFile ./src/_11ty/_social/pages.json --templatePath ./src/_11ty/_social/template.html --stylesPath ./src/_11ty/_social/social.css --width 1280 --height 720 --deviceScaleFactor 1",
+    "css": "npx tailwindcss -i src/_11ty/_tailwindCSS/raw-website.css -o public/css/style.css --minify",
+    "eleventy": "npx @11ty/eleventy",
     "dev:css": "npx tailwindcss -i src/_11ty/_tailwindCSS/raw-website.css -o public/css/style.css --watch --minify",
     "dev:11ty": "eleventy --serve --watch"
   },
@@ -23,12 +21,11 @@
     "CloudCannon"
   ],
   "author": "Andrew Long",
-  "license": "",
+  "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-navigation": "^0.3.2",
     "@11ty/eleventy-plugin-rss": "^1.1.2",
-    "@11tyrocks/eleventy-plugin-social-images": "^0.2.0",
     "@bookshop/browser": "3.8.2",
     "@bookshop/eleventy-engine": "3.8.2",
     "@bookshop/generate": "3.8.2",
@@ -41,6 +38,7 @@
   },
   "dependencies": {
     "@bookshop/eleventy-bookshop": "^3.8.1",
+    "eleventy": "^1.0.6",
     "eleventy-plugin-time-to-read": "^1.3.0",
     "pagefind": "^1.0.4"
   }

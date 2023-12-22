@@ -20,7 +20,7 @@ type: "article"
             {{ content | timeToRead }}&nbsp;to&nbsp;read
         </small>
         <h1>{{ title }}</h1>
-        {{ content | safe }}
+        {{ content }}
     </article>
     {% include "footer.liquid" %}
 </body>

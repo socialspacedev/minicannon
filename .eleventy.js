@@ -1,6 +1,5 @@
 // Inseriment plugins
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-const socialImages = require("@11tyrocks/eleventy-plugin-social-images");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const timeToRead = require('eleventy-plugin-time-to-read');
 const pluginBookshop = require("@bookshop/eleventy-bookshop");
@@ -17,15 +16,12 @@ module.exports = function (eleventyConfig) {
 
   // 11ty attivazione plugins
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
-  eleventyConfig.addPlugin(socialImages);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginBookshop({bookshopLocations: ["_component-library"],}));
   
   // Add YAML extension to use for data file
   eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
 
-  // Non badare ai file di questa cartella
-  eleventyConfig.ignores.delete("src/_11ty/_social/**/*.*");
 
   // Copia alcuni file statici
   eleventyConfig
@@ -74,9 +70,9 @@ module.exports = function (eleventyConfig) {
   });
   
 // Safe stopped working with Liquid so trying this
-  eleventyConfig.addFilter("safe", function(content) {
-    return content;
-  });
+  //eleventyConfig.addFilter("safe", function(content) {
+  //  return content;
+  //});
 
   // e alla fine
   return {

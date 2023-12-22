@@ -7,14 +7,14 @@ type: "website"
 
 <!DOCTYPE html>
 <html lang="en">
-{% include "head-website.liquid" %}
-<!-- Start Body -->
-<body>
+  {% include "head-website.liquid" %}
+  <!-- Start Body -->
+  <body>
     {% include "nav.liquid" %}
     <main data-pagefind-body>
-        {{ content | safe }}
+      {{ content }}
     </main>
     {% include "footer.liquid" %}
-</body>
+  </body>
 <!-- End Body -->
 </html>

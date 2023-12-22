@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./src/**/*.{html,njk,md,json,js}", "./.eleventy.js"],
+  content: ["./src/**/*.{html,njk,liquid,md,json,js}", "./.eleventy.js"],
   presets: [],
   darkMode: "media", // or 'class'
   theme: {

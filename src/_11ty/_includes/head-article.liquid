@@ -6,9 +6,6 @@
 {% assign pageDescription = description | default: '' -%}
 {% assign pageDescription = pageDescription | default: meta.siteDescription -%}
 
-<!-- Social Immagine -->
-{% assign pageSocialImg = meta.url | append: '/img/social/' | append: (title | slug) | append: '.png' -%}
-
 <!-- Url della pagina -->
 {% assign pageUrls = meta.url | append: page.url -%}
 
@@ -23,9 +20,6 @@
                 "@id": "{{ pageUrls }}"
             },
             "headline": "{{ pageTitle }}",
-            "image": [
-                "{{ pageSocialImg }}"
-            ],
             "datePublished": "{{ page.date }}",
             "dateModified": "{{ page.date }}",
             "author": {
