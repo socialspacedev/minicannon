@@ -1,0 +1,20 @@
+---
+title: "Generic page"
+description: "Is it a page like many others?"
+keyword: "test"
+type: "website"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  {% include "head-website.liquid" %}
+  <!-- Start Body -->
+  <body>
+    {% include "nav.liquid" %}
+    <main data-pagefind-body>
+        {{ content }}
+    </main>
+    {% include "footer.liquid" %}
+  </body>
+<!-- End Body -->
+</html>

@@ -6,6 +6,6 @@ tags:
 date:
 luogo: Posted
 type: article
-layout: article.njk
+layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
 ---

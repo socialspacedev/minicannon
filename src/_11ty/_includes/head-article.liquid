@@ -1,0 +1,41 @@
+<!-- Titolo Automatizzato -->
+{% assign pageTitle = title | default: '' -%}
+{% assign pageTitle = pageTitle | append: ' - ' | append: meta.siteName -%}
+
+<!-- Descrizione Automatizzata -->
+{% assign pageDescription = description | default: '' -%}
+{% assign pageDescription = pageDescription | default: meta.siteDescription -%}
+
+<!-- Url della pagina -->
+{% assign pageUrls = meta.url | append: page.url -%}
+
+{% include "head.liquid" %}
+    <!-- Schema json -->
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "NewsArticle",
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "{{ pageUrls }}"
+            },
+            "headline": "{{ pageTitle }}",
+            "datePublished": "{{ page.date }}",
+            "dateModified": "{{ page.date }}",
+            "author": {
+                "@type": "Person",
+                "name": "{{ meta.authorName }}"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "{{ meta.siteName }}",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "{{ meta.url }}img/avatar.webpg"
+                }
+            },
+            "description": "{{ pageDescription }}"
+        }
+    </script>
+</head>
+<!-- End Head - Article -->
