@@ -1,7 +1,7 @@
 {
   "name": "minimalism",
-  "version": "0.1.05",
-  "description": "I beg you God, make sure that it is the last!",
+  "version": "0.1.10",
+  "description": "Make this build please",
   "main": "index.js",
   "scripts": {
     "dev": "run-p dev:*",
