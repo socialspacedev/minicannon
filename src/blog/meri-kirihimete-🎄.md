@@ -1,11 +1,11 @@
 ---
 _schema: default
 title: Meri Kirihimete 🎄
-description: Wish everyone a celebratory yuletide despite the world going to hell.
+description: Hope your Christmas brings some cheer despite the world going to hell.
 tags:
   - post
   - christmas
-date: 2023-12-25T12:11:00+13:00
+date: 2023-12-25T15:11:00+13:00
 luogo: Posted
 type: article
 layout: article.liquid
