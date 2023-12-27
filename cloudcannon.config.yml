@@ -87,7 +87,7 @@ collections_config:
         remove_empty_inputs: false
         remove_extra_inputs: false
         icon: notes
-  meta-data:
+  data:
     path: _11ty/_data
     output: false
     description: Metadata for site layouts and other data
