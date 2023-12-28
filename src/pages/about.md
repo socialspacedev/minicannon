@@ -14,11 +14,25 @@ eleventyNavigation:
   title: About
   order: 2
 ---
-# About
+Kia ora tātou
 
-I'm a pākeha based in Otepoti, New Zealand. I'm Head of Customer Experience at <a href="https://cloudcannon.com" target="_blank" rel="noopener">CloudCannon</a>. A Parent. A Cat owner. An elderly footballer. Intermittent noise maker and collector of records. Formally, a business owner, academic, radio host, Tāmaki Makaurau citizen and other forgotten things.​​​​​<img src="/img/me-sideon.PNG" height="1795" width="2346" />Hit the social media links in the footer for more 👇🏻
+Ko Maungakiekie te maunga
+
+<p class="p1">Ko Hauraki te moana</p>
+
+Ko Tāmaki Makaurau te whenua tupu
+
+<p class="p1">Kei Ōtepoti au e noho ana</p>
+
+He kaiwhakahaere au i CloudCannon
+
+Ko Andrew tōku ingoa
+
+<p class="p1">Tēnā tātou katoa</p>
 
 <div class="cms-embed" data-cms-embed=""></div>
+
+I'm a pākeha based in Otepoti, New Zealand. I'm Head of Customer Experience at <a href="https://cloudcannon.com" target="_blank" rel="noopener">CloudCannon</a>. A Parent. A Cat owner. An elderly footballer. Intermittent noise maker and collector of records. Formally, a business owner, academic, radio host, Tāmaki Makaurau citizen and other forgotten things.​​​​​<img src="/img/me-sideon.PNG" height="1795" width="2346" />Hit the social media links in the footer for more 👇🏻
 
 ## Why Ānaru?
 
