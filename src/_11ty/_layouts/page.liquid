@@ -11,6 +11,7 @@ type: "website"
   <!-- Start Body -->
   <body>
     {% include "nav.liquid" %}
+    {% bookshop_include "page" content_blocks: content_blocks %}
     <main data-pagefind-body>
         {{ content }}
     </main>
