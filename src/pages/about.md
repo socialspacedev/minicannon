@@ -14,6 +14,8 @@ eleventyNavigation:
   title: About
   order: 2
 ---
+## Pepeha
+
 Kia ora tātou
 
 Ko Maungakiekie te maunga
@@ -30,7 +32,9 @@ Ko Andrew tōku ingoa
 
 <p class="p1">Tēnā tātou katoa</p>
 
-<div class="cms-embed" data-cms-embed=""></div>
+<a href="https://e-tangata.co.nz/reflections/pepeha-for-non-maori/" title="Find out more about pepeha for non-māori." target="_blank" rel="noopener">Pepeha for non-māori</a>
+
+
 
 ## Who am I?
 
