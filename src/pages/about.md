@@ -32,6 +32,8 @@ Ko Andrew tōku ingoa
 
 <div class="cms-embed" data-cms-embed=""></div>
 
+## Who am I?
+
 I'm a pākeha based in Otepoti, New Zealand. I'm Head of Customer Experience at <a href="https://cloudcannon.com" target="_blank" rel="noopener">CloudCannon</a>. A Parent. A Cat owner. An elderly footballer. Intermittent noise maker and collector of records. Formally, a business owner, academic, radio host, Tāmaki Makaurau citizen and other forgotten things.​​​​​<img src="/img/me-sideon.PNG" height="1795" width="2346" />Hit the social media links in the footer for more 👇🏻
 
 ## Why Ānaru?
