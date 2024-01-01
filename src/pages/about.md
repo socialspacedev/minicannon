@@ -34,11 +34,9 @@ Ko Andrew tōku ingoa
 
 <a href="https://e-tangata.co.nz/reflections/pepeha-for-non-maori/" title="Find out more about pepeha for non-māori." target="_blank" rel="noopener">Pepeha for non-māori</a>
 
-<img src="/img/me-sideon.PNG" alt="Dumb picture of Andrew Long" title="This is me relatively recently" height="1795" width="2346" />
+## <img src="/img/me-sideon.PNG" alt="Dumb picture of Andrew Long" title="This is me relatively recently" height="1795" width="2346" />Who am I?
 
-## Who am I?
-
-I'm a pākeha based in Otepoti, New Zealand. I'm Head of Customer Experience at <a href="https://cloudcannon.com" target="_blank" rel="noopener">CloudCannon</a>. A Parent. A Cat owner. An elderly footballer. Intermittent noise maker and collector of records. Formally, a business owner, academic, radio host, Tāmaki Makaurau citizen and other forgotten things.​​​​​<img src="/img/me-sideon.PNG" height="1795" width="2346" />Hit the social media links in the footer for more 👇🏻
+I'm a pākeha based in Otepoti, New Zealand. I'm Head of Customer Experience at <a href="https://cloudcannon.com" target="_blank" rel="noopener">CloudCannon</a>. A Parent. A Cat owner. An elderly footballer. Intermittent noise maker and collector of records. Formally, a business owner, academic, radio host, Tāmaki Makaurau citizen and other forgotten things.​​​​​
 
 ## Why Ānaru?
 
