@@ -1,7 +1,7 @@
 ---
 _schema: default
 title: Reacher round
-description: 'Mission complete: Every Reacher book read in one year.'
+description: 'Mission complete: Every Reacher book read.'
 tags:
   - post
   - reacher
@@ -14,13 +14,13 @@ permalink: blog/{{ title | slugify }}.html
 ---
 <img src="/img/reacher-books.png" alt="All Reacher books in chronological order" title="All Reacher books in chronological order" height="1471" width="3839" />
 
-Before January 2023 I had never read a [Jack Reacher]() novel. I had seen the films featuring Tom Cruise as the titular character and series 1 of the much better [TV show](). On the back of reading just one book, I set myself the arbitrary goal of reading the remaining books in one calendar year.
+Before January 2023 I had never read a [Jack Reacher]() novel. I had seen the films featuring Tom Cruise as the titular character and series 1 of the much better [TV show](). On the back of reading just one book, I set myself the arbitrary goal of reading the remaining books back to back.
 
-At that point there were 27 in the series with the <a href="https://www.penguin.co.nz/books/the-secret-9780552177566" title="The Secret by Lee and Andrew Child" target="_blank" rel="noopener">28th</a> published a few months ago. fSince I'm a slow reader and had exactly one book, it felt relatively ambitious. The book that launched this whole thing was ... and the last was Tripwire.
+At that point there were 26 in the series with the <a href="https://www.penguin.co.nz/books/the-secret-9780552177566" title="The Secret by Lee and Andrew Child" target="_blank" rel="noopener">28th</a> published a few months ago. Since I'm a slow reader it took two years. The book that launched this whole thing was *Make Me* (care of a Hospice book shop) and the last was *Tripwire*.
 
-I read them out of order based on availability – either in second hand shops or failing that, bought new. I read a couple on Kindle too but nabbed the paperbacks when I stumbled across them to complete the set (see photo up top).
+I read them out of order based on availability – second hand shops or failing that, bought new. I read a couple on Kindle concurrently and eventually nabbed the paperbacks when I stumbled across them to complete the set (see photo).
 
-Interestingly the I read the first three books right at the end which provided some missing context for later books. The rules and the man weren't quite as defined but the history was pretty well laid out from the start.
+Interestingly I read the first three books right at the end of the mission which provided some missing context for later books. The rules and the man weren't quite as defined but the history was pretty well laid out from the start.
 
 The series is consistently solid despite the pace they were released and the formula driving them. The worst by far was Echo Burning and for the top 5 in no particular order:
 
@@ -29,5 +29,7 @@ The series is consistently solid despite the pace they were released and the for
 * Personal
 
 * Night School
+
+* Make me
 
 *
