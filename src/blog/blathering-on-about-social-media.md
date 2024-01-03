@@ -6,6 +6,7 @@ tags:
   - post
   - social media
 date: 2013-06-23T14:24:00+12:00
+published: true
 luogo: Posted
 type: article
 layout: article.liquid
