@@ -6,6 +6,7 @@ tags:
   - post
   - social media
 date: 2023-10-20T03:03:36Z
+published: true
 luogo: Posted
 type: article
 layout: article.liquid

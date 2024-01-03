@@ -6,6 +6,7 @@ tags:
   - post
   - christmas
 date: 2023-12-25T15:11:00+13:00
+published: true
 luogo: Posted
 type: article
 layout: article.liquid

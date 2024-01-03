@@ -6,6 +6,7 @@ tags:
   - post
   - music
 date: 2023-11-27T12:03:00+13:00
+published: true
 luogo: Posted
 type: article
 layout: article.liquid

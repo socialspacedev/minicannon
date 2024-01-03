@@ -7,6 +7,7 @@ tags:
   - tumblr
   - academic
 date: 2016-06-10T15:02:00Z
+published: true
 luogo: Originally posted
 type: article
 layout: article.liquid

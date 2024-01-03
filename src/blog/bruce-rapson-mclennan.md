@@ -9,6 +9,7 @@ tags:
   - tumblr
   - obituary
 date: 2008-06-03T15:02:00Z
+published: true
 luogo: Originally posted
 type: article
 layout: article.liquid
