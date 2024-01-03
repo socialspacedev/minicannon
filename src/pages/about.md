@@ -14,7 +14,7 @@ eleventyNavigation:
   title: About
   order: 2
 ---
-## Pepeha (draft)
+## Pepeha\*
 
 Kia ora tātou
 
@@ -34,7 +34,7 @@ Ko Andrew tōku ingoa
 
 <p class="p1">Tēnā tātou katoa</p>
 
-<a href="https://e-tangata.co.nz/reflections/pepeha-for-non-maori/" title="Find out more about pepeha for non-māori." target="_blank" rel="noopener">Pepeha for non-māori</a>
+<p class="align-right"><em><sup>*Draft version as at Jan 3rd 2024</sup></em></p>
 
 ## <img src="/img/me-sideon.PNG" alt="Dumb picture of Andrew Long" title="This is me relatively recently" height="1795" width="2346" />Who am I?
 
