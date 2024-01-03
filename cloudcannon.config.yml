@@ -8,6 +8,7 @@ paths:
   includes: _11ty/_includes/
 _enabled_editors:
       - visual
+      - data
 collections_config:
   posts:
     path: blog
@@ -31,6 +32,8 @@ collections_config:
             - tumblr
           value_key:
         cascade: true
+      published:
+        type: switch
     _select_data: {}
     _structures: {}
     disable_add: false
