@@ -22,6 +22,8 @@ Ngā mihi au ki te maunga ō Maungakiekie
 
 <p class="p1">Ngā mihi au ki te moana o Hauraki</p>
 
+Ko Scotland te whenua ō ōku tīpuna
+
 Ko Tāmaki Makaurau te whenua tupu
 
 <p class="p1">Kei Ōtepoti au e noho ana</p>
