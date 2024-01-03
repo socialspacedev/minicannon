@@ -14,13 +14,13 @@ eleventyNavigation:
   title: About
   order: 2
 ---
-## Pepeha
+## Pepeha (draft)
 
 Kia ora tātou
 
-Ko Maungakiekie te maunga
+Ngā mihi au ki te maunga ō Maungakiekie
 
-<p class="p1">Ko Hauraki te moana</p>
+<p class="p1">Ngā mihi au ki te moana o Hauraki</p>
 
 Ko Tāmaki Makaurau te whenua tupu
 
@@ -36,7 +36,7 @@ Ko Andrew tōku ingoa
 
 ## <img src="/img/me-sideon.PNG" alt="Dumb picture of Andrew Long" title="This is me relatively recently" height="1795" width="2346" />Who am I?
 
-I'm a pākeha based in Otepoti, New Zealand. I'm Head of Customer Experience at <a href="https://cloudcannon.com" target="_blank" rel="noopener">CloudCannon</a>. A Parent. A Cat owner. An elderly footballer. Intermittent noise maker and collector of records. Formally, a business owner, academic, radio host, Tāmaki Makaurau citizen and other forgotten things.​​​​​
+I'm pākeha (tangata Tiriti) based in Otepoti, New Zealand. I'm Head of Customer Experience at <a href="https://cloudcannon.com" target="_blank" rel="noopener">CloudCannon</a>. A Parent. A Cat owner. An elderly footballer. Intermittent noise maker and collector of records. Formally, a business owner, academic, radio host, Tāmaki Makaurau citizen and other forgotten things.​​​​​
 
 ## Why Ānaru?
 
