@@ -7,7 +7,7 @@ tags:
   - reacher
   - books
 date: 2024-01-01T17:00:00+13:00
-published: true
+published: false
 luogo: Posted
 type: article
 layout: article.liquid
@@ -17,20 +17,18 @@ permalink: blog/{{ title | slugify }}.html
 
 Before January 2022 I had never read a [Jack Reacher]() novel. I had seen the films featuring Tom Cruise as the titular character and series 1 of the much better [TV show](). On the back of reading just one book, I set myself the arbitrary goal of reading the remaining books back to back.
 
-At that point there were 26 in the series with the <a href="https://www.penguin.co.nz/books/the-secret-9780552177566" title="The Secret by Lee and Andrew Child" target="_blank" rel="noopener">28th</a> published a few months ago. Since I'm a slow reader it took two years. The book that launched this whole thing was *Make Me* (care of a Hospice book shop) and the last was *Tripwire*.
+At that point there were 26 in the series with the <a href="https://www.penguin.co.nz/books/the-secret-9780552177566" title="The Secret by Lee and Andrew Child" target="_blank" rel="noopener">28th</a> published a few months ago. *Make Me* (care of a Hospice book shop) kicked things off with*Tripwire* finishing the journey. Turns out I'm a slow reader so it ended up taking two years.
 
-I read them out of order based on availability – second hand shops or failing that, bought new. I read a couple on Kindle concurrently and eventually nabbed the paperbacks when I stumbled across them to complete the set (see photo).
+I read them out of order determined by availability at second hand shops or failing that, bought new. I read a couple on Kindle concurrently and eventually nabbed the paperbacks to complete the set (see my bookshelf photo above).
 
-Interestingly I read the first three books right at the end which provided missing context for later books. The rules and the man weren't quite as defined but the history was pretty well laid out from the start.
+The series was a consistently solid read despite the annual release schedule and the well established formula. The worst book by far was *Echo Burning* and for the top 5 we have (in no particular order):
 
-The series is consistently solid despite the pace they were released and the formula driving them. The worst by far was *Echo Burning* and for the top 5 – in no particular order – we have:
+* *Tripwire*
 
-* Tripwire
+* *Personal*
 
-* Personal
+* *Night School*
 
-* Night School
+* *Make me*
 
-* Make me
-
-* Bad Luck and Trouble
+* *Bad Luck and Trouble*
