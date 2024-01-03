@@ -22,7 +22,7 @@ I read them out of order based on availability – second hand shops or failing 
 
 Interestingly I read the first three books right at the end which provided missing context for later books. The rules and the man weren't quite as defined but the history was pretty well laid out from the start.
 
-The series is consistently solid despite the pace they were released and the formula driving them. The worst by far was *Echo Burning* and for the top 5 –&nbsp;in no particular order:
+The series is consistently solid despite the pace they were released and the formula driving them. The worst by far was *Echo Burning* and for the top 5 – in no particular order – we have:
 
 * Tripwire
 
