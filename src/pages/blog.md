@@ -1,7 +1,7 @@
 ---
 _schema: default
 title: Blog
-description: What is this page about?
+description: Index page of blog posts
 date:
 luogo: Posted
 type: website
@@ -15,5 +15,3 @@ eleventyNavigation:
   order: 3
 ---
 # Blog
-
-Posts are currently hosted on <a target="_blank" rel="noopener" href="http://blog.anaru.nz">Tumblr</a> and have been since at least 2008. I have a project to bring them all into this site on mass but for now, I'll manually add the odd post.
