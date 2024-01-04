@@ -15,5 +15,3 @@ eleventyNavigation:
   order: 3
 ---
 # Blog
-
-Intermittent fluff.
