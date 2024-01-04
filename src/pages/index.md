@@ -8,7 +8,6 @@ type: website
 layout: page.liquid
 keyword: index
 tags: pages
-content_blocks:
 permalink: '{{ title | slugify }}.html'
 eleventyNavigation:
   key: '{{ title | slugify }}'
