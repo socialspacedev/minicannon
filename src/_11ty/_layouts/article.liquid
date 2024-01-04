@@ -24,8 +24,8 @@ type: "article"
         {{ content }}
         
         {%- if collections.posts %}
-{%- set previousPost = collections.posts | getPreviousCollectionItem %}
-{%- set nextPost = collections.posts | getNextCollectionItem %}
+{%- assign previousPost = collections.posts | getPreviousCollectionItem %}
+{%- assign nextPost = collections.posts | getNextCollectionItem %}
 {%- if nextPost or previousPost %}
 <ul class="links-nextprev">
 	{%- if previousPost %}<li>Previous: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>{% endif %}
