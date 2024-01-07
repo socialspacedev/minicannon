@@ -1,6 +1,6 @@
 ---
 _schema: default
-title: DJing Vespa styles
+title: Mobile DJ unit FTW
 description: The right way to DJ.
 tags:
   - post
