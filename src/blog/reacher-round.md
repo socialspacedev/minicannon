@@ -33,4 +33,4 @@ The series was a consistently solid read despite the annual release schedule and
 
 * *Bad Luck and Trouble*
 
-There are many best of lists but no-one will agree on a definitive ranking of the Reacher canon. However, this <a href="https://thespinoff.co.nz/books/25-11-2022/all-28-of-lee-childs-jack-reacher-novels-ranked-from-worst-to-best" target="_blank" rel="noopener">Spinoff article</a> is a nice place to start.
+There are many best of lists but no-one will agree on a definitive ranking of . However, this <a href="https://thespinoff.co.nz/books/25-11-2022/all-28-of-lee-childs-jack-reacher-novels-ranked-from-worst-to-best" target="_blank" rel="noopener">Spinoff article</a> is a nice place to start.
