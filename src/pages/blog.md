@@ -14,4 +14,4 @@ eleventyNavigation:
   title: Blog
   order: 3
 ---
-# Blog
+# Blog posts
