@@ -8,10 +8,9 @@ type: website
 layout: blog.liquid
 keyword: blog
 tags: pages
-permalink: '{{ title | slugify }}.html'
 eleventyNavigation:
   key: '{{ title | slugify }}'
   title: Blog
   order: 3
 ---
-# Blog
+# Blog posts

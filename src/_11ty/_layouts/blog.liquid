@@ -3,6 +3,12 @@ title: "Blog"
 description: "Here are my posts"
 keyword: "test"
 type: "website"
+pagination:
+  data: collections.post
+  size: 5
+  alias: posts
+  reverse: true
+  permalink: "split/page-{{ pagination.pageNumber | plus: 1 }}/index.html"
 ---
 
 <!DOCTYPE html>
@@ -14,7 +20,7 @@ type: "website"
     <main>
           {{ content }}
         <ul class="elenco-posts">
-        {%- for post in collections.post reversed -%}
+        {%- for post in posts -%}
           <li class="posts">
             <h2>
               <a href="{{ post.url }}">{{ post.data.title }}</a>
@@ -27,7 +33,23 @@ type: "website"
           </li>
         {%- endfor -%}
       </ul>
-    </main>
+    <!-- Pagination links -->
+    {% if pagination.pageLinks.length > 1 %}  
+      <nav style="padding-top: 40px; text-align:center;">
+        {% if pagination.previousPageLink %}
+          <a href="{{ pagination.previousPageHref }}">Previous</a>
+        {% else %}
+          <span>First</span>
+        {% endif %}
+        &nbsp;&nbsp;
+        {% if pagination.nextPageLink %}
+          <a href="{{ pagination.nextPageHref}}">Next</a>
+        {% else %}
+          <span>Last</span>
+        {% endif %}
+      </nav>
+    {% endif %}
+   </main> 
     {% include "footer.liquid" %}
   </body>
 <!-- End Body -->
