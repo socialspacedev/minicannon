@@ -36,13 +36,13 @@ pagination:
     </main>
     <!-- Pagination links -->
     
-    {% if pagination.pageLinks.length > 1 %}
+    {% if pagination.pageLinks.length | greater: 1 %}
 
       <div class="pb-6 sm:pb-0">
       <p class="text-md text-gray-500">
         Showing
       <span class="font-medium">
-        {{ (pagination.pageNumber * pagination.size) | plus: 1 }}
+        {{ (pagination.pageNumber * pagination.size) + 1 }}
       </span>
       to
       <span class="font-medium">
