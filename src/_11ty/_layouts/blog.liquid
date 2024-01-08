@@ -35,7 +35,7 @@ pagination:
       </ul>
     <!-- Pagination links -->
     {% if pagination.pageLinks.length > 1 %}  
-      <nav>
+      <nav style="text-align:center;">
         {% if pagination.previousPageLink %}
           <a href="{{ pagination.previousPageHref }}">Previous</a>
         {% else %}
