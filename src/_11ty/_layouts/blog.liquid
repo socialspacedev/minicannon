@@ -5,10 +5,10 @@ keyword: "test"
 type: "website"
 pagination:
   data: collections.post
-  size: 7
+  size: 10
   alias: posts
   reverse: true
-  permalink: "blogs/page-{{ pagination.pageNumber | plus: 1 }}/index.html"
+  permalink: "split/page-{{ pagination.pageNumber | plus: 1 }}/index.html"
 ---
 
 <!DOCTYPE html>
