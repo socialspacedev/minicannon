@@ -35,6 +35,44 @@ pagination:
       </ul>
     </main>
     <!-- Pagination links -->
+    
+    {% if pagination.pageLinks.length > 1 %}
+
+      <div class="pb-6 sm:pb-0">
+      <p class="text-md text-gray-500">
+        Showing
+      <span class="font-medium">
+        {{ (pagination.pageNumber * pagination.size) + 1 }}
+      </span>
+      to
+      <span class="font-medium">
+        {% if pagination.nextPageLink %}
+          {{ (pagination.pageNumber * pagination.size) + pagination.size }}
+        {% else %}
+          {{ collections.all.length }}
+        {% endif %}
+      </span>
+      of
+      <span class="font-medium">{{ collections.all.length }}</span>
+      results
+      </p>
+    </div>
+  {% endif %}
+  
+  <nav class="pagination">
+    {% if pagination.previousPageLink %}
+      <a class="pagination__item" href="{{ pagination.previousPageHref }}">Previous</a>
+    {% else %}
+      <span class="pagination__item">Previous</span>
+    {% endif %}
+    {% if pagination.nextPageLink %}
+      <a class="pagination__item" href="{{ pagination.nextPageHref}}">Next</a>
+    {% else %}
+      <span class="pagination__item">Next</span>
+    {% endif %}
+  </nav>
+
+
     {% if pagination.pageLinks.length > 1 %}
       <nav class="pagination">
         {% if pagination.previousPageLink %}
@@ -50,18 +88,7 @@ pagination:
         {% endif %}
       </nav>
     {% endif %}
-     <!-- Pagination links #2 -->
-    <ul style="display: inline; text-align: center;">
-    <li><a href="{{ pagination.href.first }}">First</a></li>
-    <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Previous</a>{% else %}Previous{% endif %}</li>
-
-    <li>
-    Page {{ pagination.pageNumber | plus: 1 }}
-    </li>
-
-    <li>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next</a>{% else %}Next{% endif %}</li>
-    <li><a href="{{ pagination.href.last }}">Last</a></li>
-</ul>
+    
     {% include "footer.liquid" %}
   </body>
 <!-- End Body -->
