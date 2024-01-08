@@ -35,15 +35,15 @@ pagination:
       </ul>
     <!-- Pagination links -->
     {% if pagination.pageLinks.length > 1 %}  
-      <nav style="text-align:center;">
+      <nav style="padding-top: 20px;">
         {% if pagination.previousPageLink %}
-          <a href="{{ pagination.previousPageHref }}">Previous</a>
+          <a style="text-align:left;" href="{{ pagination.previousPageHref }}">Previous</a>
         {% else %}
           <span>Previous</span>
         {% endif %}
         &nbsp;&nbsp;
         {% if pagination.nextPageLink %}
-          <a href="{{ pagination.nextPageHref}}">Next</a>
+          <a style="text-align:right;" href="{{ pagination.nextPageHref}}">Next</a>
         {% else %}
           <span>Next</span>
         {% endif %}
