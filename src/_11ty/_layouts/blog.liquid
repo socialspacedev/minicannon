@@ -8,7 +8,7 @@ pagination:
   size: 7
   alias: posts
   permalink: "different/page-{{ pagination.pageNumber | plus: 1 }}/index.html"
-  resolve: values
+  addAllPagesToCollections: true
 ---
 
 <!DOCTYPE html>
