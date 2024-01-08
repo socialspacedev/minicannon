@@ -36,29 +36,6 @@ pagination:
     </main>
     <!-- Pagination links -->
     
-    {% if pagination.pageLinks.length | > 1 %}
-
-      <div class="pb-6 sm:pb-0">
-      <p class="text-md text-gray-500">
-        Showing
-      <span class="font-medium">
-        {{ (pagination.pageNumber * pagination.size) + 1 }}
-      </span>
-      to
-      <span class="font-medium">
-        {% if pagination.nextPageLink %}
-          {{ (pagination.pageNumber * pagination.size) + pagination.size }}
-        {% else %}
-          {{ collections.all.length }}
-        {% endif %}
-      </span>
-      of
-      <span class="font-medium">{{ collections.all.length }}</span>
-      results
-      </p>
-    </div>
-  {% endif %}
-  
   <nav class="pagination">
     {% if pagination.previousPageLink %}
       <a class="pagination__item" href="{{ pagination.previousPageHref }}">Previous</a>
