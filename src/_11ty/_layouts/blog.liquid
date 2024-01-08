@@ -8,6 +8,7 @@ pagination:
   size: 7
   alias: posts
   reverse: true
+  permalink: "blogs/page-{{ pagination.pageNumber | plus: 1 }}/index.html"
 ---
 
 <!DOCTYPE html>
@@ -33,6 +34,22 @@ pagination:
         {%- endfor -%}
       </ul>
     </main>
+    <!-- Pagination links -->
+    {% if pagination.pageLinks.length > 1 %}
+      <nav class="pagination">
+        {% if pagination.previousPageLink %}
+          <a class="pagination__item" href="{{ pagination.previousPageHref | url }}">Newer Articles</a>
+        {% else %}
+          <span class="pagination__item">Newer Articles</span>
+        {% endif %}
+
+        {% if pagination.nextPageLink %}
+          <a class="pagination__item" href="{{ pagination.nextPageHref | url }}">Older Articles</a>
+        {% else %}
+          <span class="pagination__item">Older Articles</span>
+        {% endif %}
+      </nav>
+    {% endif %}
     {% include "footer.liquid" %}
   </body>
 <!-- End Body -->
