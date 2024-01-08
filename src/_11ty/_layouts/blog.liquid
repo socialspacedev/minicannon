@@ -35,33 +35,18 @@ pagination:
       </ul>
     </main>
     <!-- Pagination links -->
-    
-  <nav class="pagination">
-    {% if pagination.previousPageLink %}
-      <a class="pagination__item" href="{{ pagination.previousPageHref }}">Previous</a>
-    {% else %}
-      <span class="pagination__item">Previous</span>
-    {% endif %}
-    {% if pagination.nextPageLink %}
-      <a class="pagination__item" href="{{ pagination.nextPageHref}}">Next</a>
-    {% else %}
-      <span class="pagination__item">Next</span>
-    {% endif %}
-  </nav>
-
-
-    {% if pagination.pageLinks.length > 1 %}
+    {% if pagination.pageLinks.length > 1 %}  
       <nav class="pagination">
         {% if pagination.previousPageLink %}
-          <a class="pagination__item" href="{{ pagination.previousPageHref | url }}">Newer Articles</a>
+          <a class="pagination__item" href="{{ pagination.previousPageHref }}">Previous</a>
         {% else %}
-          <span class="pagination__item">Newer Articles</span>
+          <span class="pagination__item">Previous</span>
         {% endif %}
-
+        
         {% if pagination.nextPageLink %}
-          <a class="pagination__item" href="{{ pagination.nextPageHref | url }}">Older Articles</a>
+          <a class="pagination__item" href="{{ pagination.nextPageHref}}">Next</a>
         {% else %}
-          <span class="pagination__item">Older Articles</span>
+          <span class="pagination__item">Next</span>
         {% endif %}
       </nav>
     {% endif %}
