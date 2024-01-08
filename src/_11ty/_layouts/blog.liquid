@@ -36,13 +36,13 @@ pagination:
     </main>
     <!-- Pagination links -->
     {% if pagination.pageLinks.length > 1 %}  
-      <nav class="info">
+      <nav >
         {% if pagination.previousPageLink %}
-          <a href="{{ pagination.previousPageHref }}">Previous</a>
+          <a class="active" href="{{ pagination.previousPageHref }}">Previous</a>
         {% else %}
           <span>Previous</span>
         {% endif %}
-        &nbsp;|&nbsp;
+        &nbsp;&nbsp;
         {% if pagination.nextPageLink %}
           <a href="{{ pagination.nextPageHref}}">Next</a>
         {% else %}
