@@ -34,7 +34,7 @@ Ko Andrew tōku ingoa
 
 <p class="p1">Tēnā tātou katoa</p>
 
-<p class="align-right"><em><sup>*Draft version as at Jan 3rd 2024</sup></em></p>
+<p class="align-right"><em><sup>*Work in progress</sup></em></p>
 
 ## <img src="/img/me-sideon.PNG" alt="Dumb picture of Andrew Long" title="This is me relatively recently" height="1795" width="2346" />Who am I?
 
