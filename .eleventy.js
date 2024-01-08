@@ -26,6 +26,7 @@ module.exports = function (eleventyConfig) {
   // Copia alcuni file statici
   eleventyConfig
     .addPassthroughCopy({ "src/_11ty/_static/favicon": "favicon" })
+    .addPassthroughCopy({ 'src/robots.txt': '/robots.txt' })
     .addPassthroughCopy({ "src/_11ty/_static/img": "img" });
 
   // Mostrare l'anno nel footer
