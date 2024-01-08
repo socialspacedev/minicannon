@@ -50,6 +50,18 @@ pagination:
         {% endif %}
       </nav>
     {% endif %}
+     <!-- Pagination links #2 -->
+    <ul>
+    <li><a href="{{ pagination.href.first }}">First</a></li>
+    <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Previous</a>{% else %}Previous{% endif %}</li>
+
+    <li>
+    Page {{ pagination.pageNumber | plus: 1 }}
+    </li>
+
+    <li>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next</a>{% else %}Next{% endif %}</li>
+    <li><a href="{{ pagination.href.last }}">Last</a></li>
+</ul>
     {% include "footer.liquid" %}
   </body>
 <!-- End Body -->
