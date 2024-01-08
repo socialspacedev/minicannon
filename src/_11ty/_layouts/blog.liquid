@@ -36,7 +36,7 @@ pagination:
     </main>
     <!-- Pagination links -->
     
-    {% if pagination.pageLinks.length | greater: 1 %}
+    {% if pagination.pageLinks.length | > 1 %}
 
       <div class="pb-6 sm:pb-0">
       <p class="text-md text-gray-500">
