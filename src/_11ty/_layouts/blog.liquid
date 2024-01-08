@@ -39,13 +39,13 @@ pagination:
         {% if pagination.previousPageLink %}
           <a href="{{ pagination.previousPageHref }}">Previous</a>
         {% else %}
-          <span>Previous</span>
+          <span>First</span>
         {% endif %}
         &nbsp;&nbsp;
         {% if pagination.nextPageLink %}
           <a href="{{ pagination.nextPageHref}}">Next</a>
         {% else %}
-          <span>Next</span>
+          <span>Last</span>
         {% endif %}
       </nav>
     {% endif %}
