@@ -21,7 +21,9 @@ type: "article"
             {{ content | timeToRead }}&nbsp;to&nbsp;read
         </small>
         <h1>{{ title }}</h1>
+        <div class="content">
         {{ content }}
+        </div>
     </article>
     {% include "footer.liquid" %}
 </body>

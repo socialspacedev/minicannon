@@ -17,9 +17,9 @@ pagination:
   <!-- Start Body -->
   <body>
     {% include "nav.liquid" %}
-    <main>
-          {{ content }}
-        <ul class="elenco-posts">
+      <main>
+      {{ content }}
+      <ul class="elenco-posts">
         {%- for post in posts -%}
           <li class="posts">
             <h2>
@@ -33,23 +33,23 @@ pagination:
           </li>
         {%- endfor -%}
       </ul>
-    <!-- Pagination links -->
-    {% if pagination.pageLinks.length > 1 %}  
-      <nav style="padding-top: 40px; text-align:center;">
-        {% if pagination.previousPageLink %}
-          <a href="{{ pagination.previousPageHref }}">Previous</a>
-        {% else %}
-          <span>First</span>
-        {% endif %}
-        &nbsp;&nbsp;
-        {% if pagination.nextPageLink %}
-          <a href="{{ pagination.nextPageHref}}">Next</a>
-        {% else %}
-          <span>Last</span>
-        {% endif %}
-      </nav>
-    {% endif %}
-   </main> 
+      <!-- Pagination links -->
+      {% if pagination.pageLinks.length > 1 %}
+          <nav class="paginate">
+            {% if pagination.previousPageLink %}
+              <a href="{{ pagination.previousPageHref }}">Previous</a>
+            {% else %}
+              <span>First</span>
+            {% endif %}
+            &nbsp;
+            {% if pagination.nextPageLink %}
+              <a href="{{ pagination.nextPageHref}}">Next</a>
+            {% else %}
+              <span>Last</span>
+            {% endif %}
+          </nav>
+      {% endif %}
+    </main>
     {% include "footer.liquid" %}
   </body>
 <!-- End Body -->

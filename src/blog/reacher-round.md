@@ -19,7 +19,7 @@ Before January 2022 I had never read a [Jack Reacher]() novel. I had seen the fi
 
 At that point there were 26 in the series with the <a href="https://www.penguin.co.nz/books/the-secret-9780552177566" title="The Secret by Lee and Andrew Child" target="_blank" rel="noopener">28th</a> published a few months ago. *Make Me* (care of a Hospice book shop) kicked things off with*Tripwire* finishing the journey. Turns out I'm a slow reader so it ended up taking two years.
 
-I read them out of order as determined by availability at second hand shops or failing that, bought new. I read a couple on Kindle concurrently and eventually nabbed the paperbacks to complete the set (see my bookshelf photo above).
+I read them out of order as determined b availability at second hand shops or failing that, bought new. I read a couple on Kindle concurrently and eventually nabbed the paperbacks to complete the set (see my bookshelf photo above).
 
 The series was a consistently solid read despite the annual release schedule and the well established formula. The worst book by far was *Echo Burning* and for the top 5 we have (in no particular order):
 

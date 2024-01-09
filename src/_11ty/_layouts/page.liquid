@@ -11,9 +11,10 @@ type: "website"
   <!-- Start Body -->
   <body>
     {% include "nav.liquid" %}
- 
     <main data-pagefind-body>
+      <div class="content">
         {{ content }}
+      </div>
     </main>
     {% include "footer.liquid" %}
   </body>
