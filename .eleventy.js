@@ -4,6 +4,7 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const timeToRead = require('eleventy-plugin-time-to-read');
 const pluginBookshop = require("@bookshop/eleventy-bookshop");
 const yaml = require("js-yaml");
+const Image = require("@11ty/eleventy-img");
 
 // Helper packages
 const htmlmin = require("html-minifier");
@@ -67,11 +68,24 @@ module.exports = function (eleventyConfig) {
       return data.timing;
     }
   });
-  
-// Safe stopped working with Liquid so trying this
-  //eleventyConfig.addFilter("safe", function(content) {
-  //  return content;
-  //});
+ 
+ // 11ty image optimisation 
+eleventyConfig.addShortcode("image", async function(src, alt, sizes) {
+		let metadata = await Image(src, {
+			widths: [300, 600],
+			formats: ["avif", "jpeg"]
+		});
+
+		let imageAttributes = {
+			alt,
+			sizes,
+			loading: "lazy",
+			decoding: "async",
+		};
+
+		// You bet we throw an error on a missing alt (alt="" works okay)
+		return Image.generateHTML(metadata, imageAttributes);
+	});
 
   // e alla fine
   return {
