@@ -38,7 +38,7 @@ Tēnā tātou katoa
 
 ![Dumb picture of Andrew Long](/img/me-sideon.PNG "This is me relatively recently")
 
-{% image "/img/me-sideon.PNG", "Dumb picture of Andrew Long" %}
+{% image "me-sideon.PNG", "Dumb picture of Andrew Long" %}
 
 ## Who am I?
 
