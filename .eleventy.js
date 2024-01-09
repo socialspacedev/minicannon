@@ -74,7 +74,7 @@ eleventyConfig.addShortcode("image", async function(src, alt, sizes) {
 		let metadata = await Image(src, {
 			widths: [300, 600],
 			formats: ["avif", "jpeg"],
-			urlPath: "_11ty/_static/img/"",
+			urlPath: "_11ty/_static/img/"
 		});
 
 		let imageAttributes = {
