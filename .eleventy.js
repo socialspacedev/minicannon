@@ -25,7 +25,6 @@ module.exports = function (eleventyConfig) {
 
   // Copia alcuni file statici
   eleventyConfig
-    .addPassthroughCopy({ "src/_11ty/_static/app/*.*": "/" })
     .addPassthroughCopy({ "src/_11ty/_static/favicon": "favicon" })
     .addPassthroughCopy({ "src/_11ty/_static/img": "img" });
 
@@ -46,7 +45,7 @@ module.exports = function (eleventyConfig) {
 
   // Data leggibile
   eleventyConfig.addFilter("readableDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
+    return DateTime.fromJSDate(dateObj, { zone: "utc+13" }).toFormat(
       "dd LLL yyyy"
     );
   });
