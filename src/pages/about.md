@@ -34,7 +34,7 @@ Ko Andrew tōku ingoa
 
 Tēnā tātou katoa
 
-*<sub>\*Work in progress</sub>*
+*<sub>*Work in progress</sub>*
 
 <img src="/img/me-sideon.PNG" alt="Dumb picture of Andrew Long" title="This is me relatively recently" height="1795" width="2346" />
 
