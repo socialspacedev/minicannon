@@ -63,6 +63,11 @@
   .posts > h2 > a {
     @apply no-underline font-extrabold;
   }
+  .paginate {
+    padding-top: 40px; 
+    text-align:center; 
+    font-size: 80%
+  }
   footer {
     @apply border-t flex flex-col-reverse justify-between gap-5;
   }

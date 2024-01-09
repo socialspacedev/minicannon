@@ -20,23 +20,25 @@ Kia ora tātou
 
 Ngā mihi au ki te maunga ō Maungakiekie
 
-<p class="p1">Ngā mihi au ki te moana o Hauraki</p>
+Ngā mihi au ki te moana o Hauraki
 
 Ko Scotland te whenua ō ōku tīpuna
 
 Ko Tāmaki Makaurau te whenua tupu
 
-<p class="p1">Kei Ōtepoti au e noho ana</p>
+Kei Ōtepoti au e noho ana
 
 He kaiwhakahaere au i CloudCannon
 
 Ko Andrew tōku ingoa
 
-<p class="p1">Tēnā tātou katoa</p>
+Tēnā tātou katoa
 
-<p class="align-right"><em><sup>*Work in progress</sup></em></p>
+*<sub>\*Work in progress</sub>*
 
-## <img src="/img/me-sideon.PNG" alt="Dumb picture of Andrew Long" title="This is me relatively recently" height="1795" width="2346" />Who am I?
+<img src="/img/me-sideon.PNG" alt="Dumb picture of Andrew Long" title="This is me relatively recently" height="1795" width="2346" />
+
+## Who am I?
 
 I'm pākeha (tangata Tiriti) based in Otepoti, New Zealand. I'm Head of Customer Experience at <a href="https://cloudcannon.com" target="_blank" rel="noopener">CloudCannon</a>. A Parent. A Cat owner. An elderly footballer. Intermittent noise maker and collector of records. Formally, a business owner, academic, radio host, Tāmaki Makaurau citizen and other forgotten things.​​​​​
 
