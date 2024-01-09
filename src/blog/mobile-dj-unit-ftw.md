@@ -1,7 +1,7 @@
 ---
 _schema: default
 title: Mobile DJ unit FTW
-description: Vespa sidecar DJ setup
+description: Vespa sidecar DJ setup.
 tags:
   - post
   - vespa
