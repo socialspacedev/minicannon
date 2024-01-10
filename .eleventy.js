@@ -70,14 +70,15 @@ module.exports = function (eleventyConfig) {
     }
   });
 
- eleventyConfig.addShortcode("image", async (srcFilePath, alt, sizes) => {
+  // 11ty image optimisation
+  eleventyConfig.addShortcode("image", async (srcFilePath, alt, sizes) => {
    
-  let inputFilePath = path.join(eleventyConfig.dir.input, eleventyConfig.dir.static, srcFilePath);
+    let inputFilePath = path.join(eleventyConfig.dir.input, eleventyConfig.dir.static, srcFilePath);
 
-  let metadata = await Image(inputFilePath, {
+    let metadata = await Image(inputFilePath, {
       widths: [400, 800, 1600],
       formats: ["avif", "webp", "svg", "jpeg"],
-      outputDir: "./_site/optimized/",
+      outputDir: "./public/optimized/",
       urlPath: "/optimized/",
       svgShortCiruit: "size",
       // svgCompressionSize: "br",
@@ -89,7 +90,7 @@ module.exports = function (eleventyConfig) {
       loading: "eager",
       decoding: "async",
     });
- });
+  });
 		
   // e alla fine
   return {
