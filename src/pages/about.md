@@ -38,7 +38,7 @@ Tēnā tātou katoa
 
 ![Dumb picture of Andrew Long](/img/me-sideon.PNG "This is me relatively recently")
 
-{% image "(/img/me-sideon.PNG", "default photo of something" %}
+{% image "/img/me-sideon.PNG", "default photo of something" %}
 
 {% bookshop "sample" text: "Hello from the sample component" %}
 
