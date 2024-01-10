@@ -14,6 +14,6 @@ eleventyNavigation:
   title: Home
   order: 1
 ---
-# Nau mai, Haere mai
+# Nau mai, Haere mai!
 
 Welcome to this small website I'm working on to better understand the full potential of <a href="https://cloudcannon.com" target="_blank" rel="noopener">CloudCannon</a>. It's built using the speedy <a href="https://www.11ty.dev/" target="_blank" rel="noopener">11ty</a> static site generator (SSG) based on this elegant <a href="https://github.com/MarcoMicale/Minimalism" target="_blank" rel="noopener">minimalism</a> theme. I've customised a bunch of things behind the scenes and plan to evolve this into a complete CloudCannon site optimised for visual editing.
