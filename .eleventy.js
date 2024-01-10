@@ -70,11 +70,16 @@ module.exports = function (eleventyConfig) {
   });
  
  // 11ty image optimisation 
-eleventyConfig.addShortcode("image", async function(src, alt, sizes) {
-		let metadata = await Image(src, {
-			widths: [300, 600],
-			formats: ["avif", "jpeg", "png"],
-		});
+//  eleventyConfig.addShortcode("image", async function(src, alt) {
+//		let metadata = await Image(src, {
+//			widths: [300, 600],
+//			formats: ["avif", "jpeg", "png"],
+//		});
+
+	eleventyConfig.addPlugin(eleventyImagePlugin, {
+		// Set global default options
+		formats: ["webp", "jpeg", "png"],
+		urlPath: "/img/",
 
 		let imageAttributes = {
 			alt,
