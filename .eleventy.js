@@ -4,6 +4,7 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const timeToRead = require('eleventy-plugin-time-to-read');
 const pluginBookshop = require("@bookshop/eleventy-bookshop");
 const yaml = require("js-yaml");
+const path = require("node:path");
 const Image = require("@11ty/eleventy-img");
 
 // Helper packages
@@ -70,24 +71,24 @@ module.exports = function (eleventyConfig) {
   });
 
 
-  eleventyConfig.addShortcode("image", async function(src, alt, sizes) {
-		let metadata = await Image(src, {
-			widths: [300, 600],
-			formats: ["avif", "jpeg", "png"],
-			urlPath: "/img/",
-//			outputDir: "/img/"
-		});
+  let inputFilePath = path.join(eleventyConfig.dir.input, srcFilePath);
 
-		let imageAttributes = {
-			alt,
-			sizes,
-			loading: "lazy",
-			decoding: "async",
-		};
+  let metadata = await Image(inputFilePath, {
+      widths: [400, 800, 1600],
+      formats: ["avif", "webp", "svg", "jpeg"],
+      outputDir: "./_site/optimized/",
+      urlPath: "/optimized/",
+      svgShortCiruit: "size",
+      // svgCompressionSize: "br",
+    });
 
-		// You bet we throw an error on a missing alt (alt="" works okay)
-		return Image.generateHTML(metadata, imageAttributes);
-	});
+    return Image.generateHTML(metadata, {
+      alt,
+      sizes,
+      loading: "eager",
+      decoding: "async",
+    });
+  });
 		
   // e alla fine
   return {
