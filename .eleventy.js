@@ -80,6 +80,7 @@ module.exports = function (eleventyConfig) {
 		// Set global default options
 		formats: ["webp", "jpeg", "png"],
 		urlPath: "/img/",
+	};
 
 		let imageAttributes = {
 			alt,
