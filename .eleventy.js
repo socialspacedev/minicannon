@@ -68,27 +68,24 @@ module.exports = function (eleventyConfig) {
       return data.timing;
     }
   });
- 
- // 11ty image optimisation 
-//  eleventyConfig.addShortcode("image", async function(src, alt) {
-//		let metadata = await Image(src, {
-//			widths: [300, 600],
-//			formats: ["avif", "jpeg", "png"],
-//		});
 
-// Image plugin
-	eleventyConfig.addPlugin(eleventyImagePlugin, {
-		// Set global default options
-		formats: ["webp", "jpeg", "png"],
-		urlPath: "/img/",
 
-		// Notably `outputDir` is resolved automatically
-		// to the project output directory
+  eleventyConfig.addShortcode("image", async function(src, alt) {
+		let metadata = await Image(src, {
+			widths: [300, 600],
+			formats: ["avif", "jpeg", "png"]
+		});
 
-		defaultAttributes: {
+		let imageAttributes = {
+			alt,
+			sizes,
 			loading: "lazy",
-			decoding: "async"
-		}
+			decoding: "async",
+		};
+
+		// You bet we throw an error on a missing alt (alt="" works okay)
+		return Image.generateHTML(metadata, imageAttributes);
+	});
 		
 	});
 
