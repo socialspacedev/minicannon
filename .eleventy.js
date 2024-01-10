@@ -88,7 +88,7 @@ module.exports = function (eleventyConfig) {
       loading: "eager",
       decoding: "async",
     });
- });
+// });
 		
   // e alla fine
   return {
