@@ -38,7 +38,7 @@ Tēnā tātou katoa
 
 ![Dumb picture of Andrew Long](/img/me-sideon.PNG "This is me relatively recently")
 
-{% image "src/_11ty/_static/img/me-sideon.PNG", "photo of Andrew" %}
+{% image "src/_11ty/_static/img/me-sideon.PNG", "photo of Andrew", "width: 600" %}
 
 ## Ko wai au?
 
