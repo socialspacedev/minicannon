@@ -10,9 +10,7 @@ keyword: index
 tags: pages
 permalink: '{{ title | slugify }}.html'
 eleventyNavigation:
-  key: '{{ title | slugify }}'
-  title: Home
-  order: 1
+  hide: true
 ---
 # Nau mai, Haere mai!
 

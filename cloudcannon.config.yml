@@ -22,8 +22,8 @@ collections_config:
       gallery:
     _editables: {}
     _enabled_editors:
-      - visual
       - content
+      - visual
     _inputs:
       tags:
         type: multiselect
@@ -110,6 +110,7 @@ collections_config:
 collections_config_override: false
 _enabled_editors:
   - visual
+  - content
   - data
 _inputs:
   date:
@@ -119,6 +120,7 @@ _inputs:
   image_file:
     type: file
     options:
+      width: 700
       resize_style: cover
 _select_data: {}
 _structures: {}
@@ -154,8 +156,8 @@ _editables:
     right: align-right
     snippet: true
     strike: true
-    subscript: true
-    superscript: true
+    subscript: false
+    superscript: false
     table: true
     underline: true
     undo: true
