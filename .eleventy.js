@@ -87,8 +87,6 @@ module.exports = function (eleventyConfig) {
 		return Image.generateHTML(metadata, imageAttributes);
 	});
 		
-	});
-
   // e alla fine
   return {
     passthroughFileCopy: true,
