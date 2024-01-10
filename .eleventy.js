@@ -76,21 +76,20 @@ module.exports = function (eleventyConfig) {
 //			formats: ["avif", "jpeg", "png"],
 //		});
 
+// Image plugin
 	eleventyConfig.addPlugin(eleventyImagePlugin, {
 		// Set global default options
 		formats: ["webp", "jpeg", "png"],
 		urlPath: "/img/",
-	};
 
-		let imageAttributes = {
-			alt,
-			sizes,
+		// Notably `outputDir` is resolved automatically
+		// to the project output directory
+
+		defaultAttributes: {
 			loading: "lazy",
-			decoding: "async",
-		};
-
-		// You bet we throw an error on a missing alt (alt="" works okay)
-		return Image.generateHTML(metadata, imageAttributes);
+			decoding: "async"
+		}
+		
 	});
 
   // e alla fine
