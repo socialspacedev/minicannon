@@ -73,7 +73,7 @@ module.exports = function (eleventyConfig) {
 
   let inputFilePath = path.join(eleventyConfig.dir.input, srcFilePath);
 
-  let metadata = await Image(inputFilePath, {
+  let metadata = Image(inputFilePath, {
       widths: [400, 800, 1600],
       formats: ["avif", "webp", "svg", "jpeg"],
       outputDir: "./_site/optimized/",
@@ -88,7 +88,7 @@ module.exports = function (eleventyConfig) {
       loading: "eager",
       decoding: "async",
     });
-//  });
+ });
 		
   // e alla fine
   return {
