@@ -1,7 +1,7 @@
 ---
 _schema: default
 title: Search
-description: Search for content on this website
+description: Search for content on this website.
 date: 2023-11-03T12:31:04+13:00
 luogo: Posted
 type: website
