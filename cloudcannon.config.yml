@@ -116,6 +116,10 @@ _inputs:
     type: datetime
     instance_value: NOW
     cascade: true
+  image_file:
+    type: file
+    options:
+      resize_style: cover
 _select_data: {}
 _structures: {}
 _editables:
