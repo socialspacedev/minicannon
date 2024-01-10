@@ -32,13 +32,13 @@ He kaiwhakahaere au i CloudCannon
 
 Ko Andrew tōku ingoa
 
-Tēnā tātou katoa  
-
+Tēnā tātou katoa 
+<br/>
 
 {%- assign sizes = "(min-width: 50em) 44.4375em, 89vw" %}
 
 {%- image "img/me-sideon.PNG", "Dumb picture of Andrew Long", sizes, image.data.prefer_svg -%}  
-
+<br/>
 
 ## Ko wai au?
 
