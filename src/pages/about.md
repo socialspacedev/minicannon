@@ -38,9 +38,7 @@ Tēnā tātou katoa
 
 ![Dumb picture of Andrew Long](/img/me-sideon.PNG "This is me relatively recently")
 
-<img src="src/_11ty/_static/img/me-sideon.PNG" alt="Test photo"/>
-
-<!-- {% image "src/_11ty/_static/img/me-sideon.PNG", "default photo of something", "(min-width: 30em) 50vw, 100vw" %} -->
+![Test photo](src/_11ty/_static/img/me-sideon.PNG "something else")
 
 ## Ko wai au?
 
