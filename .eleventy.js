@@ -70,7 +70,8 @@ module.exports = function (eleventyConfig) {
     }
   });
 
-
+ eleventyConfig.addShortcode("image", async (srcFilePath, alt, sizes) => {
+   
   let inputFilePath = path.join(eleventyConfig.dir.input, srcFilePath);
 
   let metadata = Image(inputFilePath, {
@@ -88,7 +89,7 @@ module.exports = function (eleventyConfig) {
       loading: "eager",
       decoding: "async",
     });
- };
+ });
 		
   // e alla fine
   return {
