@@ -32,8 +32,7 @@ He kaiwhakahaere au i CloudCannon
 
 Ko Andrew tōku ingoa
 
-Tēnā tātou katoa 
-<br/>
+Tēnā tātou katoa.  
 
 {%- assign sizes = "(min-width: 50em) 44.4375em, 89vw" %}
 
