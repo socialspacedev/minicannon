@@ -78,7 +78,7 @@ module.exports = function (eleventyConfig) {
     let metadata = await Image(inputFilePath, {
       widths: [400, 800, 1600],
       formats: ["avif", "webp", "svg", "jpeg"],
-      outputDir: "./optimized/",
+      outputDir: "./public/",
       urlPath: "/optimized/",
       svgShortCiruit: "size",
       // svgCompressionSize: "br",
