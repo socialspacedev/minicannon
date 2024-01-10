@@ -36,9 +36,7 @@ Tēnā tātou katoa
 
 \**<sub>Work in progress</sub>*
 
-![Dumb picture of Andrew Long](/img/me-sideon.PNG "This is me relatively recently")
-
-{%- assign sizes = "(min-width: 50em) 44.4375em, 89vw" %} {%- image "img/me-sideon.PNG", "photo of Andrew", sizes, image.data.prefer_svg -%}
+{%- assign sizes = "(min-width: 50em) 44.4375em, 89vw" %} {%- image "img/me-sideon.PNG", "Dumb picture of Andrew Long", sizes, image.data.prefer_svg -%}
 
 ## Ko wai au?
 
