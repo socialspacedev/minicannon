@@ -14,7 +14,7 @@ eleventyNavigation:
   title: About
   order: 2
 ---
-## Pepeha\*
+## Pepeha
 
 Kia ora tātou
 
@@ -38,11 +38,11 @@ Tēnā tātou katoa
 
 ![Dumb picture of Andrew Long](/img/me-sideon.PNG "This is me relatively recently")
 
-{% image "src/_11ty/_static/img/me-sideon.PNG", "default photo of something" %}
+{% image "src/_11ty/_static/img/me-sideon.PNG", "default photo of something", "(min-width: 30em) 50vw, 100vw" %}
 
 {% bookshop "sample" text: "Hello from the sample component" %}
 
-## Who am I?
+## Ko wai au?
 
 I'm pākeha (tangata Tiriti) based in Otepoti, New Zealand. I'm Head of Customer Experience at <a href="https://cloudcannon.com" target="_blank" rel="noopener">CloudCannon</a>. A Parent. A Cat owner. An elderly footballer. Intermittent noise maker and collector of records. Formally, a business owner, academic, radio host, Tāmaki Makaurau citizen and other forgotten things.​​​​​
 
