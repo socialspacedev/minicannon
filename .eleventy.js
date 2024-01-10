@@ -72,7 +72,7 @@ module.exports = function (eleventyConfig) {
 
  eleventyConfig.addShortcode("image", async (srcFilePath, alt, sizes) => {
    
-  let inputFilePath = path.join(eleventyConfig.dir.input, srcFilePath);
+  let inputFilePath = path.join(eleventyConfig.dir.static, srcFilePath);
 
   let metadata = await Image(inputFilePath, {
       widths: [400, 800, 1600],
@@ -100,6 +100,7 @@ module.exports = function (eleventyConfig) {
       includes: "/_11ty/_includes/",
       layouts: "/_11ty/_layouts/",
       data: "/_11ty/_data/",
+      static: "/_11ty/_static/",
       output: "./public/",
     },
   };
