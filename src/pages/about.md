@@ -38,8 +38,6 @@ Tēnā tātou katoa
 
 ![Dumb picture of Andrew Long](/img/me-sideon.PNG "This is me relatively recently")
 
-<!--{% image "src/_11ty/_static/img/me-sideon.PNG", "photo of Andrew", "width: 600" %} -->
-
 {%- assign sizes = "(min-width: 50em) 44.4375em, 89vw" %}
 {%- image "img/me-sideon.PNG", "photo of Andrew", sizes, image.data.prefer_svg -%}
 
