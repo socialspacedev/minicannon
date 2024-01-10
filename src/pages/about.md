@@ -41,7 +41,7 @@ Tēnā tātou katoa
 <!--{% image "src/_11ty/_static/img/me-sideon.PNG", "photo of Andrew", "width: 600" %} -->
 
 {%- assign sizes = "(min-width: 50em) 44.4375em, 89vw" %}
-{%- image "_11ty/_static/img/me-sideon.PNG", "photo of Andrew", sizes, image.data.prefer_svg -%}
+{%- image "img/me-sideon.PNG", "photo of Andrew", sizes, image.data.prefer_svg -%}
 
 ## Ko wai au?
 
