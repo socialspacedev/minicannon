@@ -11,6 +11,6 @@ tags: pages
 eleventyNavigation:
   key: '{{ title | slugify }}'
   title: Blog
-  order: 3
+  order: 2
 ---
 # Blog posts

@@ -10,10 +10,10 @@ keyword: index
 tags: pages
 permalink: '{{ title | slugify }}.html'
 eleventyNavigation:
-  key: '{{ title | slugify }}'
-  title: Home
-  order: 1
+  hide: true
 ---
 # Nau mai, Haere mai!
 
-Welcome to this small website I'm working on to better understand the full potential of <a href="https://cloudcannon.com" target="_blank" rel="noopener">CloudCannon</a>. It's built using the speedy <a href="https://www.11ty.dev/" target="_blank" rel="noopener">11ty</a> static site generator (SSG) based on this elegant <a href="https://github.com/MarcoMicale/Minimalism" target="_blank" rel="noopener">minimalism</a> theme. I've customised a bunch of things behind the scenes and plan to evolve this into a complete CloudCannon site optimised for visual editing.
+Welcome to my website. To find out a little more about me, head to the [about page](/about.html). For other random content, check out the [blog posts](/pages/blog/ "Index page for all blog posts."). And finally, for the tech behind this site, check out this [page](/site.html "Details about the tech used to build this website.").
+
+He iti kahurangi.

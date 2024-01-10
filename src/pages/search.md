@@ -12,7 +12,7 @@ permalink: '{{ title | slugify }}.html'
 eleventyNavigation:
   key: '{{ title | slugify }}'
   title: Search
-  order: 5
+  order: 4
 ---
 # Search
 

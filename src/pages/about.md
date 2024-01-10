@@ -12,7 +12,7 @@ permalink: '{{ title | slugify }}.html'
 eleventyNavigation:
   key: '{{ title | slugify }}'
   title: About
-  order: 2
+  order: 1
 ---
 ## Pepeha
 
