@@ -75,7 +75,7 @@ module.exports = function (eleventyConfig) {
 			widths: [300, 600],
 			formats: ["avif", "jpeg", "png"],
 			urlPath: "src/_11ty/_static/img/",
-			outputDir: "/img/"
+//			outputDir: "/img/"
 		});
 
 		let imageAttributes = {
