@@ -79,7 +79,7 @@ module.exports = function (eleventyConfig) {
       widths: [400, 800, 1600],
       formats: ["avif", "webp", "svg", "jpeg"],
       outputDir: "./public/img/",
-      urlPath: "/optimized/",
+      urlPath: "/img/",
       svgShortCiruit: "size",
       // svgCompressionSize: "br",
     });
