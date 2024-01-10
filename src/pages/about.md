@@ -34,10 +34,9 @@ Ko Andrew tōku ingoa
 
 Tēnā tātou katoa
 
-*<sub>Work in progress</sub>*
+{%- assign sizes = "(min-width: 50em) 44.4375em, 89vw" %}
 
-
-{%- assign sizes = "(min-width: 50em) 44.4375em, 89vw" %} {%- image "img/me-sideon.PNG", "Dumb picture of Andrew Long", sizes, image.data.prefer_svg -%}
+{%- image "img/me-sideon.PNG", "Dumb picture of Andrew Long", sizes, image.data.prefer_svg -%}
 
 
 ## Ko wai au?
