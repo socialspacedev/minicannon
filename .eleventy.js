@@ -1,4 +1,4 @@
-// Inseriment plugins
+// Insert plugins
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const timeToRead = require('eleventy-plugin-time-to-read');
@@ -13,10 +13,7 @@ const { DateTime } = require("luxon");
 
 // 11ty
 module.exports = function (eleventyConfig) {
-  // Apri automaticamente il browser
-  eleventyConfig.setBrowserSyncConfig({ open: true });
-
-  // 11ty attivazione plugins
+  // Enable 11ty plugins
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginBookshop({bookshopLocations: ["_component-library"],}));
@@ -25,12 +22,12 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
 
 
-  // Copia alcuni file statici
+  // Copy over some static files
   eleventyConfig
     .addPassthroughCopy({ "src/_11ty/_static/favicon": "favicon" })
     .addPassthroughCopy({ "src/_11ty/_static/img": "img" });
 
-  // Mostrare l'anno nel footer
+  // Show the year in the footer
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
   // HTML minify
@@ -45,7 +42,7 @@ module.exports = function (eleventyConfig) {
     return content;
   });
 
-  // Data leggibile
+  // Prettify dates
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc+13" }).toFormat(
       "dd LLL yyyy"
@@ -92,7 +89,7 @@ module.exports = function (eleventyConfig) {
     });
   });
 		
-  // e alla fine
+  // The end
   return {
     passthroughFileCopy: true,
     // Directory: in, out, etc...
