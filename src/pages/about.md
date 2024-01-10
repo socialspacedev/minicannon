@@ -1,7 +1,7 @@
 ---
 _schema: default
 title: About
-description: This is a little about me
+description: A little about me
 date:
 luogo: Posted
 type: website
