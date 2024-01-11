@@ -8,6 +8,7 @@ type: website
 layout: page.liquid
 keyword: index
 tags: pages
+
 eleventyNavigation:
   hide: true
 ---
