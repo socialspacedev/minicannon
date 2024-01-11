@@ -34,7 +34,7 @@
   <meta name="robots" content="{{ meta.robots }}" />
 
     {% comment %}
-      Autore
+      Author
     {% endcomment %}
   <meta name="author" content="{{ meta.authorName }}" />
 
@@ -49,14 +49,18 @@
   <link
     rel="preload"
     as="style"
-    href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300;400;500;600;700;800&subset=latin-ext&display=swap" />
+    href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300;400;500;600;700;800&subset=latin-ext&display=swap"
+    as="font" 
+    type="font/woff2"/>
   <link
     rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300;400;500;600;700;800&subset=latin-ext&display=swap"
     media="print"
-    onload="this.media='all'" />
+    onload="this.media='all'" 
+    as="font" 
+    type="font/woff2"/>
   <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300;400;500;600;700;800&subset=latin-ext&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300;400;500;600;700;800&subset=latin-ext&display=swap" as="font" type="font/woff2" />
   </noscript>
 
   {% comment %}
