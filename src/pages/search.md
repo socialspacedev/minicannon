@@ -15,5 +15,3 @@ eleventyNavigation:
   order: 4
 ---
 # Search
-
-This search page uses CloudCannon's opensource static search solution <a target="_blank" rel="noopener" href="https://pagefind.app/">PageFind</a>. It currently indexes pages and blog posts only.
