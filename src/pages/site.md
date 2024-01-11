@@ -40,6 +40,8 @@ The aim of the site is to be minimal, elegant and performant. I'm not a develope
 
 * Static search
 
+* Optimised images
+
 ## Tech
 
 * <a href="https://cloudcannon.com/" title="CloudCannon git-bases CMS" target="_blank" rel="noopener">CloudCannon</a>
@@ -74,9 +76,9 @@ The aim of the site is to be minimal, elegant and performant. I'm not a develope
 
 ## Some challenges
 
-Adapting this template as been difficult at times and a real learning experience. Consequently I have been able to learn how powerful CloudCannon, Git and 11ty are.
+Adapting this template as been difficult at times and a real learning experience. Consequently I've been able to learn how powerful CloudCannon, Git and 11ty are.
 
-Here just some of hurdles I had to overcome:
+Here's some hurdles I've had to overcome:
 
 * Converting NJKs template files to Liquid in order to use live editing on CloudCannon.
 
