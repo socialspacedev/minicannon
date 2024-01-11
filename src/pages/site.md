@@ -63,7 +63,6 @@ The aim of the site is to be minimal, elegant and performant. I'm not a develope
 * <a href="https://github.com/tailwindlabs/tailwindcss" target="_blank" rel="noopener">Tailwindcss</a>
 
   * <a href="https://github.com/tailwindlabs/tailwindcss-typography" target="_blank" rel="noopener">Tailwindcss typography</a>
-
 * <a href="https://github.com/moment/luxon" target="_blank" rel="noopener">Luxon</a>
 
 * <a href="https://github.com/kangax/html-minifier" target="_blank" rel="noopener">html minifier</a>
@@ -94,4 +93,4 @@ Here's some hurdles I've had to overcome:
 
 ##
 
-<br>
+ <br>

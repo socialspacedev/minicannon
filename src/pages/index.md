@@ -2,7 +2,6 @@
 _schema: default
 title: Index
 description: A minimal CloudCannon and 11ty website by and about Andrew Long.
-date:
 luogo: Posted
 type: website
 layout: page.liquid
@@ -10,6 +9,9 @@ keyword: index
 tags: pages
 permalink: '{{ title | slugify }}.html'
 eleventyNavigation:
+  key: '{{ title | slugify }}'
+  title: About
+  order: 2
   hide: true
 ---
 # Nau mai, Haere mai!
@@ -18,4 +20,4 @@ Welcome to my website. To find out a little more about me, head to the [about pa
 
 He iti kahurangi.
 
-<!-- Small in size is contrasted with great in value or beauty -->
+ <!-- Small in size is contrasted with great in value or beauty -->
