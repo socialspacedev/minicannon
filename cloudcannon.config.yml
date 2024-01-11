@@ -94,7 +94,7 @@ collections_config:
         path: .cloudcannon/schemas/page.md
         reorder_inputs: true
         hide_extra_inputs: false
-        remove_empty_inputs: false
+        remove_empty_inputs: true
         remove_extra_inputs: false
         icon: notes
   data:
