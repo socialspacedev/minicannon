@@ -8,7 +8,7 @@ type: website
 layout: page.liquid
 keyword: index
 tags: pages
-
+permalink: '{{ title | slugify }}.html'
 eleventyNavigation:
   hide: true
 ---
