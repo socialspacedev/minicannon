@@ -31,18 +31,18 @@
   /*.motto {
     @apply tracking-wide text-center;
   }*/
-  nav, .paginate {
+  nav {
     @apply text-center items-center;
   }
-  nav, .paginate > ul {
+  nav > ul {
     @apply flex flex-row gap-5;
   }
-  nav, paginate li {
+  nav li {
     @apply cursor-pointer tracking-wide;
   }
-  nav, .paginate li:hover,
-  nav, .paginate li:focus,
-  nav, .paginate li:focus-within,
+  nav li:hover,
+  nav li:focus,
+  nav li:focus-within,
   .active {
     @apply underline decoration-sky-600 decoration-2 underline-offset-1 transition-all;
   }
