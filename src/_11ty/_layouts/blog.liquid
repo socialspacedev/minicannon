@@ -42,6 +42,9 @@ pagination:
               <span>First</span>
             {% endif %}
             &nbsp;
+            <span>
+              Page: {{ pagination.pageNumber + 1 }} of {{ pagination.links | length  }}
+            </span>
             {% if pagination.nextPageLink %}
               <a href="{{ pagination.nextPageHref}}">Next</a>
             {% else %}
