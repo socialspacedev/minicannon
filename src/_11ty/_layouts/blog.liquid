@@ -33,22 +33,22 @@ pagination:
           </li>
         {%- endfor -%}
       </ul>
-      <!-- Pagination links -->
+  <!-- Pagination links -->
       {% if pagination.pageLinks.length > 1 %}
           <nav class="paginate">
             {% if pagination.previousPageLink %}
-              <a href="{{ pagination.previousPageHref }}">Previous</a>
-            {% else %}
-              <span>First</span>
+              <a href="{{ pagination.previousPageHref }}">Old</a>
+         <!--   {% else %} -->
+          <!--    <span>First</span> -->
             {% endif %}
             &nbsp;
             <span>
-              Page: {{ pagination.pageNumber | plus: 1 }} of {{ pagination.links | size }}
+              {{ pagination.pageNumber | plus: 1 }} of {{ pagination.links | size }}
             </span>
             {% if pagination.nextPageLink %}
-              <a href="{{ pagination.nextPageHref}}">Next</a>
-            {% else %}
-              <span>Last</span>
+              <a href="{{ pagination.nextPageHref}}">New</a>
+          <!--  {% else %} -->
+          <!--    <span>Last</span> -->
             {% endif %}
           </nav>
       {% endif %}
