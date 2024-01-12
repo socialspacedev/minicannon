@@ -37,9 +37,9 @@ pagination:
       {% if pagination.pageLinks.length > 1 %}
           <nav class="paginate">
             {% if pagination.previousPageLink %}
-              <a href="{{ pagination.previousPageHref }}">Previous</a>
+              <a style="text-align: left; href="{{ pagination.previousPageHref }}">Previous</a>
             {% else %}
-              <span>First</span>
+              <span>Previous</span>
             {% endif %}
             &nbsp;
             <span>
@@ -47,9 +47,9 @@ pagination:
             </span>
             &nbsp;
             {% if pagination.nextPageLink %}
-              <a href="{{ pagination.nextPageHref}}">Next</a>
+              <a style="text-align: right; href="{{ pagination.nextPageHref}}">Next</a>
             {% else %}
-              <span>Last</span>
+              <span>Next</span>
             {% endif %}
           </nav>
       {% endif %}
