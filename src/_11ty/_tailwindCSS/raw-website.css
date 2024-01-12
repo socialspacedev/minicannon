@@ -64,9 +64,10 @@
     @apply no-underline font-extrabold;
   }
   .paginate {
+    display: inline;
     padding-top: 40px; 
-    text-align:center; 
-    font-size: 80%
+  /*  text-align:center; */
+    font-size: 90%
   }
   footer {
     @apply border-t flex flex-col-reverse justify-between gap-5;
