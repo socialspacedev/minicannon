@@ -36,22 +36,20 @@ pagination:
   <!-- Pagination links -->
       {% if pagination.pageLinks.length > 1 %}
           <nav class="paginate">
+            <ul>
             {% if pagination.previousPageLink %}
-              <a style="text-align: left;" href="{{ pagination.previousPageHref }}">Previous</a>
+              <li><a href="{{ pagination.previousPageHref }}">Previous</a></li>
             {% else %}
-              <span>Previous</span>
+              <li><span>Previous</span></li>
             {% endif %}
-            &nbsp;
-            <span>
-              [{{ pagination.pageNumber | plus: 1 }}]
-            </span>
             &nbsp;
             {% if pagination.nextPageLink %}
-              <a style="text-align: right;" href="{{ pagination.nextPageHref}}">Next</a>
+              <li><a href="{{ pagination.nextPageHref}}">Next</a></li>
             {% else %}
-              <span>Next</span>
+              <li><span>Next</span></li>
             {% endif %}
           </nav>
+          </ul>
       {% endif %}
     </main>
     {% include "footer.liquid" %}
