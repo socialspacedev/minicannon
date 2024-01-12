@@ -67,8 +67,8 @@
     @apply flex flex-row gap-5 */
    /*  padding-top: 40px; */
   /*  text-align:center; */
-   /* font-size: 90% */
-  }
+   /* font-size: 90% 
+  }*/
   footer {
     @apply border-t flex flex-col-reverse justify-between gap-5;
   }
