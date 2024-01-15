@@ -1,5 +1,4 @@
 ---
-_schema: default
 title: Index
 description: A minimal CloudCannon and 11ty website by and about Andrew Long.
 luogo: Posted
@@ -9,12 +8,8 @@ keyword: index
 tags: pages
 permalink: '{{ title | slugify }}.html'
 eleventyNavigation:
-  key: '{{ title | slugify }}'
-  title: About
-  order: 2
   hide: true
-<!--_schema: default -->
-<!-- _schema: default -->
+content_blocks:
 ---
 # Nau mai, Haere mai!
 
