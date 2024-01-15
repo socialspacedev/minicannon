@@ -12,6 +12,7 @@ eleventyNavigation:
   key: '{{ title | slugify }}'
   title: About
   order: 1
+content_blocks:
 ---
 ## Pepeha
 
