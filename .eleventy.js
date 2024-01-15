@@ -31,7 +31,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
   // HTML minify
-  eleventyConfig.addTransform("htmlmin", (content, outputPath) => {
+  /* eleventyConfig.addTransform("htmlmin", (content, outputPath) => {
     if (outputPath.endsWith(".html")) {
       return htmlmin.minify(content, {
         collapseWhitespace: true,
@@ -40,7 +40,7 @@ module.exports = function (eleventyConfig) {
       });
     }
     return content;
-  });
+  }); */
 
   // Prettify dates
   eleventyConfig.addFilter("readableDate", (dateObj) => {

@@ -15,6 +15,7 @@ type: "website"
       <div class="content">
         {{ content }}
       </div>
+      {% bookshop_include "page" content_blocks: content_blocks %}
     </main>
     {% include "footer.liquid" %}
   </body>
