@@ -12,7 +12,9 @@ type: "website"
   <body>
     {% include "nav.liquid" %}
     <main data-pagefind-body>
+      <div class="content"></div>
         {{ content }}
+      <.div>
       {% bookshop_include "page" content_blocks: content_blocks %}
     </main>
     {% include "footer.liquid" %}
