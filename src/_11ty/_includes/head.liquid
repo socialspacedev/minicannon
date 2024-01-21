@@ -6,7 +6,7 @@
 {% comment %}
   Descrizione Automatizzata
 {% endcomment %}
-{% assign pageDescription = description | default: '' -%}{% assign pageDescription = pageDescription | append: meta.siteDescription | default: '' -%}
+{% assign pageDescription = description | default: '' -%}{% assign pageDescription = pageDescription | default: '' -%}
 
 {% comment %}
   Url della pagina
@@ -55,10 +55,13 @@
     rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300;400;500;600;700;800&subset=latin-ext&display=swap"
     media="print"
-    onload="this.media='all'" 
-    as="font"/>
+    onload="this.media='all'"
+    as="font" />
   <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300;400;500;600;700;800&subset=latin-ext&display=swap" as="font" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300;400;500;600;700;800&subset=latin-ext&display=swap"
+      as="font" />
   </noscript>
 
   {% comment %}
@@ -100,7 +103,7 @@
   <meta property="og:locale" content="{{ meta.language }}" />
   <meta property="og:title" content="{{ pageTitle }}" />
   <meta property="og:description" content="{{ pageDescription }}" />
-  <meta property="og:url" content="{{meta.url}}" />
+  <meta property="og:url" content="{{ meta.url }}" />
 
     {% comment %}
       Facebook
