@@ -8,7 +8,7 @@ const path = require("node:path");
 const Image = require("@11ty/eleventy-img");
 
 // Helper packages
-const htmlmin = require("html-minifier");
+// const htmlmin = require("html-minifier");
 const { DateTime } = require("luxon");
 
 // 11ty
@@ -31,16 +31,16 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
   // HTML minify
-  eleventyConfig.addTransform("htmlmin", (content, outputPath) => {
-    if (outputPath.endsWith(".html")) {
-      return htmlmin.minify(content, {
-        collapseWhitespace: true,
-        removeComments: true,
-        useShortDoctype: true,
-      });
-    }
-    return content;
-  });
+  // eleventyConfig.addTransform("htmlmin", (content, outputPath) => {
+  //  if (outputPath.endsWith(".html")) {
+  //    return htmlmin.minify(content, {
+  //      collapseWhitespace: true,
+  //      removeComments: true,
+  //      useShortDoctype: true,
+  //    });
+  //  }
+  //  return content;
+  // });
 
   // Prettify dates
   eleventyConfig.addFilter("readableDate", (dateObj) => {
