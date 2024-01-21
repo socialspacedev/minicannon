@@ -2,4 +2,3 @@
 
 npx -y pagefind --site public
 npx @bookshop/generate
-ELEVENTY_ENV=production html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype
