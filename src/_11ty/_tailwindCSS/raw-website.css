@@ -53,7 +53,7 @@
     @apply flex flex-row gap-5;
   }
   paginate li {
-    @apply cursor-pointer tracking-wide list-none items-center;
+    @apply list-none items-center;
   }
   paginate li:hover,
   paginate li:focus,
