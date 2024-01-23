@@ -49,8 +49,8 @@
   .paginate {
     @apply text-center items-center;
   }
-  .paginate > ul {
-    @apply flex flex-row gap-0;
+  .paginate ul {
+    @apply flex flex-row gap-5;
   }
   .paginate li {
     @apply list-none items-center;
