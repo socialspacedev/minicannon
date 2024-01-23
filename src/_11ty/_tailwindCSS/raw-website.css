@@ -54,7 +54,7 @@
   }
   .paginate li {
     text-decoration: none;
-    padding 12px;
+    padding: 10;
   }
   .paginate:hover,
   .paginate:focus,
