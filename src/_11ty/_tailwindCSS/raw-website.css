@@ -46,20 +46,22 @@
   .active {
     @apply underline decoration-sky-600 decoration-2 underline-offset-1 transition-all;
   }
-  paginate {
+  .paginate {
     @apply text-center items-center;
   }
-  paginate > ul {
+  .paginate > ul {
     @apply flex flex-row gap-0;
   }
-  paginate li {
+  .paginate li {
     @apply list-none items-center;
   }
-  /*paginate li:hover,
-  paginate li:focus,
+  .paginate li:hover {
+     @apply decoration-sky-600 decoration-2;
+  }
+  /* paginate li:focus,
   paginate li:focus-within, */
-  paginate .active {
-    @apply decoration-sky-600 decoration-2 underline-offset-1 transition-all;
+  .paginate a.active {
+    @apply decoration-sky-600 decoration-2 transition-all;
   }
   main,
   article {
