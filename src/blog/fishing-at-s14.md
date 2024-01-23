@@ -1,7 +1,7 @@
 ---
 _schema: default
-title: Fishing at s14
-description: Fishing for Kahawai at Kākanui
+title: The lure of fishing
+description: Fishing for Kahawai at Kakanui.
 tags:
   - post
   - fishing
@@ -13,6 +13,14 @@ layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
 content_blocks:
 ---
-<img src="/img/rodcam-1.png" alt="Top view of a fishing lione" title="Surf casting for Kahawai" height="4032" width="3024" />
+Over the weekend we picked up a new 8ft fishing rod and a few 40g twist lures of differing colours. This was principally to practice casting into the surf and perhaps catch a Kahawai to smoke (if we're lucky).
 
 <img src="/img/fishing.jpg" alt="A man casts his line into the surf" title="Andrew casting a fishing line into the surf" height="2057" width="3049" />
+
+We headed to various spots along the Kakanui coast. First Kakanui beach then All-day Bay then back up to S14 near Bones Lodge. The latter (seamingly nameless beach) was the pick of the spots with a few other punters trying their luck.
+
+<img src="/img/rodcam-1.png" alt="Top view of a fishing line in the surf" title="Rod cam while surf casting" height="4032" width="3024" />
+
+Other than catching my shorts there were no fish to be seen. This didn't matter at all as my casting improved, I got wet and we spent time at a delightful beach getting our calves burned.
+
+<img src="/img/caught-shorts.png" alt="Man with shorts caught by fishing line" title="I managed to get the lure caught on my shorts" height="4032" width="3024" />
