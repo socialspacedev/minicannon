@@ -38,7 +38,7 @@
     @apply flex flex-row gap-5;
   }
   nav, paginate li {
-    @apply cursor-pointer tracking-wide;
+    @apply cursor-pointer tracking-wide list-none;
   }
   nav, paginate li:hover,
   nav, paginate li:focus,
