@@ -47,13 +47,13 @@
     @apply underline decoration-sky-600 decoration-2 underline-offset-1 transition-all;
   }
   paginate {
-    @apply text-center items-center list-none;
+    @apply text-center items-center;
   }
   paginate > ul {
     @apply flex flex-row gap-5;
   }
   paginate li {
-    @apply cursor-pointer tracking-wide;
+    @apply cursor-pointer tracking-wide list-none;
   }
   paginate li:hover,
   paginate li:focus,
