@@ -46,22 +46,13 @@
   .active {
     @apply underline decoration-sky-600 decoration-2 underline-offset-1 transition-all;
   }
-  .paginate {
+  .paginate ul {
     display: inline-block;
   }
-  .paginate ul {
-    @apply flex flex-row gap-5;
-  }
-  .paginate li {
-    @apply list-none items-center;
-  }
-  .paginate li:hover {
-     @apply decoration-sky-600 decoration-2;
-  }
-  /* paginate li:focus,
-  paginate li:focus-within, */
-  .paginate a.active {
-    @apply decoration-sky-600 decoration-2 transition-all;
+  .paginate .icon:hover,
+  .icon:focus,
+  .icon:focus-within {
+    @apply hover:stroke-sky-600;
   }
   main,
   article {
