@@ -58,8 +58,8 @@
   /*paginate li:hover,
   paginate li:focus,
   paginate li:focus-within, */
-  .active {
-    @apply underline decoration-sky-600 decoration-2 underline-offset-1 transition-all;
+  paginate .active {
+    @apply decoration-sky-600 decoration-2 underline-offset-1 transition-all;
   }
   main,
   article {
