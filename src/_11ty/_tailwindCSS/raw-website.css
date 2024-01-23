@@ -46,12 +46,19 @@
   .active {
     @apply underline decoration-sky-600 decoration-2 underline-offset-1 transition-all;
   }
-  .paginate ul {
-    display: inline-block;
+ .paginate {
+    @apply text-center items-center;
   }
-  .paginate .icon:hover,
-  .icon:focus,
-  .icon:focus-within {
+  .paginate ul {
+    display: inline;
+  }
+  .paginate li {
+    text-decoration: none;
+    padding 12px;
+  }
+  .paginate:hover,
+  .paginate:focus,
+  .paginate:focus-within {
     @apply hover:stroke-sky-600;
   }
   main,
