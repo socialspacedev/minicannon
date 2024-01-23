@@ -50,14 +50,14 @@
     @apply text-center items-center;
   }
   paginate > ul {
-    @apply flex flex-row gap-5;
+    @apply flex flex-row gap-0;
   }
   paginate li {
     @apply list-none items-center;
   }
-  paginate li:hover,
+  /*paginate li:hover,
   paginate li:focus,
-  paginate li:focus-within,
+  paginate li:focus-within, */
   .active {
     @apply underline decoration-sky-600 decoration-2 underline-offset-1 transition-all;
   }
@@ -78,12 +78,6 @@
   .posts > h2 > a {
     @apply no-underline font-extrabold;
   }
-  /*.paginate {
-    @apply flex flex-row gap-5 */
-   /*  padding-top: 40px; */
-  /*  text-align:center; */
-   /* font-size: 90% 
-  }*/
   footer {
     @apply border-t flex flex-col-reverse justify-between gap-5;
   }

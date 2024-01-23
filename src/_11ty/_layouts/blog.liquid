@@ -38,13 +38,13 @@ pagination:
           <paginate>
             <ul>
             {% if pagination.previousPageLink %}
-              <li><a href="{{ pagination.previousPageHref }}">\<<Previous</a></li>
+              <li><a href="{{ pagination.previousPageHref }}"><< Previous</a></li>
             {% else %}
               <li><span>First</span></li>
             {% endif %}
             &nbsp;
             {% if pagination.nextPageLink %}
-              <li><a href="{{ pagination.nextPageHref }}">Next\>></a></li>
+              <li><a href="{{ pagination.nextPageHref }}">Next >></a></li>
             {% else %}
               <li><span>Last</span></li>
             {% endif %}
