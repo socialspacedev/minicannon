@@ -47,12 +47,11 @@
     @apply underline decoration-sky-600 decoration-2 underline-offset-1 transition-all;
   }
  .paginate {
-    margin-top: 40px;
-  /*  font-size: 1em; */
-  /*  color: white; */
+ /*   margin-top: 40px; */
   }
   .paginate ul {
     display: inline-block;
+    margin-top: 40px;
   }
   .paginate li {
     letter-spacing: .025em;
@@ -61,8 +60,14 @@
   .paginate a {
     color: white;
     text-decoration: none;
+    font-weight: 500;
   }
-  .paginate li:focus li:focus-within li:hover {
+  .paginate:hover,
+  .paginate:focus,
+  .paginate:focus-within {
+    @apply hover:stroke-sky-600;
+  }
+ /* .paginate li:focus li:focus-within li:hover {
     text-decoration-line: underline;
     text-decoration-color: #0284c7;
     text-decoration-thickness: 2px;
@@ -70,10 +75,7 @@
     transition-property: all;
     transition-timing-function: cubic-bezier(.4,0,.2,1);
     transition-duration: .15s
-}
- .active {
-    @apply underline decoration-sky-600 decoration-2 underline-offset-1 transition-all;
-  }
+} */
   main,
   article {
     @apply prose prose-sky dark:prose-invert dark:prose-p:text-slate-50 dark:prose-li:text-slate-50 dark:prose-lead:text-slate-100 prose-lead:font-light mx-auto text-justify my-2;
