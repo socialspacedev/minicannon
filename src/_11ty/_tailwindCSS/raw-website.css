@@ -51,13 +51,13 @@
   }*/
   .paginate ul {
     display: inline-block;
-    color: fff;
   }
   .paginate li {
     letter-spacing: .025em;
     list-style: none;
+    color: #ffffff;
   }
-  .active,.paginate li:focus,nav li:focus-within,nav li:hover {
+  .paginate active li:focus,nav li:focus-within,nav li:hover {
     text-decoration-line: underline;
     text-decoration-color: #0284c7;
     text-decoration-thickness: 2px;
