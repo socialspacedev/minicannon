@@ -46,17 +46,17 @@
   .active {
     @apply underline decoration-sky-600 decoration-2 underline-offset-1 transition-all;
   }
- /*.paginate {
-    display: inline-block;
-  }*/
+ .paginate {
+    padding-top: 40px;
+    font-size: 1em;
+    color: white;
+  }
   .paginate ul {
     display: inline-block;
-    top-margin: 20px;
   }
   .paginate li {
     letter-spacing: .025em;
     list-style: none;
-    color: #ffffff;
   }
   .paginate li:focus li:focus-within li:hover {
     text-decoration-line: underline;
