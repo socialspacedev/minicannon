@@ -46,6 +46,43 @@
   .active {
     @apply underline decoration-sky-600 decoration-2 underline-offset-1 transition-all;
   }
+ .paginate {
+    margin-top: 2em; 
+  }
+  .paginate ul {
+    display: inline-block;
+  }
+  .paginate li {
+    letter-spacing: .025em;
+    list-style: none;
+  }
+  .paginate a {
+  /*  color: white; */
+    @apply dark:bg-zinc-900 font-serif text-base text-slate-900 dark:text-slate-100 transition-all;
+    text-decoration: none;
+  /*  font-weight: 500; */
+  }
+  .paginate .left {
+    float:left;
+  }
+  .paginate .right {
+    float: right;
+  }
+  .paginate li:hover,
+  .paginate li:focus,
+  .paginate li:focus-within,
+  .active {
+    @apply underline decoration-sky-600 decoration-2 underline-offset-1 transition-all;
+  }
+ /* .paginate li:focus li:focus-within li:hover {
+    text-decoration-line: underline;
+    text-decoration-color: #0284c7;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 1px;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .15s
+} */
   main,
   article {
     @apply prose prose-sky dark:prose-invert dark:prose-p:text-slate-50 dark:prose-li:text-slate-50 dark:prose-lead:text-slate-100 prose-lead:font-light mx-auto text-justify my-2;
@@ -62,11 +99,6 @@
   }
   .posts > h2 > a {
     @apply no-underline font-extrabold;
-  }
-  .paginate {
-    padding-top: 40px; 
-    text-align:center; 
-    font-size: 80%
   }
   footer {
     @apply border-t flex flex-col-reverse justify-between gap-5;

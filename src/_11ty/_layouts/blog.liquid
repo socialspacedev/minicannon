@@ -33,21 +33,16 @@ pagination:
           </li>
         {%- endfor -%}
       </ul>
-      <!-- Pagination links -->
+  <!-- Pagination links -->
       {% if pagination.pageLinks.length > 1 %}
-          <nav class="paginate">
+            <ul class="paginate">
             {% if pagination.previousPageLink %}
-              <a href="{{ pagination.previousPageHref }}">Previous</a>
-            {% else %}
-              <span>First</span>
+              <li class="left"><a href="{{ pagination.previousPageHref }}">< Previous</a></li>
             {% endif %}
-            &nbsp;
             {% if pagination.nextPageLink %}
-              <a href="{{ pagination.nextPageHref}}">Next</a>
-            {% else %}
-              <span>Last</span>
+              <li class="right"><a href="{{ pagination.nextPageHref }}">Next ></a></li>
             {% endif %}
-          </nav>
+          </ul>
       {% endif %}
     </main>
     {% include "footer.liquid" %}

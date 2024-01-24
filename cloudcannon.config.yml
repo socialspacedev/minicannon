@@ -120,7 +120,6 @@ _inputs:
   image_file:
     type: file
     options:
-      width: 700
       resize_style: cover
 _select_data: {}
 _structures: {}
