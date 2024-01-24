@@ -61,10 +61,10 @@
     text-decoration: none;
     font-weight: 500;
   }
-  .paginate left {
+  .paginate .left {
     float:left;
   }
-  .paginate right {
+  .paginate .right {
     float: right;
   }
   .paginate li:hover,
