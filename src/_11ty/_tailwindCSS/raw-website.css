@@ -62,19 +62,12 @@
     font-weight: 500;
     border: 1px solid #ddd;
   }
-  .paginate a.active {
-  background-color: #4CAF50;
-  color: white;
-  border: 1px solid #4CAF50;
+  .paginate li:hover,
+  .paginate li:focus,
+  .paginate li:focus-within,
+  .active {
+    @apply underline decoration-sky-600 decoration-2 underline-offset-1 transition-all;
   }
-  .pagination a:hover:not(.active) {
-    background-color: #ddd;
-  }
-  /* .paginate a:hover,
-  .paginate a:focus,
-  .paginate a:focus-within {
-    @apply hover:stroke-sky-600;
-  } */
  /* .paginate li:focus li:focus-within li:hover {
     text-decoration-line: underline;
     text-decoration-color: #0284c7;
