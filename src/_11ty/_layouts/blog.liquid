@@ -37,10 +37,10 @@ pagination:
       {% if pagination.pageLinks.length > 1 %}
             <ul class="paginate">
             {% if pagination.previousPageLink %}
-              <li><a href="{{ pagination.previousPageHref }}" >Previous</a></li>
+              <li><a href="{{ pagination.previousPageHref }}">Previous</a></li>
             {% endif %}
             {% if pagination.nextPageLink %}
-              <li><a href="{{ pagination.nextPageHref }} >Next</a></li>
+              <li><a href="{{ pagination.nextPageHref }}">Next</a></li>
             {% endif %}
           </ul>
       {% endif %}
