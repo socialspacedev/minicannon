@@ -47,8 +47,8 @@
     @apply underline decoration-sky-600 decoration-2 underline-offset-1 transition-all;
   }
  .paginate {
-    margin-top: 40px;
-    font-size: 1em;
+    margin-top: 20px;
+  /*  font-size: 1em; */
   /*  color: white; */
   }
   .paginate ul {
@@ -62,7 +62,7 @@
     color: white;
     text-decoration: none;
   }
-  .paginate li:focus li:focus-within li:hover {
+  .paginate a li:focus li:focus-within li:hover {
     text-decoration-line: underline;
     text-decoration-color: #0284c7;
     text-decoration-thickness: 2px;
