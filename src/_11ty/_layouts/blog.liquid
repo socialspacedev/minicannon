@@ -33,6 +33,7 @@ pagination:
           </li>
         {%- endfor -%}
       </ul>
+      </main>
   <!-- Pagination links -->
       {% if pagination.pageLinks.length > 1 %}
             <ul class="paginate">
@@ -44,7 +45,6 @@ pagination:
             {% endif %}
           </ul>
       {% endif %}
-    </main>
     {% include "footer.liquid" %}
   </body>
 <!-- End Body -->
