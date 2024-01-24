@@ -55,13 +55,17 @@
   .paginate li {
     letter-spacing: .025em;
     list-style: none;
-    padding-left: 3em;
-    padding-right: 3em;
   }
   .paginate a {
     color: white;
     text-decoration: none;
     font-weight: 500;
+  }
+  .paginate left {
+    float:left;
+  }
+  .paginate right {
+    float: right;
   }
   .paginate li:hover,
   .paginate li:focus,
