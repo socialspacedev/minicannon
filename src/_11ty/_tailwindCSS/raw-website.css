@@ -57,7 +57,7 @@
     list-style: none;
   }
   .paginate a {
-    color: white;
+  /*  color: white; */
     text-decoration: none;
   /*  font-weight: 500; */
   }
