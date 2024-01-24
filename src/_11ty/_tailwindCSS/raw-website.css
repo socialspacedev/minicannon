@@ -47,25 +47,28 @@
     @apply underline decoration-sky-600 decoration-2 underline-offset-1 transition-all;
   }
  .paginate {
-    @apply inline-block align-middle;
+    align-items: center;
   }
   .paginate ul {
-    display: inline;
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
   }
   .paginate li {
   @apply hover:text-sky-600;
-   display: flex;
-   flex-direction: row;
-   justify-content: flex-start; 
-   list-style: none;
-   padding: 0;
-   white-space: nowrap;
+    cursor: pointer;
+    letter-spacing: .025em;
+    list-style: none;
   }
- /* .paginate:hover, */
-  .paginate:focus,
-  .paginate:focus-within {
-    @apply hover:stroke-sky-600;
-  }
+  .active,.paginate li:focus,nav li:focus-within,nav li:hover {
+    text-decoration-line: underline;
+/*    text-decoration-color: #0284c7; */
+    text-decoration-thickness: 2px;
+    text-underline-offset: 1px;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .15s
+}
   main,
   article {
     @apply prose prose-sky dark:prose-invert dark:prose-p:text-slate-50 dark:prose-li:text-slate-50 dark:prose-lead:text-slate-100 prose-lead:font-light mx-auto text-justify my-2;
