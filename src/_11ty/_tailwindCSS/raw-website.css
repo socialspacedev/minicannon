@@ -58,6 +58,7 @@
   }
   .paginate a {
   /*  color: white; */
+    color: rgb(15 23 42/var(--tw-text-opacity));
     text-decoration: none;
   /*  font-weight: 500; */
   }
