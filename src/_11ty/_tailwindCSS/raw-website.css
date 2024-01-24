@@ -46,13 +46,11 @@
   .active {
     @apply underline decoration-sky-600 decoration-2 underline-offset-1 transition-all;
   }
- .paginate {
+ /*.paginate {
     display: inline-block;
-  }
+  }*/
   .paginate ul {
-    display: flex;
-    flex-direction: row;
-    gap: 1.25rem;
+    display: inline-block;
     color: fff;
   }
   .paginate li {
@@ -60,6 +58,10 @@
     list-style: none;
   }
   .active,.paginate li:focus,nav li:focus-within,nav li:hover {
+    text-decoration-line: underline;
+    text-decoration-color: #0284c7;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 1px;
     transition-property: all;
     transition-timing-function: cubic-bezier(.4,0,.2,1);
     transition-duration: .15s
