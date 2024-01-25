@@ -698,7 +698,7 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
   }
   main,
   article {
-    @apply my-3 mb-8;
+    @apply mt-3 mb-8;
   }
   h1,
   article > small.info {
