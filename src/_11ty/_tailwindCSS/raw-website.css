@@ -700,7 +700,7 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
   article {
     @apply my-3;
   }
-  .paginate {
+  .paginate ul {
     @apply mb-8;
   }
   h1,
