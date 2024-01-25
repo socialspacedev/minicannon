@@ -658,7 +658,7 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
   }
   main,
   article {
-    @apply mt-2.5 mb-8;
+    @apply my-8;
   }
   .title {
     @apply text-4xl;
