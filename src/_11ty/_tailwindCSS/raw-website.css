@@ -58,7 +58,7 @@
     text-decoration: none;
   }
   .paginate .left {
- /*   float:left; */
+    float:left;
     padding-left: 0;
   }
   .paginate .right {
