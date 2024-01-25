@@ -701,7 +701,7 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
     @apply my-3;
   }
   .paginate ul {
-    @apply mb-8;
+    @apply pb-4;
   }
   h1,
   article > small.info {
