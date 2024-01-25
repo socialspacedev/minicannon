@@ -28,9 +28,6 @@
   .title {
     @apply text-center font-extrabold text-3xl;
   }
-  /*.motto {
-    @apply tracking-wide text-center;
-  }*/
   nav {
     @apply text-center items-center;
   }
@@ -48,6 +45,7 @@
   }
  .paginate {
     margin-top: 2em; 
+    margin-bottom: 2em;
   }
   .paginate ul {
     display: inline-block;
@@ -57,13 +55,12 @@
     list-style: none;
   }
   .paginate a {
-  /*  color: white; */
     @apply dark:bg-zinc-900 font-serif text-base text-slate-900 dark:text-slate-100 transition-all;
     text-decoration: none;
-  /*  font-weight: 500; */
   }
   .paginate .left {
     float:left;
+    padding-left: 0;
   }
   .paginate .right {
     float: right;
@@ -74,18 +71,9 @@
   .active {
     @apply underline decoration-sky-600 decoration-2 underline-offset-1 transition-all;
   }
- /* .paginate li:focus li:focus-within li:hover {
-    text-decoration-line: underline;
-    text-decoration-color: #0284c7;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 1px;
-    transition-property: all;
-    transition-timing-function: cubic-bezier(.4,0,.2,1);
-    transition-duration: .15s
-} */
   main,
   article {
-    @apply prose prose-sky dark:prose-invert dark:prose-p:text-slate-50 dark:prose-li:text-slate-50 dark:prose-lead:text-slate-100 prose-lead:font-light mx-auto text-justify my-2;
+    @apply prose prose-sky dark:prose-invert dark:prose-p:text-slate-50 dark:prose-li:text-slate-50 dark:prose-lead:text-slate-100 prose-lead:font-light ml-auto mr-auto text-justify mt-2 mb-8;
   }
   h1,
   article > small.info {

@@ -1,12 +1,12 @@
-<!-- Titolo Automatizzato -->
+<!-- Automated Title -->
 {% assign pageTitle = title | default: '' -%}
 {% assign pageTitle = pageTitle | append: ' - ' | append: meta.siteName -%}
 
-<!-- Descrizione Automatizzata -->
+<!-- Automatic Decscription -->
 {% assign pageDescription = description | default: '' -%}
 {% assign pageDescription = pageDescription | default: meta.siteDescription -%}
 
-<!-- Url della pagina -->
+<!-- Page URL -->
 {% assign pageUrls = meta.url | append: page.url -%}
 
 {% include "head.liquid" %}
