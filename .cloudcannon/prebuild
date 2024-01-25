@@ -1,4 +1,4 @@
 #!/bin/bash
 
 npx tailwindcss -i src/_11ty/_tailwindCSS/raw-website.css -o public/css/style.css --minify
-npm install html-minifier -g
+# npm install html-minifier -g
