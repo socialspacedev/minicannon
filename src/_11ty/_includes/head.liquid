@@ -1,15 +1,15 @@
 {% comment %}
-  Titolo Automatizzato
+ Automated Title
 {% endcomment %}
 {% assign pageTitle = title | default: '' -%}{% assign pageTitle = pageTitle | append: ' - ' | append: meta.siteName -%}
 
 {% comment %}
-  Descrizione Automatizzata
+  Automated Description
 {% endcomment %}
 {% assign pageDescription = description | default: '' -%}{% assign pageDescription = pageDescription | default: '' -%}
 
 {% comment %}
-  Url della pagina
+  Page URL
 {% endcomment %}
 {% assign pageUrls = meta.url | append: ' ' | append: page.url -%}
 
@@ -41,7 +41,7 @@
     {% comment %}
       Font
     {% endcomment %}
-  <link rel="preconnect" href="https://fonts.gstatic.com/" />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" rel="preload" />
   <link
     rel="preconnect"
     href="https://fonts.gstatic.com/"
@@ -50,7 +50,8 @@
     rel="preload"
     as="style"
     href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300;400;500;600;700;800&subset=latin-ext&display=swap"
-    as="font" />
+    as="font" 
+    fetchpriority="high" />
   <link
     rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300;400;500;600;700;800&subset=latin-ext&display=swap"
@@ -70,7 +71,9 @@
   <link
     rel="preload"
     href="{{  '/css/style.css' | url }}"
-    as="style" />
+    as="style"
+    fetchpriority="high"
+    />
   <link
     rel="stylesheet"
     href="{{  '/css/style.css' | url }}"
