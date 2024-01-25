@@ -45,6 +45,7 @@
   }
  .paginate {
     margin-top: 2em; 
+    margin-bottom: 5em;
   }
   .paginate ul {
     display: inline-block;
@@ -72,7 +73,7 @@
   }
   main,
   article {
-    @apply prose prose-sky dark:prose-invert dark:prose-p:text-slate-50 dark:prose-li:text-slate-50 dark:prose-lead:text-slate-100 prose-lead:font-light mx-auto text-justify mt-2 mb-8;
+    @apply prose prose-sky dark:prose-invert dark:prose-p:text-slate-50 dark:prose-li:text-slate-50 dark:prose-lead:text-slate-100 prose-lead:font-light mx-auto text-justify my-2;
   }
   h1,
   article > small.info {
