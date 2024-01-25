@@ -73,7 +73,7 @@
   }
   main,
   article {
-    @apply prose prose-sky dark:prose-invert dark:prose-p:text-slate-50 dark:prose-li:text-slate-50 dark:prose-lead:text-slate-100 prose-lead:font-light mx-auto text-justify my-4;
+    @apply prose prose-sky dark:prose-invert dark:prose-p:text-slate-50 dark:prose-li:text-slate-50 dark:prose-lead:text-slate-100 prose-lead:font-light ml-auto mr-auto text-justify mt-2 mb-6;
   }
   h1,
   article > small.info {
