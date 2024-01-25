@@ -73,7 +73,7 @@
   }
   main,
   article {
-    @apply prose prose-sky dark:prose-invert dark:prose-p:text-slate-50 dark:prose-li:text-slate-50 dark:prose-lead:text-slate-100 prose-lead:font-light mx-auto text-justify my-2;
+    @apply prose prose-sky dark:prose-invert dark:prose-p:text-slate-50 dark:prose-li:text-slate-50 dark:prose-lead:text-slate-100 prose-lead:font-light mx-auto text-justify my-6;
   }
   h1,
   article > small.info {
@@ -658,7 +658,7 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
   }
   main,
   article {
-    @apply my-8;
+    @apply my-2.5;
   }
   .title {
     @apply text-4xl;
