@@ -23,57 +23,34 @@ The aim of the site is to be minimal, elegant and performant. I'm not a develope
 ## Features
 
 * Light/dark mode
-
 * Visual editing
-
 * 404 and offline pages
-
 * Optimised SEO
-
 * 100 Lighthouse scores (WIP!)
-
 * Social media links
-
 * RSS feed
-
 * Sitemap
-
 * Static search
-
 * Optimised images
-
 * Pagination
+* Minified
 
 ## Tech
 
 * <a href="https://cloudcannon.com/" title="CloudCannon git-bases CMS" target="_blank" rel="noopener">CloudCannon</a>
-
   * <a href="https://github.com/CloudCannon/pagefind" target="_blank" rel="noopener">Pagefind</a>
-
   * <a href="https://github.com/CloudCannon/bookshop" target="_blank" rel="noopener">Bookshop</a>
-
 * <a href="https://github.com/11ty/eleventy" target="_blank" rel="noopener">Eleventy</a>
-
   * <a href="https://github.com/11ty/eleventy-img" target="_blank" rel="noopener">eleventy-img</a>
-
   * <a href="https://github.com/11ty/eleventy-plugin-rss" target="_blank" rel="noopener">eleventy-plugin-rss</a>
-
   * <a href="https://github.com/11ty/eleventy-navigation" target="_blank" rel="noopener">eleventy-navigation</a>
-
   * <a href="https://github.com/JKC-Codes/eleventy-plugin-time-to-read" target="_blank" rel="noopener">eleventy-plugin-time-to-read</a>
-
 * <a href="https://github.com/tailwindlabs/tailwindcss" target="_blank" rel="noopener">Tailwindcss</a>
-
   * <a href="https://github.com/tailwindlabs/tailwindcss-typography" target="_blank" rel="noopener">Tailwindcss typography</a>
-
 * <a href="https://github.com/moment/luxon" target="_blank" rel="noopener">Luxon</a>
-
 * <a href="https://github.com/kangax/html-minifier" target="_blank" rel="noopener">html minifier</a>
-
 * <a href="https://github.com/mysticatea/npm-run-all" target="_blank" rel="noopener">npm-run-all</a>
-
 * <a href="https://github.com/isaacs/rimraf" target="_blank" rel="noopener">rimraf</a>
-
 * <a href="https://github.com/tabler/tabler-icons" target="_blank" rel="noopener">Tabler Icon</a>
 
 ## Some challenges
@@ -83,13 +60,8 @@ Adapting this template as been difficult at times and a real learning experience
 Here's some hurdles I've had to overcome:
 
 * Converting NJKs template files to Liquid in order to use live editing on CloudCannon.
-
 * Stripping out all PWA related code.
-
 * Getting a yaml data file to work in place of the JS file.
-
 * Implementing 11ty image optimisation.
-
 * Getting the original template to build using the CloudCannon native 11ty compiler.
-
 * Translating Italian comments and variables.<br>
