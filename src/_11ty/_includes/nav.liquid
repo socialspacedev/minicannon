@@ -9,9 +9,11 @@
         {% assign navPages = collections.all | eleventyNavigation %}
         <ul>
             {%- for entry in navPages %}
+             {% if not entry.hide %}
             <li {% if entry.url == page.url %} class="active" aria-current="page" {% endif %}>
                 <a href="{{ entry.url | url }}">{{ entry.title }}</a>
             </li>
+            {% endif %}
             {%- endfor %}   
         </ul>
     </nav>
