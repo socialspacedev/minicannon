@@ -25,23 +25,11 @@ module.exports = function (eleventyConfig) {
   // Copy over some static files
   eleventyConfig
     .addPassthroughCopy({ "src/_11ty/_static/favicon": "favicon" })
-    .addPassthroughCopy({ "src/_11ty/_static/fonts": "fonts" })
+    .addPassthroughCopy({ "src/_11ty/_static/_fonts": "fonts" })
     .addPassthroughCopy({ "src/_11ty/_static/img": "img" });
 
   // Show the year in the footer
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
-
-  // HTML minify
-  // eleventyConfig.addTransform("htmlmin", (content, outputPath) => {
-  //  if (outputPath.endsWith(".html")) {
-  //    return htmlmin.minify(content, {
-  //      collapseWhitespace: true,
-  //      removeComments: true,
-  //      useShortDoctype: true,
-  //    });
-  //  }
-  //  return content;
-  // });
 
   // Prettify dates
   eleventyConfig.addFilter("readableDate", (dateObj) => {
