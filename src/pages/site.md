@@ -64,4 +64,5 @@ Here's some hurdles I've had to overcome:
 * Getting a yaml data file to work in place of the JS file.
 * Implementing 11ty image optimisation.
 * Getting the original template to build using the CloudCannon native 11ty compiler.
-* Translating Italian comments and variables.<br>
+* Translating Italian comments and variables.
+* Removing CLS and performance hits due to Google fonts.<br>
