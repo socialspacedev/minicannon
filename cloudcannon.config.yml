@@ -6,7 +6,6 @@ paths:
   data: _11ty/_data/
   layouts: _11ty/_layouts/
   includes: _11ty/_includes/
-  f
 collections_config:
   posts:
     path: blog

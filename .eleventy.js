@@ -88,7 +88,6 @@ module.exports = function (eleventyConfig) {
       layouts: "/_11ty/_layouts/",
       data: "/_11ty/_data/",
       static: "/_11ty/_static/",
-      fonts: "/_11ty/fonts/",
       output: "./public/",
     },
   };
