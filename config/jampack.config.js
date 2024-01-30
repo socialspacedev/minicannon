@@ -1,4 +1,4 @@
-import { Options } from './config-types.js';
+import { Options } from '.config/config-types.js';
 
 const default_options: Options = {
   general: {
