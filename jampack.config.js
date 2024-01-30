@@ -1,3 +1,5 @@
+import { Options } from './config-types.js';
+
 const default_options: Options = {
   general: {
     browserslist: 'defaults', // defaults = '> 0.5%, last 2 versions, Firefox ESR, not dead'
