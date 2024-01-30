@@ -8,7 +8,7 @@ const default_options = {
     sort_attributes: false,
   },
   css: {
-    inline_critical_css: false,
+    inline_critical_css: true,
   },
   js: {
     compressor: 'esbuild',
@@ -31,24 +31,24 @@ const default_options = {
     compress: true,
     jpeg: {
       options: {
-        quality: 75,
+        quality: 50,
         mozjpeg: true,
       },
     },
     png: {
       options: {
-        compressionLevel: 9,
+        compressionLevel: 6,
       },
     },
     webp: {
       options_lossless: {
         effort: 4,
-        quality: 77,
+        quality: 60,
         mode: 'lossless',
       },
       options_lossly: {
         effort: 4,
-        quality: 77,
+        quality: 60,
         mode: 'lossly',
       },
     },
