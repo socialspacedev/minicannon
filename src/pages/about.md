@@ -12,7 +12,6 @@ eleventyNavigation:
   key: '{{ title | slugify }}'
   title: About
   order: 1
-content_blocks:
 ---
 ## Pepeha
 
@@ -32,11 +31,7 @@ He kaiwhakahaere au i CloudCannon
 
 Ko Andrew tōku ingoa
 
-Tēnā tātou katoa
-
-{%- assign sizes = "(min-width: 50em) 44.4375em, 89vw" %}
-
-{%- image "img/me-sideon.PNG", "Dumb picture of Andrew Long", sizes, image.data.prefer_svg -%}<br> <br>
+Tēnā tātou katou
 
 ## Ko wai au?
 
