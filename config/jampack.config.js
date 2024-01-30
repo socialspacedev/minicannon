@@ -1,6 +1,5 @@
-import { Options } from '.config/config-types.js';
-
-const default_options: Options = {
+// config.js
+const default_options = {
   general: {
     browserslist: 'defaults', // defaults = '> 0.5%, last 2 versions, Firefox ESR, not dead'
   },
@@ -62,4 +61,4 @@ const default_options: Options = {
   },
 };
 
-export default default_options;
+module.exports = default_options;
