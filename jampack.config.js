@@ -16,7 +16,7 @@ const default_options = {
   image: {
     embed_size: 1500,
     srcset_min_width: 390 * 2, // HiDPI phone
-    srcset_max_width: 800 * 2, // 4K 1920
+    srcset_max_width: 600 * 2, // 4K 1920
     max_width: 99999,
     external: {
       process: 'off',
