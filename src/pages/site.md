@@ -13,12 +13,6 @@ eleventyNavigation:
   key: '{{ title | slugify }}'
   title: Site
   order: 3
-content_blocks:
-  - _bookshop_name: hero
-    content:
-      alt: Old fashioned guy in mid jump on a scooter
-      title: Old man on scooter
-      image: /img/scootz-jump.png
 ---
 # Website
 
