@@ -16,7 +16,7 @@ eleventyNavigation:
 ---
 # Website
 
-I'm using this small website to better understand the full potential of the <a href="https://cloudcannon.com" target="_blank" rel="noopener">CloudCannon</a> Git-based content management system (CMS). Since I work there it's sensible thing to do and it's fun! The site is built using the speedy <a href="https://www.11ty.dev/" target="_blank" rel="noopener">11ty</a> static site generator (SSG) based on an elegant <a href="https://github.com/MarcoMicale/Minimalism" target="_blank" rel="noopener">minimalism</a> theme by <a href="https://github.com/MarcoMicale" target="_blank" rel="noopener">Marco Micale</a>. It has been reconfigured for CloudCannon primarily for visual editing.
+I'm using this small website to better understand the full potential of the <a href="https://cloudcannon.com" target="_blank" rel="noopener">CloudCannon</a> Git-based content management system (CMS). Since I work there it's sensible thing to do and it's fun! The site is built using the speedy <a href="https://www.11ty.dev/" target="_blank" rel="noopener">11ty</a> static site generator (SSG) based on an elegant <a href="https://github.com/MarcoMicale/Minimalism" target="_blank" rel="noopener">minimalism</a> theme by <a href="https://github.com/MarcoMicale" target="_blank" rel="noopener">Marco Micale</a>. It has been reconfigured for CloudCannon for visual editing and favours SSG chaining.
 
 The aim of the site is to be minimal, elegant and performant. I'm not a developer as such but it's primarily built through the CloudCannon UI with local dev used when required. If you're interested, here's the <a href="https://github.com/socialspacedev/minicannon" target="_blank" rel="noopener">repo</a>.
 
