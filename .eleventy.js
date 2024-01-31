@@ -24,9 +24,9 @@ module.exports = function (eleventyConfig) {
 
   // Copy over some static files
   eleventyConfig
-    .addPassthroughCopy({ "src/_11ty/_static/favicon": "favicon" })
-    .addPassthroughCopy({ "src/_11ty/_fonts": "fonts" })
-    .addPassthroughCopy({ "src/_11ty/_static/img": "img" });
+    .addPassthroughCopy({ "src/favicon": "favicon" })
+    .addPassthroughCopy({ "src/fonts": "fonts" })
+    .addPassthroughCopy({ "src/img": "img" });
 
   // Show the year in the footer
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
@@ -84,10 +84,10 @@ module.exports = function (eleventyConfig) {
     // Directory: in, out, etc...
     dir: {
       input: "./src/",
-      includes: "/_11ty/_includes/",
-      layouts: "/_11ty/_layouts/",
-      data: "/_11ty/_data/",
-      static: "/_11ty/_static/",
+      includes: "/_includes/",
+      layouts: "/_layouts/",
+      data: "/_data/",
+      static: "/_static/",
       output: "./public/",
     },
   };

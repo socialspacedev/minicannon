@@ -7,9 +7,9 @@
     "dev": "run-p dev:*",
     "go!": "run-s clean css eleventy",
     "clean": "rimraf public",
-    "css": "npx tailwindcss -i src/_11ty/_tailwindCSS/raw-website.css -o public/css/style.css --minify",
+    "css": "npx tailwindcss -i src/_tailwindCSS/raw-website.css -o public/css/style.css --minify",
     "eleventy": "npx @11ty/eleventy",
-    "dev:css": "npx tailwindcss -i src/_11ty/_tailwindCSS/raw-website.css -o public/css/style.css --watch --minify",
+    "dev:css": "npx tailwindcss -i src/_tailwindCSS/raw-website.css -o public/css/style.css --watch --minify",
     "dev:11ty": "eleventy --serve --watch"
   },
   "keywords": [
