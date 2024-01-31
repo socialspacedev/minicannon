@@ -1,3 +1,13 @@
-<div class="c-two-column">
-    <p>{{ text }}</p>
+<div class="flex relative flex-wrap">
+	<div class="{{ left_container_name }}">
+		{% for component in content.left.blocks %}
+			{% bookshop "{{component._bookshop_name}}" bind: component %}
+		{% endfor %}
+	</div>
+
+	<div class="{{ right_container_name }}">
+		{% for component in content.right.blocks %}
+			{% bookshop "{{component._bookshop_name}}" bind: component %}
+		{% endfor %}
+	</div>
 </div>

@@ -4,15 +4,23 @@ spec:
     - content_blocks
   label: "Two-column"
   description:
-  icon:
+  icon: vertical_split
   tags: []
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  text: "Hello World!"
+  content:
+    left:
+      blocks: []
+    right:
+      blocks: []
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
+  left:
+    comment: "Components for the left column"
+  right:
+    comment: "Components for the right column"
