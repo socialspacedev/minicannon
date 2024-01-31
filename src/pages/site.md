@@ -52,6 +52,7 @@ The aim of the site is to be minimal, elegant and performant. I'm not a develope
 * <a href="https://github.com/mysticatea/npm-run-all" target="_blank" rel="noopener">npm-run-all</a>
 * <a href="https://github.com/isaacs/rimraf" target="_blank" rel="noopener">rimraf</a>
 * <a href="https://github.com/tabler/tabler-icons" target="_blank" rel="noopener">Tabler Icon</a>
+* <a href="https://jampack.divriots.com/" title="Visit the website for Jampack." target="_blank" rel="noopener">Jampack</a>
 
 ## Some challenges
 
@@ -62,7 +63,7 @@ Here's some hurdles I've had to overcome:
 * Converting NJKs template files to Liquid in order to use live editing on CloudCannon.
 * Stripping out all PWA related code.
 * Getting a yaml data file to work in place of the JS file.
-* Implementing 11ty image optimisation.
+* Implementing image optimisation.
 * Getting the original template to build using the CloudCannon native 11ty compiler.
 * Translating Italian comments and variables.
 * Removing CLS and performance hits due to Google fonts.<br>

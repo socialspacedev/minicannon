@@ -8,7 +8,7 @@ const default_options = {
     sort_attributes: false,
   },
   css: {
-    inline_critical_css: true,
+    inline_critical_css: false,
   },
   js: {
     compressor: 'esbuild',
