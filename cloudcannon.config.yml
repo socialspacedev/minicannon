@@ -1,11 +1,11 @@
 source: src
 paths:
-  uploads: _11ty/_static/img/
-  static: _11ty/_static/
+  uploads: img/
+  static: /
   collections:
-  data: _11ty/_data/
-  layouts: _11ty/_layouts/
-  includes: _11ty/_includes/
+  data: _data/
+  layouts: _layouts/
+  includes: _includes/
 collections_config:
   posts:
     path: blog
@@ -98,7 +98,7 @@ collections_config:
         remove_extra_inputs: false
         icon: notes
   data:
-    path: _11ty/_data
+    path: _data
     output: false
     description: Metadata for site layouts and other data
     icon: settings_applications
