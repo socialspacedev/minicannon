@@ -1,15 +1,14 @@
 # Metadata about this component, to be used in the CMS
 spec:
   structures:
-    - content_blocks
+    - blocks
   label: "Fold"
-  description:
-  icon:
+  description: "Indicates where the page fold is. Everything below will be lazy loaded"
+  icon: folder_open
   tags: []
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  text: "Hello World!"
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
