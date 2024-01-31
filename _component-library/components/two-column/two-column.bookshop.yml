@@ -2,27 +2,25 @@
 spec:
   structures:
     - content_blocks
-  label: "Hero"
-  description: Image that can be used anywhere where width is 100%.
-  icon: image
+  label: "Two-column"
+  description:
+  icon: vertical_split
   tags: []
 
 # Defines the structure of this component, as well as the default values
 blueprint:
   content:
-    alt: 
-    title: 
-    image:
+    left:
+      blocks: []
+    right:
+      blocks: []
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:
-  alt:
-    comment: Alt tag for the image. Used for accessibility.
-  title:
-    comment: Text to display on mouse over.
-  image:
-    comment: The location of the image.
-    type: image
+  left:
+    comment: "Components for the left column"
+  right:
+    comment: "Components for the right column"
