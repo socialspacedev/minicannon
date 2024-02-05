@@ -14,9 +14,9 @@ const default_options = {
     compressor: 'esbuild',
   },
   image: {
-    embed_size: 1000, // was 1500
+    embed_size: 1500,
     srcset_min_width: 390 * 2, // HiDPI phone
-    srcset_max_width: 1920 * 2, // 4K
+    srcset_max_width: 600 * 2, // 4K 1920
     max_width: 99999,
     external: {
       process: 'off',
@@ -24,7 +24,7 @@ const default_options = {
       src_exclude: null,
     },
     cdn: {
-      process: 'on', // was off
+      process: 'off',
       src_include: /^.*$/,
       src_exclude: null,
     },
