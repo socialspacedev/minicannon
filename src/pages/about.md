@@ -21,7 +21,7 @@ Ngā mihi au ki te maunga ō Maungakiekie
 
 Ngā mihi au ki te moana o Hauraki
 
-Ko Scotland te whenua ō ōku tīpuna
+Ko Kōtirana te whenua ō ōku tīpuna
 
 Ko Tāmaki Makaurau te whenua tupu
 
