@@ -1,7 +1,7 @@
 ---
 _schema: default
 title: Retro
-description: Screenshots of old Bailterspace reviews in The Rocket.
+description: Old Bailterspace reviews from The Rocket.
 tags:
   - post
   - music
@@ -14,3 +14,9 @@ permalink: blog/{{ title | slugify }}.html
 content_blocks:
 ---
 Here's a collection of reviews of Bailterspace taken from the defunct Seattle music magazine <a href="https://washingtondigitalnewspapers.org/?a=cl&amp;cl=CL1&amp;sp=RCT&amp;e=-------en-20--1--txt-txIN-------" title="The Rocket archive at the Washington Digital Library" target="_blank" rel="noopener">The Rocket</a>. It has been digitally archived by the Washington State Library and is fully searchable.
+
+<img src="/img/bailterspace_2.png" alt="Screenshot" title="Magazine clipping of Bailterspace" height="413" width="294" />
+
+<img src="/img/bailterspace_1.png" alt="Screenshot" title="Magazine clipping of Bailterspace" height="582" width="222" />
+
+<img src="/img/bailterspace_3.png" alt="Screenshot" title="Magazine clipping of Bailterspace" height="599" width="192" />
