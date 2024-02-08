@@ -35,7 +35,7 @@ Ko Andrew tōku ingoa
 
 Tēnā tātou katou
 
-<img src="/img/me-sideon.PNG" alt="Stupid old guy trying to take a selfie." title="A recentish photo of me" height="1795" width="2346" />
+ <img src="/img/me-sideon.PNG" alt="Stupid old guy trying to take a selfie." title="A recentish photo of me" height="1795" width="2346" />
 
 ## Ko wai au?
 
