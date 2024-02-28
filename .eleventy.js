@@ -6,7 +6,6 @@ const pluginBookshop = require("@bookshop/eleventy-bookshop");
 const yaml = require("js-yaml");
 const path = require("node:path");
 const Image = require("@11ty/eleventy-img");
-const embedYouTube = require("eleventy-plugin-youtube-embed");
 
 // Helper packages
 // const htmlmin = require("html-minifier");
@@ -18,7 +17,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginBookshop({bookshopLocations: ["_component-library"],}));
-  eleventyConfig.addPlugin(embedYouTube);
   
   // Add YAML extension to use for data file
   eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
