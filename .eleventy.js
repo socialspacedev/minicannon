@@ -18,15 +18,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginBookshop({bookshopLocations: ["_component-library"],}));
-//  eleventyConfig.addPlugin(embedYouTube);
-  
-  eleventyConfig.addPlugin(embedYouTube, {
-    lite: true
-  });
+  eleventyConfig.addPlugin(embedYouTube);
   
   // Add YAML extension to use for data file
   eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
-
 
   // Copy over some static files
   eleventyConfig
