@@ -15,4 +15,4 @@ permalink: blog/{{ title | slugify }}.html
 ---
 Here's a clip of the <a href="https://www.facebook.com/lifeanddeathbrigadenz" target="_blank" rel="noopener">Life and Death Brigade</a> explaining a show we played at <a href="https://zellerecords.wordpress.com/zelle-fest-2017/" target="_blank" rel="noopener">Zelle Fest</a>, Port Chalmers in 2022. That's me on the left and my son Milo on the right.
 
-https://www.youtube.com/embed/4-oQencpvfI?si=uCXd8CLrIRlLNyTo
+https://www.youtube.com/watch?v=4-oQencpvfI
