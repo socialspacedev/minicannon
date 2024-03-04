@@ -18,7 +18,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginBookshop({bookshopLocations: ["_component-library"],}));
-//  eleventyConfig.addPlugin(embedYouTube);
   
   // Configure YouTube embed plugin
   eleventyConfig.addPlugin(embedYouTube, {
@@ -93,7 +92,6 @@ module.exports = function (eleventyConfig) {
       includes: "/_includes/",
       layouts: "/_layouts/",
       data: "/_data/",
-//      static: "/_static/",
       output: "./public/",
     },
   };

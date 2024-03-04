@@ -35,7 +35,7 @@ Tēnā tātou katou
 
  <img src="/img/me-sideon.PNG" alt="Stupid old guy trying to take a selfie." title="A recentish photo of me" height="1795" width="2346" />
  
- {% image "/img/me-sideon.PNG", "Stupid old guy trying to take a selfie." %}
+ {% image "/img/me-sideon.PNG", "Stupid old guy trying to take a selfie.", "30em 50vw 100vw" %}
 
 ## Ko wai au?
 
