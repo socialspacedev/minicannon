@@ -68,7 +68,7 @@ module.exports = function (eleventyConfig) {
     let inputFilePath = path.join(eleventyConfig.dir.input, eleventyConfig.dir.static, srcFilePath);
 
     let metadata = await Image(inputFilePath, {
-      widths: [400, 800, 1600],
+      widths: [400, 800, 1000],
       formats: ["avif", "webp", "svg", "jpeg"],
       outputDir: "./public/img/",
       urlPath: "/img/",
