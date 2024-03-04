@@ -65,7 +65,7 @@ module.exports = function (eleventyConfig) {
   // 11ty image optimisation
   eleventyConfig.addShortcode("image", async (srcFilePath, alt, sizes) => {
    
-    let inputFilePath = path.join(eleventyConfig.dir.input, eleventyConfig.dir.static, srcFilePath);
+    let inputFilePath = path.join(eleventyConfig.dir.input, srcFilePath);
 
     let metadata = await Image(inputFilePath, {
       widths: [400, 800, 1000],
@@ -93,7 +93,7 @@ module.exports = function (eleventyConfig) {
       includes: "/_includes/",
       layouts: "/_layouts/",
       data: "/_data/",
-      static: "/_static/",
+//      static: "/_static/",
       output: "./public/",
     },
   };
