@@ -210,5 +210,5 @@ _snippets:
    definitions:
      shortcode_name: youtube
      positional_args:
-       - editor_key: thelink
+       - editor_key: URL
          type: text

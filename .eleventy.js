@@ -61,6 +61,10 @@ module.exports = function (eleventyConfig) {
     }
   });
 
+
+  // Shortcode for Youtube snippet
+  eleventyConfig.addShortcode("youtube", function(url) { … });
+ 
   // 11ty image optimisation
   eleventyConfig.addShortcode("image", async (srcFilePath, alt, sizes) => {
    
