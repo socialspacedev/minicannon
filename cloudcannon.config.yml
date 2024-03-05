@@ -202,13 +202,3 @@ _snippets:
         hidden: true
       trim_right:
         hidden: true
- my_youtube_snippet:
-   template: eleventy_liquid_shortcode_positional_args
-   inline: false
-   preview:
-     text: Youtube
-   definitions:
-     shortcode_name: youtube
-     positional_args:
-       - editor_key: URL
-         type: text
