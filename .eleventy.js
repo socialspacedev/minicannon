@@ -60,7 +60,7 @@ module.exports = function (eleventyConfig) {
       return data.timing;
     }
   });
-
+ 
   // 11ty image optimisation
   eleventyConfig.addShortcode("image", async (srcFilePath, alt, sizes) => {
    
