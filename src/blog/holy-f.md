@@ -15,11 +15,11 @@ content_blocks:
 ---
 {% image "/img/holf-fuck-live.png", "Blurry photo of Holy Fuck live at the Mothership.", "30em 50vw 100vw" %}
 
-The great genre-bending electronic machines band <a href="https://www.holyfuckmusic.com/" title="Homepage for Holy Fuck" target="_blank" rel="noopener">Holy Fuck</a> played a New Zealand tour the other week. I was lucky to see their epic <a href="https://www.undertheradar.co.nz/news/21097/Holy-Fuck-Touring-New-Zealand-In-February.utr" title="Click to read about their NZ tour." target="_blank" rel="noopener">Auckland show</a> at the MotherShip as shown in the blurry photo above.
+The great genre-bending electronic machines band <a href="https://www.holyfuckmusic.com/" title="Homepage for Holy Fuck" target="_blank" rel="noopener">Holy Fuck</a> played a New Zealand tour the other week. We were lucky to see their epic <a href="https://www.undertheradar.co.nz/news/21097/Holy-Fuck-Touring-New-Zealand-In-February.utr" title="Click to read about their NZ tour." target="_blank" rel="noopener">Auckland show</a> at the Mothership as shown in the blurry photo above.
 
-They were mind-blowingly excellent and despite feeling bloated on fine dining beforehand, we couldn't help but groove a bit. Most of the audience were as ancient as us and criminally under-numbered. They were superb.
+They were mind-blowingly excellent –&nbsp;mixing up genres, sounds and dynamics. Despite feeling bloated on fine dining beforehand, we couldn't help but groove a bit like everyone else. Most of whom were as ancient as us and criminally under-numbered.
 
-<a href="https://www.setlist.fm/setlist/holy-fuck/2024/the-mothership-auckland-new-zealand-2bad942e.html" title="Set list for Holy Fuck at the Mothership." target="_blank" rel="noopener">These</a> are tunes they played and the experience was a little like the following video.
+<a href="https://www.setlist.fm/setlist/holy-fuck/2024/the-mothership-auckland-new-zealand-2bad942e.html" title="Set list for Holy Fuck at the Mothership." target="_blank" rel="noopener">These</a> are tunes they played which favoured their most recent album at the time "<a href="https://holyfuck.bandcamp.com/album/deleter" title="Grab Deleter from their Bandcamp" target="_blank" rel="noopener">Deleter</a>". Check out the following video for a taste of what you missed.
 
 https://youtu.be/CgCdhC3lu3Q?si=yR7QGBvs1delKP74
 
