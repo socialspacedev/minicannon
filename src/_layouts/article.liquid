@@ -4,7 +4,6 @@ description: "Description of a blog article"
 tags: "post"
 date: "Created"
 published: "false"
-luogo: "Posted"
 type: "article"
 ---
 
@@ -16,7 +15,7 @@ type: "article"
     {% include "nav.liquid" %}
     <article data-pagefind-body>
         <small class="info">
-            {{ luogo }}&nbsp;
+            Posted&nbsp;
             <time datetime="{{ page.date }}">{{ page.date | readableDate }}</time>&nbsp;&ndash;&nbsp;
             {{ content | timeToRead }}&nbsp;to&nbsp;read
         </small>
