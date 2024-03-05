@@ -6,6 +6,7 @@ const pluginBookshop = require("@bookshop/eleventy-bookshop");
 const yaml = require("js-yaml");
 const path = require("node:path");
 const Image = require("@11ty/eleventy-img");
+const embedYouTube = require("eleventy-plugin-youtube-embed");
 
 // Helper packages
 // const htmlmin = require("html-minifier");
@@ -18,9 +19,13 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginBookshop({bookshopLocations: ["_component-library"],}));
   
+  // Configure YouTube embed plugin
+  eleventyConfig.addPlugin(embedYouTube, {
+    lazy: true
+  });
+  
   // Add YAML extension to use for data file
   eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
-
 
   // Copy over some static files
   eleventyConfig
@@ -59,10 +64,10 @@ module.exports = function (eleventyConfig) {
   // 11ty image optimisation
   eleventyConfig.addShortcode("image", async (srcFilePath, alt, sizes) => {
    
-    let inputFilePath = path.join(eleventyConfig.dir.input, eleventyConfig.dir.static, srcFilePath);
+    let inputFilePath = path.join(eleventyConfig.dir.input, srcFilePath);
 
     let metadata = await Image(inputFilePath, {
-      widths: [400, 800, 1600],
+      widths: [400, 800, 1000],
       formats: ["avif", "webp", "svg", "jpeg"],
       outputDir: "./public/img/",
       urlPath: "/img/",
@@ -87,7 +92,6 @@ module.exports = function (eleventyConfig) {
       includes: "/_includes/",
       layouts: "/_layouts/",
       data: "/_data/",
-      static: "/_static/",
       output: "./public/",
     },
   };

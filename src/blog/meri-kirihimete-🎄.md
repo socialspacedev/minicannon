@@ -7,9 +7,9 @@ tags:
   - christmas
 date: 2023-12-25T15:11:00+13:00
 published: true
-luogo: Posted
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
+content_blocks:
 ---
-<img src="/img/photo-2023-12-23-09-22-49.jpg" alt="Christmas family fun" title="Ha ha ha" height="700" width="720" />
+{% image "/img/photo-2023-12-23-09-22-49.jpg", "Christmas family fun.", "30em 50vw 100vw" %}
