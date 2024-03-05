@@ -187,7 +187,7 @@ _snippets:
    template: eleventy_liquid_shortcode_positional_args
    inline: false
    preview:
-     text: My image snippet
+     text: Block image
    definitions:
      shortcode_name: image
      positional_args:
@@ -206,14 +206,9 @@ _snippets:
    template: eleventy_liquid_shortcode_positional_args
    inline: false
    preview:
-     text: My Youtube snippet
+     text: Youtube
    definitions:
      shortcode_name: youtube
      positional_args:
-       - editor_key: link
-         type: url
-     _inputs:
-      trim_left:
-        hidden: true
-      trim_right:
-        hidden: true
+       - editor_key: thelink
+         type: text
