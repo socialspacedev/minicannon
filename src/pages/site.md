@@ -12,7 +12,6 @@ eleventyNavigation:
   key: '{{ title | slugify }}'
   title: Site
   order: 3
-content_blocks:
 ---
 # Website
 
@@ -45,6 +44,7 @@ The aim of the site is to be minimal, elegant and performant. I'm not a develope
   * <a href="https://github.com/11ty/eleventy-plugin-rss" target="_blank" rel="noopener">eleventy-plugin-rss</a>
   * <a href="https://github.com/11ty/eleventy-navigation" target="_blank" rel="noopener">eleventy-navigation</a>
   * <a href="https://github.com/JKC-Codes/eleventy-plugin-time-to-read" target="_blank" rel="noopener">eleventy-plugin-time-to-read</a>
+  * <a href="https://github.com/gfscott/eleventy-plugin-youtube-embed" title="Visit youtube plugin repo" target="_blank" rel="noopener">eleventy-plugin-youtube-embed</a>
 * <a href="https://github.com/tailwindlabs/tailwindcss" target="_blank" rel="noopener">Tailwindcss</a>
   * <a href="https://github.com/tailwindlabs/tailwindcss-typography" target="_blank" rel="noopener">Tailwindcss typography</a>
 * <a href="https://github.com/moment/luxon" target="_blank" rel="noopener">Luxon</a>
