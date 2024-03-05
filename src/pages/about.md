@@ -11,7 +11,6 @@ eleventyNavigation:
   key: '{{ title | slugify }}'
   title: About
   order: 1
-content_blocks:
 ---
 ## Pepeha
 
@@ -34,7 +33,7 @@ He tangata Tiriti ahau
 Ko Andrew tōku ingoa
 
 Tēnā tātou katou
- 
+
 {% image "/img/me-sideon.PNG", "Stupid old guy trying to take a selfie.", "30em 50vw 100vw" %}
 
 ## Ko wai au?
