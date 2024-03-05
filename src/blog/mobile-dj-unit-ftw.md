@@ -13,4 +13,5 @@ type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
 ---
-<img src="/img/vespa-dj.jpg" alt="BlueVespa with a combined sidecar and DJ booth" title="Mobile tunage" height="1080" width="1080" />
+
+{% image "/img/vespa-dj.jpg", "BlueVespa with a combined sidecar and DJ booth.", "30em 50vw 100vw" %}

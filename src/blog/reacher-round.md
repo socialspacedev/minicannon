@@ -13,7 +13,7 @@ type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
 ---
-<img src="/img/reacher-books.png" alt="All Reacher books in chronological order" title="All Reacher books in chronological order" height="1471" width="3839" />
+{% image "/img/reacher-books.png", All Reacher books in chronological order.", "30em 50vw 100vw" %}
 
 Before January 2022 I had never read a [Jack Reacher]() novel. I had seen the films featuring Tom Cruise as the titular character and series 1 of the much better [TV show](). On the back of reading just one book, I set myself the arbitrary goal of reading the remaining books back-to-back.
 
