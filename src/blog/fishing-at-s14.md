@@ -23,5 +23,3 @@ We headed to various spots along the Kakanui coast. First Kakanui beach then All
 Other than catching my shorts there were no fish to be seen. This didn't matter at all as my casting improved, I got wet and we spent time at a delightful beach getting our calves burned.
 
 {% image "/img/caught-shorts.png", "Man with shorts caught by fishing line.", "30em 50vw 100vw" %}
-
-{% raw %}https://www.youtube.com/watch?v=mTB29CLKEvE{% endraw %}
