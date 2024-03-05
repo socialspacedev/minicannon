@@ -198,11 +198,22 @@ _snippets:
        - editor_key: sizes
          type: string
      _inputs:
-      trim_bottom_left:
+      trim_left:
         hidden: true
-      trim_top_right:
+      trim_right:
         hidden: true
-      trim_bottom_right:
+ my_youtube_snippet:
+   template: eleventy_liquid_shortcode_positional_args
+   inline: false
+   preview:
+     text: My Youtube snippet
+   definitions:
+     shortcode_name: youtube
+     positional_args:
+       - editor_key: link
+         type: url
+     _inputs:
+      trim_left:
         hidden: true
-      trim_top_left:
+      trim_right:
         hidden: true
