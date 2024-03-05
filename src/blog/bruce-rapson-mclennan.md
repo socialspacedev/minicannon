@@ -13,6 +13,7 @@ published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
+content_blocks:
 ---
 Bruce was one of the good guys. He liked maps and music and coffee and cigarettes and whiskey and technology and Central Otago and photography and the Internet. Bruce liked many other things but I missed the chance to find out.
 

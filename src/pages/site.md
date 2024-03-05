@@ -3,7 +3,6 @@ _schema: default
 title: Site
 description: Tech used to build this website
 date: 2024-01-11T11:37:02+13:00
-luogo: Posted
 type: website
 layout: page.liquid
 keyword: website
@@ -13,6 +12,7 @@ eleventyNavigation:
   key: '{{ title | slugify }}'
   title: Site
   order: 3
+content_blocks:
 ---
 # Website
 

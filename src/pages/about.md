@@ -2,7 +2,6 @@
 _schema: default
 title: About
 description: A little about me
-luogo: Posted
 type: website
 layout: page.liquid
 keyword: about
@@ -12,6 +11,7 @@ eleventyNavigation:
   key: '{{ title | slugify }}'
   title: About
   order: 1
+content_blocks:
 ---
 ## Pepeha
 
