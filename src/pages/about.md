@@ -2,7 +2,6 @@
 _schema: default
 title: About
 description: A little about me
-luogo: Posted
 type: website
 layout: page.liquid
 keyword: about
@@ -12,6 +11,7 @@ eleventyNavigation:
   key: '{{ title | slugify }}'
   title: About
   order: 1
+content_blocks:
 ---
 ## Pepeha
 
@@ -34,8 +34,8 @@ He tangata Tiriti ahau
 Ko Andrew tōku ingoa
 
 Tēnā tātou katou
-
- <img src="/img/me-sideon.PNG" alt="Stupid old guy trying to take a selfie." title="A recentish photo of me" height="1795" width="2346" />
+ 
+{% image "/img/me-sideon.PNG", "Stupid old guy trying to take a selfie.", "30em 50vw 100vw" %}
 
 ## Ko wai au?
 

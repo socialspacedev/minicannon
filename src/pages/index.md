@@ -1,7 +1,6 @@
 ---
 title: Index
 description: A minimal CloudCannon and 11ty website by and about Andrew Long.
-luogo: Posted
 type: website
 layout: page.liquid
 keyword: index

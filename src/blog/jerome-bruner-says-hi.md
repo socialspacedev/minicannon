@@ -8,10 +8,10 @@ tags:
   - academic
 date: 2016-06-10T15:02:00Z
 published: true
-luogo: Originally posted
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
+content_blocks:
 ---
 Jerome Bruner died this week aged 100. He was an elegant writer with an insatiable curiosity and intellectual openness. His thinking influenced (even shaped) cognitive psychology, education, law, narrative theory and more.
 
