@@ -8,7 +8,6 @@ tags:
   - social media
 date: 2023-03-20T17:14:00Z
 published: true
-luogo: Posted
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html

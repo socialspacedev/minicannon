@@ -8,7 +8,6 @@ tags:
   - books
 date: 2024-01-01T17:00:00+13:00
 published: true
-luogo: Posted
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html

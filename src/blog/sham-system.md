@@ -7,7 +7,6 @@ tags:
   - music
 date: 2023-11-30T14:14:36+13:00
 published: true
-luogo: Posted
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html

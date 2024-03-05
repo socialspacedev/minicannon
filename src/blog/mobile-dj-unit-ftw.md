@@ -8,7 +8,6 @@ tags:
   - music
 date: 2024-01-08T13:06:29+13:00
 published: true
-luogo: Posted
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
