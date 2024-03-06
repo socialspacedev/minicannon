@@ -13,6 +13,8 @@ layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
 content_blocks:
 ---
+> Originally posted on my personal <a href="https://blog.anaru.nz/post/145689055594/jerome-bruner-said-hi" title="Original post on my personal Tumblelog with the then domain of andrew-long.name." target="_blank" rel="noopener">Tumblelog</a> in 2016.
+
 Jerome Bruner died this week aged 100. He was an elegant writer with an insatiable curiosity and intellectual openness. His thinking influenced (even shaped) cognitive psychology, education, law, narrative theory and more.
 
 Check out his obituary in the <a href="https://t.umblr.com/redirect?z=http%3A%2F%2Fwww.nytimes.com%2F2016%2F06%2F09%2Fscience%2Fjerome-s-bruner-who-shaped-understanding-of-the-young-mind-dies-at-100.html&amp;t=ZGFjNzMxYmFjNWFhNmMzNGE1NDdlNWU1YTc2MTczZTY0MTFkYTM5MCxOZ2pTd0VXaA%3D%3D&amp;b=t%3A8D2vEEs4SpsMxLlNQ4JZIQ&amp;p=https%3A%2F%2Fblog.anaru.nz%2Fpost%2F145689055594%2Fjerome-bruner-said-hi&amp;m=1&amp;ts=1679189714" target="_blank" rel="noopener">New York Times</a> and the <a href="https://href.li/?https://www.washingtonpost.com/national/jerome-s-bruner-influential-psychologist-of-perception-dies-at-100/2016/06/07/033e5870-2cc3-11e6-9b37-42985f6a265c_story.html" target="_blank" rel="noopener">Washington Post</a> as well as this piece at <a href="https://href.li/?http://www.theatlantic.com/education/archive/2016/06/an-unfinished-quest-in-education/486074/" target="_blank" rel="noopener">The Atlantic</a> to get a better idea.
