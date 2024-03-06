@@ -31,7 +31,7 @@ He was dedicated to morning tea which was good because he liked espresso alot. W
 
 He moved out of <a href="http://www.otago.ac.nz/" target="_blank" rel="noopener">here</a> a few months ago to a new <a href="http://www.agresearch.co.nz/" target="_blank" rel="noopener">job</a>. He liked maps and technology so a GIS career was a perfect fit. A cruel irony then this turn of events. We planned to keep in touch despite the physical separation but our conversations tailed off (despite our mutual use of multiplex communication). Sadly.
 
-{% image, "/img/mclennan.jpg" "Shooting star photo" "800" %}
+{% image, "/img/mclennan.jpg" "Shooting star photo" "800 1000 1200" %}
 
 I saw him for the last time about two weeks ago. He seemed relaxed and happy; clearly the new job was working out as were opportunities to take more photographs of the Central Otago landscape (he had a healthy obsession with the shist and hills).
 
