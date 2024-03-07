@@ -197,9 +197,7 @@ _snippets:
          type: string
        - editor_key: sizes
          type: string
-         default: "200 300 400"
+         default: "30em 50vw 100vw"
      _inputs:
-      trim_left:
-        hidden: true
-      trim_right:
-        hidden: true
+      image_file:
+        type: image
