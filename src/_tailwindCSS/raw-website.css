@@ -719,7 +719,7 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
     @apply grow-0 gap-7 justify-end;
   }
   about img {
-    margin-top: auto;
+    margin-top: -20rem;
   }
 }
 
@@ -763,6 +763,6 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
     @apply grow-0 gap-9 justify-end;
   }
   about img {
-    margin-top: -20rem;
+    margin-top: auto;
   }
 }
