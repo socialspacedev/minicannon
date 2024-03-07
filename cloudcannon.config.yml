@@ -200,4 +200,10 @@ _snippets:
          default: "30em 50vw 100vw"
      _inputs:
       image_file:
-        type: image
+        type: file
+       options:
+        uploads: uploads
+        accepts_mime_types:
+          - image/png
+          - image/svg+xml
+          - image/jpeg
