@@ -184,11 +184,11 @@ _snippets_imports:
   eleventy_liquid: true
 _snippets:
  my_image_snippet:
-   template: eleventy_liquid_shortcode_positional_args
-   inline: false
-   preview:
+  template: eleventy_liquid_shortcode_positional_args
+  inline: false
+  preview:
      text: Block image
-   definitions:
+  definitions:
      shortcode_name: image
      positional_args:
        - editor_key: filepath
@@ -198,12 +198,12 @@ _snippets:
        - editor_key: sizes
          type: string
          default: "30em 50vw 100vw"
-     _inputs:
-      image_file:
-        type: file
-       options:
+  _inputs:
+    image_file:
+      type: file
+      options:
         uploads: uploads
         accepts_mime_types:
           - image/png
           - image/svg+xml
-          - image/jpeg
+            - image/jpeg
