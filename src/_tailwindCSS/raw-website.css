@@ -671,7 +671,9 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
   .elenco-posts {
     @apply gap-6;
   }
-  
+    about img {
+    margin-top: auto;
+  }
 }
 
 @media screen(md) {
@@ -762,8 +764,5 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
   }
   .social {
     @apply grow-0 gap-9 justify-end;
-  }
-  about img {
-    margin-top: auto;
   }
 }
