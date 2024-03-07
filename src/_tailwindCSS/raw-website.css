@@ -105,9 +105,9 @@
   .icon:focus-within {
     @apply hover:stroke-sky-600;
   }
-  about img {
+ /* about img {
   margin-top: -20rem;
-  }
+  } */
 }
 .pagefind-ui__result.svelte-j9e30.svelte-j9e30 {
     list-style-type: none;
@@ -671,9 +671,6 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
   .elenco-posts {
     @apply gap-6;
   }
-  about img {
-    margin-top: auto;
-  }
 }
 
 @media screen(md) {
@@ -740,9 +737,6 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
   .social {
     @apply grow-0 gap-8 justify-end;
   }
-  about img {
-    margin-top: auto;
-  }
 }
 
 @media screen(2xl) {
@@ -761,8 +755,5 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
   }
   .social {
     @apply grow-0 gap-9 justify-end;
-  }
-  about img {
-    margin-top: auto;
   }
 }
