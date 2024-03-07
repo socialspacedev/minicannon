@@ -191,7 +191,7 @@ _snippets:
    definitions:
      shortcode_name: image
      positional_args:
-       - editor_key: add image
+       - editor_key: filepath
          type: image
        - editor_key: alt
          type: string
