@@ -199,6 +199,8 @@ _snippets:
          type: string
          default: "30em 50vw 100vw"
   _inputs:
+      filepath:
+        type: file
       trim_bottom_left:
         hidden: true
       trim_top_right:
