@@ -743,9 +743,6 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
   .social {
     @apply grow-0 gap-8 justify-end;
   }
-  about img {
-    margin-top: auto;
-  }
 }
 
 @media screen(2xl) {
@@ -764,8 +761,5 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
   }
   .social {
     @apply grow-0 gap-9 justify-end;
-  }
-  about img {
-    margin-top: auto;
   }
 }
