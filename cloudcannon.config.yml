@@ -191,7 +191,7 @@ _snippets:
   definitions:
      shortcode_name: image
      positional_args:
-       - editor_key: filepath
+       - editor_key: thefile
          type: string
        - editor_key: alt
          type: string
@@ -199,8 +199,8 @@ _snippets:
          type: string
          default: "30em 50vw 100vw"
   _inputs:
-      filepath:
-        type: file
+      thefile:
+        type: image
       trim_bottom_left:
         hidden: true
       trim_top_right:
