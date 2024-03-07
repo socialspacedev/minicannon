@@ -742,7 +742,7 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
     @apply grow-0 gap-8 justify-end;
   }
   about img {
-    margin-top: -20rem;
+    margin-top: auto;
   }
 }
 
