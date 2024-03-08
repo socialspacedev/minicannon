@@ -210,3 +210,7 @@ _snippets:
         hidden: true
       trim_top_left:
         hidden: true
+      trim_left:
+        hidden: true
+      trim_right:
+        hidden: true
