@@ -23,5 +23,3 @@ They played a number of <a href="https://www.setlist.fm/setlist/holy-fuck/2024/t
 Check out the following video for a taste of what you missed or for more detail, read this <a href="https://13thfloor.co.nz/holy-fuck-the-mothership-february-16-2024/" title="Review of Holy Fuck by the 13th Floor." target="_blank" rel="noopener">review</a>.
 
 {% raw %}https://youtu.be/CgCdhC3lu3Q?si=yR7QGBvs1delKP74{% endraw %}
-
-{% image, "/img/img-3418.jpeg" "Scoot" "30em 50vw 100vw" %}
