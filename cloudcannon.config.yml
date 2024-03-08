@@ -180,32 +180,33 @@ _editables:
     undo: true
 data_config: {}
 timezone: Pacific/Auckland
+#Snippets
 _snippets_imports:
   eleventy_liquid: true
 _snippets:
- my_image_snippet:
-  template: eleventy_liquid_shortcode_positional_args
-  inline: false
+  my_image_snippet:
+    template: eleventy_liquid_shortcode_positional_args
+    inline: false
   preview:
-     text: Block image
+    text: Block image
   definitions:
-     shortcode_name: image
-     positional_args:
-       - editor_key: Image
-         type: string
-       - editor_key: Alt
-         type: string
-       - editor_key: Sizes
-         type: string
-         default: "30em 50vw 100vw"
+    shortcode_name: image
+    positional_args:
+      - editor_key: Image
+        type: string
+      - editor_key: Alt
+        type: string
+      - editor_key: Sizes
+        type: string
+        default: "30em 50vw 100vw"
   _inputs:
-      thefile:
-        type: image
-      trim_bottom_left:
-        hidden: true
-      trim_top_right:
-        hidden: true
-      trim_bottom_right:
-        hidden: true
-      trim_top_left:
-        hidden: true
+    Image:
+      type: image
+    trim_bottom_left:
+      hidden: true
+    trim_top_right:
+      hidden: true
+    trim_bottom_right:
+      hidden: true
+    trim_top_left:
+      hidden: true
