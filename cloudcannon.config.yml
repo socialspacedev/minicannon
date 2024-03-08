@@ -122,6 +122,18 @@ _inputs:
     options:
       resize_style: cover
     cascade: true
+  trim_bottom_left:
+    hidden: true
+  trim_top_right:
+    hidden: true
+  trim_bottom_right:
+    hidden: true
+  trim_top_left:
+    hidden: true
+  trim_left:
+    hidden: true
+  trim_right:
+    hidden: true
 _editables:
   text:
     bold: true
@@ -202,15 +214,3 @@ _snippets:
     _inputs:
       Image:
         type: image
-      trim_bottom_left:
-        hidden: true
-      trim_top_right:
-        hidden: true
-      trim_bottom_right:
-        hidden: true
-      trim_top_left:
-        hidden: true
-      trim_left:
-        hidden: true
-      trim_right:
-        hidden: true
