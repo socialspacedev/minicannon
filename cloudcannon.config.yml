@@ -184,19 +184,6 @@ timezone: Pacific/Auckland
 _snippets_imports:
   eleventy_liquid: true
 _snippets:
-  _inputs:
-    trim_bottom_left:
-      hidden: true
-    trim_top_right:
-      hidden: true
-    trim_bottom_right:
-      hidden: true
-    trim_top_left:
-      hidden: true
-    trim_left:
-      hidden: true
-    trim_right:
-      hidden: true
   my_image_snippet:
     template: eleventy_liquid_shortcode_positional_args
     inline: false
@@ -215,3 +202,16 @@ _snippets:
     _inputs:
       Image:
         type: image
+        _inputs:
+      trim_bottom_left:
+        hidden: true
+      trim_top_right:
+        hidden: true
+      trim_bottom_right:
+        hidden: true
+      trim_top_left:
+        hidden: true
+      trim_left:
+        hidden: true
+      trim_right:
+        hidden: true
