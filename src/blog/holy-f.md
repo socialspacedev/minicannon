@@ -16,7 +16,7 @@ content_blocks:
 
 The great genre-bending electronic machines band <a href="https://www.holyfuckmusic.com/" title="Homepage for Holy Fuck" target="_blank" rel="noopener">Holy Fuck</a> played a New Zealand tour the other week. We were lucky to see their epic <a href="https://www.undertheradar.co.nz/news/21097/Holy-Fuck-Touring-New-Zealand-In-February.utr" title="Click to read about their NZ tour." target="_blank" rel="noopener">Auckland show</a> at the Mothership as shown in the blurry photo above.
 
-They were mind-blowingly excellent –&nbsp;mixing up genres, sounds, instruments and dynamics. Despite feeling bloated from the fine dining beforehand, we couldn't help but groove like everyone else. Most of whom were as ancient as us and criminally under-numbered.
+They were mind-blowingly excellent – mixing up genres, sounds, instruments and dynamics. Despite feeling bloated from the fine dining beforehand, we couldn't help but groove like everyone else. Most of whom were as ancient as us and criminally under-numbered.
 
 They played a number of <a href="https://www.setlist.fm/setlist/holy-fuck/2024/the-mothership-auckland-new-zealand-2bad942e.html" title="Set list from the show at Mothership" target="_blank" rel="noopener">tunes</a> from their most recent album "<a href="https://holyfuck.bandcamp.com/album/deleter" title="Grab Deleter from their Bandcamp" target="_blank" rel="noopener">Deleter</a>" including Luxe, Deleters, and Moment. Plus a few oldies such as Tom Tom and Lovely Allen. All coalescing into a seamless stream of audio magic.
 
