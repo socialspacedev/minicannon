@@ -202,7 +202,6 @@ _snippets:
     _inputs:
       Image:
         type: image
-        _inputs:
       trim_bottom_left:
         hidden: true
       trim_top_right:
