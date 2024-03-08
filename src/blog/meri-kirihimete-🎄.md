@@ -12,4 +12,4 @@ layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
 content_blocks:
 ---
-{% image "/img/photo-2023-12-23-09-22-49.jpg", "Christmas family fun.", "30em 50vw 100vw" %}
+{% image "/img/chrimbo.jpg", "Christmas family fun.", "30em 50vw 100vw" %}
