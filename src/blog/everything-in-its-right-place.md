@@ -18,4 +18,4 @@ I'm no fan of Radiohead but do like the weird timing and melancholy arrangement 
 
 {% raw %}https://www.youtube.com/watch?v=kk5CEpFXCc0{% endraw %}
 
-Grab a digital copy of this plus a few other tunes on his <a href="https://kamaalwilliams.bandcamp.com/album/everything-in-its-right-place" title="Kaamal William's Bandcamp" target="_blank" rel="noopener">bandcamp</a>.
+Grab a digital copy of this tune plus a few others from his <a href="https://kamaalwilliams.bandcamp.com/album/everything-in-its-right-place" title="Kaamal William's Bandcamp" target="_blank" rel="noopener">bandcamp</a>.
