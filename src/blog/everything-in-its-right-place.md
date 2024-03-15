@@ -17,3 +17,5 @@ I heard this lovely tune on one of Colin Newman and Malka Spigal's recent <a hre
 I'm no fan of Radiohead but do like the weird timing and melancholy arrangement of Pyramid Song (before the singing comes in that is 😬). Kaamal William's tune is a beautiful, mellow jazz instrumental with a warm, fat keyboard at the centre.
 
 {% raw %}https://www.youtube.com/watch?v=kk5CEpFXCc0{% endraw %}
+
+Grab a digital copy of this plus a few other tunes on his <a href="https://kamaalwilliams.bandcamp.com/album/everything-in-its-right-place" title="Kaamal William's Bandcamp" target="_blank" rel="noopener">bandcamp</a>.
