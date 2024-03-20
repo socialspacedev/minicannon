@@ -113,7 +113,7 @@ _enabled_editors:
   - content
   - data
 source_editor:
-  theme: solarized_dark
+  theme: xcode
 _inputs:
   date:
     type: datetime
