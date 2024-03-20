@@ -112,6 +112,8 @@ _enabled_editors:
   - visual
   - content
   - data
+source_editor:
+  theme: solarized_dark
 _inputs:
   date:
     type: datetime
