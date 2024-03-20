@@ -113,7 +113,7 @@ _enabled_editors:
   - content
   - data
 source_editor:
-  theme: chrome
+  theme: tomorrow_night_eighties
 _inputs:
   date:
     type: datetime
