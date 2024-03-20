@@ -112,8 +112,8 @@ _enabled_editors:
   - visual
   - content
   - data
-source_editor:
-  theme: github
+#source_editor:
+#  theme: github
 _inputs:
   date:
     type: datetime
