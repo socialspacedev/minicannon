@@ -113,7 +113,7 @@ _enabled_editors:
   - content
   - data
 source_editor:
-  theme: nord_dark
+  theme: dawn
 _inputs:
   date:
     type: datetime
