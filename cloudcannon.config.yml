@@ -113,7 +113,7 @@ _enabled_editors:
   - content
   - data
 source_editor:
-  theme: tomorrow_night_eighties
+  theme: textmate
 _inputs:
   date:
     type: datetime
