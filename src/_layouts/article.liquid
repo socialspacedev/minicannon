@@ -24,15 +24,16 @@ type: "article"
         {{ content }}
         </div>
          <!-- Pagination links -->
-        {%- if collections.posts %}
-          {% assign previousPost = collections.posts | getPreviousCollectionItem %}
-          {% assign nextPost = collections.posts | getNextCollectionItem %}
-          {% if nextPost or previousPost %}
-            <ul class="links-nextprev">
-	        {% if previousPost %}<li>Previous: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>{% endif %}
-          	{% if nextPost %}<li>Next: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>{% endif %}
-            </ul>
-        {%- endif %}
+{%- if collections.posts.size > 0 %}
+    {% assign previousPost = collections.posts | getPreviousCollectionItem %}
+    {% assign nextPost = collections.posts | getNextCollectionItem %}
+    {% if nextPost or previousPost %}
+        <ul class="links-nextprev">
+            {% if previousPost %}<li>Previous: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>{% endif %}
+            {% if nextPost %}<li>Next: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>{% endif %}
+        </ul>
+    {% endif %}
+{%- endif %}
         {% bookshop_include "page" content_blocks: content_blocks %}
     </article>
     {% include "footer.liquid" %}
