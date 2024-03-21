@@ -25,11 +25,11 @@ type: "article"
         </div>
          <!-- Pagination links -->
         <ul class="paginate"> 
-          <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Previous</a>{% else %}Previous{% endif %}</li>
+          <li class="left">{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">&lt; Previous</a>{% else %}&lt; Previous{% endif %}</li>
         {% for pageEntry in pagination.pages %}
           <li><a href="{{ pagination.hrefs[forloop.index0] }}"{% if page.url == pagination.hrefs[forloop.index0] %} aria-current="page"{% endif %}>Page {{ forloop.index }}</a></li>
         {% endfor %}
-          <li>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next</a>{% else %}Next{% endif %}</li>
+          <li class="right">{% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next &gt;</a>{% else %}Next &gt;{% endif %}</li>
         </ul>
         {% bookshop_include "page" content_blocks: content_blocks %}
     </article>
