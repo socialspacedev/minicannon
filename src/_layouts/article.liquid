@@ -24,20 +24,13 @@ type: "article"
         {{ content }}
         </div>
          <!-- Pagination links -->
-   <!--     {% if collections.posts.length > 1 %} -->
-          {% assign previousPost = collections.posts | getPreviousCollectionItem %}
-          {% assign nextPost = collections.posts | getNextCollectionItem %}
-          {% if nextPost or previousPost %}
-            <ul class="paginate">
-              {% if previousPost %}
-                <li class="left"><a href="{{ previousPost.url }}">>&lt; Previous</a></li>
-              {% endif %}
-              {% if nextPost %}
-                <li class="right"><a href="{{ nextPost.url }}">Next &gt;</a></li>
-              {% endif %}
-            </ul>
-          {% endif %}
-  <!--      {% endif %} -->
+        <ul class="paginate"> 
+          <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Previous</a>{% else %}Previous{% endif %}</li>
+        {% for pageEntry in pagination.pages %}
+          <li><a href="{{ pagination.hrefs[forloop.index0] }}"{% if page.url == pagination.hrefs[forloop.index0] %} aria-current="page"{% endif %}>Page {{ forloop.index }}</a></li>
+        {% endfor %}
+          <li>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next</a>{% else %}Next{% endif %}</li>
+        </ul>
         {% bookshop_include "page" content_blocks: content_blocks %}
     </article>
     {% include "footer.liquid" %}
