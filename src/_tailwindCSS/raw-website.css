@@ -82,7 +82,7 @@
   small + h1 {
     @apply mt-2;
   }
-  .elenco-posts {
+  .list-posts {
     @apply flex flex-col gap-5 divide-y divide-solid divide-zinc-300 dark:divide-zinc-800 list-none list-outside pl-0;
   }
   .posts > h2 > a {
@@ -668,7 +668,7 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
   .motto {
     @apply text-center;
   }
-  .elenco-posts {
+  .list-posts {
     @apply gap-6;
   }
 }
@@ -706,7 +706,7 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
   article > small.info {
     @apply text-left;
   }
-  .elenco-posts {
+  .list-posts {
     @apply gap-7;
   }
   footer {

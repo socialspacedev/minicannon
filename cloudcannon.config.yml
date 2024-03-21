@@ -1,3 +1,4 @@
+#paths
 source: src
 paths:
   uploads: img/
@@ -6,6 +7,8 @@ paths:
   data: _data/
   layouts: _layouts/
   includes: _includes/
+
+#collections
 collections_config:
   posts:
     path: blog
@@ -108,10 +111,16 @@ collections_config:
     disable_add_folder: true
     disable_file_actions: false
 collections_config_override: false
+
+#editors
 _enabled_editors:
   - visual
   - content
   - data
+#source_editor:
+#  theme: github
+
+#inputs
 _inputs:
   date:
     type: datetime
@@ -122,6 +131,8 @@ _inputs:
     options:
       resize_style: cover
     cascade: true
+
+#editables
 _editables:
   text:
     bold: true
@@ -178,9 +189,12 @@ _editables:
     table: true
     underline: true
     undo: true
+
+#settings
 data_config: {}
 timezone: Pacific/Auckland
-#Snippets
+
+#snippets
 _snippets_imports:
   eleventy_liquid: true
 _snippets:
