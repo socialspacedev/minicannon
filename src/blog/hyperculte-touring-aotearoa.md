@@ -9,7 +9,6 @@ date: 2024-03-21T14:05:17+13:00
 published: false
 type: article
 layout: article.liquid
-permalink: blog/{{ title | slugify }}.html
 content_blocks:
 ---
 The Geneva based "sonic adventurers" <a href="https://hyperculte.bandcamp.com/" title="Hyperculte's Bandcamp page" target="_blank" rel="noopener">Hyperculte</a> are <a href="https://www.undertheradar.co.nz/news/21260/Hyperculte-Switzerland-Touring-New-Zealand-In-March--April.utr" title="Tour details are Under the Radar." target="_blank" rel="noopener">touring</a> Aotearoa in March and April. The duo of Simone Aubert and Vincent Bertholet bring their unique experimental krautrock for an extensive trip around primarily smaller towns across the country.
