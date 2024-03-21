@@ -28,6 +28,16 @@ type: "article"
           <li class="left">{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">&lt; Previous</a>{% endif %}</li>
           <li class="right">{% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next &gt;</a>{% endif %}</li>
         </ul>
+        
+          {% if pagination.pageLinks.length > 1 %}
+            <ul class="paginate">
+            {% if pagination.previousPageLink %}
+              <li class="left"><a href="{{ pagination.previousPageHref }}">&lt; Previous</a></li>
+            {% endif %}
+            {% if pagination.nextPageLink %}
+              <li class="right"><a href="{{ pagination.nextPageHref }}">Next &gt;</a></li>
+            {% endif %}
+          </ul>
         {% bookshop_include "page" content_blocks: content_blocks %}
     </article>
     {% include "footer.liquid" %}
