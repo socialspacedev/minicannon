@@ -12,13 +12,19 @@ layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
 content_blocks:
 ---
-The Geneva based "sonic adventurers" <a href="https://hyperculte.bandcamp.com/" title="Hyperculte's Bandcamp page" target="_blank" rel="noopener">Hyperculte</a> are <a href="https://www.undertheradar.co.nz/news/21260/Hyperculte-Switzerland-Touring-New-Zealand-In-March--April.utr" title="Tour details are Under the Radar." target="_blank" rel="noopener">touring</a> Aotearoa in March and April. The duo of Simone Aubert and Vincent Bertholet bring their unique experimental krautrock for an extensive trip around the smaller towns over both islands.
+The Geneva based "sonic adventurers" <a href="https://hyperculte.bandcamp.com/" title="Hyperculte's Bandcamp page" target="_blank" rel="noopener">Hyperculte</a> are <a href="https://www.undertheradar.co.nz/news/21260/Hyperculte-Switzerland-Touring-New-Zealand-In-March--April.utr" title="Tour details are Under the Radar." target="_blank" rel="noopener">touring</a> Aotearoa in March and April. The duo of Simone Aubert and Vincent Bertholet bring their unique experimental krautrock for an extensive trip around primarily smaller towns across the country.
 
-I'm looking to attend their show at Yours with support from Sewage on Wednesday April 3rd.
+Here they are performing live at the <a href="https://www.noxorae.ch/le-festival" title="Website for the Nox Orae festival in Geneva" target="_blank" rel="noopener">Nox Orae</a> festival in 2019:
 
 {% raw %}https://www.youtube.com/watch?v=WwJNJGKyx5I{% endraw %}
 
-Here's the official press release:
+I'm looking to attend their show at Yours with support from Sewage on Wednesday April 3rd. <a href="https://cmr-sewage.bandcamp.com/album/sewage" title="Sewage's Bandcamp page" target="_blank" rel="noopener">Sewage</a> are a highly regarded local duo who deliver an avant-jazz flavoured improvisational experience with drums, violin, saxophone, and more!
+
+For a wee taste, check our the following performance at Christchurch student radio RDU back in 2021:
+
+{% raw %}https://www.youtube.com/watch?v=kKv72BbRXBg{% endraw %}
+
+For more information on the Hyperculte tour, here's the official press release:
 
 > Pyramid Club is happy to present HYPERCULTE (Switzerland) NZ TOUR 2024!
 >
