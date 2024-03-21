@@ -20,7 +20,7 @@ Here they are performing live at the <a href="https://www.noxorae.ch/le-festival
 
 I'm looking to attend their show at Yours with support from Sewage on Wednesday April 3rd. <a href="https://cmr-sewage.bandcamp.com/album/sewage" title="Sewage's Bandcamp page" target="_blank" rel="noopener">Sewage</a> are a highly regarded local duo who deliver an avant-jazz flavoured improvisational experience with drums, violin, saxophone, and more!
 
-For a wee taste, check our the following performance at Christchurch student radio RDU back in 2021:
+For a wee taste, check our the following performance at Christchurch student radio RDU:
 
 {% raw %}https://www.youtube.com/watch?v=kKv72BbRXBg{% endraw %}
 
