@@ -5,6 +5,7 @@ tags: "post"
 date: "Created"
 published: "false"
 type: "article"
+permalink: "split/page-{{ pagination.pageNumber | plus: 1 }}/index.html"
 ---
 
 <!DOCTYPE html>
@@ -25,11 +26,11 @@ type: "article"
         </div>
          <!-- Pagination links -->
         <ul class="paginate"> 
-          <li class="left">{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">&lt; Previous</a>{% else %}&lt; Previous{% endif %}</li>
+          <li class="left">{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">&lt; Previous</a>{% endif %}</li>
         {% for pageEntry in pagination.pages %}
           <li><a href="{{ pagination.hrefs[forloop.index0] }}"{% if page.url == pagination.hrefs[forloop.index0] %} aria-current="page"{% endif %}>Page {{ forloop.index }}</a></li>
         {% endfor %}
-          <li class="right">{% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next &gt;</a>{% else %}Next &gt;{% endif %}</li>
+          <li class="right">{% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next &gt;</a>{% endif %}</li>
         </ul>
         {% bookshop_include "page" content_blocks: content_blocks %}
     </article>
