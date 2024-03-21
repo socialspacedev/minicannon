@@ -5,6 +5,9 @@ tags: "post"
 date: "Created"
 published: "false"
 type: "article"
+pagination:
+  data: collections.post
+  size: 1
 ---
 
 <!DOCTYPE html>
@@ -24,6 +27,7 @@ type: "article"
         {{ content }}
         </div>
          <!-- Pagination links -->
+        {% if pagination.pageLinks.length > 1 %}
           <ul class="paginate">
             {% if pagination.previousPageLink %}
               <li class="left"><a href="{{ pagination.previousPageHref }}">&lt; Previous</a></li>
@@ -32,6 +36,7 @@ type: "article"
               <li class="right"><a href="{{ pagination.nextPageHref }}">Next &gt;</a></li>
             {% endif %}
           </ul>
+        {% endif %}
         {% bookshop_include "page" content_blocks: content_blocks %}
     </article>
     {% include "footer.liquid" %}
