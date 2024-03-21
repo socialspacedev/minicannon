@@ -38,6 +38,7 @@ type: "article"
               <li class="right"><a href="{{ pagination.nextPageHref }}">Next &gt;</a></li>
             {% endif %}
           </ul>
+        {% endif %}
         {% bookshop_include "page" content_blocks: content_blocks %}
     </article>
     {% include "footer.liquid" %}
