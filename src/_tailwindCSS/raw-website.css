@@ -46,12 +46,11 @@
  .paginate {
     margin-top: 3em; 
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
   }
-  .paginate ul {
+ /* .paginate ul {
     margin: 0;
-  }
+  } */
   .paginate li {
     letter-spacing: .025em;
     list-style: none;
@@ -68,7 +67,7 @@
   }
   main,
   article {
-    @apply prose prose-sky dark:prose-invert dark:prose-p:text-slate-50 dark:prose-li:text-slate-50 dark:prose-lead:text-slate-100 prose-lead:font-light ml-auto mr-auto text-justify mt-2 mb-8;
+    @apply prose prose-sky dark:prose-invert dark:prose-p:text-slate-50 dark:prose-li:text-slate-50 dark:prose-lead:text-slate-100 prose-lead:font-light ml-auto mr-auto text-justify mt-2 mb-5;
   }
   h1,
   article > small.info {
