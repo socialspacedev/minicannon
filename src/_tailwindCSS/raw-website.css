@@ -44,8 +44,8 @@
     @apply underline decoration-sky-600 decoration-2 underline-offset-1 transition-all;
   }
  .paginate {
-    margin-top: 2em; 
-    margin-bottom: 2em;
+    margin-top: 3em; 
+    margin-bottom: 3em;
   }
   .paginate ul {
     display: inline-block;

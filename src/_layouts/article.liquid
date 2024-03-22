@@ -32,7 +32,7 @@ type: "article"
           {% if nextPost or previousPost %}
             <ul class="paginate">
               {% if previousPost %}<li class="left"><a href="{{ previousPost.url }}">&lt; Previous</a></li>{% endif %}
-              {% if nextPost %}<li class="right"><a href="{{ nextPost.url }}"></a>Next &gt;</li>{% endif %}
+              {% if nextPost %}<li class="right"><a href="{{ nextPost.url }}">Next &gt;</a></li>{% endif %}
             </ul>
           {% endif %}
         {% endif %}
