@@ -51,6 +51,7 @@
     display: inline-block;
   }
   .paginate li {
+    @apply pl-0
     letter-spacing: .025em;
     list-style: none;
   }
