@@ -25,8 +25,8 @@ type: "article"
         </div>
          <!-- Pagination links -->
          {% if collections.posts %}
-          {% assign previousPost = collections.posts | previous_item %}
-          {% assign nextPost = collections.posts | next_item %}
+          {% assign previousPost = collections.posts | getPreviousCollectionItem %}
+          {% assign nextPost = collections.posts | getNextCollectionItem %}
           {% if nextPost or previousPost %}
             <ul class="paginate">
               {% if previousPost %}<li>Previous: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>{% endif %}
