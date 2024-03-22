@@ -24,7 +24,7 @@ type: "article"
         <div class="content">
         {{ content }}
         </div>
-    </article>
+
          <!-- Pagination links -->
          {% if collections.post %}
           {% assign previousPost = collections.post | getPreviousCollectionItem %}
@@ -37,8 +37,8 @@ type: "article"
           {% endif %}
         {% endif %}
         {% bookshop_include "page" content_blocks: content_blocks %}
-
-    {% include "footer.liquid" %}
+    </article>
+  {% include "footer.liquid" %}
 </body>
 <!-- End Body -->
 </html>
