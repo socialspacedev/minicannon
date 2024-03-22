@@ -56,7 +56,7 @@
     list-style: none;
   }
   .paginate a {
-    @apply dark:bg-zinc-900 font-serif text-base text-slate-100 dark:text-slate-100 transition-all;
+    @apply dark:bg-zinc-900 font-serif text-base text-slate-100 dark:text-slate-100 transition-all ml-auto;
     text-decoration: none;
   }
   .paginate li:hover,
@@ -67,7 +67,7 @@
   }
   main,
   article {
-    @apply prose prose-sky dark:prose-invert dark:prose-p:text-slate-50 dark:prose-li:text-slate-50 dark:prose-lead:text-slate-100 prose-lead:font-light mr-auto text-justify my-2;
+    @apply prose prose-sky dark:prose-invert dark:prose-p:text-slate-50 dark:prose-li:text-slate-50 dark:prose-lead:text-slate-100 prose-lead:font-light ml-auto mr-auto text-justify my-2;
   }
   h1,
   article > small.info {
