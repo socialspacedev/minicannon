@@ -56,13 +56,13 @@
     list-style: none;
   }
   .paginate a {
-    @apply dark:bg-zinc-900 font-serif text-base text-slate-900 dark:text-slate-100 transition-all;
+    @apply dark:bg-zinc-900 font-serif text-base text-slate-100 dark:text-slate-100 transition-all;
     text-decoration: none;
     font-size: 90%;
   }
   .paginate .left {
     float:left;
-    padding-left: 0;
+    padding-left: -20;
   }
   .paginate .right {
     float: right;
