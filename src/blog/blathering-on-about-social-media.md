@@ -9,6 +9,7 @@ date: 2013-06-23T14:24:00+12:00
 published: true
 type: article
 layout: article.liquid
+permalink: blog/{{ title | slugify }}.html
 content_blocks:
 ---
 For a little while there I was a social media expert and interviewed by a number of media outlets – including newspapers, magazines and television. These are listed here for posterity.
