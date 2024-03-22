@@ -46,7 +46,7 @@
  .paginate {
     margin-top: 2em; 
     margin-bottom: 2em;
-    font-size: 80%;
+    font-size: 90%;
   }
   .paginate ul {
     display: inline-block;
@@ -58,8 +58,7 @@
   .paginate a {
     @apply dark:bg-zinc-900 font-serif text-base text-slate-900 dark:text-slate-100 transition-all;
     text-decoration: none;
-    font-size: 80%;
-    font-style: italic;
+    font-size: 90%;
   }
   .paginate .left {
     float:left;
