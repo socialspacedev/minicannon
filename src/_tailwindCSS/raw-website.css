@@ -45,13 +45,12 @@
   }
  .paginate {
     margin-top: 3em; 
-    margin-bottom: 3em;
+  /*  margin-bottom: 3em; */
   }
   .paginate ul {
     display: inline-block;
   }
   .paginate li {
-    @apply pl-0;
     letter-spacing: .025em;
     list-style: none;
   }
