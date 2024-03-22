@@ -31,8 +31,8 @@ type: "article"
           {% assign nextPost = collections.post | getNextCollectionItem %}
           {% if nextPost or previousPost %}
             <ul class="paginate">
-              {% if previousPost %}<li><a href="{{ previousPost.url }}">&lt; Previous</a></li>{% else %}<li>Previous</li>{% endif %}
-              {% if nextPost %}<li><a href="{{ nextPost.url }}">Next &gt;</a></li></li>{% else %}<li>Next</li>{% endif %}
+              {% if previousPost %}<li><a href="{{ previousPost.url }}">&lt; Previous</a></li>{% else %}<li>The start</li>{% endif %}
+              {% if nextPost %}<li><a href="{{ nextPost.url }}">Next &gt;</a></li></li>{% else %}<li>The end</li>{% endif %}
             </ul>
           {% endif %}
         {% endif %}
