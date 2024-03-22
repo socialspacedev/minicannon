@@ -46,6 +46,7 @@
  .paginate {
     margin-top: 3em; 
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
   .paginate ul {
