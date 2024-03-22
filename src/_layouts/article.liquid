@@ -24,6 +24,17 @@ type: "article"
         {{ content }}
         </div>
          <!-- Pagination links -->
+         {% if collections.posts %}
+          {% assign previousPost = collections.posts | previous_item %}
+          {% assign nextPost = collections.posts | next_item %}
+          {% if nextPost or previousPost %}
+            <ul class="paginate">
+              {% if previousPost %}<li>Previous: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>{% endif %}
+              {% if nextPost %}<li>Next: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>{% endif %}
+            </ul>
+          {% endif %}
+        {% endif %}
+
         <ul class="paginate"> 
           <li class="left">{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">&lt; Previous</a>{% endif %}</li>
           <li class="right">{% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next &gt;</a>{% endif %}</li>
