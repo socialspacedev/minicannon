@@ -54,6 +54,8 @@
   .paginate li {
     letter-spacing: .025em;
     list-style: none;
+    display: flex;
+    justify-content: space-between;
   }
   .paginate a {
     @apply dark:bg-zinc-900 font-serif text-base text-slate-100 dark:text-slate-100 transition-all;
