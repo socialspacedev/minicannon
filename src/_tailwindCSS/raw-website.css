@@ -56,12 +56,12 @@
     list-style: none;
   }
   .paginate a {
-    @apply dark:bg-zinc-900 font-serif text-base text-slate-100 dark:text-slate-100 transition-all ml-auto;
+    @apply dark:bg-zinc-900 font-serif text-base text-slate-100 dark:text-slate-100 transition-all;
     text-decoration: none;
   }
-  .paginate li:hover,
-  .paginate li:focus,
-  .paginate li:focus-within,
+  .paginate li.a:hover,
+  .paginate li.a:focus,
+  .paginate li.a:focus-within,
   .active {
     @apply underline decoration-sky-600 decoration-2 underline-offset-1 transition-all;
   }
