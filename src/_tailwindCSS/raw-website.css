@@ -44,36 +44,30 @@
     @apply underline decoration-sky-600 decoration-2 underline-offset-1 transition-all;
   }
  .paginate {
-    margin-top: 2em; 
-    margin-bottom: 2em;
+    margin-top: 3em; 
+    display: flex;
+    justify-content: space-between;
   }
-  .paginate ul {
-    display: inline-block;
-  }
+ /* .paginate ul {
+    margin: 0;
+  } */
   .paginate li {
     letter-spacing: .025em;
     list-style: none;
   }
   .paginate a {
-    @apply dark:bg-zinc-900 font-serif text-base text-slate-900 dark:text-slate-100 transition-all;
+    @apply dark:bg-zinc-900 font-serif text-base text-slate-100 dark:text-slate-100 transition-all;
     text-decoration: none;
   }
-  .paginate .left {
-    float:left;
-    padding-left: 0;
-  }
-  .paginate .right {
-    float: right;
-  }
-  .paginate li:hover,
-  .paginate li:focus,
-  .paginate li:focus-within,
+  .paginate a:hover,
+  .paginate a:focus,
+  .paginate a:focus-within,
   .active {
     @apply underline decoration-sky-600 decoration-2 underline-offset-1 transition-all;
   }
   main,
   article {
-    @apply prose prose-sky dark:prose-invert dark:prose-p:text-slate-50 dark:prose-li:text-slate-50 dark:prose-lead:text-slate-100 prose-lead:font-light ml-auto mr-auto text-justify mt-2 mb-8;
+    @apply prose prose-sky dark:prose-invert dark:prose-p:text-slate-50 dark:prose-li:text-slate-50 dark:prose-lead:text-slate-100 prose-lead:font-light ml-auto mr-auto text-justify my-2;
   }
   h1,
   article > small.info {

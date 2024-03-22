@@ -9,7 +9,6 @@ date: 2014-01-01T14:19:00+13:00
 published: true
 type: article
 layout: article.liquid
-permalink: blog/{{ title | slugify }}.html
 content_blocks:
 ---
 ### **NZ acts**

@@ -5,6 +5,7 @@ tags: "post"
 date: "Created"
 published: "false"
 type: "article"
+# {{ previousPost.data.title }}{{ nextPost.data.title }}
 ---
 
 <!DOCTYPE html>
@@ -23,9 +24,20 @@ type: "article"
         <div class="content">
         {{ content }}
         </div>
-        {% bookshop_include "page" content_blocks: content_blocks %}
+
+         <!-- Pagination links -->
+         {% if collections.post %}
+          {% assign previousPost = collections.post | getPreviousCollectionItem %}
+          {% assign nextPost = collections.post | getNextCollectionItem %}
+          {% if nextPost or previousPost %}
+            <ul class="paginate">
+              {% if previousPost %}<li><a href="{{ previousPost.url }}">&lt; Previous</a></li>{% else %}<li>The start &gt;</li>{% endif %}
+              {% if nextPost %}<li><a href="{{ nextPost.url }}">Next &gt;</a></li></li>{% else %}<li>&lt; The end</li>{% endif %}
+            </ul>
+          {% endif %}
+        {% endif %}
     </article>
-    {% include "footer.liquid" %}
+  {% include "footer.liquid" %}
 </body>
 <!-- End Body -->
 </html>
