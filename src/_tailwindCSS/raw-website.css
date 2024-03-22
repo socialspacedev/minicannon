@@ -45,10 +45,10 @@
   }
  .paginate {
     margin-top: 3em; 
-  /*  margin-bottom: 3em; */
   }
   .paginate ul {
-    display: inline-block;
+    @apply flex flex-row gap-5;
+  /*  display: inline-block; */
   }
   .paginate li {
     letter-spacing: .025em;
