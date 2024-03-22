@@ -48,15 +48,12 @@
     display: flex;
     justify-content: space-between;
   }
- /* .paginate ul {
-    margin: 0;
-  } */
   .paginate li {
     letter-spacing: .025em;
     list-style: none;
   }
   .paginate a {
-    @apply dark:bg-zinc-900 font-serif text-base text-slate-100 dark:text-slate-100 transition-all;
+    @apply dark:bg-zinc-900 font-serif text-base text-slate-900 dark:text-slate-100 transition-all;
     text-decoration: none;
   }
   .paginate a:hover,
