@@ -31,12 +31,11 @@ type: "article"
           {% assign nextPost = collections.post | getNextCollectionItem %}
           {% if nextPost or previousPost %}
             <ul class="paginate">
-              {% if previousPost %}<li><a href="{{ previousPost.url }}">&lt; Previous</a></li>{% endif %}
-              {% if nextPost %}<li><a href="{{ nextPost.url }}">Next &gt;</a></li>{% endif %}
+              {% if previousPost %}<li><a href="{{ previousPost.url }}">&lt; Previous</a>{% else %}&lt; Previous</li>{% endif %}
+              {% if nextPost %}<li><a href="{{ nextPost.url }}">Next &gt;</a>{% else %}Next &gt;</li>{% endif %}
             </ul>
           {% endif %}
         {% endif %}
-        {% bookshop_include "page" content_blocks: content_blocks %}
     </article>
   {% include "footer.liquid" %}
 </body>
