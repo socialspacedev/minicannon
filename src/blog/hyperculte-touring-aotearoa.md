@@ -12,9 +12,9 @@ layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
 content_blocks:
 ---
-The Geneva based "sonic adventurers" <a href="https://hyperculte.bandcamp.com/" title="Hyperculte's Bandcamp page" target="_blank" rel="noopener">Hyperculte</a> are <a href="https://www.undertheradar.co.nz/news/21260/Hyperculte-Switzerland-Touring-New-Zealand-In-March--April.utr" title="Tour details are Under the Radar." target="_blank" rel="noopener">touring</a> Aotearoa in March and April. The duo of Simone Aubert and Vincent Bertholet bring their unique experimental krautrock for an extensive trip around primarily smaller towns across the country.
+<p class="align-right">The Geneva based "sonic adventurers" <a href="https://hyperculte.bandcamp.com/" title="Hyperculte's Bandcamp page" target="_blank" rel="noopener">Hyperculte</a> are <a href="https://www.undertheradar.co.nz/news/21260/Hyperculte-Switzerland-Touring-New-Zealand-In-March--April.utr" title="Tour details are Under the Radar." target="_blank" rel="noopener">touring</a> Aotearoa in March and April. The duo of Simone Aubert and Vincent Bertholet bring their unique experimental krautrock for an extensive trip around primarily smaller towns across the country.</p>
 
-Here they are performing live at the <a href="https://www.noxorae.ch/le-festival" title="Website for the Nox Orae festival in Geneva" target="_blank" rel="noopener">Nox Orae</a> festival in 2019:
+<p class="align-center">Here they are performing live at the <a href="https://www.noxorae.ch/le-festival" title="Website for the Nox Orae festival in Geneva" target="_blank" rel="noopener">Nox Orae</a> festival in 2019:</p>
 
 {% raw %}https://www.youtube.com/watch?v=WwJNJGKyx5I{% endraw %}
 
@@ -33,7 +33,3 @@ For more information on the Hyperculte tour, here's the official press release:
 > Hyperculte's music hints at the kind of ancient, pine-scented black magic of central European folklore captured in the costumes on the cover of their 2016 self titled debut album. Driving forces of the Geneva experimental rock scene, Simone Aubert (drums/guitar/vocals) and Vincent Bertholet (double bass/vocals) hail from the either side of the mountainous, myth-drenched Swiss-French border region.
 >
 > They met when living in the same squat in Geneva and started playing together in 2014. Simone came from the dark and experimental band Massicot, Vincent from the Dadaist big band Orchestra Tout Puissant Marcel Duchamp.
-
-&nbsp;
-
-&nbsp;
