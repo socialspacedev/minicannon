@@ -96,11 +96,15 @@
   .icon:focus-within {
     @apply hover:stroke-sky-600;
   }
-  /* Applied to content, excluded from style dropdown */
-  p .align-left { text-align: left; }
-  p .align-center { text-align: center; }
-  p .align-right { text-align: right; }
-  p .align-justify { text-align: justify; }
+ /* about img {
+  margin-top: -20rem;
+  } */
+  
+/* Applied to content, excluded from style dropdown */
+.align-left { text-align: left; }
+.align-center { text-align: center; }
+.align-right { text-align: right; }
+.align-justify { text-align: justify; }
 }
 .pagefind-ui__result.svelte-j9e30.svelte-j9e30 {
     list-style-type: none;
