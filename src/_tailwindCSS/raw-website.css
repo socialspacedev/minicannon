@@ -96,16 +96,14 @@
   .icon:focus-within {
     @apply hover:stroke-sky-600;
   }
+  img {
+    display: flex;
+    justify-content: center;
+  }
  /* about img {
   margin-top: -20rem;
   } */
-  
-/* Applied to content, excluded from style dropdown */
-.align-left { text-align: left; }
-.align-center { text-align: center; }
-.align-right { text-align: right; }
-.align-justify { text-align: justify; }
-}
+
 .pagefind-ui__result.svelte-j9e30.svelte-j9e30 {
     list-style-type: none;
     display: flex;
