@@ -652,6 +652,7 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
   header,
   main,
   article,
+  paginate,
   footer {
     @apply py-7 px-3;
   }
@@ -680,6 +681,7 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
   header,
   main,
   article,
+  paginate,
   footer {
     @apply py-8 px-4;
   }
@@ -724,6 +726,7 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
   header,
   main,
   article,
+  paginate,
   footer {
     @apply py-9 px-4;
   }
@@ -743,6 +746,7 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
   header,
   main,
   article,
+  paginate,
   footer {
     @apply py-10 px-5;
   }
