@@ -30,7 +30,9 @@ Weird concept and the only one of these I ever attended.
 
 Weirder I was asked to cover a DJ slot at <a href="https://95bfm.com/" title="Website for 95 bFM radiostation in Auckland" target="_blank" rel="noopener">bFM</a>. on Saturday April 9th (Cobain's body was found on the 8th US time) afternoon by Graeme Hill. I had coincidentally seen him at a Lure of Shoe gig the night before where both of us were pretty drunk. Part of my duties that afternoon was announcing the death and updating listeners with any breaking changes.
 
-Then nothing for years until my next encounter with the band this century. My son developed a healthy obsession with the band and Kurt when he was very young. This inspired him to play guitar and announce his future job as a rock star. He's since progressed to wider music interests outside punk rock including [making noise](/blog/the-life-and-death-brigade.html "The boys play a show") with his old man.
+Then nothing for years until my next encounter with the band this century. My son developed a healthy obsession with the band and Kurt when he was very young. This inspired him to play guitar (see an early birthday gift below) and announce his future job as a rock star. He's since progressed to wider music interests outside punk rock including [making noise](/blog/the-life-and-death-brigade.html "The boys play a show") with his old man.
+
+{% image, "/img/img-1583.jpg" "The boy's birthday present" "30em 50vw 100vw" %}
 
 Finally, I recommend reading Michael Azerrad's really insightful <a href="https://www.newyorker.com/culture/personal-history/my-time-with-kurt-cobain" title="Michael Azerrad's article on Kurt Cobain at the New Yorker" target="_blank" rel="noopener">article</a> for the New Yorker a few years ago. It does the best job explaining the before and after with an untainted personal connection.
 
