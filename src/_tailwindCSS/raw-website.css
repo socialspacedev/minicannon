@@ -657,7 +657,8 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
     @apply py-7 px-3;
   }
   main,
-  article {
+  article,
+  paginate {
     @apply my-2.5;
   }
   .title {
@@ -698,7 +699,8 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
     @apply flex-col gap-0;
   }
   main,
-  article {
+  article,
+    paginate {
     @apply my-3;
   }
   h1,
@@ -731,7 +733,8 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
     @apply py-9 px-4;
   }
   main,
-  article {
+  article,
+  paginate {
     @apply max-w-screen-md my-4;
   }
   .social {
@@ -751,7 +754,8 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
     @apply py-10 px-5;
   }
   main,
-  article {
+  article,
+  paginate {
     @apply max-w-screen-lg my-5;
   }
   .social {
