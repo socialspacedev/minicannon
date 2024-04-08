@@ -96,9 +96,10 @@
   .icon:focus-within {
     @apply hover:stroke-sky-600;
   }
-  img {
+  picture {
     display: flex;
     justify-content: center;
+    width: 100%;
   }
 }
  /* about img {
