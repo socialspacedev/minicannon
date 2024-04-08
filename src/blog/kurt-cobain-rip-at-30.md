@@ -14,7 +14,7 @@ content_blocks:
 ---
 Kurt Cobain of Nirvana <a href="https://timesmachine.nytimes.com/timesmachine/1994/04/09/721212.html?pageNumber=1" title="Original Kurt Cobain obituary from the NY Times" target="_blank" rel="noopener">died</a> 30 years ago today. At the time this was hugely significant as he was the unwitting figurehead for alternative/indie music bludgeoning its way into the mainstream. Top of the grunge heap.
 
-{% image, "/img/nirvana-ticket-stub.jpeg "Old ticket stub for the 1992 Nirvana gig in Auckland" "30em 50vw 200vw" %}
+{% image, "/img/nirvana-ticket-stub.jpeg" "Old ticket stub for the 1992 Nirvana gig in Auckland" "30em 50vw 200vw" %}
 
 I was lucky enough to see them live at their one and only <a href="https://www.livenirvana.com/concerts/92/92-02-09.php" title="Live details for the 1992 Auckland Nirvana gig" target="_blank" rel="noopener">New Zealand gig</a> in 1992 (check out the prices of international gigs 30 years ago!). Even cooler I got two free tickets care of my first proper boss. I recall them stuck to the whiteboard in the computer room where I was trapped inside for a job – kinda like this:
 
