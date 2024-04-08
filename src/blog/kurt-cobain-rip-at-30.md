@@ -12,15 +12,15 @@ layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
 content_blocks:
 ---
-Kurt Cobain of Nirvana <a href="https://timesmachine.nytimes.com/timesmachine/1994/04/09/721212.html?pageNumber=1" title="Original Kurt Cobain obituary from the NY Times" target="_blank" rel="noopener">died</a> 30 years ago today. At the time this was hugely significant as he was the unwitting figurehead for alternative/indie music bludgeoning its way into the mainstream. Top of the grunge heap.
+Kurt Cobain of Nirvana <a href="https://timesmachine.nytimes.com/timesmachine/1994/04/09/721212.html?pageNumber=1" title="Original Kurt Cobain obituary from the NY Times" target="_blank" rel="noopener">died</a> 30 years ago today. At the time it was hugely significant as he was the unwitting figurehead for alternative/indie music bludgeoning its way into the mainstream. Top of the grunge heap.
 
 {% image, "/img/nirvana-ticket-stub.jpeg" "Old ticket stub for the 1992 Nirvana gig in Auckland" "30em 50vw 200vw" %}
 
-I was lucky enough to see them live at their one and only <a href="https://www.livenirvana.com/concerts/92/92-02-09.php" title="Live details for the 1992 Auckland Nirvana gig" target="_blank" rel="noopener">New Zealand gig</a> in 1992 (check out the prices of international gigs 30 years ago!). Even cooler I got two free tickets care of my first proper boss. I recall them stuck to the whiteboard in the computer room where I was trapped inside for a job – kinda like this:
+I was lucky enough to see them live at their one and only <a href="https://www.livenirvana.com/concerts/92/92-02-09.php" title="Live details for the 1992 Auckland Nirvana gig" target="_blank" rel="noopener">New Zealand gig</a> in 1992 (check out the prices of international gigs 30 years ago!). Even cooler I got two free tickets care of my first proper boss. I recall them stuck to the whiteboard in the computer room where I was trapped inside kinda like this:
 
 {% image, "/img/univaca.jpg" "Old skool computer operator" "30em 50vw 300vw" %}
 
-Kurt was clearly not doing well and they played a perfunctionary set. The 3Ds were easily the band of the night and Second Child were great also. Nevertheless, I recall enjoying it and was particularly happy they played Lounge Act. Here's a terrible sounding bootleg that gives an impression of this song.
+Kurt was clearly not doing well and they played a perfunctionary set. The 3Ds were easily the band of the night and Second Child were great also. Nevertheless, I recall enjoying it and was particularly happy they played "Lounge Act". Here's a terrible sounding bootleg that gives an impression of being there.
 
 {% raw %}https://youtu.be/RrHfItOJs8M?feature=shared&t=2977{% endraw %}
 
@@ -34,8 +34,10 @@ Then nothing for years until my next encounter with the band this century. My so
 
 {% image, "/img/img-1583.jpg" "The boy's birthday present" "30em 50vw 100vw" %}
 
-Finally, I recommend reading Michael Azerrad's really insightful <a href="https://www.newyorker.com/culture/personal-history/my-time-with-kurt-cobain" title="Michael Azerrad's article on Kurt Cobain at the New Yorker" target="_blank" rel="noopener">article</a> for the New Yorker a few years ago. It does the best job explaining the before and after with an untainted personal connection.
+Michael Azerrad wrote a really insightful <a href="https://www.newyorker.com/culture/personal-history/my-time-with-kurt-cobain" title="Michael Azerrad's article on Kurt Cobain at the New Yorker" target="_blank" rel="noopener">article</a> about Cobain's death for the New Yorker  in 2021. It does the best job explaining the before and after with an untainted personal connection. I highly recommend wading through it (it's long!).
 
 {% image, "/img/our-band.jpeg" "Book cover of Azerrad's excellent book" "30em 100vw 300vw" %}
 
-He also wrote an essential <a href="https://en.wikipedia.org/wiki/Our_Band_Could_Be_Your_Life" title="Wikipedia page detailing the book" target="_blank" rel="noopener">book</a> called *"Our Band Could Be Your Life: Scenes from the American Indie Underground, 1981–1991"* which covers the formation of bands such as Hüsker Dü , Sonic youth, Mission of Burma, Fugazi, and so on. Many of these bands were clear inspiration for Nirvana and to be honest, better.
+He also wrote a must have <a href="https://en.wikipedia.org/wiki/Our_Band_Could_Be_Your_Life" title="Wikipedia page detailing the book" target="_blank" rel="noopener">book</a> called *"Our Band Could Be Your Life: Scenes from the American Indie Underground, 1981–1991"* . This excellent book covers the formation of bands such as Hüsker Dü , Sonic youth, Mission of Burma, Fugazi, and more.
+
+Many of these bands were clear inspiration for Nirvana and to be honest, were better.
