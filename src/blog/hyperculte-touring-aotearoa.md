@@ -14,7 +14,7 @@ content_blocks:
 ---
 The Geneva based "sonic adventurers" <a href="https://hyperculte.bandcamp.com/" title="Hyperculte's Bandcamp page" target="_blank" rel="noopener">Hyperculte</a> are <a href="https://www.undertheradar.co.nz/news/21260/Hyperculte-Switzerland-Touring-New-Zealand-In-March--April.utr" title="Tour details are Under the Radar." target="_blank" rel="noopener">touring</a> Aotearoa in March and April. The duo of Simone Aubert and Vincent Bertholet bring their unique experimental krautrock for an extensive trip around primarily smaller towns across the country.
 
-<p class="align-right">Here they are performing live at the <a href="https://www.noxorae.ch/le-festival" title="Website for the Nox Orae festival in Geneva" target="_blank" rel="noopener">Nox Orae</a> festival in 2019:</p>
+Here they are performing live at the <a href="https://www.noxorae.ch/le-festival" title="Website for the Nox Orae festival in Geneva" target="_blank" rel="noopener">Nox Orae</a> festival in 2019:
 
 {% raw %}https://www.youtube.com/watch?v=WwJNJGKyx5I{% endraw %}
 
