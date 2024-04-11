@@ -13,36 +13,19 @@ type: "article"
 {% include "head-article.liquid" %}
 <!-- Start Body -->
 <body>
-    {% include "nav.liquid" %}
-    <article data-pagefind-body>
-        <small class="info">
-            Posted&nbsp;
-            <time datetime="{{ page.date }}">{{ page.date | readableDate }}</time>&nbsp;&ndash;&nbsp;
-            {{ content | timeToRead }}&nbsp;to&nbsp;read
-        </small>
-        <h1>{{ title }}</h1>
-        <div class="content">
-        {{ content }}
-        </div>
-
-         <!-- Pagination links -->
-         {% if collections.post %}
-          {% assign previousPost = collections.post | getPreviousCollectionItem %}
-          {% assign nextPost = collections.post | getNextCollectionItem %}
-          {% if nextPost or previousPost %}
-            <ul class="paginate">
-              {% if previousPost %}
-                <li><a href="{{ previousPost.url }}" title="{{ previousPost.data.title }}">&lt; Previous</a></li>
-                {% else %}<li>&nbsp;</li>
-              {% endif %}
-              {% if nextPost %}
-                <li><a href="{{ nextPost.url }}" title="{{ nextPost.data.title }}">Next &gt;</a></li></li>
-                {% else %}<li>&nbsp;</li>
-              {% endif %}
-            </ul>
-          {% endif %}
-        {% endif %}
-    </article>
+  {% include "nav.liquid" %}
+  <article data-pagefind-body>
+    <small class="info">
+      Posted&nbsp;
+      <time datetime="{{ page.date }}">{{ page.date | readableDate }}</time>&nbsp;&ndash;&nbsp;
+        {{ content | timeToRead }}&nbsp;to&nbsp;read
+    </small>
+    <h1>{{ title }}</h1>
+    <div class="content">
+      {{ content }}
+    </div>
+  </article>
+  {% include "pagination.liquid" %}   
   {% include "footer.liquid" %}
 </body>
 <!-- End Body -->

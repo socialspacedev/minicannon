@@ -189,6 +189,7 @@ _editables:
     table: true
     underline: true
     undo: true
+    styles: .cloudcannon/css/editor.css
 
 #settings
 data_config: {}

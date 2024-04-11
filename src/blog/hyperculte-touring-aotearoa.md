@@ -33,7 +33,3 @@ For more information on the Hyperculte tour, here's the official press release:
 > Hyperculte's music hints at the kind of ancient, pine-scented black magic of central European folklore captured in the costumes on the cover of their 2016 self titled debut album. Driving forces of the Geneva experimental rock scene, Simone Aubert (drums/guitar/vocals) and Vincent Bertholet (double bass/vocals) hail from the either side of the mountainous, myth-drenched Swiss-French border region.
 >
 > They met when living in the same squat in Geneva and started playing together in 2014. Simone came from the dark and experimental band Massicot, Vincent from the Dadaist big band Orchestra Tout Puissant Marcel Duchamp.
-
-&nbsp;
-
-&nbsp;

@@ -44,9 +44,10 @@
     @apply underline decoration-sky-600 decoration-2 underline-offset-1 transition-all;
   }
  .paginate {
-    margin-top: 3em; 
+    margin: auto; 
     display: flex;
     justify-content: space-between;
+    max-width: inherit;
   }
   .paginate li {
     letter-spacing: .025em;
@@ -96,10 +97,15 @@
   .icon:focus-within {
     @apply hover:stroke-sky-600;
   }
+  picture {
+    display: flex;
+    justify-content: center;
+  }
+}
  /* about img {
   margin-top: -20rem;
   } */
-}
+
 .pagefind-ui__result.svelte-j9e30.svelte-j9e30 {
     list-style-type: none;
     display: flex;
@@ -646,11 +652,13 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
   header,
   main,
   article,
+  paginate,
   footer {
     @apply py-7 px-3;
   }
   main,
-  article {
+  article,
+  paginate {
     @apply my-2.5;
   }
   .title {
@@ -674,6 +682,7 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
   header,
   main,
   article,
+  paginate,
   footer {
     @apply py-8 px-4;
   }
@@ -690,7 +699,8 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
     @apply flex-col gap-0;
   }
   main,
-  article {
+  article,
+    paginate {
     @apply my-3;
   }
   h1,
@@ -718,11 +728,13 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
   header,
   main,
   article,
+  paginate,
   footer {
     @apply py-9 px-4;
   }
   main,
-  article {
+  article,
+  paginate {
     @apply max-w-screen-md my-4;
   }
   .social {
@@ -737,11 +749,13 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
   header,
   main,
   article,
+  paginate,
   footer {
     @apply py-10 px-5;
   }
   main,
-  article {
+  article,
+  paginate {
     @apply max-w-screen-lg my-5;
   }
   .social {

@@ -1,0 +1,23 @@
+/* Can be applied to blocks of content */
+p.callout {
+  margin: 10px;
+  border: 1px solid #f5f5f5;
+  background-color: #eee;
+}
+
+/* Can be applied to inline content */
+span.big-blue-text {
+  font-size: 2rem;
+  color: blue;
+}
+
+/* Applied to content, excluded from style dropdown */
+h2 {
+  font-family: cursive;
+}
+
+/* Applied to content, excluded from style dropdown */
+.align-left { text-align: left; }
+.align-center { text-align: center; }
+.align-right { text-align: right; }
+.align-justify { text-align: justify; }

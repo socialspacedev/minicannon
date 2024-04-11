@@ -18,35 +18,37 @@ pagination:
   <body>
     {% include "nav.liquid" %}
       <main>
-      {{ content }}
-      <ul class="list-posts">
-        {%- for post in posts -%}
-          <li class="posts">
-            <h2>
-              <a href="{{ post.url }}">{{ post.data.title }}</a>
-            </h2>
-            <p>{{ post.data.description }}</p>
-            <small class="info">
-              <time datetime="{{ post.date }}">{{ post.date | readableDate }}</time>&nbsp;&nbsp;&ndash;&nbsp;
-              {{ post.content | timeToRead }}&nbsp;to&nbsp;read
-            </small>
-          </li>
-        {%- endfor -%}
-      </ul>
-  <!-- Pagination links -->
+        {{ content }}
+        <ul class="list-posts">
+          {%- for post in posts -%}
+            <li class="posts">
+              <h2>
+                <a href="{{ post.url }}">{{ post.data.title }}</a>
+              </h2>
+              <p>{{ post.data.description }}</p>
+              <small class="info">
+                <time datetime="{{ post.date }}">{{ post.date | readableDate }}</time>&nbsp;&nbsp;&ndash;&nbsp;
+                {{ post.content | timeToRead }}&nbsp;to&nbsp;read
+              </small>
+            </li>
+          {%- endfor -%}
+        </ul>
+      </main>
+    <!-- Pagination links -->
+    <paginate>
       {% if pagination.pageLinks.length > 1 %}
             <ul class="paginate">
             {% if pagination.previousPageLink %}
-              <li class="left"><a href="{{ pagination.previousPageHref }}">&lt; Previous</a></li>
+              <li><a href="{{ pagination.previousPageHref }}">&lt; Previous</a></li>
               {% else %}<li>&nbsp;</li>
             {% endif %}
             {% if pagination.nextPageLink %}
-              <li class="right"><a href="{{ pagination.nextPageHref }}">Next &gt;</a></li>
+              <li><a href="{{ pagination.nextPageHref }}">Next &gt;</a></li>
               {% else %}<li>&nbsp;</li>
             {% endif %}
           </ul>
       {% endif %}
-    </main>
+    </paginate>
     {% include "footer.liquid" %}
   </body>
 <!-- End Body -->

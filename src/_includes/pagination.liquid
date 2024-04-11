@@ -1,0 +1,19 @@
+<paginate>
+    <!-- Pagination links -->
+    {% if collections.post %}
+      {% assign previousPost = collections.post | getPreviousCollectionItem %}
+      {% assign nextPost = collections.post | getNextCollectionItem %}
+      {% if nextPost or previousPost %}
+        <ul class="paginate">
+          {% if previousPost %}
+            <li><a href="{{ previousPost.url }}" title="{{ previousPost.data.title }}">&lt; Previous</a></li>
+            {% else %}<li>&nbsp;</li>
+          {% endif %}
+          {% if nextPost %}
+            <li><a href="{{ nextPost.url }}" title="{{ nextPost.data.title }}">Next &gt;</a></li></li>
+            {% else %}<li>&nbsp;</li>
+          {% endif %}
+        </ul>
+      {% endif %}
+    {% endif %}
+</paginate>
