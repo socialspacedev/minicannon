@@ -35,20 +35,6 @@ pagination:
         </ul>
       </main>
     <!-- Pagination links -->
-    <paginate>
-      {% if pagination.pageLinks.length > 1 %}
-            <ul class="paginate">
-            {% if pagination.previousPageLink %}
-              <li><a href="{{ pagination.previousPageHref }}">&lt; Previous</a></li>
-              {% else %}<li>&nbsp;</li>
-            {% endif %}
-            {% if pagination.nextPageLink %}
-              <li><a href="{{ pagination.nextPageHref }}">Next &gt;</a></li>
-              {% else %}<li>&nbsp;</li>
-            {% endif %}
-          </ul>
-      {% endif %}
-    </paginate>
     {% include "pagination.liquid"%}
     {% include "footer.liquid" %}
   </body>
