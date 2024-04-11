@@ -44,7 +44,7 @@
     @apply underline decoration-sky-600 decoration-2 underline-offset-1 transition-all;
   }
  .paginate {
-    margin-top: 3em; 
+    margin: auto; 
     display: flex;
     justify-content: space-between;
     max-width: 65ch;
