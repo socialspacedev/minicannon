@@ -47,11 +47,11 @@
     margin-top: 3em; 
     display: flex;
     justify-content: space-between;
-    @apply my-2;
   }
   .paginate li {
     letter-spacing: .025em;
     list-style: none;
+    @apply my-3;
   }
   .paginate a {
     @apply dark:bg-zinc-900 font-serif text-base text-slate-900 dark:text-slate-100 transition-all;
