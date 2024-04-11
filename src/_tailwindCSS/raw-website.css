@@ -47,7 +47,7 @@
     margin: auto; 
     display: flex;
     justify-content: space-between;
-    max-width: 65ch;
+    max-width: inherit;
   }
   .paginate li {
     letter-spacing: .025em;
