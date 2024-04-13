@@ -700,7 +700,7 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
   }
   main,
   article,
-    paginate {
+  paginate {
     @apply my-3;
   }
   h1,
