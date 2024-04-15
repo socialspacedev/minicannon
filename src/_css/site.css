@@ -52,6 +52,7 @@
   .paginate li {
     letter-spacing: .025em;
     list-style: none;
+    cursor: pointer;
   }
   .paginate a {
     @apply dark:bg-zinc-900 font-serif text-base text-slate-900 dark:text-slate-100 transition-all;
