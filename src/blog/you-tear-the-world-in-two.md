@@ -1,6 +1,6 @@
 ---
 _schema: default
-title: You tear the world in two
+title: You tore the world in two
 description: Pale Saints guitarist Graeme Naysmith has died.
 tags:
   - post
