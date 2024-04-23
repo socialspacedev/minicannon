@@ -44,6 +44,12 @@ collections_config:
       published:
         type: switch
         cascade: true
+      layout:
+        hidden: true
+      type:
+        hidden: true
+      permalink: 
+        hidden: true
     _select_data:
     _structures:
     disable_add: false
