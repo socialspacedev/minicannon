@@ -15,15 +15,6 @@ collections_config:
     output: true
     description: Blog posts about all things under the sun
     icon: post
-    preview:
-      text:
-      subtext:
-      icon:
-      icon_color:
-      image:
-      metadata:
-      gallery:
-    _editables:
     _enabled_editors:
       - content
       - visual
@@ -44,17 +35,6 @@ collections_config:
       published:
         type: switch
         cascade: true
-      layout:
-        hidden: true
-      type:
-        hidden: true
-      permalink: 
-        hidden: true
-    _select_data:
-    _structures:
-    disable_add: false
-    disable_add_folder: false
-    disable_file_actions: false
     schemas:
       default:
         path: .cloudcannon/schemas/post.md
@@ -69,15 +49,6 @@ collections_config:
     filter: strict
     description: Fascinating pages of this 'ere website
     icon: article
-    preview:
-      text:
-      subtext:
-      icon:
-      icon_color:
-      image:
-      metadata:
-      gallery:
-    _editables:
     _enabled_editors:
       - visual
       - content
@@ -93,8 +64,6 @@ collections_config:
             - personal
           value_key:
         cascade: true
-    _select_data:
-    _structures:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
@@ -137,6 +106,12 @@ _inputs:
     options:
       resize_style: cover
     cascade: true
+  layout:
+    hidden: true
+  type:
+    hidden: true
+  permalink: 
+    hidden: true
 
 #editables
 _editables:
