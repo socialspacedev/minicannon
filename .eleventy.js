@@ -87,7 +87,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addGlobalData("eleventyComputed.permalink", function () {
 		return (data) => {
 			// Always skip during non-watch/serve builds
-			if (data.published && !process.env.production) {
+			if (!data.published && process.env.production) {
 				return false;
 			}
 
@@ -100,7 +100,7 @@ module.exports = function (eleventyConfig) {
 		function () {
 			return (data) => {
 				// Always exclude from non-watch/serve builds
-				if (data.published && !process.env.production) {
+				if (!data.published && process.env.production) {
 					return true;
 				}
 
