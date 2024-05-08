@@ -84,15 +84,15 @@ module.exports = function (eleventyConfig) {
   });
 		
   // Exclude drafts from production
-//	eleventyConfig.addGlobalData("eleventyComputed.permalink", function () {
-//		return (data) => {
-//			if (!data.published && process.env.production) {
-//				return false;
-//			}
+	eleventyConfig.addGlobalData("eleventyComputed.permalink", function () {
+		return (data) => {
+			if (!data.published && process.env.production) {
+				return false;
+			}
 
-//			return data.permalink;
-//		};
-//	});
+			return "blog/{{ title | slugify }}.html";
+		};
+	});
 
 	eleventyConfig.addGlobalData(
 		"eleventyComputed.eleventyExcludeFromCollections",
