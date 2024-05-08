@@ -90,7 +90,7 @@ module.exports = function (eleventyConfig) {
 				return false;
 			}
 
-			return '';
+	//		return data.permalink;
 		};
 	});
 
