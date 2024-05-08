@@ -90,7 +90,7 @@ module.exports = function (eleventyConfig) {
 				return false;
 			}
 
-			return "blog/{{ title | slugify }}.html";
+			return data.permalink;
 		};
 	});
 
