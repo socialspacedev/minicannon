@@ -86,12 +86,11 @@ module.exports = function (eleventyConfig) {
   // Exclude drafts from production
 	eleventyConfig.addGlobalData("eleventyComputed.permalink", function () {
 		return (data) => {
-			// Always skip during non-watch/serve builds
 			if (!data.published && process.env.production) {
 				return false;
 			}
 
-			return data.permalink;
+			return blog/{{ title | slugify }}.html;
 		};
 	});
 
@@ -99,7 +98,6 @@ module.exports = function (eleventyConfig) {
 		"eleventyComputed.eleventyExcludeFromCollections",
 		function () {
 			return (data) => {
-				// Always exclude from non-watch/serve builds
 				if (!data.published && process.env.production) {
 					return true;
 				}
