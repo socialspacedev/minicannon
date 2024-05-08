@@ -6,7 +6,7 @@ tags:
   - post
   - music
 date: 2024-03-21T14:05:17+13:00
-published: false
+published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
