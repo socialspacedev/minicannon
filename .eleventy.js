@@ -84,11 +84,30 @@ module.exports = function (eleventyConfig) {
   });
 		
   // Exclude drafts from production
-  eleventyConfig.addCollection("published", (collection) => {
-  return collection
-    .getFilteredByTags("posts")
-    .filter((post) => post.data.published);
-});
+	eleventyConfig.addGlobalData("eleventyComputed.permalink", function () {
+		return (data) => {
+			// Always skip during non-watch/serve builds
+			if (data.published && !process.env.production) {
+				return false;
+			}
+
+			return data.permalink;
+		};
+	});
+
+	eleventyConfig.addGlobalData(
+		"eleventyComputed.eleventyExcludeFromCollections",
+		function () {
+			return (data) => {
+				// Always exclude from non-watch/serve builds
+				if (data.published && !process.env.production) {
+					return true;
+				}
+
+				return data.eleventyExcludeFromCollections;
+			};
+		}
+	);
   
   // The end
   return {
