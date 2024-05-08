@@ -1,2 +1,4 @@
 npm install -g npm@10.7.0
 npm install html-minifier -g
+npm audit fix
+npx update-browserslist-db@latest
