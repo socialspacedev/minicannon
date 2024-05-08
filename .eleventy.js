@@ -87,11 +87,11 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addGlobalData("eleventyComputed.permalink", function () {
 		return (data) => {
 			if (!data.published && process.env.production) {
-//			  console.log(data.post.title);
 				return false;
+				console.log(data.post.title);
 			}
 
-	//		return data.permalink;
+			return data.permalink;
 		};
 	});
 
