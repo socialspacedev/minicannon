@@ -85,6 +85,19 @@ module.exports = function (eleventyConfig) {
 		
   // Exclude drafts from production
 
+
+	eleventyConfig.addGlobalData(
+		"eleventyComputed.eleventyExcludeFromCollections",
+		function () {
+			return (data) => {
+				if (!data.published && process.env.production) {
+					return true;
+				}
+
+				return data.eleventyExcludeFromCollections;
+			};
+		}
+	);
   
   // The end
   return {
