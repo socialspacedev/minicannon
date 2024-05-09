@@ -91,7 +91,7 @@ module.exports = function (eleventyConfig) {
 				console.log(data.post.title);
 			}
 
-			return "{ split/page-{{ pagination.pageNumber | plus: 1 }}/index.html }";
+			return data.permalink;
 		};
 	});
 
