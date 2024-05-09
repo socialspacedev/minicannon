@@ -102,10 +102,10 @@ module.exports = function (eleventyConfig) {
 			return (data) => {
 				if (!data.published && process.env.production) {
 					return true;
+						console.log('Huzzah!');
 				}
 
 			  return data.eleventyExcludeFromCollections;
-			    	console.log('Huzzah!');
 			};
 		}
 	);
