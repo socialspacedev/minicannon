@@ -7,6 +7,6 @@ date:
 published: false
 type: article
 layout: article.liquid
-permalink: "different/{% if pagination.pageNumber > 0 %}{{ title }}-{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
+permalink: blog/{{ title | slugify }}.html
 content_blocks:
 ---
