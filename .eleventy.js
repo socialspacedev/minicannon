@@ -91,7 +91,7 @@ module.exports = function (eleventyConfig) {
 				console.log(data.title);
 			}
 
-			  return `/${data.slug}/`;
+			  return data.permalink;
 		  };
 	  }
 	);
