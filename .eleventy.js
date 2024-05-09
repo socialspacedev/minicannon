@@ -91,7 +91,7 @@ module.exports = function (eleventyConfig) {
 				console.log(data.article.title);
 			}
 
-			  return `/${data.article.slug}/`;
+			  return `/${data.article.permalink}/`;
 		  };
 	  }
 	);
@@ -104,7 +104,7 @@ module.exports = function (eleventyConfig) {
 					return true;
 				}
 
-				return data.eleventyExcludeFromCollections;
+			  return data.eleventyExcludeFromCollections;
 			};
 		}
 	);
