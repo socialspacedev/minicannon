@@ -84,17 +84,7 @@ module.exports = function (eleventyConfig) {
   });
 		
   // Exclude drafts from production
-	eleventyConfig.addGlobalData("eleventyComputed.permalink", function () {
-		return (data) => {
-			if (!data.published && process.env.production) {
-				return false;
-				console.log(data.article.title);
-			}
-
-			  return `/${data.article}/`;
-		  };
-	  }
-	);
+  
 
 	eleventyConfig.addGlobalData(
 		"eleventyComputed.eleventyExcludeFromCollections",
@@ -105,6 +95,7 @@ module.exports = function (eleventyConfig) {
 				}
 
 			  return data.eleventyExcludeFromCollections;
+			    	console.log(data.article.title);
 			};
 		}
 	);
