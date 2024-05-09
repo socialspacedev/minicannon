@@ -88,10 +88,10 @@ module.exports = function (eleventyConfig) {
 		return (data) => {
 			if (!data.published && process.env.production) {
 				return false;
-				console.log(data.post.title);
+				console.log(data.article.title);
 			}
 
-			  return `/${data.article.Slug}/`;
+			  return `/${data.article.slug}/`;
 		  };
 	  }
 	);
