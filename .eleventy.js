@@ -91,7 +91,7 @@ module.exports = function (eleventyConfig) {
 				console.log(data.title);
 			}
 
-        return `/${data.page.fileSlug}/index.html`;
+        return `split/page-{{ pagination.pageNumber | plus: 1 }}/index.html`;
 //			  return data.permalink;
 		  };
 	  }
