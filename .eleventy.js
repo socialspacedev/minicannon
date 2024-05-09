@@ -84,16 +84,24 @@ module.exports = function (eleventyConfig) {
   });
 		
   // Exclude drafts from production
-	eleventyConfig.addGlobalData("eleventyComputed.permalink", function () {
+  	eleventyConfig.addGlobalData("eleventyComputed.permalink", function () {
 		return (data) => {
 			if (!data.published && process.env.production) {
 				return false;
-				console.log(data.post.title);
+				console.log(data.title);
 			}
 
+<<<<<<< HEAD
 			return data.permalink;
 		};
 	});
+=======
+        return `/${data.page.fileSlug}/index.html`;
+//			  return data.permalink;
+		  };
+	  }
+	);
+>>>>>>> 7ec7fe38cb5fd65f3c8afb26ad6f3b847aa488ba
 
 	eleventyConfig.addGlobalData(
 		"eleventyComputed.eleventyExcludeFromCollections",
@@ -103,7 +111,7 @@ module.exports = function (eleventyConfig) {
 					return true;
 				}
 
-				return data.eleventyExcludeFromCollections;
+			  return data.eleventyExcludeFromCollections;
 			};
 		}
 	);
