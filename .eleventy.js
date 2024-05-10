@@ -91,17 +91,11 @@ module.exports = function (eleventyConfig) {
 				console.log(data.title);
 			}
 
-<<<<<<< HEAD
-			return data.permalink;
-		};
-	});
-=======
-        return `/${data.page.fileSlug}/index.html`;
-//			  return data.permalink;
-		  };
-	  }
-	);
->>>>>>> 7ec7fe38cb5fd65f3c8afb26ad6f3b847aa488ba
+      return `/${data.page.fileSlug}/index.html`;
+      //			  return data.permalink;
+            };
+          }
+        );
 
 	eleventyConfig.addGlobalData(
 		"eleventyComputed.eleventyExcludeFromCollections",
