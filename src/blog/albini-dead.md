@@ -23,6 +23,7 @@ A lot has been written about him, particularly over past couple of days and he's
 Here's a selection of curated articles, artefacts, and personal perspectives from those that knew him:
 
 * Jon Robb shares an <a href="https://louderthanwar.com/an-appreciation-of-steve-albini-by-john-robb-godspeed-you-the-big-black-emporer/" title="Link to Jon Robb interview" target="_blank" rel="noopener">interview</a> with Albini from 2019.
+* <a href="https://www.theguardian.com/music/2023/aug/15/the-evolution-of-steve-albini-if-the-dumbest-person-is-on-your-side-youre-on-the-wrong-side" title="Evolution of Albini at The Guardian" target="_blank" rel="noopener">The Guardian</a> reviews Albini's legacy.
 * A 1994 <a href="https://reader.exacteditions.com/issues/35253/page/42" title="Wire article from 1994 featuring Albini" target="_blank" rel="noopener">article</a> from The Wire where Albini had to guess random tunes.
 * <a href="https://www.nme.com/news/music/steve-albini-on-why-he-hates-steely-dan-3393802" title="Albini hates Steely Dan and so do I" target="_blank" rel="noopener">Steve Albini</a> on his justifiable hatred of Steely Dan for NME.
 * His <a href="https://faroutmagazine.co.uk/steve-albini-letter-to-nirvana/" title="Letter to Nirvana before agreeing to record In Utero" target="_blank" rel="noopener">letter</a> to Nirvana detailing working arrangements for In Utero.
