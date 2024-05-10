@@ -18,9 +18,9 @@ Steve Albini was an influential figure in the alternative punk rock music scene 
 
 On May 7th, 2024 he suffered a fatal heart attack doing what I presumed he loved. Working hard in his studio <a href="https://www.electricalaudio.com/" title="Website for Electrical Audio" target="_blank" rel="noopener">Electrical Audio</a> to capture the most authentic performance from a band as efficiently as possible. He appeared to be a generous, ethical, and uncompromising practitioner who willingly shared knowledge from hard-won experience.
 
-A lot has been written about him, particularly over past couple of days and he's certainly said a lot himself over the decades. Including what could be a manifesto outlining his philosophy for engaging with the wider music ecosystem, titled "<a href="https://thebaffler.com/salvos/the-problem-with-music" title="Link to original article by Steve Albini" target="_blank" rel="noopener">The Problem with Music</a>" from 1993.
+A lot has been written about him, particularly over past couple of days and he's certainly said a lot himself over the decades. Including what is a manifesto outlining his philosophy for engaging with the wider music ecosystem, titled "<a href="https://thebaffler.com/salvos/the-problem-with-music" title="Link to original article by Steve Albini" target="_blank" rel="noopener">The Problem with Music</a>" from 1993.
 
-Here's a selection of curated articles, artefacts, and personal perspectives from those that knew him:
+Here's a selection of curated articles, artefacts, and personal perspectives:
 
 * Jon Robb shares an <a href="https://louderthanwar.com/an-appreciation-of-steve-albini-by-john-robb-godspeed-you-the-big-black-emporer/" title="Link to Jon Robb interview" target="_blank" rel="noopener">interview</a> with Albini from 2019.
 * <a href="https://www.theguardian.com/music/2023/aug/15/the-evolution-of-steve-albini-if-the-dumbest-person-is-on-your-side-youre-on-the-wrong-side" title="Evolution of Albini at The Guardian" target="_blank" rel="noopener">The Guardian</a> reviews Albini's legacy.
