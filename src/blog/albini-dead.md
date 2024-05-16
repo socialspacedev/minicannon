@@ -12,7 +12,7 @@ layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
 content_blocks:
 ---
-Steve Albini was an influential figure in the alternative punk rock music scene since the 1980s. He was best known as a purist recording engineer (not producer), uncompromising musician, fierce band advocate, unwavering voice of independent music, champion poker player and withering critic.
+<a href="https://www.nytimes.com/2024/05/08/arts/music/steve-albini-dead.html" title="Steve Albini's obituary at the NY Times" target="_blank" rel="noopener">Steve Albini</a> was an influential figure in the alternative punk rock music scene since the 1980s. He was best known as a purist recording engineer (not producer), uncompromising musician, fierce band advocate, unwavering voice of independent music, champion poker player and withering critic.
 
 {% image, "/img/stevealbini.jpeg" "Photo of Steve Albini in trademark overalls and beanie" "30em 50vw 1000vw" %}
 
@@ -28,6 +28,7 @@ Here's a selection of other articles, artefacts, and personal perspectives:
 * <a href="https://www.nme.com/news/music/steve-albini-on-why-he-hates-steely-dan-3393802" title="Albini hates Steely Dan and so do I" target="_blank" rel="noopener">Steve Albini</a> on his justifiable hatred of Steely Dan for NME.
 * His <a href="https://faroutmagazine.co.uk/steve-albini-letter-to-nirvana/" title="Letter to Nirvana before agreeing to record In Utero" target="_blank" rel="noopener">letter</a> to Nirvana detailing working arrangements for In Utero.
 * Thurston Moore <a href="https://www.brooklynvegan.com/thurston-moore-pens-lenthy-tribute-to-steve-albini-an-authentic-visionary-a-person-alive-with-the-delight-of-creative-impulse/" title="Thurston Moore's Albini dedication" target="_blank" rel="noopener">articulates</a> his feelings on Albini.
+* Various musicians discuss their <a href="https://www.theguardian.com/music/article/2024/may/13/pj-harvey-mogwai-sunn-wedding-present-jon-spencer-on-steve-albini" title="Collection of quotes about Albini at The Guardian" target="_blank" rel="noopener">experiences</a>.
 
 Finally, here he is in his final band Shellac practicing in 2010. His intensity is evident and it's clear this trio have played together a long time.
 
