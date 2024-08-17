@@ -16,9 +16,6 @@ Using M\|A\|R\|R\|S 80s banger <a href="https://www.youtube.com/watch?v=w9gOQgfP
 
 <img src="https://f4.bcbits.com/img/a2441899335_10.jpg" alt="Album artwork for Volume by Caribou" height="1200" width="1200" />
 
-<iframe id="bandcamp" style="border: 0; width: 100%; height: 621px;" src="https://bandcamp.com/EmbeddedPlayer/album=800501479/size=large/bgcol=333333/linkcol=0f91ff/transparent=true/" seamless=""><a href="https://caribouband.bandcamp.com/album/volume">Volume
-by Caribou</a></iframe>
-
-<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=800501479/size=large/bgcol=ffffff/linkcol=0687f5/license_id=3962/tracklist=false/artwork=none/transparent=true/" seamless=""><a href="https://caribouband.bandcamp.com/album/volume">Volume by Caribou</a></iframe>
+<iframe id="bandcamp" style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=800501479/size=large/bgcol=ffffff/linkcol=0687f5/license_id=3962/tracklist=false/artwork=none/transparent=true/" seamless=""><a href="https://caribouband.bandcamp.com/album/volume">Volume by Caribou</a></iframe>
 
 &nbsp;
