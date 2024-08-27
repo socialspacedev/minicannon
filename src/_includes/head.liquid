@@ -136,9 +136,6 @@
     sizes="any" />
 
   {% comment %}
-    Social
-  {% endcomment %}
-  {% comment %}
     Open Graph
   {% endcomment %}
   <meta property="og:type" content="{{ type }}" />
@@ -151,4 +148,9 @@
       Facebook
     {% endcomment %}
   <meta property="fb:admins" content="{{ meta.facebookUsername }}" />
+  
+    {% comment %}
+      100% privacy-first analytics
+    {% endcomment %}
+<script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 </head>
