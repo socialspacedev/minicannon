@@ -1,8 +1,8 @@
 #paths
 source: src
 paths:
-  static: static
   uploads: img/
+  static: /
   collections:
   data: _data/
   layouts: _layouts/
