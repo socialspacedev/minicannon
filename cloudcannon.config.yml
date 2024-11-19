@@ -2,7 +2,7 @@
 source: src
 paths:
   uploads: img/
-  static: /
+  static: 
   collections:
   data: _data/
   layouts: _layouts/
