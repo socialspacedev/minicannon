@@ -30,6 +30,7 @@ collections_config:
             - social media
             - tumblr
             - vespa
+            - photography
           value_key:
         cascade: true
       published:
