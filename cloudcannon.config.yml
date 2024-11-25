@@ -1,20 +1,18 @@
-#paths
+_schema: _schema
 source: src
 paths:
   uploads: img/
-  static: 
+  static:
   collections:
   data: _data/
   layouts: _layouts/
   includes: _includes/
-
-#collections
 collections_config:
   posts:
     path: blog
+    icon: post
     output: true
     description: Blog posts about all things under the sun
-    icon: post
     _enabled_editors:
       - content
       - visual
@@ -36,6 +34,9 @@ collections_config:
       published:
         type: switch
         cascade: true
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
     schemas:
       default:
         path: .cloudcannon/schemas/post.md
@@ -46,10 +47,10 @@ collections_config:
         icon: notes
   pages:
     path: pages
+    icon: article
     output: true
     filter: strict
     description: Fascinating pages of this 'ere website
-    icon: article
     _enabled_editors:
       - visual
       - content
@@ -78,25 +79,19 @@ collections_config:
         icon: notes
   data:
     path: _data
+    icon: settings_applications
     output: false
     description: Metadata for site layouts and other data
-    icon: settings_applications
     _enabled_editors:
       - data
     disable_add: true
     disable_add_folder: true
     disable_file_actions: false
 collections_config_override: false
-
-#editors
 _enabled_editors:
   - visual
   - content
   - data
-#source_editor:
-#  theme: github
-
-#inputs
 _inputs:
   date:
     type: datetime
@@ -108,21 +103,29 @@ _inputs:
       resize_style: cover
     cascade: true
   layout:
+    type: auto
     hidden: true
+    cascade: true
   type:
+    type: auto
     hidden: true
-  permalink: 
+    cascade: true
+  permalink:
+    type: auto
     hidden: true
-
-#editables
+    cascade: true
 _editables:
   text:
+    allow_custom_markup: true
+    remove_custom_markup: false
     bold: true
     italic: true
     redo: true
     removeformat: true
     underline: true
   block:
+    allow_custom_markup: false
+    remove_custom_markup: false
     blockquote: true
     bold: true
     bulletedlist: true
@@ -142,6 +145,8 @@ _editables:
     underline: true
     undo: true
   content:
+    allow_custom_markup: false
+    remove_custom_markup: false
     blockquote: true
     bold: true
     bulletedlist: true
@@ -166,18 +171,12 @@ _editables:
     right: align-right
     snippet: true
     strike: true
+    styles: .cloudcannon/css/editor.css
     subscript: false
     superscript: false
     table: true
     underline: true
     undo: true
-    styles: .cloudcannon/css/editor.css
-
-#settings
-data_config: {}
-timezone: Pacific/Auckland
-
-#snippets
 _snippets_imports:
   eleventy_liquid: true
 _snippets:
@@ -195,19 +194,36 @@ _snippets:
           type: string
         - editor_key: Sizes
           type: string
-          default: "30em 50vw 100vw"
+          default: 30em 50vw 100vw
     _inputs:
       Image:
         type: image
+        cascade: true
       trim_bottom_left:
+        type: auto
         hidden: true
+        cascade: true
       trim_top_right:
+        type: auto
         hidden: true
+        cascade: true
       trim_bottom_right:
+        type: auto
         hidden: true
+        cascade: true
       trim_top_left:
+        type: auto
         hidden: true
+        cascade: true
       trim_left:
+        type: auto
         hidden: true
+        cascade: true
       trim_right:
+        type: auto
         hidden: true
+        cascade: true
+timezone: Pacific/Auckland
+markdown:
+  engine:
+  options:
