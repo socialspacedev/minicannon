@@ -1,4 +1,4 @@
-npm install -g node
+npm install -g node --force
 npm install html-minifier -g
 npm audit fix --force
 npx update-browserslist-db@latest
