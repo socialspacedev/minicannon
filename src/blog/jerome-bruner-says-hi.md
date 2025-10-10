@@ -11,7 +11,6 @@ published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
-content_blocks:
 ---
 > Originally posted on my personal <a href="https://blog.anaru.nz/post/145689055594/jerome-bruner-said-hi" title="Original post on my personal Tumblelog with the then domain of andrew-long.name." target="_blank" rel="noopener">Tumblelog</a> in 2016.
 

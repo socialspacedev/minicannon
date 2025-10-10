@@ -10,7 +10,6 @@ published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
-content_blocks:
 ---
 {% image "/img/twitter-dead.png", "Twitter bird logo in flames.", "30em 50vw 100vw" %}
 

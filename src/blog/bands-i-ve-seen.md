@@ -10,7 +10,6 @@ published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
-content_blocks:
 ---
 ### **NZ acts**
 
@@ -26,7 +25,7 @@ content_blocks:
 * The Ladder is Part of the Pit
 * Snapper
 * Straitjacket Fits
-* Shane Carter
+* Shayne P. Carter
 * Dimmer
 * Spud
 * The Terminals
@@ -94,6 +93,9 @@ content_blocks:
 * Tiny Ruins
 * Nothing at all!
 * Golden Horse
+* K-Group
+* Surface of the Earth
+* Omit
 
 ### **International acts**
 

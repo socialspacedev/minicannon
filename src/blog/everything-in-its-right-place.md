@@ -10,7 +10,6 @@ published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
-content_blocks:
 ---
 I heard this lovely tune on one of Colin Newman and Malka Spigal's recent <a href="https://www.totallyradio.com/shows/swimming-in-sound" title="Swimming in Sound" target="_blank" rel="noopener">radio shows</a>. It reminded me a little of the main riff of Radiohead's <a href="https://www.youtube.com/watch?v=3M_Gg1xAHE4" title="Video of the Pyramid Song by Radiohead." target="_blank" rel="noopener">Pyramid Song</a>.
 
