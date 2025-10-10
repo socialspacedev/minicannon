@@ -1,1 +1,3 @@
+npm install -g npm@11.6.2
+npx update-browserslist-db@latest
 npm install html-minifier -g
