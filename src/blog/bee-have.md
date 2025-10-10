@@ -10,7 +10,6 @@ published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
-content_blocks:
 ---
 <a href="https://www.harmonicstudio.com/" title="Peter Hobbs' sound studio in Auckland" target="_blank" rel="noopener">Peter Hobbs</a> is a former Dunedin musician from amazing bands like <a href="https://peterhobbs.bandcamp.com/album/testpot" title="Kitset's one and an only album at Bandcamp" target="_blank" rel="noopener">Kitset</a> who now makes soundtracks, ads, sound installations and other field recording-based experiments. <a href="https://peterhobbs.bandcamp.com/album/bee-sides" title="Bandcamp link to the Bee Sides album" target="_blank" rel="noopener">Bee Sides</a> is his latest magnificent release celebrating and featuring bees doing their thing.
 

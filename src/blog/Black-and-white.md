@@ -10,7 +10,6 @@ published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
-content_blocks:
 ---
 I'm currently obsessed with my [Olympus OM 1](https://www.instagram.com/p/DDL4IWUJ11G/ "Takes you to my Instagram post showing the camera") with a Zuiko 50mm lens. I've been experimenting with a variety of black and white emulsions such as Kodak Tri-X, Ilford XP2, FP4 Plus, etc. I'm still a novice but enjoying the time it takes to capture a single photo with no idea how it'll turn out.
 

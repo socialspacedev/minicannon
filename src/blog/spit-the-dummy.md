@@ -10,7 +10,6 @@ published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
-content_blocks:
 ---
 Dummy are an LA based 4-piece who have a new album out in September called "<a href="https://notdummy.bandcamp.com/album/free-energy" title="Free Energy at Bandcamp" target="_blank" rel="noopener">Free Energy</a>". One of the two tracks to be released early is the excellent "Nine Clean Nails". It's a propulsive mixture of Broadcast, Stereolab and maybe even a little Wet Leg thrown in there to get your day started right.
 

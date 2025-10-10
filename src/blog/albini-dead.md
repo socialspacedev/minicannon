@@ -10,7 +10,6 @@ published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
-content_blocks:
 ---
 <a href="https://www.nytimes.com/2024/05/08/arts/music/steve-albini-dead.html" title="Steve Albini's obituary at the NY Times" target="_blank" rel="noopener">Steve Albini</a> was an influential figure in the alternative punk rock music scene since the 1980s. He was best known as a purist recording engineer (not producer), uncompromising musician, fierce band advocate, unwavering voice of independent music, champion poker player and withering critic.
 

@@ -13,7 +13,6 @@ published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
-content_blocks:
 ---
 > Originally posted to an old Tumblelog called the <a href="https://web.archive.org/web/20240000000000*/socialspacestation.com" title="Social Space Station archive on the Wayback Machine." target="_blank" rel="noopener">Social Space Station</a> in 2008.
 
