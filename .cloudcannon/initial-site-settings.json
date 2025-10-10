@@ -1,0 +1,29 @@
+{
+  "ssg": "eleventy",
+  "mode": "hosted",
+  "build_configuration": {
+    "output": "public",
+    "hugoVersion": "0.128.1",
+    "rubyVersion": "2.7.3",
+    "nodeVersion": "20",
+    "denoVersion": "1.40.2",
+    "preserved_paths": "node_modules/, img/, fonts/",
+    "config": "",
+    "formats": "",
+    "input": "",
+    "pathprefix": "",
+    "quiet": false,
+    "incremental": true,
+    "ignoreinitial": false,
+    "preserveOutput": true,
+    "includeGit": false,
+    "manage_plugin_manually": false,
+    "use_beta_plugin": false,
+    "environment_variables": [
+      {
+        "key": "ELEVENTY_ENV",
+        "value": "production"
+      }
+    ]
+  }
+}
