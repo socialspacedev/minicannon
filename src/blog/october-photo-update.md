@@ -6,7 +6,7 @@ tags:
   - post
   - photography
 date: 2025-10-10T14:25:10+13:00
-published: false
+published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
@@ -36,4 +36,4 @@ I also experimented with a new Tamron 70-200 F/2.8 lens which judging by the res
 
 {% image, "/img/lony550-lony550-r1-e029.jpg" "Cityscape in Brisbane" "30em 50vw 100vw" %}
 
-{% image, "" "Organic architecture in Brisbane" "30em 50vw 100vw" %}
+{% image, "/img/long012-long012-r1-e005.jpg" "Organic architecture in Brisbane" "30em 50vw 100vw" %}
