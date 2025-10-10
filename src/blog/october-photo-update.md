@@ -14,11 +14,13 @@ content_blocks: []
 ---
 The following photos were taken from June to August this year on my trusty Olympus OM 1. There's a mix of locations including Dunedin, Auckland and Brisbane, and three different b&w films.
 
+{% image, "/img/three-films.jpg" "Three films and canisters" "30em 50vw 100vw" %}
+
 These are:
 
-* Ilford Orthographic Plus (80)
-* Ilford FP4 Plus (125)
-* Kodak Tri-X (400)
+* <a href="https://www.analog.cafe/r/ilford-ortho-plus-80-film-review-hz9m" title="Ilford Ortho Plus 80 review" target="_blank" rel="noopener">Ilford Orthographic Plus</a> (80)
+* <a href="https://www.analog.cafe/r/ilford-fp4-plus-film-review-osps" title="Illford FP4 Plus review" target="_blank" rel="noopener">Ilford FP4 Plus</a> (125)
+* <a href="https://www.analog.cafe/r/kodak-tri-x-400-film-review-5pbm" title="Kodak Tri-X (400 TX) review" target="_blank" rel="noopener">Kodak Tri-X</a> (400)
 
 Of the three, I had never used the Ilford ortho film before and was super curious to find out how it looks. This film renders anything coloured red as dark black and creates a contrasty, moody look (which I love!). Because it's very slow, the results are also very fine grained.
 
