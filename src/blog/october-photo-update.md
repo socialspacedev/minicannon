@@ -25,7 +25,7 @@ Of the three, I had never used the Ilford Ortho Plus film before and was super c
 
 I also experimented with a new Tamron 70-200 F/2.8 lens which judging by the results, needs some maintenance. This lens was mostly used with the Tri-x and resulted in very grainy photos with an occasional exposure flare.
 
-*The following three photos were taken at the Brisbane Botanic gardens using the Ortho pPlus. I think they are the most successful in terms of sharpness and contrast.*
+*The following three photos were taken at the Brisbane Botanic gardens using the Ortho Plus. I think they are the most successful in terms of sharpness and contrast.*
 
 {% image, "/img/lony550-lony550-r1-e032.jpg" "Flower at the Botanic Gardens Brisbane" "30em 50vw 100vw" %}
 
@@ -33,7 +33,7 @@ I also experimented with a new Tamron 70-200 F/2.8 lens which judging by the res
 
 {% image, "/img/lony550-lony550-r1-e037-1.jpg" "Third flower at the Brisbane Botanic Gardens" "30em 50vw 100vw" %}
 
-*This is my almost 90 year old father-in-law on a day trip out to Muriwai looking for gannets. This was taken using FP4 Plus.*
+*This is my almost 90 year old father-in-law on a day trip out to Muriwai looking for gannets (there weren't any). This was taken using FP4 Plus.*
 
 {% image, "/img/long012-long012-r1-e017.jpg" "Father-in-law at Muriwai" "30em 50vw 100vw" %}
 
@@ -49,4 +49,4 @@ I also experimented with a new Tamron 70-200 F/2.8 lens which judging by the res
 
 {% image, "/img/long012-long012-r1-e032.jpg" "Old man football at Ocean Grove" "30em 50vw 100vw" %}
 
-Of of the three emulsions, I love the dark moody sharp impact of Ortho Plus. More experiments to come!
+Of of the three emulsions, I love the dark 'n' moody impact of Ortho Plus. More experiments to come!
