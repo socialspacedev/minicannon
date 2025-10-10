@@ -35,5 +35,3 @@ I also experimented with a new Tamron 70-200 F/2.8 lens which judging by the res
 {% image, "/img/lony550-lony550-r1-e029.jpg" "Brisbane cityscape" "30em 50vw 100vw" %}
 
 {% image, "/img/lony570-lony570-r1-e013.jpg" "Daughter playing her hockey final" "30em 50vw 100vw" %}
-
-{% image, "" "" "30em 50vw 100vw" %}

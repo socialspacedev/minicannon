@@ -1,4 +1,5 @@
 #!/bin/bash
 
+npm install -g npm@11.6.2
 npx update-browserslist-db@latest
 npx tailwindcss -i src/_css/site.css -o public/css/style.css --minify
