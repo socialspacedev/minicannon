@@ -26,6 +26,14 @@ Of the three, I had never used the Ilford ortho film before and was super curiou
 
 I also experimented with a new Tamron 70-200 F/2.8 lens which judging by the results, needs some maintenance. This lens was mostly used with the Tri-x and resulted in very grainy photos.
 
-&nbsp;
+{% image, "/img/lony550-lony550-r1-e032.jpg" "Flower at Brisbane Botanic Gardens" "30em 50vw 100vw" %}
 
-&nbsp;
+{% image, "" "Flower at Brisbane Botanic Gardens" "30em 50vw 100vw" %}
+
+{% image, "/img/long012-long012-r1-e017.jpg" "Father-in-law at Muriwai" "30em 50vw 100vw" %}
+
+{% image, "/img/lony570-lony570-r1-e013.jpg" "Daughter at her hockey final" "30em 50vw 100vw" %}
+
+{% image, "/img/lony550-lony550-r1-e029.jpg" "Cityscape in Brisbane" "30em 50vw 100vw" %}
+
+{% image, "" "Organic architecture in Brisbane" "30em 50vw 100vw" %}
