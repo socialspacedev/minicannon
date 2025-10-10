@@ -10,7 +10,6 @@ published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
-content_blocks: []
 ---
 The following photos were taken from June-to-August this year on my trusty Olympus OM 1. There's a mix of locations including Dunedin, Auckland and Brisbane –using three different b&w films.
 
@@ -26,22 +25,28 @@ Of the three, I had never used the Ilford ortho film before and was super curiou
 
 I also experimented with a new Tamron 70-200 F/2.8 lens which judging by the results, needs some maintenance. This lens was mostly used with the Tri-x and resulted in very grainy photos with an occasional exposure flare.
 
-{% image, "/img/lony550-lony550-r1-e032.jpg" "Flower at the Botanic Gardens Brisbane" "30em 50vw 100vw" %}
+The following three photos were taken at the Brisbane Botanic gardens using the Ortho plus. I think they are the most successful in terms of sharpness and contrast.
 
-<p class="align-center"><em>Flower 1 at Brisbane Botanic gardens (Ortho 80)</em></p>
+{% image, "/img/lony550-lony550-r1-e032.jpg" "Flower at the Botanic Gardens Brisbane" "30em 50vw 100vw" %}
 
 {% image, "/img/lony550-lony550-r1-e035.jpg" "Another flower at the Botanic Gardens Brisbane" "30em 50vw 100vw" %}
 
-<p class="align-center"><em>Flower 2 at Brisbane Botanic gardens (Ortho 80)</em></p>
-
 {% image, "/img/lony550-lony550-r1-e037-1.jpg" "Third flower at the Brisbane Botanic Gardens" "30em 50vw 100vw" %}
 
+This is my almost 90 year old father-in-law on a day trip out to Muriwai looking for gannets. This was taken with FP4 Plus.
+
 {% image, "/img/long012-long012-r1-e017.jpg" "Father-in-law at Muriwai" "30em 50vw 100vw" %}
+
+These two city scapes are from the excellent Brisbane Cultural Precinct overlooking the river. Both these are Ortho plus.
 
 {% image, "/img/lony550-lony550-r1-e029.jpg" "Brisbane cityscape" "30em 50vw 100vw" %}
 
 {% image, "/img/lony550-lony550-r1-e027.jpg" "Brisbane city from the arts centre" "30em 50vw 100vw" %}
 
+Finally, a couple of local sporting action shots. The first, uses Tri-X and the zoom lens to capture my daughter playing her hockey final. The second, is masters football at its finest at Ocean Grove using the FP4 Plus.
+
 {% image, "/img/lony570-lony570-r1-e013.jpg" "Daughter playing her hockey final" "30em 50vw 100vw" %}
 
-The photos I'm most satisfied with are the three flowers using the ortho plus. The final hockey photo uses Tri-X and the new zoom lens which resulted in a lot of grain.
+{% image, "/img/long012-long012-r1-e032.jpg" "Old man football at Ocean Grove" "30em 50vw 100vw" %}
+
+I really like the three flowers using the ortho plus. The hockey photo is super grainy which was a consistent trait across the batch.
