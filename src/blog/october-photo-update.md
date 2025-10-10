@@ -25,3 +25,5 @@ These are:
 Of the three, I had never used the Ilford ortho film before and was super curious to find out how it looks. This film renders anything coloured red as dark black and creates a contrasty, moody look (which I love!). Because it's very slow, the results are also very fine grained.
 
 I also experimented with a new Tamron 70-200 F/2.8 lens which judging by the results, needs some maintenance. This lens was mostly used with the Tri-x and resulted in very grainy photos.
+
+{% image, "/img/three-films.jpg" "Three films and canisters" "30em 50vw 100vw" %}
