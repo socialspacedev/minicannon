@@ -2,7 +2,6 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const timeToRead = require('eleventy-plugin-time-to-read');
-// const pluginBookshop = require("@bookshop/eleventy-bookshop");
 const yaml = require("js-yaml");
 const path = require("node:path");
 const Image = require("@11ty/eleventy-img");
@@ -17,7 +16,6 @@ module.exports = function (eleventyConfig) {
   // Enable 11ty plugins
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(pluginRss);
- // eleventyConfig.addPlugin(pluginBookshop({bookshopLocations: ["_component-library"],}));
   
   // Configure YouTube embed plugin
   eleventyConfig.addPlugin(embedYouTube, {
