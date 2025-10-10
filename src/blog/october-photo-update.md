@@ -18,9 +18,9 @@ The following photos were taken from June to August this year on my trusty Olymp
 
 These are:
 
+* <a href="https://www.analog.cafe/r/kodak-tri-x-400-film-review-5pbm" title="Kodak Tri-X (400 TX) review" target="_blank" rel="noopener">Kodak Tri-X</a> (400)
 * <a href="https://www.analog.cafe/r/ilford-ortho-plus-80-film-review-hz9m" title="Ilford Ortho Plus 80 review" target="_blank" rel="noopener">Ilford Orthographic Plus</a> (80)
 * <a href="https://www.analog.cafe/r/ilford-fp4-plus-film-review-osps" title="Illford FP4 Plus review" target="_blank" rel="noopener">Ilford FP4 Plus</a> (125)
-* <a href="https://www.analog.cafe/r/kodak-tri-x-400-film-review-5pbm" title="Kodak Tri-X (400 TX) review" target="_blank" rel="noopener">Kodak Tri-X</a> (400)
 
 Of the three, I had never used the Ilford ortho film before and was super curious to find out how it looks. This film renders anything coloured red as dark black and creates a contrasty, moody look (which I love!). Because it's very slow, the results are also very fine grained.
 
@@ -30,8 +30,14 @@ I also experimented with a new Tamron 70-200 F/2.8 lens which judging by the res
 
 {% image, "/img/lony550-lony550-r1-e035.jpg" "Another flower at the Botanic Gardens Brisbane" "30em 50vw 100vw" %}
 
+{% image, "/img/lony550-lony550-r1-e037-1.jpg" "Third flower at the Brisbane Botanic Gardens" "30em 50vw 100vw" %}
+
 {% image, "/img/long012-long012-r1-e017.jpg" "Father-in-law at Muriwai" "30em 50vw 100vw" %}
 
 {% image, "/img/lony550-lony550-r1-e029.jpg" "Brisbane cityscape" "30em 50vw 100vw" %}
 
+{% image, "/img/lony550-lony550-r1-e027.jpg" "Brisbane city from the arts centre" "30em 50vw 100vw" %}
+
 {% image, "/img/lony570-lony570-r1-e013.jpg" "Daughter playing her hockey final" "30em 50vw 100vw" %}
+
+The photos I'm most satisfied with are the three flowers using the ortho plus. The final hockey photo uses Tri-X and the new zoom lens which resulted in a lot of grain.
