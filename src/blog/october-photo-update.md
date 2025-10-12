@@ -25,6 +25,8 @@ Of the three, I had never used the Ilford Ortho Plus film before and was super c
 
 I also experimented with a new Tamron 70-200 F/2.8 lens which judging by the results, needs some maintenance. This lens was mostly used with the Tri-x and resulted in very grainy photos with an occasional exposure flare.
 
+---
+
 *The following three photos were taken at the Brisbane Botanic gardens using the Ortho Plus. I think they are the most successful in terms of sharpness and contrast.*
 
 {% image, "/img/lony550-lony550-r1-e032.jpg" "Flower at the Botanic Gardens Brisbane" "30em 50vw 100vw" %}
@@ -43,10 +45,14 @@ I also experimented with a new Tamron 70-200 F/2.8 lens which judging by the res
 
 {% image, "/img/lony550-lony550-r1-e027.jpg" "Brisbane city from the arts centre" "30em 50vw 100vw" %}
 
-*Finally, a couple of local sporting action shots. The first, uses Tri-X and the zoom lens to capture my daughter playing her hockey final. The second, is masters football at its finest at Ocean Grove using the FP4 Plus.*
+*Finally, a couple of local sporting action shots. The first, uses Tri-X and the zoom lens to capture my daughter playing her hockey final.*
 
 {% image, "/img/lony570-lony570-r1-e013.jpg" "Daughter playing her hockey final" "30em 50vw 100vw" %}
 
+*The second, is masters football at its finest at Ocean Grove using the FP4 Plus.*
+
 {% image, "/img/long012-long012-r1-e032.jpg" "Old man football at Ocean Grove" "30em 50vw 100vw" %}
 
-Of of the three emulsions, I love the dark 'n' moody impact of Ortho Plus. More experiments to come!
+Of of the three emulsions, I love the dark 'n' moody impact of Ortho Plus and will get more. In terms of development and scanning, I currently use <a href="https://splendid.nz/" title="Splendid photo processing" target="_blank" rel="noopener">Spendid</a> – who are great.
+
+More experiments to come!
