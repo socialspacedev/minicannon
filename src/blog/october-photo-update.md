@@ -53,6 +53,4 @@ I also experimented with a new Tamron 70-200 F/2.8 lens which judging by the res
 
 {% image, "/img/long012-long012-r1-e032.jpg" "Old man football at Ocean Grove" "30em 50vw 100vw" %}
 
-Of of the three emulsions, I love the dark 'n' moody impact of Ortho Plus and will get more. In terms of development and scanning, I currently use <a href="https://splendid.nz/" title="Splendid photo processing" target="_blank" rel="noopener">Spendid</a> – who are great.
-
-More experiments to come!
+Of of the three emulsions, I love the dark 'n' moody impact of Ortho Plus and will get more. In terms of development and scanning, I currently use <a href="https://splendid.nz/" title="Splendid photo processing" target="_blank" rel="noopener">Splendid</a> – who I recommend.
