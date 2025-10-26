@@ -11,11 +11,11 @@ type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
 ---
-For 40 years I’ve been trying to track down this book. I couldn’t remember the title or author but recalled some of the plot (incorrectly as it turns out!) and predominant colour.
+For 40 years I’ve been trying to track down a specific sci-fi book. I couldn’t remember the title or author but recalled some of the plot (incorrectly as it turns out!) and predominant colour.
 
 {% image, "/img/gawfs-v2.jpg" "Planet of the Gawfs book cover" "30em 50vw 100vw" %}
 
-I read it during my first week of high school which is a traumatic, high anxiety time. I vaguely recall grabbing it off a rotating tower while on the library tour. I then forgot about it for years but at some point in my 20s, I became obsessed with tracking it down. No idea why but I ended up spending hours in shops like the Hard to Find bookshop scanning the sci-fi section, libraries, asking questions, and later searching online.
+I read it during my first week of high school which is a traumatic, high anxiety time. I vaguely recall grabbing it off a rotating tower while on the library tour. I then forgot about it for years but at some point in my 20s, I became obsessed with tracking it down. No idea why but I ended up spending hours in shops like the <a href="https://www.hardtofind.co.nz/" title="Hard to find bookshop Auckland" target="_blank" rel="noopener">Hard to Find bookshop</a> (Auckland) scanning the sci-fi section, libraries, asking questions, and later searching online.
 
 Got absolutely nowhere … until today!
 
@@ -47,8 +47,8 @@ This was a huge relief as I had started to think I’d imagined the whole thing.
 
 After searching online and almost buying a copy from eBay, I thought I'd better try the <a href="https://www.hardtofind.co.nz/" title="Legendary Hard to Find but worth the effort bookshop" target="_blank" rel="noopener">Hard to Find Second Hand Bookshop</a> one last time. Amazingly, I got a hit in the Dunedin shop and picked up the only copy for $8. It's a very slight book and surprisingly good knick considering its age.
 
-I'm most of the way through it now and mostly enjoyed reading it. The story itself is fairly derivative (global plague, resulting mutations, bigotry, authoritarian government, banishment, space travel, toppling, etc.) and has reasonable world building but the writing is terrible – with some really gross '70s era sexism. However, the pacing is propulsive and the characters, while far fetched, are distinctive and fleshed out enough, that you will them to succeed.
+I'm almost done and kinda enjoying the read. The story itself is fairly derivative (global plague, resulting mutations, bigotry, authoritarian government, banishment, space travel, toppling, etc.) and has reasonable world building but the writing is terrible – with some really gross '70s era sexism. However, the pacing is propulsive and the characters, while far fetched, are distinctive and fleshed out enough, that you want them to succeed.
 
-I can see why it captured my imagination at the time and has stayed with me all these years. Mostly, I'm relieved the search is over and I think if someone rewrote the book, a potentially great TV series could be developed.
+I can see why it captured my imagination at the time but somewhat surprised it has stayed with me all these years. Mostly, I'm relieved the search is over and I think if someone rewrote the book, a potentially great TV series could be developed.
 
 Final note, "GAWFS" stands for "God Awful Freaks".
