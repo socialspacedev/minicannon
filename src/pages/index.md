@@ -18,3 +18,10 @@ eleventyNavigation:
 Welcome to my website. To find out a little more about me, head to the [about page](/about.html). For other random content, check out the [blog posts](/pages/blog/ "Index page for all blog posts."). And finally, for the tech behind this site, check out this [page](/site.html "Details about the tech used to build this website.").
 
 > He iti kahurangi.
+
+
+{% assign mostRecent = collections.posts | first %}
+<div class="most-recent-post">
+  <h3>Most Recent Post: <a href="{{ mostRecent.url }}">{{ mostRecent.data.title }}</a></h3>
+  <p>{{ mostRecent.data.date | date: "%B %d, %Y" }}</p>
+</div>
