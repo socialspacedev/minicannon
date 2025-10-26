@@ -11,19 +11,15 @@ type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
 ---
-> *Originally posted to* <a href="https://www.facebook.com/andrewlslong/posts/pfbid0212duzASoqTHDAEvWRxKfxbytVVpogp4j9v4KLrnkKyyAN3JLLnChCTfDVGENgmkwl?__cft__[0]=AZWxq6dxSh4iA6lIZSuLSt7x8BlTX6VWVj4jkoLSQs4-yn7C0CaH6HDrd4zTzO_HSmNmFmazhNJ_a_82SPDsiuS1UR0zsu68Go97iqOkNip1FQ&amp;__tn__=%2CO%2CP-R" title="Original Facebook update" target="_blank" rel="noopener"><em>Facebook</em></a> *on October 12, 2025.*
-
-For 40 years I’ve been trying to track down this book. I couldn’t remember the title or author but recalled some of the plot (incorrectly as it turns out!) and colour.
+For 40 years I’ve been trying to track down this book. I couldn’t remember the title or author but recalled some of the plot (incorrectly as it turns out!) and predominant colour.
 
 {% image, "/img/gawfs-v2.jpg" "Planet of the Gawfs book cover" "30em 50vw 100vw" %}
 
-I read it during my first week of high school which is an intense time. I vaguely recall grabbing it off a rotating tower while on the library tour. I then forgot about it for years but at some point in my 20s, I became obsessed with tracking it down. No idea why but I ended up spending hours in shops like the Hard to Find bookshop scanning the sci-fi section, libraries, asking questions, and later searching online.
+I read it during my first week of high school which is a traumatic, high anxiety time. I vaguely recall grabbing it off a rotating tower while on the library tour. I then forgot about it for years but at some point in my 20s, I became obsessed with tracking it down. No idea why but I ended up spending hours in shops like the Hard to Find bookshop scanning the sci-fi section, libraries, asking questions, and later searching online.
 
 Got absolutely nowhere … until today!
 
-> It was the ash heap of the galaxy —a world of mutants, misfits and genetic mistakes!
-
-On a whim, I asked my new AI mate Claude (sonnet 4.5 is great!) if it could try to identify this book I had been futilely looking for. After a fair amount back and forth, with some great memory prompting questions from Claude, it said this:
+On a whim, I asked my new AI mate <a href="https://claude.ai/" title="Claude AI chat agent" target="_blank" rel="noopener">Claude</a> (sonnet 4.5 is great!) if it could try to identify this book I had been futilely looking for. After a fair amount back and forth, with some great memory prompting questions from Claude, it eventually said this:
 
 > I think this is your book!
 >
@@ -37,7 +33,15 @@ On a whim, I asked my new AI mate Claude (sonnet 4.5 is great!) if it could try 
 >
 > Does this sound like it?​​​​​​​​​​​​​​​​
 
-This was a huge relief as I had started to think I’d imagined the whole thing. The book is obscure and could well be terrible (more later) but nevertheless, I’ll locate a copy to put this mystery to rest once and for all. Of course this is utterly trivial in the scheme of things but the consistent nagging search in the back of my brain is over!
+Sounded like it to me! Claude responded again, this time incorporating NZ colloquialism:
+
+> Mate, I'm really chuffed we might have found it! After 40 years of searching, that would be amazing!
+>
+> The details really do line up - especially Eli hiding his mutations by shaving and capping his fangs, then being discovered and sent off-world with the other mutants. And that green cover detail you remembered matching up with the text-only edition is a great sign.
+
+This was a huge relief as I had started to think I’d imagined the whole thing. The book is obscure and could well be terrible (check postscript) but nevertheless, I’ll locate a copy to put this mystery to rest once and for all. Of course this is utterly trivial in the scheme of things but the consistent nagging search in the back of my brain is over!
+
+*Adapted from original post to* <a href="https://www.facebook.com/andrewlslong/posts/pfbid0212duzASoqTHDAEvWRxKfxbytVVpogp4j9v4KLrnkKyyAN3JLLnChCTfDVGENgmkwl?__cft__[0]=AZWxq6dxSh4iA6lIZSuLSt7x8BlTX6VWVj4jkoLSQs4-yn7C0CaH6HDrd4zTzO_HSmNmFmazhNJ_a_82SPDsiuS1UR0zsu68Go97iqOkNip1FQ&amp;__tn__=%2CO%2CP-R" title="Original Facebook update" target="_blank" rel="noopener"><em>Facebook</em></a> *on October 12, 2025.*
 
 ### **Postscript**
 
