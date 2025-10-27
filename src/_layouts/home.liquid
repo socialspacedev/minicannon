@@ -1,0 +1,28 @@
+---
+title: Generic page
+description: Is it a page like many others?
+keyword: test
+type: website
+---
+<!DOCTYPE html>
+<html lang="en">
+  {% include "head-website.liquid" %}
+  <!-- Start Body -->
+  <body>
+    {% include "nav.liquid" %}
+    <main data-pagefind-body>
+      <div class="content">
+        {{ content }}
+      </div>
+        {%- set latestPost = posts | first -%}
+        {%- if latestPost -%}
+          <div class="latest-post">
+          <h2>Latest Post</h2>
+            <a href="{{ latestPost.url }}">{{ latestPost.data.title }}</a>
+          </div>
+      {%- endif -%}
+    </main>
+    {% include "footer.liquid" %}
+  </body>
+<!-- End Body -->
+</html>
