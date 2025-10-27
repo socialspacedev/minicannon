@@ -34,9 +34,7 @@ Ko Andrew tōku ingoa
 
 Tēnā tātou katou
 
-{% image "/img/me-sideon.PNG", "Stupid old guy trying to take a selfie.", "30em 50vw 100vw" %}
-
-&nbsp;
+{% image, "/img/me-2025.png" "Silly old me" "30em 50vw 100vw" %}
 
 ## Ko wai au?
 
