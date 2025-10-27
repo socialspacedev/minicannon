@@ -3,7 +3,7 @@ _schema: default
 title: Index
 description: A minimal CloudCannon and 11ty website by and about Andrew Long.
 type: website
-layout: page.liquid
+layout: home.liquid
 keyword: index
 tags: pages
 permalink: '{{ title | slugify }}.html'
