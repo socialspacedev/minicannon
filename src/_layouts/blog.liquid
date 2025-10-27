@@ -34,13 +34,6 @@ pagination:
           {%- endfor -%}
         </ul>
       </main>
-
-    
-{% assign mostRecent = collections.posts | first %}
-<div class="most-recent-post">
-  <h3>Most Recent Post: <a href="{{ mostRecent.url }}">{{ mostRecent.data.title }}</a></h3>
-  <p>{{ mostRecent.data.date | date: "%B %d, %Y" }}</p>
-</div>
     
     <!-- Pagination links -->
     <paginate>

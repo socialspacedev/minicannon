@@ -18,3 +18,11 @@ eleventyNavigation:
 Welcome to my website. To find out a little more about me, head to the [about page](/about.html). For other random content, check out the [blog posts](/pages/blog/ "Index page for all blog posts."). And finally, for the tech behind this site, check out this [page](/site.html "Details about the tech used to build this website.").
 
 > He iti kahurangi.
+
+{%- set latestPost = posts | first -%}
+{%- if latestPost -%}
+  <div class="latest-post">
+    <h2>Latest Post</h2>
+    <a href="{{ latestPost.url }}">{{ latestPost.data.title }}</a>
+  </div>
+{%- endif -%}
