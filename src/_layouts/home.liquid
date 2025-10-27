@@ -14,13 +14,13 @@ type: website
       <div class="content">
         {{ content }}
       </div>
-        {%- set latestPost = posts | first -%}
-        {%- if latestPost -%}
-          <div class="latest-post">
-          <h2>Latest Post</h2>
-            <a href="{{ latestPost.url }}">{{ latestPost.data.title }}</a>
-          </div>
-      {%- endif -%}
+  {%- assign latestPost = posts | first -%}
+{%- if latestPost -%}
+  <div class="latest-post">
+    <h2>Latest Post</h2>
+    <a href="{{ latestPost.url }}">{{ latestPost.data.title }}</a>
+  </div>
+{%- endif -%}
     </main>
     {% include "footer.liquid" %}
   </body>
