@@ -1,7 +1,10 @@
 ---
 _schema: default
-title: Index
-description: A minimal CloudCannon and 11ty website by and about Andrew Long.
+title: Home page for anaru.nz
+description: >-
+  A minimal and performant website by and about Andrew Long using CloudCannon
+  and 11ty.
+date: 2022-10-01T00:00:00+13:00
 type: website
 layout: home.liquid
 keyword: index
