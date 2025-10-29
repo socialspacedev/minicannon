@@ -15,12 +15,12 @@ type: website
         {{ content }}
       </div>
   {%- assign latestPost = posts | first -%}
-{%- if latestPost -%}
+  {%- if latestPost -%}
   <div class="latest-post">
     <h3>Latest Post</h3>
   <a href="{{ latestPost.url }}">{{ latestPost.data.title }}</a>
   </div>
-{%- endif -%}
+  {%- endif -%}
     </main>
     {% include "footer.liquid" %}
   </body>
