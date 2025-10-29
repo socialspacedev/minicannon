@@ -38,7 +38,7 @@ Tēnā tātou katou
 
 ## Ko wai au?
 
-I'm pākeha (tangata Tiriti) based in Otepoti, New Zealand. I'm currently General Manager at <a href="https://www.gethomesafe.com/" title="Keep you people safe with our platform" target="_blank" rel="noopener">Get Home Safe</a> and a parent, cat owner, elderly footballer, intermittent noise maker, collector of records and dietary challenged. Formally, a business owner, academic, radio host, Tāmaki Makaurau citizen and other forgotten things.
+I'm pākeha (tangata Tiriti) based in Otepoti, New Zealand. I'm currently General Manager at <a href="https://www.gethomesafe.com/" title="Keep you people safe with our platform" target="_blank" rel="noopener">Get Home Safe</a> and a parent, cat owner, elderly footballer, intermittent noise maker, collector of records, analogue b&w photographer, and dietary challenged. Formally, a business owner, academic, radio host, Tāmaki Makaurau citizen and other forgotten things.
 
 ## Ānaru
 
