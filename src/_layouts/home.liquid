@@ -17,10 +17,17 @@ type: website
   {%- assign latestPost = posts | first -%}
 {%- if latestPost -%}
   <div class="latest-post">
-    <h2>Latest Post</h2>
+    <h3>Latest Post</h3>
   <a href="{{ post.url }}">{{ post.data.title }}</a>
   </div>
 {%- endif -%}
+<div class="badge-attention">
+  <wa-badge variant="brand" attention="pulse" pill>1</wa-badge>
+  <wa-badge variant="success" attention="pulse" pill>1</wa-badge>
+  <wa-badge variant="neutral" attention="pulse" pill>1</wa-badge>
+  <wa-badge variant="warning" attention="pulse" pill>1</wa-badge>
+  <wa-badge variant="danger" attention="pulse" pill>1</wa-badge>
+</div>
     </main>
     {% include "footer.liquid" %}
   </body>
