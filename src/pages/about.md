@@ -12,7 +12,7 @@ eleventyNavigation:
   title: About
   order: 1
 ---
-{% image, "/img/monst-and-i.jpg" "Monster Truck and I" "30em 50vw 100vw" %}
+{% image, "/img/monst-and-i-bw.png" "Monster Truck and I" "30em 50vw 100vw" %}
 
 ## Pepeha
 
