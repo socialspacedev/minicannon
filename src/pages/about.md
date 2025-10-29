@@ -12,6 +12,8 @@ eleventyNavigation:
   title: About
   order: 1
 ---
+{% image, "/img/monst-and-i.jpg" "Monster Truck and I" "30em 50vw 100vw" %}
+
 ## Pepeha
 
 Kia ora tātou
@@ -33,8 +35,6 @@ He tangata Tiriti ahau
 Ko Andrew tōku ingoa
 
 Tēnā tātou katou
-
-{% image, "/img/monst-and-i-removebg-preview.png" "Monster Truck and I" "100%" %}
 
 ## Ko wai au?
 
