@@ -34,7 +34,7 @@ Ko Andrew tōku ingoa
 
 Tēnā tātou katou
 
-{% image, "/img/monst-and-i-removebg-preview.png" "Monster Truck and I" "" %}
+{% image, "/img/monst-and-i-removebg-preview.png" "Monster Truck and I" "100%" %}
 
 ## Ko wai au?
 
