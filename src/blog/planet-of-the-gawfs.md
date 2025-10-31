@@ -1,7 +1,7 @@
 ---
 _schema: default
 title: Planet of the Gawfs
-description: 40 year search for a book comes to an end
+description: 40 year search for a book comes to an end.
 tags:
   - post
   - book
