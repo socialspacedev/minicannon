@@ -13,11 +13,10 @@ eleventyNavigation:
   title: Site
   order: 3
 ---
-# Website
 
-I'm using this small website to better understand the full potential of the <a href="https://cloudcannon.com" target="_blank" rel="noopener">CloudCannon</a> Git-based content management system (CMS). Since I work there it's sensible thing to do and it's fun! The site is built using the speedy <a href="https://www.11ty.dev/" target="_blank" rel="noopener">11ty</a> static site generator (SSG) based on an elegant <a href="https://github.com/MarcoMicale/Minimalism" target="_blank" rel="noopener">minimalism</a> theme by <a href="https://github.com/MarcoMicale" target="_blank" rel="noopener">Marco Micale</a>. It has been reconfigured for CloudCannon for visual editing and favours SSG chaining.
+I'm using this small website to better understand the full potential of the [CloudCannon](https://cloudcannon.com) Git-based content management system (CMS). Since I work there it's sensible thing to do and it's fun! The site is built using the speedy [11ty](https://www.11ty.dev/) static site generator (SSG) based on an elegant [minimalism](https://github.com/MarcoMicale/Minimalism) theme by [Marco Micale](https://github.com/MarcoMicale). It has been reconfigured for CloudCannon for visual editing and favours SSG chaining.
 
-The aim of the site is to be minimal, elegant and performant. I'm not a developer as such but it's primarily built through the CloudCannon UI with local dev used when required. If you're interested, here's the <a href="https://github.com/socialspacedev/minicannon" target="_blank" rel="noopener">repo</a>.
+The aim of the site is to be minimal, elegant and performant. I'm not a developer as such but it's primarily built through the CloudCannon UI with local dev used when required. If you're interested, here's the [repo](https://github.com/socialspacedev/minicannon).
 
 ## Features
 
@@ -36,22 +35,22 @@ The aim of the site is to be minimal, elegant and performant. I'm not a develope
 
 ## Tech
 
-* <a href="https://cloudcannon.com/" title="CloudCannon git-bases CMS" target="_blank" rel="noopener">CloudCannon</a>
-  * <a href="https://github.com/CloudCannon/pagefind" target="_blank" rel="noopener">Pagefind</a>
-* <a href="https://github.com/11ty/eleventy" target="_blank" rel="noopener">Eleventy</a>
-  * <a href="https://github.com/11ty/eleventy-img" target="_blank" rel="noopener">eleventy-img</a>
-  * <a href="https://github.com/11ty/eleventy-plugin-rss" target="_blank" rel="noopener">eleventy-plugin-rss</a>
-  * <a href="https://github.com/11ty/eleventy-navigation" target="_blank" rel="noopener">eleventy-navigation</a>
-  * <a href="https://github.com/JKC-Codes/eleventy-plugin-time-to-read" target="_blank" rel="noopener">eleventy-plugin-time-to-read</a>
-  * <a href="https://github.com/gfscott/eleventy-plugin-youtube-embed" title="Visit youtube plugin repo" target="_blank" rel="noopener">eleventy-plugin-youtube-embed</a>
-* <a href="https://github.com/tailwindlabs/tailwindcss" target="_blank" rel="noopener">Tailwindcss</a>
-  * <a href="https://github.com/tailwindlabs/tailwindcss-typography" target="_blank" rel="noopener">Tailwindcss typography</a>
-* <a href="https://github.com/moment/luxon" target="_blank" rel="noopener">Luxon</a>
-* <a href="https://github.com/kangax/html-minifier" target="_blank" rel="noopener">html minifier</a>
-* <a href="https://github.com/mysticatea/npm-run-all" target="_blank" rel="noopener">npm-run-all</a>
-* <a href="https://github.com/isaacs/rimraf" target="_blank" rel="noopener">rimraf</a>
-* <a href="https://github.com/tabler/tabler-icons" target="_blank" rel="noopener">Tabler Icon</a>
-* <a href="https://jampack.divriots.com/" title="Visit the website for Jampack." target="_blank" rel="noopener">Jampack</a>
+* [CloudCannon](https://cloudcannon.com/ "CloudCannon git-bases CMS")
+  * [Pagefind](https://github.com/CloudCannon/pagefind)
+* [Eleventy](https://github.com/11ty/eleventy)
+  * [eleventy-img](https://github.com/11ty/eleventy-img)
+  * [eleventy-plugin-rss](https://github.com/11ty/eleventy-plugin-rss)
+  * [eleventy-navigation](https://github.com/11ty/eleventy-navigation)
+  * [eleventy-plugin-time-to-read](https://github.com/JKC-Codes/eleventy-plugin-time-to-read)
+  * [eleventy-plugin-youtube-embed](https://github.com/gfscott/eleventy-plugin-youtube-embed "Visit youtube plugin repo")
+* [Tailwindcss](https://github.com/tailwindlabs/tailwindcss)
+  * [Tailwindcss typography](https://github.com/tailwindlabs/tailwindcss-typography)
+* [Luxon](https://github.com/moment/luxon)
+* [html minifier](https://github.com/kangax/html-minifier)
+* [npm-run-all](https://github.com/mysticatea/npm-run-all)
+* [rimraf](https://github.com/isaacs/rimraf)
+* [Tabler Icon](https://github.com/tabler/tabler-icons)
+* [Jampack](https://jampack.divriots.com/ "Visit the website for Jampack.")
 
 ## Some challenges
 
@@ -65,4 +64,4 @@ Here's some hurdles I've had to overcome:
 * Implementing image optimisation.
 * Getting the original template to build using the CloudCannon native 11ty compiler.
 * Translating Italian comments and variables.
-* Removing CLS and performance hits due to Google fonts.<br>
+* Removing CLS and performance hits due to Google fonts.
