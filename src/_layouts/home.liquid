@@ -1,0 +1,64 @@
+---
+title: Home page
+description: Index page for the website
+keyword: home
+type: website
+---
+<!DOCTYPE html>
+<html lang="en">
+  {% include "head-website.liquid" %}
+  <!-- Start Body -->
+  <body>
+    {% include "nav.liquid" %}
+    <main data-pagefind-body>
+      <div class="content">
+        {{ content }}
+      </div>
+      {%- assign recentPosts = collections.post | reverse | slice: 0, 3 -%}
+      {%- if recentPosts and recentPosts.size > 0 -%}
+        <h2 style="font-weight:bold;margin-bottom:8px;">Recent Posts</h2>
+        <div class="recent-posts" style="display:flex;flex-direction:column;gap:14px;margin-bottom:12px;">
+          {%- for post in recentPosts -%}
+            <div style="display:flex;align-items:center;gap:12px;">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-article"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                style="vertical-align:top;">
+                <path
+                  stroke="none"
+                  d="M0 0h24v24H0z"
+                  fill="none" />
+                <path d="M8 9h8" /><path d="M8 13h6" /><path d="M9 17h6" /><rect
+                  x="5"
+                  y="3"
+                  width="14"
+                  height="18"
+                  rx="2" />
+              </svg>
+              <div style="display:flex;align-items:center;gap:8px;">
+                <a href="{{ post.url }}">
+                  {{ post.data.title }}
+                </a>
+                {% if post.data.description %}
+                  <span class="post-description" style="font-size:0.97em;color:inherit;">
+                    {{ post.data.description }}
+                  </span>
+                {% endif %}
+              </div>
+            </div>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+    </main>
+    {% include "footer.liquid" %}
+  </body>
+<!-- End Body -->
+</html>
