@@ -13,6 +13,7 @@ eleventyNavigation:
   title: Site
   order: 3
 ---
+## Site
 
 I'm using this small website to better understand the full potential of the [CloudCannon](https://cloudcannon.com) Git-based content management system (CMS). Since I work there it's sensible thing to do and it's fun! The site is built using the speedy [11ty](https://www.11ty.dev/) static site generator (SSG) based on an elegant [minimalism](https://github.com/MarcoMicale/Minimalism) theme by [Marco Micale](https://github.com/MarcoMicale). It has been reconfigured for CloudCannon for visual editing and favours SSG chaining.
 
