@@ -38,7 +38,6 @@ The aim of the site is to be minimal, elegant and performant. I'm not a develope
 
 * <a href="https://cloudcannon.com/" title="CloudCannon git-bases CMS" target="_blank" rel="noopener">CloudCannon</a>
   * <a href="https://github.com/CloudCannon/pagefind" target="_blank" rel="noopener">Pagefind</a>
-  * <a href="https://github.com/CloudCannon/bookshop" target="_blank" rel="noopener">Bookshop</a>
 * <a href="https://github.com/11ty/eleventy" target="_blank" rel="noopener">Eleventy</a>
   * <a href="https://github.com/11ty/eleventy-img" target="_blank" rel="noopener">eleventy-img</a>
   * <a href="https://github.com/11ty/eleventy-plugin-rss" target="_blank" rel="noopener">eleventy-plugin-rss</a>

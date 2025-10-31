@@ -1,6 +1,6 @@
 {
   "name": "minicannon",
-  "version": "0.1.10",
+  "version": "1.0.0",
   "description": "Make this build please",
   "main": "index.js",
   "scripts": {
@@ -23,13 +23,10 @@
   "author": "Andrew Long",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy": "^3.1.2",
     "@11ty/eleventy-navigation": "^0.3.2",
     "@11ty/eleventy-plugin-rss": "^1.1.2",
-    "@bookshop/browser": "3.8.2",
-    "@bookshop/eleventy-engine": "^3.13.0",
-    "@bookshop/generate": "^3.13.0",
-    "@divriots/jampack": "^0.23.2",
+    "@divriots/jampack": "^0.15.0",
     "@tailwindcss/typography": "^0.5.2",
     "html-minifier": "^4.0.0",
     "luxon": "^2.3.2",
