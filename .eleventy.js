@@ -11,6 +11,8 @@ const embedYouTube = require("eleventy-plugin-youtube-embed");
 // const htmlmin = require("html-minifier");
 const { DateTime } = require("luxon");
 
+const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
+
 // 11ty
 module.exports = function (eleventyConfig) {
   // Enable 11ty plugins
@@ -105,6 +107,7 @@ module.exports = function (eleventyConfig) {
 		}
 	);
   
+  
   // The end
   return {
     passthroughFileCopy: true,
@@ -118,3 +121,4 @@ module.exports = function (eleventyConfig) {
     },
   };
 };
+eleventyConfig.addPlugin(UpgradeHelper);
