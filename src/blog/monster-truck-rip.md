@@ -23,10 +23,22 @@ One of his best mates was Boo who lived next door. They spent many hours on the 
 
 He was pedigree from the Dunedin breeding cattery <a href="https://shiningwater.me/" title="ShiningWater homepage" target="_blank" rel="noopener">ShiningWater</a>.  His markings and large jaw took after his even larger father Finn – who might still be on the front page of the breeder website.
 
-Monst slept most of years by my feet and displayed a variety of chirrups, trills and meows to communicate what he wanted. While not the smartest cat in the world, he was the loveliest and enjoyed big hugs every night (which I miss enormously). Fortunately he was incredibly healthy over his lifetime and barely visited the vet until recently.
+Monst slept most of his years leaning hard on my feet and he was heavy! He demonstrated a variety of chirrups, trills and meows to communicate what he wanted, and while not the smartest cat in the world, he was the loveliest and enjoyed big hugs every night (which I miss enormously). Luckily he was also incredibly healthy over his life and barely visited the vet until recently.
 
-Here is a selection of other photos of Monster Truck over his life. We have many to remember his by.
+Fortunately we have many photos to remember him by and here are some of them.
 
 {% image, "/img/violets-photo.jpg" "Daughter took this photo of Monst" "30em 50vw 100vw" %}
 
 {% image, "/img/monst-berm.jpg" "Monst enjoying the berm" "30em 50vw 100vw" %}
+
+{% image, "/img/cheezel-and-monst.jpg" "Cheezel and Monst" "30em 50vw 100vw" %}
+
+{% image, "/img/monst-deck.jpg" "Monst lazing on the deck" "30em 50vw 100vw" %}
+
+{% image, "/img/monst-face.jpg" "Old man Monst" "30em 50vw 100vw" %}
+
+{% image, "/img/monst-blanket.jpg" "Monst paws" "30em 50vw 100vw" %}
+
+{% image, "/img/monst-grave-stone.png" "Monst gravestone" "30em 50vw 100vw" %}
+
+RIP big fella.
