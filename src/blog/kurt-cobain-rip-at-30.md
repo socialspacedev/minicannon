@@ -10,7 +10,6 @@ published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
-content_blocks:
 ---
 Kurt Cobain of Nirvana <a href="https://timesmachine.nytimes.com/timesmachine/1994/04/09/721212.html?pageNumber=1" title="Original Kurt Cobain obituary from the NY Times" target="_blank" rel="noopener">died</a> 30 years ago today. At the time it felt hugely significant as he was the unwitting figurehead for alternative/indie music bludgeoning its way into the mainstream.
 

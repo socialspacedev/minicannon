@@ -10,7 +10,6 @@ published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
-content_blocks: []
 ---
 Over the weekend we picked up a new 8ft fishing rod and a few 40g twist lures of differing colours. This was principally to practice casting into the surf and perhaps catch a Kahawai to smoke (if we're lucky).
 

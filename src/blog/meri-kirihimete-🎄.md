@@ -10,6 +10,5 @@ published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
-content_blocks:
 ---
 {% image "/img/chrimbo.jpg", "Christmas family fun.", "30em 50vw 100vw" %}

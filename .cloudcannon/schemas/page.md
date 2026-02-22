@@ -11,5 +11,4 @@ eleventyNavigation:
   key: '{{ title | slugify }}'
   title: About
   order: 2
-content_blocks: 
 ---

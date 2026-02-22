@@ -10,9 +10,8 @@ published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
-content_blocks:
 ---
-For a little while there I was a social media expert and interviewed by a number of media outlets – including newspapers, magazines and television. These are listed here for posterity.
+For a little while there I was a *supposed* social media expert and interviewed by a number of media outlets – including newspapers, magazines and television. These are listed here for posterity.
 
 * Social media and teaching (*D-Scene, 2008*)
 * Dangers of online photo sharing (*Star Weekly, 2008*)
