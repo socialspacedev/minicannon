@@ -6,7 +6,7 @@ tags:
  - post
  - animals
 date: 2025-11-20T17:41:00+13:00
-published: false
+published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
