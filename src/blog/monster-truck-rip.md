@@ -41,4 +41,4 @@ Fortunately we have many photos to remember him by and here are some of them.
 
 {% image, "/img/monst-grave-stone.png" "Monst gravestone" "30em 50vw 100vw" %}
 
-RIP big fella.
+Rest easy big fella ❤️
