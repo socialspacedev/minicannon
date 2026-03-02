@@ -11,7 +11,7 @@ type: website
   <body>
     {% include "nav.liquid" %}
     <main data-pagefind-body>
-      <div class="content">
+      <div class="content" cms-edit="source">
         {{ content }}
       </div>
       {%- assign recentPosts = collections.post | reverse | slice: 0, 3 -%}
@@ -44,11 +44,14 @@ type: website
                   rx="2" />
               </svg>
               <div style="display:flex;align-items:center;gap:8px;">
-                <a href="{{ post.url }}">
+                <a href="{{ post.url }}" cms-edit="source">
                   {{ post.data.title }}
                 </a>
                 {% if post.data.description %}
-                  <span class="post-description" style="font-size:0.97em;color:inherit;">
+                  <span
+                    class="post-description"
+                    style="font-size:0.97em;color:inherit;"
+                    cms-edit="source">
                     {{ post.data.description }}
                   </span>
                 {% endif %}

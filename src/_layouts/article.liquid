@@ -9,23 +9,23 @@ type: "article"
 
 <!DOCTYPE html>
 <html lang="en">
-{% include "head-article.liquid" %}
-<!-- Start Body -->
-<body>
-  {% include "nav.liquid" %}
-  <article data-pagefind-body>
-    <small class="info">
-      Posted&nbsp;
-      <time datetime="{{ page.date }}">{{ page.date | readableDate }}</time>&nbsp;&ndash;&nbsp;
+  {% include "head-article.liquid" %}
+  <!-- Start Body -->
+  <body>
+    {% include "nav.liquid" %}
+    <article data-pagefind-body>
+      <small class="info">
+        Posted&nbsp;
+        <time datetime="{{ page.date }}">{{ page.date | readableDate }}</time>&nbsp;&ndash;&nbsp;
         {{ content | timeToRead }}&nbsp;to&nbsp;read
-    </small>
-    <h1>{{ title }}</h1>
-    <div class="content">
-      {{ content }}
-    </div>
-  </article>
-  {% include "pagination.liquid" %}   
-  {% include "footer.liquid" %}
-</body>
+      </small>
+      <h1 cms-edit="source">{{ title }}</h1>
+      <div class="content" cms-edit="source">
+        {{ content }}
+      </div>
+    </article>
+    {% include "pagination.liquid" %}
+    {% include "footer.liquid" %}
+  </body>
 <!-- End Body -->
 </html>
