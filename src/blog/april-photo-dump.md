@@ -1,7 +1,7 @@
 ---
 _schema: default
 title: April photo dump
-description: Latest developments using Ilford Delta 400.
+description: Latest developments – Ilford Delta 400
 tags:
   - post
   - photography
@@ -11,9 +11,9 @@ type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
 ---
-I finally got the Ilford Delta 400 B&W roll developed. I use Splendid in Auckland (who are great!) for B&W development as well as scans. At some point, I may try it myself.
+I finally got the Ilford Delta 400 B&W roll developed. The photos in this post were taken at the <a href="https://www.riverstonekitchen.co.nz/riverstone-gardens" title="More on the gardens" target="_blank" rel="noopener">Riverstone gardens</a> and the <a href="https://www.whitestonegeopark.nz/elephant-rocks" title="Link to Elephant Rocks background" target="_blank" rel="noopener">Elephant rocks</a> in Duntroon. The Delta 400 photos have a nice contrasty quality but I didn't love most of the photos in this roll.
 
-These photos were taken at the <a href="https://www.riverstonekitchen.co.nz/riverstone-gardens" title="More on the gardens" target="_blank" rel="noopener">Riverstone gardens</a> or the <a href="https://www.whitestonegeopark.nz/elephant-rocks" title="Link to Elephant Rocks background" target="_blank" rel="noopener">Elephant rocks</a> in Duntroon. Overall I'm not a huge fan of Delta 400 or most of the photos in this roll.
+For B&W film development I use <a href="https://splendid.nz/collections/lab-services" title="Splendid website" target="_blank" rel="noopener">Splendid</a> in Auckland who also do the scans. They are great but at some point, I may try it myself using <a href="https://theblackandwhitebox.co.nz/shop/darkroom-home-processing/tank/paterson-universal-tank-with-two-reels/" title="Example of Paterson tanks" target="_blank" rel="noopener">Paterson tanks</a>.
 
 {% image, "/img/long420-long420-r1-e019.jpg" "Riverstone flowers" "30em 50vw 100vw" %}
 
