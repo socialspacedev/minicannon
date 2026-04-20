@@ -7,11 +7,9 @@
         <ul class="paginate">
           {% if previousPost %}
             <li><a href="{{ previousPost.url }}" title="{{ previousPost.data.title }}">&lt; Previous</a></li>
-            {% else %}<li>&nbsp;</li>
           {% endif %}
           {% if nextPost %}
-            <li><a href="{{ nextPost.url }}" title="{{ nextPost.data.title }}">Next &gt;</a></li></li>
-            {% else %}<li>&nbsp;</li>
+            <li class="ml-auto"><a href="{{ nextPost.url }}" title="{{ nextPost.data.title }}">Next &gt;</a></li>
           {% endif %}
         </ul>
       {% endif %}

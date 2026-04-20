@@ -23,10 +23,15 @@
     @apply flex items-center justify-between gap-5 flex-col border-b;
   }
   hgroup {
-    @apply inline-block align-middle hover:text-sky-600;
+    display: grid;
+    grid-template-columns: max-content;
+    @apply hover:text-sky-600;
   }
   .title {
     @apply text-center font-extrabold text-3xl;
+  }
+  .motto {
+    @apply text-center whitespace-nowrap;
   }
   nav {
     @apply text-center items-center;
@@ -44,9 +49,8 @@
     @apply underline decoration-sky-600 decoration-2 underline-offset-1 transition-all;
   }
  .paginate {
-    margin: auto; 
+    margin: auto;
     display: flex;
-    justify-content: space-between;
     max-width: inherit;
   }
   .paginate li {
@@ -647,7 +651,7 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
     margin: auto;
 }
 
-@media screen(sm) {
+@screen sm {
   html {
     @apply px-6 text-lg;
   }
@@ -677,7 +681,7 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
   }
 }
 
-@media screen(md) {
+@screen md {
   html {
     @apply px-7 text-xl;
   }
@@ -726,7 +730,7 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
   }
 }
 
-@media screen(xl) {
+@screen xl {
   html {
     @apply px-8 text-xl;
   }
@@ -747,7 +751,7 @@ legend.svelte-1v2r7ls.svelte-1v2r7ls {
   }
 }
 
-@media screen(2xl) {
+@screen 2xl {
   html {
     @apply px-9 text-xl;
   }
