@@ -65,7 +65,7 @@
     cursor: pointer;
   }
   .paginate a {
-    @apply dark:bg-zinc-900 font-serif text-base text-slate-900 dark:text-slate-100 transition-all;
+    @apply font-serif text-base transition-all;
     text-decoration: none;
   }
   .paginate a:hover,
@@ -133,13 +133,71 @@
     display: flex;
     justify-content: center;
   }
+  figure {
+    @apply my-4;
+  }
+  figcaption {
+    @apply text-xs text-center italic mt-0;
+    color: #64748b;
+  }
 }
+@media (prefers-color-scheme: dark) {
+  figcaption {
+    color: #ffffff;
+  }
+}
+
+:root {
+  --film-strip: rgba(30, 22, 12, 0.38);
+  --film-hole: #f4f4f5;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --film-strip: rgba(10, 8, 4, 0.48);
+    --film-hole: #18181b;
+  }
+}
+.film-frame {
+  position: relative;
+  display: block;
+}
+.film-frame::before,
+.film-frame::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 30px;
+  z-index: 1;
+  pointer-events: none;
+  background-color: var(--film-strip);
+  background-image: linear-gradient(
+    90deg,
+    transparent 0px,
+    transparent 6px,
+    var(--film-hole) 6px,
+    var(--film-hole) 24px,
+    transparent 24px
+  );
+  background-size: 60px 16px;
+  background-position: 0 50%;
+  background-repeat: repeat-x;
+}
+.film-frame::before { top: 0; }
+.film-frame::after { bottom: 0; }
 main a, article a,
 .prose a {
   text-decoration: none;
 }
+main figcaption, article figcaption, .prose figcaption {
+  margin-top: 0.25rem;
+}
+figure picture {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .recent-posts .post-description {
-  color: #94a3b8; /* slate-400 */
+  color: #cbd5e1; /* slate-300 */
 }
 .align-left { text-align: left; }
 .align-center { text-align: center; }

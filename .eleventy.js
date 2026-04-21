@@ -61,8 +61,8 @@ module.exports = function (eleventyConfig) {
   });
  
   // 11ty image optimisation
-  eleventyConfig.addShortcode("image", async (srcFilePath, alt, sizes) => {
-   
+  eleventyConfig.addShortcode("image", async (srcFilePath, alt, sizes, caption) => {
+
     let inputFilePath = path.join(eleventyConfig.dir.input, srcFilePath);
 
     let metadata = await Image(inputFilePath, {
@@ -74,12 +74,17 @@ module.exports = function (eleventyConfig) {
       // svgCompressionSize: "br",
     });
 
-    return Image.generateHTML(metadata, {
+    const html = Image.generateHTML(metadata, {
       alt,
       sizes,
       loading: "eager",
       decoding: "async",
     });
+
+    if (caption) {
+      return `<figure><div class="film-frame">${html}</div><figcaption>${caption}</figcaption></figure>`;
+    }
+    return html;
   });
 		
   // Exclude drafts from production
@@ -107,6 +112,22 @@ module.exports = function (eleventyConfig) {
 	);
   
   
+  // Wrap markdown images in <figure>/<figcaption> when a title attribute is present
+  eleventyConfig.amendLibrary("md", (mdLib) => {
+    const defaultRender = mdLib.renderer.rules.image || function(tokens, idx, options, env, self) {
+      return self.renderToken(tokens, idx, options);
+    };
+    mdLib.renderer.rules.image = function(tokens, idx, options, env, self) {
+      const token = tokens[idx];
+      const title = token.attrGet("title");
+      const rendered = defaultRender(tokens, idx, options, env, self);
+      if (title) {
+        return `<figure><div class="film-frame">${rendered}</div><figcaption>${title}</figcaption></figure>`;
+      }
+      return rendered;
+    };
+  });
+
   // The end
   return {
     passthroughFileCopy: true,
