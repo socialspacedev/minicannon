@@ -223,6 +223,54 @@ _snippets:
         type: auto
         hidden: true
         cascade: true
+  my_image_caption_snippet:
+    template: eleventy_liquid_shortcode_positional_args
+    inline: false
+    preview:
+      text: Block image with caption
+    definitions:
+      shortcode_name: image
+      positional_args:
+        - editor_key: Image
+          type: string
+        - editor_key: Alt
+          type: string
+        - editor_key: Sizes
+          type: string
+          default: 30em 50vw 100vw
+        - editor_key: Caption
+          type: string
+    _inputs:
+      Image:
+        type: image
+        cascade: true
+      Caption:
+        type: text
+        cascade: true
+      trim_bottom_left:
+        type: auto
+        hidden: true
+        cascade: true
+      trim_top_right:
+        type: auto
+        hidden: true
+        cascade: true
+      trim_bottom_right:
+        type: auto
+        hidden: true
+        cascade: true
+      trim_top_left:
+        type: auto
+        hidden: true
+        cascade: true
+      trim_left:
+        type: auto
+        hidden: true
+        cascade: true
+      trim_right:
+        type: auto
+        hidden: true
+        cascade: true
 timezone: Pacific/Auckland
 markdown:
   engine:
