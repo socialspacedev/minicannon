@@ -3,8 +3,6 @@ _schema: default
 title: Reacher round
 description: 'Mission complete: Every Reacher book read.'
 tags:
-  - post
-  - reacher
   - books
 date: 2024-01-01T17:00:00+13:00
 published: true

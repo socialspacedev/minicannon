@@ -3,7 +3,6 @@ _schema: default
 title: Twitter is dead to me
 description: After 16 years I have deleted everything.
 tags:
-  - post
   - social media
 date: 2023-10-20T03:03:36Z
 published: true

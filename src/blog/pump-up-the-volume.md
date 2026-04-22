@@ -3,7 +3,6 @@ _schema: default
 title: Pump up the jam
 description: Pumping track that updates M|A|R|R|S' classic Pump up the Volume.
 tags:
-  - post
   - music
 date: 2024-07-12T13:48:45+12:00
 published: true

@@ -3,7 +3,6 @@ _schema: default
 title: Oh, bee have
 description: Peter Hobb's latest field recordings based exploration featuring bees.
 tags:
-  - post
   - music
 date: 2024-07-12T13:48:45+12:00
 published: true

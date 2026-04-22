@@ -3,7 +3,6 @@ _schema: default
 title: Meri Kirihimete 🎄
 description: Hope your Christmas brings some cheer despite the world going to hell.
 tags:
-  - post
   - christmas
 date: 2023-12-25T15:11:00+13:00
 published: true

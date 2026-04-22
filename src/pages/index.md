@@ -16,4 +16,4 @@ eleventyNavigation:
 ---
 # Nau mai, Haere mai!
 
-Expect occasional posts about music, film photography, and whatever else catches my attention.
+Expect occasional posts about music, film photography, & whatever else catches my 👁️ or 👂🏻

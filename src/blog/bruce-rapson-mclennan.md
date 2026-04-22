@@ -5,9 +5,7 @@ description: >-
   An obituary for an old mate first published in 2008 and rescued from the
   Wayback machine.
 tags:
-  - post
   - tumblr
-  - obituary
 date: 2008-06-03T15:02:00Z
 published: true
 type: article

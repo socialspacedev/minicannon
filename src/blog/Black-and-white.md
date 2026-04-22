@@ -3,7 +3,6 @@ _schema: default
 title: Black and White
 description: A selection of photos taken on my Olympus OM 1.
 tags:
-  - post
   - photography
 date: 2025-02-02T14:16:46+13:00
 published: true

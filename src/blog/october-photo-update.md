@@ -3,7 +3,6 @@ _schema: default
 title: October photo dump
 description: Photos from three recent film developments.
 tags:
-  - post
   - photography
 date: 2025-10-10T14:25:10+13:00
 published: true

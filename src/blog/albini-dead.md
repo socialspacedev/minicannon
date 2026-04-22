@@ -3,7 +3,6 @@ _schema: default
 title: Steve Albini dead at 61
 description: Legendarily abrasive musician and engineer Steve Albini has died.
 tags:
-  - post
   - music
 date: 2024-05-10T14:58:49+12:00
 published: true

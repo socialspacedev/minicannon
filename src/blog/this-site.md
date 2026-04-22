@@ -3,7 +3,7 @@ _schema: default
 title: Building this site
 description: How and why I built this website using CloudCannon, Eleventy, and Tailwind CSS
 tags:
-  - post
+  - Web
 date: 2022-11-01T00:00:00+13:00
 published: true
 type: article

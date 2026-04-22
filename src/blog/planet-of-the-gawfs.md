@@ -4,7 +4,7 @@ title: Planet of the Gawfs
 description: 40 year search for a book comes to an end
 tags:
   - post
-  - book
+  - books
 date: 2025-10-27T11:15:00+13:00
 published: true
 type: article

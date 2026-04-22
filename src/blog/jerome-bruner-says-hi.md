@@ -3,9 +3,7 @@ _schema: default
 title: Jerome Bruner says hi
 description: A short dedication to the former cognitive psychologist Jerome Bruner.
 tags:
-  - post
   - tumblr
-  - academic
 date: 2016-06-10T15:02:00Z
 published: true
 type: article
