@@ -17,24 +17,26 @@ type: website
       {%- assign recentPosts = collections.post | reverse | slice: 0, 3 -%}
       {%- if recentPosts and recentPosts.size > 0 -%}
         <h2 class="font-bold mb-2">Recent Posts</h2>
-        <div class="recent-posts flex flex-col gap-3 mb-3">
+        <div class="recent-posts flex flex-col gap-2 mb-2">
           {%- for post in recentPosts -%}
-            <a href="{{ post.url }}" class="flex items-start gap-3" cms-edit="source">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="icon shrink-0 mt-1"
-                viewBox="0 0 24 24"
-                stroke-width="2"
-                stroke="currentColor"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M8 9h8" /><path d="M8 13h6" /><path d="M9 17h6" /><rect x="5" y="3" width="14" height="18" rx="2" />
-              </svg>
-              <div>
-                <span class="post-title">{{ post.data.title }}</span>{% if post.data.description %}<span class="post-description text-sm"> {{ post.data.description }}</span>{% endif %}
-              </div>
+            <a href="{{ post.url }}" class="flex items-center gap-3" cms-edit="source">
+              {%- if post.data.thumbnail -%}
+                <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" class="recent-thumb" loading="lazy">
+              {%- else -%}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon shrink-0"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M8 9h8" /><path d="M8 13h6" /><path d="M9 17h6" /><rect x="5" y="3" width="14" height="18" rx="2" />
+                </svg>
+              {%- endif -%}
+              <span class="post-title">{{ post.data.title }}</span>
             </a>
           {%- endfor -%}
         </div>

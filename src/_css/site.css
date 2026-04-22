@@ -76,7 +76,7 @@
   }
   main,
   article {
-    @apply prose prose-sky dark:prose-invert dark:prose-p:text-slate-50 dark:prose-li:text-slate-50 dark:prose-lead:text-slate-100 prose-lead:font-light ml-auto mr-auto text-justify my-2;
+    @apply prose prose-sky dark:prose-invert dark:prose-p:text-slate-50 dark:prose-li:text-slate-50 dark:prose-lead:text-slate-100 prose-lead:font-light ml-auto mr-auto my-2;
   }
   h1,
   article > small.info {
@@ -127,7 +127,7 @@
     @apply underline decoration-2 underline-offset-1;
   }
   .recent-posts a:hover .icon {
-    @apply stroke-sky-700;
+    @apply stroke-sky-600;
   }
   picture {
     display: flex;
@@ -183,6 +183,22 @@ main a, article a,
 .prose a {
   text-decoration: none;
 }
+.prose a, main a, article a {
+  color: #0284c7;
+}
+@media (prefers-color-scheme: dark) {
+  .prose a, main a, article a {
+    color: #0ea5e9;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .recent-posts .icon {
+    stroke: #0ea5e9;
+  }
+}
+main p, article p {
+  line-height: 1.85;
+}
 main figcaption, article figcaption, .prose figcaption {
   margin-top: 0.25rem;
 }
@@ -190,12 +206,22 @@ figure picture {
   margin-top: 0;
   margin-bottom: 0;
 }
+main img.recent-thumb {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 main figure, article figure {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
-.recent-posts .post-description {
-  color: #cbd5e1; /* slate-300 */
+.recent-thumb {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: cover;
+  flex-shrink: 0;
+  border-radius: 2px;
+  opacity: 0.85;
+  margin: 0;
 }
 .all-tags {
   display: flex;
@@ -230,8 +256,8 @@ main figure, article figure {
     color: #94a3b8;
   }
   .post-tag:hover {
-    border-color: #38bdf8;
-    color: #38bdf8;
+    border-color: #0ea5e9;
+    color: #0ea5e9;
   }
 }
 .film-frame[data-pswp-src] {
@@ -303,6 +329,30 @@ main figure, article figure {
 #bandcamp {
     max-width: 700px;
     margin: auto;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+  margin-top: 1.5rem;
+}
+.gallery-item {
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+  cursor: zoom-in;
+}
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+  transition: transform 0.3s ease;
+}
+.gallery-item:hover img {
+  transform: scale(1.05);
 }
 
 @screen sm {

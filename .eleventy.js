@@ -4,6 +4,7 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const timeToRead = require('eleventy-plugin-time-to-read');
 const yaml = require("js-yaml");
 const path = require("node:path");
+const { readFile } = require("fs").promises;
 const Image = require("@11ty/eleventy-img");
 const embedYouTube = require("eleventy-plugin-youtube-embed");
 
@@ -112,6 +113,52 @@ module.exports = function (eleventyConfig) {
       });
     });
     return [...tagSet].sort();
+  });
+
+  eleventyConfig.addCollection("galleryImages", async function(collection) {
+    const items = collection.getFilteredByTag("photography");
+    items.sort((a, b) => b.date - a.date);
+    const result = [];
+
+    for (const item of items) {
+      let content;
+      try { content = await readFile(item.inputPath, 'utf8'); } catch(e) { continue; }
+
+      // Parse {% image, "path" "alt" "sizes" %} and {% image, "path" "alt" "sizes" "caption" %}
+      const shortcodeRe = /\{%-?\s*image,?\s+"([^"]+)"\s+"([^"]+)"\s+"([^"]+)"(?:\s+"([^"]*)")?\s*-?%\}/g;
+      let match;
+      while ((match = shortcodeRe.exec(content)) !== null) {
+        const srcPath = match[1], alt = match[2], caption = match[4] || '';
+        try {
+          const metadata = await Image(path.join('./src/', srcPath), {
+            widths: [400, 1000], formats: ["jpeg"],
+            outputDir: "./public/img/", urlPath: "/img/",
+          });
+          const jpegs = metadata.jpeg || [];
+          const full = jpegs[jpegs.length - 1], thumb = jpegs[0];
+          if (full) result.push({ src: full.url, width: full.width, height: full.height,
+            thumb: thumb ? thumb.url : full.url, alt, caption, postUrl: item.url });
+        } catch(e) {}
+      }
+
+      // Parse markdown images ![alt](src "title")
+      const mdImgRe = /!\[([^\]]*)\]\(([^\s)]+)(?:\s+"([^"]*)")?\)/g;
+      while ((match = mdImgRe.exec(content)) !== null) {
+        const alt = match[1], src = match[2], caption = match[3] || '';
+        if (!src.startsWith('/img/')) continue;
+        try {
+          const metadata = await Image(path.join('./src/', src), {
+            widths: [400, 1000], formats: ["jpeg"],
+            outputDir: "./public/img/", urlPath: "/img/",
+          });
+          const jpegs = metadata.jpeg || [];
+          const full = jpegs[jpegs.length - 1], thumb = jpegs[0];
+          if (full) result.push({ src: full.url, width: full.width, height: full.height,
+            thumb: thumb ? thumb.url : full.url, alt, caption, postUrl: item.url });
+        } catch(e) {}
+      }
+    }
+    return result;
   });
 
 	eleventyConfig.addGlobalData(

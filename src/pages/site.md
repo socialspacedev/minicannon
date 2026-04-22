@@ -8,10 +8,6 @@ layout: page.liquid
 keyword: website
 tags: pages
 permalink: '{{ title | slugify }}.html'
-eleventyNavigation:
-  key: '{{ title | slugify }}'
-  title: Site
-  order: 3
 ---
 ## Site
 

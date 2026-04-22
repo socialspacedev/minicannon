@@ -10,6 +10,7 @@ published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
+thumbnail: /img/monst-face.jpg
 ---
 This is a post about **Monster Truck** who was my sweet cat companion for over 14 and half years. Sadly, we had to make the call to euthanise him due to an aggressive mouth cancer. It was only diagnosed the previous month and we are bereft.
 

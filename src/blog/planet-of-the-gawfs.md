@@ -10,6 +10,7 @@ published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
+thumbnail: /img/gawfs-v2.jpg
 ---
 For 40 years I’ve been trying to track down a specific science fiction book. The problem was that I couldn’t remember the title, author or year but recalled some of the plot (incorrectly as it turns out!) and colour of the cover.
 

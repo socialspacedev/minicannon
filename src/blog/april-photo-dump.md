@@ -9,6 +9,7 @@ date: 2026-04-12T12:10:55+12:00
 published: true
 type: article
 layout: article.liquid
+thumbnail: /img/long420-long420-r1-e018.jpg
 permalink: blog/{{ title | slugify }}.html
 ---
 I finally got the Ilford Delta 400 B&W roll developed. The photos were taken at the <a href="https://www.riverstonekitchen.co.nz/riverstone-gardens" title="More on the gardens" target="_blank" rel="noopener">Riverstone gardens</a>, <a href="https://www.whitestonegeopark.nz/elephant-rocks" title="Link to Elephant Rocks background" target="_blank" rel="noopener">Elephant rocks</a> and <a href="https://www.freewalks.nz/dunedin/ross-creek-reservoir-track/" target="_blank" rel="noopener">Ross Creek</a>. The Delta 400 photos have a nice contrasty quality but I didn't love most of the photos in this roll.
