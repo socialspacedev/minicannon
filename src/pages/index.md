@@ -1,6 +1,5 @@
 ---
 _schema: default
-title: Index
 description: A minimal and performant website built using CloudCannon and 11ty.
 date: 2022-10-01T00:00:00+13:00
 type: website
