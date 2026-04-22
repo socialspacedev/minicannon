@@ -21,6 +21,13 @@ pagination:
       <div class="content" cms-edit="source">
         {{ content }}
       </div>
+      {%- if collections.tagList.size > 0 -%}
+        <div class="all-tags">
+          {%- for tag in collections.tagList -%}
+            <a href="/tags/{{ tag | slugify }}/" class="post-tag">{{ tag }}</a>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
       <ul class="list-posts">
         {%- for post in posts -%}
           <li class="posts">
@@ -32,6 +39,17 @@ pagination:
               <time datetime="{{ post.date }}">{{ post.date | readableDate }}</time>&nbsp;&nbsp;&ndash;&nbsp;
               {{ post.content | timeToRead }}&nbsp;to&nbsp;read
             </small>
+            {%- assign hasTags = false -%}
+            {%- for tag in post.data.tags -%}{%- unless tag == 'post' -%}{%- assign hasTags = true -%}{%- endunless -%}{%- endfor -%}
+            {%- if hasTags -%}
+              <div class="post-tags">
+                {%- for tag in post.data.tags -%}
+                  {%- unless tag == 'post' -%}
+                    <a href="/tags/{{ tag | slugify }}/" class="post-tag">{{ tag }}</a>
+                  {%- endunless -%}
+                {%- endfor -%}
+              </div>
+            {%- endif -%}
           </li>
         {%- endfor -%}
       </ul>
@@ -39,21 +57,13 @@ pagination:
 
     <!-- Pagination links -->
     <paginate>
-      {% if pagination.pageLinks.length > 1 %}
+      {% if pagination.href.previous or pagination.href.next %}
         <ul class="paginate">
-          {% if pagination.previousPageLink %}
-            <li>
-              <a href="{{ pagination.previousPageHref }}">&lt; Previous</a>
-            </li>
-          {% else %}
-            <li>&nbsp;</li>
+          {% if pagination.href.previous %}
+            <li><a href="{{ pagination.href.previous }}">&lt; Previous</a></li>
           {% endif %}
-          {% if pagination.nextPageLink %}
-            <li>
-              <a href="{{ pagination.nextPageHref }}">Next &gt;</a>
-            </li>
-          {% else %}
-            <li>&nbsp;</li>
+          {% if pagination.href.next %}
+            <li class="ml-auto"><a href="{{ pagination.href.next }}">Next &gt;</a></li>
           {% endif %}
         </ul>
       {% endif %}

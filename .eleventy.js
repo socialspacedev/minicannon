@@ -82,7 +82,13 @@ module.exports = function (eleventyConfig) {
     });
 
     if (caption) {
-      return `<figure><div class="film-frame">${html}</div><figcaption>${caption}</figcaption></figure>`;
+      const jpegs = metadata.jpeg || [];
+      const full = jpegs[jpegs.length - 1];
+      const thumb = jpegs[0];
+      const dataAttrs = full
+        ? ` data-pswp-src="${full.url}" data-pswp-width="${full.width}" data-pswp-height="${full.height}" data-pswp-thumb="${thumb ? thumb.url : full.url}"`
+        : '';
+      return `<figure><div class="film-frame"${dataAttrs}>${html}</div><figcaption>${caption}</figcaption></figure>`;
     }
     return html;
   });
@@ -97,6 +103,16 @@ module.exports = function (eleventyConfig) {
 //			return data.permalink;
 //		};
 //	});
+
+  eleventyConfig.addCollection("tagList", function(collection) {
+    let tagSet = new Set();
+    collection.getAll().forEach(item => {
+      (item.data.tags || []).forEach(tag => {
+        if (tag !== "post" && tag !== "pages") tagSet.add(tag);
+      });
+    });
+    return [...tagSet].sort();
+  });
 
 	eleventyConfig.addGlobalData(
 		"eleventyComputed.eleventyExcludeFromCollections",

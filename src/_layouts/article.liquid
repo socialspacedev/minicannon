@@ -27,5 +27,89 @@ type: "article"
     {% include "pagination.liquid" %}
     {% include "footer.liquid" %}
   </body>
+  <script type="module">
+    (async () => {
+      const frames = document.querySelectorAll('.film-frame[data-pswp-src]');
+      if (frames.length === 0) return;
+
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = 'https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe.css';
+      document.head.appendChild(link);
+
+      const items = Array.from(frames).map(frame => ({
+        src: frame.dataset.pswpSrc,
+        width: parseInt(frame.dataset.pswpWidth),
+        height: parseInt(frame.dataset.pswpHeight),
+        thumb: frame.dataset.pswpThumb,
+        alt: frame.querySelector('img')?.alt || '',
+        caption: frame.closest('figure')?.querySelector('figcaption')?.textContent || ''
+      }));
+
+      const { default: PhotoSwipeLightbox } = await import('https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe-lightbox.esm.min.js');
+
+      const lightbox = new PhotoSwipeLightbox({
+        dataSource: items,
+        pswpModule: () => import('https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe.esm.min.js'),
+        bgOpacity: 0.92,
+        showHideAnimationType: 'fade',
+        zoom: false,
+      });
+
+      lightbox.on('uiRegister', function () {
+        lightbox.pswp.ui.registerElement({
+          name: 'filmstrip',
+          order: 17,
+          isButton: false,
+          appendTo: 'root',
+          onInit: (el, pswp) => {
+            el.className = 'pswp__filmstrip';
+            items.forEach((item, i) => {
+              const btn = document.createElement('button');
+              btn.className = 'pswp__filmstrip-thumb';
+              btn.setAttribute('aria-label', item.alt || `Photo ${i + 1}`);
+              const img = document.createElement('img');
+              img.src = item.thumb || item.src;
+              img.alt = '';
+              img.loading = 'lazy';
+              btn.appendChild(img);
+              btn.addEventListener('click', () => pswp.goTo(i));
+              el.appendChild(btn);
+            });
+
+            const updateActive = () => {
+              el.querySelectorAll('.pswp__filmstrip-thumb').forEach((btn, i) => {
+                btn.classList.toggle('active', i === pswp.currIndex);
+              });
+              const active = el.querySelector('.pswp__filmstrip-thumb.active');
+              if (active) active.scrollIntoView({ block: 'nearest', inline: 'center', behavior: 'smooth' });
+            };
+
+            pswp.on('change', updateActive);
+            pswp.on('afterInit', updateActive);
+          }
+        });
+
+        lightbox.pswp.ui.registerElement({
+          name: 'lightbox-caption',
+          order: 9,
+          isButton: false,
+          appendTo: 'wrapper',
+          onInit: (el, pswp) => {
+            el.className = 'pswp__caption-text';
+            const update = () => { el.textContent = items[pswp.currIndex]?.caption || ''; };
+            pswp.on('change', update);
+            pswp.on('afterInit', update);
+          }
+        });
+      });
+
+      lightbox.init();
+
+      frames.forEach((frame, i) => {
+        frame.addEventListener('click', () => lightbox.loadAndOpen(i));
+      });
+    })();
+  </script>
 <!-- End Body -->
 </html>
