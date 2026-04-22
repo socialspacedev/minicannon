@@ -3,7 +3,6 @@ _schema: default
 title: Spit the Dummy
 description: New tune from Dummy on their upcoming album Free Energy.
 tags:
-  - post
   - music
 date: 2024-07-15T13:48:00+12:00
 published: true

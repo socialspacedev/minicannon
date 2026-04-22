@@ -4,6 +4,7 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const timeToRead = require('eleventy-plugin-time-to-read');
 const yaml = require("js-yaml");
 const path = require("node:path");
+const { readFile } = require("fs").promises;
 const Image = require("@11ty/eleventy-img");
 const embedYouTube = require("eleventy-plugin-youtube-embed");
 
@@ -29,7 +30,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig
     .addPassthroughCopy({ "src/favicon": "favicon" })
     .addPassthroughCopy({ "src/fonts": "fonts" })
-    .addPassthroughCopy({ "src/img": "img" });
+    .addPassthroughCopy({ "src/img": "img" })
+    .addPassthroughCopy({ "src/_css/pagefind.css": "css/pagefind.css" });
 
   // Show the year in the footer
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
@@ -60,8 +62,8 @@ module.exports = function (eleventyConfig) {
   });
  
   // 11ty image optimisation
-  eleventyConfig.addShortcode("image", async (srcFilePath, alt, sizes) => {
-   
+  eleventyConfig.addShortcode("image", async (srcFilePath, alt, sizes, caption) => {
+
     let inputFilePath = path.join(eleventyConfig.dir.input, srcFilePath);
 
     let metadata = await Image(inputFilePath, {
@@ -73,12 +75,23 @@ module.exports = function (eleventyConfig) {
       // svgCompressionSize: "br",
     });
 
-    return Image.generateHTML(metadata, {
+    const html = Image.generateHTML(metadata, {
       alt,
       sizes,
       loading: "eager",
       decoding: "async",
     });
+
+    if (caption) {
+      const jpegs = metadata.jpeg || [];
+      const full = jpegs[jpegs.length - 1];
+      const thumb = jpegs[0];
+      const dataAttrs = full
+        ? ` data-pswp-src="${full.url}" data-pswp-width="${full.width}" data-pswp-height="${full.height}" data-pswp-thumb="${thumb ? thumb.url : full.url}"`
+        : '';
+      return `<figure><div class="film-frame"${dataAttrs}>${html}</div><figcaption>${caption}</figcaption></figure>`;
+    }
+    return html;
   });
 		
   // Exclude drafts from production
@@ -91,6 +104,62 @@ module.exports = function (eleventyConfig) {
 //			return data.permalink;
 //		};
 //	});
+
+  eleventyConfig.addCollection("tagList", function(collection) {
+    let tagSet = new Set();
+    collection.getAll().forEach(item => {
+      (item.data.tags || []).forEach(tag => {
+        if (tag !== "post" && tag !== "pages") tagSet.add(tag);
+      });
+    });
+    return [...tagSet].sort();
+  });
+
+  eleventyConfig.addCollection("galleryImages", async function(collection) {
+    const items = collection.getFilteredByTag("photography");
+    items.sort((a, b) => b.date - a.date);
+    const result = [];
+
+    for (const item of items) {
+      let content;
+      try { content = await readFile(item.inputPath, 'utf8'); } catch(e) { continue; }
+
+      // Parse {% image, "path" "alt" "sizes" %} and {% image, "path" "alt" "sizes" "caption" %}
+      const shortcodeRe = /\{%-?\s*image,?\s+"([^"]+)"\s+"([^"]+)"\s+"([^"]+)"(?:\s+"([^"]*)")?\s*-?%\}/g;
+      let match;
+      while ((match = shortcodeRe.exec(content)) !== null) {
+        const srcPath = match[1], alt = match[2], caption = match[4] || '';
+        try {
+          const metadata = await Image(path.join('./src/', srcPath), {
+            widths: [400, 1000], formats: ["jpeg"],
+            outputDir: "./public/img/", urlPath: "/img/",
+          });
+          const jpegs = metadata.jpeg || [];
+          const full = jpegs[jpegs.length - 1], thumb = jpegs[0];
+          if (full) result.push({ src: full.url, width: full.width, height: full.height,
+            thumb: thumb ? thumb.url : full.url, alt, caption, postUrl: item.url });
+        } catch(e) {}
+      }
+
+      // Parse markdown images ![alt](src "title")
+      const mdImgRe = /!\[([^\]]*)\]\(([^\s)]+)(?:\s+"([^"]*)")?\)/g;
+      while ((match = mdImgRe.exec(content)) !== null) {
+        const alt = match[1], src = match[2], caption = match[3] || '';
+        if (!src.startsWith('/img/')) continue;
+        try {
+          const metadata = await Image(path.join('./src/', src), {
+            widths: [400, 1000], formats: ["jpeg"],
+            outputDir: "./public/img/", urlPath: "/img/",
+          });
+          const jpegs = metadata.jpeg || [];
+          const full = jpegs[jpegs.length - 1], thumb = jpegs[0];
+          if (full) result.push({ src: full.url, width: full.width, height: full.height,
+            thumb: thumb ? thumb.url : full.url, alt, caption, postUrl: item.url });
+        } catch(e) {}
+      }
+    }
+    return result;
+  });
 
 	eleventyConfig.addGlobalData(
 		"eleventyComputed.eleventyExcludeFromCollections",
@@ -106,6 +175,22 @@ module.exports = function (eleventyConfig) {
 	);
   
   
+  // Wrap markdown images in <figure>/<figcaption> when a title attribute is present
+  eleventyConfig.amendLibrary("md", (mdLib) => {
+    const defaultRender = mdLib.renderer.rules.image || function(tokens, idx, options, env, self) {
+      return self.renderToken(tokens, idx, options);
+    };
+    mdLib.renderer.rules.image = function(tokens, idx, options, env, self) {
+      const token = tokens[idx];
+      const title = token.attrGet("title");
+      const rendered = defaultRender(tokens, idx, options, env, self);
+      if (title) {
+        return `<figure><div class="film-frame">${rendered}</div><figcaption>${title}</figcaption></figure>`;
+      }
+      return rendered;
+    };
+  });
+
   // The end
   return {
     passthroughFileCopy: true,

@@ -3,7 +3,6 @@ _schema: default
 title: Sham System by Al-Qasar
 description: Cool instrumental from Al-Qasar reworked by The Limiñanas.
 tags:
-  - post
   - music
 date: 2023-11-30T14:14:36+13:00
 published: true

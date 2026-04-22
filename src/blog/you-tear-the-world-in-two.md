@@ -3,7 +3,6 @@ _schema: default
 title: You tore the world in two
 description: Pale Saints guitarist Graeme Naysmith has died.
 tags:
-  - post
   - music
 date: 2024-04-19T17:09:56+12:00
 published: true

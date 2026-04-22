@@ -3,7 +3,6 @@ _schema: default
 title: Everything in its right place
 description: Tune by Kaamal Williams
 tags:
-  - post
   - music
 date: 2024-03-15T14:52:36+13:00
 published: true

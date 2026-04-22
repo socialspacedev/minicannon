@@ -3,7 +3,6 @@ _schema: default
 title: Blathering on about social media
 description: A list of media interviews from another life as a social media expert.
 tags:
-  - post
   - social media
 date: 2013-06-23T14:24:00+12:00
 published: true

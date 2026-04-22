@@ -3,7 +3,6 @@ _schema: default
 title: Hyperculte touring Aotearoa
 description: Swiss krautrock experimental band are touring NZ (including Otepoti).
 tags:
-  - post
   - music
 date: 2024-03-21T14:05:17+13:00
 published: true

@@ -3,7 +3,6 @@ _schema: default
 title: Holy F#$%
 description: Holy Fuck an epic live band.
 tags:
-  - post
   - music
 date: 2024-03-01T17:00:44+13:00
 published: true

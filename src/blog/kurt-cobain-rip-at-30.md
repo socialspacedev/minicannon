@@ -3,7 +3,6 @@ _schema: default
 title: 'Kurt Cobain RIP at 30 '
 description: Kurt Cobain of Nirvana died 30 years ago today.
 tags:
-  - post
   - music
 date: 2024-04-05T11:41:00+13:00
 published: true
