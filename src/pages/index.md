@@ -1,6 +1,6 @@
 ---
 _schema: default
-title: 'Website called '
+title: Index
 description: A minimal and performant website built using CloudCannon and 11ty.
 date: 2022-10-01T00:00:00+13:00
 type: website
@@ -16,4 +16,4 @@ eleventyNavigation:
 ---
 # Nau mai, Haere mai!
 
-Welcome to my website where you'll find more about me and my interests.
+Expect occasional posts about music, film photography, and whatever else catches my attention.
