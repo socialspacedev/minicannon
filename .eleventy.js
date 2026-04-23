@@ -129,6 +129,7 @@ module.exports = function (eleventyConfig) {
       let match;
       while ((match = shortcodeRe.exec(content)) !== null) {
         const srcPath = match[1], alt = match[2], caption = match[4] || '';
+        if (!caption) continue;
         try {
           const metadata = await Image(path.join('./src/', srcPath), {
             widths: [400, 1000], formats: ["jpeg"],
@@ -145,7 +146,7 @@ module.exports = function (eleventyConfig) {
       const mdImgRe = /!\[([^\]]*)\]\(([^\s)]+)(?:\s+"([^"]*)")?\)/g;
       while ((match = mdImgRe.exec(content)) !== null) {
         const alt = match[1], src = match[2], caption = match[3] || '';
-        if (!src.startsWith('/img/')) continue;
+        if (!src.startsWith('/img/') || !caption) continue;
         try {
           const metadata = await Image(path.join('./src/', src), {
             widths: [400, 1000], formats: ["jpeg"],
