@@ -5,7 +5,6 @@ description: Vespa sidecar DJ setup.
 tags:
   - music
 date: 2024-01-08T13:06:29+13:00
-published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html

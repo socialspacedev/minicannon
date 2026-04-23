@@ -5,7 +5,6 @@ description: New mini-album from Fuji VII in response to the new NZ coalition go
 tags:
   - music
 date: 2023-11-27T12:03:00+13:00
-published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html

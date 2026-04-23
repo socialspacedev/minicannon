@@ -5,7 +5,6 @@ description: A selection of photos taken on my Olympus OM 1.
 tags:
   - photography
 date: 2025-02-02T14:16:46+13:00
-published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html

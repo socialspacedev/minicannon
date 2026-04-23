@@ -5,7 +5,6 @@ description: Hope your Christmas brings some cheer despite the world going to he
 tags:
   - christmas
 date: 2023-12-25T15:11:00+13:00
-published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html

@@ -5,7 +5,6 @@ description: Photos from three recent film developments.
 tags:
   - photography
 date: 2025-10-10T14:25:10+13:00
-published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html

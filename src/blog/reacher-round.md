@@ -5,7 +5,6 @@ description: 'Mission complete: Every Reacher book read.'
 tags:
   - books
 date: 2024-01-01T17:00:00+13:00
-published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html

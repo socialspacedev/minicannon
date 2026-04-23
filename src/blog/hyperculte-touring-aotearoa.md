@@ -5,7 +5,6 @@ description: Swiss krautrock experimental band are touring NZ (including Otepoti
 tags:
   - music
 date: 2024-03-21T14:05:17+13:00
-published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html

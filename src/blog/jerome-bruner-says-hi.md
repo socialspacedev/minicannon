@@ -5,7 +5,6 @@ description: A short dedication to the former cognitive psychologist Jerome Brun
 tags:
   - tumblr
 date: 2016-06-10T15:02:00Z
-published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html

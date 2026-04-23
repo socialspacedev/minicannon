@@ -5,7 +5,6 @@ description: How and why I built this website using CloudCannon, Eleventy, and T
 tags:
   - Web
 date: 2022-11-01T00:00:00+13:00
-published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
@@ -44,7 +43,7 @@ I'm not a developer — most editing happens through the CloudCannon UI with loc
   * [Tailwind Typography](https://github.com/tailwindlabs/tailwindcss-typography) — prose styles
 * [PhotoSwipe](https://photoswipe.com/) — photo lightbox
 * [Luxon](https://github.com/moment/luxon) — date formatting
-* [Jampack](https://jampack.divriots.com/) — post-build optimisation
+* [html-minifier-terser](https://github.com/terser/html-minifier-terser) — HTML minification
 * [Tabler Icons](https://github.com/tabler/tabler-icons) — icons
 
 ## Updates

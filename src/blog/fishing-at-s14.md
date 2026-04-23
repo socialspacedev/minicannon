@@ -5,7 +5,6 @@ description: Fishing for Kahawai at Kakanui.
 tags:
   - fishing
 date: 2024-01-23T11:59:24+13:00
-published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html

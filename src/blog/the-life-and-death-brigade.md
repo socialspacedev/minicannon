@@ -5,7 +5,6 @@ description: The Life and Death Brigade at Zelle Fest 2022.
 tags:
   - music
 date: 2023-03-20T17:14:00Z
-published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html

@@ -25,14 +25,19 @@ collections_config:
           values:
             - post
             - music
-            - social media
+            - photography
+            - social-media
             - tumblr
             - vespa
-            - photography
+            - animals
+            - book
+            - books
+            - christmas
+            - fishing
+            - obituary
+            - reacher
+            - academic
           value_key:
-        cascade: true
-      published:
-        type: switch
         cascade: true
     disable_add: false
     disable_add_folder: false
@@ -270,6 +275,20 @@ _snippets:
       trim_right:
         type: auto
         hidden: true
+        cascade: true
+  my_bandcamp_snippet:
+    template: eleventy_liquid_shortcode_positional_args
+    inline: false
+    preview:
+      text: Bandcamp player
+    definitions:
+      shortcode_name: bandcamp
+      positional_args:
+        - editor_key: src
+          type: string
+    _inputs:
+      src:
+        type: url
         cascade: true
 timezone: Pacific/Auckland
 markdown:

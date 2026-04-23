@@ -5,7 +5,6 @@ description: A list of media interviews from another life as a social media expe
 tags:
   - social media
 date: 2013-06-23T14:24:00+12:00
-published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html

@@ -6,7 +6,6 @@ tags:
   - post
   - books
 date: 2025-10-27T11:15:00+13:00
-published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html

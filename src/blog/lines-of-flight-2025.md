@@ -5,7 +5,6 @@ description: Selection of photos from Lines of Flight 2025.
 tags:
   - music
 date: 2026-04-22T18:18:42+12:00
-published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html

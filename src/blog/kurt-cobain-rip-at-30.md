@@ -5,7 +5,6 @@ description: Kurt Cobain of Nirvana died 30 years ago today.
 tags:
   - music
 date: 2024-04-05T11:41:00+13:00
-published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html

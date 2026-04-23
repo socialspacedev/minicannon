@@ -5,7 +5,6 @@ description: After 16 years I have deleted everything.
 tags:
   - social media
 date: 2023-10-20T03:03:36Z
-published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html

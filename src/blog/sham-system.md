@@ -5,7 +5,6 @@ description: Cool instrumental from Al-Qasar reworked by The Limiñanas.
 tags:
   - music
 date: 2023-11-30T14:14:36+13:00
-published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html

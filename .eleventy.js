@@ -36,6 +36,11 @@ module.exports = function (eleventyConfig) {
   // Show the year in the footer
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
+  // Bandcamp embed
+  eleventyConfig.addShortcode("bandcamp", (src) => {
+    return `<iframe id="bandcamp" style="border: 0; width: 100%; height: 522px;" src="${src}" seamless=""></iframe>`;
+  });
+
   // Prettify dates
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc+13" }).toFormat(
@@ -162,20 +167,6 @@ module.exports = function (eleventyConfig) {
     return result;
   });
 
-	eleventyConfig.addGlobalData(
-		"eleventyComputed.eleventyExcludeFromCollections",
-		function () {
-			return (data) => {
-				if (!data.published && process.env.production) {
-					return true;
-				}
-
-				return data.eleventyExcludeFromCollections;
-			};
-		}
-	);
-  
-  
   // Wrap markdown images in <figure>/<figcaption> when a title attribute is present
   eleventyConfig.amendLibrary("md", (mdLib) => {
     const defaultRender = mdLib.renderer.rules.image || function(tokens, idx, options, env, self) {

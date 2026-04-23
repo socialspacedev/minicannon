@@ -5,7 +5,6 @@ description: Tune by Kaamal Williams
 tags:
   - music
 date: 2024-03-15T14:52:36+13:00
-published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
