@@ -4,6 +4,7 @@ title: Lines of Flight 2025
 description: Selection of photos from Lines of Flight 2025.
 tags:
   - music
+  - photography
 date: 2026-04-22T18:18:42+12:00
 type: article
 layout: article.liquid
