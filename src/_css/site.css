@@ -324,6 +324,47 @@ main figure, article figure {
   margin-top: -20rem;
   } */
 
+/* Pepeha — Treaty-era document styling */
+.pepeha {
+  background: radial-gradient(ellipse at 50% 40%, #fdf3d0 0%, #f0d98a 55%, #e0c070 100%);
+  border: 2px solid #8b6d2a;
+  border-radius: 3px 7px 5px 8px / 6px 3px 7px 4px;
+  padding: 2rem 3rem;
+  text-align: center;
+  font-weight: 600;
+  font-style: italic;
+  color: #1c1008;
+  line-height: 2.2;
+  letter-spacing: 0.03em;
+  position: relative;
+  margin: 1.5rem auto;
+  max-width: 34rem;
+  filter: drop-shadow(2px 4px 14px rgba(0,0,0,0.22));
+}
+.pepeha::after {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  border: 1px solid rgba(139,109,42,0.7);
+  border-radius: 2px 5px 3px 6px / 4px 2px 5px 3px;
+  pointer-events: none;
+}
+.pepeha p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+@media (prefers-color-scheme: dark) {
+  .pepeha {
+    background: radial-gradient(ellipse at 50% 40%, #3d2e0f 0%, #2a1f08 60%, #1e1604 100%);
+    border-color: #9a7b3c;
+    color: #e8d4a0;
+    filter: drop-shadow(2px 4px 14px rgba(0,0,0,0.6));
+  }
+  .pepeha::after {
+    border-color: rgba(154,123,60,0.7);
+  }
+}
+
 /* Bandcamp widget override */
 /* #player.inline_player.size_large.download.albumplayer { */
 #bandcamp {
@@ -350,6 +391,9 @@ main figure, article figure {
   display: block;
   margin: 0;
   transition: transform 0.3s ease;
+}
+.gallery-item:last-child:nth-child(3n + 1) {
+  grid-column: 2;
 }
 .gallery-item:hover img {
   transform: scale(1.05);
