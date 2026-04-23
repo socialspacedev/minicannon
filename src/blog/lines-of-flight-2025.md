@@ -19,7 +19,7 @@ I used my trusty Olympus OM 1 with Ilford Delta 3200 for the first time. The emu
 
 There were many highlights from this event (as there always are) including: Rosy Parlane, Tara Sharp, Microsoft Voices, Alastair Galbraith, Slightly Imperfect, and the panel discussion with Bruce Russell, Jo Burzynska, Jonny Marks, Pat Kraus talking with Peter Porteous.
 
-I did not attend the Friday night session (Oct 17th) having seen many of the acts before in addition to pacing myself. This session was one of the highlights from those who did go, due to the energy of the performances.
+I did not attend the Friday night session (Oct 17th) having seen many of the acts before and to pace myself. This session was one of the highlights from those who did go because of the energy of the performances.
 
 Overall, I was pretty happy with how the photos turned out – particularly the slightly more abstract, ominous and grainy shots. Here are a selection in performance order.
 
