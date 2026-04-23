@@ -43,5 +43,3 @@ I'm pākeha (tangata Tiriti) based in Otepoti, New Zealand. I'm currently Genera
 ## Ānaru
 
 At an earlier job we celebrated <a href="https://www.reomaori.co.nz/te-wiki-o-te-reo-maori-2022" target="_blank" rel="noopener">Te Wiki o te Reo Māori</a> every year. As part of this activity we took it a step further by referring to each other by the Māori translation of our names. I loved this and felt it a genuine honour being called Ānaru everyday –particularly by my Māori colleagues. Consequently I sought permission to use Ānaru as a domain name to identify more strongly as pākeha/tangata Tiriti and support te reo in a public way.
-
-<p class="align-right">For more, hit my social media below 👇</p>
