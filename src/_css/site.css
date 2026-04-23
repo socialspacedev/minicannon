@@ -395,6 +395,9 @@ main figure, article figure {
 .gallery-item:last-child:nth-child(3n + 1) {
   grid-column: 2;
 }
+.gallery-item:last-child:nth-child(3n + 2) {
+  grid-column: 3;
+}
 .gallery-item:hover img {
   transform: scale(1.05);
 }
