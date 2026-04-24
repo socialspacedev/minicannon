@@ -23,14 +23,14 @@ I did not attend the Friday night session (Oct 17th) having seen many of the act
 
 Overall, I was pretty happy with how the photos turned out – particularly the slightly more abstract, ominous and grainy shots. Here are a selection in performance order.
 
-{% image, "/img/long416-long416-r1-e029.jpg" "Dark image of Kahu on guitar" "30em 50vw 100vw" "Kahu at DPAG on Oct 16, 2025" %}
+{% image, "/img/long416-long416-r1-e029.jpg" "Dark image of Kahu on guitar" "30em 50vw 100vw" "Kahu at DPAG on Oct 16, 2025" "Olympus OM-1" "Zuiko 50mm f/1.8" "Ilford Delta 3200" "3200" %}
 
-{% image, "/img/long416-long416-r1-e027.jpg" "Dark image of Misled Convoy" "30em 50vw 100vw" "Misled Convoy at DPAG on Oct 16, 2025" %}
+{% image, "/img/long416-long416-r1-e027.jpg" "Dark image of Misled Convoy" "30em 50vw 100vw" "Misled Convoy at DPAG on Oct 16, 2025" "Olympus OM-1" "Zuiko 50mm f/1.8" "Ilford Delta 3200" "3200" %}
 
-{% image, "/img/long416-long416-r1-e026.jpg" "Panel of people discussing LOF" "30em 50vw 100vw" "Bruce Russell, Jo Burzynska, Jonny Marks, Pat Kraus with Peter Porteous on Oct 17th, 2025" %}
+{% image, "/img/long416-long416-r1-e026.jpg" "Panel of people discussing LOF" "30em 50vw 100vw" "Bruce Russell, Jo Burzynska, Jonny Marks, Pat Kraus with Peter Porteous on Oct 17th, 2025" "Olympus OM-1" "Zuiko 50mm f/1.8" "Ilford Delta 3200" "3200" %}
 
-{% image, "/img/long416-long416-r1-e025.jpg" "Three nerds using on text-to-speech software" "30em 50vw 100vw" "Microsoft Voices on Oct 18, 2025 (afternoon)" %}
+{% image, "/img/long416-long416-r1-e025.jpg" "Three nerds using on text-to-speech software" "30em 50vw 100vw" "Microsoft Voices on Oct 18, 2025 (afternoon)" "Olympus OM-1" "Zuiko 50mm f/1.8" "Ilford Delta 3200" "3200" %}
 
-{% image, "/img/long416-long416-r1-e023.jpg" "Two noisy guitarists improvising" "30em 50vw 100vw" "The Escalation on Oct 18, 2025 (night)" %}
+{% image, "/img/long416-long416-r1-e023.jpg" "Two noisy guitarists improvising" "30em 50vw 100vw" "The Escalation on Oct 18, 2025 (night)" "Olympus OM-1" "Zuiko 50mm f/1.8" "Ilford Delta 3200" "3200" %}
 
-{% image, "/img/long416-long416-r1-e021.jpg" "Dream team doing beautiful things" "30em 50vw 100vw" "Slightly Imperfect playing Ivor Cutler on Oct 18, 2025 (night)" %}
+{% image, "/img/long416-long416-r1-e021.jpg" "Dream team doing beautiful things" "30em 50vw 100vw" "Slightly Imperfect playing Ivor Cutler on Oct 18, 2025 (night)" "Olympus OM-1" "Zuiko 50mm f/1.8" "Ilford Delta 3200" "3200" %}

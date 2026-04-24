@@ -46,8 +46,7 @@
     @apply flex flex-row gap-5;
   }
   .search-btn {
-    @apply flex items-center justify-center cursor-pointer bg-transparent border-0 p-1 text-current;
-    line-height: 0;
+    @apply flex items-center gap-1.5 cursor-pointer bg-transparent border-0 p-1 text-current;
   }
   .search-btn:hover {
     @apply text-sky-600;
