@@ -85,6 +85,7 @@
   nav li:hover,
   nav li:focus,
   nav li:focus-within,
+  nav li:active,
   .active {
     @apply underline decoration-sky-600 decoration-2 underline-offset-1 transition-all;
   }
@@ -461,7 +462,7 @@ main figure, article figure {
   padding: 0.5rem 0.75rem;
   border-radius: 6px;
   font-family: ui-monospace, 'SF Mono', 'Cascadia Code', monospace;
-  font-size: 0.68rem;
+  font-size: 0.62rem;
   font-style: normal;
   letter-spacing: 0.03em;
   line-height: 1.8;
