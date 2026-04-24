@@ -29,8 +29,6 @@
     @apply flex items-center justify-between gap-5 flex-col border-b;
   }
   hgroup {
-    display: grid;
-    grid-template-columns: max-content;
     @apply hover:text-sky-600 w-full text-center;
   }
   .title {
@@ -46,10 +44,8 @@
     @apply flex flex-row gap-5;
   }
   .search-btn {
-    @apply flex items-center gap-1.5 cursor-pointer bg-transparent border-0 p-1 text-current;
-  }
-  .search-btn:hover {
-    @apply text-sky-600;
+    @apply cursor-pointer bg-transparent border-0 p-0 text-current;
+    font: inherit;
   }
   #search-dialog {
     width: min(560px, 92vw);
@@ -80,12 +76,16 @@
   .search-close-btn:hover {
     @apply text-sky-600;
   }
+  .search-fallback {
+    @apply text-center text-sm py-6 opacity-60;
+  }
   nav li {
     @apply cursor-pointer tracking-wide;
   }
   nav li:hover,
   nav li:focus,
   nav li:focus-within,
+  nav li:active,
   .active {
     @apply underline decoration-sky-600 decoration-2 underline-offset-1 transition-all;
   }
@@ -118,7 +118,7 @@
     @apply text-center block w-full;
   }
   .content h1 {
-    white-space: nowrap;
+    white-space: normal;
   }
   small + h1 {
     @apply mt-2;
@@ -341,18 +341,23 @@ main figure, article figure {
   opacity: 1;
   border-color: rgba(255,255,255,0.85);
 }
-.pswp__caption-text {
+.pswp__caption-area {
   position: absolute;
   bottom: 70px;
   left: 0;
   right: 0;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0 2rem;
+  z-index: 100;
+}
+.pswp__caption-text {
   font-size: 0.8rem;
   color: rgba(255,255,255,0.85);
   font-style: italic;
-  padding: 0 2rem;
-  pointer-events: none;
-  z-index: 100;
+  text-align: center;
 }
 .align-left { text-align: left; }
 .align-center { text-align: center; }
@@ -427,22 +432,60 @@ main figure, article figure {
 .gallery-item:hover img {
   transform: scale(1.05);
 }
-.pswp__caption-exif {
-  font-size: 0.75rem;
-  opacity: 0.65;
-  margin-top: 0.3rem;
-  font-style: italic;
+.pswp__exif-info {
+  position: relative;
+  flex-shrink: 0;
 }
-.pswp__post-link {
+.pswp__exif-btn {
   display: block;
-  margin-top: 0.3rem;
-  font-size: 0.72rem;
-  opacity: 0.55;
-  color: inherit;
-  text-decoration: none;
+  margin-left: auto;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.52);
+  color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.15s;
 }
-.pswp__post-link:hover {
-  opacity: 0.9;
+.pswp__exif-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+.pswp__exif-panel {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 8px);
+  right: 0;
+  min-width: 160px;
+  background: rgba(0, 0, 0, 0.88);
+  color: rgba(255, 255, 255, 0.9);
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  font-family: ui-monospace, 'SF Mono', 'Cascadia Code', monospace;
+  font-size: 0.62rem;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  line-height: 1.8;
+  text-align: right;
+  white-space: nowrap;
+  border-left: 2px solid rgba(255, 255, 255, 0.15);
+}
+.pswp__exif-info.is-open .pswp__exif-panel {
+  display: block;
+}
+.pswp__exif-panel p {
+  margin: 0;
+}
+.pswp__exif-panel a {
+  color: #93c5fd;
+  text-decoration: none;
+  display: block;
+  margin-top: 0.2rem;
+}
+.pswp__exif-panel a:hover {
   text-decoration: underline;
 }
 

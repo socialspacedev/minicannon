@@ -311,22 +311,22 @@ _snippets:
       Camera:
         type: select
         options:
-          values: data.cameras
+          values: data.camera
         cascade: true
       Lens:
         type: select
         options:
-          values: data.lenses
+          values: data.lens
         cascade: true
       Film:
         type: select
         options:
-          values: data.films
+          values: data.film
         cascade: true
       ISO:
         type: select
         options:
-          values: data.isos
+          values: data.iso
         cascade: true
       trim_bottom_left:
         type: auto
