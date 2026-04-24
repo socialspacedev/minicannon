@@ -80,6 +80,9 @@
   .search-close-btn:hover {
     @apply text-sky-600;
   }
+  .search-fallback {
+    @apply text-center text-sm py-6 opacity-60;
+  }
   nav li {
     @apply cursor-pointer tracking-wide;
   }

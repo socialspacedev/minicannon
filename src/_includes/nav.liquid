@@ -37,8 +37,10 @@
     const closeBtn = document.getElementById('search-close');
     let initialized = false;
 
+    let initFailed = false;
+
     async function initSearch() {
-      if (initialized) return;
+      if (initialized || initFailed) return;
       const link = document.createElement('link');
       link.rel = 'stylesheet';
       link.href = '/css/pagefind.css';
@@ -67,7 +69,11 @@
       try {
         await initSearch();
       } catch (e) {
-        console.warn('Search unavailable', e);
+        if (!initFailed) {
+          initFailed = true;
+          document.getElementById('search-modal-ui').innerHTML =
+            '<p class="search-fallback">Search is only available on the published site.</p>';
+        }
       }
       dialog.showModal();
       setTimeout(focusSearchInput, 50);
