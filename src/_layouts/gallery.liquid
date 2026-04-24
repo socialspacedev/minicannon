@@ -24,6 +24,14 @@ type: website
                  data-pswp-alt="{{ img.alt }}"
                  data-pswp-caption="{{ img.caption }}">
               <img src="{{ img.thumb }}" alt="{{ img.alt }}" loading="lazy">
+              <button class="gallery-info-btn" aria-label="Photo info">ⓘ</button>
+              <div class="gallery-info-tooltip">
+                {%- if img.camera != "" -%}<span>Camera: {{ img.camera }}</span>{%- endif -%}
+                {%- if img.lens != "" -%}<span>Lens: {{ img.lens }}</span>{%- endif -%}
+                {%- if img.film != "" -%}<span>Film: {{ img.film }}</span>{%- endif -%}
+                {%- if img.iso != "" -%}<span>ISO {{ img.iso }}</span>{%- endif -%}
+                <a href="{{ img.postUrl }}">View post</a>
+              </div>
             </div>
           {%- endfor -%}
         </div>
@@ -113,7 +121,27 @@ type: website
       lightbox.init();
 
       els.forEach((el, i) => {
-        el.addEventListener('click', () => lightbox.loadAndOpen(i));
+        el.addEventListener('click', () => {
+          if (el.classList.contains('info-open')) {
+            el.classList.remove('info-open');
+            return;
+          }
+          lightbox.loadAndOpen(i);
+        });
+      });
+
+      document.querySelectorAll('.gallery-info-btn').forEach(btn => {
+        btn.addEventListener('click', e => {
+          e.stopPropagation();
+          const item = btn.closest('.gallery-item');
+          const opening = !item.classList.contains('info-open');
+          document.querySelectorAll('.gallery-item.info-open').forEach(el => el.classList.remove('info-open'));
+          if (opening) item.classList.add('info-open');
+        });
+      });
+
+      document.querySelectorAll('.gallery-info-tooltip').forEach(tip => {
+        tip.addEventListener('click', e => e.stopPropagation());
       });
     })();
   </script>
