@@ -14,10 +14,10 @@ I'm currently obsessed with my [Olympus OM 1](https://www.instagram.com/p/DDL4IW
 
 You can find a few of these experiments on my [Pixelfed portfolio](https://pixelfed.nz/i/portfolio/andrew "Opens Pixelfed portfolio"). In the meantime here's a selection taken over Christmas 2024 using Kodak Tri-X.
 
-![Black and white photo of cabbage trees.](/img/a047049-r1-25-26.jpg "Cabbage trees in Kakanui")
+{% image, "/img/a047049-r1-25-26.jpg" "Black and white photo of cabbage trees." "30em 50vw 100vw" "Cabbage trees in Kakanui" "Olympus OM-1" "Zuiko 50mm f/1.8" "Kodak Tri-X 400" "400" %}
 
-![Black and white photo showing Danseys Pass and mountains](/img/a047046-r1-29-30.jpg "Danseys Pass")
+{% image, "/img/a047046-r1-29-30.jpg" "Black and white photo showing Danseys Pass and mountains" "30em 50vw 100vw" "Danseys Pass" "Olympus OM-1" "Zuiko 50mm f/1.8" "Kodak Tri-X 400" "400" %}
 
-![Black and white photo of a dalia and bee](/img/a047046-r1-12-13.jpg "Dalia and bee at Riverstone.")
+{% image, "/img/a047046-r1-12-13.jpg" "Black and white photo of a dalia and bee" "30em 50vw 100vw" "Dalia and bee at Riverstone." "Olympus OM-1" "Zuiko 50mm f/1.8" "Kodak Tri-X 400" "400" %}
 
-![Black and white photo of a large pylon](/img/a047046-r1-31-32.jpg "Pylon on Danseys Pass")
+{% image, "/img/a047046-r1-31-32.jpg" "Black and white photo of a large pylon" "30em 50vw 100vw" "Pylon on Danseys Pass" "Olympus OM-1" "Zuiko 50mm f/1.8" "Kodak Tri-X 400" "400" %}
