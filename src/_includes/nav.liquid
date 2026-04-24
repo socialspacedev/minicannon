@@ -14,7 +14,55 @@
                 <a href="{{ entry.url | url }}">{{ entry.title }}</a>
             </li>
             {% endif %}
-            {%- endfor %}   
+            {%- endfor %}
         </ul>
+        <button id="search-open" class="search-btn" aria-label="Open search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
     </nav>
 </header>
+
+<dialog id="search-dialog" aria-label="Search">
+  <button id="search-close" class="search-close-btn" aria-label="Close search">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+  </button>
+  <div id="search-modal-ui"></div>
+</dialog>
+
+<script>
+  (function() {
+    const dialog = document.getElementById('search-dialog');
+    const openBtn = document.getElementById('search-open');
+    const closeBtn = document.getElementById('search-close');
+    let initialized = false;
+
+    async function initSearch() {
+      if (initialized) return;
+      initialized = true;
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = '/css/pagefind.css';
+      document.head.appendChild(link);
+      await new Promise((resolve, reject) => {
+        const s = document.createElement('script');
+        s.src = '/pagefind/pagefind-ui.js';
+        s.onload = resolve;
+        s.onerror = reject;
+        document.head.appendChild(s);
+      });
+      new PagefindUI({ element: '#search-modal-ui', showSubResults: true });
+    }
+
+    openBtn.addEventListener('click', async () => {
+      await initSearch();
+      dialog.showModal();
+      requestAnimationFrame(() => dialog.querySelector('input')?.focus());
+    });
+
+    closeBtn.addEventListener('click', () => dialog.close());
+
+    dialog.addEventListener('click', e => {
+      if (e.target === dialog) dialog.close();
+    });
+  })();
+</script>

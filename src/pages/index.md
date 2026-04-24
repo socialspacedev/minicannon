@@ -1,7 +1,8 @@
 ---
 _schema: default
 title: Index
-description: A minimal and performant website built using CloudCannon and 11ty.
+seoTitle: anaru.nz — music, photography & writing
+description: A personal blog about music, film photography, and whatever else catches my eye.
 date: 2022-10-01T00:00:00+13:00
 type: website
 layout: home.liquid

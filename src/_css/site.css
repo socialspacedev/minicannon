@@ -40,10 +40,46 @@
     @apply text-center whitespace-nowrap;
   }
   nav {
-    @apply text-center items-center;
+    @apply flex flex-row items-center justify-center gap-4 text-center;
   }
   nav > ul {
     @apply flex flex-row gap-5;
+  }
+  .search-btn {
+    @apply flex items-center justify-center cursor-pointer bg-transparent border-0 p-1 text-current;
+    line-height: 0;
+  }
+  .search-btn:hover {
+    @apply text-sky-600;
+  }
+  #search-dialog {
+    width: min(560px, 92vw);
+    max-height: 80vh;
+    overflow-y: auto;
+    border: 1px solid theme('colors.zinc.300');
+    border-radius: 0.5rem;
+    padding: 1.25rem 1.25rem 1.5rem;
+    background: theme('colors.zinc.100');
+    color: theme('colors.slate.900');
+    box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+    position: relative;
+  }
+  #search-dialog::backdrop {
+    background: rgba(0, 0, 0, 0.45);
+  }
+  @media (prefers-color-scheme: dark) {
+    #search-dialog {
+      border-color: theme('colors.zinc.700');
+      background: theme('colors.zinc.900');
+      color: theme('colors.slate.100');
+    }
+  }
+  .search-close-btn {
+    @apply absolute top-3 right-3 flex items-center justify-center cursor-pointer bg-transparent border-0 p-1 text-current;
+    line-height: 0;
+  }
+  .search-close-btn:hover {
+    @apply text-sky-600;
   }
   nav li {
     @apply cursor-pointer tracking-wide;
@@ -505,7 +541,7 @@ main figure, article figure {
     @apply text-left;
   }
   nav {
-    @apply text-right items-center;
+    @apply flex-col items-end justify-start text-right gap-2;
   }
   nav > ul {
     @apply flex-col gap-0;
