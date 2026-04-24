@@ -341,18 +341,23 @@ main figure, article figure {
   opacity: 1;
   border-color: rgba(255,255,255,0.85);
 }
-.pswp__caption-text {
+.pswp__caption-area {
   position: absolute;
   bottom: 70px;
   left: 0;
   right: 0;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0 2rem;
+  z-index: 100;
+}
+.pswp__caption-text {
   font-size: 0.8rem;
   color: rgba(255,255,255,0.85);
   font-style: italic;
-  padding: 0 2rem;
-  pointer-events: none;
-  z-index: 100;
+  text-align: center;
 }
 .align-left { text-align: left; }
 .align-center { text-align: center; }
@@ -428,10 +433,8 @@ main figure, article figure {
   transform: scale(1.05);
 }
 .pswp__exif-info {
-  position: absolute;
-  bottom: 72px;
-  right: 16px;
-  z-index: 200;
+  position: relative;
+  flex-shrink: 0;
 }
 .pswp__exif-btn {
   display: block;

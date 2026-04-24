@@ -107,25 +107,18 @@ type: website
         });
 
         lightbox.pswp.ui.registerElement({
-          name: 'lightbox-caption',
+          name: 'caption-exif',
           order: 9,
           isButton: false,
           appendTo: 'wrapper',
           onInit: (el, pswp) => {
-            el.className = 'pswp__caption-text';
-            const update = () => { el.textContent = items[pswp.currIndex]?.caption || ''; };
-            pswp.on('change', update);
-            pswp.on('afterInit', update);
-          }
-        });
+            el.className = 'pswp__caption-area';
 
-        lightbox.pswp.ui.registerElement({
-          name: 'exif-info',
-          order: 12,
-          isButton: false,
-          appendTo: 'root',
-          onInit: (el, pswp) => {
-            el.className = 'pswp__exif-info';
+            const captionText = document.createElement('span');
+            captionText.className = 'pswp__caption-text';
+
+            const exifWrap = document.createElement('span');
+            exifWrap.className = 'pswp__exif-info';
 
             const panel = document.createElement('div');
             panel.className = 'pswp__exif-panel';
@@ -135,18 +128,22 @@ type: website
             btn.textContent = 'ⓘ';
             btn.setAttribute('aria-label', 'Photo info');
 
-            el.appendChild(panel);
-            el.appendChild(btn);
+            exifWrap.appendChild(panel);
+            exifWrap.appendChild(btn);
+            el.appendChild(captionText);
+            el.appendChild(exifWrap);
 
             btn.addEventListener('click', e => {
               e.stopPropagation();
-              el.classList.toggle('is-open');
+              exifWrap.classList.toggle('is-open');
             });
 
             const update = () => {
               const item = items[pswp.currIndex] || {};
-              el.classList.remove('is-open');
+              exifWrap.classList.remove('is-open');
               panel.textContent = '';
+
+              captionText.textContent = item.caption || '';
 
               const exifFields = [
                 item.camera,
@@ -156,7 +153,7 @@ type: website
               ].filter(Boolean);
 
               const hasContent = exifFields.length > 0 || item.postUrl;
-              el.style.visibility = hasContent ? '' : 'hidden';
+              exifWrap.style.display = hasContent ? '' : 'none';
 
               exifFields.forEach(field => {
                 const p = document.createElement('p');
