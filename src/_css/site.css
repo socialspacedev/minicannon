@@ -455,15 +455,19 @@ main figure, article figure {
   position: absolute;
   bottom: calc(100% + 8px);
   right: 0;
-  min-width: 180px;
+  min-width: 160px;
   background: rgba(0, 0, 0, 0.88);
-  color: #fff;
-  padding: 0.6rem 0.85rem;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 0.5rem 0.75rem;
   border-radius: 6px;
-  font-size: 0.78rem;
-  line-height: 1.7;
+  font-family: ui-monospace, 'SF Mono', 'Cascadia Code', monospace;
+  font-size: 0.68rem;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  line-height: 1.8;
   text-align: right;
   white-space: nowrap;
+  border-left: 2px solid rgba(255, 255, 255, 0.15);
 }
 .pswp__exif-info.is-open .pswp__exif-panel {
   display: block;
