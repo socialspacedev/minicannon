@@ -113,15 +113,40 @@ type: website
           appendTo: 'wrapper',
           onInit: (el, pswp) => {
             el.className = 'pswp__caption-text';
+            const update = () => { el.textContent = items[pswp.currIndex]?.caption || ''; };
+            pswp.on('change', update);
+            pswp.on('afterInit', update);
+          }
+        });
+
+        lightbox.pswp.ui.registerElement({
+          name: 'exif-info',
+          order: 12,
+          isButton: false,
+          appendTo: 'root',
+          onInit: (el, pswp) => {
+            el.className = 'pswp__exif-info';
+
+            const panel = document.createElement('div');
+            panel.className = 'pswp__exif-panel';
+
+            const btn = document.createElement('button');
+            btn.className = 'pswp__exif-btn';
+            btn.textContent = 'ⓘ';
+            btn.setAttribute('aria-label', 'Photo info');
+
+            el.appendChild(panel);
+            el.appendChild(btn);
+
+            btn.addEventListener('click', e => {
+              e.stopPropagation();
+              el.classList.toggle('is-open');
+            });
+
             const update = () => {
               const item = items[pswp.currIndex] || {};
-              el.textContent = '';
-
-              if (item.caption) {
-                const cap = document.createElement('div');
-                cap.textContent = item.caption;
-                el.appendChild(cap);
-              }
+              el.classList.remove('is-open');
+              panel.textContent = '';
 
               const exifParts = [];
               if (item.camera) exifParts.push(item.camera);
@@ -129,21 +154,22 @@ type: website
               if (item.film) exifParts.push(item.film);
               if (item.iso) exifParts.push('ISO ' + item.iso);
 
-              if (exifParts.length > 0) {
-                const exif = document.createElement('div');
-                exif.className = 'pswp__caption-exif';
-                exif.textContent = exifParts.join(' · ');
-                el.appendChild(exif);
-              }
+              const hasContent = exifParts.length > 0 || item.postUrl;
+              el.style.visibility = hasContent ? '' : 'hidden';
 
+              if (exifParts.length > 0) {
+                const p = document.createElement('p');
+                p.textContent = exifParts.join(' · ');
+                panel.appendChild(p);
+              }
               if (item.postUrl) {
-                const linkEl = document.createElement('a');
-                linkEl.className = 'pswp__post-link';
-                linkEl.href = item.postUrl;
-                linkEl.textContent = 'View post →';
-                el.appendChild(linkEl);
+                const a = document.createElement('a');
+                a.href = item.postUrl;
+                a.textContent = 'View post →';
+                panel.appendChild(a);
               }
             };
+
             pswp.on('change', update);
             pswp.on('afterInit', update);
           }
