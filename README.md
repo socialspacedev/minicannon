@@ -1,6 +1,6 @@
 # anaru.nz
 
-Personal blog and photography portfolio at [anaru.nz](https://anaru.nz), built with Eleventy and Tailwind CSS, managed via CloudCannon CMS.
+Personal blog and photography portfolio at [anaru.nz](https://anaru.nz), built with Eleventy and Tailwind CSS, managed via CloudCannon CMS. Started from the [Minimalism](https://github.com/MarcoMicale/Minimalism) theme by [Marco Micale](https://github.com/MarcoMicale).
 
 ## Tech stack
 
@@ -48,7 +48,7 @@ The `public/` directory is git-ignored — it is the built output. Pagefind sear
 
 ## Content
 
-Blog posts live in `src/blog/` as Markdown with YAML frontmatter. Photography posts tagged `photography` are automatically included in the photo gallery. Set `draft: true` to exclude a post from production builds.
+Blog posts live in `src/blog/` as Markdown with YAML frontmatter. Photography posts tagged `photography` are automatically included in the photo gallery.
 
 ## Deployment
 

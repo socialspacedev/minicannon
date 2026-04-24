@@ -1,0 +1,33 @@
+---
+permalink: llms.txt
+eleventyExcludeFromCollections: true
+---
+# {{ meta.siteName }}
+
+> Personal site of {{ meta.authorName }} — music, film photography, and writing. Based in Aotearoa New Zealand.
+
+## About
+
+{{ meta.authorName }} (Anaru) is a New Zealander writing about music, photography, and daily life. The site is a personal blog and film photography portfolio, written in an informal, reflective style.
+
+## Content
+
+- Blog posts covering music (particularly jazz, ambient, and experimental), film photography, and personal reflections
+- A photography gallery of black-and-white film shots, primarily taken on an Olympus OM-1 with Zuiko lenses
+- All photography is shot on 35mm film — Ilford, Kodak, and Fujifilm stocks
+
+## Author
+
+- Name: {{ meta.authorName }}
+- Location: Aotearoa New Zealand
+- Contact: {{ meta.mail }}
+
+## Docs
+
+- [Home]({{ meta.url }}/): Recent posts and site overview
+- [About]({{ meta.url }}/about/): Background and interests
+- [Photos]({{ meta.url }}/gallery/): Film photography gallery
+- [RSS feed]({{ meta.url }}/feed.xml): Full-text RSS feed
+{% for post in collections.all %}{% if post.data.layout == "article.liquid" and post.data.draft != true %}
+- [{{ post.data.title }}]({{ meta.url }}{{ post.url }}){% if post.data.description %}: {{ post.data.description }}{% endif %}
+{% endif %}{% endfor %}

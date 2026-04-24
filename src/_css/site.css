@@ -29,8 +29,6 @@
     @apply flex items-center justify-between gap-5 flex-col border-b;
   }
   hgroup {
-    display: grid;
-    grid-template-columns: max-content;
     @apply hover:text-sky-600 w-full text-center;
   }
   .title {
@@ -119,7 +117,7 @@
     @apply text-center block w-full;
   }
   .content h1 {
-    white-space: nowrap;
+    white-space: normal;
   }
   small + h1 {
     @apply mt-2;
