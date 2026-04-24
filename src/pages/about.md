@@ -12,8 +12,6 @@ eleventyNavigation:
   title: About
   order: 1
 ---
-## Pepeha
-
 <div class="pepeha">
   <p>Kia ora tātou</p>
   <p>Ngā mihi au ki te maunga ō Maungakiekie</p>

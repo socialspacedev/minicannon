@@ -31,7 +31,7 @@
   hgroup {
     display: grid;
     grid-template-columns: max-content;
-    @apply hover:text-sky-600;
+    @apply hover:text-sky-600 w-full text-center;
   }
   .title {
     @apply text-center font-extrabold text-5xl;
@@ -40,10 +40,46 @@
     @apply text-center whitespace-nowrap;
   }
   nav {
-    @apply text-center items-center;
+    @apply flex flex-row items-center justify-center gap-4 text-center;
   }
   nav > ul {
     @apply flex flex-row gap-5;
+  }
+  .search-btn {
+    @apply flex items-center justify-center cursor-pointer bg-transparent border-0 p-1 text-current;
+    line-height: 0;
+  }
+  .search-btn:hover {
+    @apply text-sky-600;
+  }
+  #search-dialog {
+    width: min(560px, 92vw);
+    max-height: 80vh;
+    overflow-y: auto;
+    border: 1px solid theme('colors.zinc.300');
+    border-radius: 0.5rem;
+    padding: 1.25rem 1.25rem 1.5rem;
+    background: theme('colors.zinc.100');
+    color: theme('colors.slate.900');
+    box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+    position: relative;
+  }
+  #search-dialog::backdrop {
+    background: rgba(0, 0, 0, 0.45);
+  }
+  @media (prefers-color-scheme: dark) {
+    #search-dialog {
+      border-color: theme('colors.zinc.700');
+      background: theme('colors.zinc.900');
+      color: theme('colors.slate.100');
+    }
+  }
+  .search-close-btn {
+    @apply absolute top-3 right-3 flex items-center justify-center cursor-pointer bg-transparent border-0 p-1 text-current;
+    line-height: 0;
+  }
+  .search-close-btn:hover {
+    @apply text-sky-600;
   }
   nav li {
     @apply cursor-pointer tracking-wide;
@@ -81,6 +117,9 @@
   h1,
   article > small.info {
     @apply text-center block w-full;
+  }
+  .content h1 {
+    white-space: nowrap;
   }
   small + h1 {
     @apply mt-2;
@@ -331,7 +370,6 @@ main figure, article figure {
   border-radius: 3px 7px 5px 8px / 6px 3px 7px 4px;
   padding: 2rem 3rem;
   text-align: center;
-  font-weight: 600;
   font-style: italic;
   color: #1c1008;
   line-height: 2.2;
@@ -340,14 +378,6 @@ main figure, article figure {
   margin: 1.5rem auto;
   max-width: 34rem;
   filter: drop-shadow(2px 4px 14px rgba(0,0,0,0.22));
-}
-.pepeha::after {
-  content: '';
-  position: absolute;
-  inset: 6px;
-  border: 1px solid rgba(139,109,42,0.7);
-  border-radius: 2px 5px 3px 6px / 4px 2px 5px 3px;
-  pointer-events: none;
 }
 .pepeha p {
   margin-top: 0;
@@ -359,9 +389,6 @@ main figure, article figure {
     border-color: #9a7b3c;
     color: #e8d4a0;
     filter: drop-shadow(2px 4px 14px rgba(0,0,0,0.6));
-  }
-  .pepeha::after {
-    border-color: rgba(154,123,60,0.7);
   }
 }
 
@@ -400,6 +427,24 @@ main figure, article figure {
 }
 .gallery-item:hover img {
   transform: scale(1.05);
+}
+.pswp__caption-exif {
+  font-size: 0.75rem;
+  opacity: 0.65;
+  margin-top: 0.3rem;
+  font-style: italic;
+}
+.pswp__post-link {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.72rem;
+  opacity: 0.55;
+  color: inherit;
+  text-decoration: none;
+}
+.pswp__post-link:hover {
+  opacity: 0.9;
+  text-decoration: underline;
 }
 
 @screen sm {
@@ -450,7 +495,7 @@ main figure, article figure {
     @apply text-left;
   }
   nav {
-    @apply text-right items-center;
+    @apply flex-col items-end justify-start text-right gap-2;
   }
   nav > ul {
     @apply flex-col gap-0;

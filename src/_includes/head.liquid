@@ -1,7 +1,7 @@
 {% comment %}
  Automated Title
 {% endcomment %}
-{% assign pageTitle = title | default: '' -%}{% assign pageTitle = pageTitle | append: ' - ' | append: meta.siteName -%}
+{% if seoTitle -%}{% assign pageTitle = seoTitle -%}{% else -%}{% assign pageTitle = title | default: '' -%}{% assign pageTitle = pageTitle | append: ' - ' | append: meta.siteName -%}{% endif -%}
 
 {% comment %}
   Automated Description

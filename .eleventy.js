@@ -67,7 +67,7 @@ module.exports = function (eleventyConfig) {
   });
  
   // 11ty image optimisation
-  eleventyConfig.addShortcode("image", async (srcFilePath, alt, sizes, caption) => {
+  eleventyConfig.addShortcode("image", async (srcFilePath, alt, sizes, caption, camera, lens, film, iso) => {
 
     let inputFilePath = path.join(eleventyConfig.dir.input, srcFilePath);
 
@@ -94,7 +94,13 @@ module.exports = function (eleventyConfig) {
       const dataAttrs = full
         ? ` data-pswp-src="${full.url}" data-pswp-width="${full.width}" data-pswp-height="${full.height}" data-pswp-thumb="${thumb ? thumb.url : full.url}"`
         : '';
-      return `<figure><div class="film-frame"${dataAttrs}>${html}</div><figcaption>${caption}</figcaption></figure>`;
+      const exifAttrs = [
+        camera ? ` data-exif-camera="${camera}"` : '',
+        lens    ? ` data-exif-lens="${lens}"`     : '',
+        film    ? ` data-exif-film="${film}"`     : '',
+        iso     ? ` data-exif-iso="${iso}"`       : '',
+      ].join('');
+      return `<figure><div class="film-frame"${dataAttrs}${exifAttrs}>${html}</div><figcaption>${caption}</figcaption></figure>`;
     }
     return html;
   });
@@ -129,11 +135,12 @@ module.exports = function (eleventyConfig) {
       let content;
       try { content = await readFile(item.inputPath, 'utf8'); } catch(e) { continue; }
 
-      // Parse {% image, "path" "alt" "sizes" %} and {% image, "path" "alt" "sizes" "caption" %}
-      const shortcodeRe = /\{%-?\s*image,?\s+"([^"]+)"\s+"([^"]+)"\s+"([^"]+)"(?:\s+"([^"]*)")?\s*-?%\}/g;
+      // Parse {% image, "path" "alt" "sizes" %} and optional "caption" "camera" "lens" "film" "iso"
+      const shortcodeRe = /\{%-?\s*image,?\s+"([^"]+)"\s+"([^"]+)"\s+"([^"]+)"(?:\s+"([^"]*)")?(?:\s+"([^"]*)")?(?:\s+"([^"]*)")?(?:\s+"([^"]*)")?(?:\s+"([^"]*)")?\s*-?%\}/g;
       let match;
       while ((match = shortcodeRe.exec(content)) !== null) {
         const srcPath = match[1], alt = match[2], caption = match[4] || '';
+        const camera = match[5] || '', lens = match[6] || '', film = match[7] || '', iso = match[8] || '';
         if (!caption) continue;
         try {
           const metadata = await Image(path.join('./src/', srcPath), {
@@ -143,7 +150,7 @@ module.exports = function (eleventyConfig) {
           const jpegs = metadata.jpeg || [];
           const full = jpegs[jpegs.length - 1], thumb = jpegs[0];
           if (full) result.push({ src: full.url, width: full.width, height: full.height,
-            thumb: thumb ? thumb.url : full.url, alt, caption, postUrl: item.url });
+            thumb: thumb ? thumb.url : full.url, alt, caption, postUrl: item.url, camera, lens, film, iso });
         } catch(e) {}
       }
 
@@ -160,7 +167,8 @@ module.exports = function (eleventyConfig) {
           const jpegs = metadata.jpeg || [];
           const full = jpegs[jpegs.length - 1], thumb = jpegs[0];
           if (full) result.push({ src: full.url, width: full.width, height: full.height,
-            thumb: thumb ? thumb.url : full.url, alt, caption, postUrl: item.url });
+            thumb: thumb ? thumb.url : full.url, alt, caption, postUrl: item.url,
+            camera: '', lens: '', film: '', iso: '' });
         } catch(e) {}
       }
     }

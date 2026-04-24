@@ -22,7 +22,12 @@ type: website
                  data-pswp-height="{{ img.height }}"
                  data-pswp-thumb="{{ img.thumb }}"
                  data-pswp-alt="{{ img.alt }}"
-                 data-pswp-caption="{{ img.caption }}">
+                 data-pswp-caption="{{ img.caption }}"
+                 data-exif-camera="{{ img.camera }}"
+                 data-exif-lens="{{ img.lens }}"
+                 data-exif-film="{{ img.film }}"
+                 data-exif-iso="{{ img.iso }}"
+                 data-post-url="{{ img.postUrl }}">
               <img src="{{ img.thumb }}" alt="{{ img.alt }}" loading="lazy">
             </div>
           {%- endfor -%}
@@ -49,7 +54,12 @@ type: website
         height: parseInt(el.dataset.pswpHeight),
         thumb: el.dataset.pswpThumb,
         alt: el.dataset.pswpAlt || '',
-        caption: el.dataset.pswpCaption || ''
+        caption: el.dataset.pswpCaption || '',
+        camera: el.dataset.exifCamera || '',
+        lens: el.dataset.exifLens || '',
+        film: el.dataset.exifFilm || '',
+        iso: el.dataset.exifIso || '',
+        postUrl: el.dataset.postUrl || ''
       }));
 
       const { default: PhotoSwipeLightbox } = await import('https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe-lightbox.esm.min.js');
@@ -103,7 +113,37 @@ type: website
           appendTo: 'wrapper',
           onInit: (el, pswp) => {
             el.className = 'pswp__caption-text';
-            const update = () => { el.textContent = items[pswp.currIndex]?.caption || ''; };
+            const update = () => {
+              const item = items[pswp.currIndex] || {};
+              el.textContent = '';
+
+              if (item.caption) {
+                const cap = document.createElement('div');
+                cap.textContent = item.caption;
+                el.appendChild(cap);
+              }
+
+              const exifParts = [];
+              if (item.camera) exifParts.push(item.camera);
+              if (item.lens) exifParts.push(item.lens);
+              if (item.film) exifParts.push(item.film);
+              if (item.iso) exifParts.push('ISO ' + item.iso);
+
+              if (exifParts.length > 0) {
+                const exif = document.createElement('div');
+                exif.className = 'pswp__caption-exif';
+                exif.textContent = exifParts.join(' · ');
+                el.appendChild(exif);
+              }
+
+              if (item.postUrl) {
+                const linkEl = document.createElement('a');
+                linkEl.className = 'pswp__post-link';
+                linkEl.href = item.postUrl;
+                linkEl.textContent = 'View post →';
+                el.appendChild(linkEl);
+              }
+            };
             pswp.on('change', update);
             pswp.on('afterInit', update);
           }

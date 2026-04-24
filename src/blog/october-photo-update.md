@@ -12,7 +12,7 @@ thumbnail: /img/lony550-lony550-r1-e032.jpg
 ---
 The following photos were taken from June-to-August this year on my trusty Olympus OM 1. There's a mix of locations including Dunedin, Auckland and Brisbane using three different b&w films.
 
-{% image, "/img/three-films.jpg" "Three films and canisters" "30em 50vw 100vw" "Three B&W films: Tri-X, Ortho Plus, and FP4 Plus" %}
+{% image, "/img/three-films.jpg" "Three films and canisters" "30em 50vw 100vw" %}
 
 These are:
 
