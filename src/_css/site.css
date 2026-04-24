@@ -46,10 +46,8 @@
     @apply flex flex-row gap-5;
   }
   .search-btn {
-    @apply cursor-pointer bg-transparent border-0 p-0 text-current tracking-wide;
-  }
-  .search-btn:hover {
-    @apply underline decoration-sky-600 decoration-2 underline-offset-1;
+    @apply cursor-pointer bg-transparent border-0 p-0 text-current;
+    font: inherit;
   }
   #search-dialog {
     width: min(560px, 92vw);

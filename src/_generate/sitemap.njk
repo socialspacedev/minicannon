@@ -15,12 +15,13 @@ eleventyExcludeFromCollections: true
     <loc>{{ absoluteUrl }}</loc>
     {% if page.url == '/' %}
     <lastmod>{{ collections.all | rssLastUpdatedDate }}</lastmod>
-    <changefreq>yearly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>1.00</priority>
     {% else %}
     <lastmod>{{ page.date | rssDate }}</lastmod>
-    {% endif %}
+    <changefreq>never</changefreq>
     <priority>0.80</priority>
+    {% endif %}
   </url>
   {%- endfor %}
 </urlset>
