@@ -96,8 +96,11 @@ type: "article"
           isButton: false,
           appendTo: 'wrapper',
           onInit: (el, pswp) => {
-            el.className = 'pswp__caption-text';
-            const update = () => { el.textContent = items[pswp.currIndex]?.caption || ''; };
+            el.className = 'pswp__caption-area';
+            const captionText = document.createElement('span');
+            captionText.className = 'pswp__caption-text';
+            el.appendChild(captionText);
+            const update = () => { captionText.textContent = items[pswp.currIndex]?.caption || ''; };
             pswp.on('change', update);
             pswp.on('afterInit', update);
           }
