@@ -1,3 +1,4 @@
+<a href="#main-content" class="skip-link">Skip to content</a>
 <header>
     <!-- Title -->
     <hgroup>
@@ -5,7 +6,7 @@
         <p class="motto">{{ meta.motto }}</p>
     </hgroup>
     <!-- Navigation -->
-    <nav>
+    <nav aria-label="Main navigation">
         {% assign navPages = collections.all | eleventyNavigation %}
         <ul>
             {%- for entry in navPages %}
@@ -88,6 +89,7 @@
 
     dialog.addEventListener('close', () => {
       searchLi.classList.remove('active');
+      openBtn.focus();
     });
   })();
 </script>

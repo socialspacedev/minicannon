@@ -3,6 +3,22 @@
 @tailwind utilities;
 
 @layer base {
+  .skip-link {
+    position: absolute;
+    top: -100%;
+    left: 1rem;
+    z-index: 9999;
+    padding: 0.5rem 1rem;
+    background: theme('colors.sky.600');
+    color: #fff;
+    border-radius: 0 0 4px 4px;
+    font-size: 0.875rem;
+    text-decoration: none;
+    transition: top 0.1s;
+  }
+  .skip-link:focus {
+    top: 0;
+  }
   html {
     @apply px-5 bg-zinc-100 dark:bg-zinc-900 font-serif text-base text-slate-900 dark:text-slate-100 transition-colors;
     overflow-y: scroll;
@@ -89,25 +105,47 @@
   .active {
     @apply underline decoration-sky-600 decoration-2 underline-offset-1 transition-all;
   }
- .paginate {
-    margin: auto;
+  .paginate {
     display: flex;
-    max-width: inherit;
+    gap: 2rem;
+    @apply ml-auto mr-auto w-full;
   }
+  .paginate-prev { flex: 1; }
+  .paginate-next { flex: 1; text-align: right; }
   .paginate li {
-    letter-spacing: .025em;
     list-style: none;
-    cursor: pointer;
   }
   .paginate a {
-    @apply font-serif text-base transition-all;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
     text-decoration: none;
+    transition: color 0.15s;
   }
   .paginate a:hover,
-  .paginate a:focus,
-  .paginate a:focus-within,
-  .active {
-    @apply underline decoration-sky-600 decoration-2 underline-offset-1 transition-all;
+  .paginate a:focus {
+    @apply text-sky-600;
+    text-decoration: none;
+  }
+  .paginate-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: theme('colors.slate.400');
+    font-style: normal;
+    font-family: ui-monospace, 'SF Mono', monospace;
+  }
+  .paginate-next .paginate-label {
+    text-align: right;
+  }
+  .paginate-title {
+    @apply font-serif font-semibold;
+    font-size: 0.95rem;
+    line-height: 1.35;
+  }
+  .paginate a:hover .paginate-label,
+  .paginate a:focus .paginate-label {
+    @apply text-sky-600;
   }
   main,
   article {
@@ -613,7 +651,8 @@ main figure, article figure {
     @apply py-9 px-4;
   }
   main,
-  article {
+  article,
+  .paginate {
     @apply max-w-screen-md my-4;
   }
   .social {
@@ -632,7 +671,8 @@ main figure, article figure {
     @apply py-10 px-5;
   }
   main,
-  article {
+  article,
+  .paginate {
     @apply max-w-screen-lg my-5;
   }
   .social {

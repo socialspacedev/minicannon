@@ -17,7 +17,7 @@ pagination:
   <!-- Start Body -->
   <body>
     {% include "nav.liquid" %}
-    <main>
+    <main id="main-content">
       <div class="content" cms-edit="source">
         {{ content }}
       </div>
@@ -55,15 +55,24 @@ pagination:
       </ul>
     </main>
 
-    <!-- Pagination links -->
     <paginate>
       {% if pagination.href.previous or pagination.href.next %}
         <ul class="paginate">
-          {% if pagination.href.previous %}
-            <li><a href="{{ pagination.href.previous }}">&lt; Previous</a></li>
-          {% endif %}
           {% if pagination.href.next %}
-            <li class="ml-auto"><a href="{{ pagination.href.next }}">Next &gt;</a></li>
+            <li class="paginate-prev">
+              <a href="{{ pagination.href.next }}" aria-label="Older posts">
+                <span class="paginate-label">← Older</span>
+                <span class="paginate-title">Older posts</span>
+              </a>
+            </li>
+          {% endif %}
+          {% if pagination.href.previous %}
+            <li class="paginate-next">
+              <a href="{{ pagination.href.previous }}" aria-label="Newer posts">
+                <span class="paginate-label">Newer →</span>
+                <span class="paginate-title">Newer posts</span>
+              </a>
+            </li>
           {% endif %}
         </ul>
       {% endif %}

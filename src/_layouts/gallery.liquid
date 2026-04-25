@@ -10,7 +10,7 @@ type: website
   <!-- Start Body -->
   <body>
     {% include "nav.liquid" %}
-    <main data-pagefind-body>
+    <main id="main-content" data-pagefind-body>
       <h1>{{ title }}</h1>
       {%- assign imgs = collections.galleryImages -%}
       {%- if imgs and imgs.size > 0 -%}

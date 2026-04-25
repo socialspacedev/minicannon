@@ -1,15 +1,24 @@
 <paginate>
-    <!-- Pagination links -->
     {% if collections.post %}
       {% assign previousPost = collections.post | getPreviousCollectionItem %}
       {% assign nextPost = collections.post | getNextCollectionItem %}
       {% if nextPost or previousPost %}
         <ul class="paginate">
           {% if previousPost %}
-            <li><a href="{{ previousPost.url }}" title="{{ previousPost.data.title }}">&lt; Previous</a></li>
+            <li class="paginate-prev">
+              <a href="{{ previousPost.url }}" aria-label="Previous post: {{ previousPost.data.title }}">
+                <span class="paginate-label">← Previous</span>
+                <span class="paginate-title">{{ previousPost.data.title }}</span>
+              </a>
+            </li>
           {% endif %}
           {% if nextPost %}
-            <li class="ml-auto"><a href="{{ nextPost.url }}" title="{{ nextPost.data.title }}">Next &gt;</a></li>
+            <li class="paginate-next">
+              <a href="{{ nextPost.url }}" aria-label="Next post: {{ nextPost.data.title }}">
+                <span class="paginate-label">Next →</span>
+                <span class="paginate-title">{{ nextPost.data.title }}</span>
+              </a>
+            </li>
           {% endif %}
         </ul>
       {% endif %}
