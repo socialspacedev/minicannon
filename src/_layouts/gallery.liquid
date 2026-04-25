@@ -17,6 +17,9 @@ type: website
         <div class="gallery-grid">
           {%- for img in imgs -%}
             <div class="gallery-item"
+                 tabindex="0"
+                 role="button"
+                 aria-label="Open photo{% if img.alt %}: {{ img.alt }}{% endif %}"
                  data-pswp-src="{{ img.src }}"
                  data-pswp-width="{{ img.width }}"
                  data-pswp-height="{{ img.height }}"
@@ -178,6 +181,12 @@ type: website
 
       els.forEach((el, i) => {
         el.addEventListener('click', () => lightbox.loadAndOpen(i));
+        el.addEventListener('keydown', e => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            lightbox.loadAndOpen(i);
+          }
+        });
       });
     })();
   </script>

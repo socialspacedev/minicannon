@@ -111,6 +111,12 @@ type: "article"
 
       frames.forEach((frame, i) => {
         frame.addEventListener('click', () => lightbox.loadAndOpen(i));
+        frame.addEventListener('keydown', e => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            lightbox.loadAndOpen(i);
+          }
+        });
       });
     })();
   </script>

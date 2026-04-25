@@ -100,7 +100,8 @@ module.exports = function (eleventyConfig) {
         film    ? ` data-exif-film="${film}"`     : '',
         iso     ? ` data-exif-iso="${iso}"`       : '',
       ].join('');
-      return `<figure><div class="film-frame"${dataAttrs}${exifAttrs}>${html}</div><figcaption>${caption}</figcaption></figure>`;
+      const a11yAttrs = dataAttrs ? ` tabindex="0" role="button" aria-label="Open photo${alt ? ': ' + alt : ''}"` : '';
+      return `<figure><div class="film-frame"${dataAttrs}${exifAttrs}${a11yAttrs}>${html}</div><figcaption>${caption}</figcaption></figure>`;
     }
     return html;
   });
