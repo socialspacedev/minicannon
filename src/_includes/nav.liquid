@@ -15,7 +15,7 @@
             </li>
             {% endif %}
             {%- endfor %}
-            <li><button id="search-open" class="search-btn" aria-label="Open search">Search</button></li>
+            <li><a href="#search" id="search-open" role="button" aria-haspopup="dialog" aria-label="Open search">Search</a></li>
         </ul>
     </nav>
 </header>
@@ -62,7 +62,10 @@
       }
     }
 
-    openBtn.addEventListener('click', async () => {
+    const searchLi = openBtn.parentElement;
+
+    openBtn.addEventListener('click', async (e) => {
+      e.preventDefault();
       try {
         await initSearch();
       } catch (e) {
@@ -72,6 +75,7 @@
             '<p class="search-fallback">Search is only available on the published site.</p>';
         }
       }
+      searchLi.classList.add('active');
       dialog.showModal();
       setTimeout(focusSearchInput, 50);
     });
@@ -80,6 +84,10 @@
 
     dialog.addEventListener('click', e => {
       if (e.target === dialog) dialog.close();
+    });
+
+    dialog.addEventListener('close', () => {
+      searchLi.classList.remove('active');
     });
   })();
 </script>
