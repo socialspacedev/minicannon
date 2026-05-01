@@ -46,7 +46,7 @@ I also experimented with a new Tamron 70-200 F/2.8 lens which judging by the res
 
 *Finally, a couple of local sporting action shots. The first, uses Tri-X and the zoom lens to capture my daughter playing her hockey final.*
 
-{% image, "/img/hockey-final-action.jpg" "Daughter playing her hockey final" "30em 50vw 100vw" "Hockey final action" "Olympus OM-1" "Zuiko 50mm f/1.8" "Kodak Tri-X 400" "400" %}
+{% image, "/img/hockey-final-action.jpg" "Daughter playing her hockey final" "30em 50vw 100vw" "Hockey final action" "Olympus OM-1" "Tamron 80mm-250mm f/3.8-4.5" "Kodak Tri-X 400" "400" %}
 
 *The second, is masters football at its finest at Ocean Grove using the FP4 Plus.*
 
