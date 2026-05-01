@@ -366,6 +366,15 @@ _snippets:
       src:
         type: url
         cascade: true
+data_config:
+  camera:
+    path: _data/camera.yaml
+  lens:
+    path: _data/lens.yaml
+  film:
+    path: _data/film.yaml
+  iso:
+    path: _data/iso.yaml
 timezone: Pacific/Auckland
 markdown:
   engine:

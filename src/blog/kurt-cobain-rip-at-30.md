@@ -31,7 +31,7 @@ I was also asked to cover a DJ slot at <a href="https://95bfm.com/" title="Websi
 
 Then nothing for years until my next encounter with the band this century. My son developed a healthy obsession with the band and Kurt in particular when very young. This inspired him to play guitar (see an early birthday gift below) and announce his future job as a rock star. He's since progressed to wider music interests outside punk rock including [making noise](/blog/the-life-and-death-brigade.html "The boys play a show") with his old man.
 
-{% image, "/img/img-1583.jpg" "The boy's birthday present" "30em 50vw 100vw" %}
+{% image, "/img/cobain-sons-first-guitar.jpg" "The boy's birthday present" "30em 50vw 100vw" %}
 
 Michael Azerrad wrote a really insightful <a href="https://www.newyorker.com/culture/personal-history/my-time-with-kurt-cobain" title="Michael Azerrad's article on Kurt Cobain at the New Yorker" target="_blank" rel="noopener">article</a> about Cobain's death for the New Yorker  in 2021. It does the best job explaining the before and after with an untainted personal connection. I highly recommend working through it (it's long!).
 

@@ -14,7 +14,7 @@ type: website
       <div class="content" cms-edit="source">
         {{ content }}
       </div>
-      {%- assign recentPosts = collections.post | reverse | slice: 0, 5 -%}
+      {%- assign recentPosts = collections.post | reverse | slice: 0, ui.recentPostsDesktop -%}
       {%- assign latestPhotoPost = collections.photography | reverse | first -%}
       <div class="home-grid">
         {%- if latestPhotoPost and latestPhotoPost.data.thumbnail -%}
@@ -27,7 +27,7 @@ type: website
             <h2 class="font-bold mb-2">Recent Posts</h2>
             <div class="recent-posts flex flex-col gap-2">
               {%- for post in recentPosts -%}
-                <a href="{{ post.url }}" class="flex items-center gap-3" cms-edit="source">
+                <a href="{{ post.url }}" class="{% if forloop.index > ui.recentPostsMobile %}hidden sm:flex{% else %}flex{% endif %} items-center gap-3" cms-edit="source">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="icon shrink-0"
