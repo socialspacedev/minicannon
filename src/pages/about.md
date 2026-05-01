@@ -35,4 +35,18 @@ I'm pākeha (tangata Tiriti), living in Ōtepoti, Dunedin, where I work as COO a
 
 This site collects things that don't fit anywhere else — photographs shot on film, writing about music and life in the south, occasional opinions. Formerly also a business owner, academic, and radio host, among other forgotten things.
 
+Over the years we've shared our home with many cats. The best of them was Monster Truck, pictured here with me — a magnificent creature who died in 2025 after a long, happy life. [Read his story](/blog/monster-truck-rip.html "Monster Truck RIP").
+
 <a href="/blog/monster-truck-rip.html">{% image, "/img/monst-and-i-bw.png" "Monster Truck and I" "30em 50vw 100vw" %}</a>
+
+You'll find me across various social platforms — links are in the footer.
+
+## Whakaahua
+
+One of my creative outlets is B&W film photography. I shoot on an Olympus OM-1 — a fully manual 1970s SLR — mostly street, gigs, landscapes and flowers. The slower, mechanical process is a nice contrast to the pace of everything else, and I prefer the look of high contrast, fine grain B&W to endless colour phone photos. Still very much a novice finding my way. I use [Splendid](https://splendid.nz/) in Auckland for development and scanning, with hopes to do that part myself eventually.
+
+Browse the [photo gallery](/photos.html "Photo gallery").
+
+<div class="max-w-md mx-auto mt-2">
+{% image, "/img/olympus-om1.png" "Olympus OM-1 with Zuiko 50mm f/1.8 lens" "30em 50vw 100vw" %}
+</div>
