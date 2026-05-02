@@ -2,16 +2,10 @@ _schema: _schema
 source: src
 paths:
   uploads: img/
-  static:
-  collections:
-  data: _data/
-  layouts: _layouts/
-  includes: _includes/
 collections_config:
   posts:
     path: blog
     icon: post
-    output: true
     description: Blog posts about all things under the sun
     _enabled_editors:
       - content
@@ -53,7 +47,6 @@ collections_config:
   pages:
     path: pages
     icon: article
-    output: true
     filter: strict
     description: Fascinating pages of this 'ere website
     _enabled_editors:
@@ -85,14 +78,13 @@ collections_config:
   data:
     path: _data
     icon: settings_applications
-    output: false
+    disable_url: true
     description: Metadata for site layouts and other data
     _enabled_editors:
       - data
     disable_add: true
     disable_add_folder: true
     disable_file_actions: false
-collections_config_override: false
 _enabled_editors:
   - visual
   - content
