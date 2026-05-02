@@ -1,7 +1,7 @@
 ---
 _schema: default
 title: Minor Dents – Margate
-description: A great track by Minor Dents on the 2026 EP "Sitting with the fish".
+description: A great track by Minor Dents on the 2026 EP Sitting with the fish.
 tags:
   - music
 date: 2026-05-02T17:04:23+12:00
