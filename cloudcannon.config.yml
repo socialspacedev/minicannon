@@ -16,7 +16,7 @@ collections_config:
         options:
           allow_create: true
           empty_type: array
-          values: data.tags
+          values: data.taglist
         cascade: true
     disable_add: false
     disable_add_folder: false
@@ -352,8 +352,8 @@ data_config:
     path: _data/film.yaml
   iso:
     path: _data/iso.yaml
-  tags:
-    path: _data/tags.yaml
+  taglist:
+    path: _data/taglist.yaml
 timezone: Pacific/Auckland
 markdown:
   engine:
