@@ -35,15 +35,11 @@ I'm pākeha (tangata Tiriti), living in Ōtepoti, Dunedin, where I work as COO a
 
 This site collects things that don't fit anywhere else — photographs shot on film, writing about music and life in the south, occasional opinions. Formerly also a business owner, academic, and radio host, among other forgotten things.
 
-Over the years we've shared our home with many cats. The best of them was Monster Truck, pictured here with me — a magnificent companion who died in 2025 after a long, happy life. [Read his story](/blog/monster-truck-rip.html "Monster Truck RIP").
+You'll find me across various social platforms — links in the footer.
 
-&nbsp;
+Over the years we've shared our home with many cats. The best of them was Monster Truck, pictured here with me who was a magnificent companion who died in 2025 after a long, happy life. [Read his story](/blog/monster-truck-rip.html "Monster Truck RIP").
 
 {% image, "/img/monst-and-i-bw.png" "Monster Truck and I" "30em 50vw 100vw" %}
-
-&nbsp;
-
-You'll find me across various social platforms — links in the footer.
 
 ## Whakaahua
 
