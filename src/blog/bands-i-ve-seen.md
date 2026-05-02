@@ -97,6 +97,7 @@ permalink: blog/{{ title | slugify }}.html
 
 ### **International acts**
 
+* Supergrass
 * Holy Fuck
 * Stereolab
 * The Brian Jonestown Massacre
@@ -141,5 +142,5 @@ permalink: blog/{{ title | slugify }}.html
 * Pavement
 
 ```
-Last updated: 22/04/2026
+Last updated: 3/5/2026
 ```
