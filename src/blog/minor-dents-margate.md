@@ -12,4 +12,4 @@ permalink: blog/{{ title | slugify }}.html
 ---
 Here's an excellent track from UK band <a href="https://minordents.bandcamp.com/" title="Minor Dents Bandcamp page" target="_blank" rel="noopener">Minor Dents</a> from their EP "Sitting with the Fish". It was released in January 2026 and if you like Broadcast, Dummy, or Stereolab then you will like this.
 
-{% bandcamp, "https://minordents.bandcamp.com/track/margate" %}
+{% bandcamp, "<iframe style=\"border: 0; width: 350px; heighttps://bandcamp.com/EmbeddedPlayer/album=3619407581/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/track=4108701335/transparent=true/" %}
