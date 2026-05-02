@@ -16,22 +16,7 @@ collections_config:
         options:
           allow_create: true
           empty_type: array
-          values:
-            - post
-            - music
-            - photography
-            - social-media
-            - tumblr
-            - vespa
-            - animals
-            - book
-            - books
-            - christmas
-            - fishing
-            - obituary
-            - reacher
-            - academic
-          value_key:
+          values: data.tags
         cascade: true
     disable_add: false
     disable_add_folder: false
@@ -367,6 +352,8 @@ data_config:
     path: _data/film.yaml
   iso:
     path: _data/iso.yaml
+  tags:
+    path: _data/tags.yaml
 timezone: Pacific/Auckland
 markdown:
   engine:

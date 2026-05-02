@@ -28,19 +28,26 @@ type: website
             <div class="recent-posts flex flex-col gap-2">
               {%- for post in recentPosts -%}
                 <a href="{{ post.url }}" class="{% if forloop.index > ui.recentPostsMobile %}hidden sm:flex{% else %}flex{% endif %} items-center gap-3" cms-edit="source">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="icon shrink-0"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                    stroke="currentColor"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true">
+                  {%- if post.data.tags contains 'photography' -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon shrink-0" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2" />
+                    <circle cx="12" cy="13" r="3" />
+                  </svg>
+                  {%- elsif post.data.tags contains 'music' -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon shrink-0" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M3 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                    <path d="M13 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                    <path d="M9 17v-13l10 -2v13" />
+                    <path d="M9 8l10 -2" />
+                  </svg>
+                  {%- else -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon shrink-0" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                     <path d="M8 9h8" /><path d="M8 13h6" /><path d="M9 17h6" /><rect x="5" y="3" width="14" height="18" rx="2" />
                   </svg>
+                  {%- endif -%}
                   <span class="post-title">{{ post.data.title }}</span>
                 </a>
               {%- endfor -%}
