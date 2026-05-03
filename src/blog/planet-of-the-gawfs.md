@@ -13,7 +13,7 @@ thumbnail: /img/gawfs-v2.jpg
 ---
 For 40 years I’ve been trying to track down a specific science fiction book. The problem was that I couldn’t remember the title, author or year but recalled some of the plot (incorrectly as it turns out!) and colour of the cover.
 
-{% image, "/img/gawfs-v2.jpg" "Planet of the Gawfs book cover" "30em 50vw 100vw" %}
+{% image, "/img/gawfs-v2.jpg" "Planet of the Gawfs book cover" %}
 
 I originally read it during my first week of high school which is a traumatic, high anxiety time. I vaguely recall grabbing it off a rotating tower while on the library tour. I then forgot about it for years but at some point in my 20s, I became obsessed with tracking it down.
 

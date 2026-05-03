@@ -14,16 +14,16 @@ I finally got the Ilford Delta 400 B&W roll developed. The photos were taken at 
 
 For B&W film development I use <a href="https://splendid.nz/collections/lab-services" title="Splendid website" target="_blank" rel="noopener">Splendid</a> in Auckland who also do the scans. They are great but at some point, I may try it myself using <a href="https://theblackandwhitebox.co.nz/shop/darkroom-home-processing/tank/paterson-universal-tank-with-two-reels/" title="Example of Paterson tanks" target="_blank" rel="noopener">Paterson tanks</a>.
 
-{% image, "/img/riverstone-gardens-spider-flowers.jpg" "Spider flowers" "30em 50vw 100vw" "Spider flowers at Riverstone Gardens" "Olympus OM-1" "Zuiko 50mm f/1.8" "Ilford Delta 400" "400" %}
+{% image, "/img/riverstone-gardens-spider-flowers.jpg" "Spider flowers" "Spider flowers at Riverstone Gardens" "Olympus OM-1" "Zuiko 50mm f/1.8" "Ilford Delta 400" "400" %}
 
-{% image, "/img/riverstone-gardens-flowers.jpg" "Riverstone flowers" "30em 50vw 100vw" "Flowers at Riverstone Gardens" "Olympus OM-1" "Zuiko 50mm f/1.8" "Ilford Delta 400" "400" %}
+{% image, "/img/riverstone-gardens-flowers.jpg" "Riverstone flowers" "Flowers at Riverstone Gardens" "Olympus OM-1" "Zuiko 50mm f/1.8" "Ilford Delta 400" "400" %}
 
-{% image, "/img/riverstone-gardens-flower-bloom.jpg" "Another Riverstone flower" "30em 50vw 100vw" "Riverstone Gardens in bloom" "Olympus OM-1" "Zuiko 50mm f/1.8" "Ilford Delta 400" "400" %}
+{% image, "/img/riverstone-gardens-flower-bloom.jpg" "Another Riverstone flower" "Riverstone Gardens in bloom" "Olympus OM-1" "Zuiko 50mm f/1.8" "Ilford Delta 400" "400" %}
 
-{% image, "/img/riverstone-gardens-flower-more.jpg" "Riverstone flower" "30em 50vw 100vw" "More flowers at Riverstone" "Olympus OM-1" "Zuiko 50mm f/1.8" "Ilford Delta 400" "400" %}
+{% image, "/img/riverstone-gardens-flower-more.jpg" "Riverstone flower" "More flowers at Riverstone" "Olympus OM-1" "Zuiko 50mm f/1.8" "Ilford Delta 400" "400" %}
 
-{% image, "/img/elephant-rocks-north-otago.jpg" "Elephant rocks" "30em 50vw 100vw" "Elephant Rocks, North Otago" "Olympus OM-1" "Zuiko 50mm f/1.8" "Ilford Delta 400" "400" %}
+{% image, "/img/elephant-rocks-north-otago.jpg" "Elephant rocks" "Elephant Rocks, North Otago" "Olympus OM-1" "Zuiko 50mm f/1.8" "Ilford Delta 400" "400" %}
 
-{% image, "/img/elephant-rock-close-up.jpg" "An Elephant Rock" "30em 50vw 100vw" "An Elephant Rock up close" "Olympus OM-1" "Zuiko 50mm f/1.8" "Ilford Delta 400" "400" %}
+{% image, "/img/elephant-rock-close-up.jpg" "An Elephant Rock" "An Elephant Rock up close" "Olympus OM-1" "Zuiko 50mm f/1.8" "Ilford Delta 400" "400" %}
 
-{% image, "/img/ross-creek-waterfall.jpg" "Waterfall" "30em 50vw 100vw" "Waterfall at Ross Creek" "Olympus OM-1" "Zuiko 50mm f/1.8" "Ilford Delta 400" "400" %}
+{% image, "/img/ross-creek-waterfall.jpg" "Waterfall" "Waterfall at Ross Creek" "Olympus OM-1" "Zuiko 50mm f/1.8" "Ilford Delta 400" "400" %}

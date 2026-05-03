@@ -25,11 +25,13 @@ Personal blog and photography portfolio at [anaru.nz](https://anaru.nz), built w
 - Film photography gallery with EXIF data tooltip and lightbox
   - Keyboard accessible (Tab to image, Enter/Space to open)
   - EXIF data (camera, lens, film, ISO) stored in YAML data files and editable via CloudCannon
-- Two-column homepage: latest photography hero image + recent posts list
+  - EXIF info button (ⓘ) inline on article figcaptions, matching caption text colour
+- Two-column homepage: latest photography hero image + recent posts list with post-type icons
 - Static search via Pagefind (lazy-loaded dialog modal)
+- Scheduled posts — posts with a future date are excluded from production builds until that date
 - RSS feed, XML sitemap, and `llms.txt` for AEO
 - Structured data (BlogPosting JSON-LD) and Open Graph tags
-- Optimised images served in AVIF/WebP
+- Optimised images served in AVIF/WebP with layout-aware `sizes` attributes
 - Pagination and tag-filtered post pages
 - 404 and offline pages
 - WCAG 2.1 AA accessibility: skip-to-content link, ARIA landmarks, keyboard navigation throughout
@@ -52,7 +54,9 @@ The `public/` directory is git-ignored — it is the built output. Pagefind sear
 
 ## Content
 
-Blog posts live in `src/blog/` as Markdown with YAML frontmatter. Photography posts tagged `photography` are automatically included in the photo gallery.
+Blog posts live in `src/blog/` as Markdown with YAML frontmatter. Photography posts tagged `photography` are automatically included in the photo gallery. Posts with a future `date` are hidden from production builds and published automatically when CloudCannon's scheduled daily build runs on that date.
+
+JavaScript source files live in `src/_js/` and are copied to `public/js/` at build time.
 
 ## Deployment
 

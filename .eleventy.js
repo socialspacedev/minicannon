@@ -68,7 +68,7 @@ module.exports = function (eleventyConfig) {
   });
  
   // 11ty image optimisation
-  eleventyConfig.addShortcode("image", async (srcFilePath, alt, sizes, caption, camera, lens, film, iso) => {
+  eleventyConfig.addShortcode("image", async (srcFilePath, alt, caption, camera, lens, film, iso) => {
 
     let inputFilePath = path.join(eleventyConfig.dir.input, srcFilePath);
 
@@ -83,7 +83,7 @@ module.exports = function (eleventyConfig) {
 
     const html = Image.generateHTML(metadata, {
       alt,
-      sizes,
+      sizes: "(min-width: 1024px) 768px, 100vw",
       loading: "eager",
       decoding: "async",
     });
@@ -108,7 +108,7 @@ module.exports = function (eleventyConfig) {
   });
 
   // Centered/constrained image for use in page content (e.g. about page camera photo)
-  eleventyConfig.addShortcode("image_centered", async (srcFilePath, alt, sizes) => {
+  eleventyConfig.addShortcode("image_centered", async (srcFilePath, alt) => {
     let inputFilePath = path.join(eleventyConfig.dir.input, srcFilePath);
     let metadata = await Image(inputFilePath, {
       widths: [400, 800, 1000],
@@ -119,7 +119,7 @@ module.exports = function (eleventyConfig) {
     });
     const html = Image.generateHTML(metadata, {
       alt,
-      sizes,
+      sizes: "(min-width: 430px) 448px, 100vw",
       loading: "lazy",
       decoding: "async",
     });

@@ -13,11 +13,11 @@ Kurt Cobain of Nirvana <a href="https://timesmachine.nytimes.com/timesmachine/19
 
 Top o' the grunge heap.
 
-{% image, "/img/nirvana-ticket-stub.jpeg" "Old ticket stub for the 1992 Nirvana gig in Auckland" "30em 50vw 200vw" %}
+{% image, "/img/nirvana-ticket-stub.jpeg" "Old ticket stub for the 1992 Nirvana gig in Auckland" %}
 
 I was lucky enough to see them live at their one and only <a href="https://www.livenirvana.com/concerts/92/92-02-09.php" title="Live details for the 1992 Auckland Nirvana gig" target="_blank" rel="noopener">New Zealand gig</a> in 1992 (check out gig prices 30 years ago!). Even cooler I got two free tickets care of my first proper boss. I recall them stuck to the whiteboard in the computer room where I was trapped everyday with the hum of outdated hardware.
 
-{% image, "/img/univaca.jpg" "Old skool computer operator" "30em 50vw 300vw" %}
+{% image, "/img/univaca.jpg" "Old skool computer operator" %}
 
 Kurt was clearly not doing well and they played a fairly perfunctionary set. The 3Ds were easily the band of the night and Second Child were great also. Nevertheless, I recall enjoying it and was particularly happy they played "Lounge Act". Here's a terrible sounding bootleg that gives an impression of being there.
 
@@ -31,11 +31,11 @@ I was also asked to cover a DJ slot at <a href="https://95bfm.com/" title="Websi
 
 Then nothing for years until my next encounter with the band this century. My son developed a healthy obsession with the band and Kurt in particular when very young. This inspired him to play guitar (see an early birthday gift below) and announce his future job as a rock star. He's since progressed to wider music interests outside punk rock including [making noise](/blog/the-life-and-death-brigade.html "The boys play a show") with his old man.
 
-{% image, "/img/cobain-sons-first-guitar.jpg" "The boy's birthday present" "30em 50vw 100vw" %}
+{% image, "/img/cobain-sons-first-guitar.jpg" "The boy's birthday present" %}
 
 Michael Azerrad wrote a really insightful <a href="https://www.newyorker.com/culture/personal-history/my-time-with-kurt-cobain" title="Michael Azerrad's article on Kurt Cobain at the New Yorker" target="_blank" rel="noopener">article</a> about Cobain's death for the New Yorker  in 2021. It does the best job explaining the before and after with an untainted personal connection. I highly recommend working through it (it's long!).
 
-{% image, "/img/our-band.jpeg" "Book cover of Azerrad's excellent book" "30em 100vw 300vw" %}
+{% image, "/img/our-band.jpeg" "Book cover of Azerrad's excellent book" %}
 
 He also wrote a must have <a href="https://en.wikipedia.org/wiki/Our_Band_Could_Be_Your_Life" title="Wikipedia page detailing the book" target="_blank" rel="noopener">book</a> called *"Our Band Could Be Your Life: Scenes from the American Indie Underground, 1981–1991"* . This excellent book covers the formation of distinctive guitar bands such as: Hüsker Dü , Sonic youth, Mission of Burma, Fugazi, and more.
 

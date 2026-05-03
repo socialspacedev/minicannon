@@ -39,7 +39,7 @@ You can find me across various social platforms in which some are linked in the 
 
 Over the years we've shared our home with many cats. The best of them was [Monster Truck](/blog/monster-truck-rip.html "Blog post on lovely Monster Truck") who is pictured here with me. He was a magnificent companion who died in 2025 after a long, happy life and I miss him still.
 
-{% image, "/img/monst-and-i-bw.png" "Monster Truck and I" "30em 50vw 100vw" %}
+{% image, "/img/monst-and-i-bw.png" "Monster Truck and I" %}
 
 ## Whakaahua
 
@@ -47,4 +47,4 @@ One of my creative outlets is B&W film photography. I primarily shoot on a 1970s
 
 I'm still very much a novice finding my way and while I currently use [Splendid](https://splendid.nz/) for development and scanning, I hope to do that part myself too eventually. Check the [photo gallery](/photos.html "Photo gallery").
 
-{% image_centered, "/img/olympus-om1.png" "Olympus OM-1 with Zuiko 50mm f/1.8 lens" "30em 50vw 100vw" %}
+{% image_centered, "/img/olympus-om1.png" "Olympus OM-1 with Zuiko 50mm f/1.8 lens" %}
