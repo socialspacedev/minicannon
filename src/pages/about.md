@@ -33,11 +33,11 @@ eleventyNavigation:
 
 I'm pākeha (tangata Tiriti), living in Ōtepoti, Dunedin, where I work as COO at <a href="https://www.gethomesafe.com/" title="Keep your people safe with our platform" target="_blank" rel="noopener">Get Home Safe</a>. On the side I'm a parent, analogue B&W photographer, record collector, noise maker, amateur DJ and elderly footballer.
 
-This site collects things that don't fit anywhere else — photographs shot on film, writing about music and life in the south, occasional opinions. Formerly also a business owner, academic, and radio host, among other forgotten things.
+This site collects things that don't fit anywhere else — photographs shot on film, writing about music and occasional opinions. Formerly also a business owner, academic, and radio host, among other forgotten things.
 
-You'll find me across various social platforms — links in the footer.
+You can find me across various social platforms in which some are linked in the footer.
 
-Over the years we've shared our home with many cats. The best of them was Monster Truck, pictured here with me who was a magnificent companion who died in 2025 after a long, happy life. [Read his story](/blog/monster-truck-rip.html "Monster Truck RIP").
+Over the years we've shared our home with many cats. The best of them was [Monster Truck](/blog/monster-truck-rip.html "Blog post on lovely Monster Truck") who is pictured here with me. He was a magnificent companion who died in 2025 after a long, happy life and I miss him still.
 
 {% image, "/img/monst-and-i-bw.png" "Monster Truck and I" "30em 50vw 100vw" %}
 
