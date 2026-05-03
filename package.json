@@ -1,6 +1,6 @@
 {
   "name": "minicannon",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Make this build please",
   "main": "index.js",
   "scripts": {
