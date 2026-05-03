@@ -329,6 +329,25 @@ _snippets:
         type: auto
         hidden: true
         cascade: true
+  my_image_centered_snippet:
+    template: eleventy_liquid_shortcode_positional_args
+    inline: false
+    preview:
+      text: Centered image
+    definitions:
+      shortcode_name: image_centered
+      positional_args:
+        - editor_key: Image
+          type: string
+        - editor_key: Alt
+          type: string
+        - editor_key: Sizes
+          type: string
+          default: 30em 50vw 100vw
+    _inputs:
+      Image:
+        type: image
+        cascade: true
   my_bandcamp_snippet:
     template: eleventy_liquid_shortcode_positional_args
     inline: false

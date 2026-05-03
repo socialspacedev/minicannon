@@ -105,7 +105,26 @@ module.exports = function (eleventyConfig) {
     }
     return html;
   });
-		
+
+  // Centered/constrained image for use in page content (e.g. about page camera photo)
+  eleventyConfig.addShortcode("image_centered", async (srcFilePath, alt, sizes) => {
+    let inputFilePath = path.join(eleventyConfig.dir.input, srcFilePath);
+    let metadata = await Image(inputFilePath, {
+      widths: [400, 800, 1000],
+      formats: ["avif", "webp", "svg", "jpeg"],
+      outputDir: "./public/img/",
+      urlPath: "/img/",
+      svgShortCiruit: "size",
+    });
+    const html = Image.generateHTML(metadata, {
+      alt,
+      sizes,
+      loading: "lazy",
+      decoding: "async",
+    });
+    return `<div class="max-w-md mx-auto mt-2">${html}</div>`;
+  });
+
   // Exclude drafts from production
 //	eleventyConfig.addGlobalData("eleventyComputed.permalink", function () {
 //		return (data) => {
