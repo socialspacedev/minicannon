@@ -31,6 +31,7 @@ module.exports = function (eleventyConfig) {
     .addPassthroughCopy({ "src/favicon": "favicon" })
     .addPassthroughCopy({ "src/fonts": "fonts" })
     .addPassthroughCopy({ "src/img": "img" })
+    .addPassthroughCopy({ "src/_js": "js" })
     .addPassthroughCopy({ "src/_css/pagefind.css": "css/pagefind.css" });
 
   // Show the year in the footer
