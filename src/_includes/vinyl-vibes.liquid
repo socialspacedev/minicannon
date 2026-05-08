@@ -1,0 +1,60 @@
+{%- if vinyl_vibes -%}
+<section class="vinyl-vibes">
+  <div class="vv-header">
+    <span class="vv-number">Vinyl Vibes #{{ vinyl_vibes.number }}</span>
+    {%- if vinyl_vibes.event_date -%}
+    <span class="vv-event-date">{{ vinyl_vibes.event_date | readableDate }}</span>
+    {%- endif -%}
+  </div>
+
+  {%- for set in vinyl_vibes.sets -%}
+  <div class="vv-set">
+    <div class="vv-set-header">
+      <span class="vv-dj-name">{{ set.dj }}</span>
+      {%- if set.slot -%}
+      <span class="vv-slot">{{ set.slot }}</span>
+      {%- endif -%}
+    </div>
+    <ol class="vv-tracklist">
+      {%- for track in set.tracks -%}
+      <li class="vv-track">
+        <span class="vv-track-info"><strong>{{ track.artist }}</strong> — {{ track.title }}</span>
+        {%- if track.youtube -%}
+        <details class="vv-embed vv-embed--yt">
+          <summary>▶ YouTube</summary>
+          <iframe data-src="https://www.youtube.com/embed/{{ track.youtube }}?rel=0"
+                  title="{{ track.artist }} – {{ track.title }}"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </details>
+        {%- elsif track.bandcamp -%}
+        <details class="vv-embed vv-embed--bc">
+          <summary>▶ Bandcamp</summary>
+          <iframe data-src="{{ track.bandcamp }}"
+                  title="{{ track.artist }} – {{ track.title }}"
+                  seamless></iframe>
+        </details>
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ol>
+  </div>
+  {%- unless forloop.last -%}<hr class="vv-divider">{%- endunless -%}
+  {%- endfor -%}
+</section>
+
+<script>
+  document.querySelectorAll('.vv-embed').forEach(function(details) {
+    details.addEventListener('toggle', function() {
+      if (details.open) {
+        var iframe = details.querySelector('iframe[data-src]');
+        if (iframe) {
+          iframe.src = iframe.dataset.src;
+          iframe.removeAttribute('data-src');
+        }
+      }
+    });
+  });
+</script>
+{%- endif -%}
