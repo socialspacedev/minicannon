@@ -6,7 +6,6 @@ date:
 type: article
 layout: article.liquid
 tags:
-  - post
   - music
   - vinyl-vibes
 vinyl_vibes:

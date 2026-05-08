@@ -1,7 +1,7 @@
 ---
 _schema: vinyl_vibes
-title: Vinyl Vibes April 29
-description: Vinyl Vibes playlists on April 29 2026.
+title: Vinyl Vibes 6 April 29
+description: Vinyl Vibes playlists for April 29 2026.
 date: 2026-05-08T17:32:25+12:00
 type: article
 layout: article.liquid
