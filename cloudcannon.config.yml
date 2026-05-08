@@ -115,6 +115,14 @@ _inputs:
     type: date
     label: Event date
     cascade: true
+  vinyl_vibes.hero_image:
+    type: image
+    label: Hero image
+    cascade: true
+  vinyl_vibes.hero_alt:
+    type: text
+    label: Hero image alt text
+    cascade: true
   vinyl_vibes.sets:
     type: array
     label: DJ sets

@@ -11,6 +11,8 @@ tags:
 vinyl_vibes:
   number:
   event_date:
+  hero_image:
+  hero_alt:
   sets:
     - dj: DJ Skrub Daddy
       slot:
