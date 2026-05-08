@@ -153,7 +153,7 @@
   }
   h1,
   article > small.info {
-    @apply text-center block w-full;
+    @apply text-left block w-full;
   }
   .content h1 {
     white-space: normal;
@@ -166,6 +166,33 @@
   }
   .posts > h2 > a {
     @apply no-underline font-extrabold;
+  }
+  .posts > h2 {
+    @apply mt-3 mb-1;
+  }
+  .posts > p,
+  .posts > small.info {
+    @apply mt-0;
+  }
+  .posts > small.info {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    opacity: 0.75;
+  }
+  .post-meta-icon {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .post-meta-sep {
+    margin: 0 0.15rem;
+    opacity: 0.5;
   }
   footer {
     @apply border-t flex flex-col-reverse justify-between gap-5;

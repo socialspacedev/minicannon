@@ -30,8 +30,11 @@ type: "website"
             </h2>
             <p cms-edit="source">{{ post.data.description }}</p>
             <small class="info">
-              <time datetime="{{ post.date }}">{{ post.date | readableDate }}</time>&nbsp;&nbsp;&ndash;&nbsp;
-              {{ post.content | timeToRead }}&nbsp;to&nbsp;read
+              <svg class="post-meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z" /><path d="M16 3v4" /><path d="M8 3v4" /><path d="M4 11h16" /><path d="M11 15h1" /><path d="M12 15v3" /></svg>
+              <time datetime="{{ post.date }}">{{ post.date | readableDate }}</time>
+              <span class="post-meta-sep" aria-hidden="true">·</span>
+              <svg class="post-meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="12" cy="12" r="9" /><polyline points="12 7 12 12 15 15" /></svg>
+              {{ post.content | timeToRead }}&nbsp;to read
             </small>
             {%- assign hasTags = false -%}
             {%- for tag in post.data.tags -%}{%- unless tag == 'post' -%}{%- assign hasTags = true -%}{%- endunless -%}{%- endfor -%}
