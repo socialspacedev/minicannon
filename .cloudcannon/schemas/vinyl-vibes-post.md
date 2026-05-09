@@ -1,6 +1,6 @@
 ---
 _schema: vinyl_vibes
-title: "Vinyl Vibes DD MMM YYYY"
+title: "Vinyl Vibes (MMM DD)"
 description: "Vinyl Vibes playlists for DD MMM YYYY."
 date:
 type: article
