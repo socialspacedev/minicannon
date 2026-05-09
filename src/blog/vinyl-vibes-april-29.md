@@ -57,7 +57,7 @@ vinyl_vibes:
           youtube: us1UZIr5PK0
           bandcamp:
         - artist: Wet Leg
-          title: Chaise Lougue
+          title: Chaise Longue
           year: 2021
           duration: '3:26'
           buy_url: https://wetleg.bandcamp.com/album/wet-leg
