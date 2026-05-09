@@ -1,6 +1,6 @@
 ---
 _schema: vinyl_vibes
-title: Vinyl Vibes 6 (April 29)
+title: Vinyl Vibes (April 29)
 description: Vinyl Vibes playlists for April 29 2026.
 date: 2026-05-08T17:32:25+12:00
 type: article
@@ -9,10 +9,9 @@ tags:
   - music
   - vinyl-vibes
 vinyl_vibes:
-  number: 6
-  event_date: 2026-04-30T00:00:00+12:00
   hero_image: /img/vinyl-vibes-6.jpg
-  hero_alt: Photo by Grant Mcdougal
+  hero_alt: Photo by Grant McDougall
+  hero_caption: "Photograph: Grant McDougall"
   sets:
     - dj: DJ Skrub Daddy
       slot: 9:15pm

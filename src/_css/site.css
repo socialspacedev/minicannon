@@ -330,8 +330,6 @@ figure picture {
 /* Vinyl Vibes playlist section */
 .vinyl-vibes {
   margin-top: 2.5rem;
-  padding-top: 1.5rem;
-  border-top: 2px solid currentColor;
   font-style: normal;
 }
 .vv-header {

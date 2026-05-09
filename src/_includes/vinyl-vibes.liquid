@@ -2,15 +2,9 @@
 <section class="vinyl-vibes">
   {%- if vinyl_vibes.hero_image -%}
   <div class="vv-hero">
-    {% image vinyl_vibes.hero_image, vinyl_vibes.hero_alt %}
+    {% image vinyl_vibes.hero_image, vinyl_vibes.hero_alt, vinyl_vibes.hero_caption %}
   </div>
   {%- endif -%}
-  <div class="vv-header">
-    <span class="vv-number">Vinyl Vibes #{{ vinyl_vibes.number }}</span>
-    {%- if vinyl_vibes.event_date -%}
-    <span class="vv-event-date">{{ vinyl_vibes.event_date | readableDate }}</span>
-    {%- endif -%}
-  </div>
 
   {%- for set in vinyl_vibes.sets -%}
   <div class="vv-set">

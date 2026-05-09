@@ -9,10 +9,9 @@ tags:
   - music
   - vinyl-vibes
 vinyl_vibes:
-  number:
-  event_date:
   hero_image:
   hero_alt:
+  hero_caption:
   sets:
     - dj: DJ Skrub Daddy
       slot:

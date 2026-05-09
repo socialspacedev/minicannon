@@ -107,14 +107,6 @@ _inputs:
     type: object
     label: Vinyl Vibes session
     cascade: true
-  vinyl_vibes.number:
-    type: number
-    label: "Session #"
-    cascade: true
-  vinyl_vibes.event_date:
-    type: date
-    label: Event date
-    cascade: true
   vinyl_vibes.hero_image:
     type: image
     label: Hero image
@@ -122,6 +114,10 @@ _inputs:
   vinyl_vibes.hero_alt:
     type: text
     label: Hero image alt text
+    cascade: true
+  vinyl_vibes.hero_caption:
+    type: text
+    label: Hero image caption
     cascade: true
   vinyl_vibes.sets:
     type: array
