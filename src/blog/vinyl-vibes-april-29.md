@@ -42,37 +42,39 @@ vinyl_vibes:
       tracks:
         - artist: Bressa Creeting Cake
           title: Billy 2
-          year:
-          duration:
-          buy_url:
-          youtube: FGFK913_2so
+          year: 2018
+          duration: '3:31'
+          buy_url: >-
+            https://www.flyingnun.co.nz/products/fn385-bressa-creeting-cake-bressa-creeting-cake-album1997
+          youtube: 3subJ92z8Zg
           bandcamp:
         - artist: The Monochrome Set
-          title: Avanti (Ten don'ts for honey mooners)
-          year:
-          duration:
-          buy_url:
+          title: Avanti (Ten Don'ts For Honeymooners)
+          year: 2022
+          duration: '3:06'
+          buy_url: >-
+            https://www.discogs.com/release/24530813-The-Monochrome-Set-Volume-Contrast-Brilliance-Sessions-Singles-Vol-1
           youtube: us1UZIr5PK0
           bandcamp:
         - artist: Wet Leg
           title: Chaise Lougue
-          year:
-          duration:
-          buy_url:
+          year: 2021
+          duration: '3:26'
+          buy_url: https://wetleg.bandcamp.com/album/wet-leg
           youtube: Zd9jeJk2UHQ
           bandcamp:
         - artist: Black Angels
           title: Don't play with guns
-          year:
-          duration:
-          buy_url:
+          year: 2013
+          duration: '3:50'
+          buy_url: https://music.apple.com/nz/album/indigo-meadow/1529463866
           youtube: f-4gAjLt9Yo
           bandcamp:
         - artist: Visage
           title: Fade to grey
-          year:
-          duration:
-          buy_url:
+          year: 1980
+          duration: '3:18'
+          buy_url: https://www.therealvisage.com/
           youtube: eZHk4RwIp_g
           bandcamp:
 ---
