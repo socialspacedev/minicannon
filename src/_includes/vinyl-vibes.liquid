@@ -72,6 +72,21 @@
   </div>
   {%- unless forloop.last -%}<hr class="vv-divider">{%- endunless -%}
   {%- endfor -%}
+
+  <footer class="vv-footer">
+    <a class="vv-fb-link" href="https://www.facebook.com/share/g/1BMZqvXHzP/" target="_blank" rel="noopener noreferrer">Vinyl Vibes on Facebook</a>
+    {%- capture other_vv -%}
+      {%- for post in collections["vinyl-vibes"] reversed -%}
+        {%- if post.url != page.url -%}<a href="{{ post.url }}">{{ post.data.title }}</a>{%- endif -%}
+      {%- endfor -%}
+    {%- endcapture -%}
+    {%- if other_vv != "" -%}
+    <div class="vv-more">
+      <span class="vv-more-label">More Vinyl Vibes</span>
+      {{ other_vv }}
+    </div>
+    {%- endif -%}
+  </footer>
 </section>
 
 <script>

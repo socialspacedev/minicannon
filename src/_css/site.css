@@ -502,6 +502,32 @@ summary.vv-track-row:hover .vv-play-icon,
   height: 120px;
   border: 0;
 }
+.vv-footer {
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 2rem;
+  align-items: baseline;
+  font-size: 0.85rem;
+}
+@media (prefers-color-scheme: dark) {
+  .vv-footer {
+    border-top-color: rgba(255, 255, 255, 0.12);
+  }
+}
+.vv-more {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 0.6rem;
+  align-items: baseline;
+}
+.vv-more-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  opacity: 0.55;
+}
 .vv-divider {
   border: 0;
   border-top: 1px solid;
