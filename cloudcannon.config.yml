@@ -143,6 +143,20 @@ _inputs:
     type: text
     label: Song title
     cascade: true
+  "vinyl_vibes.sets[*].tracks[*].year":
+    type: number
+    label: Year
+    cascade: true
+  "vinyl_vibes.sets[*].tracks[*].duration":
+    type: text
+    label: Duration
+    comment: "e.g. 3:45"
+    cascade: true
+  "vinyl_vibes.sets[*].tracks[*].buy_url":
+    type: url
+    label: Buy / Stream URL
+    comment: "Link to Bandcamp, Apple Music, Spotify, etc."
+    cascade: true
   "vinyl_vibes.sets[*].tracks[*].youtube":
     type: text
     label: YouTube video ID

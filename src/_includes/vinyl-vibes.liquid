@@ -1,9 +1,12 @@
 {%- if vinyl_vibes -%}
 <section class="vinyl-vibes">
   {%- if vinyl_vibes.hero_image -%}
-  <div class="vv-hero">
-    {% image vinyl_vibes.hero_image, vinyl_vibes.hero_alt, vinyl_vibes.hero_caption %}
-  </div>
+  <figure class="vv-hero">
+    {% image vinyl_vibes.hero_image, vinyl_vibes.hero_alt %}
+    {%- if vinyl_vibes.hero_caption -%}
+    <figcaption>{{ vinyl_vibes.hero_caption }}</figcaption>
+    {%- endif -%}
+  </figure>
   {%- endif -%}
 
   {%- for set in vinyl_vibes.sets -%}
@@ -17,10 +20,20 @@
     <ol class="vv-tracklist">
       {%- for track in set.tracks -%}
       <li class="vv-track">
-        <span class="vv-track-info"><strong>{{ track.artist }}</strong> — {{ track.title }}</span>
         {%- if track.youtube -%}
         <details class="vv-embed vv-embed--yt">
-          <summary>▶ YouTube</summary>
+          <summary class="vv-track-row">
+            <div class="vv-thumb-wrap">
+              <img class="vv-thumb" src="https://img.youtube.com/vi/{{ track.youtube }}/mqdefault.jpg" alt="{{ track.artist }} – {{ track.title }}" loading="lazy">
+              <span class="vv-play-icon" aria-hidden="true">▶</span>
+            </div>
+            <div class="vv-track-info">
+              <span><strong>{{ track.artist }}</strong> — {{ track.title }}</span>
+              {%- if track.duration or track.year or track.buy_url -%}
+              <span class="vv-track-meta">{{ track.year }}{% if track.year and track.duration %} · {% endif %}{{ track.duration }}{% if track.buy_url %} · <a href="{{ track.buy_url }}" target="_blank" rel="noopener noreferrer">Buy / Stream</a>{% endif %}</span>
+              {%- endif -%}
+            </div>
+          </summary>
           <iframe data-src="https://www.youtube.com/embed/{{ track.youtube }}?rel=0"
                   title="{{ track.artist }} – {{ track.title }}"
                   frameborder="0"
@@ -29,11 +42,29 @@
         </details>
         {%- elsif track.bandcamp -%}
         <details class="vv-embed vv-embed--bc">
-          <summary>▶ Bandcamp</summary>
+          <summary class="vv-track-row">
+            <div class="vv-thumb-wrap vv-thumb-placeholder" aria-hidden="true"></div>
+            <div class="vv-track-info">
+              <span><strong>{{ track.artist }}</strong> — {{ track.title }}</span>
+              {%- if track.duration or track.year or track.buy_url -%}
+              <span class="vv-track-meta">{{ track.year }}{% if track.year and track.duration %} · {% endif %}{{ track.duration }}{% if track.buy_url %} · <a href="{{ track.buy_url }}" target="_blank" rel="noopener noreferrer">Buy / Stream</a>{% endif %}</span>
+              {%- endif -%}
+            </div>
+            <span class="vv-embed-label">▶ Bandcamp</span>
+          </summary>
           <iframe data-src="{{ track.bandcamp }}"
                   title="{{ track.artist }} – {{ track.title }}"
                   seamless></iframe>
         </details>
+        {%- else -%}
+        <div class="vv-track-row">
+          <div class="vv-track-info">
+            <span><strong>{{ track.artist }}</strong> — {{ track.title }}</span>
+            {%- if track.duration or track.year or track.buy_url -%}
+            <span class="vv-track-meta">{{ track.year }}{% if track.year and track.duration %} · {% endif %}{{ track.duration }}{% if track.buy_url %} · <a href="{{ track.buy_url }}" target="_blank" rel="noopener noreferrer">Buy / Stream</a>{% endif %}</span>
+            {%- endif -%}
+          </div>
+        </div>
         {%- endif -%}
       </li>
       {%- endfor -%}
@@ -51,6 +82,12 @@
         if (iframe) {
           iframe.src = iframe.dataset.src;
           iframe.removeAttribute('data-src');
+        }
+      } else {
+        var iframe = details.querySelector('iframe[src]');
+        if (iframe) {
+          iframe.dataset.src = iframe.src;
+          iframe.removeAttribute('src');
         }
       }
     });

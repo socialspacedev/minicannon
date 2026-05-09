@@ -18,6 +18,9 @@ vinyl_vibes:
       tracks:
         - artist:
           title:
+          year:
+          duration:
+          buy_url:
           youtube:
           bandcamp:
     - dj: DJ Skrub Mommy
@@ -25,6 +28,9 @@ vinyl_vibes:
       tracks:
         - artist:
           title:
+          year:
+          duration:
+          buy_url:
           youtube:
           bandcamp:
 ---
