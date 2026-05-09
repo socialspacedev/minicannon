@@ -10,31 +10,31 @@ tags:
   - vinyl-vibes
 vinyl_vibes:
   hero_image: /img/vinyl-vibes-6.jpg
-  hero_alt: Photo by Grant McDougall
-  hero_caption: "Photograph: Grant McDougall"
+  hero_alt: Photo of DJs by Grant McDougall
+  hero_caption: 'Photograph: Grant McDougall'
   sets:
     - dj: DJ Skrub Daddy
       slot: 9:15pm
       tracks:
         - artist: Wire
           title: 23 years later
-          year:
-          duration:
-          buy_url:
+          year: 2026
+          duration: '9:45'
+          buy_url: https://pinkflag.greedbag.com/buy/read-and-burn-23/
           youtube: TAdx4wtyzaM
           bandcamp:
         - artist: Holy Fuck
           title: Evie
-          year:
-          duration:
-          buy_url:
+          year: 2016
+          duration: '4:04'
+          buy_url: https://holyfuck.bandcamp.com/album/event-beat
           youtube: 4aXcoxjJS3U
           bandcamp:
         - artist: The Clean
           title: Big Cat
-          year:
-          duration:
-          buy_url:
+          year: 1990
+          duration: '1:41'
+          buy_url: http://theclean.bandcamp.com/album/vehicle
           youtube: KGvQ60Q2m70
           bandcamp:
     - dj: DJ Skrub Mommy
