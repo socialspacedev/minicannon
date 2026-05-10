@@ -18,11 +18,11 @@ vinyl_vibes:
       tracks:
         - artist: Bailterspace
           title: Dark Blue
-          year: 1993
-          duration:
-          buy_url:
+          year: 1994
+          duration: '3:14'
+          buy_url: https://bailterspace.bandcamp.com/album/vortura
           youtube:
-          bandcamp:
+          bandcamp: https://bandcamp.com/EmbeddedPlayer/album=3021087609
         - artist: Snapper
           title: Eyes that shine
           year: 1990
