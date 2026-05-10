@@ -10,8 +10,8 @@ tags:
   - vinyl-vibes
 vinyl_vibes:
   hero_image: /img/vinyl-vibes-oct-25.jpg
-  hero_alt: Photo of DJ Skrub Daddy
-  hero_caption: 'Photograph: Grant MacDougall'
+  hero_alt: Photo of Grant McDougall the organiser
+  hero_caption: Photograph of Grant McDougall by me
   sets:
     - dj: DJ Skrub Daddy
       slot: '8:00'
