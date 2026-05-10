@@ -57,29 +57,32 @@ vinyl_vibes:
         - artist: The Jesus and Mary Chain
           title: Fall
           year: 1987
-          duration:
-          buy_url:
-          youtube:
+          duration: '2:30'
+          buy_url: >-
+            https://www.discogs.com/release/3031251-The-Jesus-And-Mary-Chain-Darklands
+          youtube: r9HVtmmwHls
           bandcamp:
         - artist: Gary Clail & On-U Sound System
-          title: Human Nature (12" mix)
-          year: 1990
-          duration:
-          buy_url:
-          youtube:
+          title: Human Nature (On the mix)
+          year: 1991
+          duration: '6:12'
+          buy_url: >-
+            https://www.discogs.com/release/10653101-Gary-Clail-On-U-Sound-System-Human-Nature
+          youtube: TvONRGnSkXU
           bandcamp:
         - artist: Neneh Cherry
           title: Buffalo stance
-          year: 1989
-          duration:
-          buy_url:
-          youtube:
+          year: 2020
+          duration: '4:10'
+          buy_url: >-
+            https://emirecords.com/products/raw-like-sushi-vinyl-lp?_pos=1&_sid=20c5d55b9&_ss=r
+          youtube: JWsRz3TJDEY
           bandcamp:
         - artist: Dawn Penn
           title: No no no ('94)
-          year: 1994
-          duration:
-          buy_url:
-          youtube:
+          year: 2022
+          duration: '4:25'
+          buy_url: https://soundsoftheuniverse.com/sjr/product/no-no-no-creator-version
+          youtube: j4vjVetZPpM
           bandcamp:
 ---
