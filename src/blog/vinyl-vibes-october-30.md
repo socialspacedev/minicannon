@@ -21,35 +21,38 @@ vinyl_vibes:
           year: 1994
           duration: '3:14'
           buy_url: https://bailterspace.bandcamp.com/album/vortura
-          youtube:
-          bandcamp: https://bandcamp.com/EmbeddedPlayer/album=3021087609
+          youtube: CKxzWI885Hw
+          bandcamp:
         - artist: Snapper
           title: Eyes that shine
           year: 1990
-          duration:
-          buy_url:
-          youtube:
+          duration: '2:39'
+          buy_url: https://www.discogs.com/release/837272-Snapper-Shotgun-Blossom
+          youtube: Zz2to-QHW6g
           bandcamp:
         - artist: The Max Block
-          title: Came in a can
-          year: 1986
-          duration:
-          buy_url:
-          youtube:
+          title: It came in a can
+          year: 2012
+          duration: '2:57'
+          buy_url: >-
+            https://siltbreeze.bandcamp.com/album/max-block-air-ache-in-the-belly-of-the-leech-lp
+          youtube: DKsC90BdBJ4
           bandcamp:
         - artist: Scorched Earth Policy
           title: Too far gone
-          year: 1988
-          duration:
-          buy_url:
-          youtube:
+          year: 2013
+          duration: '2:35'
+          buy_url: >-
+            https://www.discogs.com/release/4834637-Scorched-Earth-Policy-Going-Thru-A-Hole-In-The-Back-Of-Your-Head
+          youtube: yhlhrZODxhE
           bandcamp:
         - artist: Straitjacket Fits
           title: Hail (live)
-          year: 1988
-          duration:
-          buy_url:
-          youtube:
+          year: 1990
+          duration: '3:57'
+          buy_url: >-
+            https://www.discogs.com/release/1414869-Straitjacket-Fits-Bad-Note-For-A-Heart
+          youtube: jxMkiW0cBus
           bandcamp:
         - artist: The Jesus and Mary Chain
           title: Fall
