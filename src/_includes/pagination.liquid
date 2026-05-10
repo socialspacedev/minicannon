@@ -1,26 +1,53 @@
 <paginate>
-    {% if collections.post %}
-      {% assign previousPost = collections.post | getPreviousCollectionItem %}
-      {% assign nextPost = collections.post | getNextCollectionItem %}
-      {% if nextPost or previousPost %}
-        <ul class="paginate">
-          {% if previousPost %}
-            <li class="paginate-prev">
-              <a href="{{ previousPost.url }}" aria-label="Previous post: {{ previousPost.data.title }}">
-                <span class="paginate-label">← Previous</span>
-                <span class="paginate-title">{{ previousPost.data.title }}</span>
-              </a>
-            </li>
-          {% endif %}
-          {% if nextPost %}
-            <li class="paginate-next">
-              <a href="{{ nextPost.url }}" aria-label="Next post: {{ nextPost.data.title }}">
-                <span class="paginate-label">Next →</span>
-                <span class="paginate-title">{{ nextPost.data.title }}</span>
-              </a>
-            </li>
-          {% endif %}
-        </ul>
-      {% endif %}
+  {% comment %}Default: all posts (shown when no ?tag= param){% endcomment %}
+  {% assign prevAll = collections.post | getPreviousCollectionItem %}
+  {% assign nextAll = collections.post | getNextCollectionItem %}
+  {% if prevAll or nextAll %}
+  <ul class="paginate" data-tag="">
+    {% if prevAll %}
+    <li class="paginate-prev">
+      <a href="{{ prevAll.url }}" aria-label="Previous post: {{ prevAll.data.title }}">
+        <span class="paginate-label">← Previous</span>
+        <span class="paginate-title">{{ prevAll.data.title }}</span>
+      </a>
+    </li>
     {% endif %}
+    {% if nextAll %}
+    <li class="paginate-next">
+      <a href="{{ nextAll.url }}" aria-label="Next post: {{ nextAll.data.title }}">
+        <span class="paginate-label">Next →</span>
+        <span class="paginate-title">{{ nextAll.data.title }}</span>
+      </a>
+    </li>
+    {% endif %}
+  </ul>
+  {% endif %}
+
+  {% comment %}One nav set per tag, hidden by default, revealed by JS when ?tag= matches{% endcomment %}
+  {% for tag in tags %}
+    {% if tag != "post" and collections[tag] %}
+    {% assign prevTag = collections[tag] | getPreviousCollectionItem %}
+    {% assign nextTag = collections[tag] | getNextCollectionItem %}
+    {% if prevTag or nextTag %}
+    <ul class="paginate" data-tag="{{ tag | slugify }}" hidden>
+      {% if prevTag %}
+      <li class="paginate-prev">
+        <a href="{{ prevTag.url }}" aria-label="Previous post: {{ prevTag.data.title }}">
+          <span class="paginate-label">← Previous</span>
+          <span class="paginate-title">{{ prevTag.data.title }}</span>
+        </a>
+      </li>
+      {% endif %}
+      {% if nextTag %}
+      <li class="paginate-next">
+        <a href="{{ nextTag.url }}" aria-label="Next post: {{ nextTag.data.title }}">
+          <span class="paginate-label">Next →</span>
+          <span class="paginate-title">{{ nextTag.data.title }}</span>
+        </a>
+      </li>
+      {% endif %}
+    </ul>
+    {% endif %}
+    {% endif %}
+  {% endfor %}
 </paginate>

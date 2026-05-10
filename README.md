@@ -32,9 +32,18 @@ Personal blog and photography portfolio at [anaru.nz](https://anaru.nz), built w
 - RSS feed, XML sitemap, and `llms.txt` for AEO
 - Structured data (BlogPosting JSON-LD) and Open Graph tags
 - Optimised images served in AVIF/WebP with layout-aware `sizes` attributes
+- Tag-context-aware pagination — navigating from a tag page carries the tag through prev/next links
 - Pagination and tag-filtered post pages
 - 404 and offline pages
 - WCAG 2.1 AA accessibility: skip-to-content link, ARIA landmarks, keyboard navigation throughout
+- **Vinyl Vibes** — dedicated post type for vinyl record night playlists
+  - Two DJ sets per event, each with an ordered tracklist
+  - YouTube thumbnails with zoom-on-hover and lazy-loaded embeds (click to expand, click title to close)
+  - Bandcamp vinyl-pattern placeholder for non-YouTube tracks
+  - Per-track metadata: year, duration, buy/stream link
+  - Hero image with optional photographer caption
+  - Facebook group link footer on every Vinyl Vibes post
+  - Full CloudCannon schema with typed inputs for all fields
 
 ## Local development
 

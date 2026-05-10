@@ -110,6 +110,9 @@
     gap: 2rem;
     @apply ml-auto mr-auto w-full;
   }
+  .paginate[hidden] {
+    display: none;
+  }
   .paginate-prev { flex: 1; }
   .paginate-next { flex: 1; text-align: right; }
   .paginate li {
@@ -516,17 +519,6 @@ summary.vv-track-row:hover .vv-play-icon,
   .vv-footer {
     border-top-color: rgba(255, 255, 255, 0.12);
   }
-}
-.vv-more {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.2rem 0.6rem;
-  align-items: baseline;
-}
-.vv-more-label {
-  font-size: 0.75rem;
-  font-weight: 600;
-  opacity: 0.55;
 }
 .vv-divider {
   border: 0;

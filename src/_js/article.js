@@ -39,6 +39,23 @@ document.querySelectorAll('figure').forEach(figure => {
   caption.appendChild(exifWrap);
 });
 
+// Tag-context-aware pagination
+(function () {
+  const tag = new URLSearchParams(location.search).get('tag');
+  if (!tag) return;
+  const defaultNav = document.querySelector('ul.paginate[data-tag=""]');
+  const tagNav = document.querySelector('ul.paginate[data-tag="' + CSS.escape(tag) + '"]');
+  if (tagNav) {
+    if (defaultNav) defaultNav.hidden = true;
+    tagNav.removeAttribute('hidden');
+    tagNav.querySelectorAll('a').forEach(function (a) {
+      const url = new URL(a.href);
+      url.searchParams.set('tag', tag);
+      a.href = url.toString();
+    });
+  }
+})();
+
 // Lightbox for article images
 (async () => {
   const frames = document.querySelectorAll('.film-frame[data-pswp-src]');
