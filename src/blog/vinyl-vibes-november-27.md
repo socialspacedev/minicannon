@@ -18,7 +18,7 @@ vinyl_vibes:
       tracks:
         - artist: Flaming Lips
           title: Can't get you out of my head
-          year: -30
+          year: 0
           duration:
           buy_url:
           youtube:
