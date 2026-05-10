@@ -38,7 +38,7 @@ vinyl_vibes:
           youtube: KGvQ60Q2m70
           bandcamp:
     - dj: DJ Skrub Mommy
-      slot: '9:30'
+      slot: 9:30pm
       tracks:
         - artist: Bressa Creeting Cake
           title: Billy 2
