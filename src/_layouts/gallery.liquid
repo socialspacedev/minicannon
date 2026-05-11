@@ -1,0 +1,46 @@
+---
+title: Photos
+description: A gallery of photographs from the blog
+keyword: gallery
+type: website
+---
+<!DOCTYPE html>
+<html lang="en">
+  {% include "head-website.liquid" %}
+  <!-- Start Body -->
+  <body>
+    {% include "nav.liquid" %}
+    <main id="main-content" data-pagefind-body>
+      <h1>{{ title }}</h1>
+      {%- assign imgs = collections.galleryImages -%}
+      {%- if imgs and imgs.size > 0 -%}
+        <div class="gallery-grid">
+          {%- for img in imgs -%}
+            <div class="gallery-item"
+                 tabindex="0"
+                 role="button"
+                 aria-label="Open photo{% if img.alt %}: {{ img.alt }}{% endif %}"
+                 data-pswp-src="{{ img.src }}"
+                 data-pswp-width="{{ img.width }}"
+                 data-pswp-height="{{ img.height }}"
+                 data-pswp-thumb="{{ img.thumb }}"
+                 data-pswp-alt="{{ img.alt }}"
+                 data-pswp-caption="{{ img.caption }}"
+                 data-exif-camera="{{ img.camera }}"
+                 data-exif-lens="{{ img.lens }}"
+                 data-exif-film="{{ img.film }}"
+                 data-exif-iso="{{ img.iso }}"
+                 data-post-url="{{ img.postUrl }}">
+              <img src="{{ img.thumb }}" alt="{{ img.alt }}" loading="lazy">
+            </div>
+          {%- endfor -%}
+        </div>
+      {%- else -%}
+        <p>No photos yet.</p>
+      {%- endif -%}
+    </main>
+    {% include "footer.liquid" %}
+  </body>
+  <script type="module" src="/js/gallery.js"></script>
+<!-- End Body -->
+</html>

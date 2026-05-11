@@ -1,0 +1,100 @@
+{%- if vinyl_vibes -%}
+<section class="vinyl-vibes">
+  {%- if vinyl_vibes.hero_image -%}
+  <figure class="vv-hero">
+    {% image vinyl_vibes.hero_image, vinyl_vibes.hero_alt %}
+    {%- if vinyl_vibes.hero_caption -%}
+    <figcaption>{{ vinyl_vibes.hero_caption }}</figcaption>
+    {%- endif -%}
+  </figure>
+  {%- endif -%}
+
+  {%- for set in vinyl_vibes.sets -%}
+  <div class="vv-set">
+    <div class="vv-set-header">
+      <span class="vv-dj-name">{{ set.dj }}</span>
+      {%- if set.slot -%}
+      <span class="vv-slot">{{ set.slot }}</span>
+      {%- endif -%}
+    </div>
+    <ol class="vv-tracklist">
+      {%- for track in set.tracks -%}
+      <li class="vv-track">
+        {%- if track.youtube -%}
+        <details class="vv-embed vv-embed--yt">
+          <summary class="vv-track-row">
+            <div class="vv-thumb-wrap">
+              <img class="vv-thumb" src="https://img.youtube.com/vi/{{ track.youtube }}/mqdefault.jpg" alt="{{ track.artist }} – {{ track.title }}" loading="lazy">
+              <span class="vv-play-icon" aria-hidden="true">▶</span>
+            </div>
+            <div class="vv-track-info">
+              <span><strong>{{ track.artist }}</strong> — {{ track.title }}</span>
+              {%- if track.duration or track.year or track.buy_url -%}
+              <span class="vv-track-meta">{{ track.year }}{% if track.year and track.duration %} · {% endif %}{{ track.duration }}{% if track.buy_url %} · <a href="{{ track.buy_url }}" target="_blank" rel="noopener noreferrer">Buy / Stream</a>{% endif %}</span>
+              {%- endif -%}
+            </div>
+          </summary>
+          <iframe data-src="https://www.youtube.com/embed/{{ track.youtube }}?rel=0"
+                  title="{{ track.artist }} – {{ track.title }}"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </details>
+        {%- elsif track.bandcamp -%}
+        <details class="vv-embed vv-embed--bc">
+          <summary class="vv-track-row">
+            <div class="vv-thumb-wrap vv-thumb-placeholder" aria-hidden="true"></div>
+            <div class="vv-track-info">
+              <span><strong>{{ track.artist }}</strong> — {{ track.title }}</span>
+              {%- if track.duration or track.year or track.buy_url -%}
+              <span class="vv-track-meta">{{ track.year }}{% if track.year and track.duration %} · {% endif %}{{ track.duration }}{% if track.buy_url %} · <a href="{{ track.buy_url }}" target="_blank" rel="noopener noreferrer">Buy / Stream</a>{% endif %}</span>
+              {%- endif -%}
+            </div>
+            <span class="vv-embed-label">▶ Bandcamp</span>
+          </summary>
+          <iframe data-src="{{ track.bandcamp }}"
+                  title="{{ track.artist }} – {{ track.title }}"
+                  seamless></iframe>
+        </details>
+        {%- else -%}
+        <div class="vv-track-row">
+          <div class="vv-track-info">
+            <span><strong>{{ track.artist }}</strong> — {{ track.title }}</span>
+            {%- if track.duration or track.year or track.buy_url -%}
+            <span class="vv-track-meta">{{ track.year }}{% if track.year and track.duration %} · {% endif %}{{ track.duration }}{% if track.buy_url %} · <a href="{{ track.buy_url }}" target="_blank" rel="noopener noreferrer">Buy / Stream</a>{% endif %}</span>
+            {%- endif -%}
+          </div>
+        </div>
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ol>
+  </div>
+  {%- unless forloop.last -%}<hr class="vv-divider">{%- endunless -%}
+  {%- endfor -%}
+
+  <footer class="vv-footer">
+    <a class="vv-fb-link" href="https://www.facebook.com/share/g/1BMZqvXHzP/" target="_blank" rel="noopener noreferrer">Vinyl Vibes on Facebook</a>
+  </footer>
+</section>
+
+<script>
+  document.querySelectorAll('.vv-embed').forEach(function(details) {
+    details.addEventListener('toggle', function() {
+      if (details.open) {
+        var iframe = details.querySelector('iframe[data-src]');
+        if (iframe) {
+          iframe.src = iframe.dataset.src;
+          iframe.removeAttribute('data-src');
+        }
+      } else {
+        var iframe = details.querySelector('iframe[src]');
+        if (iframe) {
+          iframe.dataset.src = iframe.src;
+          iframe.removeAttribute('src');
+        }
+      }
+    });
+  });
+</script>
+{%- endif -%}

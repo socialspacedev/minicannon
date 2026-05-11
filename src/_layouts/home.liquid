@@ -10,53 +10,51 @@ type: website
   <!-- Start Body -->
   <body>
     {% include "nav.liquid" %}
-    <main data-pagefind-body>
-      <div class="content">
+    <main id="main-content">
+      <div class="content" cms-edit="source">
         {{ content }}
       </div>
-      {%- assign recentPosts = collections.post | reverse | slice: 0, 3 -%}
-      {%- if recentPosts and recentPosts.size > 0 -%}
-        <h2 style="font-weight:bold;margin-bottom:8px;">Recent Posts</h2>
-        <div class="recent-posts" style="display:flex;flex-direction:column;gap:14px;margin-bottom:12px;">
-          {%- for post in recentPosts -%}
-            <div style="display:flex;align-items:center;gap:12px;">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-article"
-                width="32"
-                height="32"
-                viewBox="0 0 24 24"
-                stroke-width="2"
-                stroke="currentColor"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                style="vertical-align:top;">
-                <path
-                  stroke="none"
-                  d="M0 0h24v24H0z"
-                  fill="none" />
-                <path d="M8 9h8" /><path d="M8 13h6" /><path d="M9 17h6" /><rect
-                  x="5"
-                  y="3"
-                  width="14"
-                  height="18"
-                  rx="2" />
-              </svg>
-              <div style="display:flex;align-items:center;gap:8px;">
-                <a href="{{ post.url }}">
-                  {{ post.data.title }}
+      {%- assign recentPosts = collections.post | reverse | slice: 0, ui.recentPostsDesktop -%}
+      {%- assign latestPhotoPost = collections.photography | reverse | first -%}
+      <div class="home-grid">
+        {%- if latestPhotoPost and latestPhotoPost.data.thumbnail -%}
+          <a href="/photos.html" class="home-photo" aria-label="Browse the photo gallery">
+            <img src="{{ latestPhotoPost.data.thumbnail }}" alt="Latest photograph from {{ latestPhotoPost.data.title }}" loading="lazy">
+          </a>
+        {%- endif -%}
+        {%- if recentPosts and recentPosts.size > 0 -%}
+          <div class="home-posts">
+            <h2 class="font-bold mb-2">Recent Posts</h2>
+            <div class="recent-posts flex flex-col gap-2">
+              {%- for post in recentPosts -%}
+                <a href="{{ post.url }}" class="{% if forloop.index > ui.recentPostsMobile %}hidden sm:flex{% else %}flex{% endif %} items-center gap-3" cms-edit="source">
+                  {%- if post.data.tags contains 'photography' -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon shrink-0" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2" />
+                    <circle cx="12" cy="13" r="3" />
+                  </svg>
+                  {%- elsif post.data.tags contains 'music' -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon shrink-0" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M3 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                    <path d="M13 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                    <path d="M9 17v-13l10 -2v13" />
+                    <path d="M9 8l10 -2" />
+                  </svg>
+                  {%- else -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon shrink-0" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M8 9h8" /><path d="M8 13h6" /><path d="M9 17h6" /><rect x="5" y="3" width="14" height="18" rx="2" />
+                  </svg>
+                  {%- endif -%}
+                  <span class="post-title">{{ post.data.title }}</span>
                 </a>
-                {% if post.data.description %}
-                  <span class="post-description" style="font-size:0.97em;color:inherit;">
-                    {{ post.data.description }}
-                  </span>
-                {% endif %}
-              </div>
+              {%- endfor -%}
             </div>
-          {%- endfor -%}
-        </div>
-      {%- endif -%}
+          </div>
+        {%- endif -%}
+      </div>
     </main>
     {% include "footer.liquid" %}
   </body>

@@ -3,12 +3,6 @@ title: "Blog"
 description: "Here are my posts"
 keyword: "test"
 type: "website"
-pagination:
-  data: collections.post
-  size: 7
-  alias: posts
-  reverse: true
-  permalink: "split/page-{{ pagination.pageNumber | plus: 1 }}/index.html"
 ---
 
 <!DOCTYPE html>
@@ -17,37 +11,67 @@ pagination:
   <!-- Start Body -->
   <body>
     {% include "nav.liquid" %}
-      <main>
+    <main id="main-content">
+      <div class="content" cms-edit="source">
         {{ content }}
-        <ul class="list-posts">
-          {%- for post in posts -%}
-            <li class="posts">
-              <h2>
-                <a href="{{ post.url }}">{{ post.data.title }}</a>
-              </h2>
-              <p>{{ post.data.description }}</p>
-              <small class="info">
-                <time datetime="{{ post.date }}">{{ post.date | readableDate }}</time>&nbsp;&nbsp;&ndash;&nbsp;
-                {{ post.content | timeToRead }}&nbsp;to&nbsp;read
-              </small>
-            </li>
+      </div>
+      {%- if collections.tagList.size > 0 -%}
+        <div class="all-tags">
+          {%- for tag in collections.tagList -%}
+            <a href="/tags/{{ tag | slugify }}/" class="post-tag">{{ tag }}</a>
           {%- endfor -%}
-        </ul>
-      </main>
-    
-    <!-- Pagination links -->
+        </div>
+      {%- endif -%}
+      <ul class="list-posts">
+        {%- for post in posts -%}
+          <li class="posts">
+            <h2>
+              <a href="{{ post.url }}" cms-edit="source">{{ post.data.title }}</a>
+            </h2>
+            <p cms-edit="source">{{ post.data.description }}</p>
+            <small class="info">
+              <svg class="post-meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z" /><path d="M16 3v4" /><path d="M8 3v4" /><path d="M4 11h16" /><path d="M11 15h1" /><path d="M12 15v3" /></svg>
+              <time datetime="{{ post.date }}">{{ post.date | readableDate }}</time>
+              <span class="post-meta-sep" aria-hidden="true">·</span>
+              <svg class="post-meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="12" cy="12" r="9" /><polyline points="12 7 12 12 15 15" /></svg>
+              {{ post.content | timeToRead }}&nbsp;to read
+            </small>
+            {%- assign hasTags = false -%}
+            {%- for tag in post.data.tags -%}{%- unless tag == 'post' -%}{%- assign hasTags = true -%}{%- endunless -%}{%- endfor -%}
+            {%- if hasTags -%}
+              <div class="post-tags">
+                {%- for tag in post.data.tags -%}
+                  {%- unless tag == 'post' -%}
+                    <a href="/tags/{{ tag | slugify }}/" class="post-tag">{{ tag }}</a>
+                  {%- endunless -%}
+                {%- endfor -%}
+              </div>
+            {%- endif -%}
+          </li>
+        {%- endfor -%}
+      </ul>
+    </main>
+
     <paginate>
-      {% if pagination.pageLinks.length > 1 %}
-            <ul class="paginate">
-            {% if pagination.previousPageLink %}
-              <li><a href="{{ pagination.previousPageHref }}">&lt; Previous</a></li>
-              {% else %}<li>&nbsp;</li>
-            {% endif %}
-            {% if pagination.nextPageLink %}
-              <li><a href="{{ pagination.nextPageHref }}">Next &gt;</a></li>
-              {% else %}<li>&nbsp;</li>
-            {% endif %}
-          </ul>
+      {% if pagination.href.previous or pagination.href.next %}
+        <ul class="paginate">
+          {% if pagination.href.next %}
+            <li class="paginate-prev">
+              <a href="{{ pagination.href.next }}" aria-label="Older posts">
+                <span class="paginate-label">← Older</span>
+                <span class="paginate-title">Older posts</span>
+              </a>
+            </li>
+          {% endif %}
+          {% if pagination.href.previous %}
+            <li class="paginate-next">
+              <a href="{{ pagination.href.previous }}" aria-label="Newer posts">
+                <span class="paginate-label">Newer →</span>
+                <span class="paginate-title">Newer posts</span>
+              </a>
+            </li>
+          {% endif %}
+        </ul>
       {% endif %}
     </paginate>
     {% include "footer.liquid" %}

@@ -1,0 +1,147 @@
+(async () => {
+  const els = document.querySelectorAll('.gallery-item[data-pswp-src]');
+  if (els.length === 0) return;
+
+  const link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = 'https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe.css';
+  document.head.appendChild(link);
+
+  const items = Array.from(els).map(el => ({
+    src: el.dataset.pswpSrc,
+    width: parseInt(el.dataset.pswpWidth),
+    height: parseInt(el.dataset.pswpHeight),
+    thumb: el.dataset.pswpThumb,
+    alt: el.dataset.pswpAlt || '',
+    caption: el.dataset.pswpCaption || '',
+    camera: el.dataset.exifCamera || '',
+    lens: el.dataset.exifLens || '',
+    film: el.dataset.exifFilm || '',
+    iso: el.dataset.exifIso || '',
+    postUrl: el.dataset.postUrl || ''
+  }));
+
+  const { default: PhotoSwipeLightbox } = await import('https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe-lightbox.esm.min.js');
+
+  const lightbox = new PhotoSwipeLightbox({
+    dataSource: items,
+    pswpModule: () => import('https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe.esm.min.js'),
+    bgOpacity: 0.92,
+    showHideAnimationType: 'fade',
+    zoom: false,
+  });
+
+  lightbox.on('uiRegister', function () {
+    lightbox.pswp.ui.registerElement({
+      name: 'filmstrip',
+      order: 17,
+      isButton: false,
+      appendTo: 'root',
+      onInit: (el, pswp) => {
+        el.className = 'pswp__filmstrip';
+        items.forEach((item, i) => {
+          const btn = document.createElement('button');
+          btn.className = 'pswp__filmstrip-thumb';
+          btn.setAttribute('aria-label', item.alt || `Photo ${i + 1}`);
+          const img = document.createElement('img');
+          img.src = item.thumb || item.src;
+          img.alt = '';
+          img.loading = 'lazy';
+          btn.appendChild(img);
+          btn.addEventListener('click', () => pswp.goTo(i));
+          el.appendChild(btn);
+        });
+
+        const updateActive = () => {
+          el.querySelectorAll('.pswp__filmstrip-thumb').forEach((btn, i) => {
+            btn.classList.toggle('active', i === pswp.currIndex);
+          });
+          const active = el.querySelector('.pswp__filmstrip-thumb.active');
+          if (active) active.scrollIntoView({ block: 'nearest', inline: 'center', behavior: 'smooth' });
+        };
+
+        pswp.on('change', updateActive);
+        pswp.on('afterInit', updateActive);
+      }
+    });
+
+    lightbox.pswp.ui.registerElement({
+      name: 'caption-exif',
+      order: 9,
+      isButton: false,
+      appendTo: 'wrapper',
+      onInit: (el, pswp) => {
+        el.className = 'pswp__caption-area';
+
+        const captionText = document.createElement('span');
+        captionText.className = 'pswp__caption-text';
+
+        const exifWrap = document.createElement('span');
+        exifWrap.className = 'pswp__exif-info';
+
+        const panel = document.createElement('div');
+        panel.className = 'pswp__exif-panel';
+
+        const btn = document.createElement('button');
+        btn.className = 'pswp__exif-btn';
+        btn.textContent = 'ⓘ';
+        btn.setAttribute('aria-label', 'Photo info');
+
+        exifWrap.appendChild(panel);
+        exifWrap.appendChild(btn);
+        el.appendChild(captionText);
+        el.appendChild(exifWrap);
+
+        btn.addEventListener('click', e => {
+          e.stopPropagation();
+          exifWrap.classList.toggle('is-open');
+        });
+
+        const update = () => {
+          const item = items[pswp.currIndex] || {};
+          exifWrap.classList.remove('is-open');
+          panel.textContent = '';
+
+          captionText.textContent = item.caption || '';
+
+          const exifFields = [
+            item.camera,
+            item.lens,
+            item.film,
+            item.iso ? 'ISO ' + item.iso : ''
+          ].filter(Boolean);
+
+          const hasContent = exifFields.length > 0 || item.postUrl;
+          exifWrap.style.display = hasContent ? '' : 'none';
+
+          exifFields.forEach(field => {
+            const p = document.createElement('p');
+            p.textContent = field;
+            panel.appendChild(p);
+          });
+          if (item.postUrl) {
+            const a = document.createElement('a');
+            a.href = item.postUrl;
+            a.textContent = 'View post →';
+            panel.appendChild(a);
+          }
+        };
+
+        pswp.on('change', update);
+        pswp.on('afterInit', update);
+      }
+    });
+  });
+
+  lightbox.init();
+
+  els.forEach((el, i) => {
+    el.addEventListener('click', () => lightbox.loadAndOpen(i));
+    el.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        lightbox.loadAndOpen(i);
+      }
+    });
+  });
+})();

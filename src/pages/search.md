@@ -12,5 +12,6 @@ eleventyNavigation:
   key: '{{ title | slugify }}'
   title: Search
   order: 4
+  hide: true
 ---
 # Search

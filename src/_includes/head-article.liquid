@@ -2,39 +2,41 @@
 {% assign pageTitle = title | default: '' -%}
 {% assign pageTitle = pageTitle | append: ' - ' | append: meta.siteName -%}
 
-<!-- Automatic Decscription -->
+<!-- Automatic Description -->
 {% assign pageDescription = description | default: '' -%}
 {% assign pageDescription = pageDescription | default: meta.siteDescription -%}
 
-<!-- Page URL -->
-{% assign pageUrls = meta.url | append: page.url -%}
-
 {% include "head.liquid" %}
-    <!-- Schema json -->
+    <!-- Open Graph image -->
+    {% if thumbnail %}<meta property="og:image" content="{{ meta.url }}{{ thumbnail }}" />{% endif %}
+    <!-- Schema JSON-LD -->
     <script type="application/ld+json">
         {
-            "@context": "http://schema.org",
-            "@type": "NewsArticle",
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
             "mainEntityOfPage": {
                 "@type": "WebPage",
-                "@id": "{{ pageUrls }}"
+                "@id": "{{ meta.url }}{{ page.url }}"
             },
-            "headline": "{{ pageTitle }}",
-            "datePublished": "{{ page.date }}",
-            "dateModified": "{{ page.date }}",
+            "headline": "{{ title | escape }}",
+            "url": "{{ meta.url }}{{ page.url }}",
+            "datePublished": "{{ page.date | date: '%Y-%m-%dT%H:%M:%SZ' }}",
+            "dateModified": "{{ page.date | date: '%Y-%m-%dT%H:%M:%SZ' }}",
             "author": {
                 "@type": "Person",
-                "name": "{{ meta.authorName }}"
+                "name": "{{ meta.authorName }}",
+                "url": "{{ meta.url }}"
             },
             "publisher": {
                 "@type": "Organization",
                 "name": "{{ meta.siteName }}",
-                "logo": {
-                    "@type": "ImageObject",
-                    "url": "{{ meta.url }}img/chill-ape.png"
-                }
+                "url": "{{ meta.url }}"
             },
-            "description": "{{ pageDescription }}"
+            "description": "{{ pageDescription | escape }}"{% if thumbnail %},
+            "image": {
+                "@type": "ImageObject",
+                "url": "{{ meta.url }}{{ thumbnail }}"
+            }{% endif %}
         }
     </script>
 </head>

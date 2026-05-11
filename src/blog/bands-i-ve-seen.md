@@ -3,10 +3,8 @@ _schema: default
 title: Bands I've seen
 description: Some bands I've seen over the years
 tags:
-  - post
   - music
 date: 2014-01-01T14:19:00+13:00
-published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
@@ -99,6 +97,7 @@ permalink: blog/{{ title | slugify }}.html
 
 ### **International acts**
 
+* Supergrass
 * Holy Fuck
 * Stereolab
 * The Brian Jonestown Massacre
@@ -113,6 +112,7 @@ permalink: blog/{{ title | slugify }}.html
 * The Cramps
 * Yo La Tengo
 * Neutral Milk Hotel
+* Super Chunk
 * Merzbow
 * Keiji Haino
 * Damo Suzuki
@@ -142,5 +142,5 @@ permalink: blog/{{ title | slugify }}.html
 * Pavement
 
 ```
-Last updated: 22/03/2024
+Last updated: 3/5/2026
 ```

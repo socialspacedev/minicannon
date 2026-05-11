@@ -1,11 +1,12 @@
+<a href="#main-content" class="skip-link">Skip to content</a>
 <header>
     <!-- Title -->
     <hgroup>
-        <p class="title"><a href="{{ meta.url }}">{{ meta.siteName }}</a></p>
+        <p class="title"><a href="/">{{ meta.siteName }}</a></p>
         <p class="motto">{{ meta.motto }}</p>
     </hgroup>
     <!-- Navigation -->
-    <nav>
+    <nav aria-label="Main navigation">
         {% assign navPages = collections.all | eleventyNavigation %}
         <ul>
             {%- for entry in navPages %}
@@ -14,7 +15,17 @@
                 <a href="{{ entry.url | url }}">{{ entry.title }}</a>
             </li>
             {% endif %}
-            {%- endfor %}   
+            {%- endfor %}
+            <li><a href="#search" id="search-open" role="button" aria-haspopup="dialog" aria-label="Open search">Search</a></li>
         </ul>
     </nav>
 </header>
+
+<dialog id="search-dialog" aria-label="Search">
+  <button id="search-close" class="search-close-btn" aria-label="Close search">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+  </button>
+  <div id="search-modal-ui"></div>
+</dialog>
+
+<script defer src="/js/search.js"></script>

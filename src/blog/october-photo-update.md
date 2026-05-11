@@ -3,17 +3,16 @@ _schema: default
 title: October photo dump
 description: Photos from three recent film developments.
 tags:
-  - post
   - photography
 date: 2025-10-10T14:25:10+13:00
-published: true
+thumbnail: /img/brisbane-botanic-gardens-flower-1.jpg
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
 ---
 The following photos were taken from June-to-August this year on my trusty Olympus OM 1. There's a mix of locations including Dunedin, Auckland and Brisbane using three different b&w films.
 
-{% image, "/img/three-films.jpg" "Three films and canisters" "30em 50vw 100vw" %}
+{% image, "/img/three-films.jpg" "Three films and canisters" %}
 
 These are:
 
@@ -29,28 +28,28 @@ I also experimented with a new Tamron 70-200 F/2.8 lens which judging by the res
 
 *The following three photos were taken at the Brisbane Botanic gardens using the Ortho Plus. I think they are the most successful in terms of sharpness and contrast.*
 
-{% image, "/img/lony550-lony550-r1-e032.jpg" "Flower at the Botanic Gardens Brisbane" "30em 50vw 100vw" %}
+{% image, "/img/brisbane-botanic-gardens-flower-1.jpg" "Flower at the Botanic Gardens Brisbane" "Flower 1 at Brisbane Botanic Gardens" "Olympus OM-1" "Zuiko 50mm f/1.8" "Ilford Ortho Plus" "80" %}
 
-{% image, "/img/lony550-lony550-r1-e035.jpg" "Another flower at the Botanic Gardens Brisbane" "30em 50vw 100vw" %}
+{% image, "/img/brisbane-botanic-gardens-flower-2.jpg" "Another flower at the Botanic Gardens Brisbane" "Flower 2 at Brisbane Botanic Gardens" "Olympus OM-1" "Zuiko 50mm f/1.8" "Ilford Ortho Plus" "80" %}
 
-{% image, "/img/lony550-lony550-r1-e037-1.jpg" "Third flower at the Brisbane Botanic Gardens" "30em 50vw 100vw" %}
+{% image, "/img/brisbane-botanic-gardens-flower-3.jpg" "Third flower at the Brisbane Botanic Gardens" "Flower 3 at Brisbane Botanic Gardens" "Olympus OM-1" "Zuiko 50mm f/1.8" "Ilford Ortho Plus" "80" %}
 
 *This is my almost 90 year old father-in-law on a day trip out to Muriwai looking for gannets (there weren't any). This was taken using FP4 Plus.*
 
-{% image, "/img/long012-long012-r1-e017.jpg" "Father-in-law at Muriwai" "30em 50vw 100vw" %}
+{% image, "/img/muriwai-gannet-colony.jpg" "Father-in-law at Muriwai" "Muriwai searching for gannets" "Olympus OM-1" "Zuiko 50mm f/1.8" "Ilford FP4 Plus" "125" %}
 
 *These two city scapes are from the excellent Brisbane Cultural Precinct overlooking the river. Both these are Ortho Plus.*
 
-{% image, "/img/lony550-lony550-r1-e029.jpg" "Brisbane cityscape" "30em 50vw 100vw" %}
+{% image, "/img/brisbane-cityscape-cultural-precinct.jpg" "Brisbane cityscape" "Brisbane cityscape from the Cultural Precinct" "Olympus OM-1" "Zuiko 50mm f/1.8" "Ilford Ortho Plus" "80" %}
 
-{% image, "/img/lony550-lony550-r1-e027.jpg" "Brisbane city from the arts centre" "30em 50vw 100vw" %}
+{% image, "/img/brisbane-cityscape-arts-centre.jpg" "Brisbane city from the arts centre" "Brisbane cityscape 2 from the arts centre" "Olympus OM-1" "Zuiko 50mm f/1.8" "Ilford Ortho Plus" "80" %}
 
 *Finally, a couple of local sporting action shots. The first, uses Tri-X and the zoom lens to capture my daughter playing her hockey final.*
 
-{% image, "/img/lony570-lony570-r1-e013.jpg" "Daughter playing her hockey final" "30em 50vw 100vw" %}
+{% image, "/img/hockey-final-action.jpg" "Daughter playing her hockey final" "Hockey final action" "Olympus OM-1" "Tamron 80mm-250mm f/3.8-4.5" "Kodak Tri-X 400" "400" %}
 
 *The second, is masters football at its finest at Ocean Grove using the FP4 Plus.*
 
-{% image, "/img/long012-long012-r1-e032.jpg" "Old man football at Ocean Grove" "30em 50vw 100vw" %}
+{% image, "/img/masters-football-ocean-grove.jpg" "Old man football at Ocean Grove" "Masters football at Ocean Grove" "Olympus OM-1" "Zuiko 50mm f/1.8" "Ilford FP4 Plus" "125" %}
 
 Of of the three emulsions, I love the dark 'n' moody impact of Ortho Plus and will get more. In terms of development and scanning, I currently use <a href="https://splendid.nz/" title="Splendid photo processing" target="_blank" rel="noopener">Splendid</a> – who I recommend.

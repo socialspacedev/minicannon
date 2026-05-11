@@ -12,8 +12,12 @@ type: "website"
   <body>
     {% include "nav.liquid" %}
       <main data-pagefind-body>
-      {{ content }}
+      <div cms-edit="source">
+        {{ content }}
+      </div>
       <!-- Pagefind -->
+      <script src="/pagefind/pagefind-ui.js" defer></script>
+      <link rel="stylesheet" href="/css/pagefind.css" />
       <div id="search"></div>
       <script>
             window.addEventListener('DOMContentLoaded', (event) => {

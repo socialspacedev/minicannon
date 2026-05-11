@@ -3,16 +3,13 @@ _schema: default
 title: Reacher round
 description: 'Mission complete: Every Reacher book read.'
 tags:
-  - post
-  - reacher
   - books
 date: 2024-01-01T17:00:00+13:00
-published: true
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
 ---
-{% image "/img/reacher-books.png", "All Reacher books in chronological order.", "30em 50vw 100vw" %}
+{% image "/img/reacher-books.png", "All Reacher books in chronological order." %}
 
 Before January 2022 I had never read a [Jack Reacher]() novel. I had seen the films featuring Tom Cruise as the titular character and series 1 of the much better [TV show](). On the back of reading just one book, I set myself the arbitrary goal of reading the remaining books back-to-back.
 

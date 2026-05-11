@@ -1,0 +1,9 @@
+---
+pagination:
+  data: collections.tagList
+  size: 1
+  alias: tag
+permalink: /tags/{{ tag | slugify }}/
+layout: tag.liquid
+eleventyExcludeFromCollections: true
+---
