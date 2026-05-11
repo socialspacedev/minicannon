@@ -9,4 +9,4 @@ type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
 ---
-{% image "/img/vespa-dj.jpg", "BlueVespa with a combined sidecar and DJ booth.", "30em 50vw 100vw" %}
+{% image "/img/vespa-dj.jpg", "BlueVespa with a combined sidecar and DJ booth." %}
