@@ -4,7 +4,7 @@ title: An Afternoon With Victor Dimisich
 description: Brand new release of never heard before demos of the Victor Dimisich band.
 tags:
   - music
-date: 2026-05-12T14:56:00+12:00
+date: 2026-05-11T14:56:00+12:00
 thumbnail:
 type: article
 layout: article.liquid
