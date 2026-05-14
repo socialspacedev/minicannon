@@ -10,12 +10,20 @@ type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
 ---
-<a href="https://www.audioculture.co.nz/profile/the-terminals" title="The Terminals on Audioculture" target="_blank" rel="noopener">Stephen Cogle</a> (music/vocals/guitar) and <a href="https://www.undertheradar.co.nz/news/11802/Interview-Peter-Stapleton-of-The-Terminals.utr" title="One of the last interviews with Peter" target="_blank" rel="noopener">Peter Stapleton</a> (lyrics/drums) are one of my absolute favourite songwriting teams. Their work can be heard through various bands such as Victor Dimisich Band, The Terminals, Scorched Earth Policy, -2, and more. Native Waiter, included on this release, is one of my top ever tunes and has been marked for my funeral.
+<a href="https://www.audioculture.co.nz/profile/the-terminals" title="The Terminals on Audioculture" target="_blank" rel="noopener">Stephen Cogle</a> (music/vocals/guitar) and <a href="https://www.undertheradar.co.nz/news/11802/Interview-Peter-Stapleton-of-The-Terminals.utr" title="One of the last interviews with Peter" target="_blank" rel="noopener">Peter Stapleton</a> (lyrics/drums) are one of my absolute favourite songwriting teams and musicians. Their compositions can be heard through essential bands such as Victor Dimisich Band, <a href="https://www.audioculture.co.nz/profile/the-terminals" title="Audioculture profile on The Terminals" target="_blank" rel="noopener">The Terminals</a>, <a href="https://thebigcity.co.nz/artists/s/scorched-earth-policy/" title="Profile on SEP at Bigcity" target="_blank" rel="noopener">Scorched Earth Policy</a>, -2, and more. Sadly Peter died in March 2020 and he is missed.
 
-Their work is dark, haunting and beautiful and this <a href="https://siltbreeze.bandcamp.com/album/stephen-cogle-w-peter-stapleton-an-afternoon-with-victor-dimisich" title="Siltbreeze Bandcamp for this album" target="_blank" rel="noopener">collection</a> is no different. It comprises demos of VDB's tunes in which Peter and Stephen work through nascent arrangements, preparing for  the recording of their one and only EP from 1982 (live recordings came later). The chatter between songs suggests friends simply hanging out in an afternoon, casually delivering a stunning set of unique and timeless songs.
+{% image, "/img/vdb-afternoon-back.jpg" "Back view of album" %}
+
+Their work is dark, haunting, beautiful, and surprisingly funny – and this new <a href="https://siltbreeze.bandcamp.com/album/stephen-cogle-w-peter-stapleton-an-afternoon-with-victor-dimisich" title="Siltbreeze Bandcamp for this album" target="_blank" rel="noopener">collection</a> is no different. "An Afternoon with Victor Dimisich: Stephen Cogle/Peter Stapleton 1981" comprises demos of VDB's tunes in which Peter and Stephen work through nascent arrangements for use by the Pin Group, and I suspect the posthumous recording of the one and only <a href="https://www.flyingnun.co.nz/blogs/man-on-the-verge-of-a-nervous-breakdown/the-story-of-the-victor-dimisich-band-12-ep-1983" title="Story of the ep recording" target="_blank" rel="noopener">VDB EP</a> in 1983. The chatter between songs suggests friends simply hanging out in an afternoon, casually delivering a stunning set of unique and timeless songs over a crate of beer (well Roy Montgomery has said as much).
+
+Native Waiter, included on this release, is one of my top ever tunes and has been marked for my funeral.
+
+https://www.youtube.com/watch?v=ybH2XesbeMQ
 
 Over the years, <a href="https://siltbreeze.bandcamp.com/" title="Bandcamp homepage for Siltbreeze" target="_blank" rel="noopener">Siltbreeze</a> has been a great supporter of obscure and amazing NZ music, bringing to light hard to find classics such as this. Often featuring this songwriting team or others in their orbit.
 
 {% bandcamp, "https://bandcamp.com/EmbeddedPlayer/album=684066604/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" %}
 
-This is a "one time pressing" that also features detailed liner notes from Bruce Russell. I haven't seen the physical release yet but when I do, I'm getting it as should you.
+This is a "one time pressing" that also features detailed liner notes from Bruce Russell. At time of writing, it isn't clear where you can buy this release other than directly from Siltbreeze.
+
+Either way, I'll get it as should you.
