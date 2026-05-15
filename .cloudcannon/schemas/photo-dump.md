@@ -1,7 +1,7 @@
 ---
 _schema: photo_dump
-title: "Photo dump (MMM YYYY)"
-description: "Film photography from MMM YYYY."
+title: "MMM photo dump"
+description: "Latest developments - emulsion"
 tags:
   - photography
 date:
