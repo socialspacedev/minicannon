@@ -18,11 +18,11 @@ Their work is haunting, beautiful, and surprisingly funny – and this new <a hr
 
 Native Waiter, included on this release, is one of my top ever tunes and has been marked for my funeral. Here's the original version below.
 
-{% raw %}https://www.youtube.com/watch?v=ybH2XesbeMQ{% endraw %}
+{% youtube "https://www.youtube.com/watch?v=ybH2XesbeMQ" %}
 
 Over the years, <a href="https://siltbreeze.bandcamp.com/" title="Bandcamp homepage for Siltbreeze" target="_blank" rel="noopener">Siltbreeze</a> has been a great supporter of obscure and amazing NZ music, bringing to light hard to find classics such as this. Often featuring this songwriting team or others in their orbit.
 
-{% bandcamp, "https://bandcamp.com/EmbeddedPlayer/album=684066604/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" %}
+{% bandcamp, "https://siltbreeze.bandcamp.com/album/stephen-cogle-w-peter-stapleton-an-afternoon-with-victor-dimisich" %}
 
 This is a "one time pressing" that also features detailed liner notes from Bruce Russell. At time of writing, it isn't clear where you can buy this release other than directly from <a href="https://siltbreeze.bandcamp.com/album/stephen-cogle-w-peter-stapleton-an-afternoon-with-victor-dimisich" title="Buy this VDB release from the Siltbreeze Bandcamp" target="_blank" rel="noopener">Siltbreeze</a>.
 

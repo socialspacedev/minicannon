@@ -11,4 +11,4 @@ permalink: blog/{{ title | slugify }}.html
 ---
 Caribou (<a href="https://en.wikipedia.org/wiki/Dan_Snaith" title="Wikipedia page for Dan Snaith" target="_blank" rel="noopener">Dan Snaith</a>) uses M\|A\|R\|R\|S 80s banger <a href="https://www.youtube.com/watch?v=w9gOQgfPW4Y" title="Video for Pump up the Volume" target="_blank" rel="noopener">Pump up the Volume</a> as a starting point to create a worthy evolution and refinement of that iconic tune. My only advice is to play it loud, dance around – rinse and repeat 🙌.
 
-{% bandcamp "https://bandcamp.com/EmbeddedPlayer/album=800501479/size=large/bgcol=ffffff/linkcol=0687f5/license_id=3962/transparent=true/" %}
+{% bandcamp "https://caribouband.bandcamp.com/album/volume" %}

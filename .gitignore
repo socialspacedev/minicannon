@@ -11,3 +11,6 @@ src/_11ty/_social
 
 # Idee
 .idea
+
+# eleventy-fetch cache
+.cache

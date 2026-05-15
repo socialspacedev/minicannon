@@ -29,6 +29,6 @@ Here's a selection of other articles, artefacts, and personal perspectives:
 
 Finally, here he is in his final band Shellac practicing in 2010. His intensity is evident and it's clear this trio have played together a long time.
 
-{% raw %}https://www.youtube.com/watch?v=e32lT592vfI{% endraw %}
+{% youtube "https://www.youtube.com/watch?v=e32lT592vfI" %}
 
 RIP Steve Albini.

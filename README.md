@@ -8,6 +8,7 @@ Personal blog and photography portfolio at [anaru.nz](https://anaru.nz), built w
   - **[Pagefind](https://pagefind.app/)** — static search
 - **[Eleventy](https://www.11ty.dev/)** — static site generator
   - [eleventy-img](https://github.com/11ty/eleventy-img) — image optimisation (AVIF, WebP, JPEG at multiple widths)
+  - [eleventy-fetch](https://github.com/11ty/eleventy-fetch) — cached build-time HTTP fetching (used for Bandcamp artwork)
   - [eleventy-plugin-rss](https://github.com/11ty/eleventy-plugin-rss) — RSS feed
   - [eleventy-navigation](https://github.com/11ty/eleventy-navigation) — site navigation
   - [eleventy-plugin-time-to-read](https://github.com/JKC-Codes/eleventy-plugin-time-to-read) — read time estimates
@@ -31,11 +32,13 @@ Personal blog and photography portfolio at [anaru.nz](https://anaru.nz), built w
 - Scheduled posts — posts with a future date are excluded from production builds until that date
 - RSS feed, XML sitemap, and `llms.txt` for AEO
 - Structured data (BlogPosting JSON-LD) and Open Graph tags
-- Optimised images served in AVIF/WebP with layout-aware `sizes` attributes
+- Optimised images served in AVIF/WebP with layout-aware `sizes` attributes; all article images are full width regardless of orientation
 - Tag-context-aware pagination — navigating from a tag page carries the tag through prev/next links
 - Pagination and tag-filtered post pages
 - 404 and offline pages
 - WCAG 2.1 AA accessibility: skip-to-content link, ARIA landmarks, keyboard navigation throughout
+- **YouTube embeds** — `{% youtube %}` shortcode accepts a full URL or bare video ID; CloudCannon snippet included
+- **Bandcamp embeds** — `{% bandcamp %}` shortcode accepts a Bandcamp page URL, fetches album artwork and embed details at build time (cached for 30 days via eleventy-fetch), and renders full-width artwork with the Bandcamp player overlaid at the bottom
 - **Vinyl Vibes** — dedicated post type for vinyl record night playlists
   - Two DJ sets per event, each with an ordered tracklist
   - YouTube thumbnails with zoom-on-hover and lazy-loaded embeds (click to expand, click title to close)

@@ -15,6 +15,6 @@ Their first album <a href="https://www.popmatters.com/pale-saints-comforts-of-ma
 
 "You Tear the World in two" is probably my favourite from The Comforts of Madness. But to be honest the whole thing is great and has interstitial noises between each track so no silence.
 
-{% raw %}https://www.youtube.com/watch?v=L6tH3b36kzE{% endraw %}
+{% youtube "https://www.youtube.com/watch?v=L6tH3b36kzE" %}
 
 &nbsp;

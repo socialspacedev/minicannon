@@ -37,9 +37,82 @@ module.exports = function (eleventyConfig) {
   // Show the year in the footer
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
-  // Bandcamp embed
-  eleventyConfig.addShortcode("bandcamp", (src) => {
-    return `<iframe id="bandcamp" style="border: 0; width: 100%; height: 522px;" src="${src}" seamless=""></iframe>`;
+  // Bandcamp embed — accepts a Bandcamp page URL, fetches artwork from page HTML at build time
+  eleventyConfig.addShortcode("bandcamp", async (pageUrl) => {
+    const { default: EleventyFetch } = await import("@11ty/eleventy-fetch");
+    const esc = s => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    const decodeHtml = s => String(s).replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+
+    let thumbnail = '', embedSrc = '', label = '';
+    try {
+      const buf = await EleventyFetch(pageUrl, {
+        duration: "30d",
+        type: "buffer",
+        fetchOptions: {
+          headers: {
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            "Accept-Language": "en-US,en;q=0.5",
+          }
+        }
+      });
+      const html = buf.toString('utf8');
+
+      const imgMatch = html.match(/<meta\s+property="og:image"\s+content="([^"]+)"/i)
+                    || html.match(/<meta\s+content="([^"]+)"\s+property="og:image"/i);
+      if (imgMatch) thumbnail = imgMatch[1];
+
+      const titleMatch = html.match(/<meta\s+property="og:title"\s+content="([^"]+)"/i)
+                      || html.match(/<meta\s+content="([^"]+)"\s+property="og:title"/i);
+      if (titleMatch) label = decodeHtml(titleMatch[1]);
+
+      // Try to find an EmbeddedPlayer URL already in the page source
+      const embedMatch = html.match(/https:\/\/bandcamp\.com\/EmbeddedPlayer\/[^\s"'<\\]+/);
+      if (embedMatch) {
+        embedSrc = embedMatch[0].replace(/\\"/g, '');
+      } else {
+        // Derive from numeric IDs in page JSON data
+        const albumIdMatch = html.match(/"album_id"\s*:\s*(\d+)/);
+        const trackIdMatch = html.match(/"track_id"\s*:\s*(\d+)/);
+        if (albumIdMatch) {
+          embedSrc = `https://bandcamp.com/EmbeddedPlayer/album=${albumIdMatch[1]}/`;
+        } else if (trackIdMatch) {
+          embedSrc = `https://bandcamp.com/EmbeddedPlayer/track=${trackIdMatch[1]}/`;
+        }
+      }
+      if (embedSrc) {
+        // Force a clean compact player overlaid on the artwork
+        embedSrc = embedSrc
+          .replace(/size=\w+\//i, 'size=small/')
+          .replace(/artwork=\w+\//i, 'artwork=none/')
+          .replace(/bgcol=[a-f0-9]+\//i, 'bgcol=1a1a1a/')
+          .replace(/linkcol=[a-f0-9]+\//i, 'linkcol=ffffff/')
+          .replace(/transparent=true\//i, '');
+        if (!embedSrc.includes('size='))      embedSrc += 'size=small/';
+        if (!embedSrc.includes('artwork='))   embedSrc += 'artwork=none/';
+        if (!embedSrc.includes('tracklist=')) embedSrc += 'tracklist=false/';
+        if (!embedSrc.includes('bgcol='))     embedSrc += 'bgcol=1a1a1a/';
+        if (!embedSrc.includes('linkcol='))   embedSrc += 'linkcol=ffffff/';
+      }
+    } catch (e) {
+      console.warn(`[bandcamp] Failed to fetch ${pageUrl}: ${e.message}`);
+    }
+
+    if (!thumbnail || !embedSrc) {
+      return `<p><a href="${esc(pageUrl)}" target="_blank" rel="noopener noreferrer">Listen on Bandcamp ↗</a></p>`;
+    }
+
+    return `<div class="bc-embed">
+  <img src="${esc(thumbnail)}" alt="${esc(label)}" loading="lazy">
+  <iframe class="bc-iframe" src="${esc(embedSrc)}" title="${esc(label)}" seamless></iframe>
+</div>`;
+  });
+
+  // YouTube embed — accepts a full YouTube URL or bare video ID
+  eleventyConfig.addShortcode("youtube", (urlOrId) => {
+    const match = String(urlOrId).match(/(?:youtube\.com\/(?:watch\?v=|embed\/|shorts\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
+    const id = match ? match[1] : urlOrId;
+    return `<div class="youtube-embed"><iframe src="https://www.youtube.com/embed/${id}?rel=0" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>`;
   });
 
   // Prettify dates
@@ -156,12 +229,12 @@ module.exports = function (eleventyConfig) {
       let content;
       try { content = await readFile(item.inputPath, 'utf8'); } catch(e) { continue; }
 
-      // Parse {% image, "path" "alt" "sizes" %} and optional "caption" "camera" "lens" "film" "iso"
-      const shortcodeRe = /\{%-?\s*image,?\s+"([^"]+)"\s+"([^"]+)"\s+"([^"]+)"(?:\s+"([^"]*)")?(?:\s+"([^"]*)")?(?:\s+"([^"]*)")?(?:\s+"([^"]*)")?(?:\s+"([^"]*)")?\s*-?%\}/g;
+      // Parse {% image "path" "alt" %} and optional "caption" "camera" "lens" "film" "iso"
+      const shortcodeRe = /\{%-?\s*image,?\s+"([^"]+)"\s+"([^"]+)"(?:\s+"([^"]*)")?(?:\s+"([^"]*)")?(?:\s+"([^"]*)")?(?:\s+"([^"]*)")?(?:\s+"([^"]*)")?\s*-?%\}/g;
       let match;
       while ((match = shortcodeRe.exec(content)) !== null) {
-        const srcPath = match[1], alt = match[2], caption = match[4] || '';
-        const camera = match[5] || '', lens = match[6] || '', film = match[7] || '', iso = match[8] || '';
+        const srcPath = match[1], alt = match[2], caption = match[3] || '';
+        const camera = match[4] || '', lens = match[5] || '', film = match[6] || '', iso = match[7] || '';
         if (!caption) continue;
         try {
           const metadata = await Image(path.join('./src/', srcPath), {

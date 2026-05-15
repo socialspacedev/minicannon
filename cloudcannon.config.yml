@@ -407,6 +407,22 @@ _snippets:
       Image:
         type: image
         cascade: true
+  my_youtube_snippet:
+    template: eleventy_liquid_shortcode_positional_args
+    inline: false
+    preview:
+      text: YouTube video
+    definitions:
+      shortcode_name: youtube
+      positional_args:
+        - editor_key: URL or ID
+          type: string
+    _inputs:
+      "URL or ID":
+        type: text
+        label: YouTube URL or video ID
+        comment: "Paste a full YouTube URL or the 11-character video ID"
+        cascade: true
   my_bandcamp_snippet:
     template: eleventy_liquid_shortcode_positional_args
     inline: false
@@ -415,11 +431,13 @@ _snippets:
     definitions:
       shortcode_name: bandcamp
       positional_args:
-        - editor_key: src
+        - editor_key: url
           type: string
     _inputs:
-      src:
+      url:
         type: url
+        label: Bandcamp page URL
+        comment: "Paste the Bandcamp album or track page URL — e.g. https://artist.bandcamp.com/album/title"
         cascade: true
 data_config:
   camera:
