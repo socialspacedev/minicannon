@@ -1,0 +1,7 @@
+{%- if photos and photos.size > 0 -%}
+  {%- for photo in photos -%}
+    {%- if photo.image_file -%}
+      {% image photo.image_file, photo.alt, photo.caption, photo.camera, photo.lens, photo.film, photo.iso %}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}

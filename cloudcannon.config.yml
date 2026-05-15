@@ -36,6 +36,13 @@ collections_config:
         remove_empty_inputs: false
         remove_extra_inputs: false
         icon: music_note
+      photo_dump:
+        path: .cloudcannon/schemas/photo-dump.md
+        reorder_inputs: true
+        hide_extra_inputs: false
+        remove_empty_inputs: false
+        remove_extra_inputs: false
+        icon: photo_camera
   pages:
     path: pages
     icon: article
@@ -102,6 +109,46 @@ _inputs:
   permalink:
     type: auto
     hidden: true
+    cascade: true
+  photos:
+    type: array
+    label: Photos
+    cascade: true
+  "photos[*].image_file":
+    type: image
+    label: Photo
+    cascade: true
+  "photos[*].alt":
+    type: text
+    label: Alt text
+    cascade: true
+  "photos[*].caption":
+    type: text
+    label: Caption
+    cascade: true
+  "photos[*].camera":
+    type: select
+    label: Camera
+    options:
+      values: data.camera
+    cascade: true
+  "photos[*].lens":
+    type: select
+    label: Lens
+    options:
+      values: data.lens
+    cascade: true
+  "photos[*].film":
+    type: select
+    label: Film
+    options:
+      values: data.film
+    cascade: true
+  "photos[*].iso":
+    type: select
+    label: ISO
+    options:
+      values: data.iso
     cascade: true
   vinyl_vibes:
     type: object
