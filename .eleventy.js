@@ -265,6 +265,25 @@ module.exports = function (eleventyConfig) {
             camera: '', lens: '', film: '', iso: '' });
         } catch(e) {}
       }
+
+      // Parse frontmatter photos array (photo dump posts)
+      if (Array.isArray(item.data.photos)) {
+        for (const photo of item.data.photos) {
+          if (!photo.image_file || !photo.caption) continue;
+          try {
+            const metadata = await Image(path.join('./src/', photo.image_file), {
+              widths: [400, 1000], formats: ["jpeg"],
+              outputDir: "./public/img/", urlPath: "/img/",
+            });
+            const jpegs = metadata.jpeg || [];
+            const full = jpegs[jpegs.length - 1], thumb = jpegs[0];
+            if (full) result.push({ src: full.url, width: full.width, height: full.height,
+              thumb: thumb ? thumb.url : full.url, alt: photo.alt || '', caption: photo.caption,
+              postUrl: item.url, camera: photo.camera || '', lens: photo.lens || '',
+              film: photo.film || '', iso: photo.iso || '' });
+          } catch(e) {}
+        }
+      }
     }
     return result;
   });
