@@ -5,7 +5,7 @@ description: Latest developments - Eastman Kodak Cinema 200
 tags:
   - photography
 date: 2026-05-18T17:16:00+12:00
-thumbnail:
+thumbnail: /img/long421-long421-r1-e010-copy-1.jpg
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
