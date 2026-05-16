@@ -1,7 +1,7 @@
 ---
 _schema: photo_dump
 title: May photo dump
-description: Latest developments - Eastman Kodak Cinema 200
+description: Latest developments - Kodak Double-X
 tags:
   - photography
 date: 2026-05-18T17:16:00+12:00
@@ -20,13 +20,6 @@ photos:
   - image_file: /img/otago-university-campus-statue.jpg
     alt:
     caption: University of Otago campus statue
-    camera: Olympus OM-1
-    lens: Zuiko 50mm f/1.8
-    film: Kodak Double-X
-    iso: '200'
-  - image_file: /img/otago-university-centre.jpg
-    alt:
-    caption: University of Otago Centre
     camera: Olympus OM-1
     lens: Zuiko 50mm f/1.8
     film: Kodak Double-X
