@@ -17,25 +17,4 @@ photos:
     lens:
     film:
     iso:
-  - image_file:
-    alt:
-    caption:
-    camera:
-    lens:
-    film:
-    iso:
-  - image_file:
-    alt:
-    caption:
-    camera:
-    lens:
-    film:
-    iso:
-  - image_file:
-    alt:
-    caption:
-    camera:
-    lens:
-    film:
-    iso:
 ---
