@@ -4,7 +4,7 @@ title: May photo dump
 description: Latest developments - Kodak Double-X
 tags:
   - photography
-date: 2026-05-18T17:16:00+12:00
+date: 2026-05-17T12:00:00+12:00
 thumbnail: /img/kakanui-water-tank-cabbage-tree.jpg
 type: article
 layout: article.liquid
@@ -67,10 +67,10 @@ photos:
     film: Kodak Double-X
     iso: '200'
 ---
-Here are some newly developed photos taken around Kakanui and the University of Otago campus earlier this year. The film is **Kodak Double-X** which was designedway back inn 1959 as film stock.
+Here are some newly developed photos taken around Kakanui and the University of Otago campus earlier this year. The roll I used was **Kodak Double-X** which was designed way back in 1959 as cinema film stock and has a lovely shadowy, ominous quality.
 
-Here's what <a href="https://fivethirty.nz/store-desktop" title="Buy some cool film stock for your 35mm camera" target="_blank" rel="noopener">FiveThirty film lab</a> say about it:
+I bought this emulsion from <a href="https://fivethirty.nz/store-desktop" title="Buy some cool film stock for your 35mm camera" target="_blank" rel="noopener">FiveThirty film lab</a> in Auckland who spooled short ends from actual film stock to make this still camera film. Here's what they say about it:
 
 > 200XX is a classic black & white film. It’s a film stock that was designed in 1959 - making it a truely timeless emulsion that has been used in countless films such a Raging Bull, Schindlers List & Kill Bill. It’s an incredibly versatile film with soft natural grain, and great shadow detail. It can be shot between 200-1600 ISO.
 
-I am really happy with the sharpness and shadows.
+I've updated my website to automatically add any photographic images posted to the blog, to the [gallery](/photos.html "Photo gallery"). These will appear at the top and you can review a little metadata about each photo too.
