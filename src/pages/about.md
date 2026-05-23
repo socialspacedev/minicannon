@@ -47,4 +47,6 @@ One of my creative outlets is B&W film photography. I primarily shoot on a 1970s
 
 I'm still very much a novice finding my way and while I currently use [Splendid](https://splendid.nz/) for development and scanning, I hope to do that part myself too eventually. Check the [photo gallery](/photos.html "Photo gallery").
 
+{% image, "/img/me-botanic-gardens-bw.jpg" "Photo of me taking a photo" "Photograph: KP" %}
+
 {% image_centered, "/img/olympus-om1.png" "Olympus OM-1 with Zuiko 50mm f/1.8 lens" %}
