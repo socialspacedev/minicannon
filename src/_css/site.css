@@ -802,19 +802,16 @@ main figure, article figure {
 .pswp__exif-btn {
   display: block;
   margin-left: auto;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.52);
+  padding: 0;
+  background: transparent;
   color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  font-size: 14px;
+  border: none;
+  font-size: 18px;
   line-height: 1;
   cursor: pointer;
-  transition: background 0.15s;
+  transition: color 0.15s;
 }
 .pswp__exif-btn:hover {
-  background: rgba(0, 0, 0, 0.8);
   color: #fff;
 }
 .pswp__exif-panel {

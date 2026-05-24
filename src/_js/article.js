@@ -72,7 +72,11 @@ document.querySelectorAll('figure').forEach(figure => {
     height: parseInt(frame.dataset.pswpHeight),
     thumb: frame.dataset.pswpThumb,
     alt: frame.querySelector('img')?.alt || '',
-    caption: frame.closest('figure')?.querySelector('figcaption')?.firstChild?.textContent?.trim() || ''
+    caption: frame.closest('figure')?.querySelector('figcaption')?.firstChild?.textContent?.trim() || '',
+    camera: frame.dataset.exifCamera || '',
+    lens: frame.dataset.exifLens || '',
+    film: frame.dataset.exifFilm || '',
+    iso: frame.dataset.exifIso || ''
   }));
 
   const { default: PhotoSwipeLightbox } = await import('https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe-lightbox.esm.min.js');
@@ -126,10 +130,54 @@ document.querySelectorAll('figure').forEach(figure => {
       appendTo: 'wrapper',
       onInit: (el, pswp) => {
         el.className = 'pswp__caption-area';
+
         const captionText = document.createElement('span');
         captionText.className = 'pswp__caption-text';
+
+        const exifWrap = document.createElement('span');
+        exifWrap.className = 'pswp__exif-info';
+
+        const panel = document.createElement('div');
+        panel.className = 'pswp__exif-panel';
+
+        const btn = document.createElement('button');
+        btn.className = 'pswp__exif-btn';
+        btn.textContent = 'ⓘ';
+        btn.setAttribute('aria-label', 'Photo info');
+
+        exifWrap.appendChild(panel);
+        exifWrap.appendChild(btn);
         el.appendChild(captionText);
-        const update = () => { captionText.textContent = items[pswp.currIndex]?.caption || ''; };
+        el.appendChild(exifWrap);
+
+        btn.addEventListener('click', e => {
+          e.stopPropagation();
+          exifWrap.classList.toggle('is-open');
+        });
+
+        const update = () => {
+          const item = items[pswp.currIndex] || {};
+          exifWrap.classList.remove('is-open');
+          panel.textContent = '';
+
+          captionText.textContent = item.caption || '';
+
+          const exifFields = [
+            item.camera,
+            item.lens,
+            item.film,
+            item.iso ? 'ISO ' + item.iso : ''
+          ].filter(Boolean);
+
+          exifWrap.style.display = exifFields.length > 0 ? '' : 'none';
+
+          exifFields.forEach(field => {
+            const p = document.createElement('p');
+            p.textContent = field;
+            panel.appendChild(p);
+          });
+        };
+
         pswp.on('change', update);
         pswp.on('afterInit', update);
       }
