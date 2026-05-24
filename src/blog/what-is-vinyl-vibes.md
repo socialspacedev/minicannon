@@ -1,10 +1,10 @@
 ---
 _schema: default
 title: What is Vinyl Vibes?
-description: Background to a monthly musical together for record nerds
+description: Background to a monthly musical together for record nerds.
 tags:
   - music
-date: 2026-05-27T13:48:00+12:00
+date: 2026-05-24T13:48:00+12:00
 thumbnail: /img/grant-and-me.jpeg
 type: article
 layout: article.liquid
@@ -19,3 +19,5 @@ It's held on the last Thursday of every month at Pearl Diver in Dunedin. Prospec
 Quickly a bunch of Gen X+ regulars attended every month with an actual social event on their calendar. No judgement
 
 {% image, "/img/grant-and-me.jpeg" "Photo of me and Grant taken by me" %}
+
+You can find past playlists by Skrub Daddy and Skrub Mommy by clicking this [link](https://anaru.nz/tags/vinyl-vibes/ "Vinyl Vibes blog posts"). Each playlist has a video and a link to where you can buy or stream the song.
