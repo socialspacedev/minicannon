@@ -10,16 +10,20 @@ type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
 ---
-Grant Macdougall kicked off the first <a href="https://www.facebook.com/groups/387867631081444" title="Official Facebook group for Vinyl Vibes" target="_blank" rel="noopener">Vinyl Vibes</a> back in February 2025.
+Grant McDougall (fellow on the right) kicked off the first <a href="https://www.odt.co.nz/entertainment/music/revolutions-every-minute" title="ODT article about Vinyl Vibes" target="_blank" rel="noopener">Vinyl Vibes</a> back in February 2025. The idea is for people to bring a few of their favourite vinyl records from home, to play a curated set of tunes to fellow music fans.
 
 {% image, "/img/grant-and-me.jpeg" "Photo of me and Grant taken by me" %}
 
-It's held on the last Thursday of every month at Pearl Diver in Dunedin. Prospective DJs rock up by 6:45 to grab a 15 minute slot by scribbling their name or nom de plume on the whiteboard.
+It's held on the last Thursday of every month at Pearl Diver in Dunedin and kicks off at 7:00pm (soon to be 6:30pm). Pearl Diver is effectively "... your own lounge, but with an audience and a bar" who provide the turntables and soundsystem. Prospective DJs simply rock up by 6:45 to grab a 15 minute slot by scribbling their name or nom de plume on the whiteboard. No experience required as Grant is always on hand to handle the mechanics if needed.
 
 {% image, "/img/vv-whiteboard.jpg" "Photo of Vinyl Vibes whiteboard" %}
 
-Quickly a bunch of Gen X+ regulars attended every month with an actual social event on their calendar. No judgement
+Once the event kicks off, a night of open and inclusive music listening unfolds creating a pleasant evening of banter and good vibes. Quickly a bunch of Gen X+ regulars started attending every month making Vinyl Vibes an essential event on a diminishing social calendar. While it's a lovely old time for this demographic to share old war stories while playing 80s/90s indie/alternative/experimental and post-punk, younger generations just discovering vinyl show up too.
 
 {% image, "/img/vinyl-vibes-6.jpg" "DJs Skrub Mommy and Skrub Daddy" %}
 
-You can find past playlists by Skrub Daddy and Skrub Mommy by clicking this [link](https://anaru.nz/tags/vinyl-vibes/ "Vinyl Vibes blog posts"). Each playlist has a video and a link to where you can buy or stream the song.
+Speaking of Gen' Xers, my wife (Skrub Mommy) and me (Skrub Daddy) are regulars and typically like to plan our sets. These can be theme based or the first song suggests the next and so on – but having some idea is less stressful than rocking up which a bunch of records and hoping for the best.
+
+If you're curious, you can find our past playlists by clicking this [link](https://anaru.nz/tags/vinyl-vibes/ "Vinyl Vibes blog posts"). Each playlist has a video and a link to where you can buy or stream each song.
+
+{% image, "/img/vv-playlists.png" "Example vinyl vibes playlists" %}
