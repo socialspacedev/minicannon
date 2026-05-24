@@ -26,7 +26,7 @@ Personal blog and photography portfolio at [anaru.nz](https://anaru.nz), built w
 - Film photography gallery with EXIF data tooltip and lightbox
   - Keyboard accessible (Tab to image, Enter/Space to open)
   - EXIF data (camera, lens, film, ISO) stored in YAML data files and editable via CloudCannon
-  - EXIF info button (ⓘ) inline on article figcaptions, matching caption text colour
+  - EXIF info button (ⓘ) on article figcaptions and inside the lightbox caption area
 - Two-column homepage: latest photography hero image + recent posts list with post-type icons
 - Static search via Pagefind (lazy-loaded dialog modal)
 - Scheduled posts — posts with a future date are excluded from production builds until that date
