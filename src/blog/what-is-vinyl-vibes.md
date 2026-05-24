@@ -12,12 +12,14 @@ permalink: blog/{{ title | slugify }}.html
 ---
 Grant Macdougall kicked off the first <a href="https://www.facebook.com/groups/387867631081444" title="Official Facebook group for Vinyl Vibes" target="_blank" rel="noopener">Vinyl Vibes</a> back in February 2025.
 
+{% image, "/img/grant-and-me.jpeg" "Photo of me and Grant taken by me" %}
+
 It's held on the last Thursday of every month at Pearl Diver in Dunedin. Prospective DJs rock up by 6:45 to grab a 15 minute slot by scribbling their name or nom de plume on the whiteboard.
 
 {% image, "/img/vv-whiteboard.jpg" "Photo of Vinyl Vibes whiteboard" %}
 
 Quickly a bunch of Gen X+ regulars attended every month with an actual social event on their calendar. No judgement
 
-{% image, "/img/grant-and-me.jpeg" "Photo of me and Grant taken by me" %}
+{% image, "/img/vinyl-vibes-6.jpg" "DJs Skrub Mommy and Skrub Daddy" %}
 
 You can find past playlists by Skrub Daddy and Skrub Mommy by clicking this [link](https://anaru.nz/tags/vinyl-vibes/ "Vinyl Vibes blog posts"). Each playlist has a video and a link to where you can buy or stream the song.
