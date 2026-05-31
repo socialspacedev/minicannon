@@ -45,7 +45,7 @@ Over the years we've shared our home with many cats. The best of them was [Monst
 
 One of my creative outlets is B&W film photography. I primarily shoot on a 1970s Olympus OM-1 with a Zuiko 50mm F/1.8 lens focusing mostly on street, gigs, landscapes and flowers. The slower, mechanical process of analogue is a nice contrast to the rapid, disposable modern experience. I tend to prefer the look of high-contrast, fine grain B&W photos using film like Ilford Orthographic Plus 80, Kodak Tri-X or Kodak Double-X.
 
-{% image, "/img/me-snaps.png" "Photo of me taking photos" %}
+{% image, "/img/me-snaps-1.png" "Photo of me taking photos" %}
 
 I'm still very much a novice finding my way and while I currently use [Splendid](https://splendid.nz/) for development and scanning, I hope to do that part myself too eventually. In the meantime, check out the [photo gallery](/photos.html "Photo gallery").
 
