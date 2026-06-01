@@ -27,8 +27,9 @@ Personal blog and photography portfolio at [anaru.nz](https://anaru.nz), built w
   - Keyboard accessible (Tab to image, Enter/Space to open)
   - EXIF data (camera, lens, film, ISO) stored in YAML data files and editable via CloudCannon
   - EXIF info button (ⓘ) on article figcaptions and inside the lightbox caption area
+- Curated Music page — grid of posts opted in via a `music_featured: true` frontmatter toggle, with a layered image fallback (hero image → thumbnail → first inline image → Bandcamp artwork)
 - Two-column homepage: latest photography hero image + recent posts list with post-type icons
-- Static search via Pagefind (lazy-loaded dialog modal)
+- Static search via Pagefind, opened from a magnifying-glass icon next to the site title (lazy-loaded dialog modal)
 - Scheduled posts — posts with a future date are excluded from production builds until that date
 - RSS feed, XML sitemap, and `llms.txt` for AEO
 - Structured data (BlogPosting JSON-LD) and Open Graph tags

@@ -8,7 +8,7 @@ date: 2024-03-01T17:00:44+13:00
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
-content_blocks:
+music_featured: false
 ---
 {% image "/img/holf-fuck-live.png", "Blurry photo of Holy Fuck live at the Mothership." %}
 

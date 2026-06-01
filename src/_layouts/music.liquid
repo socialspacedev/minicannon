@@ -1,0 +1,30 @@
+---
+title: Music
+description: Posts about music — Vinyl Vibes events, album notes, and tributes
+keyword: music
+type: website
+---
+<!DOCTYPE html>
+<html lang="en">
+  {% include "head-website.liquid" %}
+  <body>
+    {% include "nav.liquid" %}
+    <main id="main-content" data-pagefind-body>
+      <h1>{{ title }}</h1>
+      {%- assign posts = collections.musicPosts -%}
+      {%- if posts and posts.size > 0 -%}
+        <div class="music-grid">
+          {%- for post in posts -%}
+            <a class="music-item" href="{{ post.url | url }}" aria-label="{{ post.title }}">
+              <img src="{{ post.thumb }}" alt="" loading="lazy">
+              <span class="music-item__title">{{ post.title }}</span>
+            </a>
+          {%- endfor -%}
+        </div>
+      {%- else -%}
+        <p>No music posts yet.</p>
+      {%- endif -%}
+    </main>
+    {% include "footer.liquid" %}
+  </body>
+</html>

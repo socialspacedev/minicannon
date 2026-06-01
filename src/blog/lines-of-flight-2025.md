@@ -10,6 +10,7 @@ thumbnail: /img/lof-2025-slightly-imperfect.jpg
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
+music_featured: false
 ---
 The experimental music festival <a href="https://www.linesofflight.co.nz/" title="Official Lines of Flight website" target="_blank" rel="noopener">Lines of Flight</a> has been running for 25 years in Dunedin. It's a premier art event which attracts performers from all over the world. I have attended every one, except maybe the first event in 2000. I was also lucky enough to perform in <a href="https://www.pyramidclub.org.nz/2009" title="Link to 2009 LOF poster" target="_blank" rel="noopener">2009</a> under the moniker <a href="https://tillakaratne.bandcamp.com/" title="Bandcamp page for Tillakaratne" target="_blank" rel="noopener">Tillakaratne</a> with my friend Chris.
 
