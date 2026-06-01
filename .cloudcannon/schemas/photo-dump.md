@@ -1,4 +1,4 @@
----
+----
 _schema: photo_dump
 title: "MMM photo dump"
 description: "Latest developments - emulsion"
