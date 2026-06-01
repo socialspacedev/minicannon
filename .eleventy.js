@@ -162,20 +162,23 @@ module.exports = function (eleventyConfig) {
     });
 
     if (caption) {
-      const jpegs = metadata.jpeg || [];
-      const full = jpegs[jpegs.length - 1];
-      const thumb = jpegs[0];
-      const dataAttrs = full
-        ? ` data-pswp-src="${full.url}" data-pswp-width="${full.width}" data-pswp-height="${full.height}" data-pswp-thumb="${thumb ? thumb.url : full.url}"`
-        : '';
       const exifAttrs = [
         camera ? ` data-exif-camera="${camera}"` : '',
         lens    ? ` data-exif-lens="${lens}"`     : '',
         film    ? ` data-exif-film="${film}"`     : '',
         iso     ? ` data-exif-iso="${iso}"`       : '',
       ].join('');
-      const a11yAttrs = dataAttrs ? ` tabindex="0" role="button" aria-label="Open photo${alt ? ': ' + alt : ''}"` : '';
-      return `<figure><div class="film-frame"${dataAttrs}${exifAttrs}${a11yAttrs}>${html}</div><figcaption>${caption}</figcaption></figure>`;
+      if (exifAttrs) {
+        const jpegs = metadata.jpeg || [];
+        const full = jpegs[jpegs.length - 1];
+        const thumb = jpegs[0];
+        const dataAttrs = full
+          ? ` data-pswp-src="${full.url}" data-pswp-width="${full.width}" data-pswp-height="${full.height}" data-pswp-thumb="${thumb ? thumb.url : full.url}"`
+          : '';
+        const a11yAttrs = dataAttrs ? ` tabindex="0" role="button" aria-label="Open photo${alt ? ': ' + alt : ''}"` : '';
+        return `<figure><div class="film-frame"${dataAttrs}${exifAttrs}${a11yAttrs}>${html}</div><figcaption>${caption}</figcaption></figure>`;
+      }
+      return `<figure>${html}<figcaption>${caption}</figcaption></figure>`;
     }
     return html;
   });
@@ -298,7 +301,7 @@ module.exports = function (eleventyConfig) {
       const title = token.attrGet("title");
       const rendered = defaultRender(tokens, idx, options, env, self);
       if (title) {
-        return `<figure><div class="film-frame">${rendered}</div><figcaption>${title}</figcaption></figure>`;
+        return `<figure>${rendered}<figcaption>${title}</figcaption></figure>`;
       }
       return rendered;
     };
