@@ -8,7 +8,7 @@ date: 2024-04-19T17:09:56+12:00
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
-music_featured: true
+music_featured: false
 ---
 Grahame Naysmith the excellent guitarist for shoe-gazy band Pale Saints <a href="https://faroutmagazine.co.uk/pale-saints-guitarist-graeme-naysmith-dead-at-57/" title="Death announcement in Far Out Magazine" target="_blank" rel="noopener">died</a> a couple of days ago. Pale Saints were a 4AD band in the shoegazy/Indie/Alt camp with choirboy vocals, pummelling bass and scorching, textual guitar.
 
