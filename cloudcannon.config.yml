@@ -50,6 +50,13 @@ collections_config:
         remove_empty_inputs: false
         remove_extra_inputs: false
         icon: album
+      a_certain_sound:
+        path: .cloudcannon/schemas/a-certain-sound-post.md
+        reorder_inputs: true
+        hide_extra_inputs: false
+        remove_empty_inputs: false
+        remove_extra_inputs: false
+        icon: radio
   pages:
     path: pages
     icon: article
@@ -161,6 +168,48 @@ _inputs:
     label: ISO
     options:
       values: data.iso
+    cascade: true
+  a_certain_sound:
+    type: object
+    label: A Certain Sound episode
+    cascade: true
+  a_certain_sound.hero_image:
+    type: image
+    label: Hero image
+    cascade: true
+  a_certain_sound.hero_alt:
+    type: text
+    label: Hero image alt text
+    cascade: true
+  a_certain_sound.hero_caption:
+    type: text
+    label: Hero image caption
+    cascade: true
+  a_certain_sound.oar_url:
+    type: url
+    label: OAR on-demand URL (this episode)
+    comment: "Optional — link to the episode's on-demand page on OAR"
+    cascade: true
+  a_certain_sound.tracks:
+    type: array
+    label: Tracks
+    cascade: true
+  "a_certain_sound.tracks[*].artist":
+    type: text
+    label: Artist
+    cascade: true
+  "a_certain_sound.tracks[*].title":
+    type: text
+    label: Song title
+    cascade: true
+  "a_certain_sound.tracks[*].year":
+    type: number
+    label: Year
+    cascade: true
+  "a_certain_sound.tracks[*].note":
+    type: text
+    label: Note
+    comment: "Optional — short comment about the track"
     cascade: true
   vinyl_vibes:
     type: object

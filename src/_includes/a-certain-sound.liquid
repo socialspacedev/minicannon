@@ -1,0 +1,39 @@
+{%- if a_certain_sound -%}
+<section class="acs">
+  {%- if a_certain_sound.hero_image -%}
+  <figure class="acs-hero">
+    {% image a_certain_sound.hero_image, a_certain_sound.hero_alt %}
+    {%- if a_certain_sound.hero_caption -%}
+    <figcaption>{{ a_certain_sound.hero_caption }}</figcaption>
+    {%- endif -%}
+  </figure>
+  {%- endif -%}
+
+  {%- if a_certain_sound.tracks and a_certain_sound.tracks.size > 0 -%}
+  <ol class="acs-tracklist">
+    {%- for track in a_certain_sound.tracks -%}
+    <li class="acs-track">
+      <div class="acs-track-main">
+        <span class="acs-artist">{{ track.artist }}</span>
+        <span class="acs-sep"> — </span>
+        <span class="acs-title">{{ track.title }}</span>
+        {%- if track.year -%}
+        <span class="acs-year"> ({{ track.year }})</span>
+        {%- endif -%}
+      </div>
+      {%- if track.note -%}
+      <div class="acs-note">{{ track.note }}</div>
+      {%- endif -%}
+    </li>
+    {%- endfor -%}
+  </ol>
+  {%- endif -%}
+
+  <footer class="acs-footer">
+    {%- if a_certain_sound.oar_url -%}
+    <a class="acs-link" href="{{ a_certain_sound.oar_url }}" target="_blank" rel="noopener noreferrer">Listen to this episode on OAR &rarr;</a>
+    {%- endif -%}
+    <a class="acs-link" href="https://oar.org.nz/shows/certain-sound/" target="_blank" rel="noopener noreferrer">A Certain Sound on Otago Access Radio &rarr;</a>
+  </footer>
+</section>
+{%- endif -%}
