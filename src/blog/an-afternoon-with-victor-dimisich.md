@@ -12,7 +12,7 @@ permalink: blog/{{ title | slugify }}.html
 ---
 <a href="https://www.audioculture.co.nz/profile/the-terminals" title="The Terminals on Audioculture" target="_blank" rel="noopener">Stephen Cogle</a> (music) and <a href="https://www.undertheradar.co.nz/news/11802/Interview-Peter-Stapleton-of-The-Terminals.utr" title="One of the last interviews with Peter" target="_blank" rel="noopener">Peter Stapleton</a> (lyrics) are one of my absolute favourite songwriting teams. Their compositions can be heard through essential bands like the <a href="https://thebigcity.co.nz/artists/v/victor-dimisich-band/" title="VDB profile on Big City" target="_blank" rel="noopener">Victor Dimisich Band</a>, <a href="https://www.audioculture.co.nz/profile/the-terminals" title="Audioculture profile on The Terminals" target="_blank" rel="noopener">The Terminals</a>, <a href="https://thebigcity.co.nz/artists/s/scorched-earth-policy/" title="Profile on SEP at Bigcity" target="_blank" rel="noopener">Scorched Earth Policy</a>, <a href="https://melbo.bandcamp.com/album/the-joy-of-return" title="Minus 2's second release" target="_blank" rel="noopener">Minus 2</a>, and more. They are/were both amazing musicians on guitar/vocals and drums, respectively.
 
-{% image, "/img/the-terminals.jpeg" "Scanned photograph of the original Terminals" "Uncredited photo" %}
+{% image, "/img/the-terminals.jpeg" "Scanned photograph of the original Terminals" "Peter is far right with Stephen to his left" %}
 
 Sadly, <a href="https://www.pyramidclub.org.nz/outro" title="Tribute to Peter S by Peter P" target="_blank" rel="noopener">Peter</a> died in March 2020. He was a lovely fellow who is greatly missed.
 
