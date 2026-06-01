@@ -291,6 +291,88 @@ module.exports = function (eleventyConfig) {
     return result;
   });
 
+  // Music page collection — one tile per post with `music_featured: true` in its frontmatter.
+  // Lets us curate the music page independently of the general "music" tag.
+  eleventyConfig.addCollection("musicPosts", async function(collection) {
+    const items = collection.getAll().filter(item => item.data.music_featured === true);
+    items.sort((a, b) => b.date - a.date);
+    const result = [];
+
+    for (const item of items) {
+      let content;
+      try { content = await readFile(item.inputPath, 'utf8'); } catch(e) { continue; }
+
+      let imageInput = null;
+
+      // 1. Vinyl Vibes hero image
+      if (item.data.vinyl_vibes && item.data.vinyl_vibes.hero_image) {
+        imageInput = path.join('./src/', item.data.vinyl_vibes.hero_image);
+      }
+      // 2. Frontmatter thumbnail
+      else if (item.data.thumbnail) {
+        imageInput = path.join('./src/', item.data.thumbnail);
+      }
+      // 3. First {% image %} shortcode in the body
+      else {
+        const imageMatch = content.match(/\{%-?\s*image,?\s+"([^"]+)"/);
+        if (imageMatch) {
+          imageInput = path.join('./src/', imageMatch[1]);
+        } else {
+          // 4. First Bandcamp embed — re-use eleventy-fetch's 30d cache to grab og:image
+          const bcMatch = content.match(/\{%-?\s*bandcamp,?\s+"([^"]+)"/);
+          if (bcMatch) {
+            try {
+              const { default: EleventyFetch } = await import("@11ty/eleventy-fetch");
+              const buf = await EleventyFetch(bcMatch[1], {
+                duration: "30d",
+                type: "buffer",
+                fetchOptions: {
+                  headers: {
+                    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                  }
+                }
+              });
+              const html = buf.toString('utf8');
+              const imgMatch = html.match(/<meta\s+property="og:image"\s+content="([^"]+)"/i)
+                            || html.match(/<meta\s+content="([^"]+)"\s+property="og:image"/i);
+              if (imgMatch) imageInput = imgMatch[1];
+            } catch(e) {}
+          }
+        }
+      }
+
+      if (!imageInput) continue;
+
+      try {
+        const metadata = await Image(imageInput, {
+          widths: [400, 800],
+          formats: ["jpeg"],
+          outputDir: "./public/img/",
+          urlPath: "/img/",
+          cacheOptions: { duration: "30d", type: "buffer" },
+        });
+        const jpegs = metadata.jpeg || [];
+        const full = jpegs[jpegs.length - 1];
+        const thumb = jpegs[0];
+        if (full) {
+          result.push({
+            src: full.url,
+            width: full.width,
+            height: full.height,
+            thumb: thumb ? thumb.url : full.url,
+            title: item.data.title,
+            url: item.url,
+            date: item.date,
+          });
+        }
+      } catch(e) {
+        console.warn(`[musicPosts] ${item.inputPath}: ${e.message}`);
+      }
+    }
+    return result;
+  });
+
   // Wrap markdown images in <figure>/<figcaption> when a title attribute is present
   eleventyConfig.amendLibrary("md", (mdLib) => {
     const defaultRender = mdLib.renderer.rules.image || function(tokens, idx, options, env, self) {

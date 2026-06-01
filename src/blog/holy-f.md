@@ -9,6 +9,7 @@ type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
 content_blocks:
+music_featured: true
 ---
 {% image "/img/holf-fuck-live.png", "Blurry photo of Holy Fuck live at the Mothership." %}
 

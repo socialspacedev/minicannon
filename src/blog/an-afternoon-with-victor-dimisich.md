@@ -9,6 +9,7 @@ thumbnail: /img/vdb-reissue.jpg
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
+music_featured: true
 ---
 <a href="https://www.audioculture.co.nz/profile/the-terminals" title="The Terminals on Audioculture" target="_blank" rel="noopener">Stephen Cogle</a> (music) and <a href="https://www.undertheradar.co.nz/news/11802/Interview-Peter-Stapleton-of-The-Terminals.utr" title="One of the last interviews with Peter" target="_blank" rel="noopener">Peter Stapleton</a> (lyrics) are one of my absolute favourite songwriting teams. Their compositions can be heard through essential bands like the <a href="https://thebigcity.co.nz/artists/v/victor-dimisich-band/" title="VDB profile on Big City" target="_blank" rel="noopener">Victor Dimisich Band</a>, <a href="https://www.audioculture.co.nz/profile/the-terminals" title="Audioculture profile on The Terminals" target="_blank" rel="noopener">The Terminals</a>, <a href="https://thebigcity.co.nz/artists/s/scorched-earth-policy/" title="Profile on SEP at Bigcity" target="_blank" rel="noopener">Scorched Earth Policy</a>, <a href="https://melbo.bandcamp.com/album/the-joy-of-return" title="Minus 2's second release" target="_blank" rel="noopener">Minus 2</a>, and more.
 

@@ -43,6 +43,13 @@ collections_config:
         remove_empty_inputs: false
         remove_extra_inputs: false
         icon: photo_camera
+      featured_music:
+        path: .cloudcannon/schemas/featured-music-post.md
+        reorder_inputs: true
+        hide_extra_inputs: false
+        remove_empty_inputs: false
+        remove_extra_inputs: false
+        icon: album
   pages:
     path: pages
     icon: article
@@ -89,6 +96,11 @@ _enabled_editors:
   - content
   - data
 _inputs:
+  music_featured:
+    type: switch
+    label: Feature on Music page
+    comment: "Show this post in the curated Music page grid"
+    cascade: true
   date:
     type: datetime
     instance_value: NOW

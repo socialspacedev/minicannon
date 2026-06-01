@@ -31,8 +31,6 @@
     }
   }
 
-  const searchLi = openBtn.parentElement;
-
   openBtn.addEventListener('click', async (e) => {
     e.preventDefault();
     try {
@@ -44,7 +42,7 @@
           '<p class="search-fallback">Search is only available on the published site.</p>';
       }
     }
-    searchLi.classList.add('active');
+    openBtn.classList.add('active');
     dialog.showModal();
     setTimeout(focusSearchInput, 50);
   });
@@ -56,7 +54,7 @@
   });
 
   dialog.addEventListener('close', () => {
-    searchLi.classList.remove('active');
+    openBtn.classList.remove('active');
     openBtn.focus();
   });
 })();
