@@ -18,38 +18,38 @@ vinyl_vibes:
       tracks:
         - artist: PJ Harvey
           title: Shame
-          year:
-          duration:
-          buy_url:
-          youtube:
+          year: 2004
+          duration: '2:28'
+          buy_url: https://store.pjharvey.net/collections/uh-huh-her
+          youtube: AFLOG2wxg3Q
           bandcamp:
         - artist: The Ettes
           title: Pendulum
-          year:
-          duration:
-          buy_url:
-          youtube:
+          year: 2011
+          duration: '2:21'
+          buy_url: https://www.discogs.com/master/436937-The-Ettes-Wicked-Will
+          youtube: o88JSfAaxH8
           bandcamp:
         - artist: Television
           title: Call Mr Lee
           year: 1992
-          duration:
-          buy_url:
-          youtube:
+          duration: '4:07'
+          buy_url: https://www.discogs.com/release/32558292-Television-Television
+          youtube: l4QZSDu1wx8
           bandcamp:
         - artist: Yo La Tengo
           title: From a Motel 6
-          year: 0
-          duration:
-          buy_url:
-          youtube:
+          year: 1993
+          duration: '4:09'
+          buy_url: https://yolatengo.bandcamp.com/album/painful
+          youtube: 4Qgv2NLpVaw
           bandcamp:
         - artist: Robyn HItchcock and the Egyptians
           title: Madonna of the Wasps
-          year: 0
-          duration:
-          buy_url:
-          youtube:
+          year: 1989
+          duration: '2:40'
+          buy_url: https://robynhitchcock.substack.com/p/madonna-of-the-wasps
+          youtube: 3J_1Fs9_J_A
           bandcamp:
     - dj: DJ Skrub Daddy
       slot: 9:15pm
