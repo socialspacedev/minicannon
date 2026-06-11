@@ -547,6 +547,31 @@ _snippets:
         label: Bandcamp page URL
         comment: "Paste the Bandcamp album or track page URL — e.g. https://artist.bandcamp.com/album/title"
         cascade: true
+  my_audio_snippet:
+    template: eleventy_liquid_shortcode_positional_args
+    inline: false
+    preview:
+      text: Audio player
+    definitions:
+      shortcode_name: audio
+      positional_args:
+        - editor_key: src
+          type: string
+        - editor_key: caption
+          type: string
+    _inputs:
+      src:
+        type: file
+        label: Audio file
+        comment: "Upload or pick an M4A / MP3 file (placed under src/audio/)"
+        options:
+          path: src/audio
+        cascade: true
+      caption:
+        type: text
+        label: Caption
+        comment: "Optional caption shown below the player"
+        cascade: true
 data_config:
   camera:
     path: _data/camera.yaml
