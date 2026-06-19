@@ -37,7 +37,7 @@ No test suite exists in this project.
 
 ### Configuration
 
-- **`.eleventy.js`** — Main config: plugins (navigation, RSS, YouTube embeds, image optimization, time-to-read, Pagefind search), image processing pipeline (AVIF/WebP/JPEG at multiple widths), draft filtering in production, custom Liquid filters
+- **`eleventy.config.mjs`** — Main config (ESM): plugins (navigation, RSS, YouTube embeds, image optimization, time-to-read, Pagefind search), image processing pipeline (AVIF/WebP/JPEG at multiple widths), draft filtering in production, custom Liquid filters
 - **`cloudcannon.config.yml`** — CMS collections (`posts`, `pages`, `data`), input types, editorial tools; timezone is Pacific/Auckland
 - **`tailwind.config.js`** — Custom breakpoints (`sm: 430px`, `md: 768px`, `lg: 1024px`), full color/spacing palette, Typography plugin, dark mode via `media`
 - **`jampack.config.js`** — Post-build asset optimization: HTML minification, CSS inlining, image compression (WebP/PNG/JPEG), JS minification via esbuild

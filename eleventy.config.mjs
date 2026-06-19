@@ -1,19 +1,15 @@
-// Insert plugins
-const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-const timeToRead = require('eleventy-plugin-time-to-read');
-const yaml = require("js-yaml");
-const path = require("node:path");
-const { readFile } = require("fs").promises;
-const Image = require("@11ty/eleventy-img");
-const embedYouTube = require("eleventy-plugin-youtube-embed");
+// Plugins and helpers
+import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
+import pluginRss from "@11ty/eleventy-plugin-rss";
+import timeToRead from "eleventy-plugin-time-to-read";
+import yaml from "js-yaml";
+import path from "node:path";
+import { readFile } from "node:fs/promises";
+import Image from "@11ty/eleventy-img";
+import embedYouTube from "eleventy-plugin-youtube-embed";
+import { DateTime } from "luxon";
 
-// Helper packages
-// const htmlmin = require("html-minifier");
-const { DateTime } = require("luxon");
-
-// 11ty
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
   // Enable 11ty plugins
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(pluginRss);
@@ -31,11 +27,20 @@ module.exports = function (eleventyConfig) {
     .addPassthroughCopy({ "src/favicon": "favicon" })
     .addPassthroughCopy({ "src/fonts": "fonts" })
     .addPassthroughCopy({ "src/img": "img" })
+    .addPassthroughCopy({ "src/audio": "audio" })
     .addPassthroughCopy({ "src/_js": "js" })
     .addPassthroughCopy({ "src/_css/pagefind.css": "css/pagefind.css" });
 
   // Show the year in the footer
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+
+  // Audio player — self-hosted M4A (or any browser-playable audio file).
+  // Usage: {% audio, "/audio/track.m4a" "Optional caption" %}
+  eleventyConfig.addShortcode("audio", (src, caption) => {
+    const esc = s => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    const captionHtml = caption ? `<figcaption class="audio-caption">${esc(caption)}</figcaption>` : '';
+    return `<figure class="audio-player"><audio controls preload="metadata" src="${esc(src)}">Your browser does not support the audio element. <a href="${esc(src)}">Download the file</a>.</audio>${captionHtml}</figure>`;
+  });
 
   // Bandcamp embed — accepts a Bandcamp page URL, fetches artwork from page HTML at build time
   eleventyConfig.addShortcode("bandcamp", async (pageUrl) => {
@@ -121,9 +126,6 @@ module.exports = function (eleventyConfig) {
       "dd LLL yyyy"
     );
   });
-
-  // Data Feed
-  eleventyConfig.addLiquidFilter("dateToRfc3339", pluginRss.dateToRfc3339);
 
   // Time to read for liquid
   eleventyConfig.addPlugin(timeToRead, {
