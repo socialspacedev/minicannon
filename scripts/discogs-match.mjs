@@ -1,16 +1,22 @@
 // Best-effort matcher: for each Vinyl Vibes post, find tracks that have
 // artist + title but no `discogs:` field and inject a release_id:position
-// reference based on src/_data/discogs.yaml.
+// reference based on src/_data/discogs.yaml. Also fetches Discogs videos
+// for each matched release (cached via eleventy-fetch) and injects a
+// `youtube:` ID when a video's title matches the track title.
 //
 // Manual artist/title/year/duration fields are left in place — the template
-// prefers them over Discogs lookups. So this is purely additive: it gives
-// you the Buy link auto-deriving to Discogs and a foothold for later cleanup.
+// prefers them over Discogs lookups. This is purely additive.
 //
-// Run: node scripts/discogs-match.mjs
+// Run: npm run discogs:match
+// Requires .env with DISCOGS_TOKEN= for the video fetch step.
 
 import { readFile, writeFile, readdir } from "node:fs/promises";
 import path from "node:path";
 import yaml from "js-yaml";
+import EleventyFetch from "@11ty/eleventy-fetch";
+
+const TOKEN = process.env.DISCOGS_TOKEN;
+const USER_AGENT = "minicannon-discogs-match/1.0 +https://anaru.nz";
 
 const VV_DIR = "src/blog";
 const DATA_PATH = "src/_data/discogs.yaml";
@@ -47,17 +53,51 @@ function buildIndex(discogs) {
   return index;
 }
 
-function findVideoMatch(release, trackTitle) {
-  if (!release || !Array.isArray(release.videos)) return null;
-  const target = normalize(trackTitle);
-  if (!target) return null;
-  // Strict: video title contains the track title (after normalisation)
-  const direct = release.videos.find(v => normalize(v.title).includes(target));
-  if (direct) return direct.youtube_id;
-  return null;
+function extractYouTubeId(uri) {
+  const m = String(uri || "").match(/(?:v=|youtu\.be\/|youtube\.com\/embed\/)([\w-]{11})/);
+  return m ? m[1] : null;
 }
 
-function injectMatches(content, index, discogs) {
+const videoCache = new Map();
+
+async function fetchVideos(releaseId) {
+  if (videoCache.has(releaseId)) return videoCache.get(releaseId);
+  if (!TOKEN) {
+    videoCache.set(releaseId, []);
+    return [];
+  }
+  try {
+    const buf = await EleventyFetch(`https://api.discogs.com/releases/${releaseId}`, {
+      duration: "30d",
+      type: "buffer",
+      fetchOptions: {
+        headers: {
+          "User-Agent": USER_AGENT,
+          "Authorization": `Discogs token=${TOKEN}`,
+          "Accept": "application/json",
+        },
+      },
+    });
+    const data = JSON.parse(buf.toString("utf8"));
+    const videos = (data.videos || [])
+      .map(v => ({ title: v.title || "", youtube_id: extractYouTubeId(v.uri) }))
+      .filter(v => v.youtube_id);
+    videoCache.set(releaseId, videos);
+    return videos;
+  } catch (e) {
+    videoCache.set(releaseId, []);
+    return [];
+  }
+}
+
+function findVideoMatch(videos, trackTitle) {
+  const target = normalize(trackTitle);
+  if (!target) return null;
+  const direct = videos.find(v => normalize(v.title).includes(target));
+  return direct ? direct.youtube_id : null;
+}
+
+async function injectMatches(content, index) {
   const lines = content.split("\n");
   const out = [];
   const summary = [];
@@ -104,8 +144,8 @@ function injectMatches(content, index, discogs) {
 
     let youtubeAdded = false;
     if (!hasYouTube) {
-      const release = discogs.releases[pick.release_id];
-      const ytId = findVideoMatch(release, title);
+      const videos = await fetchVideos(pick.release_id);
+      const ytId = findVideoMatch(videos, title);
       if (ytId) {
         out.push(`${continuationIndent}youtube: ${ytId}`);
         youtubeAdded = true;
@@ -137,7 +177,7 @@ async function main() {
   for (const file of vvFiles) {
     const filepath = path.join(VV_DIR, file);
     const text = await readFile(filepath, "utf8");
-    const { content, summary } = injectMatches(text, index, discogs);
+    const { content, summary } = await injectMatches(text, index);
 
     const counts = {
       match: summary.filter(s => s.status === "match").length,

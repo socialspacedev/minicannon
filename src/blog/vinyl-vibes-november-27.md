@@ -18,34 +18,29 @@ vinyl_vibes:
       tracks:
         - artist: Flaming Lips
           title: Can't get you out of my head
-          year: 0
           duration:
           buy_url:
           youtube:
         - artist: Darcy Clay
           discogs: "2722725:3"
           title: Jolene
-          year: 0
           duration:
           buy_url:
           youtube:
         - artist: Lemonheads
           discogs: "857342:A"
           title: Mrs Robinson
-          year: 0
           duration:
           buy_url:
           youtube:
         - artist: The Terminals
           discogs: "775627:A2"
           title: Love, hate, revenge
-          year: 0
           duration:
           buy_url:
           youtube:
         - artist: Mariachi La Estrella
           title: Estoy en el Cielo
-          year: 0
           duration:
           buy_url:
           youtube:

@@ -12,6 +12,7 @@ const TOKEN = process.env.DISCOGS_TOKEN;
 const USERNAME = "socialspacious";
 const USER_AGENT = "minicannon-discogs-sync/1.0 +https://anaru.nz";
 const OUT_PATH = "src/_data/discogs.yaml";
+const PICKER_PATH = "src/_data/discogs_picker.yaml";
 
 // Discogs allows 60 authenticated req/min. 1100ms = ~55 req/min, safely under.
 const RATE_LIMIT_MS = 1100;
@@ -67,14 +68,9 @@ async function fetchCollection() {
   return releases;
 }
 
-function extractYouTubeId(uri) {
-  const m = String(uri || "").match(/(?:v=|youtu\.be\/|youtube\.com\/embed\/)([\w-]{11})/);
-  return m ? m[1] : null;
-}
-
-async function fetchRelease(releaseId) {
+async function fetchTracklist(releaseId) {
   const data = await api(`/releases/${releaseId}`);
-  const tracks = (data.tracklist || [])
+  return (data.tracklist || [])
     .filter(t => !t.type_ || t.type_ === "track")
     .map(t => ({
       position: t.position || "",
@@ -82,10 +78,6 @@ async function fetchRelease(releaseId) {
       duration: t.duration || "",
       artist: t.artists ? t.artists.map(a => a.name).join(", ") : null,
     }));
-  const videos = (data.videos || [])
-    .map(v => ({ title: v.title || "", youtube_id: extractYouTubeId(v.uri) }))
-    .filter(v => v.youtube_id);
-  return { tracks, videos };
 }
 
 async function loadExisting() {
@@ -97,7 +89,7 @@ async function loadExisting() {
   }
 }
 
-function buildTrackOptions(releases) {
+function buildPickerOptions(releases) {
   const out = [];
   for (const [id, rel] of Object.entries(releases)) {
     for (const t of rel.tracks) {
@@ -106,7 +98,7 @@ function buildTrackOptions(releases) {
       const pos = t.position ? `${t.position}: ` : "";
       const dur = t.duration ? ` (${t.duration})` : "";
       out.push({
-        id: `${id}:${t.position}`,
+        value: `${id}:${t.position}`,
         label: `${artist} – ${rel.title} – ${pos}${t.title}${dur}`,
       });
     }
@@ -124,9 +116,11 @@ async function save(releases) {
       tracks: Object.values(releases).reduce((n, r) => n + r.tracks.length, 0),
     },
     releases,
-    track_options: buildTrackOptions(releases),
   };
   await writeFile(OUT_PATH, yaml.dump(out, { lineWidth: -1, noRefs: true }));
+  // Slim picker file for the CloudCannon dropdown — kept separate so the CMS
+  // doesn't have to load the full 2.5MB release/track data on every edit.
+  await writeFile(PICKER_PATH, yaml.dump(buildPickerOptions(releases), { lineWidth: -1, noRefs: true }));
 }
 
 async function main() {
@@ -145,8 +139,8 @@ async function main() {
     }
   }
 
-  const toFetch = collection.filter(r => !releases[r.id] || !releases[r.id].tracks || releases[r.id].videos === undefined);
-  console.log(`→ ${toFetch.length} releases to fetch (${collection.length - toFetch.length} already cached with tracks + videos).`);
+  const toFetch = collection.filter(r => !releases[r.id] || !releases[r.id].tracks);
+  console.log(`→ ${toFetch.length} tracklists to fetch (${collection.length - toFetch.length} already cached).`);
 
   if (toFetch.length === 0) {
     await save(releases);
@@ -163,8 +157,8 @@ async function main() {
     const pct = Math.round((done / toFetch.length) * 100);
     process.stdout.write(`\r[${pct}%] ${done}/${toFetch.length} — ${r.artists} – ${r.title}`.padEnd(120) + " ");
     try {
-      const { tracks, videos } = await fetchRelease(r.id);
-      releases[r.id] = { artist: r.artists, title: r.title, year: r.year, tracks, videos };
+      const tracks = await fetchTracklist(r.id);
+      releases[r.id] = { artist: r.artists, title: r.title, year: r.year, tracks };
     } catch (e) {
       console.warn(`\n  ⚠ Failed for release ${r.id}: ${e.message}`);
     }

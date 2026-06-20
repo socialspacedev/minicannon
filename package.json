@@ -11,7 +11,8 @@
     "eleventy": "npx @11ty/eleventy",
     "dev:css": "npx tailwindcss -i src/_css/site.css -o public/css/style.css --watch --minify",
     "dev:11ty": "eleventy --serve --watch",
-    "discogs:sync": "node --env-file=.env scripts/discogs-sync.mjs"
+    "discogs:sync": "node --env-file=.env scripts/discogs-sync.mjs",
+    "discogs:match": "node --env-file=.env scripts/discogs-match.mjs"
   },
   "keywords": [
     "Website",

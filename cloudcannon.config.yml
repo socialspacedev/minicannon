@@ -246,15 +246,13 @@ _inputs:
   "vinyl_vibes.sets[*].tracks[*].discogs":
     type: select
     label: Track (from Discogs collection)
-    comment: "Pick a track from your synced Discogs collection — fills artist, title, year, duration, and the Discogs link automatically. Run `npm run discogs:sync` to refresh."
+    comment: "Search by artist or title. Picks fill artist, title, year, duration, and the Discogs link automatically at render time. Run `npm run discogs:sync` to refresh."
     options:
-      values: data.discogs.track_options
-      value_key: id
+      values: data.discogs_picker
+      value_key: value
       preview:
         text:
           - key: label
-        subtext:
-          - key: id
     cascade: true
   "vinyl_vibes.sets[*].tracks[*].youtube":
     type: text
@@ -283,8 +281,8 @@ _inputs:
     cascade: true
   "vinyl_vibes.sets[*].tracks[*].buy_url":
     type: url
-    label: Buy / Stream URL (override)
-    comment: "Optional — only fill if you'd rather link somewhere other than the Discogs release page."
+    label: Discogs URL (override)
+    comment: "Optional — only fill if you'd rather link somewhere other than the auto-derived Discogs release page (e.g., Bandcamp, label page)."
     cascade: true
 _editables:
   text:
@@ -596,6 +594,8 @@ data_config:
     path: _data/taglist.yaml
   discogs:
     path: _data/discogs.yaml
+  discogs_picker:
+    path: _data/discogs_picker.yaml
 timezone: Pacific/Auckland
 markdown:
   engine:

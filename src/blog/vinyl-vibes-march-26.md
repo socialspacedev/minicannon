@@ -69,14 +69,12 @@ vinyl_vibes:
         - artist: Brian Eno
           discogs: "2057355:A2"
           title: Backwater
-          year: 0
           duration:
           buy_url:
           youtube:
         - artist: Mission of Burma
           discogs: "2474046:A1"
           title: That's when I reach for my revolver
-          year: 0
           duration:
           buy_url:
           youtube:
