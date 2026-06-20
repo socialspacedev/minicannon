@@ -16,71 +16,71 @@ vinyl_vibes:
     - dj: DJ Skrub Daddy
       slot: '8:00'
       tracks:
-        - artist: Bailterspace
-          discogs: "655335:B3"
+        - discogs: "655335:B3"
+          artist: Bailterspace
           title: Dark Blue
-          year: 1994
+          year: "1994"
           duration: '3:14'
           buy_url: https://bailterspace.bandcamp.com/album/vortura
           youtube: CKxzWI885Hw
-        - artist: Snapper
-          discogs: "837272:A4"
+        - discogs: "837272:A4"
+          artist: Snapper
           title: Eyes that shine
-          year: 1990
+          year: "1990"
           duration: '2:39'
           buy_url: https://www.discogs.com/release/837272-Snapper-Shotgun-Blossom
           youtube: Zz2to-QHW6g
-        - artist: The Max Block
-          discogs: "3791540:A2"
+        - discogs: "3791540:A2"
+          artist: The Max Block
           title: It came in a can
-          year: 2012
+          year: "2012"
           duration: '2:57'
           buy_url: >-
             https://siltbreeze.bandcamp.com/album/max-block-air-ache-in-the-belly-of-the-leech-lp
           youtube: DKsC90BdBJ4
-        - artist: Scorched Earth Policy
-          discogs: "773659:2"
+        - discogs: "773659:2"
+          artist: Scorched Earth Policy
           title: Too far gone
-          year: 2013
+          year: "2013"
           duration: '2:35'
           buy_url: >-
             https://www.discogs.com/release/4834637-Scorched-Earth-Policy-Going-Thru-A-Hole-In-The-Back-Of-Your-Head
           youtube: yhlhrZODxhE
-        - artist: Straitjacket Fits
-          discogs: "1414869:B2"
+        - discogs: "1414869:B2"
+          artist: Straitjacket Fits
           title: Hail (live)
-          year: 1990
+          year: "1990"
           duration: '3:57'
           buy_url: >-
             https://www.discogs.com/release/1414869-Straitjacket-Fits-Bad-Note-For-A-Heart
           youtube: jxMkiW0cBus
-        - artist: The Jesus and Mary Chain
-          discogs: "3031251:B2"
+        - discogs: "3031251:B2"
+          artist: The Jesus and Mary Chain
           title: Fall
-          year: 1987
+          year: "1987"
           duration: '2:30'
           buy_url: >-
             https://www.discogs.com/release/3031251-The-Jesus-And-Mary-Chain-Darklands
           youtube: r9HVtmmwHls
-        - artist: Gary Clail & On-U Sound System
-          discogs: "10653101:A"
+        - discogs: "10653101:A"
+          artist: Gary Clail & On-U Sound System
           title: Human Nature (On the mix)
-          year: 1991
+          year: "1991"
           duration: '6:12'
           buy_url: >-
             https://www.discogs.com/release/10653101-Gary-Clail-On-U-Sound-System-Human-Nature
           youtube: TvONRGnSkXU
-        - artist: Neneh Cherry
-          discogs: "14721225:A1"
+        - discogs: "14721225:A1"
+          artist: Neneh Cherry
           title: Buffalo stance
-          year: 2020
+          year: "2020"
           duration: '4:10'
           buy_url: >-
             https://emirecords.com/products/raw-like-sushi-vinyl-lp?_pos=1&_sid=20c5d55b9&_ss=r
           youtube: JWsRz3TJDEY
         - artist: Dawn Penn
           title: No no no ('94)
-          year: 2022
+          year: "2022"
           duration: '4:25'
           buy_url: https://soundsoftheuniverse.com/sjr/product/no-no-no-creator-version
           youtube: j4vjVetZPpM

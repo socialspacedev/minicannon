@@ -140,7 +140,11 @@ async function injectMatches(content, index) {
     }
 
     const pick = matches[0];
-    out.push(`${continuationIndent}discogs: "${pick.release_id}:${pick.position}"`);
+    // We've already pushed the `- artist: …` line as out[out.length - 1]; rewrite
+    // it as `- discogs: …` and insert the artist below so discogs leads the track.
+    const dashLine = out.pop();
+    out.push(`${baseIndent}- discogs: "${pick.release_id}:${pick.position}"`);
+    out.push(`${continuationIndent}artist: ${artist}`);
 
     let youtubeAdded = false;
     if (!hasYouTube) {
@@ -151,6 +155,7 @@ async function injectMatches(content, index) {
         youtubeAdded = true;
       }
     }
+    void dashLine;
 
     summary.push({
       artist, title,

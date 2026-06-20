@@ -21,20 +21,20 @@ vinyl_vibes:
           duration:
           buy_url:
           youtube:
-        - artist: Darcy Clay
-          discogs: "2722725:3"
+        - discogs: "2722725:3"
+          artist: Darcy Clay
           title: Jolene
           duration:
           buy_url:
           youtube:
-        - artist: Lemonheads
-          discogs: "857342:A"
+        - discogs: "857342:A"
+          artist: Lemonheads
           title: Mrs Robinson
           duration:
           buy_url:
           youtube:
-        - artist: The Terminals
-          discogs: "775627:A2"
+        - discogs: "775627:A2"
+          artist: The Terminals
           title: Love, hate, revenge
           duration:
           buy_url:
@@ -47,15 +47,15 @@ vinyl_vibes:
     - dj: DJ Skrub Daddy
       slot: 8:45pm
       tracks:
-        - artist: Killing Joke
-          discogs: "8385232:C2"
+        - discogs: "8385232:C2"
+          artist: Killing Joke
           title: Delete
           year:
           duration:
           buy_url:
           youtube:
-        - artist: Ministry
-          discogs: "3080042:A5"
+        - discogs: "3080042:A5"
+          artist: Ministry
           title: Jesus built my hotrod
           year:
           duration:

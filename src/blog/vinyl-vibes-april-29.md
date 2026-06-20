@@ -18,20 +18,20 @@ vinyl_vibes:
       tracks:
         - artist: Wire
           title: 23 years later
-          year: 2026
+          year: "2026"
           duration: '9:45'
           buy_url: https://pinkflag.greedbag.com/buy/read-and-burn-23/
           youtube: TAdx4wtyzaM
         - artist: Holy Fuck
           title: Evie
-          year: 2016
+          year: "2016"
           duration: '4:04'
           buy_url: https://holyfuck.bandcamp.com/album/event-beat
           youtube: 4aXcoxjJS3U
-        - artist: The Clean
-          discogs: "599596:B4"
+        - discogs: "599596:B4"
+          artist: The Clean
           title: Big Cat
-          year: 1990
+          year: "1990"
           duration: '1:41'
           buy_url: http://theclean.bandcamp.com/album/vehicle
           youtube: KGvQ60Q2m70
@@ -40,37 +40,37 @@ vinyl_vibes:
       tracks:
         - artist: Bressa Creeting Cake
           title: Billy 2
-          year: 2018
+          year: "2018"
           duration: '3:31'
           buy_url: >-
             https://www.flyingnun.co.nz/products/fn385-bressa-creeting-cake-bressa-creeting-cake-album1997
           youtube: 3subJ92z8Zg
-        - artist: The Monochrome Set
-          discogs: "11438415:B7"
+        - discogs: "11438415:B7"
+          artist: The Monochrome Set
           title: Avanti (Ten Don'ts For Honeymooners)
-          year: 2022
+          year: "2022"
           duration: '3:06'
           buy_url: >-
             https://www.discogs.com/release/24530813-The-Monochrome-Set-Volume-Contrast-Brilliance-Sessions-Singles-Vol-1
           youtube: us1UZIr5PK0
-        - artist: Wet Leg
-          discogs: "22755569:A2"
+        - discogs: "22755569:A2"
+          artist: Wet Leg
           title: Chaise Longue
-          year: 2021
+          year: "2021"
           duration: '3:26'
           buy_url: https://wetleg.bandcamp.com/album/wet-leg
           youtube: Zd9jeJk2UHQ
-        - artist: Black Angels
-          discogs: "4427565:A3"
+        - discogs: "4427565:A3"
+          artist: Black Angels
           title: Don't play with guns
-          year: 2013
+          year: "2013"
           duration: '3:50'
           buy_url: https://music.apple.com/nz/album/indigo-meadow/1529463866
           youtube: f-4gAjLt9Yo
-        - artist: Visage
-          discogs: "5915713:A5"
+        - discogs: "5915713:A5"
+          artist: Visage
           title: Fade to grey
-          year: 1980
+          year: "1980"
           duration: '3:18'
           buy_url: https://www.therealvisage.com/
           youtube: eZHk4RwIp_g

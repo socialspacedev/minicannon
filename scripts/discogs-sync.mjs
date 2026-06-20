@@ -97,9 +97,10 @@ function buildPickerOptions(releases) {
       const artist = t.artist || rel.artist;
       const pos = t.position ? `${t.position}: ` : "";
       const dur = t.duration ? ` (${t.duration})` : "";
+      const year = rel.year ? ` [${rel.year}]` : "";
       out.push({
         value: `${id}:${t.position}`,
-        label: `${artist} – ${rel.title} – ${pos}${t.title}${dur}`,
+        label: `${artist} – ${pos}${t.title}${dur} — ${rel.title}${year}`,
       });
     }
   }

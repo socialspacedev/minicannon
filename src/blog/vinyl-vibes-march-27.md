@@ -16,36 +16,36 @@ vinyl_vibes:
     - dj: DJ Skrub Daddy
       slot: 8:45pm
       tracks:
-        - artist: Dummy
-          discogs: "31657664:B11"
+        - discogs: "31657664:B11"
+          artist: Dummy
           title: Nine clean nails
-          year: 2024
+          year: "2024"
           duration:
           buy_url:
           youtube:
-        - artist: Wire
-          discogs: "8425474:A1"
+        - discogs: "8425474:A1"
+          artist: Wire
           title: Nocturnal Koreans
-          year: 2015
+          year: "2015"
           duration:
           buy_url:
           youtube:
         - artist: Thee Osees
           title: Cassius, Brutus & Judas
-          year: 2025
+          year: "2025"
           duration:
           buy_url:
           youtube:
-        - artist: The Fall
-          discogs: "5845384:A1"
+        - discogs: "5845384:A1"
+          artist: The Fall
           title: Cyber Insekt
-          year: 2001
+          year: "2001"
           duration:
           buy_url:
           youtube:
         - artist: Sophie Ellis-Bextor
           title: Groovejet
-          year: 2000
+          year: "2000"
           duration:
           buy_url:
           youtube:

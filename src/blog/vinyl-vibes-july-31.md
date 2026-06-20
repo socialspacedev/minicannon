@@ -16,88 +16,88 @@ vinyl_vibes:
     - dj: DJ Skrub Daddy
       slot: 9:00pm
       tracks:
-        - artist: Jack White
-          discogs: "3485117:A"
+        - discogs: "3485117:A"
+          artist: Jack White
           title: Sixteen Saltines
-          year: 2013
+          year: "2013"
           duration:
           buy_url:
           youtube:
-        - artist: Parsnip
-          discogs: "15640334:B2"
+        - discogs: "15640334:B2"
+          artist: Parsnip
           title: Repeater
-          year: 2022
+          year: "2022"
           duration:
           buy_url:
           youtube:
         - artist: Ramones
           title: Judy is a punk (7")
-          year: 1976
+          year: "1976"
           duration:
           buy_url:
           youtube:
-        - artist: Ghost Power
-          discogs: "16325100:A"
+        - discogs: "16325100:A"
+          artist: Ghost Power
           title: Asteroid Witch
-          year: 2023
+          year: "2023"
           duration:
           buy_url:
           youtube:
-        - artist: Bailterspace
-          discogs: "440676:3"
+        - discogs: "440676:3"
+          artist: Bailterspace
           title: Shine
-          year: 1990
+          year: "1990"
           duration:
           buy_url:
           youtube:
         - artist: The Fall
           title: Lie dream of the casino soul
-          year: 1978
+          year: "1978"
           duration:
           buy_url:
           youtube:
     - dj: DJ Skrub Mommy
       slot: 9:15pm
       tracks:
-        - artist: Wire
-          discogs: "430118:B1"
+        - discogs: "430118:B1"
+          artist: Wire
           title: Outdoor miner
-          year: 1979
+          year: "1979"
           duration:
           buy_url:
           youtube:
-        - artist: Buzzcocks
-          discogs: "371730:A"
+        - discogs: "371730:A"
+          artist: Buzzcocks
           title: Orgasm addict
-          year: 1977
+          year: "1977"
           duration:
           buy_url:
           youtube:
-        - artist: The 6ths
-          discogs: "528724:A"
+        - discogs: "528724:A"
+          artist: The 6ths
           title: Heaven in a black leather jacket
-          year: 1970
+          year: "1970"
           duration:
           buy_url:
           youtube:
-        - artist: Androidss
-          discogs: "816920:D6"
+        - discogs: "816920:D6"
+          artist: Androidss
           title: Auckland Tonight
-          year: 1980
+          year: "1980"
           duration:
           buy_url:
           youtube:
-        - artist: DJ Shadow
-          discogs: "10885801:B2"
+        - discogs: "10885801:B2"
+          artist: DJ Shadow
           title: Nobody speak
-          year: 2012
+          year: "2012"
           duration:
           buy_url:
           youtube:
-        - artist: Chug
-          discogs: "434386:A"
+        - discogs: "434386:A"
+          artist: Chug
           title: Flowers
-          year: 1992
+          year: "1992"
           duration:
           buy_url:
           youtube:

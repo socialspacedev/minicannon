@@ -16,71 +16,71 @@ vinyl_vibes:
     - dj: DJ Skrub Daddy
       slot: 8:15pm
       tracks:
-        - artist: Colder
-          discogs: "201293:A1"
+        - discogs: "201293:A1"
+          artist: Colder
           title: Crazy Love (original mix)
-          year: 2003
+          year: "2003"
           duration: '5:00'
           buy_url: https://www.discogs.com/release/201293-Colder-Crazy-Love
           youtube: g4kzcdAMPDA
         - artist: Technotronic
           title: Pump up the jam (vocal attack mix)
-          year: 1989
+          year: "1989"
           duration: '5:22'
           buy_url: >-
             https://www.discogs.com/release/444660-Technotronic-Featuring-Felly-Pump-Up-The-Jam
           youtube: C4HVDh-tusc
-        - artist: Cookie Crew
-          discogs: "6648516:A"
+        - discogs: "6648516:A"
+          artist: Cookie Crew
           title: Born this way (let's dance)
-          year: 1989
+          year: "1989"
           duration: '3:50'
           buy_url: >-
             https://www.discogs.com/release/6648516-The-Cookie-Crew-Born-This-Way-Lets-Dance
           youtube: Cu8wLSRmxUk
-        - artist: Sleaford Mods
-          discogs: "16242568:A"
+        - discogs: "16242568:A"
+          artist: Sleaford Mods
           title: Mork N Mindy
-          year: 2020
+          year: "2020"
           duration: '3:24'
           buy_url: https://sleafordmods.bandcamp.com/album/mork-n-mindy
           youtube: iKcbSOjIzjQ
     - dj: DJ Skrub Mommy
       slot: 8:30pm
       tracks:
-        - artist: The Great Unwashed
-          discogs: "791589:B2"
+        - discogs: "791589:B2"
+          artist: The Great Unwashed
           title: Born in the wrong time
-          year: 1984
+          year: "1984"
           duration: '2:20'
           buy_url: https://www.discogs.com/release/8677182-The-Great-Unwashed-Singles
           youtube: R-t8ODhw9-c
-        - artist: Jane's Addiction
-          discogs: "1303549:A5"
+        - discogs: "1303549:A5"
+          artist: Jane's Addiction
           title: Been caught stealing
-          year: 1990
+          year: "1990"
           duration: '3:33'
           buy_url: >-
             https://www.discogs.com/release/1303549-Janes-Addiction-Ritual-De-Lo-Habitual
           youtube: jrwjiO1MCVs
-        - artist: Toy Love
-          discogs: "816884:A4"
+        - discogs: "816884:A4"
+          artist: Toy Love
           title: Bride of Frankenstein
-          year: 2012
+          year: "2012"
           duration: '2:07'
           buy_url: https://www.discogs.com/release/4000870-Toy-Love-Toy-Love
           youtube: zCnpAruNqco
-        - artist: Run DMC
-          discogs: "4367452:A2"
+        - discogs: "4367452:A2"
+          artist: Run DMC
           title: It's Tricky
-          year: 2013
+          year: "2013"
           duration: '3:03'
           buy_url: https://www.discogs.com/release/4367452-Run-DMC-Raising-Hell
           youtube: l-O5IHVhWj0
-        - artist: The Wedding Present
-          discogs: "1002213:B"
+        - discogs: "1002213:B"
+          artist: The Wedding Present
           title: Pleasant valley Sunday
-          year: 2015
+          year: "2015"
           duration: '4:42'
           buy_url: >-
             https://www.discogs.com/release/8042064-Theweddingpresent-The-Hit-Parade
