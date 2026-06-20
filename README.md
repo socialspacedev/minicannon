@@ -43,11 +43,27 @@ Personal blog and photography portfolio at [anaru.nz](https://anaru.nz), built w
 - **Vinyl Vibes** — dedicated post type for vinyl record night playlists
   - Two DJ sets per event, each with an ordered tracklist
   - YouTube thumbnails with zoom-on-hover and lazy-loaded embeds (click to expand, click title to close)
-  - Bandcamp vinyl-pattern placeholder for non-YouTube tracks
-  - Per-track metadata: year, duration, buy/stream link
+  - Per-track data auto-populated from a synced Discogs collection (see below); manual fields kept as per-field overrides
   - Hero image with optional photographer caption
   - Facebook group link footer on every Vinyl Vibes post
   - Full CloudCannon schema with typed inputs for all fields
+- **A Certain Sound** — radio show playlist post type for the OAR show
+  - Per-episode hero image, OAR on-demand link, and a minimal artist/title/year/note tracklist
+- **Audio shortcode** — `{% audio %}` shortcode for self-hosted M4A/MP3, with a styled HTML5 player and optional caption; CloudCannon snippet picks files from `src/audio/`
+
+## Discogs sync for Vinyl Vibes
+
+Track data on Vinyl Vibes posts is sourced from a local snapshot of Andrew's Discogs collection.
+
+```bash
+npm run discogs:sync   # fetches collection + tracklists into src/_data/discogs.yaml
+```
+
+Requires `.env` with `DISCOGS_TOKEN=...` (personal access token from [discogs.com/settings/developers](https://www.discogs.com/settings/developers)). Sync is rate-limited to ~55 requests/min and checkpoints every 25 releases. The first sync takes ~20 minutes; subsequent syncs are incremental (only new releases since last run).
+
+In CloudCannon, each Vinyl Vibes track has a **Track (from Discogs collection)** dropdown that searches the synced data and stores a `release_id:position` reference. The render template resolves this at build time and falls back per-field to any manually-typed `artist` / `title` / `year` / `duration` / `buy_url` so older posts keep working unchanged. The Buy link auto-derives to the Discogs release page when no override is set.
+
+`scripts/discogs-match.mjs` walks existing Vinyl Vibes posts and injects `discogs:` references for tracks where the typed artist + title match the collection — useful when backfilling older posts after the first sync.
 
 ## Local development
 
