@@ -47,13 +47,43 @@ vinyl_vibes:
           youtube: iKcbSOjIzjQ
           bandcamp:
     - dj: DJ Skrub Mommy
-      slot:
+      slot: 8:30pm
       tracks:
-        - artist:
-          title:
-          year:
-          duration:
-          buy_url:
-          youtube:
+        - artist: The Great Unwashed
+          title: Born in the wrong time
+          year: 1984
+          duration: '2:20'
+          buy_url: https://www.discogs.com/release/8677182-The-Great-Unwashed-Singles
+          youtube: R-t8ODhw9-c
+          bandcamp:
+        - artist: Jane's Addiction
+          title: Been caught stealing
+          year: 1990
+          duration: '3:33'
+          buy_url: >-
+            https://www.discogs.com/release/1303549-Janes-Addiction-Ritual-De-Lo-Habitual
+          youtube: jrwjiO1MCVs
+          bandcamp:
+        - artist: Toy Love
+          title: Bride of Frankenstein
+          year: 2012
+          duration: '2:07'
+          buy_url: https://www.discogs.com/release/4000870-Toy-Love-Toy-Love
+          youtube: zCnpAruNqco
+          bandcamp:
+        - artist: Run DMC
+          title: It's Tricky
+          year: 2013
+          duration: '3:03'
+          buy_url: https://www.discogs.com/release/4367452-Run-DMC-Raising-Hell
+          youtube: l-O5IHVhWj0
+          bandcamp:
+        - artist: The Wedding Present
+          title: Pleasant valley Sunday
+          year: 2015
+          duration: '4:42'
+          buy_url: >-
+            https://www.discogs.com/release/8042064-Theweddingpresent-The-Hit-Parade
+          youtube: C6rO3TCbmP8
           bandcamp:
 ---
