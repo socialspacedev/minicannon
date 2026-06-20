@@ -23,7 +23,6 @@ vinyl_vibes:
           duration: '2:28'
           buy_url: https://store.pjharvey.net/collections/uh-huh-her
           youtube: AFLOG2wxg3Q
-          bandcamp:
         - artist: The Ettes
           discogs: "3077427:B5"
           title: Pendulum
@@ -31,7 +30,6 @@ vinyl_vibes:
           duration: '2:21'
           buy_url: https://www.discogs.com/master/436937-The-Ettes-Wicked-Will
           youtube: o88JSfAaxH8
-          bandcamp:
         - artist: Television
           discogs: "32558292:A4"
           title: Call Mr Lee
@@ -39,7 +37,6 @@ vinyl_vibes:
           duration: '4:07'
           buy_url: https://www.discogs.com/release/32558292-Television-Television
           youtube: l4QZSDu1wx8
-          bandcamp:
         - artist: Yo La Tengo
           discogs: "3043031:A2"
           title: From a Motel 6
@@ -47,14 +44,12 @@ vinyl_vibes:
           duration: '4:09'
           buy_url: https://yolatengo.bandcamp.com/album/painful
           youtube: 4Qgv2NLpVaw
-          bandcamp:
         - artist: Robyn HItchcock and the Egyptians
           title: Madonna of the Wasps
           year: 1989
           duration: '2:40'
           buy_url: https://robynhitchcock.substack.com/p/madonna-of-the-wasps
           youtube: 3J_1Fs9_J_A
-          bandcamp:
     - dj: DJ Skrub Daddy
       slot: 9:15pm
       tracks:
@@ -64,7 +59,6 @@ vinyl_vibes:
           duration:
           buy_url:
           youtube:
-          bandcamp:
         - artist: Cranes
           discogs: "15673736:A1"
           title: Shining Road
@@ -72,7 +66,6 @@ vinyl_vibes:
           duration:
           buy_url:
           youtube:
-          bandcamp:
         - artist: Brian Eno
           discogs: "2057355:A2"
           title: Backwater
@@ -80,7 +73,6 @@ vinyl_vibes:
           duration:
           buy_url:
           youtube:
-          bandcamp:
         - artist: Mission of Burma
           discogs: "2474046:A1"
           title: That's when I reach for my revolver
@@ -88,7 +80,6 @@ vinyl_vibes:
           duration:
           buy_url:
           youtube:
-          bandcamp:
     - dj: DJ Skrub Mommy
       slot: 9:30pm
       tracks:
@@ -99,7 +90,6 @@ vinyl_vibes:
           duration:
           buy_url:
           youtube:
-          bandcamp:
         - artist: The Eels
           discogs: "7662621:A3"
           title: Sound of Fear
@@ -107,7 +97,6 @@ vinyl_vibes:
           duration:
           buy_url:
           youtube:
-          bandcamp:
         - artist: MGMT
           discogs: "1584186:A1"
           title: Time to pretend
@@ -115,12 +104,10 @@ vinyl_vibes:
           duration:
           buy_url:
           youtube:
-          bandcamp:
         - artist: Stevie Wonder
           title: Uptight
           year:
           duration:
           buy_url:
           youtube:
-          bandcamp:
 ---

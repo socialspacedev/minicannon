@@ -67,16 +67,25 @@ async function fetchCollection() {
   return releases;
 }
 
-async function fetchTracklist(releaseId) {
+function extractYouTubeId(uri) {
+  const m = String(uri || "").match(/(?:v=|youtu\.be\/|youtube\.com\/embed\/)([\w-]{11})/);
+  return m ? m[1] : null;
+}
+
+async function fetchRelease(releaseId) {
   const data = await api(`/releases/${releaseId}`);
-  return (data.tracklist || [])
-    .filter(t => !t.type_ || t.type_ === "track") // skip heading/index rows
+  const tracks = (data.tracklist || [])
+    .filter(t => !t.type_ || t.type_ === "track")
     .map(t => ({
       position: t.position || "",
       title: t.title || "",
       duration: t.duration || "",
       artist: t.artists ? t.artists.map(a => a.name).join(", ") : null,
     }));
+  const videos = (data.videos || [])
+    .map(v => ({ title: v.title || "", youtube_id: extractYouTubeId(v.uri) }))
+    .filter(v => v.youtube_id);
+  return { tracks, videos };
 }
 
 async function loadExisting() {
@@ -136,8 +145,8 @@ async function main() {
     }
   }
 
-  const toFetch = collection.filter(r => !releases[r.id] || !releases[r.id].tracks);
-  console.log(`→ ${toFetch.length} tracklists to fetch (${collection.length - toFetch.length} already cached).`);
+  const toFetch = collection.filter(r => !releases[r.id] || !releases[r.id].tracks || releases[r.id].videos === undefined);
+  console.log(`→ ${toFetch.length} releases to fetch (${collection.length - toFetch.length} already cached with tracks + videos).`);
 
   if (toFetch.length === 0) {
     await save(releases);
@@ -154,8 +163,8 @@ async function main() {
     const pct = Math.round((done / toFetch.length) * 100);
     process.stdout.write(`\r[${pct}%] ${done}/${toFetch.length} — ${r.artists} – ${r.title}`.padEnd(120) + " ");
     try {
-      const tracks = await fetchTracklist(r.id);
-      releases[r.id] = { artist: r.artists, title: r.title, year: r.year, tracks };
+      const { tracks, videos } = await fetchRelease(r.id);
+      releases[r.id] = { artist: r.artists, title: r.title, year: r.year, tracks, videos };
     } catch (e) {
       console.warn(`\n  ⚠ Failed for release ${r.id}: ${e.message}`);
     }

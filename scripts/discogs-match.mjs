@@ -47,7 +47,17 @@ function buildIndex(discogs) {
   return index;
 }
 
-function injectMatches(content, index) {
+function findVideoMatch(release, trackTitle) {
+  if (!release || !Array.isArray(release.videos)) return null;
+  const target = normalize(trackTitle);
+  if (!target) return null;
+  // Strict: video title contains the track title (after normalisation)
+  const direct = release.videos.find(v => normalize(v.title).includes(target));
+  if (direct) return direct.youtube_id;
+  return null;
+}
+
+function injectMatches(content, index, discogs) {
   const lines = content.split("\n");
   const out = [];
   const summary = [];
@@ -63,9 +73,9 @@ function injectMatches(content, index) {
     const continuationIndent = baseIndent + "  ";
     let artist = m[2].replace(/^['"]|['"]$/g, "");
 
-    // Scan the track block for title and existing discogs
     let title = null;
     let hasDiscogs = false;
+    let hasYouTube = false;
     for (let j = i + 1; j < lines.length; j++) {
       const next = lines[j];
       const nextDash = next.match(/^(\s*)-\s/);
@@ -75,6 +85,7 @@ function injectMatches(content, index) {
       const titleM = next.match(/^\s+title:\s*(.+?)\s*$/);
       if (titleM) title = titleM[1].replace(/^['"]|['"]$/g, "");
       if (/^\s+discogs:\s*\S/.test(next)) hasDiscogs = true;
+      if (/^\s+youtube:\s*\S/.test(next)) hasYouTube = true;
     }
 
     if (!title) continue;
@@ -90,11 +101,23 @@ function injectMatches(content, index) {
 
     const pick = matches[0];
     out.push(`${continuationIndent}discogs: "${pick.release_id}:${pick.position}"`);
+
+    let youtubeAdded = false;
+    if (!hasYouTube) {
+      const release = discogs.releases[pick.release_id];
+      const ytId = findVideoMatch(release, title);
+      if (ytId) {
+        out.push(`${continuationIndent}youtube: ${ytId}`);
+        youtubeAdded = true;
+      }
+    }
+
     summary.push({
       artist, title,
       status: matches.length > 1 ? "duplicate" : "match",
       pick, count: matches.length,
       candidates: matches,
+      youtubeAdded,
     });
   }
 
@@ -114,7 +137,7 @@ async function main() {
   for (const file of vvFiles) {
     const filepath = path.join(VV_DIR, file);
     const text = await readFile(filepath, "utf8");
-    const { content, summary } = injectMatches(text, index);
+    const { content, summary } = injectMatches(text, index, discogs);
 
     const counts = {
       match: summary.filter(s => s.status === "match").length,
@@ -132,7 +155,8 @@ async function main() {
     if (wrote) await writeFile(filepath, content);
 
     console.log(`${file}`);
-    console.log(`  +${counts.match} matched | ${counts.duplicate} duplicate (auto-picked first, REVIEW) | ${counts.noMatch} unmatched | ${counts.alreadySet} already set`);
+    const ytCount = summary.filter(s => s.youtubeAdded).length;
+    console.log(`  +${counts.match} matched | ${counts.duplicate} duplicate (auto-picked first, REVIEW) | ${counts.noMatch} unmatched | ${counts.alreadySet} already set | +${ytCount} YouTube IDs`);
 
     summary.filter(s => s.status === "duplicate").forEach(s => {
       console.log(`  ⚠ ${s.artist} — ${s.title} (${s.count} releases, picked: ${s.pick.rel_title})`);

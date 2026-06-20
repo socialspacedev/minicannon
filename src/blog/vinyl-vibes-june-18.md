@@ -23,7 +23,6 @@ vinyl_vibes:
           duration: '5:00'
           buy_url: https://www.discogs.com/release/201293-Colder-Crazy-Love
           youtube: g4kzcdAMPDA
-          bandcamp:
         - artist: Technotronic
           title: Pump up the jam (vocal attack mix)
           year: 1989
@@ -31,7 +30,6 @@ vinyl_vibes:
           buy_url: >-
             https://www.discogs.com/release/444660-Technotronic-Featuring-Felly-Pump-Up-The-Jam
           youtube: C4HVDh-tusc
-          bandcamp:
         - artist: Cookie Crew
           discogs: "6648516:A"
           title: Born this way (let's dance)
@@ -40,7 +38,6 @@ vinyl_vibes:
           buy_url: >-
             https://www.discogs.com/release/6648516-The-Cookie-Crew-Born-This-Way-Lets-Dance
           youtube: Cu8wLSRmxUk
-          bandcamp:
         - artist: Sleaford Mods
           discogs: "16242568:A"
           title: Mork N Mindy
@@ -48,7 +45,6 @@ vinyl_vibes:
           duration: '3:24'
           buy_url: https://sleafordmods.bandcamp.com/album/mork-n-mindy
           youtube: iKcbSOjIzjQ
-          bandcamp:
     - dj: DJ Skrub Mommy
       slot: 8:30pm
       tracks:
@@ -59,7 +55,6 @@ vinyl_vibes:
           duration: '2:20'
           buy_url: https://www.discogs.com/release/8677182-The-Great-Unwashed-Singles
           youtube: R-t8ODhw9-c
-          bandcamp:
         - artist: Jane's Addiction
           discogs: "1303549:A5"
           title: Been caught stealing
@@ -68,7 +63,6 @@ vinyl_vibes:
           buy_url: >-
             https://www.discogs.com/release/1303549-Janes-Addiction-Ritual-De-Lo-Habitual
           youtube: jrwjiO1MCVs
-          bandcamp:
         - artist: Toy Love
           discogs: "816884:A4"
           title: Bride of Frankenstein
@@ -76,7 +70,6 @@ vinyl_vibes:
           duration: '2:07'
           buy_url: https://www.discogs.com/release/4000870-Toy-Love-Toy-Love
           youtube: zCnpAruNqco
-          bandcamp:
         - artist: Run DMC
           discogs: "4367452:A2"
           title: It's Tricky
@@ -84,7 +77,6 @@ vinyl_vibes:
           duration: '3:03'
           buy_url: https://www.discogs.com/release/4367452-Run-DMC-Raising-Hell
           youtube: l-O5IHVhWj0
-          bandcamp:
         - artist: The Wedding Present
           discogs: "1002213:B"
           title: Pleasant valley Sunday
@@ -93,5 +85,4 @@ vinyl_vibes:
           buy_url: >-
             https://www.discogs.com/release/8042064-Theweddingpresent-The-Hit-Parade
           youtube: C6rO3TCbmP8
-          bandcamp:
 ---

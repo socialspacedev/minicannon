@@ -22,7 +22,6 @@ vinyl_vibes:
           duration:
           buy_url:
           youtube:
-          bandcamp:
         - artist: Darcy Clay
           discogs: "2722725:3"
           title: Jolene
@@ -30,7 +29,6 @@ vinyl_vibes:
           duration:
           buy_url:
           youtube:
-          bandcamp:
         - artist: Lemonheads
           discogs: "857342:A"
           title: Mrs Robinson
@@ -38,7 +36,6 @@ vinyl_vibes:
           duration:
           buy_url:
           youtube:
-          bandcamp:
         - artist: The Terminals
           discogs: "775627:A2"
           title: Love, hate, revenge
@@ -46,14 +43,12 @@ vinyl_vibes:
           duration:
           buy_url:
           youtube:
-          bandcamp:
         - artist: Mariachi La Estrella
           title: Estoy en el Cielo
           year: 0
           duration:
           buy_url:
           youtube:
-          bandcamp:
     - dj: DJ Skrub Daddy
       slot: 8:45pm
       tracks:
@@ -64,7 +59,6 @@ vinyl_vibes:
           duration:
           buy_url:
           youtube:
-          bandcamp:
         - artist: Ministry
           discogs: "3080042:A5"
           title: Jesus built my hotrod
@@ -72,12 +66,10 @@ vinyl_vibes:
           duration:
           buy_url:
           youtube:
-          bandcamp:
         - artist: Sisters of Mercy
           title: Temple of love (12" extended mix)
           year:
           duration:
           buy_url:
           youtube:
-          bandcamp:
 ---

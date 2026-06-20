@@ -23,7 +23,6 @@ vinyl_vibes:
           duration: '3:14'
           buy_url: https://bailterspace.bandcamp.com/album/vortura
           youtube: CKxzWI885Hw
-          bandcamp:
         - artist: Snapper
           discogs: "837272:A4"
           title: Eyes that shine
@@ -31,7 +30,6 @@ vinyl_vibes:
           duration: '2:39'
           buy_url: https://www.discogs.com/release/837272-Snapper-Shotgun-Blossom
           youtube: Zz2to-QHW6g
-          bandcamp:
         - artist: The Max Block
           discogs: "3791540:A2"
           title: It came in a can
@@ -40,7 +38,6 @@ vinyl_vibes:
           buy_url: >-
             https://siltbreeze.bandcamp.com/album/max-block-air-ache-in-the-belly-of-the-leech-lp
           youtube: DKsC90BdBJ4
-          bandcamp:
         - artist: Scorched Earth Policy
           discogs: "773659:2"
           title: Too far gone
@@ -49,7 +46,6 @@ vinyl_vibes:
           buy_url: >-
             https://www.discogs.com/release/4834637-Scorched-Earth-Policy-Going-Thru-A-Hole-In-The-Back-Of-Your-Head
           youtube: yhlhrZODxhE
-          bandcamp:
         - artist: Straitjacket Fits
           discogs: "1414869:B2"
           title: Hail (live)
@@ -58,7 +54,6 @@ vinyl_vibes:
           buy_url: >-
             https://www.discogs.com/release/1414869-Straitjacket-Fits-Bad-Note-For-A-Heart
           youtube: jxMkiW0cBus
-          bandcamp:
         - artist: The Jesus and Mary Chain
           discogs: "3031251:B2"
           title: Fall
@@ -67,7 +62,6 @@ vinyl_vibes:
           buy_url: >-
             https://www.discogs.com/release/3031251-The-Jesus-And-Mary-Chain-Darklands
           youtube: r9HVtmmwHls
-          bandcamp:
         - artist: Gary Clail & On-U Sound System
           discogs: "10653101:A"
           title: Human Nature (On the mix)
@@ -76,7 +70,6 @@ vinyl_vibes:
           buy_url: >-
             https://www.discogs.com/release/10653101-Gary-Clail-On-U-Sound-System-Human-Nature
           youtube: TvONRGnSkXU
-          bandcamp:
         - artist: Neneh Cherry
           discogs: "14721225:A1"
           title: Buffalo stance
@@ -85,12 +78,10 @@ vinyl_vibes:
           buy_url: >-
             https://emirecords.com/products/raw-like-sushi-vinyl-lp?_pos=1&_sid=20c5d55b9&_ss=r
           youtube: JWsRz3TJDEY
-          bandcamp:
         - artist: Dawn Penn
           title: No no no ('94)
           year: 2022
           duration: '4:25'
           buy_url: https://soundsoftheuniverse.com/sjr/product/no-no-no-creator-version
           youtube: j4vjVetZPpM
-          bandcamp:
 ---

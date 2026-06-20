@@ -53,7 +53,7 @@
             <div class="vv-track-info">
               <span><strong>{{ t_artist }}</strong> — {{ t_title }}</span>
               {%- if t_duration or t_year or t_buy -%}
-              <span class="vv-track-meta">{{ t_year }}{% if t_year and t_duration %} · {% endif %}{{ t_duration }}{% if t_buy %} · <a href="{{ t_buy }}" target="_blank" rel="noopener noreferrer">Buy / Stream</a>{% endif %}</span>
+              <span class="vv-track-meta">{{ t_year }}{% if t_year and t_duration %} · {% endif %}{{ t_duration }}{% if t_buy %} · <a class="vv-info" href="{{ t_buy }}" target="_blank" rel="noopener noreferrer" aria-label="More about this release on Discogs" title="More on Discogs">ⓘ</a>{% endif %}</span>
               {%- endif -%}
             </div>
           </summary>

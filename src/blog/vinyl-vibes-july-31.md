@@ -23,7 +23,6 @@ vinyl_vibes:
           duration:
           buy_url:
           youtube:
-          bandcamp:
         - artist: Parsnip
           discogs: "15640334:B2"
           title: Repeater
@@ -31,14 +30,12 @@ vinyl_vibes:
           duration:
           buy_url:
           youtube:
-          bandcamp:
         - artist: Ramones
           title: Judy is a punk (7")
           year: 1976
           duration:
           buy_url:
           youtube:
-          bandcamp:
         - artist: Ghost Power
           discogs: "16325100:A"
           title: Asteroid Witch
@@ -46,7 +43,6 @@ vinyl_vibes:
           duration:
           buy_url:
           youtube:
-          bandcamp:
         - artist: Bailterspace
           discogs: "440676:3"
           title: Shine
@@ -54,14 +50,12 @@ vinyl_vibes:
           duration:
           buy_url:
           youtube:
-          bandcamp:
         - artist: The Fall
           title: Lie dream of the casino soul
           year: 1978
           duration:
           buy_url:
           youtube:
-          bandcamp:
     - dj: DJ Skrub Mommy
       slot: 9:15pm
       tracks:
@@ -72,7 +66,6 @@ vinyl_vibes:
           duration:
           buy_url:
           youtube:
-          bandcamp:
         - artist: Buzzcocks
           discogs: "371730:A"
           title: Orgasm addict
@@ -80,7 +73,6 @@ vinyl_vibes:
           duration:
           buy_url:
           youtube:
-          bandcamp:
         - artist: The 6ths
           discogs: "528724:A"
           title: Heaven in a black leather jacket
@@ -88,7 +80,6 @@ vinyl_vibes:
           duration:
           buy_url:
           youtube:
-          bandcamp:
         - artist: Androidss
           discogs: "816920:D6"
           title: Auckland Tonight
@@ -96,7 +87,6 @@ vinyl_vibes:
           duration:
           buy_url:
           youtube:
-          bandcamp:
         - artist: DJ Shadow
           discogs: "10885801:B2"
           title: Nobody speak
@@ -104,7 +94,6 @@ vinyl_vibes:
           duration:
           buy_url:
           youtube:
-          bandcamp:
         - artist: Chug
           discogs: "434386:A"
           title: Flowers
@@ -112,5 +101,4 @@ vinyl_vibes:
           duration:
           buy_url:
           youtube:
-          bandcamp:
 ---

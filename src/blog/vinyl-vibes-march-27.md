@@ -23,7 +23,6 @@ vinyl_vibes:
           duration:
           buy_url:
           youtube:
-          bandcamp:
         - artist: Wire
           discogs: "8425474:A1"
           title: Nocturnal Koreans
@@ -31,14 +30,12 @@ vinyl_vibes:
           duration:
           buy_url:
           youtube:
-          bandcamp:
         - artist: Thee Osees
           title: Cassius, Brutus & Judas
           year: 2025
           duration:
           buy_url:
           youtube:
-          bandcamp:
         - artist: The Fall
           discogs: "5845384:A1"
           title: Cyber Insekt
@@ -46,12 +43,10 @@ vinyl_vibes:
           duration:
           buy_url:
           youtube:
-          bandcamp:
         - artist: Sophie Ellis-Bextor
           title: Groovejet
           year: 2000
           duration:
           buy_url:
           youtube:
-          bandcamp:
 ---
