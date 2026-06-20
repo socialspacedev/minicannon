@@ -91,15 +91,22 @@ async function loadExisting() {
 
 function buildPickerOptions(releases) {
   const out = [];
+  const seen = new Set();
   for (const [id, rel] of Object.entries(releases)) {
     for (const t of rel.tracks) {
       if (!t.position && !t.title) continue;
+      const value = `${id}:${t.position}`;
+      // Dedupe: Discogs occasionally lists multiple tracks at the same
+      // physical position (medleys, soundtrack quirks). CloudCannon select
+      // requires unique values, so we keep the first occurrence only.
+      if (seen.has(value)) continue;
+      seen.add(value);
       const artist = t.artist || rel.artist;
       const pos = t.position ? `${t.position}: ` : "";
       const dur = t.duration ? ` (${t.duration})` : "";
       const year = rel.year ? ` [${rel.year}]` : "";
       out.push({
-        value: `${id}:${t.position}`,
+        value,
         label: `${artist} – ${pos}${t.title}${dur} — ${rel.title}${year}`,
       });
     }
