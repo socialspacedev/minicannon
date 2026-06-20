@@ -16,21 +16,11 @@ vinyl_vibes:
     - dj: DJ Skrub Daddy
       slot:
       tracks:
-        - artist:
-          title:
-          year:
-          duration:
-          buy_url:
+        - discogs:
           youtube:
-          bandcamp:
     - dj: DJ Skrub Mommy
       slot:
       tracks:
-        - artist:
-          title:
-          year:
-          duration:
-          buy_url:
+        - discogs:
           youtube:
-          bandcamp:
 ---

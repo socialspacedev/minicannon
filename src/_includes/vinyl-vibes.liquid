@@ -19,49 +19,56 @@
     </div>
     <ol class="vv-tracklist">
       {%- for track in set.tracks -%}
+        {%- assign dc_release = nil -%}
+        {%- assign dc_track = nil -%}
+        {%- assign dc_release_id = '' -%}
+        {%- if track.discogs -%}
+          {%- assign dc_parts = track.discogs | split: ':' -%}
+          {%- assign dc_release_id = dc_parts[0] -%}
+          {%- assign dc_position = dc_parts[1] -%}
+          {%- assign dc_release = discogs.releases[dc_release_id] -%}
+          {%- if dc_release -%}
+            {%- assign dc_track = dc_release.tracks | where: 'position', dc_position | first -%}
+          {%- endif -%}
+        {%- endif -%}
+
+        {%- assign t_artist = track.artist | default: dc_track.artist | default: dc_release.artist -%}
+        {%- assign t_title = track.title | default: dc_track.title -%}
+        {%- assign t_year = track.year | default: dc_release.year -%}
+        {%- assign t_duration = track.duration | default: dc_track.duration -%}
+        {%- assign t_buy = track.buy_url -%}
+        {%- if t_buy == nil or t_buy == '' -%}
+          {%- if dc_release_id != '' -%}
+            {%- assign t_buy = 'https://www.discogs.com/release/' | append: dc_release_id -%}
+          {%- endif -%}
+        {%- endif -%}
       <li class="vv-track">
         {%- if track.youtube -%}
         <details class="vv-embed vv-embed--yt">
           <summary class="vv-track-row">
             <div class="vv-thumb-wrap">
-              <img class="vv-thumb" src="https://img.youtube.com/vi/{{ track.youtube }}/mqdefault.jpg" alt="{{ track.artist }} – {{ track.title }}" loading="lazy">
+              <img class="vv-thumb" src="https://img.youtube.com/vi/{{ track.youtube }}/mqdefault.jpg" alt="{{ t_artist }} – {{ t_title }}" loading="lazy">
               <span class="vv-play-icon" aria-hidden="true">▶</span>
             </div>
             <div class="vv-track-info">
-              <span><strong>{{ track.artist }}</strong> — {{ track.title }}</span>
-              {%- if track.duration or track.year or track.buy_url -%}
-              <span class="vv-track-meta">{{ track.year }}{% if track.year and track.duration %} · {% endif %}{{ track.duration }}{% if track.buy_url %} · <a href="{{ track.buy_url }}" target="_blank" rel="noopener noreferrer">Buy / Stream</a>{% endif %}</span>
+              <span><strong>{{ t_artist }}</strong> — {{ t_title }}</span>
+              {%- if t_duration or t_year or t_buy -%}
+              <span class="vv-track-meta">{{ t_year }}{% if t_year and t_duration %} · {% endif %}{{ t_duration }}{% if t_buy %} · <a href="{{ t_buy }}" target="_blank" rel="noopener noreferrer">Buy / Stream</a>{% endif %}</span>
               {%- endif -%}
             </div>
           </summary>
           <iframe data-src="https://www.youtube.com/embed/{{ track.youtube }}?rel=0"
-                  title="{{ track.artist }} – {{ track.title }}"
+                  title="{{ t_artist }} – {{ t_title }}"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen></iframe>
         </details>
-        {%- elsif track.bandcamp -%}
-        <details class="vv-embed vv-embed--bc">
-          <summary class="vv-track-row">
-            <div class="vv-thumb-wrap vv-thumb-placeholder" aria-hidden="true"></div>
-            <div class="vv-track-info">
-              <span><strong>{{ track.artist }}</strong> — {{ track.title }}</span>
-              {%- if track.duration or track.year or track.buy_url -%}
-              <span class="vv-track-meta">{{ track.year }}{% if track.year and track.duration %} · {% endif %}{{ track.duration }}{% if track.buy_url %} · <a href="{{ track.buy_url }}" target="_blank" rel="noopener noreferrer">Buy / Stream</a>{% endif %}</span>
-              {%- endif -%}
-            </div>
-            <span class="vv-embed-label">▶ Bandcamp</span>
-          </summary>
-          <iframe data-src="{{ track.bandcamp }}"
-                  title="{{ track.artist }} – {{ track.title }}"
-                  seamless></iframe>
-        </details>
         {%- else -%}
         <div class="vv-track-row">
           <div class="vv-track-info">
-            <span><strong>{{ track.artist }}</strong> — {{ track.title }}</span>
-            {%- if track.duration or track.year or track.buy_url -%}
-            <span class="vv-track-meta">{{ track.year }}{% if track.year and track.duration %} · {% endif %}{{ track.duration }}{% if track.buy_url %} · <a href="{{ track.buy_url }}" target="_blank" rel="noopener noreferrer">Buy / Stream</a>{% endif %}</span>
+            <span><strong>{{ t_artist }}</strong> — {{ t_title }}</span>
+            {%- if t_duration or t_year or t_buy -%}
+            <span class="vv-track-meta">{{ t_year }}{% if t_year and t_duration %} · {% endif %}{{ t_duration }}{% if t_buy %} · <a href="{{ t_buy }}" target="_blank" rel="noopener noreferrer">Buy / Stream</a>{% endif %}</span>
             {%- endif -%}
           </div>
         </div>

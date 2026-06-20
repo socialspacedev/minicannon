@@ -243,37 +243,45 @@ _inputs:
     type: array
     label: Tracks
     cascade: true
-  "vinyl_vibes.sets[*].tracks[*].artist":
-    type: text
-    label: Artist
-    cascade: true
-  "vinyl_vibes.sets[*].tracks[*].title":
-    type: text
-    label: Song title
-    cascade: true
-  "vinyl_vibes.sets[*].tracks[*].year":
-    type: number
-    label: Year
-    cascade: true
-  "vinyl_vibes.sets[*].tracks[*].duration":
-    type: text
-    label: Duration
-    comment: "e.g. 3:45"
-    cascade: true
-  "vinyl_vibes.sets[*].tracks[*].buy_url":
-    type: url
-    label: Buy / Stream URL
-    comment: "Link to Bandcamp, Apple Music, Spotify, etc."
+  "vinyl_vibes.sets[*].tracks[*].discogs":
+    type: select
+    label: Track (from Discogs collection)
+    comment: "Pick a track from your synced Discogs collection — fills artist, title, year, duration, and the buy link automatically. Run `npm run discogs:sync` to refresh."
+    options:
+      values: data.discogs.track_options
+      value_key: id
+      preview:
+        text: label
     cascade: true
   "vinyl_vibes.sets[*].tracks[*].youtube":
     type: text
-    label: YouTube video ID
-    comment: "11-character ID from the YouTube URL — e.g. dQw4w9WgXcQ"
+    label: YouTube video ID (optional)
+    comment: "11-character ID from the YouTube URL — adds an inline player. Leave blank for a clean row."
     cascade: true
-  "vinyl_vibes.sets[*].tracks[*].bandcamp":
+  "vinyl_vibes.sets[*].tracks[*].artist":
+    type: text
+    label: Artist (override)
+    comment: "Optional — only fill if Discogs is wrong or the track isn't in your collection."
+    cascade: true
+  "vinyl_vibes.sets[*].tracks[*].title":
+    type: text
+    label: Song title (override)
+    comment: "Optional — only fill if Discogs is wrong or the track isn't in your collection."
+    cascade: true
+  "vinyl_vibes.sets[*].tracks[*].year":
+    type: number
+    label: Year (override)
+    comment: "Optional — only fill if Discogs is wrong or missing the year."
+    cascade: true
+  "vinyl_vibes.sets[*].tracks[*].duration":
+    type: text
+    label: Duration (override)
+    comment: "e.g. 3:45 — Optional, only fill if Discogs is missing the duration."
+    cascade: true
+  "vinyl_vibes.sets[*].tracks[*].buy_url":
     type: url
-    label: Bandcamp embed URL
-    comment: "From Bandcamp → Share / Embed → copy the src URL from the iframe code"
+    label: Buy / Stream URL (override)
+    comment: "Optional — only fill if you'd rather link somewhere other than the Discogs release page."
     cascade: true
 _editables:
   text:

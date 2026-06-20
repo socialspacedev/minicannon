@@ -10,7 +10,8 @@
     "css": "npx tailwindcss -i src/_css/site.css -o public/css/style.css --minify",
     "eleventy": "npx @11ty/eleventy",
     "dev:css": "npx tailwindcss -i src/_css/site.css -o public/css/style.css --watch --minify",
-    "dev:11ty": "eleventy --serve --watch"
+    "dev:11ty": "eleventy --serve --watch",
+    "discogs:sync": "node --env-file=.env scripts/discogs-sync.mjs"
   },
   "keywords": [
     "Website",
@@ -28,6 +29,7 @@
     "@11ty/eleventy-plugin-rss": "^3.0.0",
     "@tailwindcss/typography": "^0.5.2",
     "html-minifier-terser": "^7.2.0",
+    "js-yaml": "^4.2.0",
     "luxon": "^3.7.2",
     "npm-run-all2": "^7.0.2",
     "rimraf": "^6.1.3",
