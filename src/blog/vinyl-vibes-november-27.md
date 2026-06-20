@@ -24,6 +24,7 @@ vinyl_vibes:
           youtube:
           bandcamp:
         - artist: Darcy Clay
+          discogs: "2722725:3"
           title: Jolene
           year: 0
           duration:
@@ -31,6 +32,7 @@ vinyl_vibes:
           youtube:
           bandcamp:
         - artist: Lemonheads
+          discogs: "857342:A"
           title: Mrs Robinson
           year: 0
           duration:
@@ -38,6 +40,7 @@ vinyl_vibes:
           youtube:
           bandcamp:
         - artist: The Terminals
+          discogs: "775627:A2"
           title: Love, hate, revenge
           year: 0
           duration:
@@ -55,6 +58,7 @@ vinyl_vibes:
       slot: 8:45pm
       tracks:
         - artist: Killing Joke
+          discogs: "8385232:C2"
           title: Delete
           year:
           duration:
@@ -62,6 +66,7 @@ vinyl_vibes:
           youtube:
           bandcamp:
         - artist: Ministry
+          discogs: "3080042:A5"
           title: Jesus built my hotrod
           year:
           duration:

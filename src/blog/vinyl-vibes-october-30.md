@@ -17,6 +17,7 @@ vinyl_vibes:
       slot: '8:00'
       tracks:
         - artist: Bailterspace
+          discogs: "655335:B3"
           title: Dark Blue
           year: 1994
           duration: '3:14'
@@ -24,6 +25,7 @@ vinyl_vibes:
           youtube: CKxzWI885Hw
           bandcamp:
         - artist: Snapper
+          discogs: "837272:A4"
           title: Eyes that shine
           year: 1990
           duration: '2:39'
@@ -31,6 +33,7 @@ vinyl_vibes:
           youtube: Zz2to-QHW6g
           bandcamp:
         - artist: The Max Block
+          discogs: "3791540:A2"
           title: It came in a can
           year: 2012
           duration: '2:57'
@@ -39,6 +42,7 @@ vinyl_vibes:
           youtube: DKsC90BdBJ4
           bandcamp:
         - artist: Scorched Earth Policy
+          discogs: "773659:2"
           title: Too far gone
           year: 2013
           duration: '2:35'
@@ -47,6 +51,7 @@ vinyl_vibes:
           youtube: yhlhrZODxhE
           bandcamp:
         - artist: Straitjacket Fits
+          discogs: "1414869:B2"
           title: Hail (live)
           year: 1990
           duration: '3:57'
@@ -55,6 +60,7 @@ vinyl_vibes:
           youtube: jxMkiW0cBus
           bandcamp:
         - artist: The Jesus and Mary Chain
+          discogs: "3031251:B2"
           title: Fall
           year: 1987
           duration: '2:30'
@@ -63,6 +69,7 @@ vinyl_vibes:
           youtube: r9HVtmmwHls
           bandcamp:
         - artist: Gary Clail & On-U Sound System
+          discogs: "10653101:A"
           title: Human Nature (On the mix)
           year: 1991
           duration: '6:12'
@@ -71,6 +78,7 @@ vinyl_vibes:
           youtube: TvONRGnSkXU
           bandcamp:
         - artist: Neneh Cherry
+          discogs: "14721225:A1"
           title: Buffalo stance
           year: 2020
           duration: '4:10'

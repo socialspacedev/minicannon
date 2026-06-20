@@ -17,6 +17,7 @@ vinyl_vibes:
       slot: 9:00pm
       tracks:
         - artist: Jack White
+          discogs: "3485117:A"
           title: Sixteen Saltines
           year: 2013
           duration:
@@ -24,6 +25,7 @@ vinyl_vibes:
           youtube:
           bandcamp:
         - artist: Parsnip
+          discogs: "15640334:B2"
           title: Repeater
           year: 2022
           duration:
@@ -38,6 +40,7 @@ vinyl_vibes:
           youtube:
           bandcamp:
         - artist: Ghost Power
+          discogs: "16325100:A"
           title: Asteroid Witch
           year: 2023
           duration:
@@ -45,6 +48,7 @@ vinyl_vibes:
           youtube:
           bandcamp:
         - artist: Bailterspace
+          discogs: "440676:3"
           title: Shine
           year: 1990
           duration:
@@ -62,6 +66,7 @@ vinyl_vibes:
       slot: 9:15pm
       tracks:
         - artist: Wire
+          discogs: "430118:B1"
           title: Outdoor miner
           year: 1979
           duration:
@@ -69,6 +74,7 @@ vinyl_vibes:
           youtube:
           bandcamp:
         - artist: Buzzcocks
+          discogs: "371730:A"
           title: Orgasm addict
           year: 1977
           duration:
@@ -76,6 +82,7 @@ vinyl_vibes:
           youtube:
           bandcamp:
         - artist: The 6ths
+          discogs: "528724:A"
           title: Heaven in a black leather jacket
           year: 1970
           duration:
@@ -83,6 +90,7 @@ vinyl_vibes:
           youtube:
           bandcamp:
         - artist: Androidss
+          discogs: "816920:D6"
           title: Auckland Tonight
           year: 1980
           duration:
@@ -90,6 +98,7 @@ vinyl_vibes:
           youtube:
           bandcamp:
         - artist: DJ Shadow
+          discogs: "10885801:B2"
           title: Nobody speak
           year: 2012
           duration:
@@ -97,6 +106,7 @@ vinyl_vibes:
           youtube:
           bandcamp:
         - artist: Chug
+          discogs: "434386:A"
           title: Flowers
           year: 1992
           duration:

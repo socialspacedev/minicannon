@@ -17,6 +17,7 @@ vinyl_vibes:
       slot: 8:45pm
       tracks:
         - artist: Dummy
+          discogs: "31657664:B11"
           title: Nine clean nails
           year: 2024
           duration:
@@ -24,6 +25,7 @@ vinyl_vibes:
           youtube:
           bandcamp:
         - artist: Wire
+          discogs: "8425474:A1"
           title: Nocturnal Koreans
           year: 2015
           duration:
@@ -38,6 +40,7 @@ vinyl_vibes:
           youtube:
           bandcamp:
         - artist: The Fall
+          discogs: "5845384:A1"
           title: Cyber Insekt
           year: 2001
           duration:

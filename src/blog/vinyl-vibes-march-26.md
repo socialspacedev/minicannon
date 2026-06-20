@@ -17,6 +17,7 @@ vinyl_vibes:
       slot: 7:30pm
       tracks:
         - artist: PJ Harvey
+          discogs: "18480250:A2"
           title: Shame
           year: 2004
           duration: '2:28'
@@ -24,6 +25,7 @@ vinyl_vibes:
           youtube: AFLOG2wxg3Q
           bandcamp:
         - artist: The Ettes
+          discogs: "3077427:B5"
           title: Pendulum
           year: 2011
           duration: '2:21'
@@ -31,6 +33,7 @@ vinyl_vibes:
           youtube: o88JSfAaxH8
           bandcamp:
         - artist: Television
+          discogs: "32558292:A4"
           title: Call Mr Lee
           year: 1992
           duration: '4:07'
@@ -38,6 +41,7 @@ vinyl_vibes:
           youtube: l4QZSDu1wx8
           bandcamp:
         - artist: Yo La Tengo
+          discogs: "3043031:A2"
           title: From a Motel 6
           year: 1993
           duration: '4:09'
@@ -62,6 +66,7 @@ vinyl_vibes:
           youtube:
           bandcamp:
         - artist: Cranes
+          discogs: "15673736:A1"
           title: Shining Road
           year: 1992
           duration:
@@ -69,6 +74,7 @@ vinyl_vibes:
           youtube:
           bandcamp:
         - artist: Brian Eno
+          discogs: "2057355:A2"
           title: Backwater
           year: 0
           duration:
@@ -76,6 +82,7 @@ vinyl_vibes:
           youtube:
           bandcamp:
         - artist: Mission of Burma
+          discogs: "2474046:A1"
           title: That's when I reach for my revolver
           year: 0
           duration:
@@ -86,6 +93,7 @@ vinyl_vibes:
       slot: 9:30pm
       tracks:
         - artist: Run DMC
+          discogs: "5473827:A2"
           title: Mary Mary
           year:
           duration:
@@ -93,6 +101,7 @@ vinyl_vibes:
           youtube:
           bandcamp:
         - artist: The Eels
+          discogs: "7662621:A3"
           title: Sound of Fear
           year:
           duration:
@@ -100,6 +109,7 @@ vinyl_vibes:
           youtube:
           bandcamp:
         - artist: MGMT
+          discogs: "1584186:A1"
           title: Time to pretend
           year:
           duration:

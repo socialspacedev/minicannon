@@ -31,6 +31,7 @@ vinyl_vibes:
           youtube: 4aXcoxjJS3U
           bandcamp:
         - artist: The Clean
+          discogs: "599596:B4"
           title: Big Cat
           year: 1990
           duration: '1:41'
@@ -49,6 +50,7 @@ vinyl_vibes:
           youtube: 3subJ92z8Zg
           bandcamp:
         - artist: The Monochrome Set
+          discogs: "11438415:B7"
           title: Avanti (Ten Don'ts For Honeymooners)
           year: 2022
           duration: '3:06'
@@ -57,6 +59,7 @@ vinyl_vibes:
           youtube: us1UZIr5PK0
           bandcamp:
         - artist: Wet Leg
+          discogs: "22755569:A2"
           title: Chaise Longue
           year: 2021
           duration: '3:26'
@@ -64,6 +67,7 @@ vinyl_vibes:
           youtube: Zd9jeJk2UHQ
           bandcamp:
         - artist: Black Angels
+          discogs: "4427565:A3"
           title: Don't play with guns
           year: 2013
           duration: '3:50'
@@ -71,6 +75,7 @@ vinyl_vibes:
           youtube: f-4gAjLt9Yo
           bandcamp:
         - artist: Visage
+          discogs: "5915713:A5"
           title: Fade to grey
           year: 1980
           duration: '3:18'

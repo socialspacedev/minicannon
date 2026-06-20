@@ -17,6 +17,7 @@ vinyl_vibes:
       slot: 8:15pm
       tracks:
         - artist: Colder
+          discogs: "201293:A1"
           title: Crazy Love (original mix)
           year: 2003
           duration: '5:00'
@@ -32,6 +33,7 @@ vinyl_vibes:
           youtube: C4HVDh-tusc
           bandcamp:
         - artist: Cookie Crew
+          discogs: "6648516:A"
           title: Born this way (let's dance)
           year: 1989
           duration: '3:50'
@@ -40,6 +42,7 @@ vinyl_vibes:
           youtube: Cu8wLSRmxUk
           bandcamp:
         - artist: Sleaford Mods
+          discogs: "16242568:A"
           title: Mork N Mindy
           year: 2020
           duration: '3:24'
@@ -50,6 +53,7 @@ vinyl_vibes:
       slot: 8:30pm
       tracks:
         - artist: The Great Unwashed
+          discogs: "791589:B2"
           title: Born in the wrong time
           year: 1984
           duration: '2:20'
@@ -57,6 +61,7 @@ vinyl_vibes:
           youtube: R-t8ODhw9-c
           bandcamp:
         - artist: Jane's Addiction
+          discogs: "1303549:A5"
           title: Been caught stealing
           year: 1990
           duration: '3:33'
@@ -65,6 +70,7 @@ vinyl_vibes:
           youtube: jrwjiO1MCVs
           bandcamp:
         - artist: Toy Love
+          discogs: "816884:A4"
           title: Bride of Frankenstein
           year: 2012
           duration: '2:07'
@@ -72,6 +78,7 @@ vinyl_vibes:
           youtube: zCnpAruNqco
           bandcamp:
         - artist: Run DMC
+          discogs: "4367452:A2"
           title: It's Tricky
           year: 2013
           duration: '3:03'
@@ -79,6 +86,7 @@ vinyl_vibes:
           youtube: l-O5IHVhWj0
           bandcamp:
         - artist: The Wedding Present
+          discogs: "1002213:B"
           title: Pleasant valley Sunday
           year: 2015
           duration: '4:42'
