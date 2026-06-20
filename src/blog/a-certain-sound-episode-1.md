@@ -1,10 +1,8 @@
 ---
 _schema: a_certain_sound
 title: A Certain Sound (Episode 1)
-description: >-
-  Tracklist for A Certain Sound on Otago Access Radio. Originally broadcast on
-  June 20th, 2026.
-date: 2026-06-20T12:23:00+12:00
+description: Originally broadcast on June 20th, 2026 on Otago Access Radio 105.4FM.
+date: 2026-06-21T12:23:00+12:00
 type: article
 layout: article.liquid
 tags:
@@ -24,7 +22,7 @@ a_certain_sound:
     - artist: Kitset
       title: Opossum
       year: 1999
-      note: From album Testpot released by Arc Cafe.
+      note: From album Testpot released by Arclife
     - artist: Opossom
       title: Blue Meanies
       year: 2012
@@ -32,15 +30,15 @@ a_certain_sound:
     - artist: The Jean Paul Sartre Experience
       title: I Like Rain
       year: 1988
-      note: First single but this version off Love Songs
+      note: First single with this version off Love Songs
     - artist: Bailterspace
       title: Shadow (live)
       year: 1994
-      note: Recorded live at Lounge Ax, Chicago 23 April 1994
+      note: Recorded live at Lounge Ax in Chicago 1994
     - artist: The Great Unwashed
       title: Can't find water
       year: 1984
-      note: Peter Gutteridge gem
+      note: A Peter Gutteridge gem
     - artist: The Chills
       title: Bee Bah Bee Bah Bee Boe
       year: 1985
@@ -56,9 +54,7 @@ a_certain_sound:
     - artist: Stephen Cogle and Peter Stapleton
       title: Native Waiter
       year: 2026
-      note: >-
-        First track from brand new album "An afternoon with Victor Dimisich".
-        Recorded in 1981
+      note: First track from new album "An afternoon with Victor Dimisich"
     - artist: Scorched Earth Policy
       title: Too Far Gone
       year: 2013
