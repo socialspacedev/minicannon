@@ -4,7 +4,7 @@ title: A Certain Sound (Episode 1)
 description: >-
   Tracklist for A Certain Sound on Otago Access Radio. Originally broadcast on
   June 20th, 2026.
-date: 2026-06-22T12:23:00+12:00
+date: 2026-06-20T12:23:00+12:00
 type: article
 layout: article.liquid
 tags:
