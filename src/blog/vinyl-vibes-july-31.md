@@ -22,7 +22,7 @@ vinyl_vibes:
           year: "2013"
           duration:
           buy_url:
-          youtube:
+          youtube: DsixWMdScUI
         - discogs: "15640334:B2"
           artist: Parsnip
           title: Repeater
@@ -40,9 +40,9 @@ vinyl_vibes:
           artist: Ghost Power
           title: Asteroid Witch
           year: "2023"
-          duration:
+          duration: '3:41'
           buy_url:
-          youtube:
+          youtube: XfODERz8Kqw
         - discogs: "440676:3"
           artist: Bailterspace
           title: Shine
@@ -63,30 +63,30 @@ vinyl_vibes:
           artist: Wire
           title: Outdoor miner
           year: "1979"
-          duration:
+          duration: '2:55'
           buy_url:
           youtube:
         - discogs: "371730:A"
           artist: Buzzcocks
           title: Orgasm addict
           year: "1977"
-          duration:
+          duration: '1:58'
           buy_url:
-          youtube:
+          youtube: 3y0flAHwe5k
         - discogs: "528724:A"
           artist: The 6ths
           title: Heaven in a black leather jacket
           year: "1970"
-          duration:
+          duration: '2:46'
           buy_url:
-          youtube:
+          youtube: G3jcIAEQiYs
         - discogs: "816920:D6"
           artist: Androidss
           title: Auckland Tonight
           year: "1980"
           duration:
           buy_url:
-          youtube:
+          youtube: v1kRi5Xgfvk
         - discogs: "10885801:B2"
           artist: DJ Shadow
           title: Nobody speak
@@ -100,5 +100,5 @@ vinyl_vibes:
           year: "1992"
           duration:
           buy_url:
-          youtube:
+          youtube: Gp_j1jQ7Hhw
 ---

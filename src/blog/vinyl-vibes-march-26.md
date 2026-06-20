@@ -65,43 +65,45 @@ vinyl_vibes:
           year: "1992"
           duration:
           buy_url:
-          youtube:
+          youtube: VZnSik1HpWw
         - discogs: "2057355:A2"
+          year: '1977'
           artist: Brian Eno
           title: Backwater
-          duration:
+          duration: '3:42'
           buy_url:
-          youtube:
+          youtube: RvciU4AJ5Cc
         - discogs: "2474046:A1"
+          year: '2010'
           artist: Mission of Burma
           title: That's when I reach for my revolver
           duration:
           buy_url:
-          youtube:
+          youtube: PpTKcv-SmR0
     - dj: DJ Skrub Mommy
       slot: 9:30pm
       tracks:
         - discogs: "5473827:A2"
           artist: Run DMC
           title: Mary Mary
-          year:
-          duration:
+          year: '2014'
+          duration: '3:12'
           buy_url:
           youtube:
         - discogs: "7662621:A3"
           artist: The Eels
           title: Sound of Fear
-          year:
-          duration:
+          year: '2015'
+          duration: '3:33'
           buy_url:
-          youtube:
+          youtube: Gljp8Kw_cbA
         - discogs: "1584186:A1"
           artist: MGMT
           title: Time to pretend
-          year:
+          year: '2008'
           duration:
           buy_url:
-          youtube:
+          youtube: B9dSYgd5Elk
         - artist: Stevie Wonder
           title: Uptight
           year:

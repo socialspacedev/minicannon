@@ -22,14 +22,14 @@ vinyl_vibes:
           year: "2024"
           duration:
           buy_url:
-          youtube:
+          youtube: gCyb1729fe0
         - discogs: "8425474:A1"
           artist: Wire
           title: Nocturnal Koreans
           year: "2015"
           duration:
           buy_url:
-          youtube:
+          youtube: CWyij_m08U0
         - artist: Thee Osees
           title: Cassius, Brutus & Judas
           year: "2025"
@@ -40,9 +40,9 @@ vinyl_vibes:
           artist: The Fall
           title: Cyber Insekt
           year: "2001"
-          duration:
+          duration: '3:18'
           buy_url:
-          youtube:
+          youtube: TNkQmYvoh8A
         - artist: Sophie Ellis-Bextor
           title: Groovejet
           year: "2000"

@@ -97,76 +97,174 @@ function findVideoMatch(videos, trackTitle) {
   return direct ? direct.youtube_id : null;
 }
 
-async function injectMatches(content, index) {
+function yamlValue(v) {
+  // js-yaml dump returns "key: value\n" — strip the key and trailing newline
+  const dumped = yaml.dump({ x: v }, { lineWidth: -1 }).trimEnd();
+  return dumped.slice("x: ".length);
+}
+
+// Line-surgery helper: scan a track block starting at i, return field map
+// + the line index where each field appears. Continuation lines (multi-line
+// scalars) are passed through untouched.
+function scanTrackBlock(lines, i) {
+  const dashMatch = lines[i].match(/^(\s*)-\s+(\w+):\s*(.*)$/);
+  if (!dashMatch) return null;
+  const baseIndent = dashMatch[1];
+  const continuationIndent = baseIndent + "  ";
+  const fields = {};
+  const fieldLine = {}; // field → line index
+  const recordField = (k, v, lineIdx) => {
+    if (k in fields) return; // first occurrence wins
+    fields[k] = v;
+    fieldLine[k] = lineIdx;
+  };
+  recordField(dashMatch[2], unquote(dashMatch[3]), i);
+
+  let end = i + 1;
+  while (end < lines.length) {
+    const next = lines[end];
+    const nextDash = next.match(/^(\s*)-\s/);
+    if (nextDash && nextDash[1].length <= baseIndent.length) break;
+    if (/^\S/.test(next)) break;
+    // Only match lines at EXACTLY the field-level indent; deeper indents are
+    // continuation of a multi-line scalar (e.g., `buy_url: >-\n            https://…`)
+    const fieldM = next.match(/^(\s+)(\w+):\s*(.*)$/);
+    if (fieldM && fieldM[1].length === continuationIndent.length) {
+      recordField(fieldM[2], unquote(fieldM[3]), end);
+    }
+    end++;
+  }
+  return { baseIndent, continuationIndent, fields, fieldLine, startLine: i, endLine: end };
+}
+
+function unquote(s) {
+  const t = s.trim();
+  if ((t.startsWith("'") && t.endsWith("'")) || (t.startsWith('"') && t.endsWith('"'))) {
+    return t.slice(1, -1).replace(/''/g, "'");
+  }
+  return t;
+}
+
+async function injectMatches(content, index, discogs) {
   const lines = content.split("\n");
-  const out = [];
+  // We'll mutate lines in place (replacements) and track insertions to splice in afterward.
+  const insertions = []; // { afterLine, lines: string[] }
   const summary = [];
 
-  for (let i = 0; i < lines.length; i++) {
-    const line = lines[i];
-    out.push(line);
-
-    const m = line.match(/^(\s*)-\s+artist:\s*(.+?)\s*$/);
-    if (!m) continue;
-
-    const baseIndent = m[1];
-    const continuationIndent = baseIndent + "  ";
-    let artist = m[2].replace(/^['"]|['"]$/g, "");
-
-    let title = null;
-    let hasDiscogs = false;
-    let hasYouTube = false;
-    for (let j = i + 1; j < lines.length; j++) {
-      const next = lines[j];
-      const nextDash = next.match(/^(\s*)-\s/);
-      if (nextDash && nextDash[1].length <= baseIndent.length) break;
-      const blockBoundary = next.match(/^\S/);
-      if (blockBoundary) break;
-      const titleM = next.match(/^\s+title:\s*(.+?)\s*$/);
-      if (titleM) title = titleM[1].replace(/^['"]|['"]$/g, "");
-      if (/^\s+discogs:\s*\S/.test(next)) hasDiscogs = true;
-      if (/^\s+youtube:\s*\S/.test(next)) hasYouTube = true;
-    }
-
-    if (!title) continue;
-    if (hasDiscogs) { summary.push({ artist, title, status: "already-set" }); continue; }
-
-    const key = normalize(artist) + "|" + normalize(title);
-    const matches = index.get(key);
-
-    if (!matches || matches.length === 0) {
-      summary.push({ artist, title, status: "no-match" });
+  let i = 0;
+  while (i < lines.length) {
+    // Only treat a dashed line as a track block if its first key is
+    // discogs or artist — `- dj: …` and similar are *set* entries and we
+    // must descend into them rather than scooping their tracks.
+    const dashMatch = lines[i].match(/^(\s*)-\s+(\w+):/);
+    const firstKey = dashMatch && dashMatch[2];
+    if (firstKey !== "discogs" && firstKey !== "artist") {
+      i++;
       continue;
     }
+    const block = scanTrackBlock(lines, i);
+    if (!block) { i++; continue; }
 
-    const pick = matches[0];
-    // We've already pushed the `- artist: …` line as out[out.length - 1]; rewrite
-    // it as `- discogs: …` and insert the artist below so discogs leads the track.
-    const dashLine = out.pop();
-    out.push(`${baseIndent}- discogs: "${pick.release_id}:${pick.position}"`);
-    out.push(`${continuationIndent}artist: ${artist}`);
-
+    const { continuationIndent, fields, fieldLine, endLine } = block;
+    let status = "no-change";
     let youtubeAdded = false;
-    if (!hasYouTube) {
-      const videos = await fetchVideos(pick.release_id);
-      const ytId = findVideoMatch(videos, title);
-      if (ytId) {
-        out.push(`${continuationIndent}youtube: ${ytId}`);
-        youtubeAdded = true;
+    let resolvedRelease = null;
+
+    // Direction 1: have artist+title, no discogs → add discogs
+    if (!fields.discogs && fields.artist && fields.title) {
+      const key = normalize(fields.artist) + "|" + normalize(fields.title);
+      const matches = index.get(key);
+      if (matches && matches.length > 0) {
+        const pick = matches[0];
+        fields.discogs = `${pick.release_id}:${pick.position}`;
+        // Convert `- artist: X` line → `- discogs: "ID"` and insert artist below
+        const dashLine = lines[fieldLine.artist]; // this is the `- artist: …` line
+        const dashIndent = dashLine.match(/^(\s*)-/)[1];
+        lines[fieldLine.artist] = `${dashIndent}- discogs: "${fields.discogs}"`;
+        insertions.push({ afterLine: fieldLine.artist, lines: [`${continuationIndent}artist: ${yamlValue(fields.artist)}`] });
+        status = matches.length > 1 ? "duplicate" : "match";
+        summary.push({ artist: fields.artist, title: fields.title, status, pick, count: matches.length });
+      } else {
+        summary.push({ artist: fields.artist, title: fields.title, status: "no-match" });
       }
     }
-    void dashLine;
 
-    summary.push({
-      artist, title,
-      status: matches.length > 1 ? "duplicate" : "match",
-      pick, count: matches.length,
-      candidates: matches,
-      youtubeAdded,
-    });
+    // Direction 2: have discogs → fill missing artist/title/year/duration (and youtube)
+    if (fields.discogs) {
+      const [releaseId, position] = String(fields.discogs).split(":");
+      const release = discogs.releases?.[releaseId];
+      const track = release?.tracks?.find(t => t.position === position);
+      if (release && track) {
+        resolvedRelease = release;
+        const fillTargets = [
+          ["artist",   track.artist || release.artist],
+          ["title",    track.title],
+          ["year",     release.year ? String(release.year) : null],
+          ["duration", track.duration],
+        ];
+        const toInsert = [];
+        for (const [k, v] of fillTargets) {
+          if (!v) continue;
+          if (fields[k]) continue; // user has a value — leave alone
+          if (k in fieldLine) {
+            // Empty field exists (`artist: ''` or bare `artist:`) — rewrite the line
+            const lineIdx = fieldLine[k];
+            const orig = lines[lineIdx];
+            const m = orig.match(/^(\s+)(\w+)\s*:/);
+            if (m) {
+              lines[lineIdx] = `${m[1]}${m[2]}: ${yamlValue(v)}`;
+              fields[k] = v;
+              status = "filled";
+            }
+          } else {
+            // Field missing entirely — insert a new line below the discogs line
+            toInsert.push(`${continuationIndent}${k}: ${yamlValue(v)}`);
+            fields[k] = v;
+            status = "filled";
+          }
+        }
+        if (toInsert.length > 0) {
+          insertions.push({ afterLine: fieldLine.discogs, lines: toInsert });
+        }
+
+        // YouTube: skip if already set, else look up videos for matched release
+        if (!fields.youtube) {
+          const videos = await fetchVideos(releaseId);
+          const ytId = findVideoMatch(videos, fields.title || track.title);
+          if (ytId) {
+            if ("youtube" in fieldLine) {
+              const lineIdx = fieldLine.youtube;
+              const orig = lines[lineIdx];
+              const m = orig.match(/^(\s+)(\w+)\s*:/);
+              if (m) lines[lineIdx] = `${m[1]}${m[2]}: ${ytId}`;
+            } else {
+              insertions.push({ afterLine: fieldLine.discogs, lines: [`${continuationIndent}youtube: ${ytId}`] });
+            }
+            youtubeAdded = true;
+          }
+        }
+
+        if (status === "filled" || youtubeAdded) {
+          if (!summary.find(s => s.artist === fields.artist && s.title === fields.title)) {
+            summary.push({ artist: fields.artist, title: fields.title, status: "filled", youtubeAdded });
+          } else if (youtubeAdded) {
+            summary[summary.length - 1].youtubeAdded = true;
+          }
+        }
+      }
+    }
+
+    void resolvedRelease;
+    i = endLine;
   }
 
-  return { content: out.join("\n"), summary };
+  // Apply insertions in reverse order so indexes stay valid
+  insertions.sort((a, b) => b.afterLine - a.afterLine);
+  for (const { afterLine, lines: newLines } of insertions) {
+    lines.splice(afterLine + 1, 0, ...newLines);
+  }
+
+  return { content: lines.join("\n"), summary };
 }
 
 async function main() {
@@ -182,26 +280,26 @@ async function main() {
   for (const file of vvFiles) {
     const filepath = path.join(VV_DIR, file);
     const text = await readFile(filepath, "utf8");
-    const { content, summary } = await injectMatches(text, index);
+    const { content, summary } = await injectMatches(text, index, discogs);
 
     const counts = {
       match: summary.filter(s => s.status === "match").length,
       duplicate: summary.filter(s => s.status === "duplicate").length,
       noMatch: summary.filter(s => s.status === "no-match").length,
-      alreadySet: summary.filter(s => s.status === "already-set").length,
+      filled: summary.filter(s => s.status === "filled").length,
     };
 
     totals.matched += counts.match;
     totals.duplicate += counts.duplicate;
     totals.missed += counts.noMatch;
-    totals.alreadySet += counts.alreadySet;
+    totals.alreadySet += counts.filled;
 
-    const wrote = counts.match + counts.duplicate > 0;
+    const wrote = content !== text;
     if (wrote) await writeFile(filepath, content);
 
     console.log(`${file}`);
     const ytCount = summary.filter(s => s.youtubeAdded).length;
-    console.log(`  +${counts.match} matched | ${counts.duplicate} duplicate (auto-picked first, REVIEW) | ${counts.noMatch} unmatched | ${counts.alreadySet} already set | +${ytCount} YouTube IDs`);
+    console.log(`  +${counts.match} matched | ${counts.duplicate} duplicate (REVIEW) | ${counts.noMatch} unmatched | ${counts.filled} filled from Discogs | +${ytCount} YouTube IDs`);
 
     summary.filter(s => s.status === "duplicate").forEach(s => {
       console.log(`  ⚠ ${s.artist} — ${s.title} (${s.count} releases, picked: ${s.pick.rel_title})`);

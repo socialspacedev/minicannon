@@ -22,21 +22,24 @@ vinyl_vibes:
           buy_url:
           youtube:
         - discogs: "2722725:3"
+          year: '1997'
           artist: Darcy Clay
           title: Jolene
           duration:
           buy_url:
           youtube:
         - discogs: "857342:A"
+          year: '1992'
           artist: Lemonheads
           title: Mrs Robinson
-          duration:
+          duration: '3:39'
           buy_url:
-          youtube:
+          youtube: zvMFm5nKeUc
         - discogs: "775627:A2"
+          year: '1990'
           artist: The Terminals
           title: Love, hate, revenge
-          duration:
+          duration: '2:33'
           buy_url:
           youtube:
         - artist: Mariachi La Estrella
@@ -50,17 +53,17 @@ vinyl_vibes:
         - discogs: "8385232:C2"
           artist: Killing Joke
           title: Delete
-          year:
-          duration:
+          year: '2016'
+          duration: '5:00'
           buy_url:
-          youtube:
+          youtube: 1Un-p-vutC0
         - discogs: "3080042:A5"
           artist: Ministry
           title: Jesus built my hotrod
-          year:
-          duration:
+          year: '2011'
+          duration: '4:52'
           buy_url:
-          youtube:
+          youtube: GXCh9OhDiCI
         - artist: Sisters of Mercy
           title: Temple of love (12" extended mix)
           year:
