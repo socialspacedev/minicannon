@@ -53,17 +53,46 @@ Personal blog and photography portfolio at [anaru.nz](https://anaru.nz), built w
 
 ## Discogs sync for Vinyl Vibes
 
-Track data on Vinyl Vibes posts is sourced from a local snapshot of Andrew's Discogs collection.
+Track data on Vinyl Vibes posts is sourced from a local snapshot of Andrew's Discogs collection. Two scripts work together:
 
 ```bash
-npm run discogs:sync   # fetches collection + tracklists into src/_data/discogs.yaml
+npm run discogs:sync    # fetch Discogs collection + tracklists
+npm run discogs:match   # walk Vinyl Vibes posts, fill missing data
 ```
 
-Requires `.env` with `DISCOGS_TOKEN=...` (personal access token from [discogs.com/settings/developers](https://www.discogs.com/settings/developers)). Sync is rate-limited to ~55 requests/min and checkpoints every 25 releases. The first sync takes ~20 minutes; subsequent syncs are incremental (only new releases since last run).
+Both require `.env` with `DISCOGS_TOKEN=...` (personal access token from [discogs.com/settings/developers](https://www.discogs.com/settings/developers)).
 
-In CloudCannon, each Vinyl Vibes track has a **Track (from Discogs collection)** dropdown that searches the synced data and stores a `release_id:position` reference. The render template resolves this at build time and falls back per-field to any manually-typed `artist` / `title` / `year` / `duration` / `buy_url` so older posts keep working unchanged. The Buy link auto-derives to the Discogs release page when no override is set.
+### `discogs:sync`
 
-`scripts/discogs-match.mjs` walks existing Vinyl Vibes posts and injects `discogs:` references for tracks where the typed artist + title match the collection — useful when backfilling older posts after the first sync.
+Writes two YAML files:
+
+- `src/_data/discogs.yaml` — full release/track data, used by the Eleventy template at build time
+- `src/_data/discogs_picker.yaml` — slim `{value, label}` list, the only file CloudCannon loads for the dropdown
+
+Rate-limited to ~55 req/min (Discogs auth ceiling is 60). Checkpoints every 25 releases so a Ctrl+C is recoverable. The first sync of a ~1000-record collection takes ~20 min; subsequent syncs are incremental (only new releases since last run) and finish in seconds.
+
+### `discogs:match`
+
+Walks `src/blog/vinyl-vibes-*.md` and works bi-directionally on each track:
+
+- **Has typed artist + title, no `discogs:` ref** — looks the track up in the synced collection, picks the first match, inserts a `discogs: "release_id:position"` line at the top of the block.
+- **Has a `discogs:` ref but missing artist / title / year / duration / buy_url** — fills them in from the synced data. The Discogs release page URL is set as `buy_url`. Existing manual values are never overwritten.
+- **Has a `discogs:` ref but no `youtube:`** — fetches the release's Discogs videos (cached 30 days via eleventy-fetch — only releases referenced by posts ever get queried) and injects a YouTube ID if a video title matches the track title.
+
+The script preserves YAML idiosyncrasies — multi-line scalars (`buy_url: >- … `) and existing quoting are left alone. Tracks that already have everything set are untouched.
+
+### The CloudCannon picker
+
+Each Vinyl Vibes track has a **Track (from Discogs collection)** dropdown that searches the synced collection and stores a `release_id:position` reference. The labels are formatted `Artist – Position: Track Title (Duration) — Album [Year]` so you can disambiguate duplicates (same song on multiple releases) by release year.
+
+Picks store only the reference. Running `npm run discogs:match` after CC edits fills the human-readable fields in the YAML so they're visible in the editor and the rendered post.
+
+### Typical workflow
+
+1. Add new records to your Discogs collection
+2. `npm run discogs:sync` — picks them up
+3. In CloudCannon, edit a Vinyl Vibes post and pick tracks via the dropdown
+4. `git pull` locally → `npm run discogs:match` → `git push` — fills artist/title/year/duration/buy_url and tries to auto-add YouTube IDs from Discogs's linked videos
 
 ## Local development
 
