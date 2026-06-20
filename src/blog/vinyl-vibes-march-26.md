@@ -64,21 +64,21 @@ vinyl_vibes:
           title: Shining Road
           year: "1992"
           duration:
-          buy_url:
+          buy_url: https://www.discogs.com/release/15673736
           youtube: VZnSik1HpWw
         - discogs: "2057355:A2"
           year: '1977'
           artist: Brian Eno
           title: Backwater
           duration: '3:42'
-          buy_url:
+          buy_url: https://www.discogs.com/release/2057355
           youtube: RvciU4AJ5Cc
         - discogs: "2474046:A1"
           year: '2010'
           artist: Mission of Burma
           title: That's when I reach for my revolver
           duration:
-          buy_url:
+          buy_url: https://www.discogs.com/release/2474046
           youtube: PpTKcv-SmR0
     - dj: DJ Skrub Mommy
       slot: 9:30pm
@@ -88,21 +88,21 @@ vinyl_vibes:
           title: Mary Mary
           year: '2014'
           duration: '3:12'
-          buy_url:
+          buy_url: https://www.discogs.com/release/5473827
           youtube:
         - discogs: "7662621:A3"
           artist: The Eels
           title: Sound of Fear
           year: '2015'
           duration: '3:33'
-          buy_url:
+          buy_url: https://www.discogs.com/release/7662621
           youtube: Gljp8Kw_cbA
         - discogs: "1584186:A1"
           artist: MGMT
           title: Time to pretend
           year: '2008'
           duration:
-          buy_url:
+          buy_url: https://www.discogs.com/release/1584186
           youtube: B9dSYgd5Elk
         - artist: Stevie Wonder
           title: Uptight

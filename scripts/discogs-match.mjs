@@ -201,6 +201,7 @@ async function injectMatches(content, index, discogs) {
           ["title",    track.title],
           ["year",     release.year ? String(release.year) : null],
           ["duration", track.duration],
+          ["buy_url",  `https://www.discogs.com/release/${releaseId}`],
         ];
         const toInsert = [];
         for (const [k, v] of fillTargets) {

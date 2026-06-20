@@ -21,14 +21,14 @@ vinyl_vibes:
           title: Sixteen Saltines
           year: "2013"
           duration:
-          buy_url:
+          buy_url: https://www.discogs.com/release/3485117
           youtube: DsixWMdScUI
         - discogs: "15640334:B2"
           artist: Parsnip
           title: Repeater
           year: "2022"
           duration:
-          buy_url:
+          buy_url: https://www.discogs.com/release/15640334
           youtube:
         - artist: Ramones
           title: Judy is a punk (7")
@@ -41,14 +41,14 @@ vinyl_vibes:
           title: Asteroid Witch
           year: "2023"
           duration: '3:41'
-          buy_url:
+          buy_url: https://www.discogs.com/release/16325100
           youtube: XfODERz8Kqw
         - discogs: "440676:3"
           artist: Bailterspace
           title: Shine
           year: "1990"
           duration:
-          buy_url:
+          buy_url: https://www.discogs.com/release/440676
           youtube:
         - artist: The Fall
           title: Lie dream of the casino soul
@@ -64,41 +64,41 @@ vinyl_vibes:
           title: Outdoor miner
           year: "1979"
           duration: '2:55'
-          buy_url:
+          buy_url: https://www.discogs.com/release/430118
           youtube:
         - discogs: "371730:A"
           artist: Buzzcocks
           title: Orgasm addict
           year: "1977"
           duration: '1:58'
-          buy_url:
+          buy_url: https://www.discogs.com/release/371730
           youtube: 3y0flAHwe5k
         - discogs: "528724:A"
           artist: The 6ths
           title: Heaven in a black leather jacket
           year: "1970"
           duration: '2:46'
-          buy_url:
+          buy_url: https://www.discogs.com/release/528724
           youtube: G3jcIAEQiYs
         - discogs: "816920:D6"
           artist: Androidss
           title: Auckland Tonight
           year: "1980"
           duration:
-          buy_url:
+          buy_url: https://www.discogs.com/release/816920
           youtube: v1kRi5Xgfvk
         - discogs: "10885801:B2"
           artist: DJ Shadow
           title: Nobody speak
           year: "2012"
           duration:
-          buy_url:
+          buy_url: https://www.discogs.com/release/10885801
           youtube:
         - discogs: "434386:A"
           artist: Chug
           title: Flowers
           year: "1992"
           duration:
-          buy_url:
+          buy_url: https://www.discogs.com/release/434386
           youtube: Gp_j1jQ7Hhw
 ---

@@ -50,7 +50,7 @@ vinyl_vibes:
           title: Pirouette
           year: '1991'
           duration: '4:07'
-          buy_url: ''
+          buy_url: https://www.discogs.com/release/855462
           youtube: Me_ayBdbn0g
     - dj: DJ Skrub Mommy
       slot: 8:30pm

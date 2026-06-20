@@ -21,14 +21,14 @@ vinyl_vibes:
           title: Nine clean nails
           year: "2024"
           duration:
-          buy_url:
+          buy_url: https://www.discogs.com/release/31657664
           youtube: gCyb1729fe0
         - discogs: "8425474:A1"
           artist: Wire
           title: Nocturnal Koreans
           year: "2015"
           duration:
-          buy_url:
+          buy_url: https://www.discogs.com/release/8425474
           youtube: CWyij_m08U0
         - artist: Thee Osees
           title: Cassius, Brutus & Judas
@@ -41,7 +41,7 @@ vinyl_vibes:
           title: Cyber Insekt
           year: "2001"
           duration: '3:18'
-          buy_url:
+          buy_url: https://www.discogs.com/release/5845384
           youtube: TNkQmYvoh8A
         - artist: Sophie Ellis-Bextor
           title: Groovejet
