@@ -250,9 +250,7 @@ _inputs:
     options:
       values: data.discogs_picker
       value_key: value
-      preview:
-        text:
-          - key: label
+      text_key: label
     cascade: true
   "vinyl_vibes.sets[*].tracks[*].youtube":
     type: text
