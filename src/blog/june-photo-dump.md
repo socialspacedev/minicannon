@@ -5,7 +5,7 @@ description: Latest developments - Ilford Delta 400
 tags:
   - photography
 date: 2026-06-28T17:51:46+12:00
-thumbnail:
+thumbnail: /img/june-sign-1.jpg
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
