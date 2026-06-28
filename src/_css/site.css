@@ -45,6 +45,12 @@
   header {
     @apply flex items-center justify-between gap-5 flex-col border-b;
   }
+  hgroup {
+    @apply hover:text-sky-600 w-full text-center;
+  }
+  .title {
+    @apply font-extrabold text-5xl flex items-center justify-center gap-1;
+  }
   .title #search-open {
     @apply inline-flex items-center justify-center bg-transparent border-0 p-0 text-current cursor-pointer;
     line-height: 0;
@@ -60,15 +66,6 @@
   .title #search-open.active {
     @apply text-sky-600;
     opacity: 1;
-  }
-  hgroup {
-    @apply hover:text-sky-600 w-full text-center;
-  }
-  .title {
-    @apply font-extrabold text-5xl flex items-center justify-center gap-1;
-  }
-  .motto {
-    @apply text-center whitespace-nowrap;
   }
   nav {
     @apply flex flex-row items-center justify-center gap-4 text-center;
@@ -1043,7 +1040,7 @@ main figure, article figure {
     @apply px-7 text-xl;
   }
   header {
-    @apply gap-7 flex-row;
+    @apply gap-7 flex-row items-start;
   }
   header,
   main,
@@ -1053,9 +1050,7 @@ main figure, article figure {
   }
   .title {
     @apply text-left text-5xl justify-start;
-  }
-  .motto {
-    @apply text-left;
+    margin-top: -0.15em;
   }
   nav {
     @apply flex-col items-end justify-start text-right gap-2;
