@@ -16,88 +16,90 @@ vinyl_vibes:
     - dj: DJ Skrub Daddy
       slot: 9:00pm
       tracks:
-        - discogs: "3485117:A"
+        - discogs: 3485117:A
           artist: Jack White
           title: Sixteen Saltines
-          year: "2013"
-          duration:
+          year: '2013'
+          duration: '2:54'
           buy_url: https://www.discogs.com/release/3485117
           youtube: DsixWMdScUI
-        - discogs: "15640334:B2"
+        - discogs: 15640334:B2
           artist: Parsnip
           title: Repeater
-          year: "2022"
-          duration:
+          year: '2022'
+          duration: '3:06'
           buy_url: https://www.discogs.com/release/15640334
-          youtube:
+          youtube: 6WhpMBtZ-j0
         - artist: Ramones
-          title: Judy is a punk (7")
-          year: "1976"
-          duration:
-          buy_url:
-          youtube:
-        - discogs: "16325100:A"
+          title: Judy is a punk (1975 demo)
+          year: '2016'
+          duration: '1:35'
+          buy_url: >-
+            https://www.discogs.com/release/8394654-Ramones-I-Wanna-Be-Your-Boyfriend
+          youtube: S4K_JJVdSck
+        - discogs: 16325100:A
           artist: Ghost Power
           title: Asteroid Witch
-          year: "2023"
+          year: '2023'
           duration: '3:41'
           buy_url: https://www.discogs.com/release/16325100
           youtube: XfODERz8Kqw
-        - discogs: "440676:3"
+        - discogs: '440676:3'
           artist: Bailterspace
           title: Shine
-          year: "1990"
-          duration:
+          year: '1990'
+          duration: '4:00'
           buy_url: https://www.discogs.com/release/440676
-          youtube:
+          youtube: v6uuB6Ptz_4
         - artist: The Fall
           title: Lie dream of the casino soul
-          year: "1978"
-          duration:
-          buy_url:
-          youtube:
+          year: '1982'
+          duration: '3:10'
+          buy_url: >-
+            https://www.discogs.com/release/3450009-The-Fall-Lie-Dream-Of-A-Casino-Soul
+          youtube: vqBrAFPG-DE
     - dj: DJ Skrub Mommy
       slot: 9:15pm
       tracks:
-        - discogs: "430118:B1"
+        - discogs: 11893800:G
           artist: Wire
           title: Outdoor miner
-          year: "1979"
+          year: '2018'
           duration: '2:55'
-          buy_url: https://www.discogs.com/release/430118
-          youtube:
-        - discogs: "371730:A"
+          buy_url: https://www.discogs.com/release/11893800-Wire-Nine-Sevens-
+          youtube: jrwNkcVZOs4
+        - discogs: 371730:A
           artist: Buzzcocks
           title: Orgasm addict
-          year: "1977"
+          year: '1977'
           duration: '1:58'
           buy_url: https://www.discogs.com/release/371730
           youtube: 3y0flAHwe5k
-        - discogs: "528724:A"
+        - discogs: 528724:A
           artist: The 6ths
           title: Heaven in a black leather jacket
-          year: "1970"
+          year: '1970'
           duration: '2:46'
           buy_url: https://www.discogs.com/release/528724
           youtube: G3jcIAEQiYs
-        - discogs: "816920:D6"
+        - discogs: 816920:D6
           artist: Androidss
           title: Auckland Tonight
-          year: "1980"
+          year: '1980'
           duration:
           buy_url: https://www.discogs.com/release/816920
           youtube: v1kRi5Xgfvk
-        - discogs: "10885801:B2"
+        - discogs: 10885801:B2
           artist: DJ Shadow
           title: Nobody speak
-          year: "2012"
-          duration:
+          year: '2012'
+          duration: '3:52'
           buy_url: https://www.discogs.com/release/10885801
-          youtube:
-        - discogs: "434386:A"
+          youtube: NUC2EQvdzmY
+        - discogs: 434386:A
           artist: Chug
           title: Flowers
-          year: "1992"
+          year: '1992'
           duration:
           buy_url: https://www.discogs.com/release/434386
           youtube: Gp_j1jQ7Hhw
