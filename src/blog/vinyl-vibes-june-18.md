@@ -45,13 +45,6 @@ vinyl_vibes:
           duration: '3:24'
           buy_url: https://sleafordmods.bandcamp.com/album/mork-n-mindy
           youtube: iKcbSOjIzjQ
-        - discogs: 855462:A7
-          artist: Tall Dwarfs
-          title: Pirouette
-          year: '1991'
-          duration: '4:07'
-          buy_url: https://www.discogs.com/release/855462
-          youtube: Me_ayBdbn0g
     - dj: DJ Skrub Mommy
       slot: 8:30pm
       tracks:
