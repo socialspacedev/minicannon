@@ -68,9 +68,9 @@ vinyl_vibes:
           buy_url: https://www.discogs.com/release/3080042
           youtube: GXCh9OhDiCI
         - artist: The Sisters of Mercy
-          title: Temple of love (12" extended mix)
+          title: Temple of love (extended mix)
           year: '1983'
-          duration: '7:40'
+          duration: '7:42'
           buy_url: >-
             https://www.discogs.com/release/239604-The-Sisters-Of-Mercy-Temple-Of-Love
           youtube: Y-eVRyULhr4
