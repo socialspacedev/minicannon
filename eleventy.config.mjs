@@ -300,48 +300,72 @@ export default function (eleventyConfig) {
     items.sort((a, b) => b.date - a.date);
     const result = [];
 
+    const { default: EleventyFetch } = await import("@11ty/eleventy-fetch");
+
     for (const item of items) {
       let content;
       try { content = await readFile(item.inputPath, 'utf8'); } catch(e) { continue; }
 
       let imageInput = null;
+      let bandcampEmbed = null;
 
-      // 1. Vinyl Vibes hero image
+      // Always probe for a Bandcamp shortcode in the body — we want the embed
+      // URL for the music page's player panel, regardless of whether we use
+      // the og:image as the thumbnail.
+      const bcMatch = content.match(/\{%-?\s*bandcamp,?\s+"([^"]+)"/);
+      let bandcampOgImage = null;
+      if (bcMatch) {
+        try {
+          const buf = await EleventyFetch(bcMatch[1], {
+            duration: "30d",
+            type: "buffer",
+            fetchOptions: {
+              headers: {
+                "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+              }
+            }
+          });
+          const html = buf.toString('utf8');
+          const imgMatch = html.match(/<meta\s+property="og:image"\s+content="([^"]+)"/i)
+                        || html.match(/<meta\s+content="([^"]+)"\s+property="og:image"/i);
+          if (imgMatch) bandcampOgImage = imgMatch[1];
+
+          let embedSrc = null;
+          const embedMatch = html.match(/https:\/\/bandcamp\.com\/EmbeddedPlayer\/[^\s"'<\\]+/);
+          if (embedMatch) {
+            embedSrc = embedMatch[0].replace(/\\"/g, '');
+          } else {
+            const albumIdMatch = html.match(/"album_id"\s*:\s*(\d+)/);
+            const trackIdMatch = html.match(/"track_id"\s*:\s*(\d+)/);
+            if (albumIdMatch) embedSrc = `https://bandcamp.com/EmbeddedPlayer/album=${albumIdMatch[1]}/`;
+            else if (trackIdMatch) embedSrc = `https://bandcamp.com/EmbeddedPlayer/track=${trackIdMatch[1]}/`;
+          }
+          if (embedSrc) {
+            // Music-page player: bigger than the in-post overlay, artwork visible
+            embedSrc = embedSrc
+              .replace(/size=\w+\//i, '')
+              .replace(/artwork=\w+\//i, '')
+              .replace(/tracklist=\w+\//i, '')
+              .replace(/bgcol=[a-f0-9]+\//i, '')
+              .replace(/linkcol=[a-f0-9]+\//i, '')
+              .replace(/transparent=true\//i, '');
+            if (!embedSrc.endsWith('/')) embedSrc += '/';
+            embedSrc += 'size=large/artwork=big/tracklist=false/bgcol=1a1a1a/linkcol=ffffff/';
+            bandcampEmbed = embedSrc;
+          }
+        } catch(e) {}
+      }
+
+      // Image fallback chain
       if (item.data.vinyl_vibes && item.data.vinyl_vibes.hero_image) {
         imageInput = path.join('./src/', item.data.vinyl_vibes.hero_image);
-      }
-      // 2. Frontmatter thumbnail
-      else if (item.data.thumbnail) {
+      } else if (item.data.thumbnail) {
         imageInput = path.join('./src/', item.data.thumbnail);
-      }
-      // 3. First {% image %} shortcode in the body
-      else {
+      } else {
         const imageMatch = content.match(/\{%-?\s*image,?\s+"([^"]+)"/);
-        if (imageMatch) {
-          imageInput = path.join('./src/', imageMatch[1]);
-        } else {
-          // 4. First Bandcamp embed — re-use eleventy-fetch's 30d cache to grab og:image
-          const bcMatch = content.match(/\{%-?\s*bandcamp,?\s+"([^"]+)"/);
-          if (bcMatch) {
-            try {
-              const { default: EleventyFetch } = await import("@11ty/eleventy-fetch");
-              const buf = await EleventyFetch(bcMatch[1], {
-                duration: "30d",
-                type: "buffer",
-                fetchOptions: {
-                  headers: {
-                    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-                  }
-                }
-              });
-              const html = buf.toString('utf8');
-              const imgMatch = html.match(/<meta\s+property="og:image"\s+content="([^"]+)"/i)
-                            || html.match(/<meta\s+content="([^"]+)"\s+property="og:image"/i);
-              if (imgMatch) imageInput = imgMatch[1];
-            } catch(e) {}
-          }
-        }
+        if (imageMatch) imageInput = path.join('./src/', imageMatch[1]);
+        else if (bandcampOgImage) imageInput = bandcampOgImage;
       }
 
       if (!imageInput) continue;
@@ -366,6 +390,7 @@ export default function (eleventyConfig) {
             title: item.data.title,
             url: item.url,
             date: item.date,
+            bandcamp_embed: bandcampEmbed,
           });
         }
       } catch(e) {
