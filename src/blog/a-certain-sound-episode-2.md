@@ -2,7 +2,7 @@
 _schema: a_certain_sound
 title: A Certain Sound (Episode 2)
 description: Originally broadcast on July 18th, 2026 on Otago Access Radio 105.4FM.
-date: 2026-07-16T23:00:00+12:00
+date: 2026-07-18T23:00:00+12:00
 type: article
 layout: article.liquid
 tags:
@@ -18,7 +18,6 @@ a_certain_sound:
       title: Never Been To Borstal
     - artist: Vivid Militia
       title: Let's Go (To Australia)
-      year: 2015
     - artist: The Killjoys
       title: I'm normal
     - artist: The Scavengers
@@ -33,26 +32,20 @@ a_certain_sound:
       title: Saturday Night Stay At Home
     - artist: The Spelling Mistakes
       title: Feel so Good
-      year: 2003
     - artist: The Androids
       title: Auckland Tonight
-      year: 2003
     - artist: Rebel Truce
       title: The Man Inside
-      year: 2003
     - artist: The Instigators
       title: Hope She's Alright
-      year: 2003
     - artist: The Screaming Meemees
       title: Till I Die
     - artist: The Swingers
       title: One Good Reason
-      year: 2003
     - artist: The Ainsworths
       title: Danger Man
     - artist: The Newmatics
       title: Five Miseries
     - artist: Blam Blam Blam
       title: Like my job
-      year: 1982
 ---
