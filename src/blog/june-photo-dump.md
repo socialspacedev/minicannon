@@ -10,6 +10,13 @@ type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
 photos:
+  - image_file: /img/june-sign-1.jpg
+    alt: Garden sign reading Madame Pierre Oger
+    caption: Madame Pierre Oger
+    camera: Olympus OM-1
+    lens: Zuiko 50mm f/1.8
+    film: Ilford Delta 400
+    iso: '400'
   - image_file: /img/june-sign-5.jpg
     alt: Garden sign reading Compassion
     caption: Compassion
@@ -38,11 +45,7 @@ photos:
     lens: Zuiko 50mm f/1.8
     film: Ilford Delta 400
     iso: '400'
-  - image_file: /img/june-sign-1.jpg
-    alt: Garden sign reading Madame Pierre Oger
-    caption: Madame Pierre Oger
-    camera: Olympus OM-1
-    lens: Zuiko 50mm f/1.8
-    film: Ilford Delta 400
-    iso: '400'
 ---
+The June photo dump is a small collection of recent photos taken with **Ilford Delta 400**. Most of the roll wasn't great so this selection is a convenient set of related photos taken at the Dunedin Botanic Gardens.
+
+If you've been there then you'll recognise the plaques for sure but you may not have read them. The lichen adds some character and dates the older plants.
