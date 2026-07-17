@@ -45,6 +45,12 @@
   header {
     @apply flex items-center justify-between gap-5 flex-col border-b;
   }
+  hgroup {
+    @apply hover:text-sky-600 w-full text-center;
+  }
+  .title {
+    @apply font-extrabold text-5xl flex items-center justify-center gap-1;
+  }
   .title #search-open {
     @apply inline-flex items-center justify-center bg-transparent border-0 p-0 text-current cursor-pointer;
     line-height: 0;
@@ -60,15 +66,6 @@
   .title #search-open.active {
     @apply text-sky-600;
     opacity: 1;
-  }
-  hgroup {
-    @apply hover:text-sky-600 w-full text-center;
-  }
-  .title {
-    @apply font-extrabold text-5xl flex items-center justify-center gap-1;
-  }
-  .motto {
-    @apply text-center whitespace-nowrap;
   }
   nav {
     @apply flex flex-row items-center justify-center gap-4 text-center;
@@ -573,6 +570,9 @@ summary.vv-track-row:hover .vv-play-icon,
 .acs-track:first-child {
   border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
+.acs-track:last-child {
+  border-bottom: 0;
+}
 .acs-track-main::before {
   counter-increment: acs-track;
   content: counter(acs-track, decimal-leading-zero);
@@ -914,7 +914,15 @@ main figure, article figure {
   text-decoration: none;
   color: inherit;
 }
-.music-item img {
+.music-item__link {
+  position: absolute;
+  inset: 0;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+}
+.music-item__link img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -938,23 +946,139 @@ main figure, article figure {
   transition: opacity 0.25s ease;
   pointer-events: none;
 }
-.music-item:hover img,
-.music-item:focus-visible img {
+.music-item__link:hover img,
+.music-item__link:focus-visible img {
   transform: scale(1.05);
 }
-.music-item:hover .music-item__title,
-.music-item:focus-visible .music-item__title {
+.music-item__link:hover .music-item__title,
+.music-item__link:focus-visible .music-item__title {
   opacity: 1;
 }
-.music-item:focus-visible {
+.music-item__link:focus-visible {
   outline: 2px solid theme('colors.sky.500');
   outline-offset: 2px;
+}
+.music-item__play {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s ease, background 0.15s ease, transform 0.15s ease;
+  z-index: 2;
+}
+.music-item__play svg { margin-left: 2px; } /* optical centre on play triangle */
+.music-item:hover .music-item__play,
+.music-item__play:focus-visible,
+.music-item__play.is-playing {
+  opacity: 1;
+}
+.music-item__play:hover {
+  background: rgba(0, 0, 0, 0.85);
+  transform: scale(1.05);
+}
+.music-item__play.is-playing {
+  background: theme('colors.sky.600');
 }
 .music-item:last-child:nth-child(3n + 1) {
   grid-column: 2;
 }
 .music-item:last-child:nth-child(3n + 2) {
   grid-column: 3;
+}
+
+/* Bandcamp player modal */
+.bc-modal {
+  width: min(420px, 92vw);
+  max-width: 420px;
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 0;
+  background: #1a1a1a;
+  color: #fff;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  overflow: hidden;
+}
+.bc-modal::backdrop {
+  background: rgba(0, 0, 0, 0.55);
+}
+.bc-modal__embed {
+  display: block;
+  width: 100%;
+  height: 470px;
+  border: 0;
+  background: #1a1a1a;
+}
+.bc-modal__close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  border: 0;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.85;
+  transition: opacity 0.15s;
+  z-index: 2;
+}
+.bc-modal__close:hover { opacity: 1; }
+.bc-modal__post-link {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-align: center;
+  background: #111;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+.bc-modal__post-link:hover { color: #fff; }
+
+/* Filler tile for "more music" when the grid has a 2-item remainder */
+.music-item--more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.05);
+  color: inherit;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.2s ease;
+}
+.music-item--more:hover,
+.music-item--more:focus-visible {
+  background: rgba(0, 0, 0, 0.1);
+}
+@media (prefers-color-scheme: dark) {
+  .music-item--more {
+    background: rgba(255, 255, 255, 0.04);
+  }
+  .music-item--more:hover,
+  .music-item--more:focus-visible {
+    background: rgba(255, 255, 255, 0.08);
+  }
 }
 .pswp__exif-info {
   position: relative;
@@ -1043,7 +1167,7 @@ main figure, article figure {
     @apply px-7 text-xl;
   }
   header {
-    @apply gap-7 flex-row;
+    @apply gap-7 flex-row items-start;
   }
   header,
   main,
@@ -1053,9 +1177,7 @@ main figure, article figure {
   }
   .title {
     @apply text-left text-5xl justify-start;
-  }
-  .motto {
-    @apply text-left;
+    margin-top: -0.15em;
   }
   nav {
     @apply flex-col items-end justify-start text-right gap-2;
