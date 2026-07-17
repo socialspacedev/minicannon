@@ -2,7 +2,7 @@
 _schema: a_certain_sound
 title: A Certain Sound (Episode 2)
 description: Originally broadcast on July 18th, 2026 on Otago Access Radio 105.4FM.
-date: 2026-07-18T23:00:00+12:00
+date: 2026-07-16T23:00:00+12:00
 type: article
 layout: article.liquid
 tags:
