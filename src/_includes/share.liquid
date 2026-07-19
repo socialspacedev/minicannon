@@ -1,0 +1,47 @@
+{%- assign shareUrl = meta.url | append: page.url -%}
+{%- assign shareText = title | append: ' ' | append: shareUrl -%}
+{%- comment -%} ACS/Vinyl Vibes posts render the trigger inside their own footer row instead {%- endcomment -%}
+{%- unless a_certain_sound or vinyl_vibes -%}
+<div class="share">
+  {% include "share-trigger.liquid" %}
+</div>
+{%- endunless -%}
+
+<dialog id="share-modal" class="share-modal" aria-label="Share this post" data-url="{{ shareUrl }}" data-text="{{ shareText | escape }}" data-title="{{ title | escape }}">
+  <button class="share-modal__close" type="button" aria-label="Close">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg>
+  </button>
+  <p class="share-modal__heading">Share this post</p>
+  <ul class="share-modal__options">
+    <li class="share-modal__native" hidden>
+      <button class="share-modal__opt" type="button" data-share="native">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M18 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M8.7 10.7l6.6 -3.4" /><path d="M8.7 13.3l6.6 3.4" /></svg>
+        <span>Share…</span>
+      </button>
+    </li>
+    <li>
+      <a class="share-modal__opt" data-share="link" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/sharer/sharer.php?u={{ shareUrl | url_encode }}">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg>
+        <span>Facebook</span>
+      </a>
+    </li>
+    <li>
+      <a class="share-modal__opt" data-share="link" target="_blank" rel="noopener noreferrer" href="https://bsky.app/intent/compose?text={{ shareText | url_encode }}">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.335 5.144c-1.654 -1.199 -4.335 -2.127 -4.335 .826c0 .613 .368 5.152 .584 5.88c.749 2.53 3.363 3.017 5.416 2.647c-3.588 .676 -4.573 3.578 -2.428 6.15c1.516 1.816 2.696 .759 3.545 -.517c.322 -.483 .942 -1.87 1.283 -2.686c.34 .816 .961 2.203 1.283 2.686c.849 1.276 2.029 2.333 3.545 .517c2.145 -2.572 1.16 -5.474 -2.428 -6.15c2.053 .37 4.667 -.117 5.416 -2.647c.216 -.728 .584 -5.267 .584 -5.88c0 -2.953 -2.681 -2.025 -4.335 -.826c-2.293 1.662 -4.76 5.024 -5.665 6.826c-.905 -1.802 -3.372 -5.164 -5.665 -6.826z" /></svg>
+        <span>Bluesky</span>
+      </a>
+    </li>
+    <li>
+      <a class="share-modal__opt" data-share="link" target="_blank" rel="noopener noreferrer" href="https://www.threads.net/intent/post?text={{ shareText | url_encode }}">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 7.5c-1.333 -3 -3.667 -4.5 -7 -4.5c-5 0 -8 2.5 -8 9s3.5 9 8 9s7 -3 7 -5s-1 -5 -7 -5c-2.5 0 -3 1.25 -3 2.5c0 1.5 1 2.5 2.5 2.5c2.5 0 3.5 -1.5 3.5 -5s-2 -4 -3 -4s-1.833 .333 -2.5 1" /></svg>
+        <span>Threads</span>
+      </a>
+    </li>
+    <li>
+      <button class="share-modal__opt" type="button" data-share="copy">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 15l6 -6" /><path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" /><path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" /></svg>
+        <span class="share-modal__copy-label">Copy link</span>
+      </button>
+    </li>
+  </ul>
+</dialog>

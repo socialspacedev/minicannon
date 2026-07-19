@@ -30,10 +30,13 @@
   {%- endif -%}
 
   <footer class="acs-footer">
-    {%- if a_certain_sound.oar_url -%}
-    <a class="acs-link" href="{{ a_certain_sound.oar_url }}" target="_blank" rel="noopener noreferrer">Listen to this episode on OAR &rarr;</a>
-    {%- endif -%}
-    <a class="acs-link" href="https://oar.org.nz/shows/certain-sound/" target="_blank" rel="noopener noreferrer">A Certain Sound on Otago Access Radio &rarr;</a>
+    <div class="acs-footer__links">
+      {%- if a_certain_sound.oar_url -%}
+      <a class="acs-link" href="{{ a_certain_sound.oar_url }}" target="_blank" rel="noopener noreferrer">Listen to this episode on OAR &rarr;</a>
+      {%- endif -%}
+      <a class="acs-link" href="https://oar.org.nz/shows/certain-sound/" target="_blank" rel="noopener noreferrer">A Certain Sound on Otago Access Radio &rarr;</a>
+    </div>
+    {% include "share-trigger.liquid" %}
   </footer>
 </section>
 {%- endif -%}

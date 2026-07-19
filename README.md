@@ -33,6 +33,7 @@ Personal blog and photography portfolio at [anaru.nz](https://anaru.nz), built w
 - Scheduled posts — posts with a future date are excluded from production builds until that date
 - RSS feed, XML sitemap, and `llms.txt` for AEO
 - Rich social sharing — Open Graph + Twitter/X (`summary_large_image`) card tags and BlogPosting JSON-LD, with a share-image fallback chain (`thumbnail` → post `hero_image` → site `defaultImage` in `meta.yaml`) so every post gets a preview image
+- Per-post "Share" button — a single Tabler share glyph at the foot of every post opens a `<dialog>` modal with Facebook, Bluesky, Threads, copy-link, and (on mobile) native Web Share; links are server-rendered so they work without JS. On A Certain Sound and Vinyl Vibes posts the glyph aligns into the post's footer link row
 - Optimised images served in AVIF/WebP with layout-aware `sizes` attributes; all article images are full width regardless of orientation
 - Tag-context-aware pagination — navigating from a tag page carries the tag through prev/next links
 - Pagination and tag-filtered post pages

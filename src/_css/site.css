@@ -541,8 +541,13 @@ summary.vv-track-row:hover .vv-play-icon,
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem 2rem;
-  align-items: baseline;
+  align-items: center;
   font-size: 0.85rem;
+}
+.vv-footer .share__trigger,
+.acs-footer .share__trigger {
+  flex: 0 0 auto;
+  margin-left: auto;
 }
 @media (prefers-color-scheme: dark) {
   .vv-footer {
@@ -609,9 +614,17 @@ summary.vv-track-row:hover .vv-play-icon,
   padding-top: 1.25rem;
   border-top: 1px solid rgba(0, 0, 0, 0.12);
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+.acs-footer__links {
+  display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  font-size: 0.9rem;
+  min-width: 0;
 }
 @media (prefers-color-scheme: dark) {
   .acs-track,
@@ -1059,6 +1072,106 @@ main figure, article figure {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 .bc-modal__post-link:hover { color: #fff; }
+
+/* Share button + modal */
+.share {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1.5rem 0 0.5rem;
+}
+.share__trigger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  background: none;
+  border: 0;
+  color: inherit;
+  opacity: 0.5;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: opacity 0.15s;
+}
+.share__trigger:hover,
+.share__trigger:focus-visible {
+  opacity: 1;
+  color: #0284c7;
+}
+.share-modal {
+  width: min(340px, 90vw);
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  background: #1a1a1a;
+  color: #fff;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+.share-modal::backdrop {
+  background: rgba(0, 0, 0, 0.55);
+}
+.share-modal__close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 0;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  opacity: 0.85;
+  transition: opacity 0.15s;
+}
+.share-modal__close:hover { opacity: 1; }
+.share-modal__heading {
+  margin: 0.25rem 0 0.5rem;
+  padding: 0 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+}
+.share-modal__options {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.share-modal__opt {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.7rem 0.75rem;
+  background: none;
+  border: 0;
+  border-radius: 0.375rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.95rem;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.12s;
+}
+.share-modal__opt:hover,
+.share-modal__opt:focus-visible {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+.share-modal__opt svg {
+  flex: 0 0 auto;
+  opacity: 0.85;
+}
 
 /* Filler tile for "more music" when the grid has a 2-item remainder */
 .music-item--more {
