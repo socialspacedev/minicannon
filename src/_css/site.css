@@ -573,13 +573,19 @@ summary.vv-track-row:hover .vv-play-icon,
 .acs-track:last-child {
   border-bottom: 0;
 }
+.acs-track-main {
+  padding-left: 2.1rem;
+  text-indent: -2.1rem;
+}
 .acs-track-main::before {
   counter-increment: acs-track;
   content: counter(acs-track, decimal-leading-zero);
   font-variant-numeric: tabular-nums;
   font-size: 0.78rem;
   opacity: 0.45;
-  margin-right: 0.75rem;
+  display: inline-block;
+  width: 2.1rem;
+  text-indent: 0;
 }
 .acs-artist {
   font-weight: 600;

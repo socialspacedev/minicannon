@@ -7,8 +7,10 @@
 {% assign pageDescription = pageDescription | default: meta.siteDescription -%}
 
 {% include "head.liquid" %}
-    <!-- Open Graph image -->
-    {% if thumbnail %}<meta property="og:image" content="{{ meta.url }}{{ thumbnail }}" />{% endif %}
+    <!-- Schema image — same fallback chain as the social share image -->
+    {%- assign ldImage = thumbnail -%}
+    {%- if ldImage == blank and a_certain_sound.hero_image -%}{%- assign ldImage = a_certain_sound.hero_image -%}{%- endif -%}
+    {%- if ldImage == blank -%}{%- assign ldImage = meta.defaultImage -%}{%- endif -%}
     <!-- Schema JSON-LD -->
     <script type="application/ld+json">
         {
@@ -32,10 +34,10 @@
                 "name": "{{ meta.siteName }}",
                 "url": "{{ meta.url }}"
             },
-            "description": "{{ pageDescription | escape }}"{% if thumbnail %},
+            "description": "{{ pageDescription | escape }}"{% if ldImage %},
             "image": {
                 "@type": "ImageObject",
-                "url": "{{ meta.url }}{{ thumbnail }}"
+                "url": "{{ meta.url }}{{ ldImage }}"
             }{% endif %}
         }
     </script>
