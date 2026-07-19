@@ -11,8 +11,9 @@ tags:
 a_certain_sound:
   hero_image: /img/certain-sound-2.jpeg
   hero_alt: Mrs Skrub in the zone
-  hero_caption: 'Photograph: Mr Skrub'
-  oar_url:
+  hero_caption: Mrs Skrub by Mr Scrub
+  oar_url: >-
+    https://accessmedia.nz/player?EID=da8f8714-6638-466b-8f99-1fd90375f408&audioOnlyMode=true
   tracks:
     - artist: The Terrorways
       title: Never Been To Borstal
