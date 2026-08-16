@@ -211,6 +211,11 @@ _inputs:
     label: Note
     comment: "Optional — short comment about the track"
     cascade: true
+  "a_certain_sound.tracks[*].link":
+    type: url
+    label: Track link
+    comment: "Optional — Bandcamp/label/release page. Bandcamp links are labelled \"Bandcamp\", others \"Listen\"."
+    cascade: true
   vinyl_vibes:
     type: object
     label: Vinyl Vibes session
