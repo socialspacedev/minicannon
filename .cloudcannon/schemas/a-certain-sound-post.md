@@ -18,4 +18,5 @@ a_certain_sound:
       title:
       year:
       note:
+      link:
 ---

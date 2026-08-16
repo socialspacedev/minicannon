@@ -609,6 +609,18 @@ summary.vv-track-row:hover .vv-play-icon,
   margin-left: 2.1rem;
   font-style: italic;
 }
+.acs-track-link {
+  margin-left: 0.5rem;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+.acs-track-link-icon {
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  vertical-align: -0.22em;
+  margin-left: 0.2em;
+}
 .acs-footer {
   margin-top: 2rem;
   padding-top: 1.25rem;
