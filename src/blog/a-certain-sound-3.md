@@ -32,6 +32,7 @@ a_certain_sound:
     - artist: Malchicks
       title: Full Dream Ahead
       year: 1992
+      note: https://malchicks.bandcamp.com/album/everything-remastered-and-expanded
     - artist: Look Blue Go Purple
       title: As Does the Sun
       year: 1985
@@ -41,12 +42,14 @@ a_certain_sound:
     - artist: The Front Lawn
       title: Andy
       year: 1989
-    - artist: Siltbreeze Records
+    - artist: Cuticles
       title: Ogled Moat
       year: 2026
-    - artist: 'Cuticles '
+      note: https://siltbreeze.bandcamp.com/album/cuticles-more-joy-lp
+    - artist: Cuticles
       title: Cheese In My Brain (Le Super 9)
       year: 2026
+      note: https://cuticles1.bandcamp.com/album/cuticles-go-live-in-france-dunedin
     - artist: Olympus
       title: Heavy Punter
       year: 2010
@@ -62,5 +65,5 @@ a_certain_sound:
     - artist: Stef Animal
       title: Strange Creatures
       year: 2026
-      bandcamp: https://wurmsound.bandcamp.com/album/xyzzy 
+      note: https://wurmsound.bandcamp.com/album/xyzzy 
 ---
