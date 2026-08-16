@@ -32,7 +32,7 @@ a_certain_sound:
     - artist: Malchicks
       title: Full Dream Ahead
       year: 1992
-      note: [Bandcamp] (https://malchicks.bandcamp.com/album/everything-remastered-and-expanded)
+      note: [Bandcamp](https://malchicks.bandcamp.com/album/everything-remastered-and-expanded)
     - artist: Look Blue Go Purple
       title: As Does the Sun
       year: 1985
