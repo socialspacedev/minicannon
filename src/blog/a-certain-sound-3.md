@@ -1,6 +1,6 @@
 ---
 _schema: a_certain_sound
-title: A Certain Sound 3
+title: A Certain Sound (Episode 3)
 description: Originally broadcast on August 15, 2026 on Otago Access Radio 105.4FM.
 date: 2026-08-16T14:05:00+12:00
 type: article
@@ -62,4 +62,5 @@ a_certain_sound:
     - artist: Stef Animal
       title: Strange Creatures
       year: 2026
+      bandcamp: https://wurmsound.bandcamp.com/album/xyzzy 
 ---
