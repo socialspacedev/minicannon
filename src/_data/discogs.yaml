@@ -1,8 +1,8 @@
-last_synced: '2026-08-27T22:09:01.495Z'
+last_synced: '2026-08-27T23:49:17.523Z'
 username: socialspacious
 counts:
-  releases: 1074
-  tracks: 10607
+  releases: 1075
+  tracks: 10616
 releases:
   '18663':
     artist: Eric B. & Rakim
@@ -30094,6 +30094,47 @@ releases:
       - position: B4
         title: Temptation
         duration: '8:21'
+        artist: null
+  '8707763':
+    artist: The Modern Lovers
+    title: 'The Modern Lovers '
+    year: 2016
+    tracks:
+      - position: A1
+        title: "Roadrunner\t"
+        duration: ''
+        artist: null
+      - position: A2
+        title: "Astral Plane\t"
+        duration: ''
+        artist: null
+      - position: A3
+        title: "Old World\t"
+        duration: ''
+        artist: null
+      - position: A4
+        title: "Pablo Picasso\t"
+        duration: ''
+        artist: null
+      - position: B1
+        title: "She Cracked\t"
+        duration: ''
+        artist: null
+      - position: B2
+        title: "Hospital\t"
+        duration: ''
+        artist: null
+      - position: B3
+        title: "Someone I Care About\t"
+        duration: ''
+        artist: null
+      - position: B4
+        title: "Girl Friend\t"
+        duration: ''
+        artist: null
+      - position: B5
+        title: "Modern World\t"
+        duration: ''
         artist: null
   '8731724':
     artist: Flying Saucer Attack
