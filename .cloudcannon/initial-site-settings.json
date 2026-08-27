@@ -5,7 +5,7 @@
     "output": "public",
     "hugoVersion": "0.128.1",
     "rubyVersion": "2.7.3",
-    "nodeVersion": "20",
+    "nodeVersion": "22",
     "denoVersion": "1.40.2",
     "preserved_paths": "node_modules/, img/, fonts/",
     "config": "",
