@@ -1356,12 +1356,18 @@
   label: 'Bailter Space – A1: Projects (5:06) — Vortura [1994]'
 - value: 17578273:A1
   label: 'Bailter Space – A1: Shield — Capsul [1997]'
+- value: 3227212:A1
+  label: 'Bailter Space – A1: The Aim — The Aim [1992]'
 - value: 3809312:A1
   label: 'Bailter Space – A1: Things That We Found — Strobosphere [2012]'
 - value: 5036879:A1
   label: 'Bailter Space – A1: Trinine — Trinine [2013]'
+- value: 2992137:A1
+  label: 'Bailter Space – A1: Untied (3:28) — Wammo [1995]'
 - value: 17437081:A1
   label: 'Bailter Space – A1: Untied (3:28) — Wammo [2021]'
+- value: 3227201:A1
+  label: 'Bailter Space – A1: X — B.E.I.P [1994]'
 - value: 5591482:A2
   label: 'Bailter Space – A2: El Whizzo (And Then) — Nelsh Bailter Space [1988]'
 - value: 5036879:A2
@@ -1370,20 +1376,28 @@
   label: 'Bailter Space – A2: Pass It Up — Capsul [1997]'
 - value: 655335:A2
   label: 'Bailter Space – A2: Process Paid (3:42) — Vortura [1994]'
+- value: 3227201:A2
+  label: 'Bailter Space – A2: Projects — B.E.I.P [1994]'
 - value: 786677:A2
   label: 'Bailter Space – A2: Robot World (4:15) — Robot World [1993]'
 - value: 3454431:A2
   label: 'Bailter Space – A2: Robot World (4:15) — Robot World [1993]'
 - value: 17437081:A2
   label: 'Bailter Space – A2: Splat (3:48) — Wammo [2021]'
+- value: 2992137:A2
+  label: 'Bailter Space – A2: Splat (3:50) — Wammo [1995]'
 - value: 3809312:A2
   label: 'Bailter Space – A2: Strobosphere — Strobosphere [2012]'
 - value: 1440700:A2
   label: 'Bailter Space – A2: The ''W'' Song (3:48) — Tanker'
+- value: 3227212:A2
+  label: 'Bailter Space – A2: We Know — The Aim [1992]'
 - value: 1414837:A2
   label: 'Bailter Space – A2: Zero Return — Thermos [1990]'
 - value: 17437081:A3
   label: 'Bailter Space – A3: At Five We Drive (3:08) — Wammo [2021]'
+- value: 2992137:A3
+  label: 'Bailter Space – A3: At Five We Drive (3:09) — Wammo [1995]'
 - value: 3809312:A3
   label: 'Bailter Space – A3: Blue Star — Strobosphere [2012]'
 - value: 1414837:A3
@@ -1418,12 +1432,16 @@
   label: 'Bailter Space – A4: Tri5 — Trinine [2013]'
 - value: 655335:A4
   label: 'Bailter Space – A4: Voices (5:21) — Vortura [1994]'
+- value: 2992137:A4
+  label: 'Bailter Space – A4: Zapped (2:12) — Wammo [1995]'
 - value: 17437081:A4
   label: 'Bailter Space – A4: Zapped (2:12) — Wammo [2021]'
 - value: 17578273:A5
   label: 'Bailter Space – A5: Capsule — Capsul [1997]'
 - value: 17437081:A5
   label: 'Bailter Space – A5: Colours (3:56) — Wammo [2021]'
+- value: 2992137:A5
+  label: 'Bailter Space – A5: Colours (3:59) — Wammo [1995]'
 - value: 1414837:A5
   label: 'Bailter Space – A5: Earth Fed — Thermos [1990]'
 - value: 786677:A5
@@ -1472,8 +1490,14 @@
   label: 'Bailter Space – B1: Picking Up — Capsul [1997]'
 - value: 5036879:B1
   label: 'Bailter Space – B1: Plan Machine — Trinine [2013]'
+- value: 2992137:B1
+  label: 'Bailter Space – B1: Retro (4:30) — Wammo [1995]'
 - value: 17437081:B1
   label: 'Bailter Space – B1: Retro (4:30) — Wammo [2021]'
+- value: 3227201:B1
+  label: 'Bailter Space – B1: Robot World — B.E.I.P [1994]'
+- value: 3227212:B1
+  label: 'Bailter Space – B1: Shine — The Aim [1992]'
 - value: 1461102:B1
   label: 'Bailter Space – B1: The Escalator Song — Grader · Spader [1990]'
 - value: 1440700:B1
@@ -1482,6 +1506,8 @@
   label: 'Bailter Space – B2: Ad Man — Thermos [1990]'
 - value: 17578273:B2
   label: 'Bailter Space – B2: Argonaut — Capsul [1997]'
+- value: 3227201:B2
+  label: 'Bailter Space – B2: E I P — B.E.I.P [1994]'
 - value: 3454431:B2
   label: 'Bailter Space – B2: E.I.P. (3:57) — Robot World [1993]'
 - value: 786677:B2
@@ -1490,6 +1516,8 @@
   label: 'Bailter Space – B2: Fascination (1:50) — Splat [1995]'
 - value: 17437081:B2
   label: 'Bailter Space – B2: Glimmer (4:06) — Wammo [2021]'
+- value: 2992137:B2
+  label: 'Bailter Space – B2: Glimmer (4:07) — Wammo [1995]'
 - value: 655335:B2
   label: 'Bailter Space – B2: I.C.Y. (2:29) — Vortura [1994]'
 - value: 3809312:B2
@@ -1500,6 +1528,8 @@
   label: 'Bailter Space – B2: Open — Trinine [2013]'
 - value: 5591482:B2
   label: 'Bailter Space – B2: Separate Circles — Nelsh Bailter Space [1988]'
+- value: 3227212:B2
+  label: 'Bailter Space – B2: Unseen — The Aim [1992]'
 - value: 1440700:B2
   label: 'Bailter Space – B2: Valve (0:25) — Tanker'
 - value: 655335:B3
@@ -1522,8 +1552,12 @@
   label: 'Bailter Space – B3: Together — Trinine [2013]'
 - value: 17437081:B3
   label: 'Bailter Space – B3: Voltage (4:34) — Wammo [2021]'
+- value: 2992137:B3
+  label: 'Bailter Space – B3: Voltage (4:37) — Wammo [1995]'
 - value: 17437081:B4
   label: 'Bailter Space – B4: D Thing (6:22) — Wammo [2021]'
+- value: 2992137:B4
+  label: 'Bailter Space – B4: D Thing (6:24) — Wammo [1995]'
 - value: 3809312:B4
   label: 'Bailter Space – B4: Live By The Ocean — Strobosphere [2012]'
 - value: 786677:B4
@@ -1558,6 +1592,8 @@
   label: 'Bailter Space – B5: Shades — Capsul [1997]'
 - value: 17437081:B5
   label: 'Bailter Space – B5: Wammo (2:26) — Wammo [2021]'
+- value: 2992137:B5
+  label: 'Bailter Space – B5: Wammo (2:28) — Wammo [1995]'
 - value: 5036879:B6
   label: 'Bailter Space – B6: Films Of You — Trinine [2013]'
 - value: 17578273:B6
@@ -2520,6 +2556,8 @@
   label: 'Brigitte Bardot, Serge Gainsbourg – A1: Bonnie And Clyde — Bonnie And Clyde [2009]'
 - value: 6733775:A1
   label: 'Broadcast – A1: Colour Me In — Haha Sound [2015]'
+- value: 22500044:A1
+  label: 'Broadcast – A1: Creation Day The Travel Flute Way (0:34) — Mother Is The Milky Way [2022]'
 - value: 6733818:A1
   label: 'Broadcast – A1: I Found The F — Tender Buttons [2015]'
 - value: 6734114:A1
@@ -2536,6 +2574,8 @@
   label: 'Broadcast – A11: Microtronics 11 (2:07) — Microtronics - Volumes 1 & 2 [2022]'
 - value: 6733818:A2
   label: 'Broadcast – A2: Black Cat — Tender Buttons [2015]'
+- value: 22500044:A2
+  label: 'Broadcast – A2: In Here The World Begins (3:28) — Mother Is The Milky Way [2022]'
 - value: 22499861:A2
   label: 'Broadcast – A2: Microtronics 02 (1:32) — Microtronics - Volumes 1 & 2 [2022]'
 - value: 6733775:A2
@@ -2550,6 +2590,8 @@
   label: 'Broadcast – A3: Before We Begin  — Haha Sound [2015]'
 - value: 31853303:A3
   label: 'Broadcast – A3: Come Back To Me (3:06) — Distant Call (Collected Demos 2000-2006) [2024]'
+- value: 22500044:A3
+  label: 'Broadcast – A3: Elegant Elephant (2:37) — Mother Is The Milky Way [2022]'
 - value: 22499936:A3
   label: 'Broadcast – A3: Forget Every Time — Maida Vale Sessions [2022]'
 - value: 22499861:A3
@@ -2566,6 +2608,8 @@
   label: 'Broadcast – A4: Microtronics 04 (1:03) — Microtronics - Volumes 1 & 2 [2022]'
 - value: 31853303:A4
   label: 'Broadcast – A4: The Little Bell (2:02) — Distant Call (Collected Demos 2000-2006) [2024]'
+- value: 22500044:A4
+  label: 'Broadcast – A4: Through The Gates Of Yesterday (0:44) — Mother Is The Milky Way [2022]'
 - value: 6733775:A4
   label: 'Broadcast – A4: Valerie — Haha Sound [2015]'
 - value: 22499936:A4
@@ -2578,6 +2622,8 @@
   label: 'Broadcast – A5: Man Is Not A Bird  — Haha Sound [2015]'
 - value: 22499861:A5
   label: 'Broadcast – A5: Microtronics 05 (1:46) — Microtronics - Volumes 1 & 2 [2022]'
+- value: 22500044:A5
+  label: 'Broadcast – A5: Milling Around The Village (1:47) — Mother Is The Milky Way [2022]'
 - value: 6733818:A5
   label: 'Broadcast – A5: Tears In The Typing Pool — Tender Buttons [2015]'
 - value: 6733818:A6
@@ -2614,12 +2660,16 @@
   label: 'Broadcast – B1: Ominous Cloud (3:00) — Distant Call (Collected Demos 2000-2006) [2024]'
 - value: 6734114:B1
   label: 'Broadcast – B1: Papercuts — The Noise Made By People [2015]'
+- value: 22500044:B1
+  label: 'Broadcast – B1: The Aphid Sleeps (3:29) — Mother Is The Milky Way [2022]'
 - value: 22499861:B10
   label: 'Broadcast – B10: Microtronics 21 (1:39) — Microtronics - Volumes 1 & 2 [2022]'
 - value: 6733818:B2
   label: 'Broadcast – B2: Arc Of A Journey — Tender Buttons [2015]'
 - value: 31853303:B2
   label: 'Broadcast – B2: Flame Left From The Sun (1:46) — Distant Call (Collected Demos 2000-2006) [2024]'
+- value: 22500044:B2
+  label: 'Broadcast – B2: Growing Backwards (0:20) — Mother Is The Milky Way [2022]'
 - value: 22499936:B2
   label: 'Broadcast – B2: Look Outside — Maida Vale Sessions [2022]'
 - value: 6733775:B2
@@ -2630,6 +2680,8 @@
   label: 'Broadcast – B2: You Can Fall — The Noise Made By People [2015]'
 - value: 6733775:B3
   label: 'Broadcast – B3: Black Umbrellas — Haha Sound [2015]'
+- value: 22500044:B3
+  label: 'Broadcast – B3: I''m Just A Person In This Roomy Verse (1:55) — Mother Is The Milky Way [2022]'
 - value: 6734114:B3
   label: 'Broadcast – B3: Look Outside — The Noise Made By People [2015]'
 - value: 6733818:B3
@@ -2646,6 +2698,8 @@
   label: 'Broadcast – B4: Microtronics 15 (1:41) — Microtronics - Volumes 1 & 2 [2022]'
 - value: 6733818:B4
   label: 'Broadcast – B4: Minus 3 — Tender Buttons [2015]'
+- value: 22500044:B4
+  label: 'Broadcast – B4: Never Trust A Rusty Bolt (0:42) — Mother Is The Milky Way [2022]'
 - value: 6733775:B4
   label: 'Broadcast – B4: Ominous Cloud  — Haha Sound [2015]'
 - value: 31853303:B4
@@ -2656,6 +2710,8 @@
   label: 'Broadcast – B5: City In Progress — The Noise Made By People [2015]'
 - value: 6733818:B5
   label: 'Broadcast – B5: Goodbye Girls — Tender Buttons [2015]'
+- value: 22500044:B5
+  label: 'Broadcast – B5: Innocence In Orbit (0:38) — Mother Is The Milky Way [2022]'
 - value: 22499861:B5
   label: 'Broadcast – B5: Microtronics 16 (1:07) — Microtronics - Volumes 1 & 2 [2022]'
 - value: 31853303:B5
@@ -2666,6 +2722,8 @@
   label: 'Broadcast – B6: Dead The Long Year — The Noise Made By People [2015]'
 - value: 22499861:B6
   label: 'Broadcast – B6: Microtronics 17 (1:26) — Microtronics - Volumes 1 & 2 [2022]'
+- value: 22500044:B6
+  label: 'Broadcast – B6: Mother''s Milk Means Music (At Home In The Universe) (3:08) — Mother Is The Milky Way [2022]'
 - value: 31853303:B6
   label: 'Broadcast – B6: Pendulum (3:52) — Distant Call (Collected Demos 2000-2006) [2024]'
 - value: 6733775:B6
@@ -7116,6 +7174,36 @@
   label: 'Lou Reed – B5: High In The City (3:25) — New Sensations [1984]'
 - value: 2779612:B6
   label: 'Lou Reed – B6: Down At The Arcade (3:40) — New Sensations [1984]'
+- value: 9970239:A1
+  label: 'Lou Reed, John Cale – A1: Smalltown (2:03) — Songs For Drella'
+- value: 9970239:A2
+  label: 'Lou Reed, John Cale – A2: Open House (4:16) — Songs For Drella'
+- value: 9970239:A3
+  label: 'Lou Reed, John Cale – A3: Style It Takes (2:54) — Songs For Drella'
+- value: 9970239:A4
+  label: 'Lou Reed, John Cale – A4: Work (2:36) — Songs For Drella'
+- value: 9970239:A5
+  label: 'Lou Reed, John Cale – A5: Trouble With Classicists (3:40) — Songs For Drella'
+- value: 9970239:A6
+  label: 'Lou Reed, John Cale – A6: Starlight (3:26) — Songs For Drella'
+- value: 9970239:A7
+  label: 'Lou Reed, John Cale – A7: Faces And Names (4:11) — Songs For Drella'
+- value: 9970239:B1
+  label: 'Lou Reed, John Cale – B1: Images (3:28) — Songs For Drella'
+- value: 9970239:B2
+  label: 'Lou Reed, John Cale – B2: Slip Away (A Warning) (3:04) — Songs For Drella'
+- value: 9970239:B3
+  label: 'Lou Reed, John Cale – B3: It Wasn''t Me (3:29) — Songs For Drella'
+- value: 9970239:B4
+  label: 'Lou Reed, John Cale – B4: I Believe (3:17) — Songs For Drella'
+- value: 9970239:B5
+  label: 'Lou Reed, John Cale – B5: Nobody But You (3:44) — Songs For Drella'
+- value: 9970239:B6
+  label: 'Lou Reed, John Cale – B6: A Dream (6:33) — Songs For Drella'
+- value: 9970239:B7
+  label: 'Lou Reed, John Cale – B7: Forever Changed (4:49) — Songs For Drella'
+- value: 9970239:B8
+  label: 'Lou Reed, John Cale – B8: Hello It''s Me (3:03) — Songs For Drella'
 - value: 3749933:D2
   label: 'Louis St. Louis – D2: Rock N'' Roll Party Queen (2:08) — Grease (The Original Soundtrack From The Motion Picture) [1978]'
 - value: 3749933:C6
@@ -8436,6 +8524,10 @@
   label: 'Parsnip (2) – A1: Health (2:32) — Health [2017]'
 - value: 30534334:A1
   label: 'Parsnip (2) – A1: Monument — Behold [2024]'
+- value: 14002465:A1
+  label: 'Parsnip (2) – A1: Taking Me For A Ride — When The Tree Bears Fruit [2019]'
+- value: 14002465:A2
+  label: 'Parsnip (2) – A2: Lift Off! — When The Tree Bears Fruit [2019]'
 - value: 11228498:A2
   label: 'Parsnip (2) – A2: Nigella (2:09) — Health [2017]'
 - value: 30534334:A2
@@ -8444,18 +8536,28 @@
   label: 'Parsnip (2) – A2: Treacle Toffee World — Adding Up [2020]'
 - value: 30534334:A3
   label: 'Parsnip (2) – A3: Duality — Behold [2024]'
+- value: 14002465:A3
+  label: 'Parsnip (2) – A3: Lighthouse Beacon — When The Tree Bears Fruit [2019]'
 - value: 30534334:A4
   label: 'Parsnip (2) – A4: L.O.N.E. — Behold [2024]'
+- value: 14002465:A4
+  label: 'Parsnip (2) – A4: Sprouts — When The Tree Bears Fruit [2019]'
 - value: 30534334:A5
   label: 'Parsnip (2) – A5: Placeholder — Behold [2024]'
+- value: 14002465:A5
+  label: 'Parsnip (2) – A5: Too Late — When The Tree Bears Fruit [2019]'
 - value: 30534334:A6
   label: 'Parsnip (2) – A6: Pockets — Behold [2024]'
+- value: 14002465:A6
+  label: 'Parsnip (2) – A6: Rip It Off — When The Tree Bears Fruit [2019]'
 - value: 30534334:A7
   label: 'Parsnip (2) – A7: Unearthing — Behold [2024]'
 - value: 15640334:B1
   label: 'Parsnip (2) – B1: Crossword Cheater — Adding Up [2020]'
 - value: 11228498:B1
   label: 'Parsnip (2) – B1: Seeing Red (2:03) — Health [2017]'
+- value: 14002465:B1
+  label: 'Parsnip (2) – B1: Soft Spot — When The Tree Bears Fruit [2019]'
 - value: 30534334:B10
   label: 'Parsnip (2) – B10: Clear Blue Sky — Behold [2024]'
 - value: 30534334:B11
@@ -8466,8 +8568,16 @@
   label: 'Parsnip (2) – B13: Kutastha — Behold [2024]'
 - value: 11228498:B2
   label: 'Parsnip (2) – B2: Dummkopf (1:27) — Health [2017]'
+- value: 14002465:B2
+  label: 'Parsnip (2) – B2: Lullaby — When The Tree Bears Fruit [2019]'
 - value: 15640334:B2
   label: 'Parsnip (2) – B2: Repeater  — Adding Up [2020]'
+- value: 14002465:B3
+  label: 'Parsnip (2) – B3: My Window — When The Tree Bears Fruit [2019]'
+- value: 14002465:B4
+  label: 'Parsnip (2) – B4: Seafarer — When The Tree Bears Fruit [2019]'
+- value: 14002465:B5
+  label: 'Parsnip (2) – B5: Trip The Light Fantastic — When The Tree Bears Fruit [2019]'
 - value: 30534334:B8
   label: 'Parsnip (2) – B8: The Babble — Behold [2024]'
 - value: 30534334:B9
@@ -11070,7 +11180,7 @@
   label: 'Sonic Youth – A1: Brave Men Run In My Family — Live In Brooklyn 2011 [2023]'
 - value: 3584924:A1
   label: 'Sonic Youth – A1: Dirty Boots (5:24) — Goo [1990]'
-- value: 1191300:A1
+- value: 388307:A1
   label: 'Sonic Youth – A1: Dirty Boots (Edit) (4:48) — Dirty Boots (Plus 5 Live Tracks) [1991]'
 - value: 409506:A1
   label: 'Sonic Youth – A1: Schizophrenia (4:37) — Sister [1987]'
@@ -11090,11 +11200,11 @@
   label: 'Sonic Youth – A2: Swimsuit Issue (2:57) — Dirty [1992]'
 - value: 3584924:A2
   label: 'Sonic Youth – A2: Tunic (Song For Karen) (6:17) — Goo [1990]'
-- value: 1191300:A2
+- value: 388307:A2
   label: 'Sonic Youth – A2: White Kross (Live) (4:50) — Dirty Boots (Plus 5 Live Tracks) [1991]'
 - value: 409506:A3
   label: 'Sonic Youth – A3: Beauty Lies In The Eye (2:12) — Sister [1987]'
-- value: 1191300:A3
+- value: 388307:A3
   label: 'Sonic Youth – A3: Eric''s Trip (Live) (3:20) — Dirty Boots (Plus 5 Live Tracks) [1991]'
 - value: 27926406:A3
   label: 'Sonic Youth – A3: Kotton Krown — Live In Brooklyn 2011 [2023]'
@@ -11124,7 +11234,7 @@
   label: 'Sonic Youth – A5: Mote (7:36) — Goo [1990]'
 - value: 409506:A5
   label: 'Sonic Youth – A5: Pipeline/Kill Time (4:31) — Sister [1987]'
-- value: 1191300:B1
+- value: 388307:B1
   label: 'Sonic Youth – B1: Cinderella''s Big Score (Live) (6:28) — Dirty Boots (Plus 5 Live Tracks) [1991]'
 - value: 28930627:B1
   label: 'Sonic Youth – B1: Death To Our Friends (3:17) — EVOL [2015]'
@@ -11140,7 +11250,7 @@
   label: 'Sonic Youth – B1: Tuff Gnarl (3:12) — Sister [1987]'
 - value: 27926406:B2
   label: 'Sonic Youth – B2: Calming The Snake — Live In Brooklyn 2011 [2023]'
-- value: 1191300:B2
+- value: 388307:B2
   label: 'Sonic Youth – B2: Dirty Boots (Live) (6:24) — Dirty Boots (Plus 5 Live Tracks) [1991]'
 - value: 3584924:B2
   label: 'Sonic Youth – B2: Disappearer (5:08) — Goo [1990]'
@@ -11162,7 +11272,7 @@
   label: 'Sonic Youth – B3: Starfield Road — Live In Brooklyn 2011 [2023]'
 - value: 2769006:B3
   label: 'Sonic Youth – B3: Sugar Kane (5:56) — Dirty [1992]'
-- value: 1191300:B3
+- value: 388307:B3
   label: 'Sonic Youth – B3: The Bedroom (Live And Previously Unreleased) (3:42) — Dirty Boots (Plus 5 Live Tracks) [1991]'
 - value: 3584924:B4
   label: 'Sonic Youth – B4: Cinderella''s Big Score (5:50) — Goo [1990]'
@@ -12768,6 +12878,8 @@
   label: 'Tall Dwarfs – A: Nothings Going To Happen — Three Songs [1981]'
 - value: 7473538:A
   label: 'Tall Dwarfs – A: Nothings Going To Happen (3:50) — Three Songs [1991]'
+- value: 652286:A1
+  label: 'Tall Dwarfs – A1: Canopener (3:12) — Canned Music [1983]'
 - value: 1431017:A1
   label: 'Tall Dwarfs – A1: Dare To Tread — Fork Songs [1992]'
 - value: 846388:A1
@@ -12782,6 +12894,8 @@
   label: 'Tall Dwarfs – A1: The Brain That Wouldn''t Die — Slugbuckethairybreathmonster [1984]'
 - value: 445764:A1
   label: 'Tall Dwarfs – A1: Underhand (1:50) — Throw A Sickie [1987]'
+- value: 652286:A2
+  label: 'Tall Dwarfs – A2: Beauty (2:06) — Canned Music [1983]'
 - value: 846388:A2
   label: 'Tall Dwarfs – A2: Entropy (3:21) — 3EPs [1994]'
 - value: 7325349:A2
@@ -12808,6 +12922,8 @@
   label: 'Tall Dwarfs – A3: I''ve Left Memories Behind — Slugbuckethairybreathmonster [1984]'
 - value: 7325349:A3
   label: 'Tall Dwarfs – A3: Pictures On The Floor (2:08) — Louis Likes His Daily Dip'
+- value: 652286:A3
+  label: 'Tall Dwarfs – A3: This Room Is Wrong (3:15) — Canned Music [1983]'
 - value: 846388:A3
   label: 'Tall Dwarfs – A3: What Goes Up (2:47) — 3EPs [1994]'
 - value: 1431017:A3
@@ -12820,6 +12936,8 @@
   label: 'Tall Dwarfs – A4: Skin Of My Teeth (4:00) — Weeville [1991]'
 - value: 1431017:A4
   label: 'Tall Dwarfs – A4: Skirl — Fork Songs [1992]'
+- value: 652286:A4
+  label: 'Tall Dwarfs – A4: Walking Home (2:14) — Canned Music [1983]'
 - value: 855462:A5
   label: 'Tall Dwarfs – A5: Crawl (2:04) — Weeville [1991]'
 - value: 1461997:A5
@@ -12856,6 +12974,8 @@
   label: 'Tall Dwarfs – B1: The Hills Are Alive (2:04) — That''s The Short & Long Of It [1985]'
 - value: 445764:B1
   label: 'Tall Dwarfs – B1: The Universality Of Neighbourliness (0:57) — Throw A Sickie [1987]'
+- value: 652286:B1
+  label: 'Tall Dwarfs – B1: Turning Brown, And Torn In Two (4:31) — Canned Music [1983]'
 - value: 445761:B10
   label: 'Tall Dwarfs – B10: Scrapbook (1:45) — That''s The Short & Long Of It [1985]'
 - value: 818535:B2
@@ -12878,6 +12998,8 @@
   label: 'Tall Dwarfs – B2: The Big Dive (3:06) — Throw A Sickie [1987]'
 - value: 504532:B2
   label: 'Tall Dwarfs – B2: The Brain That Wouldn''t Die — Split [1993]'
+- value: 652286:B2
+  label: 'Tall Dwarfs – B2: Woman (3:03) — Canned Music [1983]'
 - value: 1431017:B3
   label: 'Tall Dwarfs – B3: All Is Fine — Fork Songs [1992]'
 - value: 846388:B3
@@ -12890,6 +13012,8 @@
   label: 'Tall Dwarfs – B3: No Place (1:22) — Throw A Sickie [1987]'
 - value: 445761:B3
   label: 'Tall Dwarfs – B3: Pretty Poison (1:53) — That''s The Short & Long Of It [1985]'
+- value: 652286:B3
+  label: 'Tall Dwarfs – B3: Shade For Today (1:47) — Canned Music [1983]'
 - value: 445764:B4
   label: 'Tall Dwarfs – B4: And Other Kinds (3:45) — Throw A Sickie [1987]'
 - value: 445761:B4
@@ -18852,6 +18976,32 @@
   label: 'The Turtles – B8: You Know What I Mean (2:03) — The Turtles Collection - 20 Golden Hits [1986]'
 - value: 1721524:B9
   label: 'The Turtles – B9: You Showed Me (3:05) — The Turtles Collection - 20 Golden Hits [1986]'
+- value: 6559422:A1
+  label: 'The Twerps (2) – A1: House Keys (0:53) — Range Anxiety [2015]'
+- value: 6559422:A2
+  label: 'The Twerps (2) – A2: I Don''t Mind (5:30) — Range Anxiety [2015]'
+- value: 6559422:A3
+  label: 'The Twerps (2) – A3: Back To You (2:32) — Range Anxiety [2015]'
+- value: 6559422:A4
+  label: 'The Twerps (2) – A4: Stranger (2:56) — Range Anxiety [2015]'
+- value: 6559422:A5
+  label: 'The Twerps (2) – A5: New Moves (3:15) — Range Anxiety [2015]'
+- value: 6559422:A6
+  label: 'The Twerps (2) – A6: White As Snow (2:23) — Range Anxiety [2015]'
+- value: 6559422:A7
+  label: 'The Twerps (2) – A7: Shoulders (3:41) — Range Anxiety [2015]'
+- value: 6559422:B1
+  label: 'The Twerps (2) – B1: Simple Feelings (3:12) — Range Anxiety [2015]'
+- value: 6559422:B2
+  label: 'The Twerps (2) – B2: Adrenaline (3:13) — Range Anxiety [2015]'
+- value: 6559422:B3
+  label: 'The Twerps (2) – B3: Fern Murderers (2:15) — Range Anxiety [2015]'
+- value: 6559422:B4
+  label: 'The Twerps (2) – B4: Cheap Education (2:59) — Range Anxiety [2015]'
+- value: 6559422:B5
+  label: 'The Twerps (2) – B5: Love At First Sight (3:04) — Range Anxiety [2015]'
+- value: 6559422:B6
+  label: 'The Twerps (2) – B6: Empty Road (5:17) — Range Anxiety [2015]'
 - value: 16137917:A1
   label: 'The Upsetters – A1: Eastwood Rides Again — Eastwood Rides Again [2020]'
 - value: 17763229:A1
@@ -19124,6 +19274,8 @@
   label: 'The Wedding Present – A: Flying Saucer (4:54) — Flying Saucer / Rocket [1992]'
 - value: 999452:A
   label: 'The Wedding Present – A: Go-Go Dancer (2:48) — Go-Go Dancer / Don''t Cry No Tears [1992]'
+- value: 1189329:A
+  label: 'The Wedding Present – A: Kennedy — Kennedy [1989]'
 - value: 1002884:A
   label: 'The Wedding Present – A: Loveslave (3:14) — Loveslave / Chant Of The Ever Circling Skeletal Family [1992]'
 - value: 999486:A
@@ -19238,6 +19390,8 @@
   label: 'The Wedding Present – B: Theme From Shaft (3:19) — Boing! / Theme From Shaft [1992]'
 - value: 999486:B
   label: 'The Wedding Present – B: Think That It Might (2:43) — Three / Think That It Might [1992]'
+- value: 1189329:B
+  label: 'The Wedding Present – B: Unfaithful — Kennedy [1989]'
 - value: 13492315:B
   label: 'The Wedding Present – B: Катруся  / Katrusya — Davni Chasy / Katrusya [2019]'
 - value: 1340904:B1
@@ -19510,6 +19664,10 @@
   label: 'Thee Oh Sees – A1: Scramble Experiment — Panther Rotate [2020]'
 - value: 15892878:A1
   label: 'Thee Oh Sees – A1: Scramble Suit II (2:27) — Protean Threat [2020]'
+- value: 28003893:A1
+  label: 'Thee Oh Sees – A1: Stunner (2:44) — Intercepted Message [2023]'
+- value: 28003893:A2
+  label: 'Thee Oh Sees – A2: Blank Chems (4:15) — Intercepted Message [2023]'
 - value: 16466097:A2
   label: 'Thee Oh Sees – A2: Don''t Blow Your Experiment — Panther Rotate [2020]'
 - value: 15892878:A2
@@ -19518,12 +19676,16 @@
   label: 'Thee Oh Sees – A2: Pixelated Moon — SORCS 80 [2024]'
 - value: 31481540:A3
   label: 'Thee Oh Sees – A3: Drug City — SORCS 80 [2024]'
+- value: 28003893:A3
+  label: 'Thee Oh Sees – A3: Intercepted Message (3:26) — Intercepted Message [2023]'
 - value: 16466097:A3
   label: 'Thee Oh Sees – A3: Synthesis — Panther Rotate [2020]'
 - value: 15892878:A3
   label: 'Thee Oh Sees – A3: Up Beat Ritual (2:11) — Protean Threat [2020]'
 - value: 31481540:A4
   label: 'Thee Oh Sees – A4: Also The Gorilla… — SORCS 80 [2024]'
+- value: 28003893:A4
+  label: 'Thee Oh Sees – A4: Die Laughing (4:10) — Intercepted Message [2023]'
 - value: 15892878:A4
   label: 'Thee Oh Sees – A4: Red Study (3:12) — Protean Threat [2020]'
 - value: 16466097:A4
@@ -19532,8 +19694,12 @@
   label: 'Thee Oh Sees – A5 : Termination Officer  — SORCS 80 [2024]'
 - value: 15892878:A5
   label: 'Thee Oh Sees – A5: Terminal Jape (2:20) — Protean Threat [2020]'
+- value: 28003893:A5
+  label: 'Thee Oh Sees – A5: Unusual & Cruel (3:22) — Intercepted Message [2023]'
 - value: 31481540:A6
   label: 'Thee Oh Sees – A6: Blimp — SORCS 80 [2024]'
+- value: 28003893:A6
+  label: 'Thee Oh Sees – A6: The Fish Needs A Bike (3:17) — Intercepted Message [2023]'
 - value: 15892878:A6
   label: 'Thee Oh Sees – A6: Wind Ruin (2:06) — Protean Threat [2020]'
 - value: 31481540:A7
@@ -19542,10 +19708,14 @@
   label: 'Thee Oh Sees – A7: Said The Shovel (4:37) — Protean Threat [2020]'
 - value: 31481540:B1
   label: 'Thee Oh Sees – B1: Cassius, Brutus, and Judas — SORCS 80 [2024]'
+- value: 28003893:B1
+  label: 'Thee Oh Sees – B1: Goon (2:12) — Intercepted Message [2023]'
 - value: 16466097:B1
   label: 'Thee Oh Sees – B1: If I Had An Experiment — Panther Rotate [2020]'
 - value: 15892878:B1
   label: 'Thee Oh Sees – B1: Mizmuth (2:09) — Protean Threat [2020]'
+- value: 28003893:B2
+  label: 'Thee Oh Sees – B2: Chaos Heart (2:46) — Intercepted Message [2023]'
 - value: 15892878:B2
   label: 'Thee Oh Sees – B2: If I Had My Way (2:47) — Protean Threat [2020]'
 - value: 16466097:B2
@@ -19554,6 +19724,8 @@
   label: 'Thee Oh Sees – B2: The Zipper — SORCS 80 [2024]'
 - value: 31481540:B3
   label: 'Thee Oh Sees – B3: Lear’s Ears — SORCS 80 [2024]'
+- value: 28003893:B3
+  label: 'Thee Oh Sees – B3: Submerged Building (2:49) — Intercepted Message [2023]'
 - value: 16466097:B3
   label: 'Thee Oh Sees – B3: Terminal Experiment — Panther Rotate [2020]'
 - value: 15892878:B3
@@ -19564,6 +19736,10 @@
   label: 'Thee Oh Sees – B4: Gong Of Catastrophe (4:43) — Protean Threat [2020]'
 - value: 16466097:B4
   label: 'Thee Oh Sees – B4: Poem 2 — Panther Rotate [2020]'
+- value: 28003893:B4
+  label: 'Thee Oh Sees – B4: Sleazoid Psycho (3:09) — Intercepted Message [2023]'
+- value: 28003893:B5
+  label: 'Thee Oh Sees – B5: Always At Night (7:03) — Intercepted Message [2023]'
 - value: 15892878:B5
   label: 'Thee Oh Sees – B5: Canopnr ''74 (3:00) — Protean Threat [2020]'
 - value: 16466097:B5
@@ -19572,6 +19748,8 @@
   label: 'Thee Oh Sees – B5: Plastic — SORCS 80 [2024]'
 - value: 31481540:B6
   label: 'Thee Oh Sees – B6: Neo-Clone — SORCS 80 [2024]'
+- value: 28003893:B6
+  label: 'Thee Oh Sees – B6: Opus No.1 (2:01) — Intercepted Message [2023]'
 - value: 15892878:B6
   label: 'Thee Oh Sees – B6: Persuaders Up! (2:23) — Protean Threat [2020]'
 - value: 24619274:C5
