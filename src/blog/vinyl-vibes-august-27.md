@@ -18,7 +18,7 @@ vinyl_vibes:
       tracks:
         - discogs: 18663:A
           youtube: z5iiEtFL69I
-          duration:
+          duration: 7:05
         - discogs: 462235:A1
           youtube: LJzCYSdrHMI
         - discogs: 6559422:A3
@@ -32,10 +32,10 @@ vinyl_vibes:
           youtube: 3jwC_cFdX_A
         - discogs: 8707763:A1
           youtube: Gy88-5pc7c8
-          duration:
+          duration: 4:05
         - discogs: 2125265:A4
           youtube: cBUouOo_wzo
-          duration:
+          duration: 1:45
         - discogs: 2751255:B1
           youtube: 6bMM61Y5CEU
 ---
