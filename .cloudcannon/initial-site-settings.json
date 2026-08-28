@@ -1,13 +1,13 @@
 {
   "ssg": "eleventy",
   "mode": "hosted",
-  "build_configuration": {
-    "output": "public",
+  "build": {
     "hugoVersion": "0.128.1",
     "rubyVersion": "2.7.3",
-    "nodeVersion": "22",
+    "nodeVersion": "24",
     "denoVersion": "1.40.2",
-    "preserved_paths": "node_modules/, img/, fonts/",
+    "output": "public",
+    "preserved_paths": "node_modules/, img/, fonts/,.cache",
     "config": "",
     "formats": "",
     "input": "",
@@ -24,6 +24,9 @@
         "key": "ELEVENTY_ENV",
         "value": "production"
       }
-    ]
+    ],
+    "output_path": "public",
+    "build_command": "npm run build",
+    "install_command": "npm i"
   }
 }
