@@ -42,6 +42,15 @@
             {%- assign t_buy = 'https://www.discogs.com/release/' | append: dc_release_id -%}
           {%- endif -%}
         {%- endif -%}
+        {%- comment -%} Build the meta line so separators only appear between values that exist.
+        Liquid treats '' as truthy, so a plain `if` renders a stray separator when Discogs
+        has no duration for a track. {%- endcomment -%}
+        {%- assign t_meta = '' -%}
+        {%- if t_year != blank -%}{%- assign t_meta = t_year | append: '' -%}{%- endif -%}
+        {%- if t_duration != blank -%}
+          {%- if t_meta != '' -%}{%- assign t_meta = t_meta | append: ' · ' -%}{%- endif -%}
+          {%- assign t_meta = t_meta | append: t_duration -%}
+        {%- endif -%}
       <li class="vv-track">
         {%- if track.youtube -%}
         <details class="vv-embed vv-embed--yt">
@@ -52,8 +61,8 @@
             </div>
             <div class="vv-track-info">
               <span><strong>{{ t_artist }}</strong> — {{ t_title }}</span>
-              {%- if t_duration or t_year or t_buy -%}
-              <span class="vv-track-meta">{{ t_year }}{% if t_year and t_duration %} · {% endif %}{{ t_duration }}{% if t_buy %} · <a class="vv-info" href="{{ t_buy }}" target="_blank" rel="noopener noreferrer" aria-label="More about this release on Discogs" title="More on Discogs">ⓘ</a>{% endif %}</span>
+              {%- if t_meta != '' or t_buy != blank -%}
+              <span class="vv-track-meta">{{ t_meta }}{% if t_buy != blank %}{% if t_meta != '' %} · {% endif %}<a class="vv-info" href="{{ t_buy }}" target="_blank" rel="noopener noreferrer" aria-label="More about this release on Discogs" title="More on Discogs">ⓘ</a>{% endif %}</span>
               {%- endif -%}
             </div>
           </summary>
@@ -67,8 +76,8 @@
         <div class="vv-track-row">
           <div class="vv-track-info">
             <span><strong>{{ t_artist }}</strong> — {{ t_title }}</span>
-            {%- if t_duration or t_year or t_buy -%}
-            <span class="vv-track-meta">{{ t_year }}{% if t_year and t_duration %} · {% endif %}{{ t_duration }}{% if t_buy %} · <a class="vv-info" href="{{ t_buy }}" target="_blank" rel="noopener noreferrer" aria-label="More about this release on Discogs" title="More on Discogs">ⓘ</a>{% endif %}</span>
+            {%- if t_meta != '' or t_buy != blank -%}
+            <span class="vv-track-meta">{{ t_meta }}{% if t_buy != blank %}{% if t_meta != '' %} · {% endif %}<a class="vv-info" href="{{ t_buy }}" target="_blank" rel="noopener noreferrer" aria-label="More about this release on Discogs" title="More on Discogs">ⓘ</a>{% endif %}</span>
             {%- endif -%}
           </div>
         </div>

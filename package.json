@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "run-p dev:*",
     "go!": "NODE_ENV=production run-s clean css eleventy",
+    "build": "NODE_ENV=production run-s css eleventy",
     "clean": "rimraf public",
     "css": "npx tailwindcss -i src/_css/site.css -o public/css/style.css --minify",
     "eleventy": "npx @11ty/eleventy",
