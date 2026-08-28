@@ -18,9 +18,11 @@ vinyl_vibes:
       tracks:
         - discogs:
           youtube:
+          duration:
     - dj: DJ Skrub Mommy
       slot:
       tracks:
         - discogs:
           youtube:
+          duration:
 ---
