@@ -1,8 +1,7 @@
 ---
 _schema: a_certain_sound
 title: A Certain Sound (Episode 4)
-description: 'Theme: 100 shows edition. Originally broadcast on September 12,
-  2026 on Otago Access Radio 105.4FM.'
+description: Originally broadcast on September 12th, 2026 on Otago Access Radio 105.4FM.
 date: 2026-09-12T18:10:38+12:00
 type: article
 layout: article.liquid
