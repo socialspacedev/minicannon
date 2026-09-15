@@ -56,7 +56,7 @@ a_certain_sound:
       title: Sweatshop
       year: 2017
       link: https://disasteradio.bandcamp.com/album/sweatshop
-    - artist: luke hurley
+    - artist: Luke Hurley
       title: Fait Accompli
       year: 2023
       link: https://lukehurley.bandcamp.com/album/expressemotion
