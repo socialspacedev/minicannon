@@ -20,9 +20,11 @@ a_certain_sound:
     - artist: Cuticles
       title: Impending Doom (bonus track)
       year: 2026
+      link: https://cuticles1.bandcamp.com/album/more-joy
     - artist: Flax Hubzzy
       title: 5:15 (Feat. Clan Of The White Lotus)
       year: 2022
+      link: https://flaxhubzzy.bandcamp.com/album/the-best-night-of-our-lives-just-happened-now-its-5-15-in-morning-and-were-still-drunk3
     - artist: Shihad
       title: Prayer
       year: 1994
@@ -53,10 +55,13 @@ a_certain_sound:
     - artist: Disasteradio
       title: Sweatshop
       year: 2017
+      link: https://disasteradio.bandcamp.com/album/sweatshop
     - artist: luke hurley
       title: Fait Accompli
       year: 2023
+      link: https://lukehurley.bandcamp.com/album/expressemotion
     - artist: CAMPBELL KNEALE / The Moving Air Ensemble
       title: Composition for Massed Vacuums and Unspecified Instruments
       year: 2026
+      link: https://campbellkneale.bandcamp.com/album/220826-composition-for-massed-vacuum-cleaners-and-unspecified-instruments
 ---
