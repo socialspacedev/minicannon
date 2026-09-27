@@ -51,33 +51,32 @@ vinyl_vibes:
           title: Teddy Picker
           buy_url: https://www.discogs.com/release/20924029
           youtube: 2A2XBoxtcUA
-          duration: '2:43'
+          duration: 2:43
         - discogs: 6099447:A1
           artist: House Of Pain
           title: Jump Around (Original Mix)
           year: '2002'
           buy_url: https://www.discogs.com/release/6099447
           youtube: QanuZ7PLUMM
-          duration: '3:30'
+          duration: 3:30
         - discogs: 20893666:D1
           artist: The Dandy Warhols
           title: Bohemian Like You
           year: '2021'
           buy_url: https://www.discogs.com/release/20893666
           youtube: CU3mc0yvRNk
-          duration: '3:31'
+          duration: 3:31
         - discogs: 23719583:A6
           artist: Ash
           title: Kung Fu
           year: '2022'
           buy_url: https://www.discogs.com/release/23719583
           youtube: dWqY8qrBBSI
-          duration:
-        - discogs: "4410430:A"
-          buy_url: https://www.discogs.com/release/4410430
-          artist: Nirvana
+          duration: 2:17
+        - artist: Nirvana
           title: Sliver
           year: '1990'
+          buy_url: https://www.discogs.com/release/7802791-Nirvana-Nirvana
           youtube: QECJ9pCyhns
           duration: 2:10
 ---
