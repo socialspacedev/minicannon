@@ -36,6 +36,12 @@
         {%- assign t_title = track.title | default: dc_track.title -%}
         {%- assign t_year = track.year | default: dc_release.year -%}
         {%- assign t_duration = track.duration | default: dc_track.duration -%}
+        {%- comment -%} A hand-entered YouTube ID wins; otherwise the build looks one up
+        from the release's Discogs videos (cached for 30 days). {%- endcomment -%}
+        {%- assign t_youtube = track.youtube -%}
+        {%- if t_youtube == blank and dc_track -%}
+          {%- assign t_youtube = track.discogs | discogsYoutube: t_title -%}
+        {%- endif -%}
         {%- assign t_buy = track.buy_url -%}
         {%- if t_buy == nil or t_buy == '' -%}
           {%- if dc_release_id != '' -%}
@@ -52,11 +58,11 @@
           {%- assign t_meta = t_meta | append: t_duration -%}
         {%- endif -%}
       <li class="vv-track">
-        {%- if track.youtube -%}
+        {%- if t_youtube != blank -%}
         <details class="vv-embed vv-embed--yt">
           <summary class="vv-track-row">
             <div class="vv-thumb-wrap">
-              <img class="vv-thumb" src="https://img.youtube.com/vi/{{ track.youtube }}/mqdefault.jpg" alt="{{ t_artist }} – {{ t_title }}" loading="lazy">
+              <img class="vv-thumb" src="https://img.youtube.com/vi/{{ t_youtube }}/mqdefault.jpg" alt="{{ t_artist }} – {{ t_title }}" loading="lazy">
               <span class="vv-play-icon" aria-hidden="true">▶</span>
             </div>
             <div class="vv-track-info">
@@ -66,7 +72,7 @@
               {%- endif -%}
             </div>
           </summary>
-          <iframe data-src="https://www.youtube.com/embed/{{ track.youtube }}?rel=0"
+          <iframe data-src="https://www.youtube.com/embed/{{ t_youtube }}?rel=0"
                   title="{{ t_artist }} – {{ t_title }}"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -8,6 +8,7 @@ import { readFile } from "node:fs/promises";
 import Image from "@11ty/eleventy-img";
 import embedYouTube from "eleventy-plugin-youtube-embed";
 import { DateTime } from "luxon";
+import { releaseVideos, findVideoMatch } from "./scripts/discogs-videos.mjs";
 
 export default function (eleventyConfig) {
   // Enable 11ty plugins
@@ -118,6 +119,14 @@ export default function (eleventyConfig) {
     const match = String(urlOrId).match(/(?:youtube\.com\/(?:watch\?v=|embed\/|shorts\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
     const id = match ? match[1] : urlOrId;
     return `<div class="youtube-embed"><iframe src="https://www.youtube.com/embed/${id}?rel=0" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>`;
+  });
+
+  // Vinyl Vibes: YouTube ID for a Discogs-linked track that has none set,
+  // from the release's Discogs video list. "" when nothing matches.
+  eleventyConfig.addAsyncFilter("discogsYoutube", async (discogsRef, trackTitle) => {
+    const releaseId = String(discogsRef || "").split(":")[0];
+    if (!releaseId) return "";
+    return findVideoMatch(await releaseVideos(releaseId), trackTitle) || "";
   });
 
   // Prettify dates

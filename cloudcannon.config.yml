@@ -278,7 +278,7 @@ _inputs:
   "vinyl_vibes.sets[*].tracks[*].youtube":
     type: text
     label: YouTube video ID (optional)
-    comment: "11-character ID from the YouTube URL — adds an inline player. Leave blank for a clean row."
+    comment: "11-character ID from the YouTube URL — adds an inline player. Leave blank to use a matching Discogs video, if there is one."
     cascade: true
   "vinyl_vibes.sets[*].tracks[*].artist":
     type: text
