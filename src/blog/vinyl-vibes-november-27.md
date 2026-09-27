@@ -16,7 +16,8 @@ vinyl_vibes:
     - dj: DJ Skrub Mommy
       slot: 8:30pm
       tracks:
-        - artist: The Flaming Lips
+        - discogs: "26463236:A2"
+          artist: The Flaming Lips
           title: Can't get you out of my head (KEXP Version)
           year: '2023'
           duration: '4:06'
