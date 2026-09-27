@@ -15,11 +15,11 @@ type: website
         {{ content }}
       </div>
       {%- assign recentPosts = collections.post | reverse | slice: 0, ui.recentPostsDesktop -%}
-      {%- assign latestPhotoPost = collections.photography | reverse | first -%}
+      {%- assign hero = collections.homeHero | first -%}
       <div class="home-grid">
-        {%- if latestPhotoPost and latestPhotoPost.data.thumbnail -%}
-          <a href="/photos.html" class="home-photo" aria-label="Browse the photo gallery">
-            <img src="{{ latestPhotoPost.data.thumbnail }}" alt="Latest photograph from {{ latestPhotoPost.data.title }}" loading="lazy">
+        {%- if hero -%}
+          <a href="{{ hero.url }}" class="home-photo" aria-label="Read {{ hero.title }}">
+            {{ hero.html }}
           </a>
         {%- endif -%}
         {%- if recentPosts and recentPosts.size > 0 -%}

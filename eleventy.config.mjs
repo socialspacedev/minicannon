@@ -400,6 +400,43 @@ export default function (eleventyConfig) {
     return result;
   });
 
+  // Home page hero — the photo from the most recent post that has one.
+  // Show posts keep their photo under their own block (vinyl_vibes /
+  // a_certain_sound hero_image + hero_alt); everything else uses `thumbnail`.
+  // Posts without any image are skipped so the hero is never empty.
+  eleventyConfig.addCollection("homeHero", async function(collection) {
+    const items = collection.getFilteredByTag("post");
+    items.sort((a, b) => b.date - a.date);
+
+    for (const item of items) {
+      const show = item.data.vinyl_vibes || item.data.a_certain_sound;
+      const src = (show && show.hero_image) || item.data.thumbnail;
+      if (!src) continue;
+      const alt = (show && show.hero_alt) || `Photo from ${item.data.title}`;
+
+      try {
+        const metadata = await Image(path.join('./src/', src), {
+          widths: [400, 800, 1200],
+          formats: ["avif", "webp", "jpeg"],
+          outputDir: "./public/img/",
+          urlPath: "/img/",
+        });
+        // Above the fold, so load eagerly with high priority (it's the LCP image)
+        const html = Image.generateHTML(metadata, {
+          alt,
+          sizes: "(min-width: 768px) 50vw, 100vw",
+          loading: "eager",
+          decoding: "async",
+          fetchpriority: "high",
+        });
+        return [{ html, url: item.url, title: item.data.title }];
+      } catch(e) {
+        console.warn(`[homeHero] ${item.inputPath}: ${e.message}`);
+      }
+    }
+    return [];
+  });
+
   // Wrap markdown images in <figure>/<figcaption> when a title attribute is present
   eleventyConfig.amendLibrary("md", (mdLib) => {
     const defaultRender = mdLib.renderer.rules.image || function(tokens, idx, options, env, self) {

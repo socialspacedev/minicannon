@@ -248,6 +248,24 @@ _inputs:
     type: array
     label: Tracks
     cascade: true
+    options:
+      structures:
+        values:
+          - label: From my Discogs collection
+            icon: album
+            value: { discogs: null, youtube: null, duration: null }
+          - label: Not in my collection
+            icon: edit_note
+            value: { artist: null, title: null, year: null, duration: null, youtube: null, buy_url: null }
+            # Overrides the "(override)" wording — here these fields ARE the track
+            _inputs:
+              artist: { type: text, label: Artist, options: { required: true } }
+              title: { type: text, label: Song title, options: { required: true } }
+              year: { type: text, label: Year }
+              buy_url:
+                type: url
+                label: Link (optional)
+                comment: "Bandcamp, label or release page."
   "vinyl_vibes.sets[*].tracks[*].discogs":
     type: select
     label: Track (from Discogs collection)
