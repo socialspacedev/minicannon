@@ -19,6 +19,7 @@ vinyl_vibes:
         - artist: Secret Machines
           title: Nowhere again
           year: '2004'
+          buy_url: https://www.discogs.com/release/19224667-Secret-Machines-Now-Here-Is-Nowhere
           youtube: ftzmOV79N3A
           duration: 4:07
         - discogs: 1461153:A1
