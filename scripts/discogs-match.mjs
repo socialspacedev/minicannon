@@ -14,6 +14,7 @@ import { readFile, writeFile, readdir } from "node:fs/promises";
 import path from "node:path";
 import yaml from "js-yaml";
 import EleventyFetch from "@11ty/eleventy-fetch";
+import { cleanArtist, cleanTitle } from "./discogs-clean.mjs";
 
 const TOKEN = process.env.DISCOGS_TOKEN;
 const USER_AGENT = "minicannon-discogs-match/1.0 +https://anaru.nz";
@@ -196,9 +197,10 @@ async function injectMatches(content, index, discogs) {
       const track = release?.tracks?.find(t => t.position === position);
       if (release && track) {
         resolvedRelease = release;
+        // Cleaned here too in case discogs.yaml predates the sync clean-up
         const fillTargets = [
-          ["artist",   track.artist || release.artist],
-          ["title",    track.title],
+          ["artist",   cleanArtist(track.artist || release.artist)],
+          ["title",    cleanTitle(track.title)],
           ["year",     release.year ? String(release.year) : null],
           ["duration", track.duration],
           ["buy_url",  `https://www.discogs.com/release/${releaseId}`],

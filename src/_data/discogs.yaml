@@ -1,4 +1,4 @@
-last_synced: '2026-09-27T01:37:30.815Z'
+last_synced: '2026-09-27T01:42:24.239Z'
 username: socialspacious
 counts:
   releases: 1079
@@ -109,7 +109,7 @@ releases:
       - position: '4'
         title: Stoned Immaculate
         duration: '4:34'
-        artist: Dub Syndicate, Akabu (2)
+        artist: Dub Syndicate, Akabu
       - position: '5'
         title: I Think Of You
         duration: '4:49'
@@ -133,7 +133,7 @@ releases:
       - position: '10'
         title: To Be Free
         duration: '5:37'
-        artist: Strange Parcels, Bernard Fowler, Akabu (2)
+        artist: Strange Parcels, Bernard Fowler, Akabu
       - position: '11'
         title: My God
         duration: '4:12'
@@ -897,7 +897,7 @@ releases:
         duration: '3:10'
         artist: null
   '381728':
-    artist: The Velvet Underground, Nico (3)
+    artist: The Velvet Underground, Nico
     title: The Velvet Underground & Nico
     year: 1983
     tracks:
@@ -1157,11 +1157,11 @@ releases:
       - position: '3'
         title: Putty
         duration: ''
-        artist: Dave Merritt (2), Alastair Galbraith
+        artist: Dave Merritt, Alastair Galbraith
       - position: '4'
         title: Shiny Surfaces
         duration: ''
-        artist: Jane Harris (2)
+        artist: Jane Harris
       - position: '5'
         title: Lemonade
         duration: ''
@@ -1189,11 +1189,11 @@ releases:
       - position: '11'
         title: 6th Of The 6th 66
         duration: ''
-        artist: Dave Merritt (2), David Kilgour
+        artist: Dave Merritt, David Kilgour
       - position: '12'
         title: Homeward
         duration: ''
-        artist: Deva (2)
+        artist: Deva
       - position: '13'
         title: Against Method
         duration: ''
@@ -2088,7 +2088,7 @@ releases:
       - position: B6
         title: Biggest Part Of Me
         duration: ''
-        artist: Ambrosia (2)
+        artist: Ambrosia
       - position: B7
         title: The Rose
         duration: ''
@@ -2096,7 +2096,7 @@ releases:
       - position: B8
         title: Carmilla
         duration: ''
-        artist: Jon English (3)
+        artist: Jon English
       - position: B9
         title: Coward Of The County
         duration: ''
@@ -2153,7 +2153,7 @@ releases:
       - position: '11'
         title: Frank
         duration: '0:34'
-        artist: Dave Merritt (2)
+        artist: Dave Merritt
       - position: '12'
         title: Masonic Inborn (Parts 2 & 3)
         duration: '4:05'
@@ -2616,7 +2616,7 @@ releases:
         duration: ''
         artist: null
   '526011':
-    artist: Gate (3)
+    artist: Gate
     title: Sunshine / Ives
     year: 1992
     tracks:
@@ -2762,7 +2762,7 @@ releases:
       - position: '4'
         title: Waterloo
         duration: '2:50'
-        artist: Cloth (2)
+        artist: Cloth
       - position: '5'
         title: My Love, My Life
         duration: '3:43'
@@ -3321,7 +3321,7 @@ releases:
         duration: '1:07'
         artist: null
   '601614':
-    artist: Emulsifier (2)
+    artist: Emulsifier
     title: Rock Your Radio EP
     year: 1991
     tracks:
@@ -4461,7 +4461,7 @@ releases:
       - position: B1
         title: Sugar Coated Stucco
         duration: ''
-        artist: Supernova (11)
+        artist: Supernova
       - position: B2
         title: Brittle & Depressing
         duration: ''
@@ -4662,7 +4662,7 @@ releases:
       - position: B1
         title: Never
         duration: '0:57'
-        artist: Gate (3)
+        artist: Gate
       - position: B2
         title: Uneasy Trail
         duration: '1:04'
@@ -5297,7 +5297,7 @@ releases:
         duration: ''
         artist: null
   '778117':
-    artist: Children's Hour (2)
+    artist: Children's Hour
     title: Ya! Ya! Ya!
     year: 1984
     tracks:
@@ -5946,7 +5946,7 @@ releases:
       - position: A7
         title: Creeping Flesh
         duration: '4:49'
-        artist: Children's Hour (2)
+        artist: Children's Hour
       - position: B1
         title: Dragons In Eden
         duration: '4:05'
@@ -5954,7 +5954,7 @@ releases:
       - position: B2
         title: Need Of Want
         duration: '3:50'
-        artist: The Fold (3)
+        artist: The Fold
       - position: B3
         title: Carolines
         duration: '2:36'
@@ -5962,7 +5962,7 @@ releases:
       - position: B4
         title: Testament
         duration: '3:54'
-        artist: Nick Smith (5)
+        artist: Nick Smith
       - position: B5
         title: Travelling Grave
         duration: '3:23'
@@ -6510,7 +6510,7 @@ releases:
       - position: C1
         title: Hope She's Alright
         duration: ''
-        artist: The Instigators (2)
+        artist: The Instigators
       - position: C2
         title: Love The Army
         duration: ''
@@ -6530,7 +6530,7 @@ releases:
       - position: C6
         title: ECG
         duration: ''
-        artist: Danse Macabre (7)
+        artist: Danse Macabre
       - position: C7
         title: Pulsing
         duration: ''
@@ -6550,7 +6550,7 @@ releases:
       - position: D4
         title: Falling
         duration: ''
-        artist: The Bongos (2)
+        artist: The Bongos
       - position: D5
         title: Legalised Dogs (Remix)
         duration: ''
@@ -7023,7 +7023,7 @@ releases:
       - position: '5'
         title: Carolines Dream
         duration: ''
-        artist: Children's Hour (2)
+        artist: Children's Hour
       - position: '6'
         title: Death And The Maiden
         duration: ''
@@ -7486,7 +7486,7 @@ releases:
       - position: A2
         title: Spark
         duration: ''
-        artist: Watershed (2)
+        artist: Watershed
       - position: A3
         title: Radical Technology
         duration: ''
@@ -7502,7 +7502,7 @@ releases:
       - position: A6
         title: Honey Jar
         duration: ''
-        artist: Lee Harvey (2)
+        artist: Lee Harvey
       - position: B1
         title: Crash Love
         duration: ''
@@ -7510,7 +7510,7 @@ releases:
       - position: B2
         title: Rye
         duration: ''
-        artist: Freak Power (2)
+        artist: Freak Power
       - position: B3
         title: Rockin' Time
         duration: ''
@@ -7522,7 +7522,7 @@ releases:
       - position: B5
         title: No Trouble
         duration: ''
-        artist: Drill (3)
+        artist: Drill
       - position: B6
         title: Call Me Bub
         duration: ''
@@ -8188,7 +8188,7 @@ releases:
         duration: ''
         artist: null
       - position: B2
-        title: 'Torn '
+        title: Torn
         duration: ''
         artist: null
   '904656':
@@ -8378,7 +8378,7 @@ releases:
         duration: ''
         artist: null
   '920953':
-    artist: The Instigators (2)
+    artist: The Instigators
     title: Hope She's Alright
     year: 1982
     tracks:
@@ -8697,7 +8697,7 @@ releases:
         duration: '2:17'
         artist: null
   '968839':
-    artist: Gate (3)
+    artist: Gate
     title: Metric
     year: 1992
     tracks:
@@ -8991,7 +8991,7 @@ releases:
       - position: 1-12
         title: Caroline's Dream (LP Version)
         duration: '3:07'
-        artist: Children's Hour (2)
+        artist: Children's Hour
       - position: 1-13
         title: What's Going On
         duration: '4:54'
@@ -9051,7 +9051,7 @@ releases:
       - position: 2-07
         title: What's In A Name (E.P. Version)
         duration: '3:19'
-        artist: The Orange (2)
+        artist: The Orange
       - position: 2-08
         title: Travelling Grave (Album Version)
         duration: '3:20'
@@ -9135,7 +9135,7 @@ releases:
       - position: 3-06
         title: Glitch (Double Mix Version)
         duration: '6:20'
-        artist: NRA (2)
+        artist: NRA
       - position: 3-07
         title: Flowers
         duration: '3:25'
@@ -9330,7 +9330,7 @@ releases:
         duration: '4:43'
         artist: null
   '1044117':
-    artist: Cream (2)
+    artist: Cream
     title: Strange Brew - The Very Best Of Cream
     year: 1983
     tracks:
@@ -9383,7 +9383,7 @@ releases:
         duration: ''
         artist: null
   '1047409':
-    artist: Gate (3)
+    artist: Gate
     title: Guitar
     year: 1992
     tracks:
@@ -9553,7 +9553,7 @@ releases:
       - position: C1
         title: Hope She's Alright
         duration: ''
-        artist: The Instigators (2)
+        artist: The Instigators
       - position: C2
         title: Love The Army
         duration: ''
@@ -9573,7 +9573,7 @@ releases:
       - position: C6
         title: ECG
         duration: ''
-        artist: Danse Macabre (7)
+        artist: Danse Macabre
       - position: C7
         title: Pulsing
         duration: ''
@@ -9593,7 +9593,7 @@ releases:
       - position: D4
         title: Falling
         duration: ''
-        artist: The Bongos (2)
+        artist: The Bongos
       - position: D5
         title: Legalised Dogs
         duration: ''
@@ -9655,7 +9655,7 @@ releases:
       - position: A8
         title: Just Like Clockwork
         duration: ''
-        artist: Spaces (11)
+        artist: Spaces
       - position: B1
         title: Don't Ask Me
         duration: ''
@@ -9671,7 +9671,7 @@ releases:
       - position: B4
         title: Brand New World
         duration: ''
-        artist: Rank & File (2)
+        artist: Rank & File
       - position: B5
         title: Riot Squad
         duration: ''
@@ -9679,7 +9679,7 @@ releases:
       - position: B6
         title: Between The Lines
         duration: ''
-        artist: Danse Macabre (7)
+        artist: Danse Macabre
       - position: B7
         title: Old Woman
         duration: ''
@@ -9854,7 +9854,7 @@ releases:
         duration: ''
         artist: null
   '1191941':
-    artist: Sugar (5)
+    artist: Sugar
     title: Copper Blue
     year: 1992
     tracks:
@@ -9993,7 +9993,7 @@ releases:
         duration: '4:59'
         artist: null
   '1209632':
-    artist: Rain (4)
+    artist: Rain
     title: Myacine / Invisible
     year: 1995
     tracks:
@@ -10430,7 +10430,7 @@ releases:
       - position: '14'
         title: At The Bottom (Mach 2)
         duration: ''
-        artist: I.C.U. (2)
+        artist: I.C.U.
       - position: '15'
         title: Point That Thing Somewhere Else
         duration: ''
@@ -10450,7 +10450,7 @@ releases:
       - position: '19'
         title: Platypus
         duration: ''
-        artist: Scooter (7)
+        artist: Scooter
       - position: '20'
         title: Getting Older
         duration: ''
@@ -11254,7 +11254,7 @@ releases:
       - position: '4'
         title: Caroline's Dream
         duration: ''
-        artist: Children's Hour (2)
+        artist: Children's Hour
       - position: '5'
         title: Immigration Song
         duration: ''
@@ -11302,7 +11302,7 @@ releases:
       - position: '16'
         title: Glitch
         duration: ''
-        artist: NRA (2)
+        artist: NRA
       - position: '17'
         title: The Wharf With No Name
         duration: ''
@@ -11519,7 +11519,7 @@ releases:
         duration: ''
         artist: null
   '1414865':
-    artist: NRA (2)
+    artist: NRA
     title: Hold Onto Your Face
     year: 1991
     tracks:
@@ -11815,7 +11815,7 @@ releases:
         duration: ''
         artist: null
   '1424739':
-    artist: The Fold (3)
+    artist: The Fold
     title: Fold
     year: 1987
     tracks:
@@ -12024,7 +12024,7 @@ releases:
         duration: ''
         artist: null
   '1427689':
-    artist: NRA (2)
+    artist: NRA
     title: Watched A World
     year: 1985
     tracks:
@@ -12098,7 +12098,7 @@ releases:
         duration: ''
         artist: null
   '1427830':
-    artist: Children's Hour (2)
+    artist: Children's Hour
     title: Flesh
     year: 1983
     tracks:
@@ -12213,7 +12213,7 @@ releases:
         duration: '9:05'
         artist: null
   '1428956':
-    artist: They Were Expendable (2)
+    artist: They Were Expendable
     title: Big Strain
     year: 1983
     tracks:
@@ -12369,7 +12369,7 @@ releases:
       - position: B5
         title: The Mongolian Bros. Meet Their Match In The Man Mountain
         duration: '2:27'
-        artist: Children's Hour (2)
+        artist: Children's Hour
   '1431017':
     artist: Tall Dwarfs
     title: Fork Songs
@@ -12541,7 +12541,7 @@ releases:
       - position: B4
         title: Sympathy
         duration: '4:15'
-        artist: Precious (10)
+        artist: Precious
       - position: B5
         title: Billy Bold
         duration: '3:02'
@@ -12797,7 +12797,7 @@ releases:
         duration: '2:46'
         artist: null
   '1443799':
-    artist: Drill (3)
+    artist: Drill
     title: Happy Home
     year: 1994
     tracks:
@@ -13299,7 +13299,7 @@ releases:
         duration: ''
         artist: null
   '1455508':
-    artist: Jakob (3)
+    artist: Jakob
     title: Erfo
     year: 2000
     tracks:
@@ -13355,7 +13355,7 @@ releases:
         duration: '3:58'
         artist: null
   '1461111':
-    artist: Teeth (5)
+    artist: Teeth
     title: Grate!
     year: 1989
     tracks:
@@ -13449,7 +13449,7 @@ releases:
         duration: '1:06'
         artist: null
   '1461150':
-    artist: NRA (2)
+    artist: NRA
     title: Bruce McLaren
     year: 1991
     tracks:
@@ -13462,7 +13462,7 @@ releases:
         duration: '4:40'
         artist: null
   '1461153':
-    artist: The Saints (2)
+    artist: The Saints
     title: (I'm) Stranded
     year: 2003
     tracks:
@@ -14240,11 +14240,11 @@ releases:
       - position: A2
         title: I'm Back
         duration: ''
-        artist: David Eggleton, Gobstopper (3)
+        artist: David Eggleton, Gobstopper
       - position: A3
         title: Gravity Depravity
         duration: ''
-        artist: Quatermass (4)
+        artist: Quatermass
       - position: A4
         title: When Saturday Comes
         duration: ''
@@ -14605,11 +14605,11 @@ releases:
       - position: B1
         title: Tally Ho!
         duration: ''
-        artist: Kickstand (2)
+        artist: Kickstand
       - position: B2
         title: Point That Thing Somewhere Else
         duration: ''
-        artist: Airlines (4)
+        artist: Airlines
       - position: C
         title: Whatever I Do Is ...
         duration: ''
@@ -15272,7 +15272,7 @@ releases:
       - position: A5
         title: Reno
         duration: ''
-        artist: The Remarkables (2)
+        artist: The Remarkables
       - position: A6
         title: Replacements
         duration: ''
@@ -15328,7 +15328,7 @@ releases:
         duration: ''
         artist: null
   '1834129':
-    artist: Low Profile (2)
+    artist: Low Profile
     title: Elephunk In My Soup
     year: 1984
     tracks:
@@ -16417,7 +16417,7 @@ releases:
       - position: '8'
         title: Iggy Told Me
         duration: '8:46'
-        artist: The Enemy (3)
+        artist: The Enemy
   '2104054':
     artist: '-2'
     title: The Beat Goes Off!
@@ -16499,19 +16499,19 @@ releases:
       - position: '7'
         title: L. Is Poison
         duration: '2:37'
-        artist: John White (3)
+        artist: John White
       - position: '8'
         title: White Boys On Punk
         duration: '3:19'
-        artist: Jetty (2)
+        artist: Jetty
       - position: '9'
         title: Ride
         duration: '4:40'
-        artist: Mink (2)
+        artist: Mink
       - position: '10'
         title: Autobahn
         duration: '5:32'
-        artist: April Fools (4)
+        artist: April Fools
       - position: '11'
         title: Slipperyness
         duration: '4:05'
@@ -16531,11 +16531,11 @@ releases:
       - position: '15'
         title: Where The Angels Bathe
         duration: '5:10'
-        artist: Toast (11)
+        artist: Toast
       - position: '16'
         title: Handful Of Snakes
         duration: '2:55'
-        artist: Slate (2)
+        artist: Slate
       - position: '17'
         title: Roll Along
         duration: '3:08'
@@ -16655,7 +16655,7 @@ releases:
       - position: A1
         title: Six And Seven Books Of Moses
         duration: ''
-        artist: The Maytals, The Vikings (2)
+        artist: The Maytals, The Vikings
       - position: A2
         title: Dr. Kildare
         duration: ''
@@ -17153,7 +17153,7 @@ releases:
         duration: ''
         artist: null
   '2355986':
-    artist: The Beat (2)
+    artist: The Beat
     title: What Is Beat?
     year: null
     tracks:
@@ -17721,7 +17721,7 @@ releases:
         duration: '3:56'
         artist: null
   '2462898':
-    artist: Olympus (2)
+    artist: Olympus
     title: Bold Mould
     year: 2010
     tracks:
@@ -18195,7 +18195,7 @@ releases:
         duration: '5:34'
         artist: null
       - position: B1
-        title: Holier Than Thou (Work In  Progress...)
+        title: Holier Than Thou (Work In Progress...)
         duration: '3:48'
         artist: null
       - position: B2
@@ -19893,7 +19893,7 @@ releases:
         duration: ''
         artist: null
   '3085892':
-    artist: The Velvet Underground, Nico (3)
+    artist: The Velvet Underground, Nico
     title: The Velvet Underground & Nico
     year: null
     tracks:
@@ -20151,7 +20151,7 @@ releases:
       - position: A5
         title: Looking For The Sun
         duration: '6:06'
-        artist: Children's Hour (2)
+        artist: Children's Hour
       - position: A6
         title: Isol
         duration: '5:32'
@@ -20290,7 +20290,7 @@ releases:
       - position: A3
         title: The Weight
         duration: ''
-        artist: Smith (3)
+        artist: Smith
       - position: A4
         title: Wasn't Born To Follow
         duration: ''
@@ -20676,7 +20676,7 @@ releases:
         duration: '2:27'
         artist: null
   '3485117':
-    artist: Jack White (2)
+    artist: Jack White
     title: Sixteen Saltines
     year: 2012
     tracks:
@@ -20896,7 +20896,7 @@ releases:
         duration: '19:58'
         artist: Bruce Russell
   '3566352':
-    artist: Jack White (2)
+    artist: Jack White
     title: Blunderbuss
     year: 2012
     tracks:
@@ -20960,7 +20960,7 @@ releases:
       - position: A1
         title: Somebody Come And Play
         duration: ''
-        artist: The Kids (2)
+        artist: The Kids
       - position: A2
         title: Goin' For A Ride
         duration: ''
@@ -20968,7 +20968,7 @@ releases:
       - position: A3
         title: One Of These Things
         duration: ''
-        artist: Bob Johnson (4), Susan Robinson
+        artist: Bob Johnson, Susan Robinson
       - position: A4
         title: The Word Family Song
         duration: ''
@@ -20976,27 +20976,27 @@ releases:
       - position: A5
         title: Everybody Wash
         duration: ''
-        artist: Bert (3), Ernie (4)
+        artist: Bert, Ernie
       - position: A6
         title: Stop
         duration: ''
-        artist: Gordon Robinson (4)
+        artist: Gordon Robinson
       - position: A7
         title: What's My Part? - Nose
         duration: ''
-        artist: Guy Smiley (3), Bennett Snerf, Arlene Frantic, Cookie Monster
+        artist: Guy Smiley, Bennett Snerf, Arlene Frantic, Cookie Monster
       - position: B1
         title: Play Along
         duration: ''
-        artist: Gordon Robinson (4), Susan Robinson, Mr. Hooper, The Muppets
+        artist: Gordon Robinson, Susan Robinson, Mr. Hooper, The Muppets
       - position: B2
         title: Marching
         duration: ''
-        artist: Big Bird (4), The Muppets
+        artist: Big Bird, The Muppets
       - position: B3
         title: Rub Your Tummy
         duration: ''
-        artist: Gordon Robinson (4)
+        artist: Gordon Robinson
       - position: B4
         title: Pat, Pat, Patty Pat
         duration: ''
@@ -21004,15 +21004,15 @@ releases:
       - position: B5
         title: What's My Part? - Foot
         duration: ''
-        artist: Guy Smiley (3), Bennett Snerf, Arlene Frantic, Professor Hastings
+        artist: Guy Smiley, Bennett Snerf, Arlene Frantic, Professor Hastings
       - position: B6
         title: My Name Is David
         duration: ''
-        artist: David (188), Luis Rodríguez (9), Bob Johnson (4), Susan Robinson
+        artist: David, Luis Rodríguez, Bob Johnson, Susan Robinson
       - position: B7
         title: Show Me How You Feel
         duration: ''
-        artist: Gordon Robinson (4)
+        artist: Gordon Robinson
   '3584924':
     artist: Sonic Youth
     title: Goo
@@ -21153,7 +21153,7 @@ releases:
         duration: '5:08'
         artist: null
   '3620087':
-    artist: Trans Am (2)
+    artist: Trans Am
     title: The Surveillance
     year: 2012
     tracks:
@@ -21463,7 +21463,7 @@ releases:
         duration: '2:57'
         artist: Cindy Bullens
       - position: B5
-        title: 'Alone At The Drive-In Movie '
+        title: Alone At The Drive-In Movie
         duration: '2:22'
         artist: Unknown Artist
       - position: B6
@@ -21515,7 +21515,7 @@ releases:
         duration: '3:14'
         artist: John Travolta, Olivia Newton-John
       - position: D6
-        title: 'Love Is A Many Splendored Thing '
+        title: Love Is A Many Splendored Thing
         duration: '1:23'
         artist: Unknown Artist
       - position: D7
@@ -22148,7 +22148,7 @@ releases:
         duration: ''
         artist: Knoxious
   '4036437':
-    artist: Kluster (3)
+    artist: Kluster
     title: Schwarz (Eruption)
     year: 2012
     tracks:
@@ -22304,22 +22304,22 @@ releases:
         duration: ''
         artist: null
   '4180205':
-    artist: Boris (3), Joe Volk
+    artist: Boris, Joe Volk
     title: Split LP
     year: 2012
     tracks:
       - position: A1
         title: Cosmos (Pt 1)
         duration: ''
-        artist: Boris (3)
+        artist: Boris
       - position: A2
         title: Cosmos (Pt 2)
         duration: ''
-        artist: Boris (3)
+        artist: Boris
       - position: A3
         title: Cosmos (Pt 3)
         duration: ''
-        artist: Boris (3)
+        artist: Boris
       - position: B1
         title: Call To Sun
         duration: ''
@@ -22348,7 +22348,7 @@ releases:
       - position: A4
         title: The Time Warp
         duration: '3:15'
-        artist: Richard O'Brien, Little Nell, Patricia Quinn, Charles Gray (2), The Transylvanians
+        artist: Richard O'Brien, Little Nell, Patricia Quinn, Charles Gray, The Transylvanians
       - position: A5
         title: Sweet Transvestite
         duration: '3:21'
@@ -23208,7 +23208,7 @@ releases:
         duration: ''
         artist: null
       - position: B2
-        title: 'Eine Kleine Nachtmusik Cha Cha Cha '
+        title: Eine Kleine Nachtmusik Cha Cha Cha
         duration: ''
         artist: null
       - position: B3
@@ -24132,7 +24132,7 @@ releases:
       - position: A1
         title: A Walk On The Ceiling
         duration: ''
-        artist: Plasticine (6)
+        artist: Plasticine
       - position: A2
         title: Infidelity
         duration: ''
@@ -24822,7 +24822,7 @@ releases:
       - position: A2
         title: We Said We Couldn't Look Back
         duration: ''
-        artist: John Warner (2), Eleanor Drew
+        artist: John Warner, Eleanor Drew
       - position: A3
         title: Find Yourself Something To Do
         duration: ''
@@ -24834,7 +24834,7 @@ releases:
       - position: A5
         title: Oh, Look At Me
         duration: ''
-        artist: John Warner (2), Eleanor Drew
+        artist: John Warner, Eleanor Drew
       - position: A6
         title: Hush-Hush
         duration: ''
@@ -24850,7 +24850,7 @@ releases:
       - position: B2
         title: It's Easy To Sing
         duration: ''
-        artist: John Warner (2), Eleanor Drew, Michael Meacham
+        artist: John Warner, Eleanor Drew, Michael Meacham
       - position: B3
         title: We're Looking For A Piano
         duration: ''
@@ -24862,11 +24862,11 @@ releases:
       - position: B5
         title: The Saucer Song
         duration: ''
-        artist: James Cairncross, John Warner (2), Eleanor Drew
+        artist: James Cairncross, John Warner, Eleanor Drew
       - position: B6a
         title: We Said We Couldn't Look Back
         duration: ''
-        artist: John Warner (2), Eleanor Drew
+        artist: John Warner, Eleanor Drew
       - position: B6b
         title: It's Easy To Sing
         duration: ''
@@ -25389,7 +25389,7 @@ releases:
         duration: '2:55'
         artist: null
   '5649255':
-    artist: Eye (12)
+    artist: Eye
     title: Winterwork
     year: 2014
     tracks:
@@ -25515,7 +25515,7 @@ releases:
         duration: ''
         artist: null
   '5687215':
-    artist: Dark Matter (13)
+    artist: Dark Matter
     title: Dark Matter
     year: 2014
     tracks:
@@ -25591,7 +25591,7 @@ releases:
       - position: B1
         title: I Can't Stand The Rain
         duration: ''
-        artist: Eruption (4)
+        artist: Eruption
       - position: B2
         title: Every 1's A Winner
         duration: ''
@@ -25615,7 +25615,7 @@ releases:
       - position: B7
         title: Bluer Than Blue
         duration: ''
-        artist: Michael Johnson (5)
+        artist: Michael Johnson
       - position: B8
         title: Reminiscing
         duration: ''
@@ -26547,7 +26547,7 @@ releases:
         duration: ''
         artist: null
   '6335281':
-    artist: Mono (7)
+    artist: Mono
     title: Hymn To The Immortal Wind
     year: 2012
     tracks:
@@ -26989,7 +26989,7 @@ releases:
         duration: '1:57'
         artist: null
   '6559422':
-    artist: The Twerps (2)
+    artist: The Twerps
     title: Range Anxiety
     year: 2015
     tracks:
@@ -27053,11 +27053,11 @@ releases:
       - position: A1
         title: I've Been Lookin'
         duration: ''
-        artist: The Buttons (7)
+        artist: The Buttons
       - position: A2
         title: Crawdad
         duration: ''
-        artist: The Colonials (3)
+        artist: The Colonials
       - position: A3
         title: Last Time
         duration: ''
@@ -27065,7 +27065,7 @@ releases:
       - position: A4
         title: Mirage
         duration: ''
-        artist: The Pastels (3)
+        artist: The Pastels
       - position: A5
         title: Mary
         duration: ''
@@ -27073,7 +27073,7 @@ releases:
       - position: A6
         title: I Wish I Could
         duration: ''
-        artist: The Juveniles (2)
+        artist: The Juveniles
       - position: A7
         title: Psychedelic Feelin'
         duration: ''
@@ -27089,7 +27089,7 @@ releases:
       - position: B3
         title: One More Night
         duration: ''
-        artist: The Expressions (7)
+        artist: The Expressions
       - position: B4
         title: I Found Another Girl
         duration: ''
@@ -27097,19 +27097,19 @@ releases:
       - position: B5
         title: What In The World
         duration: ''
-        artist: The Other Side (19)
+        artist: The Other Side
       - position: B6
         title: What's Wrong With You
         duration: ''
-        artist: The Vanguards (12)
+        artist: The Vanguards
       - position: B7
         title: The Last Step Of Doom
         duration: ''
-        artist: The Jolly Beggars (2)
+        artist: The Jolly Beggars
       - position: B8
         title: Gloria
         duration: ''
-        artist: The Continentals (5)
+        artist: The Continentals
   '6648516':
     artist: The Cookie Crew
     title: Born This Way (Let's Dance)
@@ -27218,11 +27218,11 @@ releases:
         duration: ''
         artist: null
       - position: A2
-        title: 'Pendulum '
+        title: Pendulum
         duration: ''
         artist: null
       - position: A3
-        title: 'Before We Begin '
+        title: Before We Begin
         duration: ''
         artist: null
       - position: A4
@@ -27230,11 +27230,11 @@ releases:
         duration: ''
         artist: null
       - position: A5
-        title: 'Man Is Not A Bird '
+        title: Man Is Not A Bird
         duration: ''
         artist: null
       - position: A6
-        title: 'The Little Bell '
+        title: The Little Bell
         duration: ''
         artist: null
       - position: A7
@@ -27242,11 +27242,11 @@ releases:
         duration: ''
         artist: null
       - position: B1
-        title: 'Minim '
+        title: Minim
         duration: ''
         artist: null
       - position: B2
-        title: 'Lunch Hour Pops '
+        title: Lunch Hour Pops
         duration: ''
         artist: null
       - position: B3
@@ -27254,15 +27254,15 @@ releases:
         duration: ''
         artist: null
       - position: B4
-        title: 'Ominous Cloud '
+        title: Ominous Cloud
         duration: ''
         artist: null
       - position: B5
-        title: 'Oh How I Miss You '
+        title: Oh How I Miss You
         duration: ''
         artist: null
       - position: B6
-        title: 'Winter Now '
+        title: Winter Now
         duration: ''
         artist: null
       - position: B7
@@ -27617,7 +27617,7 @@ releases:
       - position: A5
         title: I'm Normal
         duration: '1:55'
-        artist: The Killjoys (3)
+        artist: The Killjoys
       - position: A6
         title: The Day Has Ended
         duration: '3:02'
@@ -27637,7 +27637,7 @@ releases:
       - position: B4
         title: Carousel
         duration: '3:22'
-        artist: Rhythm Method (3)
+        artist: Rhythm Method
       - position: B5
         title: New Way
         duration: '4:39'
@@ -28211,7 +28211,7 @@ releases:
         duration: '3:04'
         artist: null
   '7429724':
-    artist: Triumphs (2)
+    artist: Triumphs
     title: Beekeeper/Bastardknocker
     year: 2015
     tracks:
@@ -29153,7 +29153,7 @@ releases:
         artist: null
   '8046959':
     artist: Antonio Vivaldi, Nigel Kennedy, English Chamber Orchestra
-    title: The Four Seasons  (Le Quattro Stagioni · Die Vier Jahreszeiten · Les Quatre Saisons)
+    title: The Four Seasons (Le Quattro Stagioni · Die Vier Jahreszeiten · Les Quatre Saisons)
     year: 1989
     tracks: []
   '8114478':
@@ -29189,7 +29189,7 @@ releases:
       - position: A3
         title: Pleasure And Pain
         duration: '4:57'
-        artist: Steve Jones (2)
+        artist: Steve Jones
       - position: A4
         title: Chinese Choppers
         duration: '1:12'
@@ -30081,7 +30081,7 @@ releases:
     year: 1985
     tracks:
       - position: A1
-        title: Around The World In  A Day
+        title: Around The World In A Day
         duration: '3:25'
         artist: null
       - position: A2
@@ -30118,43 +30118,43 @@ releases:
         artist: null
   '8707763':
     artist: The Modern Lovers
-    title: 'The Modern Lovers '
+    title: The Modern Lovers
     year: 2016
     tracks:
       - position: A1
-        title: "Roadrunner\t"
+        title: Roadrunner
         duration: ''
         artist: null
       - position: A2
-        title: "Astral Plane\t"
+        title: Astral Plane
         duration: ''
         artist: null
       - position: A3
-        title: "Old World\t"
+        title: Old World
         duration: ''
         artist: null
       - position: A4
-        title: "Pablo Picasso\t"
+        title: Pablo Picasso
         duration: ''
         artist: null
       - position: B1
-        title: "She Cracked\t"
+        title: She Cracked
         duration: ''
         artist: null
       - position: B2
-        title: "Hospital\t"
+        title: Hospital
         duration: ''
         artist: null
       - position: B3
-        title: "Someone I Care About\t"
+        title: Someone I Care About
         duration: ''
         artist: null
       - position: B4
-        title: "Girl Friend\t"
+        title: Girl Friend
         duration: ''
         artist: null
       - position: B5
-        title: "Modern World\t"
+        title: Modern World
         duration: ''
         artist: null
   '8731724':
@@ -30214,7 +30214,7 @@ releases:
       - position: A4
         title: Tears Of A Clown
         duration: '2:41'
-        artist: The Beat (2)
+        artist: The Beat
       - position: A5
         title: Rudi, A Message To You
         duration: '2:52'
@@ -30230,7 +30230,7 @@ releases:
       - position: A8
         title: Rankin Full Stop
         duration: '2:47'
-        artist: The Beat (2)
+        artist: The Beat
       - position: A9
         title: Too Much Too Young
         duration: '2:00'
@@ -30525,7 +30525,7 @@ releases:
     year: 2015
     tracks:
       - position: A1
-        title: ' The Flood'
+        title: The Flood
         duration: ''
         artist: null
       - position: A2
@@ -30561,7 +30561,7 @@ releases:
         duration: ''
         artist: null
       - position: B5
-        title: ' Sleepy Town (Demo)'
+        title: Sleepy Town (Demo)
         duration: ''
         artist: null
   '9208833':
@@ -30866,7 +30866,7 @@ releases:
     year: 1961
     tracks: []
   '9284930':
-    artist: Eye (12)
+    artist: Eye
     title: Other Sky
     year: 2016
     tracks:
@@ -31194,7 +31194,7 @@ releases:
         duration: '7:36'
         artist: null
   '9837966':
-    artist: The Nudge (2)
+    artist: The Nudge
     title: Dark Arts
     year: 2017
     tracks:
@@ -32498,7 +32498,7 @@ releases:
         duration: ''
         artist: null
       - position: D4
-        title: 'Billy Two '
+        title: Billy Two
         duration: ''
         artist: null
       - position: D5
@@ -32730,7 +32730,7 @@ releases:
       - position: B4
         title: Wham Bam Shang-A-Lang
         duration: ''
-        artist: Silver (10)
+        artist: Silver
       - position: B5
         title: Surrender
         duration: ''
@@ -32832,7 +32832,7 @@ releases:
       - position: A1
         title: Stretch Your Face
         duration: ''
-        artist: Tobacco (3)
+        artist: Tobacco
       - position: A2
         title: Systematic
         duration: ''
@@ -32840,7 +32840,7 @@ releases:
       - position: A3
         title: Kool Aid
         duration: ''
-        artist: Danny Brown (2)
+        artist: Danny Brown
       - position: A4
         title: Passports
         duration: ''
@@ -32860,7 +32860,7 @@ releases:
       - position: A8
         title: Phantom (Redux)
         duration: ''
-        artist: Shirt (3)
+        artist: Shirt
       - position: B1
         title: The Mule
         duration: ''
@@ -32884,7 +32884,7 @@ releases:
       - position: B6
         title: Blown
         duration: ''
-        artist: Darnell Williams (9)
+        artist: Darnell Williams
       - position: B7
         title: Walking On Sunshine
         duration: ''
@@ -33033,7 +33033,7 @@ releases:
         duration: '16:52'
         artist: null
   '11228498':
-    artist: Parsnip (2)
+    artist: Parsnip
     title: Health
     year: 2017
     tracks:
@@ -33374,7 +33374,7 @@ releases:
         artist: null
   '11807968':
     artist: Hubert Teichmann
-    title: 'Hammond In Stereo '
+    title: Hammond In Stereo
     year: 1966
     tracks:
       - position: A1
@@ -33444,7 +33444,7 @@ releases:
         artist: null
   '11893800':
     artist: Wire
-    title: 'Nine Sevens '
+    title: Nine Sevens
     year: 2018
     tracks:
       - position: A
@@ -33677,7 +33677,7 @@ releases:
       - position: A6
         title: You're Gonna Miss Me
         duration: ''
-        artist: Tom Thumb (2)
+        artist: Tom Thumb
       - position: A7
         title: Hurtin' All Over
         duration: ''
@@ -33693,15 +33693,15 @@ releases:
       - position: B2
         title: L.S.D.
         duration: ''
-        artist: The Roadrunners (6)
+        artist: The Roadrunners
       - position: B3
         title: No More Now
         duration: ''
-        artist: The Smoke (2)
+        artist: The Smoke
       - position: B4
         title: Blast Off 1970
         duration: ''
-        artist: The Gremlins (3)
+        artist: The Gremlins
       - position: B5
         title: I Can't Stop
         duration: ''
@@ -33955,7 +33955,7 @@ releases:
         artist: null
   '12074849':
     artist: The Brian Jonestown Massacre
-    title: 'Something Else '
+    title: Something Else
     year: 2018
     tracks:
       - position: A1
@@ -33983,11 +33983,11 @@ releases:
         duration: ''
         artist: null
       - position: B2
-        title: 'Who Dreams Of Cats? '
+        title: Who Dreams Of Cats?
         duration: ''
         artist: null
       - position: B3
-        title: 'Fragmentation '
+        title: Fragmentation
         duration: ''
         artist: null
       - position: B4
@@ -35168,7 +35168,7 @@ releases:
         artist: null
   '12975600':
     artist: 3Ds
-    title: 'Hey Seuss / Beautiful Things '
+    title: Hey Seuss / Beautiful Things
     year: 1994
     tracks:
       - position: 1-1
@@ -35523,7 +35523,7 @@ releases:
         duration: '2:18'
         artist: null
       - position: B3
-        title: 'Soul Coaxing (Ame Câline) '
+        title: Soul Coaxing (Ame Câline)
         duration: '2:35'
         artist: null
       - position: B4
@@ -35546,15 +35546,15 @@ releases:
       - position: A1
         title: Candida
         duration: ''
-        artist: Dawn (5)
+        artist: Dawn
       - position: A2
         title: Me & You & A Dog Named Boo
         duration: ''
-        artist: Lobo (3)
+        artist: Lobo
       - position: A3
         title: Angel Baby
         duration: ''
-        artist: Dusk (10)
+        artist: Dusk
       - position: A4
         title: Leap Up And Down
         duration: ''
@@ -35594,7 +35594,7 @@ releases:
       - position: B3
         title: Brand New Key
         duration: ''
-        artist: Melanie (2)
+        artist: Melanie
       - position: B4
         title: Morning Has Broken
         duration: ''
@@ -35602,11 +35602,11 @@ releases:
       - position: B5
         title: Knock Three Times
         duration: ''
-        artist: Dawn (5)
+        artist: Dawn
       - position: B6
         title: L'Amour Est L'Enfant De La Liberte
         duration: ''
-        artist: The Rumour (2)
+        artist: The Rumour
       - position: B7
         title: Chirpy Chirpy Cheep Cheep
         duration: ''
@@ -35805,7 +35805,7 @@ releases:
         duration: ''
         artist: null
       - position: B
-        title: Катруся  / Katrusya
+        title: Катруся / Katrusya
         duration: ''
         artist: null
   '13564158':
@@ -36483,7 +36483,7 @@ releases:
         duration: ''
         artist: null
   '14002465':
-    artist: Parsnip (2)
+    artist: Parsnip
     title: When The Tree Bears Fruit
     year: 2019
     tracks:
@@ -36922,7 +36922,7 @@ releases:
         duration: ''
         artist: null
       - position: F2
-        title: ' Spark Plug (Demo)'
+        title: Spark Plug (Demo)
         duration: ''
         artist: null
       - position: F3
@@ -37790,11 +37790,11 @@ releases:
     year: 2020
     tracks:
       - position: A1
-        title: 'Luxe '
+        title: Luxe
         duration: ''
         artist: null
       - position: A2
-        title: 'Deleters '
+        title: Deleters
         duration: ''
         artist: null
       - position: A3
@@ -37802,7 +37802,7 @@ releases:
         duration: ''
         artist: null
       - position: A4
-        title: 'Free Gloss '
+        title: Free Gloss
         duration: ''
         artist: null
       - position: B5
@@ -37978,7 +37978,7 @@ releases:
         duration: ''
         artist: null
       - position: A2
-        title: 'Bad Blood '
+        title: Bad Blood
         duration: ''
         artist: null
       - position: A3
@@ -37986,7 +37986,7 @@ releases:
         duration: ''
         artist: null
       - position: A4
-        title: 'Rebel In You '
+        title: Rebel In You
         duration: ''
         artist: null
       - position: A5
@@ -38050,11 +38050,11 @@ releases:
         duration: ''
         artist: null
       - position: D1
-        title: 'Sun Hits The Sky '
+        title: Sun Hits The Sky
         duration: ''
         artist: null
       - position: D2
-        title: 'She''s So Loose '
+        title: She's So Loose
         duration: ''
         artist: null
       - position: D3
@@ -38070,7 +38070,7 @@ releases:
         duration: ''
         artist: null
       - position: D6
-        title: 'Alright '
+        title: Alright
         duration: ''
         artist: null
       - position: D7
@@ -38799,7 +38799,7 @@ releases:
         duration: ''
         artist: null
   '15640334':
-    artist: Parsnip (2)
+    artist: Parsnip
     title: Adding Up
     year: 2020
     tracks:
@@ -38816,7 +38816,7 @@ releases:
         duration: ''
         artist: null
       - position: B2
-        title: 'Repeater '
+        title: Repeater
         duration: ''
         artist: null
   '15673736':
@@ -38874,15 +38874,15 @@ releases:
     year: 2020
     tracks:
       - position: A1
-        title: 'Caught By The Fuzz (Original) '
+        title: Caught By The Fuzz (Original)
         duration: ''
         artist: null
       - position: A2
-        title: 'Caught By The Fuzz (Acoustic) '
+        title: Caught By The Fuzz (Acoustic)
         duration: ''
         artist: null
       - position: B1
-        title: 'Caught By The Fuzz (Danny Goffey 2020 Remix) '
+        title: Caught By The Fuzz (Danny Goffey 2020 Remix)
         duration: ''
         artist: null
       - position: B2
@@ -39761,7 +39761,7 @@ releases:
         duration: ''
         artist: null
       - position: D3
-        title: 'Cakewalking '
+        title: Cakewalking
         duration: ''
         artist: null
       - position: D4
@@ -39833,7 +39833,7 @@ releases:
         duration: ''
         artist: null
       - position: DVD-12
-        title: 'Cakewalking '
+        title: Cakewalking
         duration: ''
         artist: null
       - position: DVD-13
@@ -39871,7 +39871,7 @@ releases:
         duration: ''
         artist: null
       - position: A3
-        title: ' Step Into My Office, Baby'
+        title: Step Into My Office, Baby
         duration: ''
         artist: null
       - position: A4
@@ -39951,7 +39951,7 @@ releases:
         duration: ''
         artist: null
   '16439436':
-    artist: Kraus (2)
+    artist: Kraus
     title: A Golden Brain
     year: 2020
     tracks:
@@ -40091,7 +40091,7 @@ releases:
     year: 2020
     tracks:
       - position: A1
-        title: ' D.I.Y. Meat'
+        title: D.I.Y. Meat
         duration: ''
         artist: null
       - position: A2
@@ -40305,15 +40305,15 @@ releases:
       - position: B1
         title: Dreader Then Dread
         duration: ''
-        artist: Honey Boy Martin, The Voices (6)
+        artist: Honey Boy Martin, The Voices
       - position: B2
         title: Stop The Violence
         duration: ''
-        artist: The Valentines (3)
+        artist: The Valentines
       - position: B3
         title: Hot Iron
         duration: ''
-        artist: The Originators (4)
+        artist: The Originators
       - position: B4
         title: The Preacher
         duration: ''
@@ -40369,7 +40369,7 @@ releases:
       - position: D5
         title: Rude Boy Confession
         duration: ''
-        artist: Max Romeo, The Emotions (2)
+        artist: Max Romeo, The Emotions
       - position: D6
         title: We Are Still Rude
         duration: ''
@@ -40986,7 +40986,7 @@ releases:
         duration: '1:26'
         artist: null
   '18103150':
-    artist: Miasmata (3)
+    artist: Miasmata
     title: 'Unlight: Songs Of Earth And Atrophy'
     year: 2021
     tracks:
@@ -41867,9 +41867,9 @@ releases:
     year: 2021
     tracks:
       - position: A1
-        title: 'Do Your Thing '
+        title: Do Your Thing
         duration: ''
-        artist: Dave Barker (2)
+        artist: Dave Barker
       - position: A2
         title: Dream Land
         duration: ''
@@ -41905,7 +41905,7 @@ releases:
       - position: B3
         title: Isn't It Wrong
         duration: ''
-        artist: The Hurricanes (2)
+        artist: The Hurricanes
       - position: B4
         title: Go Slow
         duration: ''
@@ -41993,7 +41993,7 @@ releases:
         duration: ''
         artist: null
       - position: B6
-        title: 'Can’t Get Enough '
+        title: Can’t Get Enough
         duration: ''
         artist: null
       - position: B8
@@ -42207,7 +42207,7 @@ releases:
       - position: A5
         title: Superstylin'
         duration: '4:39'
-        artist: Rude Boy (27)
+        artist: Rude Boy
       - position: B1
         title: Love Will Tear Us Apart (Full Vocal Dub)
         duration: '3:46'
@@ -43474,7 +43474,7 @@ releases:
         duration: ''
         artist: null
   '22680524':
-    artist: Loop (3)
+    artist: Loop
     title: Sonancy
     year: 2022
     tracks:
@@ -44411,7 +44411,7 @@ releases:
       - position: A3
         title: Abba
         duration: ''
-        artist: The Paragons (3)
+        artist: The Paragons
       - position: A4
         title: The Trip
         duration: ''
@@ -44419,7 +44419,7 @@ releases:
       - position: A5
         title: Who Do You Love **
         duration: ''
-        artist: The Preachers (2)
+        artist: The Preachers
       - position: A6
         title: Night Time
         duration: ''
@@ -44447,7 +44447,7 @@ releases:
       - position: B4
         title: That’s The Way It’s Gotta Be
         duration: ''
-        artist: The Poets (2)
+        artist: The Poets
       - position: B5
         title: Going All The Way
         duration: ''
@@ -44475,11 +44475,11 @@ releases:
       - position: C3
         title: Fantastic Explosion Of Time
         duration: ''
-        artist: Pond (5)
+        artist: Pond
       - position: C4
         title: Somethings Must Change
         duration: ''
-        artist: Novella (2)
+        artist: Novella
       - position: C5
         title: Web
         duration: ''
@@ -44499,7 +44499,7 @@ releases:
       - position: D3
         title: Gathering Of Ancient Tribes
         duration: ''
-        artist: Goat (22)
+        artist: Goat
       - position: D4
         title: Half Full Glass Of Wine
         duration: ''
@@ -45035,7 +45035,7 @@ releases:
         duration: '6:25'
         artist: null
   '26920442':
-    artist: House Of All (2)
+    artist: House Of All
     title: House Of All
     year: 2023
     tracks:
@@ -45428,7 +45428,7 @@ releases:
     year: 2023
     tracks:
       - position: A1
-        title: 'So What About It? '
+        title: So What About It?
         duration: ''
         artist: null
       - position: A2
@@ -45444,7 +45444,7 @@ releases:
         duration: ''
         artist: null
       - position: A5
-        title: "The Book Of Lies\_"
+        title: The Book Of Lies
         duration: ''
         artist: null
       - position: A6
@@ -45472,7 +45472,7 @@ releases:
         duration: ''
         artist: null
       - position: B6
-        title: "Sinister Waltz\_"
+        title: Sinister Waltz
         duration: ''
         artist: null
   '27926406':
@@ -45705,7 +45705,7 @@ releases:
         duration: ''
         artist: null
       - position: A3
-        title: "Speak For Yourself\t"
+        title: Speak For Yourself
         duration: ''
         artist: null
       - position: A4
@@ -45921,23 +45921,23 @@ releases:
         duration: '3:27'
         artist: null
       - position: B1
-        title: 'The Time Of Our Lives '
+        title: The Time Of Our Lives
         duration: '3:29'
         artist: null
       - position: B2
-        title: 'Memes For Brains '
+        title: Memes For Brains
         duration: '3:40'
         artist: null
       - position: B3
-        title: 'A World On Fire '
+        title: A World On Fire
         duration: '3:21'
         artist: null
       - position: B4
-        title: 'Before September '
+        title: Before September
         duration: '3:58'
         artist: null
       - position: B5
-        title: 'The New Water '
+        title: The New Water
         duration: '4:17'
         artist: null
       - position: B6
@@ -45945,7 +45945,7 @@ releases:
         duration: '3:18'
         artist: null
   '29153263':
-    artist: Panda Bear, Sonic Boom (2)
+    artist: Panda Bear, Sonic Boom
     title: Reset In Dub
     year: 2023
     tracks:
@@ -45954,7 +45954,7 @@ releases:
         duration: '3:33'
         artist: null
       - position: A2
-        title: 'Go On Dub '
+        title: Go On Dub
         duration: '4:48'
         artist: null
       - position: A3
@@ -46223,7 +46223,7 @@ releases:
         duration: ''
         artist: null
   '30281933':
-    artist: House Of All (2)
+    artist: House Of All
     title: Continuum
     year: 2024
     tracks:
@@ -46366,7 +46366,7 @@ releases:
         duration: '3:41'
         artist: null
   '30534334':
-    artist: Parsnip (2)
+    artist: Parsnip
     title: Behold
     year: 2024
     tracks:
@@ -46640,7 +46640,7 @@ releases:
         duration: ''
         artist: null
       - position: 'A5 '
-        title: 'Termination Officer '
+        title: Termination Officer
         duration: ''
         artist: null
       - position: A6
@@ -46676,7 +46676,7 @@ releases:
         duration: ''
         artist: null
   '31657664':
-    artist: Dummy (14)
+    artist: Dummy
     title: Free Energy
     year: 2024
     tracks:
@@ -46709,7 +46709,7 @@ releases:
         duration: ''
         artist: null
       - position: B8
-        title: 'Dip In The Lake '
+        title: Dip In The Lake
         duration: ''
         artist: null
       - position: B9
@@ -46725,7 +46725,7 @@ releases:
         duration: ''
         artist: null
       - position: B12
-        title: 'Godspin '
+        title: Godspin
         duration: ''
         artist: null
   '31757600':
@@ -46947,7 +46947,7 @@ releases:
       - position: C3
         title: Let's Get It On
         duration: ''
-        artist: Jack Black (2)
+        artist: Jack Black
       - position: D1
         title: Lo Boob Oscillator
         duration: ''
@@ -47366,7 +47366,7 @@ releases:
         duration: ''
         artist: null
       - position: B1
-        title: 'Vermona F Transistor '
+        title: Vermona F Transistor
         duration: ''
         artist: null
       - position: B2
@@ -47394,7 +47394,7 @@ releases:
         duration: ''
         artist: null
       - position: D2
-        title: 'Colour Television '
+        title: Colour Television
         duration: ''
         artist: null
       - position: D3

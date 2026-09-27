@@ -77,11 +77,11 @@
 - value: 1516141:B
   label: '25 Cents – B: The Witch — Don''t Deceive Me [1982]'
 - value: 12975600:1-1
-  label: '3Ds – 1-1: Hey Seuss — Hey Seuss / Beautiful Things  [1994]'
+  label: '3Ds – 1-1: Hey Seuss — Hey Seuss / Beautiful Things [1994]'
 - value: 12975600:1-2
-  label: '3Ds – 1-2: Man On The Verge Of A Nervous Breakdown — Hey Seuss / Beautiful Things  [1994]'
+  label: '3Ds – 1-2: Man On The Verge Of A Nervous Breakdown — Hey Seuss / Beautiful Things [1994]'
 - value: 12975600:1-3
-  label: '3Ds – 1-3: River Burial — Hey Seuss / Beautiful Things  [1994]'
+  label: '3Ds – 1-3: River Burial — Hey Seuss / Beautiful Things [1994]'
 - value: '1447128:1'
   label: '3Ds – 1: Beautiful Things — Beautiful Things [1993]'
 - value: '1360336:1'
@@ -119,11 +119,11 @@
 - value: '2194991:15'
   label: '3Ds – 15: One Eye Opened (2:17) — Fish Tales / Swarthy Songs For Swabs [1991]'
 - value: 12975600:2-1
-  label: '3Ds – 2-1: Beautiful Things — Hey Seuss / Beautiful Things  [1994]'
+  label: '3Ds – 2-1: Beautiful Things — Hey Seuss / Beautiful Things [1994]'
 - value: 12975600:2-2
-  label: '3Ds – 2-2: Summer Stone — Hey Seuss / Beautiful Things  [1994]'
+  label: '3Ds – 2-2: Summer Stone — Hey Seuss / Beautiful Things [1994]'
 - value: 12975600:2-3
-  label: '3Ds – 2-3: Song For The Whole World — Hey Seuss / Beautiful Things  [1994]'
+  label: '3Ds – 2-3: Song For The Whole World — Hey Seuss / Beautiful Things [1994]'
 - value: '2194991:2'
   label: '3Ds – 2: Dreams Of Herge (2:24) — Fish Tales / Swarthy Songs For Swabs [1991]'
 - value: '1360336:2'
@@ -537,7 +537,7 @@
 - value: 24191936:B6
   label: 'AIR – B6: Le Voyage De Penelope (3:10) — Moon Safari [2022]'
 - value: 1603185:B2
-  label: 'Airlines (4) – B2: Point That Thing Somewhere Else — Cleaned Out! [1992]'
+  label: 'Airlines – B2: Point That Thing Somewhere Else — Cleaned Out! [1992]'
 - value: 4133914:A1
   label: 'Al Caiola – A1: Everybody Loves Somebody — Guitar For Lovers [1964]'
 - value: 4133914:A2
@@ -751,7 +751,7 @@
 - value: 7034575:B2
   label: 'Alvin Stardust – B2: Pretend — 20 Original Solid Gold Hits Volume 31 [1981]'
 - value: 472564:B6
-  label: 'Ambrosia (2) – B6: Biggest Part Of Me — 20 Original Solid Gold Hits Volume 27 [1980]'
+  label: 'Ambrosia – B6: Biggest Part Of Me — 20 Original Solid Gold Hits Volume 27 [1980]'
 - value: 993128:A1
   label: 'Amy Winehouse – A1: Rehab — Back To Black [2009]'
 - value: 993128:A2
@@ -819,7 +819,7 @@
 - value: 14391015:B2
   label: 'Aphex Twin – B2: Pancake Lizard — Peel Session 2 TX 10/04/95 [2019]'
 - value: '2114827:10'
-  label: 'April Fools (4) – 10: Autobahn (5:32) — Music Of Dunedin [1998]'
+  label: 'April Fools – 10: Autobahn (5:32) — Music Of Dunedin [1998]'
 - value: 677290:A1
   label: 'Archers Of Loaf – A1: Web In Front (2:04) — Icky Mettle [1993]'
 - value: 677290:A2
@@ -1893,7 +1893,7 @@
 - value: 16415094:A2
   label: 'Belle & Sebastian – A2: Dirty Dream #2 — What To Look For In Summer [2020]'
 - value: 16415094:A3
-  label: 'Belle & Sebastian – A3:  Step Into My Office, Baby — What To Look For In Summer [2020]'
+  label: 'Belle & Sebastian – A3: Step Into My Office, Baby — What To Look For In Summer [2020]'
 - value: 16415094:A4
   label: 'Belle & Sebastian – A4: We Were Beautiful — What To Look For In Summer [2020]'
 - value: 16415094:A5
@@ -1936,8 +1936,6 @@
   label: 'Bernardo Gianoncelli – B2: Allegro (6:23) — Music For Mandolin And Guitar Ensemble'
 - value: 2946916:B1
   label: 'Bernie Green And His Orchestra – B1: Kiss Of Fire (2:23) — Stereo Action Unlimited! [1961]'
-- value: 3567770:A5
-  label: 'Bert (3), Ernie (4) – A5: Everybody Wash — Somebody Come And Play [1974]'
 - value: 13315630:A1
   label: 'Bert Kaempfert – A1: Red Roses For A Blue Lady — The Best Of Bert Kaempfert (Hit-Maker No 1) [1965]'
 - value: 13315630:A2
@@ -2096,6 +2094,8 @@
   label: 'Bert Kaempfert & His Orchestra – B7: Danke Schön — Let''s Go Bowling [1964]'
 - value: 12158068:B7
   label: 'Bert Kaempfert & His Orchestra – B7: Seven Up (2:10) — Safari Swings Again [1977]'
+- value: 3567770:A5
+  label: 'Bert, Ernie – A5: Everybody Wash — Somebody Come And Play [1974]'
 - value: '824340:35'
   label: 'Betchadupa – 35: Spill The Light — Very Short Films - Flying Nun DVD [2004]'
 - value: 1038214:4-13
@@ -2103,7 +2103,7 @@
 - value: 472564:B7
   label: 'Bette Midler – B7: The Rose — 20 Original Solid Gold Hits Volume 27 [1980]'
 - value: 3567770:B2
-  label: 'Big Bird (4), The Muppets – B2: Marching — Somebody Come And Play [1974]'
+  label: 'Big Bird, The Muppets – B2: Marching — Somebody Come And Play [1974]'
 - value: 1519900:A5
   label: 'Big Eds Used Farms – A5: Never Again — Solid Cold Hits - A Dunedin Compilation [1992]'
 - value: '824340:28'
@@ -2246,10 +2246,10 @@
   label: 'Blam Blam Blam – D1: Don''t Fight It Marsha, It''s Bigger Than Both Of Us — It''s Bigger Than Both Of Us (NZ Singles 1979-82) [1988]'
 - value: 816920:D1
   label: 'Blam Blam Blam – D1: Don''t Fight It Marsha, It''s Bigger Than Both Of Us — It''s Bigger Than Both Of Us (NZ Singles 1979–82) [1988]'
-- value: 9013318:A1
-  label: 'Blue Orchids – A1:  The Flood — Awefull [2015]'
 - value: 19319878:A1
   label: 'Blue Orchids – A1: Deeper Than Sin — Speed The Day [2021]'
+- value: 9013318:A1
+  label: 'Blue Orchids – A1: The Flood — Awefull [2015]'
 - value: 9013318:A2
   label: 'Blue Orchids – A2: Disney Boys — Awefull [2015]'
 - value: 19319878:A2
@@ -2282,10 +2282,10 @@
   label: 'Blue Orchids – B4: Meet The Maker — Speed The Day [2021]'
 - value: 9013318:B4
   label: 'Blue Orchids – B4: The Long Night Out — Awefull [2015]'
-- value: 9013318:B5
-  label: 'Blue Orchids – B5:  Sleepy Town (Demo) — Awefull [2015]'
 - value: 19319878:B5
   label: 'Blue Orchids – B5: 22nd Century — Speed The Day [2021]'
+- value: 9013318:B5
+  label: 'Blue Orchids – B5: Sleepy Town (Demo) — Awefull [2015]'
 - value: 11470013:A1
   label: 'Blue Swede – A1: Hooked On A Feeling (2:52) — Guardians Of The Galaxy: Awesome Mix Vol. 1 (Original Motion Picture Soundtrack) [2018]'
 - value: '443398:1'
@@ -2339,7 +2339,7 @@
 - value: 32402835:B2
   label: 'Bob Dylan – B2: Most Of The Time — High Fidelity (Original Soundtrack) [2024]'
 - value: 3567770:A3
-  label: 'Bob Johnson (4), Susan Robinson – A3: One Of These Things — Somebody Come And Play [1974]'
+  label: 'Bob Johnson, Susan Robinson – A3: One Of These Things — Somebody Come And Play [1974]'
 - value: 549731:A1
   label: 'Bob Marley & The Wailers – A1: Is This Love — Legend - The Best Of Bob Marley And The Wailers [1984]'
 - value: 549731:A2
@@ -2431,11 +2431,11 @@
 - value: 726790:A
   label: 'Boredoms – A: Pukuri — Dope-Guns-''N-Fucking In The Streets Volume Nine [1994]'
 - value: 4180205:A1
-  label: 'Boris (3) – A1: Cosmos (Pt 1) — Split LP [2012]'
+  label: 'Boris – A1: Cosmos (Pt 1) — Split LP [2012]'
 - value: 4180205:A2
-  label: 'Boris (3) – A2: Cosmos (Pt 2) — Split LP [2012]'
+  label: 'Boris – A2: Cosmos (Pt 2) — Split LP [2012]'
 - value: 4180205:A3
-  label: 'Boris (3) – A3: Cosmos (Pt 3) — Split LP [2012]'
+  label: 'Boris – A3: Cosmos (Pt 3) — Split LP [2012]'
 - value: '4768486:1'
   label: 'Boss Hog – 1: I Dig You (LP Version) (3:14) — I Dig You [1996]'
 - value: '1800851:1'
@@ -2517,7 +2517,7 @@
 - value: 10560492:D3
   label: 'Bressa Creeting Cake – D3: Gulfo Benga — Bressa Creeting Cake [2017]'
 - value: 10560492:D4
-  label: 'Bressa Creeting Cake – D4: Billy Two  — Bressa Creeting Cake [2017]'
+  label: 'Bressa Creeting Cake – D4: Billy Two — Bressa Creeting Cake [2017]'
 - value: 10560492:D5
   label: 'Bressa Creeting Cake – D5: Ring Ring — Bressa Creeting Cake [2017]'
 - value: 11474922:A1
@@ -2599,7 +2599,7 @@
 - value: 22499861:A2
   label: 'Broadcast – A2: Microtronics 02 (1:32) — Microtronics - Volumes 1 & 2 [2022]'
 - value: 6733775:A2
-  label: 'Broadcast – A2: Pendulum  — Haha Sound [2015]'
+  label: 'Broadcast – A2: Pendulum — Haha Sound [2015]'
 - value: 31853303:A2
   label: 'Broadcast – A2: Still Feels Like Tears (3:10) — Distant Call (Collected Demos 2000-2006) [2024]'
 - value: 6734114:A2
@@ -2607,7 +2607,7 @@
 - value: 22499936:A2
   label: 'Broadcast – A2: Untitled (City In Progress) — Maida Vale Sessions [2022]'
 - value: 6733775:A3
-  label: 'Broadcast – A3: Before We Begin  — Haha Sound [2015]'
+  label: 'Broadcast – A3: Before We Begin — Haha Sound [2015]'
 - value: 31853303:A3
   label: 'Broadcast – A3: Come Back To Me (3:06) — Distant Call (Collected Demos 2000-2006) [2024]'
 - value: 22500044:A3
@@ -2639,7 +2639,7 @@
 - value: 6734114:A5
   label: 'Broadcast – A5: Echo''s Answer — The Noise Made By People [2015]'
 - value: 6733775:A5
-  label: 'Broadcast – A5: Man Is Not A Bird  — Haha Sound [2015]'
+  label: 'Broadcast – A5: Man Is Not A Bird — Haha Sound [2015]'
 - value: 22499861:A5
   label: 'Broadcast – A5: Microtronics 05 (1:46) — Microtronics - Volumes 1 & 2 [2022]'
 - value: 22500044:A5
@@ -2651,7 +2651,7 @@
 - value: 22499861:A6
   label: 'Broadcast – A6: Microtronics 06 (1:51) — Microtronics - Volumes 1 & 2 [2022]'
 - value: 6733775:A6
-  label: 'Broadcast – A6: The Little Bell  — Haha Sound [2015]'
+  label: 'Broadcast – A6: The Little Bell — Haha Sound [2015]'
 - value: 6734114:A6
   label: 'Broadcast – A6: Tower Of Our Tuning — The Noise Made By People [2015]'
 - value: 31853303:A6
@@ -2675,7 +2675,7 @@
 - value: 22499861:B1
   label: 'Broadcast – B1: Microtronics 12 (1:30) — Microtronics - Volumes 1 & 2 [2022]'
 - value: 6733775:B1
-  label: 'Broadcast – B1: Minim  — Haha Sound [2015]'
+  label: 'Broadcast – B1: Minim — Haha Sound [2015]'
 - value: 31853303:B1
   label: 'Broadcast – B1: Ominous Cloud (3:00) — Distant Call (Collected Demos 2000-2006) [2024]'
 - value: 6734114:B1
@@ -2693,7 +2693,7 @@
 - value: 22499936:B2
   label: 'Broadcast – B2: Look Outside — Maida Vale Sessions [2022]'
 - value: 6733775:B2
-  label: 'Broadcast – B2: Lunch Hour Pops  — Haha Sound [2015]'
+  label: 'Broadcast – B2: Lunch Hour Pops — Haha Sound [2015]'
 - value: 22499861:B2
   label: 'Broadcast – B2: Microtronics 13 (1:38) — Microtronics - Volumes 1 & 2 [2022]'
 - value: 6734114:B2
@@ -2721,7 +2721,7 @@
 - value: 22500044:B4
   label: 'Broadcast – B4: Never Trust A Rusty Bolt (0:42) — Mother Is The Milky Way [2022]'
 - value: 6733775:B4
-  label: 'Broadcast – B4: Ominous Cloud  — Haha Sound [2015]'
+  label: 'Broadcast – B4: Ominous Cloud — Haha Sound [2015]'
 - value: 31853303:B4
   label: 'Broadcast – B4: Poem Of A Dead Song (1:26) — Distant Call (Collected Demos 2000-2006) [2024]'
 - value: 6734114:B4
@@ -2737,7 +2737,7 @@
 - value: 31853303:B5
   label: 'Broadcast – B5: O How I Miss You (1:56) — Distant Call (Collected Demos 2000-2006) [2024]'
 - value: 6733775:B5
-  label: 'Broadcast – B5: Oh How I Miss You  — Haha Sound [2015]'
+  label: 'Broadcast – B5: Oh How I Miss You — Haha Sound [2015]'
 - value: 6734114:B6
   label: 'Broadcast – B6: Dead The Long Year — The Noise Made By People [2015]'
 - value: 22499861:B6
@@ -2747,7 +2747,7 @@
 - value: 31853303:B6
   label: 'Broadcast – B6: Pendulum (3:52) — Distant Call (Collected Demos 2000-2006) [2024]'
 - value: 6733775:B6
-  label: 'Broadcast – B6: Winter Now  — Haha Sound [2015]'
+  label: 'Broadcast – B6: Winter Now — Haha Sound [2015]'
 - value: 6733818:B6
   label: 'Broadcast – B6: You And Me In Time — Tender Buttons [2015]'
 - value: 6733775:B7
@@ -3105,31 +3105,31 @@
 - value: 10482686:B5
   label: 'Chet Atkins – B5: If I Should Lose You (1:26) — Stay Tuned [1985]'
 - value: 1038214:1-12
-  label: 'Children''s Hour (2) – 1-12: Caroline''s Dream (LP Version) (3:07) — Flying Nun 25th Anniversary Box Set [2006]'
+  label: 'Children''s Hour – 1-12: Caroline''s Dream (LP Version) (3:07) — Flying Nun 25th Anniversary Box Set [2006]'
 - value: '1379578:4'
-  label: 'Children''s Hour (2) – 4: Caroline''s Dream — Noisyland [1992]'
+  label: 'Children''s Hour – 4: Caroline''s Dream — Noisyland [1992]'
 - value: '824340:5'
-  label: 'Children''s Hour (2) – 5: Carolines Dream — Very Short Films - Flying Nun DVD [2004]'
+  label: 'Children''s Hour – 5: Carolines Dream — Very Short Films - Flying Nun DVD [2004]'
 - value: 778117:A
-  label: 'Children''s Hour (2) – A: Washed Away (4:52) — Ya! Ya! Ya! [1984]'
+  label: 'Children''s Hour – A: Washed Away (4:52) — Ya! Ya! Ya! [1984]'
 - value: 1427830:A1
-  label: 'Children''s Hour (2) – A1: Carolines Dream (3:07) — Flesh [1983]'
+  label: 'Children''s Hour – A1: Carolines Dream (3:07) — Flesh [1983]'
 - value: 1427830:A2
-  label: 'Children''s Hour (2) – A2: Go Slow (3:50) — Flesh [1983]'
+  label: 'Children''s Hour – A2: Go Slow (3:50) — Flesh [1983]'
 - value: 1427830:A3
-  label: 'Children''s Hour (2) – A3: I Know Where She Lies (5:38) — Flesh [1983]'
+  label: 'Children''s Hour – A3: I Know Where She Lies (5:38) — Flesh [1983]'
 - value: 3345993:A5
-  label: 'Children''s Hour (2) – A5: Looking For The Sun (6:06) — Tuatara - A Flying Nun Compilation [1991]'
+  label: 'Children''s Hour – A5: Looking For The Sun (6:06) — Tuatara - A Flying Nun Compilation [1991]'
 - value: 791372:A7
-  label: 'Children''s Hour (2) – A7: Creeping Flesh (4:49) — Outnumbered By Sheep [1986]'
+  label: 'Children''s Hour – A7: Creeping Flesh (4:49) — Outnumbered By Sheep [1986]'
 - value: 778117:B
-  label: 'Children''s Hour (2) – B: Stuck Pig (4:28) — Ya! Ya! Ya! [1984]'
+  label: 'Children''s Hour – B: Stuck Pig (4:28) — Ya! Ya! Ya! [1984]'
 - value: 1427830:B1
-  label: 'Children''s Hour (2) – B1: Slaughter House (4:06) — Flesh [1983]'
+  label: 'Children''s Hour – B1: Slaughter House (4:06) — Flesh [1983]'
 - value: 1427830:B2
-  label: 'Children''s Hour (2) – B2: Looking For The Sun (5:53) — Flesh [1983]'
+  label: 'Children''s Hour – B2: Looking For The Sun (5:53) — Flesh [1983]'
 - value: 1430990:B5
-  label: 'Children''s Hour (2) – B5: The Mongolian Bros. Meet Their Match In The Man Mountain (2:27) — The Last Rumba [1984]'
+  label: 'Children''s Hour – B5: The Mongolian Bros. Meet Their Match In The Man Mountain (2:27) — The Last Rumba [1984]'
 - value: 2380381:A1
   label: 'China Crisis – A1: The Highest High (4:16) — Flaunt The Imperfection [1985]'
 - value: 4283629:A1
@@ -3553,7 +3553,7 @@
 - value: 17487955:D4
   label: 'Clancy Eccles – D4: Guns Town — Tougher Than Tough: Trojan Rude Boy Sounds [2021]'
 - value: '531655:4'
-  label: 'Cloth (2) – 4: Waterloo (2:50) — Abbasalutely [1995]'
+  label: 'Cloth – 4: Waterloo (2:50) — Abbasalutely [1995]'
 - value: '2114827:1'
   label: 'Cloudboy – 1: Pretty (4:53) — Music Of Dunedin [1998]'
 - value: '1283278:12'
@@ -3721,29 +3721,29 @@
 - value: 15673736:B6
   label: 'Cranes – B6: In The Night — Loved [2020]'
 - value: 1044117:A1
-  label: 'Cream (2) – A1: Badge — Strange Brew - The Very Best Of Cream [1983]'
+  label: 'Cream – A1: Badge — Strange Brew - The Very Best Of Cream [1983]'
 - value: 1044117:A2
-  label: 'Cream (2) – A2: Sunshine Of Your Love — Strange Brew - The Very Best Of Cream [1983]'
+  label: 'Cream – A2: Sunshine Of Your Love — Strange Brew - The Very Best Of Cream [1983]'
 - value: 1044117:A3
-  label: 'Cream (2) – A3: Crossroads — Strange Brew - The Very Best Of Cream [1983]'
+  label: 'Cream – A3: Crossroads — Strange Brew - The Very Best Of Cream [1983]'
 - value: 1044117:A4
-  label: 'Cream (2) – A4: White Room — Strange Brew - The Very Best Of Cream [1983]'
+  label: 'Cream – A4: White Room — Strange Brew - The Very Best Of Cream [1983]'
 - value: 1044117:A5
-  label: 'Cream (2) – A5: Born Under A Bad Sign — Strange Brew - The Very Best Of Cream [1983]'
+  label: 'Cream – A5: Born Under A Bad Sign — Strange Brew - The Very Best Of Cream [1983]'
 - value: 1044117:A6
-  label: 'Cream (2) – A6: Swlabr — Strange Brew - The Very Best Of Cream [1983]'
+  label: 'Cream – A6: Swlabr — Strange Brew - The Very Best Of Cream [1983]'
 - value: 1044117:B1
-  label: 'Cream (2) – B1: Strange Brew — Strange Brew - The Very Best Of Cream [1983]'
+  label: 'Cream – B1: Strange Brew — Strange Brew - The Very Best Of Cream [1983]'
 - value: 1044117:B2
-  label: 'Cream (2) – B2: Anyone For Tennis? (The Savage Seven Theme) — Strange Brew - The Very Best Of Cream [1983]'
+  label: 'Cream – B2: Anyone For Tennis? (The Savage Seven Theme) — Strange Brew - The Very Best Of Cream [1983]'
 - value: 1044117:B3
-  label: 'Cream (2) – B3: I Feel Free — Strange Brew - The Very Best Of Cream [1983]'
+  label: 'Cream – B3: I Feel Free — Strange Brew - The Very Best Of Cream [1983]'
 - value: 1044117:B4
-  label: 'Cream (2) – B4: Politician — Strange Brew - The Very Best Of Cream [1983]'
+  label: 'Cream – B4: Politician — Strange Brew - The Very Best Of Cream [1983]'
 - value: 1044117:B5
-  label: 'Cream (2) – B5: Tales Of Brave Ulysees — Strange Brew - The Very Best Of Cream [1983]'
+  label: 'Cream – B5: Tales Of Brave Ulysees — Strange Brew - The Very Best Of Cream [1983]'
 - value: 1044117:B6
-  label: 'Cream (2) – B6: Spoonful — Strange Brew - The Very Best Of Cream [1983]'
+  label: 'Cream – B6: Spoonful — Strange Brew - The Very Best Of Cream [1983]'
 - value: 11673147:A
   label: 'Crude – A: Bionica — Bionica [1997]'
 - value: 11673147:B1
@@ -3851,13 +3851,13 @@
 - value: 548016:A4
   label: 'Danielle Dax – A4: Big Hollow Man (4:52) — Indie Top 20 Volume III (War Of Independents) [1988]'
 - value: 10885801:A3
-  label: 'Danny Brown (2) – A3: Kool Aid — Silicon Valley (Music From The HBO Original Series) [2017]'
+  label: 'Danny Brown – A3: Kool Aid — Silicon Valley (Music From The HBO Original Series) [2017]'
 - value: 1107053:B6
-  label: 'Danse Macabre (7) – B6: Between The Lines — More Hits And Myths [1982]'
+  label: 'Danse Macabre – B6: Between The Lines — More Hits And Myths [1982]'
 - value: 1093750:C6
-  label: 'Danse Macabre (7) – C6: ECG — It''s Bigger Than Both Of Us (NZ Singles 1979-82) [1988]'
+  label: 'Danse Macabre – C6: ECG — It''s Bigger Than Both Of Us (NZ Singles 1979-82) [1988]'
 - value: 816920:C6
-  label: 'Danse Macabre (7) – C6: ECG — It''s Bigger Than Both Of Us (NZ Singles 1979–82) [1988]'
+  label: 'Danse Macabre – C6: ECG — It''s Bigger Than Both Of Us (NZ Singles 1979–82) [1988]'
 - value: '2722725:1'
   label: 'Darcy Clay – 1: Jesus I Was Evil — Jesus I Was Evil [1997]'
 - value: '2722725:2'
@@ -3895,19 +3895,19 @@
 - value: 12557960:B6
   label: 'Darcy Clay – B6: Jesus I Was Evil — Jesus I Was Evil [2018]'
 - value: 5687215:A1
-  label: 'Dark Matter (13) – A1: Broken — Dark Matter [2014]'
+  label: 'Dark Matter – A1: Broken — Dark Matter [2014]'
 - value: 5687215:A2
-  label: 'Dark Matter (13) – A2: The Long Count — Dark Matter [2014]'
+  label: 'Dark Matter – A2: The Long Count — Dark Matter [2014]'
 - value: 5687215:A3
-  label: 'Dark Matter (13) – A3: Dark Matter — Dark Matter [2014]'
+  label: 'Dark Matter – A3: Dark Matter — Dark Matter [2014]'
 - value: 5687215:B1
-  label: 'Dark Matter (13) – B1: The Face Of Evil — Dark Matter [2014]'
+  label: 'Dark Matter – B1: The Face Of Evil — Dark Matter [2014]'
 - value: 5687215:B2
-  label: 'Dark Matter (13) – B2: Tomorrow — Dark Matter [2014]'
+  label: 'Dark Matter – B2: Tomorrow — Dark Matter [2014]'
 - value: 5687215:B3
-  label: 'Dark Matter (13) – B3: The Weight Of Memories — Dark Matter [2014]'
+  label: 'Dark Matter – B3: The Weight Of Memories — Dark Matter [2014]'
 - value: 10885801:B6
-  label: 'Darnell Williams (9) – B6: Blown — Silicon Valley (Music From The HBO Original Series) [2017]'
+  label: 'Darnell Williams – B6: Blown — Silicon Valley (Music From The HBO Original Series) [2017]'
 - value: 1519900:A7
   label: 'Das Phaedrus – A7: Don''t Tell Me I''m Wrong — Solid Cold Hits - A Dunedin Compilation [1992]'
 - value: 22543565:A1
@@ -3935,25 +3935,23 @@
 - value: 22543565:B6
   label: 'Data Animal – B6: Future Primitive — Future Primitive [2022]'
 - value: 19648684:A1
-  label: 'Dave Barker (2) – A1: Do Your Thing  — Africa''s Blood [2021]'
+  label: 'Dave Barker – A1: Do Your Thing — Africa''s Blood [2021]'
 - value: 1437951:B3
   label: 'Dave Dobbyn – B3: Lipstick Power (3:02) — Barking Up The Right Tree [1983]'
 - value: '475229:11'
-  label: 'Dave Merritt (2) – 11: Frank (0:34) — Killing Capitalism With Kindness [1992]'
+  label: 'Dave Merritt – 11: Frank (0:34) — Killing Capitalism With Kindness [1992]'
 - value: '403467:3'
-  label: 'Dave Merritt (2), Alastair Galbraith – 3: Putty — Runner (A Compilation Of New Zealand Music) [1994]'
+  label: 'Dave Merritt, Alastair Galbraith – 3: Putty — Runner (A Compilation Of New Zealand Music) [1994]'
 - value: '403467:11'
-  label: 'Dave Merritt (2), David Kilgour – 11: 6th Of The 6th 66 — Runner (A Compilation Of New Zealand Music) [1994]'
+  label: 'Dave Merritt, David Kilgour – 11: 6th Of The 6th 66 — Runner (A Compilation Of New Zealand Music) [1994]'
 - value: 795580:A1
   label: 'Dave Yetton, Jim Laing, Dave Mulcahy, Gary Sullivan, Russell Baillie – A1: What''s Going On (5:20) — Roger Sings The Hits [1991]'
-- value: 3567770:B6
-  label: 'David (188), Luis Rodríguez (9), Bob Johnson (4), Susan Robinson – B6: My Name Is David — Somebody Come And Play [1974]'
 - value: 11470013:A4
   label: 'David Bowie – A4: Moonage Daydream (4:41) — Guardians Of The Galaxy: Awesome Mix Vol. 1 (Original Motion Picture Soundtrack) [2018]'
 - value: 13399925:A8
   label: 'David Cassidy – A8: Cherish — 20 Dynamite Hits [1972]'
 - value: 1519900:A2
-  label: 'David Eggleton, Gobstopper (3) – A2: I''m Back — Solid Cold Hits - A Dunedin Compilation [1992]'
+  label: 'David Eggleton, Gobstopper – A2: I''m Back — Solid Cold Hits - A Dunedin Compilation [1992]'
 - value: 2020453:1-06
   label: 'David Kilgour – 1-06: Nothing''s Going To Happen — Stroke (Songs For Chris Knox) [2009]'
 - value: '1549232:1'
@@ -4034,10 +4032,12 @@
   label: 'David Mitchell, Denise Roughan – 6: Grey Funnel Line (3:37) — Making Losers Happy (Xpressway NZ Singles 1988-91) [1993]'
 - value: '2103634:2'
   label: 'David Pine – 2: Free Man In Dunedin (3:36) — Kiwi Rock [1996]'
+- value: 3567770:B6
+  label: 'David, Luis Rodríguez, Bob Johnson, Susan Robinson – B6: My Name Is David — Somebody Come And Play [1974]'
 - value: 13399925:A1
-  label: 'Dawn (5) – A1: Candida — 20 Dynamite Hits [1972]'
+  label: 'Dawn – A1: Candida — 20 Dynamite Hits [1972]'
 - value: 13399925:B5
-  label: 'Dawn (5) – B5: Knock Three Times — 20 Dynamite Hits [1972]'
+  label: 'Dawn – B5: Knock Three Times — 20 Dynamite Hits [1972]'
 - value: 22874276:A
   label: 'Dawn Penn – A: No No No (4:25) — No No No / Creator Version [2022]'
 - value: 1107053:A5
@@ -4231,7 +4231,7 @@
 - value: 17487955:D1
   label: 'Desmond Dekker & The Aces – D1: Young Generation — Tougher Than Tough: Trojan Rude Boy Sounds [2021]'
 - value: '403467:12'
-  label: 'Deva (2) – 12: Homeward — Runner (A Compilation Of New Zealand Music) [1994]'
+  label: 'Deva – 12: Homeward — Runner (A Compilation Of New Zealand Music) [1994]'
 - value: 2410966:A1
   label: 'Devo – A1: Devo Corporate Anthem (1:14) — Duty Now For The Future [1979]'
 - value: 14665361:A1
@@ -4473,13 +4473,13 @@
 - value: 842384:B2
   label: 'Dribbling Darts – B2: No Sooner Here (Than It''s Gone) (4:30) — Florid Dabblers Voting [1991]'
 - value: 1443799:A
-  label: 'Drill (3) – A: Happy Home (4:11) — Happy Home [1994]'
+  label: 'Drill – A: Happy Home (4:11) — Happy Home [1994]'
 - value: 1443799:B1
-  label: 'Drill (3) – B1: Fishy (3:08) — Happy Home [1994]'
+  label: 'Drill – B1: Fishy (3:08) — Happy Home [1994]'
 - value: 1443799:B2
-  label: 'Drill (3) – B2: Try (2:31) — Happy Home [1994]'
+  label: 'Drill – B2: Try (2:31) — Happy Home [1994]'
 - value: 842340:B5
-  label: 'Drill (3) – B5: No Trouble — Freak The Sheep (A Compilation Of New Zealand Music) [1991]'
+  label: 'Drill – B5: No Trouble — Freak The Sheep (A Compilation Of New Zealand Music) [1991]'
 - value: 4499489:A1
   label: 'Duane Eddy – A1: This Guitar Was Made For Twangin'' (2:49) — The Biggest Twang Of Them All [1970]'
 - value: 4499489:A2
@@ -4509,31 +4509,31 @@
 - value: '171239:7'
   label: 'Dub Syndicate – 7: Hey Ho (4:13) — Pay It All Back Volume Three [2000]'
 - value: '171239:4'
-  label: 'Dub Syndicate, Akabu (2) – 4: Stoned Immaculate (4:34) — Pay It All Back Volume Three [2000]'
+  label: 'Dub Syndicate, Akabu – 4: Stoned Immaculate (4:34) — Pay It All Back Volume Three [2000]'
 - value: 31657664:A1
-  label: 'Dummy (14) – A1: Intro-UB — Free Energy [2024]'
+  label: 'Dummy – A1: Intro-UB — Free Energy [2024]'
 - value: 31657664:A2
-  label: 'Dummy (14) – A2: Soonish — Free Energy [2024]'
+  label: 'Dummy – A2: Soonish — Free Energy [2024]'
 - value: 31657664:A3
-  label: 'Dummy (14) – A3: Unshaped Road — Free Energy [2024]'
+  label: 'Dummy – A3: Unshaped Road — Free Energy [2024]'
 - value: 31657664:A4
-  label: 'Dummy (14) – A4: Opaline Bubbletear — Free Energy [2024]'
+  label: 'Dummy – A4: Opaline Bubbletear — Free Energy [2024]'
 - value: 31657664:A5
-  label: 'Dummy (14) – A5: Blue Dada — Free Energy [2024]'
+  label: 'Dummy – A5: Blue Dada — Free Energy [2024]'
 - value: 31657664:A6
-  label: 'Dummy (14) – A6: Nullspace — Free Energy [2024]'
+  label: 'Dummy – A6: Nullspace — Free Energy [2024]'
 - value: 31657664:A7
-  label: 'Dummy (14) – A7: Minus World — Free Energy [2024]'
+  label: 'Dummy – A7: Minus World — Free Energy [2024]'
 - value: 31657664:B10
-  label: 'Dummy (14) – B10: Psychic Battery — Free Energy [2024]'
+  label: 'Dummy – B10: Psychic Battery — Free Energy [2024]'
 - value: 31657664:B11
-  label: 'Dummy (14) – B11: Nine Clean Nails — Free Energy [2024]'
+  label: 'Dummy – B11: Nine Clean Nails — Free Energy [2024]'
 - value: 31657664:B12
-  label: 'Dummy (14) – B12: Godspin  — Free Energy [2024]'
+  label: 'Dummy – B12: Godspin — Free Energy [2024]'
 - value: 31657664:B8
-  label: 'Dummy (14) – B8: Dip In The Lake  — Free Energy [2024]'
+  label: 'Dummy – B8: Dip In The Lake — Free Energy [2024]'
 - value: 31657664:B9
-  label: 'Dummy (14) – B9: Sudden Flutes — Free Energy [2024]'
+  label: 'Dummy – B9: Sudden Flutes — Free Energy [2024]'
 - value: '875631:13'
   label: 'Dump – 13: Bus-Kicker''s Theme — Fast Forward Sampler [1994]'
 - value: '875631:16'
@@ -4541,7 +4541,7 @@
 - value: '875631:2'
   label: 'Dump – 2: Secret Blood — Fast Forward Sampler [1994]'
 - value: 13399925:A3
-  label: 'Dusk (10) – A3: Angel Baby — 20 Dynamite Hits [1972]'
+  label: 'Dusk – A3: Angel Baby — 20 Dynamite Hits [1972]'
 - value: 6282463:A1
   label: 'Dusty Springfield – A1: (They Long To Be) Close To You (2:26) — Sings Burt Bacharach And Carole King [1975]'
 - value: 6282463:A10
@@ -4775,13 +4775,13 @@
 - value: 909393:B
   label: 'Empirical – B: Untitled — You Dont Need A Rice Cooker To Cook Rice [1999]'
 - value: 601614:A1
-  label: 'Emulsifier (2) – A1: Rock Your Radio (3:36) — Rock Your Radio EP [1991]'
+  label: 'Emulsifier – A1: Rock Your Radio (3:36) — Rock Your Radio EP [1991]'
 - value: 601614:A2
-  label: 'Emulsifier (2) – A2: Terrified (3:30) — Rock Your Radio EP [1991]'
+  label: 'Emulsifier – A2: Terrified (3:30) — Rock Your Radio EP [1991]'
 - value: 601614:B1
-  label: 'Emulsifier (2) – B1: Bootsay (3:35) — Rock Your Radio EP [1991]'
+  label: 'Emulsifier – B1: Bootsay (3:35) — Rock Your Radio EP [1991]'
 - value: 601614:B2
-  label: 'Emulsifier (2) – B2: Theme From ''Emulsifier'' (3:58) — Rock Your Radio EP [1991]'
+  label: 'Emulsifier – B2: Theme From ''Emulsifier'' (3:58) — Rock Your Radio EP [1991]'
 - value: 548016:C3
   label: 'Erasure – C3: Victim Of Love (3:37) — Indie Top 20 Volume III (War Of Independents) [1988]'
 - value: 2191976:A6
@@ -4817,7 +4817,7 @@
 - value: 12253235:D2
   label: 'Eric B. & Rakim – D2: Extended Beat (3:49) — Paid In Full [2018]'
 - value: 5694171:B1
-  label: 'Eruption (4) – B1: I Can''t Stand The Rain — Solid Gold Hits Volume 22 [1978]'
+  label: 'Eruption – B1: I Can''t Stand The Rain — Solid Gold Hits Volume 22 [1978]'
 - value: '875631:1'
   label: 'Eugene Chadbourne – 1: Secret Of The Cooler — Fast Forward Sampler [1994]'
 - value: 3299629:A1
@@ -4867,25 +4867,25 @@
 - value: 3345993:B5
   label: 'Expendables – B5: Man With No Desire (5:15) — Tuatara - A Flying Nun Compilation [1991]'
 - value: 5649255:A1
-  label: 'Eye (12) – A1: Plateau — Winterwork [2014]'
+  label: 'Eye – A1: Plateau — Winterwork [2014]'
 - value: 9284930:A1
-  label: 'Eye (12) – A1: Tension Cue — Other Sky [2016]'
+  label: 'Eye – A1: Tension Cue — Other Sky [2016]'
 - value: 5649255:A2
-  label: 'Eye (12) – A2: Electrical Storm — Winterwork [2014]'
+  label: 'Eye – A2: Electrical Storm — Winterwork [2014]'
 - value: 9284930:A2
-  label: 'Eye (12) – A2: Kōtuku, Kōtukutuku — Other Sky [2016]'
+  label: 'Eye – A2: Kōtuku, Kōtukutuku — Other Sky [2016]'
 - value: 5649255:A3
-  label: 'Eye (12) – A3: Ghost Ship — Winterwork [2014]'
+  label: 'Eye – A3: Ghost Ship — Winterwork [2014]'
 - value: 5649255:B1
-  label: 'Eye (12) – B1: Coelacanth — Winterwork [2014]'
+  label: 'Eye – B1: Coelacanth — Winterwork [2014]'
 - value: 9284930:B1
-  label: 'Eye (12) – B1: The Moon In Your Eyes — Other Sky [2016]'
+  label: 'Eye – B1: The Moon In Your Eyes — Other Sky [2016]'
 - value: 5649255:B2
-  label: 'Eye (12) – B2: Birds End — Winterwork [2014]'
+  label: 'Eye – B2: Birds End — Winterwork [2014]'
 - value: 9284930:B2
-  label: 'Eye (12) – B2: Black Lightning — Other Sky [2016]'
+  label: 'Eye – B2: Black Lightning — Other Sky [2016]'
 - value: 9284930:B3
-  label: 'Eye (12) – B3: Threave — Other Sky [2016]'
+  label: 'Eye – B3: Threave — Other Sky [2016]'
 - value: 7060618:A1
   label: 'Fabritio Caroso – A1: Andantino (3:55) — Music For Mandolin And Guitar Ensemble'
 - value: 7060618:B4
@@ -4991,7 +4991,7 @@
 - value: 4631031:B1
   label: 'Flanders & Swann – B1: Paris — Tried By The Centre Court [1977]'
 - value: 4631031:B2
-  label: 'Flanders & Swann – B2: Eine Kleine Nachtmusik Cha Cha Cha  — Tried By The Centre Court [1977]'
+  label: 'Flanders & Swann – B2: Eine Kleine Nachtmusik Cha Cha Cha — Tried By The Centre Court [1977]'
 - value: 4631031:B3
   label: 'Flanders & Swann – B3: The Hundred Song — Tried By The Centre Court [1977]'
 - value: 4631031:B4
@@ -5173,7 +5173,7 @@
 - value: 3749933:D7
   label: 'Frankie Valli – D7: Grease (Reprise) (3:24) — Grease (The Original Soundtrack From The Motion Picture) [1978]'
 - value: 842340:B2
-  label: 'Freak Power (2) – B2: Rye — Freak The Sheep (A Compilation Of New Zealand Music) [1991]'
+  label: 'Freak Power – B2: Rye — Freak The Sheep (A Compilation Of New Zealand Music) [1991]'
 - value: 5599171:A
   label: 'Fripp & Eno – A: The Heavenly Music Corporation — (No Pussyfooting) [2014]'
 - value: 5599171:B
@@ -5311,45 +5311,45 @@
 - value: 8170055:B6
   label: 'Gary Oldman – B6: My Way (3:30) — Sid & Nancy: Love Kills (Music From The Motion Picture Soundtrack) [1986]'
 - value: 526011:A
-  label: 'Gate (3) – A: Sunshine (2:32) — Sunshine / Ives [1992]'
+  label: 'Gate – A: Sunshine (2:32) — Sunshine / Ives [1992]'
 - value: 968839:A1
-  label: 'Gate (3) – A1: Opening My Arms — Metric [1992]'
+  label: 'Gate – A1: Opening My Arms — Metric [1992]'
 - value: 1047409:A1
-  label: 'Gate (3) – A1: Trig. — Guitar [1992]'
+  label: 'Gate – A1: Trig. — Guitar [1992]'
 - value: 968839:A2
-  label: 'Gate (3) – A2: Hope — Metric [1992]'
+  label: 'Gate – A2: Hope — Metric [1992]'
 - value: 1047409:A2
-  label: 'Gate (3) – A2: Infinity Trust — Guitar [1992]'
+  label: 'Gate – A2: Infinity Trust — Guitar [1992]'
 - value: 968839:A3
-  label: 'Gate (3) – A3: Call Constellations — Metric [1992]'
+  label: 'Gate – A3: Call Constellations — Metric [1992]'
 - value: 1047409:A3
-  label: 'Gate (3) – A3: Jim From Hip-Land — Guitar [1992]'
+  label: 'Gate – A3: Jim From Hip-Land — Guitar [1992]'
 - value: 1047409:A4
-  label: 'Gate (3) – A4: Banner — Guitar [1992]'
+  label: 'Gate – A4: Banner — Guitar [1992]'
 - value: 968839:A4
-  label: 'Gate (3) – A4: Forced Sight — Metric [1992]'
+  label: 'Gate – A4: Forced Sight — Metric [1992]'
 - value: 1047409:A5
-  label: 'Gate (3) – A5: Lost Possession — Guitar [1992]'
+  label: 'Gate – A5: Lost Possession — Guitar [1992]'
 - value: 526011:B
-  label: 'Gate (3) – B: Ives (5:40) — Sunshine / Ives [1992]'
+  label: 'Gate – B: Ives (5:40) — Sunshine / Ives [1992]'
 - value: 1047409:B1
-  label: 'Gate (3) – B1: Carni Extolled — Guitar [1992]'
+  label: 'Gate – B1: Carni Extolled — Guitar [1992]'
 - value: 769533:B1
-  label: 'Gate (3) – B1: Never (0:57) — I Hear The Devil Calling Me [1991]'
+  label: 'Gate – B1: Never (0:57) — I Hear The Devil Calling Me [1991]'
 - value: 968839:B1
-  label: 'Gate (3) – B1: Your Face — Metric [1992]'
+  label: 'Gate – B1: Your Face — Metric [1992]'
 - value: 1047409:B2
-  label: 'Gate (3) – B2: Card Scene — Guitar [1992]'
+  label: 'Gate – B2: Card Scene — Guitar [1992]'
 - value: 968839:B2
-  label: 'Gate (3) – B2: Selfhate — Metric [1992]'
+  label: 'Gate – B2: Selfhate — Metric [1992]'
 - value: 968839:B3
-  label: 'Gate (3) – B3: Freedom Child — Metric [1992]'
+  label: 'Gate – B3: Freedom Child — Metric [1992]'
 - value: 1047409:B3
-  label: 'Gate (3) – B3: Silver Hi-Lo — Guitar [1992]'
+  label: 'Gate – B3: Silver Hi-Lo — Guitar [1992]'
 - value: 1047409:B4
-  label: 'Gate (3) – B4: Couples Love — Guitar [1992]'
+  label: 'Gate – B4: Couples Love — Guitar [1992]'
 - value: 968839:B4
-  label: 'Gate (3) – B4: Evidence — Metric [1992]'
+  label: 'Gate – B4: Evidence — Metric [1992]'
 - value: 20362099:A4
   label: 'Gaudi, The Rebel Dread, Emily Capell – A4: E = MC² (5:08) — LateNightTales (Version Excursion) [2021]'
 - value: 1519900:A1
@@ -5431,7 +5431,7 @@
 - value: 10885801:A7
   label: 'Go Dreamer – A7: Fun House — Silicon Valley (Music From The HBO Original Series) [2017]'
 - value: 24619274:D3
-  label: 'Goat (22) – D3: Gathering Of Ancient Tribes — Garage Psychédélique (The Best Of Garage Psych And Pzyk Rock 1965-2019) [2022]'
+  label: 'Goat – D3: Gathering Of Ancient Tribes — Garage Psychédélique (The Best Of Garage Psych And Pzyk Rock 1965-2019) [2022]'
 - value: '778915:11'
   label: 'Goblin Mix – 11: Travelling Grave (3:20) — Getting Older 1981-1991 (The Flying Nun Retrospective Compilation) [1992]'
 - value: 1038214:2-08
@@ -5489,13 +5489,13 @@
 - value: 34633639:B7
   label: 'Goodshirt – B7: Mudsky (2:20) — Good [2025]'
 - value: 3567770:A6
-  label: 'Gordon Robinson (4) – A6: Stop — Somebody Come And Play [1974]'
+  label: 'Gordon Robinson – A6: Stop — Somebody Come And Play [1974]'
 - value: 3567770:B3
-  label: 'Gordon Robinson (4) – B3: Rub Your Tummy — Somebody Come And Play [1974]'
+  label: 'Gordon Robinson – B3: Rub Your Tummy — Somebody Come And Play [1974]'
 - value: 3567770:B7
-  label: 'Gordon Robinson (4) – B7: Show Me How You Feel — Somebody Come And Play [1974]'
+  label: 'Gordon Robinson – B7: Show Me How You Feel — Somebody Come And Play [1974]'
 - value: 3567770:B1
-  label: 'Gordon Robinson (4), Susan Robinson, Mr. Hooper, The Muppets – B1: Play Along — Somebody Come And Play [1974]'
+  label: 'Gordon Robinson, Susan Robinson, Mr. Hooper, The Muppets – B1: Play Along — Somebody Come And Play [1974]'
 - value: 7034575:B6
   label: 'Grace Jones – B6: Pull Up To The Bumper — 20 Original Solid Gold Hits Volume 31 [1981]'
 - value: '1283278:18'
@@ -5565,9 +5565,9 @@
 - value: '1283278:10'
   label: 'Guided By Voices – 10: Draw(in)g To A (W)hole — God Save The Clean, A Tribute To The Clean [1998]'
 - value: 3567770:A7
-  label: 'Guy Smiley (3), Bennett Snerf, Arlene Frantic, Cookie Monster – A7: What''s My Part? - Nose — Somebody Come And Play [1974]'
+  label: 'Guy Smiley, Bennett Snerf, Arlene Frantic, Cookie Monster – A7: What''s My Part? - Nose — Somebody Come And Play [1974]'
 - value: 3567770:B5
-  label: 'Guy Smiley (3), Bennett Snerf, Arlene Frantic, Professor Hastings – B5: What''s My Part? - Foot — Somebody Come And Play [1974]'
+  label: 'Guy Smiley, Bennett Snerf, Arlene Frantic, Professor Hastings – B5: What''s My Part? - Foot — Somebody Come And Play [1974]'
 - value: '34941419:1'
   label: 'Half Hexagon – 1: The Beast (2:15) — EP1 + EP2 [2025]'
 - value: '34941419:2'
@@ -5815,9 +5815,9 @@
 - value: 8568512:A1
   label: 'Holy Fuck – A1: Chimes Broken — Congrats [2016]'
 - value: 14664948:A1
-  label: 'Holy Fuck – A1: Luxe  — Deleter [2020]'
+  label: 'Holy Fuck – A1: Luxe — Deleter [2020]'
 - value: 14664948:A2
-  label: 'Holy Fuck – A2: Deleters  — Deleter [2020]'
+  label: 'Holy Fuck – A2: Deleters — Deleter [2020]'
 - value: 8568512:A2
   label: 'Holy Fuck – A2: Tom Tom — Congrats [2016]'
 - value: 14664948:A3
@@ -5825,7 +5825,7 @@
 - value: 8568512:A3
   label: 'Holy Fuck – A3: Shivering — Congrats [2016]'
 - value: 14664948:A4
-  label: 'Holy Fuck – A4: Free Gloss  — Deleter [2020]'
+  label: 'Holy Fuck – A4: Free Gloss — Deleter [2020]'
 - value: 8568512:A4
   label: 'Holy Fuck – A4: Xed Eyes — Congrats [2016]'
 - value: 8568512:A5
@@ -5851,47 +5851,47 @@
 - value: 14664948:B9
   label: 'Holy Fuck – B9: Ruby — Deleter [2020]'
 - value: 17487955:B1
-  label: 'Honey Boy Martin, The Voices (6) – B1: Dreader Then Dread — Tougher Than Tough: Trojan Rude Boy Sounds [2021]'
+  label: 'Honey Boy Martin, The Voices – B1: Dreader Then Dread — Tougher Than Tough: Trojan Rude Boy Sounds [2021]'
 - value: 5694171:B2
   label: 'Hot Chocolate – B2: Every 1''s A Winner — Solid Gold Hits Volume 22 [1978]'
 - value: 548016:C2
   label: 'Hotline – C2: Hellhouse (6:17) — Indie Top 20 Volume III (War Of Independents) [1988]'
 - value: 26920442:A1
-  label: 'House Of All (2) – A1: Ayenbite (4:16) — House Of All [2023]'
+  label: 'House Of All – A1: Ayenbite (4:16) — House Of All [2023]'
 - value: 30281933:A1
-  label: 'House Of All (2) – A1: For This Be Glory — Continuum [2024]'
+  label: 'House Of All – A1: For This Be Glory — Continuum [2024]'
 - value: 26920442:A2
-  label: 'House Of All (2) – A2: But Wilful I Am (3:10) — House Of All [2023]'
+  label: 'House Of All – A2: But Wilful I Am (3:10) — House Of All [2023]'
 - value: 30281933:A2
-  label: 'House Of All (2) – A2: Murmuration — Continuum [2024]'
+  label: 'House Of All – A2: Murmuration — Continuum [2024]'
 - value: 26920442:A3
-  label: 'House Of All (2) – A3: Dominus Ruinea (5:34) — House Of All [2023]'
+  label: 'House Of All – A3: Dominus Ruinea (5:34) — House Of All [2023]'
 - value: 30281933:A3
-  label: 'House Of All (2) – A3: Gaudy Pop Scramble — Continuum [2024]'
+  label: 'House Of All – A3: Gaudy Pop Scramble — Continuum [2024]'
 - value: 30281933:A4
-  label: 'House Of All (2) – A4: Cuckoo In The Nest — Continuum [2024]'
+  label: 'House Of All – A4: Cuckoo In The Nest — Continuum [2024]'
 - value: 26920442:A4
-  label: 'House Of All (2) – A4: Harlequin Duke (4:47) — House Of All [2023]'
+  label: 'House Of All – A4: Harlequin Duke (4:47) — House Of All [2023]'
 - value: 30281933:A5
-  label: 'House Of All (2) – A5: Under A Crooked Sky — Continuum [2024]'
+  label: 'House Of All – A5: Under A Crooked Sky — Continuum [2024]'
 - value: 30281933:B1
-  label: 'House Of All (2) – B1: Aim Higher — Continuum [2024]'
+  label: 'House Of All – B1: Aim Higher — Continuum [2024]'
 - value: 26920442:B1
-  label: 'House Of All (2) – B1: Magic Sound (5:02) — House Of All [2023]'
+  label: 'House Of All – B1: Magic Sound (5:02) — House Of All [2023]'
 - value: 30281933:B2
-  label: 'House Of All (2) – B2: Letter To A Young Poet — Continuum [2024]'
+  label: 'House Of All – B2: Letter To A Young Poet — Continuum [2024]'
 - value: 26920442:B2
-  label: 'House Of All (2) – B2: Minerva Disrobed (4:28) — House Of All [2023]'
+  label: 'House Of All – B2: Minerva Disrobed (4:28) — House Of All [2023]'
 - value: 30281933:B3
-  label: 'House Of All (2) – B3: A Taste Of Money — Continuum [2024]'
+  label: 'House Of All – B3: A Taste Of Money — Continuum [2024]'
 - value: 26920442:B3
-  label: 'House Of All (2) – B3: There''s More (4:54) — House Of All [2023]'
+  label: 'House Of All – B3: There''s More (4:54) — House Of All [2023]'
 - value: 30281933:B4
-  label: 'House Of All (2) – B4: I Must Get Clean — Continuum [2024]'
+  label: 'House Of All – B4: I Must Get Clean — Continuum [2024]'
 - value: 26920442:B4
-  label: 'House Of All (2) – B4: Turning Of The Years (3:26) — House Of All [2023]'
+  label: 'House Of All – B4: Turning Of The Years (3:26) — House Of All [2023]'
 - value: 30281933:B5
-  label: 'House Of All (2) – B5: Each Ending Has A Beginning — Continuum [2024]'
+  label: 'House Of All – B5: Each Ending Has A Beginning — Continuum [2024]'
 - value: 6099447:A1
   label: 'House Of Pain – A1: Jump Around (Original Mix) (3:30) — Jump Around / House Of Pain Anthem [2002]'
 - value: 6099447:A2
@@ -5901,31 +5901,31 @@
 - value: 6099447:B2
   label: 'House Of Pain – B2: House Of Pain Anthem (Original Mix) (2:42) — Jump Around / House Of Pain Anthem [2002]'
 - value: 11807968:A1
-  label: 'Hubert Teichmann – A1: Walk On The Wild Side — Hammond In Stereo  [1966]'
+  label: 'Hubert Teichmann – A1: Walk On The Wild Side — Hammond In Stereo [1966]'
 - value: 11807968:A2
-  label: 'Hubert Teichmann – A2: Dixieland Medley/Alexanders Ragtime Band/Hello Dolly/Sioux City Sue/Bye Bye Blackbird — Hammond In Stereo  [1966]'
+  label: 'Hubert Teichmann – A2: Dixieland Medley/Alexanders Ragtime Band/Hello Dolly/Sioux City Sue/Bye Bye Blackbird — Hammond In Stereo [1966]'
 - value: 11807968:A3
-  label: 'Hubert Teichmann – A3: Rot Ist Der Wein (Spanish Eyes) — Hammond In Stereo  [1966]'
+  label: 'Hubert Teichmann – A3: Rot Ist Der Wein (Spanish Eyes) — Hammond In Stereo [1966]'
 - value: 11807968:A4
-  label: 'Hubert Teichmann – A4: Musette Medley/Mademoiselle De Paris/La Seine/Zauber Von Paris/Es Gibt Nur Ein Paris/Hi-Lili Hi-Lo — Hammond In Stereo  [1966]'
+  label: 'Hubert Teichmann – A4: Musette Medley/Mademoiselle De Paris/La Seine/Zauber Von Paris/Es Gibt Nur Ein Paris/Hi-Lili Hi-Lo — Hammond In Stereo [1966]'
 - value: 11807968:A5
-  label: 'Hubert Teichmann – A5: Yesterday Man — Hammond In Stereo  [1966]'
+  label: 'Hubert Teichmann – A5: Yesterday Man — Hammond In Stereo [1966]'
 - value: 11807968:A6
-  label: 'Hubert Teichmann – A6: Strangers In The Night — Hammond In Stereo  [1966]'
+  label: 'Hubert Teichmann – A6: Strangers In The Night — Hammond In Stereo [1966]'
 - value: 11807968:A7
-  label: 'Hubert Teichmann – A7: Wooly Bully — Hammond In Stereo  [1966]'
+  label: 'Hubert Teichmann – A7: Wooly Bully — Hammond In Stereo [1966]'
 - value: 11807968:B1
-  label: 'Hubert Teichmann – B1: Somewhere My Love — Hammond In Stereo  [1966]'
+  label: 'Hubert Teichmann – B1: Somewhere My Love — Hammond In Stereo [1966]'
 - value: 11807968:B2
-  label: 'Hubert Teichmann – B2: Evergreen Medley/Bei Dir War Es Immer So Schon/Im Rosengarten Von Sanssouci/Schoner Gigolo/Regentropfen/Nachts Ging Das Telefon — Hammond In Stereo  [1966]'
+  label: 'Hubert Teichmann – B2: Evergreen Medley/Bei Dir War Es Immer So Schon/Im Rosengarten Von Sanssouci/Schoner Gigolo/Regentropfen/Nachts Ging Das Telefon — Hammond In Stereo [1966]'
 - value: 11807968:B3
-  label: 'Hubert Teichmann – B3: Die Schlittschuhlaufer — Hammond In Stereo  [1966]'
+  label: 'Hubert Teichmann – B3: Die Schlittschuhlaufer — Hammond In Stereo [1966]'
 - value: 11807968:B4
-  label: 'Hubert Teichmann – B4: Gershwin Medley/Rhapsody In Blue/Blues Aus "Ein Amerikaner In Paris"/S Wonderful — Hammond In Stereo  [1966]'
+  label: 'Hubert Teichmann – B4: Gershwin Medley/Rhapsody In Blue/Blues Aus "Ein Amerikaner In Paris"/S Wonderful — Hammond In Stereo [1966]'
 - value: 11807968:B5
-  label: 'Hubert Teichmann – B5: Amorada — Hammond In Stereo  [1966]'
+  label: 'Hubert Teichmann – B5: Amorada — Hammond In Stereo [1966]'
 - value: 11807968:B6
-  label: 'Hubert Teichmann – B6: Slow-Waltz Medley/Edelweiss/Charmaine/Fascination — Hammond In Stereo  [1966]'
+  label: 'Hubert Teichmann – B6: Slow-Waltz Medley/Edelweiss/Charmaine/Fascination — Hammond In Stereo [1966]'
 - value: 10885801:A4
   label: 'Hudson Mohawke – A4: Passports — Silicon Valley (Music From The HBO Original Series) [2017]'
 - value: 2466385:A1
@@ -5955,7 +5955,7 @@
 - value: 2466385:B6
   label: 'Humphreys & Keen – B6: 12,000 Miles (6:48) — The Overflow [2009]'
 - value: '1283278:14'
-  label: 'I.C.U. (2) – 14: At The Bottom (Mach 2) — God Save The Clean, A Tribute To The Clean [1998]'
+  label: 'I.C.U. – 14: At The Bottom (Mach 2) — God Save The Clean, A Tribute To The Clean [1998]'
 - value: 2595064:A
   label: 'Inner City – A: Whatcha Gonna Do With My Lovin'' (Def Radio Mix) (4:15) — Whatcha Gonna Do With My Lovin'' [1989]'
 - value: 2595064:B
@@ -5963,37 +5963,37 @@
 - value: 13399925:B1
   label: 'Isaac Hayes – B1: Theme From "Shaft" — 20 Dynamite Hits [1972]'
 - value: 32402835:C3
-  label: 'Jack Black (2) – C3: Let''s Get It On — High Fidelity (Original Soundtrack) [2024]'
+  label: 'Jack Black – C3: Let''s Get It On — High Fidelity (Original Soundtrack) [2024]'
 - value: 3485117:A
-  label: 'Jack White (2) – A: Sixteen Saltines — Sixteen Saltines [2012]'
+  label: 'Jack White – A: Sixteen Saltines — Sixteen Saltines [2012]'
 - value: 3566352:A1
-  label: 'Jack White (2) – A1: Missing Pieces (3:27) — Blunderbuss [2012]'
+  label: 'Jack White – A1: Missing Pieces (3:27) — Blunderbuss [2012]'
 - value: 3566352:A2
-  label: 'Jack White (2) – A2: Sixteen Saltines (2:37) — Blunderbuss [2012]'
+  label: 'Jack White – A2: Sixteen Saltines (2:37) — Blunderbuss [2012]'
 - value: 3566352:A3
-  label: 'Jack White (2) – A3: Freedom At 21 (2:52) — Blunderbuss [2012]'
+  label: 'Jack White – A3: Freedom At 21 (2:52) — Blunderbuss [2012]'
 - value: 3566352:A4
-  label: 'Jack White (2) – A4: Love Interruption (2:38) — Blunderbuss [2012]'
+  label: 'Jack White – A4: Love Interruption (2:38) — Blunderbuss [2012]'
 - value: 3566352:A5
-  label: 'Jack White (2) – A5: Blunderbuss (3:07) — Blunderbuss [2012]'
+  label: 'Jack White – A5: Blunderbuss (3:07) — Blunderbuss [2012]'
 - value: 3566352:A6
-  label: 'Jack White (2) – A6: Hypocritical Kiss (2:50) — Blunderbuss [2012]'
+  label: 'Jack White – A6: Hypocritical Kiss (2:50) — Blunderbuss [2012]'
 - value: 3566352:A7
-  label: 'Jack White (2) – A7: Weep Themselves To Sleep (4:19) — Blunderbuss [2012]'
+  label: 'Jack White – A7: Weep Themselves To Sleep (4:19) — Blunderbuss [2012]'
 - value: 3485117:B
-  label: 'Jack White (2) – B: Love Is Blindness — Sixteen Saltines [2012]'
+  label: 'Jack White – B: Love Is Blindness — Sixteen Saltines [2012]'
 - value: 3566352:B1
-  label: 'Jack White (2) – B1: I''m Shakin'' (3:00) — Blunderbuss [2012]'
+  label: 'Jack White – B1: I''m Shakin'' (3:00) — Blunderbuss [2012]'
 - value: 3566352:B2
-  label: 'Jack White (2) – B2: Trash Tongue Talker (3:20) — Blunderbuss [2012]'
+  label: 'Jack White – B2: Trash Tongue Talker (3:20) — Blunderbuss [2012]'
 - value: 3566352:B3
-  label: 'Jack White (2) – B3: Hip (Eponymous) Poor Boy (3:04) — Blunderbuss [2012]'
+  label: 'Jack White – B3: Hip (Eponymous) Poor Boy (3:04) — Blunderbuss [2012]'
 - value: 3566352:B4
-  label: 'Jack White (2) – B4: I Guess I Should Go To Sleep (2:39) — Blunderbuss [2012]'
+  label: 'Jack White – B4: I Guess I Should Go To Sleep (2:39) — Blunderbuss [2012]'
 - value: 3566352:B5
-  label: 'Jack White (2) – B5: On And On And On (3:56) — Blunderbuss [2012]'
+  label: 'Jack White – B5: On And On And On (3:56) — Blunderbuss [2012]'
 - value: 3566352:B6
-  label: 'Jack White (2) – B6: Take Me With You When You Go (4:08) — Blunderbuss [2012]'
+  label: 'Jack White – B6: Take Me With You When You Go (4:08) — Blunderbuss [2012]'
 - value: 12824240:A1
   label: 'Jäh Division – A1: Transmission Dub — Dub Will Tear Us Apart Again [2019]'
 - value: 12824240:A2
@@ -6013,17 +6013,17 @@
 - value: 12824240:D
   label: 'Jäh Division – D: Champion Of The Arena Dub — Dub Will Tear Us Apart Again [2019]'
 - value: 1455508:A
-  label: 'Jakob (3) – A: Amasae — Erfo [2000]'
+  label: 'Jakob – A: Amasae — Erfo [2000]'
 - value: 1455508:B
-  label: 'Jakob (3) – B: Her Short Haircut — Erfo [2000]'
+  label: 'Jakob – B: Her Short Haircut — Erfo [2000]'
 - value: 5393687:A6
   label: 'James Cairncross – A6: Hush-Hush — Salad Days [1962]'
 - value: 5393687:B1
   label: 'James Cairncross – B1: Cleopatra — Salad Days [1962]'
 - value: 5393687:B5
-  label: 'James Cairncross, John Warner (2), Eleanor Drew – B5: The Saucer Song — Salad Days [1962]'
+  label: 'James Cairncross, John Warner, Eleanor Drew – B5: The Saucer Song — Salad Days [1962]'
 - value: '403467:4'
-  label: 'Jane Harris (2) – 4: Shiny Surfaces — Runner (A Compilation Of New Zealand Music) [1994]'
+  label: 'Jane Harris – 4: Shiny Surfaces — Runner (A Compilation Of New Zealand Music) [1994]'
 - value: 1303549:A1
   label: 'Jane''s Addiction – A1: Stop! (4:14) — Ritual De Lo Habitual'
 - value: 611402:A1
@@ -6223,7 +6223,7 @@
 - value: '171239:14'
   label: 'Jesse Rae – 14: Jacobs Pillow (4:54) — Pay It All Back Volume Three [2000]'
 - value: '2114827:8'
-  label: 'Jetty (2) – 8: White Boys On Punk (3:19) — Music Of Dunedin [1998]'
+  label: 'Jetty – 8: White Boys On Punk (3:19) — Music Of Dunedin [1998]'
 - value: 8170055:A1
   label: 'Joe Strummer – A1: Love Kills (Title Track) (4:00) — Sid & Nancy: Love Kills (Music From The Motion Picture Soundtrack) [1986]'
 - value: 8170055:B1
@@ -6295,15 +6295,15 @@
 - value: 29041393:A6
   label: 'John Halvorsen – A6: Event Horizon (3:27) — A World On Fire [2023]'
 - value: 29041393:B1
-  label: 'John Halvorsen – B1: The Time Of Our Lives  (3:29) — A World On Fire [2023]'
+  label: 'John Halvorsen – B1: The Time Of Our Lives (3:29) — A World On Fire [2023]'
 - value: 29041393:B2
-  label: 'John Halvorsen – B2: Memes For Brains  (3:40) — A World On Fire [2023]'
+  label: 'John Halvorsen – B2: Memes For Brains (3:40) — A World On Fire [2023]'
 - value: 29041393:B3
-  label: 'John Halvorsen – B3: A World On Fire  (3:21) — A World On Fire [2023]'
+  label: 'John Halvorsen – B3: A World On Fire (3:21) — A World On Fire [2023]'
 - value: 29041393:B4
-  label: 'John Halvorsen – B4: Before September  (3:58) — A World On Fire [2023]'
+  label: 'John Halvorsen – B4: Before September (3:58) — A World On Fire [2023]'
 - value: 29041393:B5
-  label: 'John Halvorsen – B5: The New Water  (4:17) — A World On Fire [2023]'
+  label: 'John Halvorsen – B5: The New Water (4:17) — A World On Fire [2023]'
 - value: 29041393:B6
   label: 'John Halvorsen – B6: Floating Point (3:18) — A World On Fire [2023]'
 - value: 20362099:B4
@@ -6357,17 +6357,17 @@
 - value: 3749933:D5
   label: 'John Travolta, Olivia Newton-John – D5: We Go Together (3:14) — Grease (The Original Soundtrack From The Motion Picture) [1978]'
 - value: 5393687:A2
-  label: 'John Warner (2), Eleanor Drew – A2: We Said We Couldn''t Look Back — Salad Days [1962]'
+  label: 'John Warner, Eleanor Drew – A2: We Said We Couldn''t Look Back — Salad Days [1962]'
 - value: 5393687:A5
-  label: 'John Warner (2), Eleanor Drew – A5: Oh, Look At Me — Salad Days [1962]'
+  label: 'John Warner, Eleanor Drew – A5: Oh, Look At Me — Salad Days [1962]'
 - value: 5393687:B6a
-  label: 'John Warner (2), Eleanor Drew – B6a: We Said We Couldn''t Look Back — Salad Days [1962]'
+  label: 'John Warner, Eleanor Drew – B6a: We Said We Couldn''t Look Back — Salad Days [1962]'
 - value: 5393687:B2
-  label: 'John Warner (2), Eleanor Drew, Michael Meacham – B2: It''s Easy To Sing — Salad Days [1962]'
+  label: 'John Warner, Eleanor Drew, Michael Meacham – B2: It''s Easy To Sing — Salad Days [1962]'
 - value: 32402835:A3
   label: 'John Wesley Harding – A3: I''m Wrong About Everything — High Fidelity (Original Soundtrack) [2024]'
 - value: '2114827:7'
-  label: 'John White (3) – 7: L. Is Poison (2:37) — Music Of Dunedin [1998]'
+  label: 'John White – 7: L. Is Poison (2:37) — Music Of Dunedin [1998]'
 - value: 13414133:A1
   label: 'Johnny Cash – A1: Bonanza — Ring Of Fire [1963]'
 - value: 13414133:A2
@@ -6383,7 +6383,7 @@
 - value: 5694171:B6
   label: 'Johnny Mathis, Deniece Williams – B6: Too Much, Too Little, Too Late — Solid Gold Hits Volume 22 [1978]'
 - value: 472564:B8
-  label: 'Jon English (3) – B8: Carmilla — 20 Original Solid Gold Hits Volume 27 [1980]'
+  label: 'Jon English – B8: Carmilla — 20 Original Solid Gold Hits Volume 27 [1980]'
 - value: 4216725:B2
   label: 'Jonathan Adams – B2: Eddie (2:44) — The Rocky Horror Picture Show [1975]'
 - value: '875631:15'
@@ -6543,7 +6543,7 @@
 - value: 20362099:D5
   label: 'Khruangbin – D5: Dern Kala (Khruangbin Dub Mix) (4:03) — LateNightTales (Version Excursion) [2021]'
 - value: 1603185:B1
-  label: 'Kickstand (2) – B1: Tally Ho! — Cleaned Out! [1992]'
+  label: 'Kickstand – B1: Tally Ho! — Cleaned Out! [1992]'
 - value: 8385232:A1
   label: 'Killing Joke – A1: Autonomous Zone (6:43) — Pylon [2016]'
 - value: 24615170:A1
@@ -6717,9 +6717,9 @@
 - value: 472564:A4
   label: 'Kiss – A4: Shandi — 20 Original Solid Gold Hits Volume 27 [1980]'
 - value: 4036437:A
-  label: 'Kluster (3) – A: Eruption 1 (31:04) — Schwarz (Eruption) [2012]'
+  label: 'Kluster – A: Eruption 1 (31:04) — Schwarz (Eruption) [2012]'
 - value: 4036437:B
-  label: 'Kluster (3) – B: Eruption 2 (25:30) — Schwarz (Eruption) [2012]'
+  label: 'Kluster – B: Eruption 2 (25:30) — Schwarz (Eruption) [2012]'
 - value: 4000923:That Side
   label: 'Knoxious – That Side: Gargarin — Swimming Pool / Gargarin [2012]'
 - value: 16028222:A1
@@ -6735,25 +6735,25 @@
 - value: 16028222:B3
   label: 'Kraftwerk – B3: Die Mensch•Maschine (5:28) — Die Mensch•Maschine [2020]'
 - value: 16439436:A1
-  label: 'Kraus (2) – A1: 1000 AD — A Golden Brain [2020]'
+  label: 'Kraus – A1: 1000 AD — A Golden Brain [2020]'
 - value: 16439436:A2
-  label: 'Kraus (2) – A2: An Arrow In The Haunch — A Golden Brain [2020]'
+  label: 'Kraus – A2: An Arrow In The Haunch — A Golden Brain [2020]'
 - value: 16439436:A3
-  label: 'Kraus (2) – A3: A Pudding Of Blood — A Golden Brain [2020]'
+  label: 'Kraus – A3: A Pudding Of Blood — A Golden Brain [2020]'
 - value: 16439436:A4
-  label: 'Kraus (2) – A4: A Golden Brain — A Golden Brain [2020]'
+  label: 'Kraus – A4: A Golden Brain — A Golden Brain [2020]'
 - value: 16439436:A5
-  label: 'Kraus (2) – A5: A Great Black Horse Covered With Silk — A Golden Brain [2020]'
+  label: 'Kraus – A5: A Great Black Horse Covered With Silk — A Golden Brain [2020]'
 - value: 16439436:B1
-  label: 'Kraus (2) – B1: Pavilion Of The Maidens — A Golden Brain [2020]'
+  label: 'Kraus – B1: Pavilion Of The Maidens — A Golden Brain [2020]'
 - value: 16439436:B2
-  label: 'Kraus (2) – B2: Morgana Le Fay’s Synthesizer Theme — A Golden Brain [2020]'
+  label: 'Kraus – B2: Morgana Le Fay’s Synthesizer Theme — A Golden Brain [2020]'
 - value: 16439436:B3
-  label: 'Kraus (2) – B3: Queen Of The Land Of Gorre — A Golden Brain [2020]'
+  label: 'Kraus – B3: Queen Of The Land Of Gorre — A Golden Brain [2020]'
 - value: 16439436:B4
-  label: 'Kraus (2) – B4: Dish Of Silver Full Of Blood — A Golden Brain [2020]'
+  label: 'Kraus – B4: Dish Of Silver Full Of Blood — A Golden Brain [2020]'
 - value: 16439436:B5
-  label: 'Kraus (2) – B5: Making An Eye — A Golden Brain [2020]'
+  label: 'Kraus – B5: Making An Eye — A Golden Brain [2020]'
 - value: 17380165:A1
   label: 'Kyuss – A1: Gardenia (5:53) — Welcome To Sky Valley [2021]'
 - value: 17380165:A2
@@ -6869,7 +6869,7 @@
 - value: 10463696:B4
   label: 'LCD Soundsystem – B4: Great Release — LCD Soundsystem [2017]'
 - value: 842340:A6
-  label: 'Lee Harvey (2) – A6: Honey Jar — Freak The Sheep (A Compilation Of New Zealand Music) [1991]'
+  label: 'Lee Harvey – A6: Honey Jar — Freak The Sheep (A Compilation Of New Zealand Music) [1991]'
 - value: 387904:A1
   label: 'Lee Hazlewood – A1: I''m Glad I Never... (1:00) — Requiem For An Almost Lady [1999]'
 - value: 387904:A2
@@ -7027,7 +7027,7 @@
 - value: 17487955:C5
   label: 'Lloyd & Glen – C5: No More Trouble — Tougher Than Tough: Trojan Rude Boy Sounds [2021]'
 - value: 13399925:A2
-  label: 'Lobo (3) – A2: Me & You & A Dog Named Boo — 20 Dynamite Hits [1972]'
+  label: 'Lobo – A2: Me & You & A Dog Named Boo — 20 Dynamite Hits [1972]'
 - value: '824340:10'
   label: 'Look Blue Go Purple – 10: Cactus Cat — Very Short Films - Flying Nun DVD [2004]'
 - value: '778915:14'
@@ -7111,25 +7111,25 @@
 - value: 10690513:B2
   label: 'Looking Glass – B2: Brandy (You’re A Fine Girl) — Guardians Of The Galaxy Vol. 2 [2017]'
 - value: 22680524:A1
-  label: 'Loop (3) – A1: Interference — Sonancy [2022]'
+  label: 'Loop – A1: Interference — Sonancy [2022]'
 - value: 22680524:A2
-  label: 'Loop (3) – A2: Eolian — Sonancy [2022]'
+  label: 'Loop – A2: Eolian — Sonancy [2022]'
 - value: 22680524:A3
-  label: 'Loop (3) – A3: Supra — Sonancy [2022]'
+  label: 'Loop – A3: Supra — Sonancy [2022]'
 - value: 22680524:A4
-  label: 'Loop (3) – A4: Penumbra I — Sonancy [2022]'
+  label: 'Loop – A4: Penumbra I — Sonancy [2022]'
 - value: 22680524:A5
-  label: 'Loop (3) – A5: Isochrone — Sonancy [2022]'
+  label: 'Loop – A5: Isochrone — Sonancy [2022]'
 - value: 22680524:B1
-  label: 'Loop (3) – B1: Halo — Sonancy [2022]'
+  label: 'Loop – B1: Halo — Sonancy [2022]'
 - value: 22680524:B2
-  label: 'Loop (3) – B2: Fermion — Sonancy [2022]'
+  label: 'Loop – B2: Fermion — Sonancy [2022]'
 - value: 22680524:B3
-  label: 'Loop (3) – B3: Penumbra II — Sonancy [2022]'
+  label: 'Loop – B3: Penumbra II — Sonancy [2022]'
 - value: 22680524:B4
-  label: 'Loop (3) – B4: Axion — Sonancy [2022]'
+  label: 'Loop – B4: Axion — Sonancy [2022]'
 - value: 22680524:B5
-  label: 'Loop (3) – B5: Aurora — Sonancy [2022]'
+  label: 'Loop – B5: Aurora — Sonancy [2022]'
 - value: 2191976:A3
   label: 'Lord Brynner & The Shieks – A3: Congo War — More Intensified! Original Ska 1963-67 Vol. 2 [1980]'
 - value: 2020453:2-18
@@ -7253,11 +7253,11 @@
 - value: 1443750:B
   label: 'Loves Ugly Children – B: 13.2.94 — Senseless [1994]'
 - value: 1834129:A1
-  label: 'Low Profile (2) – A1: Elephunk (5:25) — Elephunk In My Soup [1984]'
+  label: 'Low Profile – A1: Elephunk (5:25) — Elephunk In My Soup [1984]'
 - value: 1834129:A2
-  label: 'Low Profile (2) – A2: Wirtlesnaggling (3:07) — Elephunk In My Soup [1984]'
+  label: 'Low Profile – A2: Wirtlesnaggling (3:07) — Elephunk In My Soup [1984]'
 - value: 1834129:B
-  label: 'Low Profile (2) – B: Stripes (7:55) — Elephunk In My Soup [1984]'
+  label: 'Low Profile – B: Stripes (7:55) — Elephunk In My Soup [1984]'
 - value: 3023431:A1
   label: 'Luke Hurley – A1: Mona Lisa (5:21) — Make Room [1986]'
 - value: 3023431:A2
@@ -7471,7 +7471,7 @@
 - value: 20362099:B6
   label: 'Matumbi – B6: (I Can''t Get Enough Of) That Reggae Stuff (Dennis Bovell Remix) (5:00) — LateNightTales (Version Excursion) [2021]'
 - value: 17487955:D5
-  label: 'Max Romeo, The Emotions (2) – D5: Rude Boy Confession — Tougher Than Tough: Trojan Rude Boy Sounds [2021]'
+  label: 'Max Romeo, The Emotions – D5: Rude Boy Confession — Tougher Than Tough: Trojan Rude Boy Sounds [2021]'
 - value: 24619274:B8
   label: 'MC5 – B8: Gotta Keep Movin’ — Garage Psychédélique (The Best Of Garage Psych And Pzyk Rock 1965-2019) [2022]'
 - value: 5694171:A1
@@ -7503,7 +7503,7 @@
 - value: '875631:19'
   label: 'Mecca Normal – 19: Ribbon — Fast Forward Sampler [1994]'
 - value: 13399925:B3
-  label: 'Melanie (2) – B3: Brand New Key — 20 Dynamite Hits [1972]'
+  label: 'Melanie – B3: Brand New Key — 20 Dynamite Hits [1972]'
 - value: 13572963:A1
   label: 'Melody''s Echo Chamber – A1: I Follow You (3:34) — Melody''s Echo Chamber [2014]'
 - value: 13572963:A2
@@ -7543,7 +7543,7 @@
 - value: 2681847:B1
   label: 'Metallica – B1: For Whom The Bell Tolls (Live) (4:48) — One [1989]'
 - value: 2521508:B1
-  label: 'Metallica – B1: Holier Than Thou (Work In  Progress...) (3:48) — Enter Sandman [1991]'
+  label: 'Metallica – B1: Holier Than Thou (Work In Progress...) (3:48) — Enter Sandman [1991]'
 - value: 8385645:B1
   label: 'Metallica – B1: Trapped Under Ice (4:03) — Ride The Lightning [2016]'
 - value: 8385645:B2
@@ -7581,21 +7581,21 @@
 - value: 1584186:B5
   label: 'MGMT – B5: Future Reflections — Oracular Spectacular [2008]'
 - value: 18103150:A1
-  label: 'Miasmata (3) – A1: Caverns Of Malachite — Unlight: Songs Of Earth And Atrophy [2021]'
+  label: 'Miasmata – A1: Caverns Of Malachite — Unlight: Songs Of Earth And Atrophy [2021]'
 - value: 18103150:A2
-  label: 'Miasmata (3) – A2: Artifacts — Unlight: Songs Of Earth And Atrophy [2021]'
+  label: 'Miasmata – A2: Artifacts — Unlight: Songs Of Earth And Atrophy [2021]'
 - value: 18103150:A3
-  label: 'Miasmata (3) – A3: Seven Hundred Steps — Unlight: Songs Of Earth And Atrophy [2021]'
+  label: 'Miasmata – A3: Seven Hundred Steps — Unlight: Songs Of Earth And Atrophy [2021]'
 - value: 18103150:B4
-  label: 'Miasmata (3) – B4: A Blaze Of Starfire — Unlight: Songs Of Earth And Atrophy [2021]'
+  label: 'Miasmata – B4: A Blaze Of Starfire — Unlight: Songs Of Earth And Atrophy [2021]'
 - value: 18103150:B5
-  label: 'Miasmata (3) – B5: Bloodmoon — Unlight: Songs Of Earth And Atrophy [2021]'
+  label: 'Miasmata – B5: Bloodmoon — Unlight: Songs Of Earth And Atrophy [2021]'
 - value: 18103150:B6
-  label: 'Miasmata (3) – B6: Highest Mountain, Deepest Grave — Unlight: Songs Of Earth And Atrophy [2021]'
+  label: 'Miasmata – B6: Highest Mountain, Deepest Grave — Unlight: Songs Of Earth And Atrophy [2021]'
 - value: 18103150:B7
-  label: 'Miasmata (3) – B7: Spell Of Unlight — Unlight: Songs Of Earth And Atrophy [2021]'
+  label: 'Miasmata – B7: Spell Of Unlight — Unlight: Songs Of Earth And Atrophy [2021]'
 - value: 5694171:B7
-  label: 'Michael Johnson (5) – B7: Bluer Than Blue — Solid Gold Hits Volume 22 [1978]'
+  label: 'Michael Johnson – B7: Bluer Than Blue — Solid Gold Hits Volume 22 [1978]'
 - value: 472564:A9
   label: 'Michael Nesmith – A9: Cruisin'' (Lucy & Ramona & Sunset Sam) — 20 Original Solid Gold Hits Volume 27 [1980]'
 - value: 10512994:A1
@@ -7659,7 +7659,7 @@
 - value: 6535165:B5
   label: 'Ministry – B5: She''s Got A Cause (3:36) — Work For Love [1983]'
 - value: '2114827:9'
-  label: 'Mink (2) – 9: Ride (4:40) — Music Of Dunedin [1998]'
+  label: 'Mink – 9: Ride (4:40) — Music Of Dunedin [1998]'
 - value: 2583178:A1
   label: 'Mission Of Burma – A1: Secrets — Vs. [2010]'
 - value: 2474046:A1
@@ -7705,19 +7705,19 @@
 - value: 2583178:B6
   label: 'Mission Of Burma – B6: That''s How I Escaped My Certain Fate — Vs. [2010]'
 - value: 6335281:A
-  label: 'Mono (7) – A: Ashes In The Snow (11:46) — Hymn To The Immortal Wind [2012]'
+  label: 'Mono – A: Ashes In The Snow (11:46) — Hymn To The Immortal Wind [2012]'
 - value: 6335281:B1
-  label: 'Mono (7) – B1: Burial At Sea (10:39) — Hymn To The Immortal Wind [2012]'
+  label: 'Mono – B1: Burial At Sea (10:39) — Hymn To The Immortal Wind [2012]'
 - value: 6335281:B2
-  label: 'Mono (7) – B2: Silent Flight, Sleeping Dawn (6:00) — Hymn To The Immortal Wind [2012]'
+  label: 'Mono – B2: Silent Flight, Sleeping Dawn (6:00) — Hymn To The Immortal Wind [2012]'
 - value: 6335281:C1
-  label: 'Mono (7) – C1: Pure As Snow (Trails Of The Winter Storm) (11:26) — Hymn To The Immortal Wind [2012]'
+  label: 'Mono – C1: Pure As Snow (Trails Of The Winter Storm) (11:26) — Hymn To The Immortal Wind [2012]'
 - value: 6335281:C2
-  label: 'Mono (7) – C2: Follow The Map (3:56) — Hymn To The Immortal Wind [2012]'
+  label: 'Mono – C2: Follow The Map (3:56) — Hymn To The Immortal Wind [2012]'
 - value: 6335281:D1
-  label: 'Mono (7) – D1: The Battle To Heaven (12:51) — Hymn To The Immortal Wind [2012]'
+  label: 'Mono – D1: The Battle To Heaven (12:51) — Hymn To The Immortal Wind [2012]'
 - value: 6335281:D2
-  label: 'Mono (7) – D2: Everlasting Light (10:23) — Hymn To The Immortal Wind [2012]'
+  label: 'Mono – D2: Everlasting Light (10:23) — Hymn To The Immortal Wind [2012]'
 - value: 5635712:A
   label: 'Monty Python – A: The A Side Of The Album Of The Soundtrack Of The Trailer Of The Film Of Monty Python And The Holy Grail — The Album Of The Soundtrack Of The Trailer Of The Film Of Monty Python And The Holy Grail (Executive Version) [1975]'
 - value: 14255073:A1
@@ -8127,7 +8127,7 @@
 - value: 3518078:B6
   label: 'Nick Nicholson And The Neketini Brass – B6: Po Ata Rau — Neketini Brass [1968]'
 - value: 791372:B4
-  label: 'Nick Smith (5) – B4: Testament (3:54) — Outnumbered By Sheep [1986]'
+  label: 'Nick Smith – B4: Testament (3:54) — Outnumbered By Sheep [1986]'
 - value: '403467:1'
   label: 'Nigel Bunn – 1: Sea Goose — Runner (A Compilation Of New Zealand Music) [1994]'
 - value: '475229:4'
@@ -8343,39 +8343,39 @@
 - value: 11470013:A3
   label: 'Norman Greenbaum – A3: Spirit In The Sky (4:01) — Guardians Of The Galaxy: Awesome Mix Vol. 1 (Original Motion Picture Soundtrack) [2018]'
 - value: 24619274:C4
-  label: 'Novella (2) – C4: Somethings Must Change — Garage Psychédélique (The Best Of Garage Psych And Pzyk Rock 1965-2019) [2022]'
+  label: 'Novella – C4: Somethings Must Change — Garage Psychédélique (The Best Of Garage Psych And Pzyk Rock 1965-2019) [2022]'
 - value: '1379578:16'
-  label: 'NRA (2) – 16: Glitch — Noisyland [1992]'
+  label: 'NRA – 16: Glitch — Noisyland [1992]'
 - value: 1038214:3-06
-  label: 'NRA (2) – 3-06: Glitch (Double Mix Version) (6:20) — Flying Nun 25th Anniversary Box Set [2006]'
+  label: 'NRA – 3-06: Glitch (Double Mix Version) (6:20) — Flying Nun 25th Anniversary Box Set [2006]'
 - value: 1461150:A
-  label: 'NRA (2) – A: Bruce McLaren (5:16) — Bruce McLaren [1991]'
+  label: 'NRA – A: Bruce McLaren (5:16) — Bruce McLaren [1991]'
 - value: 1414865:A1
-  label: 'NRA (2) – A1: Bruce McLaren (5:16) — Hold Onto Your Face [1991]'
+  label: 'NRA – A1: Bruce McLaren (5:16) — Hold Onto Your Face [1991]'
 - value: 1427689:A1
-  label: 'NRA (2) – A1: The Brag — Watched A World [1985]'
+  label: 'NRA – A1: The Brag — Watched A World [1985]'
 - value: 1414865:A2
-  label: 'NRA (2) – A2: Big Nose (4:26) — Hold Onto Your Face [1991]'
+  label: 'NRA – A2: Big Nose (4:26) — Hold Onto Your Face [1991]'
 - value: 1427689:A2
-  label: 'NRA (2) – A2: Red Red Red — Watched A World [1985]'
+  label: 'NRA – A2: Red Red Red — Watched A World [1985]'
 - value: 1414865:A3
-  label: 'NRA (2) – A3: Puddle (5:03) — Hold Onto Your Face [1991]'
+  label: 'NRA – A3: Puddle (5:03) — Hold Onto Your Face [1991]'
 - value: 1414865:A4
-  label: 'NRA (2) – A4: Glitch (Double Mix) (6:05) — Hold Onto Your Face [1991]'
+  label: 'NRA – A4: Glitch (Double Mix) (6:05) — Hold Onto Your Face [1991]'
 - value: 1461150:B
-  label: 'NRA (2) – B: Rule (Break It) (4:40) — Bruce McLaren [1991]'
+  label: 'NRA – B: Rule (Break It) (4:40) — Bruce McLaren [1991]'
 - value: 1414865:B1
-  label: 'NRA (2) – B1: Hang (5:26) — Hold Onto Your Face [1991]'
+  label: 'NRA – B1: Hang (5:26) — Hold Onto Your Face [1991]'
 - value: 1427689:B1
-  label: 'NRA (2) – B1: Rain And The Rhino — Watched A World [1985]'
+  label: 'NRA – B1: Rain And The Rhino — Watched A World [1985]'
 - value: 1427689:B2
-  label: 'NRA (2) – B2: Bombshelter — Watched A World [1985]'
+  label: 'NRA – B2: Bombshelter — Watched A World [1985]'
 - value: 1414865:B2
-  label: 'NRA (2) – B2: Tin (6:06) — Hold Onto Your Face [1991]'
+  label: 'NRA – B2: Tin (6:06) — Hold Onto Your Face [1991]'
 - value: 1414865:B3
-  label: 'NRA (2) – B3: Rule (4:40) — Hold Onto Your Face [1991]'
+  label: 'NRA – B3: Rule (4:40) — Hold Onto Your Face [1991]'
 - value: 1414865:B4
-  label: 'NRA (2) – B4: J.J. Beast (6:13) — Hold Onto Your Face [1991]'
+  label: 'NRA – B4: J.J. Beast (6:13) — Hold Onto Your Face [1991]'
 - value: 20362099:C3
   label: 'O.B.F. – C3: Sixteen Tons Of Dub (3:24) — LateNightTales (Version Excursion) [2021]'
 - value: 3749933:A3
@@ -8395,25 +8395,25 @@
 - value: 8429017:B3
   label: 'Olla – B3: (Facilis Est Descendus Averni) Olla Putrido — Septic Hagfish [1992]'
 - value: 2462898:A1
-  label: 'Olympus (2) – A1: Olympus — Bold Mould [2010]'
+  label: 'Olympus – A1: Olympus — Bold Mould [2010]'
 - value: 2462898:A2
-  label: 'Olympus (2) – A2: Stalker — Bold Mould [2010]'
+  label: 'Olympus – A2: Stalker — Bold Mould [2010]'
 - value: 2462898:A3
-  label: 'Olympus (2) – A3: Is Love An Emotion? — Bold Mould [2010]'
+  label: 'Olympus – A3: Is Love An Emotion? — Bold Mould [2010]'
 - value: 2462898:A4
-  label: 'Olympus (2) – A4: The Beard Or The Blood — Bold Mould [2010]'
+  label: 'Olympus – A4: The Beard Or The Blood — Bold Mould [2010]'
 - value: 2462898:A5
-  label: 'Olympus (2) – A5: Dear Listener — Bold Mould [2010]'
+  label: 'Olympus – A5: Dear Listener — Bold Mould [2010]'
 - value: 2462898:B1
-  label: 'Olympus (2) – B1: Laser Burn — Bold Mould [2010]'
+  label: 'Olympus – B1: Laser Burn — Bold Mould [2010]'
 - value: 2462898:B2
-  label: 'Olympus (2) – B2: Untitled — Bold Mould [2010]'
+  label: 'Olympus – B2: Untitled — Bold Mould [2010]'
 - value: 2462898:B3
-  label: 'Olympus (2) – B3: Ere I Die — Bold Mould [2010]'
+  label: 'Olympus – B3: Ere I Die — Bold Mould [2010]'
 - value: 2462898:B4
-  label: 'Olympus (2) – B4: Heavy Punter — Bold Mould [2010]'
+  label: 'Olympus – B4: Heavy Punter — Bold Mould [2010]'
 - value: 2462898:B5
-  label: 'Olympus (2) – B5: Charles Martel — Bold Mould [2010]'
+  label: 'Olympus – B5: Charles Martel — Bold Mould [2010]'
 - value: 248334:A1
   label: 'Omit – A1: Pre-Gain. (The Rise Of Disbelief.) — Retraction [1993]'
 - value: 248334:A2
@@ -8501,23 +8501,23 @@
 - value: '824340:40'
   label: 'Panam – 40: Interstate Boy — Very Short Films - Flying Nun DVD [2004]'
 - value: 29153263:A1
-  label: 'Panda Bear, Sonic Boom (2) – A1: Gettin’ To The Point Dub (3:33) — Reset In Dub [2023]'
+  label: 'Panda Bear, Sonic Boom – A1: Gettin’ To The Point Dub (3:33) — Reset In Dub [2023]'
 - value: 29153263:A2
-  label: 'Panda Bear, Sonic Boom (2) – A2: Go On Dub  (4:48) — Reset In Dub [2023]'
+  label: 'Panda Bear, Sonic Boom – A2: Go On Dub (4:48) — Reset In Dub [2023]'
 - value: 29153263:A3
-  label: 'Panda Bear, Sonic Boom (2) – A3: Everyday Dub (3:50) — Reset In Dub [2023]'
+  label: 'Panda Bear, Sonic Boom – A3: Everyday Dub (3:50) — Reset In Dub [2023]'
 - value: 29153263:A4
-  label: 'Panda Bear, Sonic Boom (2) – A4: Edge Of The Edge Dub (5:33) — Reset In Dub [2023]'
+  label: 'Panda Bear, Sonic Boom – A4: Edge Of The Edge Dub (5:33) — Reset In Dub [2023]'
 - value: 29153263:A5
-  label: 'Panda Bear, Sonic Boom (2) – A5: In My Body Dub (3:37) — Reset In Dub [2023]'
+  label: 'Panda Bear, Sonic Boom – A5: In My Body Dub (3:37) — Reset In Dub [2023]'
 - value: 29153263:B1
-  label: 'Panda Bear, Sonic Boom (2) – B1: Whirlpool Dub (5:01) — Reset In Dub [2023]'
+  label: 'Panda Bear, Sonic Boom – B1: Whirlpool Dub (5:01) — Reset In Dub [2023]'
 - value: 29153263:B2
-  label: 'Panda Bear, Sonic Boom (2) – B2: Danger Dub (7:09) — Reset In Dub [2023]'
+  label: 'Panda Bear, Sonic Boom – B2: Danger Dub (7:09) — Reset In Dub [2023]'
 - value: 29153263:B3
-  label: 'Panda Bear, Sonic Boom (2) – B3: Livin'' In The After Dub (4:31) — Reset In Dub [2023]'
+  label: 'Panda Bear, Sonic Boom – B3: Livin'' In The After Dub (4:31) — Reset In Dub [2023]'
 - value: 29153263:B4
-  label: 'Panda Bear, Sonic Boom (2) – B4: Everything’s Been Leading To This Dub (5:26) — Reset In Dub [2023]'
+  label: 'Panda Bear, Sonic Boom – B4: Everything’s Been Leading To This Dub (5:26) — Reset In Dub [2023]'
 - value: 5694171:A3
   label: 'Parliament – A3: Flash Light — Solid Gold Hits Volume 22 [1978]'
 - value: 10690513:C1
@@ -8547,69 +8547,69 @@
 - value: 12009384:B7
   label: 'Parquet Courts – B7: Tenderness — Wide Awake! [2018]'
 - value: 15640334:A1
-  label: 'Parsnip (2) – A1: Adding Up — Adding Up [2020]'
+  label: 'Parsnip – A1: Adding Up — Adding Up [2020]'
 - value: 11228498:A1
-  label: 'Parsnip (2) – A1: Health (2:32) — Health [2017]'
+  label: 'Parsnip – A1: Health (2:32) — Health [2017]'
 - value: 30534334:A1
-  label: 'Parsnip (2) – A1: Monument — Behold [2024]'
+  label: 'Parsnip – A1: Monument — Behold [2024]'
 - value: 14002465:A1
-  label: 'Parsnip (2) – A1: Taking Me For A Ride — When The Tree Bears Fruit [2019]'
+  label: 'Parsnip – A1: Taking Me For A Ride — When The Tree Bears Fruit [2019]'
 - value: 14002465:A2
-  label: 'Parsnip (2) – A2: Lift Off! — When The Tree Bears Fruit [2019]'
+  label: 'Parsnip – A2: Lift Off! — When The Tree Bears Fruit [2019]'
 - value: 11228498:A2
-  label: 'Parsnip (2) – A2: Nigella (2:09) — Health [2017]'
+  label: 'Parsnip – A2: Nigella (2:09) — Health [2017]'
 - value: 30534334:A2
-  label: 'Parsnip (2) – A2: The Light — Behold [2024]'
+  label: 'Parsnip – A2: The Light — Behold [2024]'
 - value: 15640334:A2
-  label: 'Parsnip (2) – A2: Treacle Toffee World — Adding Up [2020]'
+  label: 'Parsnip – A2: Treacle Toffee World — Adding Up [2020]'
 - value: 30534334:A3
-  label: 'Parsnip (2) – A3: Duality — Behold [2024]'
+  label: 'Parsnip – A3: Duality — Behold [2024]'
 - value: 14002465:A3
-  label: 'Parsnip (2) – A3: Lighthouse Beacon — When The Tree Bears Fruit [2019]'
+  label: 'Parsnip – A3: Lighthouse Beacon — When The Tree Bears Fruit [2019]'
 - value: 30534334:A4
-  label: 'Parsnip (2) – A4: L.O.N.E. — Behold [2024]'
+  label: 'Parsnip – A4: L.O.N.E. — Behold [2024]'
 - value: 14002465:A4
-  label: 'Parsnip (2) – A4: Sprouts — When The Tree Bears Fruit [2019]'
+  label: 'Parsnip – A4: Sprouts — When The Tree Bears Fruit [2019]'
 - value: 30534334:A5
-  label: 'Parsnip (2) – A5: Placeholder — Behold [2024]'
+  label: 'Parsnip – A5: Placeholder — Behold [2024]'
 - value: 14002465:A5
-  label: 'Parsnip (2) – A5: Too Late — When The Tree Bears Fruit [2019]'
+  label: 'Parsnip – A5: Too Late — When The Tree Bears Fruit [2019]'
 - value: 30534334:A6
-  label: 'Parsnip (2) – A6: Pockets — Behold [2024]'
+  label: 'Parsnip – A6: Pockets — Behold [2024]'
 - value: 14002465:A6
-  label: 'Parsnip (2) – A6: Rip It Off — When The Tree Bears Fruit [2019]'
+  label: 'Parsnip – A6: Rip It Off — When The Tree Bears Fruit [2019]'
 - value: 30534334:A7
-  label: 'Parsnip (2) – A7: Unearthing — Behold [2024]'
+  label: 'Parsnip – A7: Unearthing — Behold [2024]'
 - value: 15640334:B1
-  label: 'Parsnip (2) – B1: Crossword Cheater — Adding Up [2020]'
+  label: 'Parsnip – B1: Crossword Cheater — Adding Up [2020]'
 - value: 11228498:B1
-  label: 'Parsnip (2) – B1: Seeing Red (2:03) — Health [2017]'
+  label: 'Parsnip – B1: Seeing Red (2:03) — Health [2017]'
 - value: 14002465:B1
-  label: 'Parsnip (2) – B1: Soft Spot — When The Tree Bears Fruit [2019]'
+  label: 'Parsnip – B1: Soft Spot — When The Tree Bears Fruit [2019]'
 - value: 30534334:B10
-  label: 'Parsnip (2) – B10: Clear Blue Sky — Behold [2024]'
+  label: 'Parsnip – B10: Clear Blue Sky — Behold [2024]'
 - value: 30534334:B11
-  label: 'Parsnip (2) – B11: Swan Song — Behold [2024]'
+  label: 'Parsnip – B11: Swan Song — Behold [2024]'
 - value: 30534334:B12
-  label: 'Parsnip (2) – B12: Papier-Mâché — Behold [2024]'
+  label: 'Parsnip – B12: Papier-Mâché — Behold [2024]'
 - value: 30534334:B13
-  label: 'Parsnip (2) – B13: Kutastha — Behold [2024]'
+  label: 'Parsnip – B13: Kutastha — Behold [2024]'
 - value: 11228498:B2
-  label: 'Parsnip (2) – B2: Dummkopf (1:27) — Health [2017]'
+  label: 'Parsnip – B2: Dummkopf (1:27) — Health [2017]'
 - value: 14002465:B2
-  label: 'Parsnip (2) – B2: Lullaby — When The Tree Bears Fruit [2019]'
+  label: 'Parsnip – B2: Lullaby — When The Tree Bears Fruit [2019]'
 - value: 15640334:B2
-  label: 'Parsnip (2) – B2: Repeater  — Adding Up [2020]'
+  label: 'Parsnip – B2: Repeater — Adding Up [2020]'
 - value: 14002465:B3
-  label: 'Parsnip (2) – B3: My Window — When The Tree Bears Fruit [2019]'
+  label: 'Parsnip – B3: My Window — When The Tree Bears Fruit [2019]'
 - value: 14002465:B4
-  label: 'Parsnip (2) – B4: Seafarer — When The Tree Bears Fruit [2019]'
+  label: 'Parsnip – B4: Seafarer — When The Tree Bears Fruit [2019]'
 - value: 14002465:B5
-  label: 'Parsnip (2) – B5: Trip The Light Fantastic — When The Tree Bears Fruit [2019]'
+  label: 'Parsnip – B5: Trip The Light Fantastic — When The Tree Bears Fruit [2019]'
 - value: 30534334:B8
-  label: 'Parsnip (2) – B8: The Babble — Behold [2024]'
+  label: 'Parsnip – B8: The Babble — Behold [2024]'
 - value: 30534334:B9
-  label: 'Parsnip (2) – B9: Turn To Love — Behold [2024]'
+  label: 'Parsnip – B9: Turn To Love — Behold [2024]'
 - value: 2840291:A2
   label: 'Patti Smith – A2: Redondo Beach (3:24) — Horses [1976]'
 - value: 2840291:A3
@@ -9241,7 +9241,7 @@
 - value: 5848636:B5
   label: 'Plastic Bertrand – B5: Solo Naif-Song (0:35) — An 1 [1978]'
 - value: 5115883:A1
-  label: 'Plasticine (6) – A1: A Walk On The Ceiling — Kiwi Music Sampler [2000]'
+  label: 'Plasticine – A1: A Walk On The Ceiling — Kiwi Music Sampler [2000]'
 - value: 472564:A3
   label: 'Player [1] – A3: Space Invaders — 20 Original Solid Gold Hits Volume 27 [1980]'
 - value: 1427692:A1
@@ -9281,7 +9281,7 @@
 - value: 6769709:B2
   label: 'Plover – B2: Fall Out (4:21) — 4 Track Recordings [1994]'
 - value: 24619274:C3
-  label: 'Pond (5) – C3: Fantastic Explosion Of Time — Garage Psychédélique (The Best Of Garage Psych And Pzyk Rock 1965-2019) [2022]'
+  label: 'Pond – C3: Fantastic Explosion Of Time — Garage Psychédélique (The Best Of Garage Psych And Pzyk Rock 1965-2019) [2022]'
 - value: 1038214:3-13
   label: 'Pop Art Toasters – 3-13: What Am I Going To Do (2:28) — Flying Nun 25th Anniversary Box Set [2006]'
 - value: 1107053:A3
@@ -9333,7 +9333,7 @@
 - value: 8170055:B7
   label: 'Pray For Rain – B7: Taxi To Heaven (1:32) — Sid & Nancy: Love Kills (Music From The Motion Picture Soundtrack) [1986]'
 - value: 1437951:B4
-  label: 'Precious (10) – B4: Sympathy (4:15) — Barking Up The Right Tree [1983]'
+  label: 'Precious – B4: Sympathy (4:15) — Barking Up The Right Tree [1983]'
 - value: 950267:A1
   label: 'Primal Scream – A1: Ivy Ivy Ivy — Primal Scream [1989]'
 - value: 950267:A2
@@ -9363,7 +9363,7 @@
 - value: 4984524:B5
   label: 'Primmers – B5: You''re Gonna Get Done (3:15) — AK•79'
 - value: 8697196:A1
-  label: 'Prince And The Revolution – A1: Around The World In  A Day (3:25) — Around The World In A Day [1985]'
+  label: 'Prince And The Revolution – A1: Around The World In A Day (3:25) — Around The World In A Day [1985]'
 - value: 8697196:A2
   label: 'Prince And The Revolution – A2: Paisley Park (4:41) — Around The World In A Day [1985]'
 - value: 8697196:A3
@@ -9455,7 +9455,7 @@
 - value: 20362099:B2
   label: 'Quantic, Flowering Inferno – B2: All I Do Is Think About You (Far East Dub) (3:21) — LateNightTales (Version Excursion) [2021]'
 - value: 1519900:A3
-  label: 'Quatermass (4) – A3: Gravity Depravity — Solid Cold Hits - A Dunedin Compilation [1992]'
+  label: 'Quatermass – A3: Gravity Depravity — Solid Cold Hits - A Dunedin Compilation [1992]'
 - value: 9371072:A1
   label: 'Queen – A1: Bohemian Rhapsody (5:54) — Greatest Hits [2016]'
 - value: 9371072:A2
@@ -9533,9 +9533,9 @@
 - value: 14426180:D2
   label: 'Queens Of The Stone Age – D2: Mosquito Song — Songs For The Deaf [2019]'
 - value: 1209632:A
-  label: 'Rain (4) – A: Myacine — Myacine / Invisible [1995]'
+  label: 'Rain – A: Myacine — Myacine / Invisible [1995]'
 - value: 1209632:B
-  label: 'Rain (4) – B: Invisible — Myacine / Invisible [1995]'
+  label: 'Rain – B: Invisible — Myacine / Invisible [1995]'
 - value: 8394654:A
   label: 'Ramones – A: I Wanna Be Your Boyfriend (2:23) — I Wanna Be Your Boyfriend [2016]'
 - value: 4232675:A1
@@ -9605,7 +9605,7 @@
 - value: 4232675:D7
   label: 'Ramones – D7: Rock ''N'' Roll High School (2:14) — Ramones Mania'
 - value: 1107053:B4
-  label: 'Rank & File (2) – B4: Brand New World — More Hits And Myths [1982]'
+  label: 'Rank & File – B4: Brand New World — More Hits And Myths [1982]'
 - value: 11470013:A2
   label: 'Raspberries – A2: Go All The Way (3:21) — Guardians Of The Galaxy: Awesome Mix Vol. 1 (Original Motion Picture Soundtrack) [2018]'
 - value: 1461083:B
@@ -9665,7 +9665,7 @@
 - value: 8847318:B6
   label: 'Rhoda Dakar – B6: The Boiler (5:45) — This Are Two Tone [1983]'
 - value: 7030676:B4
-  label: 'Rhythm Method (3) – B4: Carousel (3:22) — Class Of 81 [1981]'
+  label: 'Rhythm Method – B4: Carousel (3:22) — Class Of 81 [1981]'
 - value: 3693159:A7
   label: 'Richard Hell & The Voidoids – A7: Love Comes In Spurts — New Wave [1978]'
 - value: 4216725:A1
@@ -9675,7 +9675,7 @@
 - value: 4216725:A3
   label: 'Richard O''Brien, Barry Bostwick, Susan Sarandon – A3: Over At The Frankenstein Place (2:37) — The Rocky Horror Picture Show [1975]'
 - value: 4216725:A4
-  label: 'Richard O''Brien, Little Nell, Patricia Quinn, Charles Gray (2), The Transylvanians – A4: The Time Warp (3:15) — The Rocky Horror Picture Show [1975]'
+  label: 'Richard O''Brien, Little Nell, Patricia Quinn, Charles Gray, The Transylvanians – A4: The Time Warp (3:15) — The Rocky Horror Picture Show [1975]'
 - value: '475229:19'
   label: 'Richard Steele – 19: Folk Songs For Michelle (2:01) — Killing Capitalism With Kindness [1992]'
 - value: 7034575:A6
@@ -10079,7 +10079,7 @@
 - value: 32402835:D2
   label: 'Royal Trux – D2: Inside Game — High Fidelity (Original Soundtrack) [2024]'
 - value: 20362099:A5
-  label: 'Rude Boy (27) – A5: Superstylin'' (4:39) — LateNightTales (Version Excursion) [2021]'
+  label: 'Rude Boy – A5: Superstylin'' (4:39) — LateNightTales (Version Excursion) [2021]'
 - value: 4367452:A1
   label: 'Run-DMC – A1: Peter Piper (3:25) — Raising Hell [2013]'
 - value: 5473827:A1
@@ -10253,7 +10253,7 @@
 - value: 7704578:B5
   label: 'Scientist – B5: Chemistry (2:53) — Introducing Scientist - The Best Dub Album In The World... [2015]'
 - value: '1283278:19'
-  label: 'Scooter (7) – 19: Platypus — God Save The Clean, A Tribute To The Clean [1998]'
+  label: 'Scooter – 19: Platypus — God Save The Clean, A Tribute To The Clean [1998]'
 - value: '773659:1'
   label: 'Scorched Earth Policy – 1: Green Cigar (1:47) — Keep Away From The Wires [2000]'
 - value: '773659:10'
@@ -10679,7 +10679,7 @@
 - value: 2917162:B2
   label: 'Shihad – B2: Wizard — Devolve [1991]'
 - value: 10885801:A8
-  label: 'Shirt (3) – A8: Phantom (Redux) — Silicon Valley (Music From The HBO Original Series) [2017]'
+  label: 'Shirt – A8: Phantom (Redux) — Silicon Valley (Music From The HBO Original Series) [2017]'
 - value: 1038214:4-18
   label: 'Shocking Pinks – 4-18: Emily (2:12) — Flying Nun 25th Anniversary Box Set [2006]'
 - value: 4738558:A1
@@ -10725,7 +10725,7 @@
 - value: 4738558:B6
   label: 'Shriekback – B6: Working On The Ground — The Infinite [1985]'
 - value: 10690513:B4
-  label: 'Silver (10) – B4: Wham Bam Shang-A-Lang — Guardians Of The Galaxy Vol. 2 [2017]'
+  label: 'Silver – B4: Wham Bam Shang-A-Lang — Guardians Of The Galaxy Vol. 2 [2017]'
 - value: 19754935:A1
   label: 'Silver Apples – A1: Oscillations (2:47) — Silver Apples [2021]'
 - value: 19754935:A2
@@ -10915,7 +10915,7 @@
 - value: 1462093:B7
   label: 'Skeptics – B7: Sheen Of Gold (4:40) — Pink Flying Saucers Over The Southern Alps [1991]'
 - value: '2114827:16'
-  label: 'Slate (2) – 16: Handful Of Snakes (2:55) — Music Of Dunedin [1998]'
+  label: 'Slate – 16: Handful Of Snakes (2:55) — Music Of Dunedin [1998]'
 - value: 13607882:A
   label: 'Sleaford Mods – A: Discourse — Discourse [2019]'
 - value: 16242568:A
@@ -11049,7 +11049,7 @@
 - value: 1442597:B
   label: 'Smelly Feet – B: You''re A Person — Master Pieces [1981]'
 - value: 3386976:A3
-  label: 'Smith (3) – A3: The Weight — Easy Rider (Songs As Performed In The Motion Picture) [1969]'
+  label: 'Smith – A3: The Weight — Easy Rider (Songs As Performed In The Motion Picture) [1969]'
 - value: '875631:18'
   label: 'Smog – 18: Burning Kingdom — Fast Forward Sampler [1994]'
 - value: '875631:3'
@@ -11391,7 +11391,7 @@
 - value: '403467:8'
   label: 'Sophie Moleta – 8: Can You? — Runner (A Compilation Of New Zealand Music) [1994]'
 - value: 1107053:A8
-  label: 'Spaces (11) – A8: Just Like Clockwork — More Hits And Myths [1982]'
+  label: 'Spaces – A8: Just Like Clockwork — More Hits And Myths [1982]'
 - value: 842340:B6
   label: 'Spermbank 5 – B6: Call Me Bub — Freak The Sheep (A Compilation Of New Zealand Music) [1991]'
 - value: 1424529:A1
@@ -11745,7 +11745,7 @@
 - value: 12767245:B1
   label: 'Stereolab – B1: The Seeming And The Meaning — Peng! [2018]'
 - value: 34044358:B1
-  label: 'Stereolab – B1: Vermona F Transistor  — Instant Holograms On Metal Film [2025]'
+  label: 'Stereolab – B1: Vermona F Transistor — Instant Holograms On Metal Film [2025]'
 - value: 12788345:B1
   label: 'Stereolab – B1: We''re Not Adult Orientated (6:07) — The Groop Played "Space Age Batchelor Pad Music" [2018]'
 - value: 13581443:B2
@@ -11887,7 +11887,7 @@
 - value: 13574434:D10
   label: 'Stereolab – D10: Lock-Groove Lullaby (3:36) — Transient Random-Noise Bursts With Announcements [2019]'
 - value: 34044358:D2
-  label: 'Stereolab – D2: Colour Television  — Instant Holograms On Metal Film [2025]'
+  label: 'Stereolab – D2: Colour Television — Instant Holograms On Metal Film [2025]'
 - value: 17582533:D2
   label: 'Stereolab – D2: Jump Drive Shout-Out — Electrically Possessed [Switched On Vol. 4] [2021]'
 - value: 13581443:D2
@@ -12060,14 +12060,14 @@
   label: 'Stereolab – F12: Jenny Ondioline - Demo (3:53) — Transient Random-Noise Bursts With Announcements [2019]'
 - value: 13574434:F13
   label: 'Stereolab – F13: Pause - Demo (2:25) — Transient Random-Noise Bursts With Announcements [2019]'
-- value: 14122108:F2
-  label: 'Stereolab – F2:  Spark Plug (Demo) — Emperor Tomato Ketchup (Expanded Edition) [2019]'
 - value: 14128831:F2
   label: 'Stereolab – F2: Blips, Drips & Strips (Demo) — Cobra And Phases Group Play Voltage In The Milky Night [2019]'
 - value: 17582533:F2
   label: 'Stereolab – F2: Calimero — Electrically Possessed [Switched On Vol. 4] [2021]'
 - value: 14118524:F2
   label: 'Stereolab – F2: Contranatura (Demo) — Dots And Loops [2019]'
+- value: 14122108:F2
+  label: 'Stereolab – F2: Spark Plug (Demo) — Emperor Tomato Ketchup (Expanded Edition) [2019]'
 - value: 24375941:F2
   label: 'Stereolab – F2: Unity Purity Occasional — Pulse Of The Early Brain (Switched On Volume 5) [2022]'
 - value: 13581443:F2
@@ -12145,7 +12145,7 @@
 - value: 24375941:B
   label: 'Stereolab, Nurse With Wound – B: Trippin'' With The Birds — Pulse Of The Early Brain (Switched On Volume 5) [2022]'
 - value: 8170055:A3
-  label: 'Steve Jones (2) – A3: Pleasure And Pain (4:57) — Sid & Nancy: Love Kills (Music From The Motion Picture Soundtrack) [1986]'
+  label: 'Steve Jones – A3: Pleasure And Pain (4:57) — Sid & Nancy: Love Kills (Music From The Motion Picture Soundtrack) [1986]'
 - value: '1379578:10'
   label: 'Steve McCabe – 10: Sweat It Out — Noisyland [1992]'
 - value: 11694755:A
@@ -12433,7 +12433,7 @@
 - value: '171239:2'
   label: 'Strange Parcels – 2: Hearts Desire (4:09) — Pay It All Back Volume Three [2000]'
 - value: '171239:10'
-  label: 'Strange Parcels, Bernard Fowler, Akabu (2) – 10: To Be Free (5:37) — Pay It All Back Volume Three [2000]'
+  label: 'Strange Parcels, Bernard Fowler, Akabu – 10: To Be Free (5:37) — Pay It All Back Volume Three [2000]'
 - value: 17487955:A1
   label: 'Stranger & Gladdy – A1: Rudies All Around — Tougher Than Tough: Trojan Rude Boy Sounds [2021]'
 - value: 2191976:B2
@@ -12449,25 +12449,25 @@
 - value: 14719804:C7
   label: 'Suburban Reptiles – C7: Saturday Night Stay At Home — AK•79 [2020]'
 - value: 1191941:A1
-  label: 'Sugar (5) – A1: The Act We Act (5:10) — Copper Blue [1992]'
+  label: 'Sugar – A1: The Act We Act (5:10) — Copper Blue [1992]'
 - value: 1191941:A2
-  label: 'Sugar (5) – A2: A Good Idea (3:47) — Copper Blue [1992]'
+  label: 'Sugar – A2: A Good Idea (3:47) — Copper Blue [1992]'
 - value: 1191941:A3
-  label: 'Sugar (5) – A3: Changes (5:01) — Copper Blue [1992]'
+  label: 'Sugar – A3: Changes (5:01) — Copper Blue [1992]'
 - value: 1191941:A4
-  label: 'Sugar (5) – A4: Helpless (3:05) — Copper Blue [1992]'
+  label: 'Sugar – A4: Helpless (3:05) — Copper Blue [1992]'
 - value: 1191941:A5
-  label: 'Sugar (5) – A5: Hoover Dam (5:27) — Copper Blue [1992]'
+  label: 'Sugar – A5: Hoover Dam (5:27) — Copper Blue [1992]'
 - value: 1191941:B1
-  label: 'Sugar (5) – B1: The Slim (5:14) — Copper Blue [1992]'
+  label: 'Sugar – B1: The Slim (5:14) — Copper Blue [1992]'
 - value: 1191941:B2
-  label: 'Sugar (5) – B2: If I Can''t Change Your Mind (3:18) — Copper Blue [1992]'
+  label: 'Sugar – B2: If I Can''t Change Your Mind (3:18) — Copper Blue [1992]'
 - value: 1191941:B3
-  label: 'Sugar (5) – B3: Fortune Teller (4:27) — Copper Blue [1992]'
+  label: 'Sugar – B3: Fortune Teller (4:27) — Copper Blue [1992]'
 - value: 1191941:B4
-  label: 'Sugar (5) – B4: Slick (4:59) — Copper Blue [1992]'
+  label: 'Sugar – B4: Slick (4:59) — Copper Blue [1992]'
 - value: 1191941:B5
-  label: 'Sugar (5) – B5: Man On The Moon (4:32) — Copper Blue [1992]'
+  label: 'Sugar – B5: Man On The Moon (4:32) — Copper Blue [1992]'
 - value: '1283278:21'
   label: 'Sugarbug – 21: Do Your Thing — God Save The Clean, A Tribute To The Clean [1998]'
 - value: 22662188:A1
@@ -12547,15 +12547,15 @@
 - value: '531655:9'
   label: 'Superette – 9: Knowing Me, Knowing You (3:58) — Abbasalutely [1995]'
 - value: 15835538:A1
-  label: 'Supergrass – A1: Caught By The Fuzz (Original)  — Caught By The Fuzz [2020]'
+  label: 'Supergrass – A1: Caught By The Fuzz (Original) — Caught By The Fuzz [2020]'
 - value: 14686493:A1
   label: 'Supergrass – A1: Diamond Hoo Ha Man — The Strange Ones 1994-2008 [2020]'
 - value: 19975111:A1
   label: 'Supergrass – A1: In It For The Money — In It For The Money [2021]'
 - value: 14686493:A2
-  label: 'Supergrass – A2: Bad Blood  — The Strange Ones 1994-2008 [2020]'
+  label: 'Supergrass – A2: Bad Blood — The Strange Ones 1994-2008 [2020]'
 - value: 15835538:A2
-  label: 'Supergrass – A2: Caught By The Fuzz (Acoustic)  — Caught By The Fuzz [2020]'
+  label: 'Supergrass – A2: Caught By The Fuzz (Acoustic) — Caught By The Fuzz [2020]'
 - value: 19975111:A2
   label: 'Supergrass – A2: Richard III — In It For The Money [2021]'
 - value: 14686493:A3
@@ -12565,7 +12565,7 @@
 - value: 19975111:A4
   label: 'Supergrass – A4: Late In The Day — In It For The Money [2021]'
 - value: 14686493:A4
-  label: 'Supergrass – A4: Rebel In You  — The Strange Ones 1994-2008 [2020]'
+  label: 'Supergrass – A4: Rebel In You — The Strange Ones 1994-2008 [2020]'
 - value: 19975111:A5
   label: 'Supergrass – A5: G-Song — In It For The Money [2021]'
 - value: 14686493:A5
@@ -12575,7 +12575,7 @@
 - value: 19975111:A6
   label: 'Supergrass – A6: Sun Hits The Sky — In It For The Money [2021]'
 - value: 15835538:B1
-  label: 'Supergrass – B1: Caught By The Fuzz (Danny Goffey 2020 Remix)  — Caught By The Fuzz [2020]'
+  label: 'Supergrass – B1: Caught By The Fuzz (Danny Goffey 2020 Remix) — Caught By The Fuzz [2020]'
 - value: 14686493:B1
   label: 'Supergrass – B1: Fin — The Strange Ones 1994-2008 [2020]'
 - value: 19975111:B1
@@ -12621,9 +12621,9 @@
 - value: 19975111:D
   label: 'Supergrass – D: BRA Sun Hits The Sky mix — In It For The Money [2021]'
 - value: 14686493:D1
-  label: 'Supergrass – D1: Sun Hits The Sky  — The Strange Ones 1994-2008 [2020]'
+  label: 'Supergrass – D1: Sun Hits The Sky — The Strange Ones 1994-2008 [2020]'
 - value: 14686493:D2
-  label: 'Supergrass – D2: She''s So Loose  — The Strange Ones 1994-2008 [2020]'
+  label: 'Supergrass – D2: She''s So Loose — The Strange Ones 1994-2008 [2020]'
 - value: 14686493:D3
   label: 'Supergrass – D3: Mansize Rooster — The Strange Ones 1994-2008 [2020]'
 - value: 14686493:D4
@@ -12631,7 +12631,7 @@
 - value: 14686493:D5
   label: 'Supergrass – D5: Lenny — The Strange Ones 1994-2008 [2020]'
 - value: 14686493:D6
-  label: 'Supergrass – D6: Alright  — The Strange Ones 1994-2008 [2020]'
+  label: 'Supergrass – D6: Alright — The Strange Ones 1994-2008 [2020]'
 - value: 14686493:D7
   label: 'Supergrass – D7: Caught By The Fuzz — The Strange Ones 1994-2008 [2020]'
 - value: 19898740:A1
@@ -12653,7 +12653,7 @@
 - value: 19898740:B9
   label: 'Supergroove – B9: You Freak Me — Traction [2021]'
 - value: 726790:B1
-  label: 'Supernova (11) – B1: Sugar Coated Stucco — Dope-Guns-''N-Fucking In The Streets Volume Nine [1994]'
+  label: 'Supernova – B1: Sugar Coated Stucco — Dope-Guns-''N-Fucking In The Streets Volume Nine [1994]'
 - value: 23669468:A1
   label: 'Surface Of The Earth – A1: Arc — Surface Of The Earth [2022]'
 - value: 23669468:A2
@@ -13201,17 +13201,17 @@
 - value: 18531859:B6
   label: 'Teenage Fanclub – B6: Silent Song — Endless Arcade [2021]'
 - value: 1461111:A1
-  label: 'Teeth (5) – A1: Anzac Day — Grate! [1989]'
+  label: 'Teeth – A1: Anzac Day — Grate! [1989]'
 - value: 1461111:A2
-  label: 'Teeth (5) – A2: Mother — Grate! [1989]'
+  label: 'Teeth – A2: Mother — Grate! [1989]'
 - value: 1461111:A3
-  label: 'Teeth (5) – A3: Hi Spiritz — Grate! [1989]'
+  label: 'Teeth – A3: Hi Spiritz — Grate! [1989]'
 - value: 1461111:B1
-  label: 'Teeth (5) – B1: Lion — Grate! [1989]'
+  label: 'Teeth – B1: Lion — Grate! [1989]'
 - value: 1461111:B2
-  label: 'Teeth (5) – B2: Substation — Grate! [1989]'
+  label: 'Teeth – B2: Substation — Grate! [1989]'
 - value: 1461111:B3
-  label: 'Teeth (5) – B3: Wunderschnitsel — Grate! [1989]'
+  label: 'Teeth – B3: Wunderschnitsel — Grate! [1989]'
 - value: 7742617:A
   label: 'Television – A: Marquee Moon Part I (3:13) — Marquee Moon [1977]'
 - value: 32558292:A1
@@ -13661,37 +13661,37 @@
 - value: 7034575:B10
   label: 'The Beach Boys – B10: The Beach Boys Medley — 20 Original Solid Gold Hits Volume 31 [1981]'
 - value: 2355986:A1
-  label: 'The Beat (2) – A1: Tears Of A Clown — What Is Beat?'
+  label: 'The Beat – A1: Tears Of A Clown — What Is Beat?'
 - value: 2355986:A2
-  label: 'The Beat (2) – A2: Hands Off...She''s Mine — What Is Beat?'
+  label: 'The Beat – A2: Hands Off...She''s Mine — What Is Beat?'
 - value: 2355986:A3
-  label: 'The Beat (2) – A3: Mirror In The Bathroom — What Is Beat?'
+  label: 'The Beat – A3: Mirror In The Bathroom — What Is Beat?'
 - value: 2355986:A4
-  label: 'The Beat (2) – A4: Stand Down Margaret — What Is Beat?'
+  label: 'The Beat – A4: Stand Down Margaret — What Is Beat?'
 - value: 8847318:A4
-  label: 'The Beat (2) – A4: Tears Of A Clown (2:41) — This Are Two Tone [1983]'
+  label: 'The Beat – A4: Tears Of A Clown (2:41) — This Are Two Tone [1983]'
 - value: 2355986:A5
-  label: 'The Beat (2) – A5: Doors Of Your Heart — What Is Beat?'
+  label: 'The Beat – A5: Doors Of Your Heart — What Is Beat?'
 - value: 2355986:A6
-  label: 'The Beat (2) – A6: Twist And Crawl — What Is Beat?'
+  label: 'The Beat – A6: Twist And Crawl — What Is Beat?'
 - value: 2355986:A7
-  label: 'The Beat (2) – A7: Save It For later — What Is Beat?'
+  label: 'The Beat – A7: Save It For later — What Is Beat?'
 - value: 8847318:A8
-  label: 'The Beat (2) – A8: Rankin Full Stop (2:47) — This Are Two Tone [1983]'
+  label: 'The Beat – A8: Rankin Full Stop (2:47) — This Are Two Tone [1983]'
 - value: 2355986:B1
-  label: 'The Beat (2) – B1: Too Nice To Talk To — What Is Beat?'
+  label: 'The Beat – B1: Too Nice To Talk To — What Is Beat?'
 - value: 2355986:B2
-  label: 'The Beat (2) – B2: I Confess — What Is Beat?'
+  label: 'The Beat – B2: I Confess — What Is Beat?'
 - value: 2355986:B3
-  label: 'The Beat (2) – B3: Best Friend — What Is Beat?'
+  label: 'The Beat – B3: Best Friend — What Is Beat?'
 - value: 2355986:B4
-  label: 'The Beat (2) – B4: Drowning — What Is Beat?'
+  label: 'The Beat – B4: Drowning — What Is Beat?'
 - value: 2355986:B5
-  label: 'The Beat (2) – B5: Ackee 1-2-3 — What Is Beat?'
+  label: 'The Beat – B5: Ackee 1-2-3 — What Is Beat?'
 - value: 2355986:B6
-  label: 'The Beat (2) – B6: Can''t Get Used To Losing You — What Is Beat?'
+  label: 'The Beat – B6: Can''t Get Used To Losing You — What Is Beat?'
 - value: 2355986:B7
-  label: 'The Beat (2) – B7: Rankin'' Full Stop — What Is Beat?'
+  label: 'The Beat – B7: Rankin'' Full Stop — What Is Beat?'
 - value: 2998563:A1
   label: 'The Beatles – A1: Yesterday (2:02) — The Beatles Ballads (20 Original Tracks) [1980]'
 - value: 2998563:A10
@@ -13875,9 +13875,9 @@
 - value: 7030676:A2
   label: 'The Bombers – A2: Dance (2:09) — Class Of 81 [1981]'
 - value: 1093750:D4
-  label: 'The Bongos (2) – D4: Falling — It''s Bigger Than Both Of Us (NZ Singles 1979-82) [1988]'
+  label: 'The Bongos – D4: Falling — It''s Bigger Than Both Of Us (NZ Singles 1979-82) [1988]'
 - value: 816920:D4
-  label: 'The Bongos (2) – D4: Falling — It''s Bigger Than Both Of Us (NZ Singles 1979–82) [1988]'
+  label: 'The Bongos – D4: Falling — It''s Bigger Than Both Of Us (NZ Singles 1979–82) [1988]'
 - value: 3693159:A6
   label: 'The Boomtown Rats – A6: Born To Burn — New Wave [1978]'
 - value: 3693159:B1
@@ -14117,7 +14117,7 @@
 - value: 1907582:A1
   label: 'The Brian Jonestown Massacre – A1: Evergreen (3:24) — Methodrone [2009]'
 - value: 12074849:A1
-  label: 'The Brian Jonestown Massacre – A1: Hold That Thought — Something Else  [2018]'
+  label: 'The Brian Jonestown Massacre – A1: Hold That Thought — Something Else [2018]'
 - value: 9870694:A1
   label: 'The Brian Jonestown Massacre – A1: Open Minds Now Close — Don''t Get Lost [2017]'
 - value: 3587786:A1
@@ -14127,7 +14127,7 @@
 - value: 822939:A1
   label: 'The Brian Jonestown Massacre – A1: Vacuum Boots — Take It From The Man! [2006]'
 - value: 12074849:A2
-  label: 'The Brian Jonestown Massacre – A2: Animal Wisdom — Something Else  [2018]'
+  label: 'The Brian Jonestown Massacre – A2: Animal Wisdom — Something Else [2018]'
 - value: 9870694:A2
   label: 'The Brian Jonestown Massacre – A2: Melodys Actual Echo Chamber — Don''t Get Lost [2017]'
 - value: 6936880:A2
@@ -14155,7 +14155,7 @@
 - value: 822939:A3
   label: 'The Brian Jonestown Massacre – A3: Oh Lord — Take It From The Man! [2006]'
 - value: 12074849:A3
-  label: 'The Brian Jonestown Massacre – A3: Psychic Lips — Something Else  [2018]'
+  label: 'The Brian Jonestown Massacre – A3: Psychic Lips — Something Else [2018]'
 - value: 9870694:A3
   label: 'The Brian Jonestown Massacre – A3: Resist Much Obey Little — Don''t Get Lost [2017]'
 - value: 822939:A4
@@ -14169,7 +14169,7 @@
 - value: 6936880:A4
   label: 'The Brian Jonestown Massacre – A4: L''Enfer — Musique De Film Imaginé [2015]'
 - value: 12074849:A4
-  label: 'The Brian Jonestown Massacre – A4: Skin And Bones — Something Else  [2018]'
+  label: 'The Brian Jonestown Massacre – A4: Skin And Bones — Something Else [2018]'
 - value: 1907582:A4
   label: 'The Brian Jonestown Massacre – A4: That Girl Suicide (3:41) — Methodrone [2009]'
 - value: 822939:A5
@@ -14177,7 +14177,7 @@
 - value: 6936880:A5
   label: 'The Brian Jonestown Massacre – A5: Elle S''Échappe — Musique De Film Imaginé [2015]'
 - value: 12074849:A5
-  label: 'The Brian Jonestown Massacre – A5: My Poor Heart — Something Else  [2018]'
+  label: 'The Brian Jonestown Massacre – A5: My Poor Heart — Something Else [2018]'
 - value: 2994383:B
   label: 'The Brian Jonestown Massacre – B: There’s A War Going On (4:39) — Iluminomi [2011]'
 - value: 9659776:B
@@ -14189,7 +14189,7 @@
 - value: 7696014:B1
   label: 'The Brian Jonestown Massacre – B1: Leave It Alone (5:58) — Mini Album Thingy Wingy [2015]'
 - value: 12074849:B1
-  label: 'The Brian Jonestown Massacre – B1: My Love — Something Else  [2018]'
+  label: 'The Brian Jonestown Massacre – B1: My Love — Something Else [2018]'
 - value: 822939:B1
   label: 'The Brian Jonestown Massacre – B1: Straight Up And Down — Take It From The Man! [2006]'
 - value: 1907582:B1
@@ -14209,9 +14209,9 @@
 - value: 1668702:B2
   label: 'The Brian Jonestown Massacre – B2: Records — Spacegirl And Other Favorites [2008]'
 - value: 12074849:B2
-  label: 'The Brian Jonestown Massacre – B2: Who Dreams Of Cats?  — Something Else  [2018]'
+  label: 'The Brian Jonestown Massacre – B2: Who Dreams Of Cats? — Something Else [2018]'
 - value: 12074849:B3
-  label: 'The Brian Jonestown Massacre – B3: Fragmentation  — Something Else  [2018]'
+  label: 'The Brian Jonestown Massacre – B3: Fragmentation — Something Else [2018]'
 - value: 7696014:B3
   label: 'The Brian Jonestown Massacre – B3: Here Comes The Waiting For The Sun (5:58) — Mini Album Thingy Wingy [2015]'
 - value: 6936880:B3
@@ -14233,7 +14233,7 @@
 - value: 1907582:B4
   label: 'The Brian Jonestown Massacre – B4: She Made Me (4:42) — Methodrone [2009]'
 - value: 12074849:B4
-  label: 'The Brian Jonestown Massacre – B4: Silent Stream — Something Else  [2018]'
+  label: 'The Brian Jonestown Massacre – B4: Silent Stream — Something Else [2018]'
 - value: 1668702:B4
   label: 'The Brian Jonestown Massacre – B4: Spacegirl (Revisited) — Spacegirl And Other Favorites [2008]'
 - value: 6936880:B5
@@ -14337,7 +14337,7 @@
 - value: 20006755:D3
   label: 'The Bug – D3: The Missing — Fire [2021]'
 - value: 6633124:A1
-  label: 'The Buttons (7) – A1: I''ve Been Lookin'' — Last Of The Garage Punk Unknowns Volume 1 [2015]'
+  label: 'The Buttons – A1: I''ve Been Lookin'' — Last Of The Garage Punk Unknowns Volume 1 [2015]'
 - value: 3386976:A4
   label: 'The Byrds – A4: Wasn''t Born To Follow — Easy Rider (Songs As Performed In The Motion Picture) [1969]'
 - value: '1379578:12'
@@ -14543,7 +14543,7 @@
 - value: 7658341:A3
   label: 'The Chills – A3: Silver Bullets — Silver Bullets [2015]'
 - value: 28582051:A3
-  label: "The Chills – A3: Speak For Yourself\t — Brave Words (Spoken Bravely: The Remix) [2023]"
+  label: 'The Chills – A3: Speak For Yourself — Brave Words (Spoken Bravely: The Remix) [2023]'
 - value: 820704:A3
   label: 'The Chills – A3: Speak For Yourself (1:58) — Brave Words [1987]'
 - value: 12452243:A3
@@ -15327,7 +15327,7 @@
 - value: '1809733:8'
   label: 'The Clouds – 8: 3 Minutes (3:55) — Octopus [1992]'
 - value: 6633124:A2
-  label: 'The Colonials (3) – A2: Crawdad — Last Of The Garage Punk Unknowns Volume 1 [2015]'
+  label: 'The Colonials – A2: Crawdad — Last Of The Garage Punk Unknowns Volume 1 [2015]'
 - value: 24707207:A1
   label: 'The Congos – A1: Fisherman — Heart Of The Congos [2022]'
 - value: 24707207:A2
@@ -15349,7 +15349,7 @@
 - value: 24707207:B5
   label: 'The Congos – B5: Solid Foundation — Heart Of The Congos [2022]'
 - value: 6633124:B8
-  label: 'The Continentals (5) – B8: Gloria — Last Of The Garage Punk Unknowns Volume 1 [2015]'
+  label: 'The Continentals – B8: Gloria — Last Of The Garage Punk Unknowns Volume 1 [2015]'
 - value: 6648516:A
   label: 'The Cookie Crew – A: Born This Way (Let''s Dance) — Born This Way (Let''s Dance) [1989]'
 - value: 6648516:B
@@ -15703,7 +15703,7 @@
 - value: 5694171:A9
   label: 'The Emotions – A9: Flowers — Solid Gold Hits Volume 22 [1978]'
 - value: '2103634:8'
-  label: 'The Enemy (3) – 8: Iggy Told Me (8:46) — Kiwi Rock [1996]'
+  label: 'The Enemy – 8: Iggy Told Me (8:46) — Kiwi Rock [1996]'
 - value: 6633124:B2
   label: 'The Es Shades – B2: Never Met A Girl Like You Before — Last Of The Garage Punk Unknowns Volume 1 [2015]'
 - value: 2191976:B8
@@ -15749,15 +15749,13 @@
 - value: 816910:B3
   label: 'The Exploding Budgies – B3: Sunflower — The Grotesque Singers [1985]'
 - value: 6633124:B3
-  label: 'The Expressions (7) – B3: One More Night — Last Of The Garage Punk Unknowns Volume 1 [2015]'
+  label: 'The Expressions – B3: One More Night — Last Of The Garage Punk Unknowns Volume 1 [2015]'
 - value: 24619274:B2
   label: 'The Eyes – B2: When The Night Falls — Garage Psychédélique (The Best Of Garage Psych And Pzyk Rock 1965-2019) [2022]'
 - value: 372516:A
   label: 'The Fall – A: Hey! Luciani (3:34) — Hey! Luciani [1986]'
 - value: 3450009:A
   label: 'The Fall – A: Lie Dream Of A Casino Soul — Lie Dream Of A Casino Soul [1982]'
-- value: 16925967:A1
-  label: 'The Fall – A1:  D.I.Y. Meat — The Light User Syndrome [2020]'
 - value: 13484744:A1
   label: 'The Fall – A1: Alton Towers — Imperial Wax Solvent [2019]'
 - value: 17954986:A1
@@ -15766,6 +15764,8 @@
   label: 'The Fall – A1: Couldn’t Get Ahead — Schtick: Yarbles Revisited [2015]'
 - value: 5845384:A1
   label: 'The Fall – A1: Cyber Insekt (3:18) — The Unutterable [2014]'
+- value: 16925967:A1
+  label: 'The Fall – A1: D.I.Y. Meat — The Light User Syndrome [2020]'
 - value: 10026945:A1
   label: 'The Fall – A1: Eat Y''self Fitter (6:35) — Perverted By Language [2017]'
 - value: 16087663:A1
@@ -15811,7 +15811,7 @@
 - value: 2002214:A1
   label: 'The Fall – A1: Sing! Harpy — Extricate [1990]'
 - value: 27875853:A1
-  label: 'The Fall – A1: So What About It?  — Shift-Work [2023]'
+  label: 'The Fall – A1: So What About It? — Shift-Work [2023]'
 - value: 15974092:A1
   label: 'The Fall – A1: Stepping Out (2:36) — Short Circuit - Live At The Electric Circus [1978]'
 - value: 12065929:A1
@@ -16079,7 +16079,7 @@
 - value: 13484744:A5
   label: 'The Fall – A5: Strangetown — Imperial Wax Solvent [2019]'
 - value: 27875853:A5
-  label: "The Fall – A5: The Book Of Lies\_ — Shift-Work [2023]"
+  label: 'The Fall – A5: The Book Of Lies — Shift-Work [2023]'
 - value: 10026918:A5
   label: 'The Fall – A5: The Container Drivers — Grotesque (After The Gramme) [2017]'
 - value: 9942524:A5
@@ -16463,7 +16463,7 @@
 - value: 13484744:B6
   label: 'The Fall – B6: Senior Twilight Stock Replacer — Imperial Wax Solvent [2019]'
 - value: 27875853:B6
-  label: "The Fall – B6: Sinister Waltz\_ — Shift-Work [2023]"
+  label: 'The Fall – B6: Sinister Waltz — Shift-Work [2023]'
 - value: 30351227:B6
   label: 'The Fall – B6: Susan Vs Youthclub (3:41) — Country On The Click [2024]'
 - value: 8401852:B7
@@ -16693,35 +16693,35 @@
 - value: 26463236:B3
   label: 'The Flaming Lips – B3: Thank You Jack White (For The Fiber-Optic Jesus That You Gave Me) (3:40) — Fight Test [2023]'
 - value: 1424739:A1
-  label: 'The Fold (3) – A1: Something Moving Along — Fold [1987]'
+  label: 'The Fold – A1: Something Moving Along — Fold [1987]'
 - value: 1424739:A2
-  label: 'The Fold (3) – A2: Rack — Fold [1987]'
+  label: 'The Fold – A2: Rack — Fold [1987]'
 - value: 1424739:A3
-  label: 'The Fold (3) – A3: Nightflowers — Fold [1987]'
+  label: 'The Fold – A3: Nightflowers — Fold [1987]'
 - value: 1424739:A4
-  label: 'The Fold (3) – A4: Witness — Fold [1987]'
+  label: 'The Fold – A4: Witness — Fold [1987]'
 - value: 1424739:A5
-  label: 'The Fold (3) – A5: Guilt — Fold [1987]'
+  label: 'The Fold – A5: Guilt — Fold [1987]'
 - value: 1424739:A6
-  label: 'The Fold (3) – A6: Kiss By The Window — Fold [1987]'
+  label: 'The Fold – A6: Kiss By The Window — Fold [1987]'
 - value: 1424739:A7
-  label: 'The Fold (3) – A7: Untouched — Fold [1987]'
+  label: 'The Fold – A7: Untouched — Fold [1987]'
 - value: 1424739:A8
-  label: 'The Fold (3) – A8: Stab — Fold [1987]'
+  label: 'The Fold – A8: Stab — Fold [1987]'
 - value: 1424739:A9
-  label: 'The Fold (3) – A9: Wire Fence — Fold [1987]'
+  label: 'The Fold – A9: Wire Fence — Fold [1987]'
 - value: 1424739:B1
-  label: 'The Fold (3) – B1: Crowd — Fold [1987]'
+  label: 'The Fold – B1: Crowd — Fold [1987]'
 - value: 1424739:B2
-  label: 'The Fold (3) – B2: Need Of Want — Fold [1987]'
+  label: 'The Fold – B2: Need Of Want — Fold [1987]'
 - value: 791372:B2
-  label: 'The Fold (3) – B2: Need Of Want (3:50) — Outnumbered By Sheep [1986]'
+  label: 'The Fold – B2: Need Of Want (3:50) — Outnumbered By Sheep [1986]'
 - value: 1424739:B3
-  label: 'The Fold (3) – B3: Web — Fold [1987]'
+  label: 'The Fold – B3: Web — Fold [1987]'
 - value: 1424739:B4
-  label: 'The Fold (3) – B4: Insect — Fold [1987]'
+  label: 'The Fold – B4: Insect — Fold [1987]'
 - value: 1424739:B5
-  label: 'The Fold (3) – B5: Meeting — Fold [1987]'
+  label: 'The Fold – B5: Meeting — Fold [1987]'
 - value: 3386976:B1
   label: 'The Fraternity Of Man – B1: Don''t Bogart Me — Easy Rider (Songs As Performed In The Motion Picture) [1969]'
 - value: 997505:A
@@ -16935,7 +16935,7 @@
 - value: 791589:D
   label: 'The Great Unwashed – D: Boat With No Ocean — Singles [1984]'
 - value: 11974023:B4
-  label: 'The Gremlins (3) – B4: Blast Off 1970 — Wild Things (New Zealand Freakbeat 1966-1968) [2018]'
+  label: 'The Gremlins – B4: Blast Off 1970 — Wild Things (New Zealand Freakbeat 1966-1968) [2018]'
 - value: 2946916:A7
   label: 'The Guitars Unlimited Plus 7 – A7: Expresso (2:03) — Stereo Action Unlimited! [1961]'
 - value: 16305822:A1
@@ -17133,19 +17133,19 @@
 - value: 2452831:B5
   label: 'The Human League – B5: Don''t You Want Me (3:56) — Dare! [1981]'
 - value: 19648684:B3
-  label: 'The Hurricanes (2) – B3: Isn''t It Wrong — Africa''s Blood [2021]'
+  label: 'The Hurricanes – B3: Isn''t It Wrong — Africa''s Blood [2021]'
 - value: 6633124:B1
   label: 'The Infinitives – B1: Thousand Tears — Last Of The Garage Punk Unknowns Volume 1 [2015]'
 - value: 920953:A
-  label: 'The Instigators (2) – A: Hope She''s Alright — Hope She''s Alright [1982]'
+  label: 'The Instigators – A: Hope She''s Alright — Hope She''s Alright [1982]'
 - value: 920953:B1
-  label: 'The Instigators (2) – B1: No Problems — Hope She''s Alright [1982]'
+  label: 'The Instigators – B1: No Problems — Hope She''s Alright [1982]'
 - value: 920953:B2
-  label: 'The Instigators (2) – B2: No Problems Dub .. — Hope She''s Alright [1982]'
+  label: 'The Instigators – B2: No Problems Dub .. — Hope She''s Alright [1982]'
 - value: 1093750:C1
-  label: 'The Instigators (2) – C1: Hope She''s Alright — It''s Bigger Than Both Of Us (NZ Singles 1979-82) [1988]'
+  label: 'The Instigators – C1: Hope She''s Alright — It''s Bigger Than Both Of Us (NZ Singles 1979-82) [1988]'
 - value: 816920:C1
-  label: 'The Instigators (2) – C1: Hope She''s Alright — It''s Bigger Than Both Of Us (NZ Singles 1979–82) [1988]'
+  label: 'The Instigators – C1: Hope She''s Alright — It''s Bigger Than Both Of Us (NZ Singles 1979–82) [1988]'
 - value: 11470013:A6
   label: 'The Jackson 5 – A6: I Want You Back (2:58) — Guardians Of The Galaxy: Awesome Mix Vol. 1 (Original Motion Picture Soundtrack) [2018]'
 - value: 964364:A1
@@ -17283,7 +17283,7 @@
 - value: 3386976:B2
   label: 'The Jimi Hendrix Experience – B2: If Six Was Nine — Easy Rider (Songs As Performed In The Motion Picture) [1969]'
 - value: 6633124:B7
-  label: 'The Jolly Beggars (2) – B7: The Last Step Of Doom — Last Of The Garage Punk Unknowns Volume 1 [2015]'
+  label: 'The Jolly Beggars – B7: The Last Step Of Doom — Last Of The Garage Punk Unknowns Volume 1 [2015]'
 - value: 6323006:A1
   label: 'The Jonahs – A1: Short Letter, Long Farewell — Bills Of Happiness [1987]'
 - value: 6323006:A2
@@ -17295,9 +17295,9 @@
 - value: 6323006:B2
   label: 'The Jonahs – B2: History Of The Rock & Roll Revival — Bills Of Happiness [1987]'
 - value: 6633124:A6
-  label: 'The Juveniles (2) – A6: I Wish I Could — Last Of The Garage Punk Unknowns Volume 1 [2015]'
+  label: 'The Juveniles – A6: I Wish I Could — Last Of The Garage Punk Unknowns Volume 1 [2015]'
 - value: 3567770:A1
-  label: 'The Kids (2) – A1: Somebody Come And Play — Somebody Come And Play [1974]'
+  label: 'The Kids – A1: Somebody Come And Play — Somebody Come And Play [1974]'
 - value: 5163128:A1
   label: 'The Kids From Fame – A1: Starmaker (4:06) — The Kids From Fame [1982]'
 - value: 5163128:A2
@@ -17319,7 +17319,7 @@
 - value: 5163128:B5
   label: 'The Kids From Fame – B5: Be My Music (3:43) — The Kids From Fame [1982]'
 - value: 7030676:A5
-  label: 'The Killjoys (3) – A5: I''m Normal (1:55) — Class Of 81 [1981]'
+  label: 'The Killjoys – A5: I''m Normal (1:55) — Class Of 81 [1981]'
 - value: 6272284:A1
   label: 'The Kinks – A1: You Really Got Me — 18 Karat Kinks [1981]'
 - value: 6272284:A2
@@ -17693,7 +17693,7 @@
 - value: 3791540:B6
   label: 'The Max Block – B6: Establish An Order — Air Ache In The Belly Of The Leech [2012]'
 - value: 2191976:A1
-  label: 'The Maytals, The Vikings (2) – A1: Six And Seven Books Of Moses — More Intensified! Original Ska 1963-67 Vol. 2 [1980]'
+  label: 'The Maytals, The Vikings – A1: Six And Seven Books Of Moses — More Intensified! Original Ska 1963-67 Vol. 2 [1980]'
 - value: 2020453:1-10
   label: 'The Mint Chicks – 1-10: Crush — Stroke (Songs For Chris Knox) [2009]'
 - value: 1038214:4-20
@@ -17703,23 +17703,23 @@
 - value: 1437951:B7
   label: 'The Mockers – B7: Good Old Days (4:10) — Barking Up The Right Tree [1983]'
 - value: 8707763:A1
-  label: "The Modern Lovers – A1: Roadrunner\t — The Modern Lovers  [2016]"
+  label: 'The Modern Lovers – A1: Roadrunner — The Modern Lovers [2016]'
 - value: 8707763:A2
-  label: "The Modern Lovers – A2: Astral Plane\t — The Modern Lovers  [2016]"
+  label: 'The Modern Lovers – A2: Astral Plane — The Modern Lovers [2016]'
 - value: 8707763:A3
-  label: "The Modern Lovers – A3: Old World\t — The Modern Lovers  [2016]"
+  label: 'The Modern Lovers – A3: Old World — The Modern Lovers [2016]'
 - value: 8707763:A4
-  label: "The Modern Lovers – A4: Pablo Picasso\t — The Modern Lovers  [2016]"
+  label: 'The Modern Lovers – A4: Pablo Picasso — The Modern Lovers [2016]'
 - value: 8707763:B1
-  label: "The Modern Lovers – B1: She Cracked\t — The Modern Lovers  [2016]"
+  label: 'The Modern Lovers – B1: She Cracked — The Modern Lovers [2016]'
 - value: 8707763:B2
-  label: "The Modern Lovers – B2: Hospital\t — The Modern Lovers  [2016]"
+  label: 'The Modern Lovers – B2: Hospital — The Modern Lovers [2016]'
 - value: 8707763:B3
-  label: "The Modern Lovers – B3: Someone I Care About\t — The Modern Lovers  [2016]"
+  label: 'The Modern Lovers – B3: Someone I Care About — The Modern Lovers [2016]'
 - value: 8707763:B4
-  label: "The Modern Lovers – B4: Girl Friend\t — The Modern Lovers  [2016]"
+  label: 'The Modern Lovers – B4: Girl Friend — The Modern Lovers [2016]'
 - value: 8707763:B5
-  label: "The Modern Lovers – B5: Modern World\t — The Modern Lovers  [2016]"
+  label: 'The Modern Lovers – B5: Modern World — The Modern Lovers [2016]'
 - value: 7030676:A6
   label: 'The Moderns – A6: The Day Has Ended (3:02) — Class Of 81 [1981]'
 - value: 8457600:A1
@@ -17961,27 +17961,27 @@
 - value: 18297991:D6
   label: 'The Nightingales – D6: Elvis, The Last Ten Days — Pigs On Purpose [2021]'
 - value: 9837966:A1
-  label: 'The Nudge (2) – A1: Dark Arts — Dark Arts [2017]'
+  label: 'The Nudge – A1: Dark Arts — Dark Arts [2017]'
 - value: 9837966:A2
-  label: 'The Nudge (2) – A2: The Balance Change — Dark Arts [2017]'
+  label: 'The Nudge – A2: The Balance Change — Dark Arts [2017]'
 - value: 5694171:B3
   label: 'The O''Jays – B3: Used Ta Be My Girl — Solid Gold Hits Volume 22 [1978]'
 - value: 1038214:2-07
-  label: 'The Orange (2) – 2-07: What''s In A Name (E.P. Version) (3:19) — Flying Nun 25th Anniversary Box Set [2006]'
+  label: 'The Orange – 2-07: What''s In A Name (E.P. Version) (3:19) — Flying Nun 25th Anniversary Box Set [2006]'
 - value: '475229:15'
   label: 'The Organs Of Site – 15: Sluice (0:31) — Killing Capitalism With Kindness [1992]'
 - value: 17487955:B3
-  label: 'The Originators (4) – B3: Hot Iron — Tougher Than Tough: Trojan Rude Boy Sounds [2021]'
+  label: 'The Originators – B3: Hot Iron — Tougher Than Tough: Trojan Rude Boy Sounds [2021]'
 - value: 6633124:B5
-  label: 'The Other Side (19) – B5: What In The World — Last Of The Garage Punk Unknowns Volume 1 [2015]'
+  label: 'The Other Side – B5: What In The World — Last Of The Garage Punk Unknowns Volume 1 [2015]'
 - value: 24619274:A3
-  label: 'The Paragons (3) – A3: Abba — Garage Psychédélique (The Best Of Garage Psych And Pzyk Rock 1965-2019) [2022]'
+  label: 'The Paragons – A3: Abba — Garage Psychédélique (The Best Of Garage Psych And Pzyk Rock 1965-2019) [2022]'
 - value: 13399925:A5
   label: 'The Partridge Family – A5: One Of Those Nights — 20 Dynamite Hits [1972]'
 - value: 13399925:B10
   label: 'The Partridge Family – B10: I Think I Love You — 20 Dynamite Hits [1972]'
 - value: 6633124:A4
-  label: 'The Pastels (3) – A4: Mirage — Last Of The Garage Punk Unknowns Volume 1 [2015]'
+  label: 'The Pastels – A4: Mirage — Last Of The Garage Punk Unknowns Volume 1 [2015]'
 - value: 1038214:1-04
   label: 'The Pin Group – 1-04: Ambivalence (3:24) — Flying Nun 25th Anniversary Box Set [2006]'
 - value: '1192976:1'
@@ -18041,7 +18041,7 @@
 - value: 11974023:A7
   label: 'The Pleazers – A7: Hurtin'' All Over — Wild Things (New Zealand Freakbeat 1966-1968) [2018]'
 - value: 24619274:B4
-  label: 'The Poets (2) – B4: That’s The Way It’s Gotta Be — Garage Psychédélique (The Best Of Garage Psych And Pzyk Rock 1965-2019) [2022]'
+  label: 'The Poets – B4: That’s The Way It’s Gotta Be — Garage Psychédélique (The Best Of Garage Psych And Pzyk Rock 1965-2019) [2022]'
 - value: 13435680:A1
   label: 'The Pogues – A1: The Sick Bed Of Cúchulainn — Rum Sodomy & The Lash [1985]'
 - value: 8170055:A2
@@ -18073,7 +18073,7 @@
 - value: 13399925:A7
   label: 'The Pop Tops – A7: Mammy Blue — 20 Dynamite Hits [1972]'
 - value: 24619274:A5
-  label: 'The Preachers (2) – A5: Who Do You Love ** — Garage Psychédélique (The Best Of Garage Psych And Pzyk Rock 1965-2019) [2022]'
+  label: 'The Preachers – A5: Who Do You Love ** — Garage Psychédélique (The Best Of Garage Psych And Pzyk Rock 1965-2019) [2022]'
 - value: 4274429:A1
   label: 'The Pretenders – A1: My Baby (4:07) — Get Close [1986]'
 - value: 4274429:A2
@@ -18185,7 +18185,7 @@
 - value: '8900267:9'
   label: 'The Reduction Agents – 9: The Pool — Dance Reduction Agents [2016]'
 - value: 1833199:A5
-  label: 'The Remarkables (2) – A5: Reno — Weird Culture Weird Custom [1986]'
+  label: 'The Remarkables – A5: Reno — Weird Culture Weird Custom [1986]'
 - value: '8198810:1'
   label: 'The Renderers – 1: Omaharsh (1:22) — In The Sodium Light [2016]'
 - value: '8198810:2'
@@ -18221,7 +18221,7 @@
 - value: 820750:B2
   label: 'The Rip – B2: Up And Down — A Timeless Peace [1984]'
 - value: 11974023:B2
-  label: 'The Roadrunners (6) – B2: L.S.D. — Wild Things (New Zealand Freakbeat 1966-1968) [2018]'
+  label: 'The Roadrunners – B2: L.S.D. — Wild Things (New Zealand Freakbeat 1966-1968) [2018]'
 - value: 6530138:A
   label: 'The Rolling Stones – A: Mother''s Little Helper (2:40) — Mother''s Little Helper [1966]'
 - value: 6530138:B
@@ -18253,7 +18253,7 @@
 - value: 17487955:C6
   label: 'The Rulers – C6: Copasetic — Tougher Than Tough: Trojan Rude Boy Sounds [2021]'
 - value: 13399925:B6
-  label: 'The Rumour (2) – B6: L''Amour Est L''Enfant De La Liberte — 20 Dynamite Hits [1972]'
+  label: 'The Rumour – B6: L''Amour Est L''Enfant De La Liberte — 20 Dynamite Hits [1972]'
 - value: 3693159:A5
   label: 'The Runaways – A5: Hollywood — New Wave [1978]'
 - value: 11470013:B3
@@ -18261,25 +18261,25 @@
 - value: 3693159:B7
   label: 'The Runaways – B7: Cherry Bomb — New Wave [1978]'
 - value: 1461153:A1
-  label: 'The Saints (2) – A1: (I''m) Stranded (3:32) — (I''m) Stranded [2003]'
+  label: 'The Saints – A1: (I''m) Stranded (3:32) — (I''m) Stranded [2003]'
 - value: 1461153:A2
-  label: 'The Saints (2) – A2: One Way Street (2:56) — (I''m) Stranded [2003]'
+  label: 'The Saints – A2: One Way Street (2:56) — (I''m) Stranded [2003]'
 - value: 1461153:A3
-  label: 'The Saints (2) – A3: Wild About You (2:35) — (I''m) Stranded [2003]'
+  label: 'The Saints – A3: Wild About You (2:35) — (I''m) Stranded [2003]'
 - value: 1461153:A4
-  label: 'The Saints (2) – A4: Messin'' With The Kid (5:54) — (I''m) Stranded [2003]'
+  label: 'The Saints – A4: Messin'' With The Kid (5:54) — (I''m) Stranded [2003]'
 - value: 1461153:A5
-  label: 'The Saints (2) – A5: Erotic Neurotic (4:07) — (I''m) Stranded [2003]'
+  label: 'The Saints – A5: Erotic Neurotic (4:07) — (I''m) Stranded [2003]'
 - value: 1461153:B1
-  label: 'The Saints (2) – B1: No Time (2:48) — (I''m) Stranded [2003]'
+  label: 'The Saints – B1: No Time (2:48) — (I''m) Stranded [2003]'
 - value: 1461153:B2
-  label: 'The Saints (2) – B2: Kissin'' Cousins (2:00) — (I''m) Stranded [2003]'
+  label: 'The Saints – B2: Kissin'' Cousins (2:00) — (I''m) Stranded [2003]'
 - value: 1461153:B3
-  label: 'The Saints (2) – B3: Story Of Love (3:11) — (I''m) Stranded [2003]'
+  label: 'The Saints – B3: Story Of Love (3:11) — (I''m) Stranded [2003]'
 - value: 1461153:B4
-  label: 'The Saints (2) – B4: Demolition Girl (1:41) — (I''m) Stranded [2003]'
+  label: 'The Saints – B4: Demolition Girl (1:41) — (I''m) Stranded [2003]'
 - value: 1461153:B5
-  label: 'The Saints (2) – B5: Nights In Venice (5:41) — (I''m) Stranded [2003]'
+  label: 'The Saints – B5: Nights In Venice (5:41) — (I''m) Stranded [2003]'
 - value: 14719804:A1
   label: 'The Scavengers – A1: Mysterex — AK•79 [2020]'
 - value: 4984524:A1
@@ -18473,7 +18473,7 @@
 - value: 370197:B5.2
   label: 'The Smashing Pumpkins – B5.2: Untitled — Gish [1991]'
 - value: 11974023:B3
-  label: 'The Smoke (2) – B3: No More Now — Wild Things (New Zealand Freakbeat 1966-1968) [2018]'
+  label: 'The Smoke – B3: No More Now — Wild Things (New Zealand Freakbeat 1966-1968) [2018]'
 - value: 10690513:C2
   label: 'The Sneepers, David Hasselhoff – C2: Guardians Inferno — Guardians Of The Galaxy Vol. 2 [2017]'
 - value: 1038214:3-01
@@ -19055,31 +19055,31 @@
 - value: 1721524:B9
   label: 'The Turtles – B9: You Showed Me (3:05) — The Turtles Collection - 20 Golden Hits [1986]'
 - value: 6559422:A1
-  label: 'The Twerps (2) – A1: House Keys (0:53) — Range Anxiety [2015]'
+  label: 'The Twerps – A1: House Keys (0:53) — Range Anxiety [2015]'
 - value: 6559422:A2
-  label: 'The Twerps (2) – A2: I Don''t Mind (5:30) — Range Anxiety [2015]'
+  label: 'The Twerps – A2: I Don''t Mind (5:30) — Range Anxiety [2015]'
 - value: 6559422:A3
-  label: 'The Twerps (2) – A3: Back To You (2:32) — Range Anxiety [2015]'
+  label: 'The Twerps – A3: Back To You (2:32) — Range Anxiety [2015]'
 - value: 6559422:A4
-  label: 'The Twerps (2) – A4: Stranger (2:56) — Range Anxiety [2015]'
+  label: 'The Twerps – A4: Stranger (2:56) — Range Anxiety [2015]'
 - value: 6559422:A5
-  label: 'The Twerps (2) – A5: New Moves (3:15) — Range Anxiety [2015]'
+  label: 'The Twerps – A5: New Moves (3:15) — Range Anxiety [2015]'
 - value: 6559422:A6
-  label: 'The Twerps (2) – A6: White As Snow (2:23) — Range Anxiety [2015]'
+  label: 'The Twerps – A6: White As Snow (2:23) — Range Anxiety [2015]'
 - value: 6559422:A7
-  label: 'The Twerps (2) – A7: Shoulders (3:41) — Range Anxiety [2015]'
+  label: 'The Twerps – A7: Shoulders (3:41) — Range Anxiety [2015]'
 - value: 6559422:B1
-  label: 'The Twerps (2) – B1: Simple Feelings (3:12) — Range Anxiety [2015]'
+  label: 'The Twerps – B1: Simple Feelings (3:12) — Range Anxiety [2015]'
 - value: 6559422:B2
-  label: 'The Twerps (2) – B2: Adrenaline (3:13) — Range Anxiety [2015]'
+  label: 'The Twerps – B2: Adrenaline (3:13) — Range Anxiety [2015]'
 - value: 6559422:B3
-  label: 'The Twerps (2) – B3: Fern Murderers (2:15) — Range Anxiety [2015]'
+  label: 'The Twerps – B3: Fern Murderers (2:15) — Range Anxiety [2015]'
 - value: 6559422:B4
-  label: 'The Twerps (2) – B4: Cheap Education (2:59) — Range Anxiety [2015]'
+  label: 'The Twerps – B4: Cheap Education (2:59) — Range Anxiety [2015]'
 - value: 6559422:B5
-  label: 'The Twerps (2) – B5: Love At First Sight (3:04) — Range Anxiety [2015]'
+  label: 'The Twerps – B5: Love At First Sight (3:04) — Range Anxiety [2015]'
 - value: 6559422:B6
-  label: 'The Twerps (2) – B6: Empty Road (5:17) — Range Anxiety [2015]'
+  label: 'The Twerps – B6: Empty Road (5:17) — Range Anxiety [2015]'
 - value: 16137917:A1
   label: 'The Upsetters – A1: Eastwood Rides Again — Eastwood Rides Again [2020]'
 - value: 17763229:A1
@@ -19173,9 +19173,9 @@
 - value: 16137917:B7
   label: 'The Upsetters – B7: Tight Spot — Eastwood Rides Again [2020]'
 - value: 17487955:B2
-  label: 'The Valentines (3) – B2: Stop The Violence — Tougher Than Tough: Trojan Rude Boy Sounds [2021]'
+  label: 'The Valentines – B2: Stop The Violence — Tougher Than Tough: Trojan Rude Boy Sounds [2021]'
 - value: 6633124:B6
-  label: 'The Vanguards (12) – B6: What''s Wrong With You — Last Of The Garage Punk Unknowns Volume 1 [2015]'
+  label: 'The Vanguards – B6: What''s Wrong With You — Last Of The Garage Punk Unknowns Volume 1 [2015]'
 - value: 472564:A2
   label: 'The Vapors – A2: I Think I''m Turning Japanese — 20 Original Solid Gold Hits Volume 27 [1980]'
 - value: 5184151:A1
@@ -19229,49 +19229,49 @@
 - value: 32402835:D3
   label: 'The Velvet Underground – D3: Who Loves The Sun — High Fidelity (Original Soundtrack) [2024]'
 - value: 3085892:A1
-  label: 'The Velvet Underground, Nico (3) – A1: Sunday Morning (2:53) — The Velvet Underground & Nico'
+  label: 'The Velvet Underground, Nico – A1: Sunday Morning (2:53) — The Velvet Underground & Nico'
 - value: 381728:A1
-  label: 'The Velvet Underground, Nico (3) – A1: Sunday Morning (2:53) — The Velvet Underground & Nico [1983]'
+  label: 'The Velvet Underground, Nico – A1: Sunday Morning (2:53) — The Velvet Underground & Nico [1983]'
 - value: 3085892:A2
-  label: 'The Velvet Underground, Nico (3) – A2: I''m Waiting For The Man (4:37) — The Velvet Underground & Nico'
+  label: 'The Velvet Underground, Nico – A2: I''m Waiting For The Man (4:37) — The Velvet Underground & Nico'
 - value: 381728:A2
-  label: 'The Velvet Underground, Nico (3) – A2: I''m Waiting For The Man (4:37) — The Velvet Underground & Nico [1983]'
+  label: 'The Velvet Underground, Nico – A2: I''m Waiting For The Man (4:37) — The Velvet Underground & Nico [1983]'
 - value: 3085892:A3
-  label: 'The Velvet Underground, Nico (3) – A3: Femme Fatale (2:35) — The Velvet Underground & Nico'
+  label: 'The Velvet Underground, Nico – A3: Femme Fatale (2:35) — The Velvet Underground & Nico'
 - value: 381728:A3
-  label: 'The Velvet Underground, Nico (3) – A3: Femme Fatale (2:35) — The Velvet Underground & Nico [1983]'
+  label: 'The Velvet Underground, Nico – A3: Femme Fatale (2:35) — The Velvet Underground & Nico [1983]'
 - value: 3085892:A4
-  label: 'The Velvet Underground, Nico (3) – A4: Venus In Furs (5:07) — The Velvet Underground & Nico'
+  label: 'The Velvet Underground, Nico – A4: Venus In Furs (5:07) — The Velvet Underground & Nico'
 - value: 381728:A4
-  label: 'The Velvet Underground, Nico (3) – A4: Venus In Furs (5:07) — The Velvet Underground & Nico [1983]'
+  label: 'The Velvet Underground, Nico – A4: Venus In Furs (5:07) — The Velvet Underground & Nico [1983]'
 - value: 3085892:A5
-  label: 'The Velvet Underground, Nico (3) – A5: Run, Run, Run (4:18) — The Velvet Underground & Nico'
+  label: 'The Velvet Underground, Nico – A5: Run, Run, Run (4:18) — The Velvet Underground & Nico'
 - value: 381728:A5
-  label: 'The Velvet Underground, Nico (3) – A5: Run, Run, Run (4:18) — The Velvet Underground & Nico [1983]'
+  label: 'The Velvet Underground, Nico – A5: Run, Run, Run (4:18) — The Velvet Underground & Nico [1983]'
 - value: 3085892:A6
-  label: 'The Velvet Underground, Nico (3) – A6: All Tomorrow''s Parties (5:55) — The Velvet Underground & Nico'
+  label: 'The Velvet Underground, Nico – A6: All Tomorrow''s Parties (5:55) — The Velvet Underground & Nico'
 - value: 381728:A6
-  label: 'The Velvet Underground, Nico (3) – A6: All Tomorrow''s Parties (5:55) — The Velvet Underground & Nico [1983]'
+  label: 'The Velvet Underground, Nico – A6: All Tomorrow''s Parties (5:55) — The Velvet Underground & Nico [1983]'
 - value: 3085892:B1
-  label: 'The Velvet Underground, Nico (3) – B1: Heroin (7:05) — The Velvet Underground & Nico'
+  label: 'The Velvet Underground, Nico – B1: Heroin (7:05) — The Velvet Underground & Nico'
 - value: 381728:B1
-  label: 'The Velvet Underground, Nico (3) – B1: Heroin (7:05) — The Velvet Underground & Nico [1983]'
+  label: 'The Velvet Underground, Nico – B1: Heroin (7:05) — The Velvet Underground & Nico [1983]'
 - value: 3085892:B2
-  label: 'The Velvet Underground, Nico (3) – B2: There She Goes Again (2:30) — The Velvet Underground & Nico'
+  label: 'The Velvet Underground, Nico – B2: There She Goes Again (2:30) — The Velvet Underground & Nico'
 - value: 381728:B2
-  label: 'The Velvet Underground, Nico (3) – B2: There She Goes Again (2:30) — The Velvet Underground & Nico [1983]'
+  label: 'The Velvet Underground, Nico – B2: There She Goes Again (2:30) — The Velvet Underground & Nico [1983]'
 - value: 3085892:B3
-  label: 'The Velvet Underground, Nico (3) – B3: I''ll Be Your Mirror (2:01) — The Velvet Underground & Nico'
+  label: 'The Velvet Underground, Nico – B3: I''ll Be Your Mirror (2:01) — The Velvet Underground & Nico'
 - value: 381728:B3
-  label: 'The Velvet Underground, Nico (3) – B3: I''ll Be Your Mirror (2:01) — The Velvet Underground & Nico [1983]'
+  label: 'The Velvet Underground, Nico – B3: I''ll Be Your Mirror (2:01) — The Velvet Underground & Nico [1983]'
 - value: 3085892:B4
-  label: 'The Velvet Underground, Nico (3) – B4: Black Angel''s Death Song (3:10) — The Velvet Underground & Nico'
+  label: 'The Velvet Underground, Nico – B4: Black Angel''s Death Song (3:10) — The Velvet Underground & Nico'
 - value: 381728:B4
-  label: 'The Velvet Underground, Nico (3) – B4: Black Angel''s Death Song (3:10) — The Velvet Underground & Nico [1983]'
+  label: 'The Velvet Underground, Nico – B4: Black Angel''s Death Song (3:10) — The Velvet Underground & Nico [1983]'
 - value: 3085892:B5
-  label: 'The Velvet Underground, Nico (3) – B5: European Son To Delmore Schwartz (7:40) — The Velvet Underground & Nico'
+  label: 'The Velvet Underground, Nico – B5: European Son To Delmore Schwartz (7:40) — The Velvet Underground & Nico'
 - value: 381728:B5
-  label: 'The Velvet Underground, Nico (3) – B5: European Son To Delmore Schwartz (7:40) — The Velvet Underground & Nico [1983]'
+  label: 'The Velvet Underground, Nico – B5: European Son To Delmore Schwartz (7:40) — The Velvet Underground & Nico [1983]'
 - value: 1038214:1-17
   label: 'The Verlaines – 1-17: Pyromaniac (3:28) — Flying Nun 25th Anniversary Box Set [2006]'
 - value: 2020453:2-17
@@ -19471,7 +19471,7 @@
 - value: 1189329:B
   label: 'The Wedding Present – B: Unfaithful — Kennedy [1989]'
 - value: 13492315:B
-  label: 'The Wedding Present – B: Катруся  / Katrusya — Davni Chasy / Katrusya [2019]'
+  label: 'The Wedding Present – B: Катруся / Katrusya — Davni Chasy / Katrusya [2019]'
 - value: 1340904:B1
   label: 'The Wedding Present – B1: Crawl — 3 Songs [1990]'
 - value: 3715065:B1
@@ -19769,7 +19769,7 @@
 - value: 16466097:A4
   label: 'Thee Oh Sees – A4: Toadstool Experiment — Panther Rotate [2020]'
 - value: '31481540:A5 '
-  label: 'Thee Oh Sees – A5 : Termination Officer  — SORCS 80 [2024]'
+  label: 'Thee Oh Sees – A5 : Termination Officer — SORCS 80 [2024]'
 - value: 15892878:A5
   label: 'Thee Oh Sees – A5: Terminal Jape (2:20) — Protean Threat [2020]'
 - value: 28003893:A5
@@ -19833,17 +19833,17 @@
 - value: 24619274:C5
   label: 'Thee Oh Sees – C5: Web — Garage Psychédélique (The Best Of Garage Psych And Pzyk Rock 1965-2019) [2022]'
 - value: 1428956:A1
-  label: 'They Were Expendable (2) – A1: Little Hitlers — Big Strain [1983]'
+  label: 'They Were Expendable – A1: Little Hitlers — Big Strain [1983]'
 - value: 1428956:A2
-  label: 'They Were Expendable (2) – A2: Lukewarm Vs Hot — Big Strain [1983]'
+  label: 'They Were Expendable – A2: Lukewarm Vs Hot — Big Strain [1983]'
 - value: 1428956:A3
-  label: 'They Were Expendable (2) – A3: Big Strain — Big Strain [1983]'
+  label: 'They Were Expendable – A3: Big Strain — Big Strain [1983]'
 - value: 1428956:B1
-  label: 'They Were Expendable (2) – B1: Jazz Thing — Big Strain [1983]'
+  label: 'They Were Expendable – B1: Jazz Thing — Big Strain [1983]'
 - value: 1428956:B2
-  label: 'They Were Expendable (2) – B2: Posture — Big Strain [1983]'
+  label: 'They Were Expendable – B2: Posture — Big Strain [1983]'
 - value: 1428956:B3
-  label: 'They Were Expendable (2) – B3: Putting The Eye — Big Strain [1983]'
+  label: 'They Were Expendable – B3: Putting The Eye — Big Strain [1983]'
 - value: 24782414:A1
   label: 'Thinking Fellers Union Local 282 – A1: My Pal The Tortoise (2:46) — Strangers From the Universe [2022]'
 - value: 24782414:A2
@@ -19993,9 +19993,9 @@
 - value: 8559803:B
   label: 'Tiny Ruins – B: Dream Wave (Instrumental) — Dream Wave [2016]'
 - value: '2114827:15'
-  label: 'Toast (11) – 15: Where The Angels Bathe (5:10) — Music Of Dunedin [1998]'
+  label: 'Toast – 15: Where The Angels Bathe (5:10) — Music Of Dunedin [1998]'
 - value: 10885801:A1
-  label: 'Tobacco (3) – A1: Stretch Your Face — Silicon Valley (Music From The HBO Original Series) [2017]'
+  label: 'Tobacco – A1: Stretch Your Face — Silicon Valley (Music From The HBO Original Series) [2017]'
 - value: 3920575:A1
   label: 'Tom Jones – A1: Don''t Fight It — 13 Smash Hits [1967]'
 - value: 5113577:A1
@@ -20049,7 +20049,7 @@
 - value: 472564:B1
   label: 'Tom Petty And The Heartbreakers – B1: Refugee — 20 Original Solid Gold Hits Volume 27 [1980]'
 - value: 11974023:A6
-  label: 'Tom Thumb (2) – A6: You''re Gonna Miss Me — Wild Things (New Zealand Freakbeat 1966-1968) [2018]'
+  label: 'Tom Thumb – A6: You''re Gonna Miss Me — Wild Things (New Zealand Freakbeat 1966-1968) [2018]'
 - value: 11974023:B8
   label: 'Tomorrow''s Love – B8: 7 And 7 Is — Wild Things (New Zealand Freakbeat 1966-1968) [2018]'
 - value: 13386297:A1
@@ -20069,7 +20069,7 @@
 - value: 13386297:B2
   label: 'Tony Hatch Orchestra – B2: Love Is Blue (2:18) — Latin Velvet And Other Warm Sensations [1968]'
 - value: 13386297:B3
-  label: 'Tony Hatch Orchestra – B3: Soul Coaxing (Ame Câline)  (2:35) — Latin Velvet And Other Warm Sensations [1968]'
+  label: 'Tony Hatch Orchestra – B3: Soul Coaxing (Ame Câline) (2:35) — Latin Velvet And Other Warm Sensations [1968]'
 - value: 13386297:B4
   label: 'Tony Hatch Orchestra – B4: Julie (3:19) — Latin Velvet And Other Warm Sensations [1968]'
 - value: 13386297:B5
@@ -20223,25 +20223,25 @@
 - value: 4000923:This Side
   label: 'Toy Love – This Side: Swimming Pool — Swimming Pool / Gargarin [2012]'
 - value: 3620087:A1
-  label: 'Trans Am (2) – A1: Armed Response (4:21) — The Surveillance [2012]'
+  label: 'Trans Am – A1: Armed Response (4:21) — The Surveillance [2012]'
 - value: 3620087:A2
-  label: 'Trans Am (2) – A2: Prowler ''97 (4:28) — The Surveillance [2012]'
+  label: 'Trans Am – A2: Prowler ''97 (4:28) — The Surveillance [2012]'
 - value: 3620087:A3
-  label: 'Trans Am (2) – A3: The Campaign (5:16) — The Surveillance [2012]'
+  label: 'Trans Am – A3: The Campaign (5:16) — The Surveillance [2012]'
 - value: 3620087:A4
-  label: 'Trans Am (2) – A4: Access Control (4:09) — The Surveillance [2012]'
+  label: 'Trans Am – A4: Access Control (4:09) — The Surveillance [2012]'
 - value: 3620087:A5
-  label: 'Trans Am (2) – A5: Endgame (1:19) — The Surveillance [2012]'
+  label: 'Trans Am – A5: Endgame (1:19) — The Surveillance [2012]'
 - value: 3620087:B1
-  label: 'Trans Am (2) – B1: E.S.I. (1:08) — The Surveillance [2012]'
+  label: 'Trans Am – B1: E.S.I. (1:08) — The Surveillance [2012]'
 - value: 3620087:B2
-  label: 'Trans Am (2) – B2: Home Security (4:09) — The Surveillance [2012]'
+  label: 'Trans Am – B2: Home Security (4:09) — The Surveillance [2012]'
 - value: 3620087:B3
-  label: 'Trans Am (2) – B3: Extreme Measures (3:51) — The Surveillance [2012]'
+  label: 'Trans Am – B3: Extreme Measures (3:51) — The Surveillance [2012]'
 - value: 3620087:B4
-  label: 'Trans Am (2) – B4: Shadow Boogie (1:45) — The Surveillance [2012]'
+  label: 'Trans Am – B4: Shadow Boogie (1:45) — The Surveillance [2012]'
 - value: 3620087:B5
-  label: 'Trans Am (2) – B5: Stereo Situation (5:43) — The Surveillance [2012]'
+  label: 'Trans Am – B5: Stereo Situation (5:43) — The Surveillance [2012]'
 - value: '475229:5'
   label: 'Trash – 5: Telecom South (5:04) — Killing Capitalism With Kindness [1992]'
 - value: '475229:8'
@@ -20303,21 +20303,21 @@
 - value: 5242190:B5
   label: 'Trick Mammoth – B5: Week End (2:55) — Floristry [2014]'
 - value: 7429724:A1
-  label: 'Triumphs (2) – A1: Everest Was The First Pyramid (6:19) — Beekeeper/Bastardknocker [2015]'
+  label: 'Triumphs – A1: Everest Was The First Pyramid (6:19) — Beekeeper/Bastardknocker [2015]'
 - value: 7429724:A2
-  label: 'Triumphs (2) – A2: Beekeeper (4:12) — Beekeeper/Bastardknocker [2015]'
+  label: 'Triumphs – A2: Beekeeper (4:12) — Beekeeper/Bastardknocker [2015]'
 - value: 7429724:A3
-  label: 'Triumphs (2) – A3: Holographic Peak (4:48) — Beekeeper/Bastardknocker [2015]'
+  label: 'Triumphs – A3: Holographic Peak (4:48) — Beekeeper/Bastardknocker [2015]'
 - value: 7429724:A4
-  label: 'Triumphs (2) – A4: Like A Storm Rolling In (6:16) — Beekeeper/Bastardknocker [2015]'
+  label: 'Triumphs – A4: Like A Storm Rolling In (6:16) — Beekeeper/Bastardknocker [2015]'
 - value: 7429724:B1
-  label: 'Triumphs (2) – B1: Solid Bones (4:01) — Beekeeper/Bastardknocker [2015]'
+  label: 'Triumphs – B1: Solid Bones (4:01) — Beekeeper/Bastardknocker [2015]'
 - value: 7429724:B2
-  label: 'Triumphs (2) – B2: Blue Degrees (3:39) — Beekeeper/Bastardknocker [2015]'
+  label: 'Triumphs – B2: Blue Degrees (3:39) — Beekeeper/Bastardknocker [2015]'
 - value: 7429724:B3
-  label: 'Triumphs (2) – B3: High Mountain Down (5:30) — Beekeeper/Bastardknocker [2015]'
+  label: 'Triumphs – B3: High Mountain Down (5:30) — Beekeeper/Bastardknocker [2015]'
 - value: 7429724:B4
-  label: 'Triumphs (2) – B4: Bastardknocker (7:35) — Beekeeper/Bastardknocker [2015]'
+  label: 'Triumphs – B4: Bastardknocker (7:35) — Beekeeper/Bastardknocker [2015]'
 - value: '875631:11'
   label: 'Tuli Kupferberg – 11: America — Fast Forward Sampler [1994]'
 - value: 1833199:A4
@@ -20407,9 +20407,9 @@
 - value: 1603185:A2
   label: 'Uncle Wiggly – A2: Hold Onto The Rail — Cleaned Out! [1992]'
 - value: 3749933:B5
-  label: 'Unknown Artist – B5: Alone At The Drive-In Movie  (2:22) — Grease (The Original Soundtrack From The Motion Picture) [1978]'
+  label: 'Unknown Artist – B5: Alone At The Drive-In Movie (2:22) — Grease (The Original Soundtrack From The Motion Picture) [1978]'
 - value: 3749933:D6
-  label: 'Unknown Artist – D6: Love Is A Many Splendored Thing  (1:23) — Grease (The Original Soundtrack From The Motion Picture) [1978]'
+  label: 'Unknown Artist – D6: Love Is A Many Splendored Thing (1:23) — Grease (The Original Soundtrack From The Motion Picture) [1978]'
 - value: 1437951:B8
   label: 'Unrestful Movements – B8: Anti-Trend (4:10) — Barking Up The Right Tree [1983]'
 - value: 20601010:A1
@@ -20577,7 +20577,7 @@
 - value: 23013083:B
   label: 'Wasp Factory – B: Green Eyes — Steel Blue Skies [2022]'
 - value: 842340:A2
-  label: 'Watershed (2) – A2: Spark — Freak The Sheep (A Compilation Of New Zealand Music) [1991]'
+  label: 'Watershed – A2: Spark — Freak The Sheep (A Compilation Of New Zealand Music) [1991]'
 - value: 22755569:A1
   label: 'Wet Leg – A1: Being In Love — Wet Leg [2022]'
 - value: 22755569:A2
@@ -20641,7 +20641,7 @@
 - value: 513047:A
   label: 'Wire – A: Ahead (4:58) — Ahead [1987]'
 - value: 11893800:A
-  label: 'Wire – A: Mannequin — Nine Sevens  [2018]'
+  label: 'Wire – A: Mannequin — Nine Sevens [2018]'
 - value: 491311:A
   label: 'Wire – A: Silk Skin Paws — Silk Skin Paws [1988]'
 - value: 163282:A1
@@ -20847,7 +20847,7 @@
 - value: 532716:B1
   label: 'Wire – B1: Drill (Live) (8:00) — Kidney Bingos [1988]'
 - value: 11893800:B1
-  label: 'Wire – B1: Feeling Called Love — Nine Sevens  [2018]'
+  label: 'Wire – B1: Feeling Called Love — Nine Sevens [2018]'
 - value: 417228:B1
   label: 'Wire – B1: Illuminated (6:52) — It''s Beginning To And Back Again [1989]'
 - value: 6990913:B1
@@ -20893,7 +20893,7 @@
 - value: 22976696:B18
   label: 'Wire – B18: Two People In A Room (2:04) — Not About To Die (Studio Demos 1977-1978) [2022]'
 - value: 11893800:B2
-  label: 'Wire – B2: 12XU — Nine Sevens  [2018]'
+  label: 'Wire – B2: 12XU — Nine Sevens [2018]'
 - value: 4673310:B2
   label: 'Wire – B2: B/W Silence (4:40) — Change Becomes Us [2013]'
 - value: 12173889:B2
@@ -21019,7 +21019,7 @@
 - value: 10053589:B9
   label: 'Wire – B9: Sleep On The Wing — Silver / Lead [2017]'
 - value: 11893800:C
-  label: 'Wire – C: I Am The Fly — Nine Sevens  [2018]'
+  label: 'Wire – C: I Am The Fly — Nine Sevens [2018]'
 - value: 6056710:C1
   label: 'Wire – C1: Go Ahead (3:47) — Document And Eyewitness [2014]'
 - value: 4673310:C1
@@ -21051,7 +21051,7 @@
 - value: 6056710:C8
   label: 'Wire – C8: Heartbeat (3:18) — Document And Eyewitness [2014]'
 - value: 11893800:D
-  label: 'Wire – D: Ex-Lion Tamer — Nine Sevens  [2018]'
+  label: 'Wire – D: Ex-Lion Tamer — Nine Sevens [2018]'
 - value: 4673310:D1
   label: 'Wire – D1: As We Go (4:36) — Change Becomes Us [2013]'
 - value: 19111171:D1
@@ -21073,41 +21073,41 @@
 - value: 6056710:D4
   label: 'Wire – D4: Catapult 30 (5:06) — Document And Eyewitness [2014]'
 - value: 11893800:E
-  label: 'Wire – E: Dot Dash — Nine Sevens  [2018]'
+  label: 'Wire – E: Dot Dash — Nine Sevens [2018]'
 - value: 19111171:E1
   label: 'Wire – E1: Twelve Times X (1:30) — PF456 Deluxe [2021]'
 - value: 11893800:F
-  label: 'Wire – F: Options R — Nine Sevens  [2018]'
+  label: 'Wire – F: Options R — Nine Sevens [2018]'
 - value: 19111171:F1
   label: 'Wire – F1: Twelve Times Y (1:40) — PF456 Deluxe [2021]'
 - value: 11893800:G
-  label: 'Wire – G: Outdoor Miner — Nine Sevens  [2018]'
+  label: 'Wire – G: Outdoor Miner — Nine Sevens [2018]'
 - value: 11893800:H
-  label: 'Wire – H: Practice Makes Perfect — Nine Sevens  [2018]'
+  label: 'Wire – H: Practice Makes Perfect — Nine Sevens [2018]'
 - value: 11893800:I
-  label: 'Wire – I: Question Of Degree — Nine Sevens  [2018]'
+  label: 'Wire – I: Question Of Degree — Nine Sevens [2018]'
 - value: 11893800:J
-  label: 'Wire – J: Former Airline — Nine Sevens  [2018]'
+  label: 'Wire – J: Former Airline — Nine Sevens [2018]'
 - value: 11893800:K
-  label: 'Wire – K: Map Ref 41°N 93°W — Nine Sevens  [2018]'
+  label: 'Wire – K: Map Ref 41°N 93°W — Nine Sevens [2018]'
 - value: 11893800:L
-  label: 'Wire – L: Go Ahead — Nine Sevens  [2018]'
+  label: 'Wire – L: Go Ahead — Nine Sevens [2018]'
 - value: 11893800:M
-  label: 'Wire – M: Our Swimmer — Nine Sevens  [2018]'
+  label: 'Wire – M: Our Swimmer — Nine Sevens [2018]'
 - value: 11893800:N
-  label: 'Wire – N: Midnight Bahnhof Café — Nine Sevens  [2018]'
+  label: 'Wire – N: Midnight Bahnhof Café — Nine Sevens [2018]'
 - value: 11893800:O1
-  label: 'Wire – O1: Song 1 — Nine Sevens  [2018]'
+  label: 'Wire – O1: Song 1 — Nine Sevens [2018]'
 - value: 11893800:O2
-  label: 'Wire – O2: Get Down Parts 1&2 — Nine Sevens  [2018]'
+  label: 'Wire – O2: Get Down Parts 1&2 — Nine Sevens [2018]'
 - value: 11893800:P1
-  label: 'Wire – P1: Let''s Panic Later — Nine Sevens  [2018]'
+  label: 'Wire – P1: Let''s Panic Later — Nine Sevens [2018]'
 - value: 11893800:P2
-  label: 'Wire – P2: Small Electric Piece — Nine Sevens  [2018]'
+  label: 'Wire – P2: Small Electric Piece — Nine Sevens [2018]'
 - value: 11893800:Q
-  label: 'Wire – Q: 2nd Length (Our Swimmer) — Nine Sevens  [2018]'
+  label: 'Wire – Q: 2nd Length (Our Swimmer) — Nine Sevens [2018]'
 - value: 11893800:R
-  label: 'Wire – R: Catapult 30 — Nine Sevens  [2018]'
+  label: 'Wire – R: Catapult 30 — Nine Sevens [2018]'
 - value: 898195:A1
   label: 'Wreck Small Speakers On Expensive Stereos – A1: Lots Of Hearts — River Falling Love [1987]'
 - value: 898195:A2
@@ -21117,7 +21117,7 @@
 - value: 898195:B1
   label: 'Wreck Small Speakers On Expensive Stereos – B1: All Of This — River Falling Love [1987]'
 - value: 898195:B2
-  label: 'Wreck Small Speakers On Expensive Stereos – B2: Torn  — River Falling Love [1987]'
+  label: 'Wreck Small Speakers On Expensive Stereos – B2: Torn — River Falling Love [1987]'
 - value: 20362099:A3
   label: 'Wrongtom, The Stoneleigh Mountain Rockers – A3: Dub In The Supermarket (3:39) — LateNightTales (Version Excursion) [2021]'
 - value: 10885801:B3
@@ -21215,7 +21215,7 @@
 - value: 16313091:D2
   label: 'Young Marble Giants – D2: Radio Silents — Colossal Youth / Loose Ends And Sharp Cuts [2020]'
 - value: 16313091:D3
-  label: 'Young Marble Giants – D3: Cakewalking  — Colossal Youth / Loose Ends And Sharp Cuts [2020]'
+  label: 'Young Marble Giants – D3: Cakewalking — Colossal Youth / Loose Ends And Sharp Cuts [2020]'
 - value: 16313091:D4
   label: 'Young Marble Giants – D4: This Way — Colossal Youth / Loose Ends And Sharp Cuts [2020]'
 - value: 16313091:D5
@@ -21235,7 +21235,7 @@
 - value: 16313091:DVD-11
   label: 'Young Marble Giants – DVD-11: Salad Days — Colossal Youth / Loose Ends And Sharp Cuts [2020]'
 - value: 16313091:DVD-12
-  label: 'Young Marble Giants – DVD-12: Cakewalking  — Colossal Youth / Loose Ends And Sharp Cuts [2020]'
+  label: 'Young Marble Giants – DVD-12: Cakewalking — Colossal Youth / Loose Ends And Sharp Cuts [2020]'
 - value: 16313091:DVD-13
   label: 'Young Marble Giants – DVD-13: Final Day — Colossal Youth / Loose Ends And Sharp Cuts [2020]'
 - value: 16313091:DVD-14
