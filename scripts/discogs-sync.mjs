@@ -7,6 +7,7 @@
 
 import { readFile, writeFile } from "node:fs/promises";
 import yaml from "js-yaml";
+import { cleanArtist, cleanTitle } from "./discogs-clean.mjs";
 
 const TOKEN = process.env.DISCOGS_TOKEN;
 const USERNAME = "socialspacious";
@@ -115,7 +116,21 @@ function buildPickerOptions(releases) {
   return out;
 }
 
+// Applied to every release on save (not just new fetches) so cached entries
+// written before the clean-up existed get tidied too.
+function cleanReleases(releases) {
+  for (const rel of Object.values(releases)) {
+    rel.artist = cleanArtist(rel.artist);
+    rel.title = cleanTitle(rel.title);
+    for (const t of rel.tracks || []) {
+      t.title = cleanTitle(t.title);
+      if (t.artist) t.artist = cleanArtist(t.artist);
+    }
+  }
+}
+
 async function save(releases) {
+  cleanReleases(releases);
   const out = {
     last_synced: new Date().toISOString(),
     username: USERNAME,
