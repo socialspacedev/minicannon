@@ -182,6 +182,9 @@ async function injectMatches(content, index, discogs) {
         const dashLine = lines[fieldLine.artist]; // this is the `- artist: …` line
         const dashIndent = dashLine.match(/^(\s*)-/)[1];
         lines[fieldLine.artist] = `${dashIndent}- discogs: "${fields.discogs}"`;
+        // The artist line is now the discogs line — record it so Direction 2's
+        // inserts land inside this track rather than at the top of the file.
+        fieldLine.discogs = fieldLine.artist;
         insertions.push({ afterLine: fieldLine.artist, lines: [`${continuationIndent}artist: ${yamlValue(fields.artist)}`] });
         status = matches.length > 1 ? "duplicate" : "match";
         summary.push({ artist: fields.artist, title: fields.title, status, pick, count: matches.length });
