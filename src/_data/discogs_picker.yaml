@@ -928,6 +928,26 @@
   label: 'Ash – B9: Innocent Smile — 1977 [2022]'
 - value: 20362099:D2
   label: 'Ash Walker – D2: There''s Nothing Like This (3:47) — LateNightTales (Version Excursion) [2021]'
+- value: 36391084:A1
+  label: 'Au Pairs – A1: We''re So Cool — Playing With A Different Sex [2026]'
+- value: 36391084:A2
+  label: 'Au Pairs – A2: Love Song — Playing With A Different Sex [2026]'
+- value: 36391084:A3
+  label: 'Au Pairs – A3: Set-Up — Playing With A Different Sex [2026]'
+- value: 36391084:A4
+  label: 'Au Pairs – A4: Repetition — Playing With A Different Sex [2026]'
+- value: 36391084:A5
+  label: 'Au Pairs – A5: Headache (For Michelle) — Playing With A Different Sex [2026]'
+- value: 36391084:B1
+  label: 'Au Pairs – B1: Come Again — Playing With A Different Sex [2026]'
+- value: 36391084:B2
+  label: 'Au Pairs – B2: Armagh — Playing With A Different Sex [2026]'
+- value: 36391084:B3
+  label: 'Au Pairs – B3: Unfinished Business — Playing With A Different Sex [2026]'
+- value: 36391084:B4
+  label: 'Au Pairs – B4: Dear John — Playing With A Different Sex [2026]'
+- value: 36391084:B5
+  label: 'Au Pairs – B5: It''s Obvious — Playing With A Different Sex [2026]'
 - value: '1379578:17'
   label: 'Axemen – 17: The Wharf With No Name — Noisyland [1992]'
 - value: 1038214:2-04
@@ -5872,6 +5892,14 @@
   label: 'House Of All (2) – B4: Turning Of The Years (3:26) — House Of All [2023]'
 - value: 30281933:B5
   label: 'House Of All (2) – B5: Each Ending Has A Beginning — Continuum [2024]'
+- value: 6099447:A1
+  label: 'House Of Pain – A1: Jump Around (Original Mix) (3:30) — Jump Around / House Of Pain Anthem [2002]'
+- value: 6099447:A2
+  label: 'House Of Pain – A2: House Of Pain Anthem (Master Mix) (2:35) — Jump Around / House Of Pain Anthem [2002]'
+- value: 6099447:B1
+  label: 'House Of Pain – B1: Jump Around (Master Mix) (3:37) — Jump Around / House Of Pain Anthem [2002]'
+- value: 6099447:B2
+  label: 'House Of Pain – B2: House Of Pain Anthem (Original Mix) (2:42) — Jump Around / House Of Pain Anthem [2002]'
 - value: 11807968:A1
   label: 'Hubert Teichmann – A1: Walk On The Wild Side — Hammond In Stereo  [1966]'
 - value: 11807968:A2
@@ -8854,24 +8882,40 @@
   label: 'Peter Jefferies – 8: Next (1:14) — Electricity [1994]'
 - value: '440060:9'
   label: 'Peter Jefferies – 9: Snare (1:56) — Electricity [1994]'
+- value: 38377446:A1
+  label: 'Peter Jefferies – A1: Draw It By Hand (1:59) — The Day They Let You Out Is The Day They Might Not Let You Come Back [2026]'
 - value: 27573978:A1
   label: 'Peter Jefferies – A1: Time And The Singular Man — Closed Circuit [2023]'
+- value: 38377446:A2
+  label: 'Peter Jefferies – A2: Already Got To Give (4:43) — The Day They Let You Out Is The Day They Might Not Let You Come Back [2026]'
 - value: 27573978:A2
   label: 'Peter Jefferies – A2: Crocodile — Closed Circuit [2023]'
 - value: 769533:A3
   label: 'Peter Jefferies – A3: Lassitude (1:08) — I Hear The Devil Calling Me [1991]'
+- value: 38377446:A3
+  label: 'Peter Jefferies – A3: The Shadow Sisters (3:11) — The Day They Let You Out Is The Day They Might Not Let You Come Back [2026]'
 - value: 27573978:A3
   label: 'Peter Jefferies – A3: Whatever You Want — Closed Circuit [2023]'
 - value: 27573978:A4
   label: 'Peter Jefferies – A4: Closed Circuit — Closed Circuit [2023]'
+- value: 38377446:A4
+  label: 'Peter Jefferies – A4: Granada Land (4:40) — The Day They Let You Out Is The Day They Might Not Let You Come Back [2026]'
+- value: 38377446:A5
+  label: 'Peter Jefferies – A5: Can''t Fly (3:39) — The Day They Let You Out Is The Day They Might Not Let You Come Back [2026]'
 - value: 27573978:A5
   label: 'Peter Jefferies – A5: Line In Tail Out — Closed Circuit [2023]'
 - value: 27573978:A6
   label: 'Peter Jefferies – A6: Age For The Innocent — Closed Circuit [2023]'
+- value: 38377446:A6
+  label: 'Peter Jefferies – A6: Where''ve You Gone? (4:58) — The Day They Let You Out Is The Day They Might Not Let You Come Back [2026]'
 - value: 27573978:A7
   label: 'Peter Jefferies – A7: Dryest Month In 100 Years — Closed Circuit [2023]'
 - value: 27573978:B1
   label: 'Peter Jefferies – B1: Coming Home With You — Closed Circuit [2023]'
+- value: 38377446:B10
+  label: 'Peter Jefferies – B10: Voyager (2:50) — The Day They Let You Out Is The Day They Might Not Let You Come Back [2026]'
+- value: 38377446:B11
+  label: 'Peter Jefferies – B11: Speed Only (10:38) — The Day They Let You Out Is The Day They Might Not Let You Come Back [2026]'
 - value: 909494:B2
   label: 'Peter Jefferies – B2: On An Unknown Beach — XPRESSWAY PILE=UP (A Compilation Of NZ Music) [1990]'
 - value: 27573978:B2
@@ -8884,8 +8928,14 @@
   label: 'Peter Jefferies – B5: Won''t Be Long — Closed Circuit [2023]'
 - value: 27573978:B6
   label: 'Peter Jefferies – B6: Talkin'' Bout Nuthin'' — Closed Circuit [2023]'
+- value: 38377446:B7
+  label: 'Peter Jefferies – B7: Anytime Soon (1:57) — The Day They Let You Out Is The Day They Might Not Let You Come Back [2026]'
 - value: 27573978:B7
   label: 'Peter Jefferies – B7: Ghostwriter — Closed Circuit [2023]'
+- value: 38377446:B8
+  label: 'Peter Jefferies – B8: Day They Let You Out (2:50) — The Day They Let You Out Is The Day They Might Not Let You Come Back [2026]'
+- value: 38377446:B9
+  label: 'Peter Jefferies – B9: Reflex And Rail (3:58) — The Day They Let You Out Is The Day They Might Not Let You Come Back [2026]'
 - value: 1038214:2-13
   label: 'Peter Jefferies, Jono Lonie – 2-13: Thief WIth The Silver (LP Version) (2:01) — Flying Nun 25th Anniversary Box Set [2006]'
 - value: '448132:12'
@@ -10016,6 +10066,16 @@
   label: 'Roy Montgomery – D2: I Will See You There (11:55) — Temple IV [2024]'
 - value: 14434093:D3
   label: 'Roy Montgomery – D3: Hollyford Valley Day 3 (5:14) — Scenes From The South Island [2019]'
+- value: 38094906:A1
+  label: 'Roy Montgomery, Martha Skye Murphy – A1: At Dawn (5:52) — Nebular [2026]'
+- value: 38094906:A2
+  label: 'Roy Montgomery, Martha Skye Murphy – A2: Cloudburst (7:32) — Nebular [2026]'
+- value: 38094906:A3
+  label: 'Roy Montgomery, Martha Skye Murphy – A3: Satellites Against The Milky Way (6:41) — Nebular [2026]'
+- value: 38094906:B1
+  label: 'Roy Montgomery, Martha Skye Murphy – B1: The Play Of Light And Dark (17:16) — Nebular [2026]'
+- value: 38094906:B2
+  label: 'Roy Montgomery, Martha Skye Murphy – B2: At Dusk (4:14) — Nebular [2026]'
 - value: 32402835:D2
   label: 'Royal Trux – D2: Inside Game — High Fidelity (Original Soundtrack) [2024]'
 - value: 20362099:A5

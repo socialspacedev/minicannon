@@ -53,7 +53,8 @@ vinyl_vibes:
     - dj: DJ Skrub Daddy
       slot: 9:15pm
       tracks:
-        - artist: Pale Saints
+        - discogs: "14665230:A2"
+          artist: Pale Saints
           title: You tear the world in two
           year: '2020'
           duration: '2:45'

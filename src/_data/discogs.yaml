@@ -1,8 +1,8 @@
-last_synced: '2026-08-27T23:49:17.523Z'
+last_synced: '2026-09-27T01:37:30.815Z'
 username: socialspacious
 counts:
-  releases: 1075
-  tracks: 10616
+  releases: 1079
+  tracks: 10646
 releases:
   '18663':
     artist: Eric B. & Rakim
@@ -26219,6 +26219,27 @@ releases:
         title: Catapult 30
         duration: '5:06'
         artist: null
+  '6099447':
+    artist: House Of Pain
+    title: Jump Around / House Of Pain Anthem
+    year: 2002
+    tracks:
+      - position: A1
+        title: Jump Around (Original Mix)
+        duration: '3:30'
+        artist: null
+      - position: A2
+        title: House Of Pain Anthem (Master Mix)
+        duration: '2:35'
+        artist: null
+      - position: B1
+        title: Jump Around (Master Mix)
+        duration: '3:37'
+        artist: null
+      - position: B2
+        title: House Of Pain Anthem (Original Mix)
+        duration: '2:42'
+        artist: null
   '6188750':
     artist: The Shadows
     title: The Shadows' Greatest Hits
@@ -47655,6 +47676,51 @@ releases:
         title: Stoked_version
         duration: '7:59'
         artist: null
+  '36391084':
+    artist: Au Pairs
+    title: Playing With A Different Sex
+    year: 2026
+    tracks:
+      - position: A1
+        title: We're So Cool
+        duration: ''
+        artist: null
+      - position: A2
+        title: Love Song
+        duration: ''
+        artist: null
+      - position: A3
+        title: Set-Up
+        duration: ''
+        artist: null
+      - position: A4
+        title: Repetition
+        duration: ''
+        artist: null
+      - position: A5
+        title: Headache (For Michelle)
+        duration: ''
+        artist: null
+      - position: B1
+        title: Come Again
+        duration: ''
+        artist: null
+      - position: B2
+        title: Armagh
+        duration: ''
+        artist: null
+      - position: B3
+        title: Unfinished Business
+        duration: ''
+        artist: null
+      - position: B4
+        title: Dear John
+        duration: ''
+        artist: null
+      - position: B5
+        title: It's Obvious
+        duration: ''
+        artist: null
   '36866272':
     artist: The Fall
     title: Fall Heads Roll
@@ -47842,4 +47908,78 @@ releases:
       - position: B7
         title: Crocus
         duration: '2:11'
+        artist: null
+  '38094906':
+    artist: Roy Montgomery, Martha Skye Murphy
+    title: Nebular
+    year: 2026
+    tracks:
+      - position: A1
+        title: At Dawn
+        duration: '5:52'
+        artist: null
+      - position: A2
+        title: Cloudburst
+        duration: '7:32'
+        artist: null
+      - position: A3
+        title: Satellites Against The Milky Way
+        duration: '6:41'
+        artist: null
+      - position: B1
+        title: The Play Of Light And Dark
+        duration: '17:16'
+        artist: null
+      - position: B2
+        title: At Dusk
+        duration: '4:14'
+        artist: null
+  '38377446':
+    artist: Peter Jefferies
+    title: The Day They Let You Out Is The Day They Might Not Let You Come Back
+    year: 2026
+    tracks:
+      - position: A1
+        title: Draw It By Hand
+        duration: '1:59'
+        artist: null
+      - position: A2
+        title: Already Got To Give
+        duration: '4:43'
+        artist: null
+      - position: A3
+        title: The Shadow Sisters
+        duration: '3:11'
+        artist: null
+      - position: A4
+        title: Granada Land
+        duration: '4:40'
+        artist: null
+      - position: A5
+        title: Can't Fly
+        duration: '3:39'
+        artist: null
+      - position: A6
+        title: Where've You Gone?
+        duration: '4:58'
+        artist: null
+      - position: B7
+        title: Anytime Soon
+        duration: '1:57'
+        artist: null
+      - position: B8
+        title: Day They Let You Out
+        duration: '2:50'
+        artist: null
+      - position: B9
+        title: Reflex And Rail
+        duration: '3:58'
+        artist: null
+      - position: B10
+        title: Voyager
+        duration: '2:50'
+        artist: null
+      - position: B11
+        title: Speed Only
+        duration: '10:38'
         artist: null
