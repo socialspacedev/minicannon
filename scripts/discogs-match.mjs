@@ -7,27 +7,20 @@
 // Manual artist/title/year/duration fields are left in place — the template
 // prefers them over Discogs lookups. This is purely additive.
 //
+// The build also looks up YouTube IDs on its own (discogsYoutube filter), so
+// running this is only needed to link manually entered tracks to Discogs.
+//
 // Run: npm run discogs:match
-// Requires .env with DISCOGS_TOKEN= for the video fetch step.
+// DISCOGS_TOKEN in .env is optional (raises the Discogs rate limit).
 
 import { readFile, writeFile, readdir } from "node:fs/promises";
 import path from "node:path";
 import yaml from "js-yaml";
-import EleventyFetch from "@11ty/eleventy-fetch";
 import { cleanArtist, cleanTitle } from "./discogs-clean.mjs";
-
-const TOKEN = process.env.DISCOGS_TOKEN;
-const USER_AGENT = "minicannon-discogs-match/1.0 +https://anaru.nz";
+import { normalize, releaseVideos, findVideoMatch } from "./discogs-videos.mjs";
 
 const VV_DIR = "src/blog";
 const DATA_PATH = "src/_data/discogs.yaml";
-
-const normalize = (s) => String(s || "")
-  .toLowerCase()
-  .normalize("NFKD").replace(/[̀-ͯ]/g, "")
-  .replace(/^the\s+/i, "")
-  .replace(/\s+\(\d+\)$/, "")
-  .replace(/[^a-z0-9]+/g, "");
 
 async function loadDiscogs() {
   return yaml.load(await readFile(DATA_PATH, "utf8"));
@@ -52,50 +45,6 @@ function buildIndex(discogs) {
     }
   }
   return index;
-}
-
-function extractYouTubeId(uri) {
-  const m = String(uri || "").match(/(?:v=|youtu\.be\/|youtube\.com\/embed\/)([\w-]{11})/);
-  return m ? m[1] : null;
-}
-
-const videoCache = new Map();
-
-async function fetchVideos(releaseId) {
-  if (videoCache.has(releaseId)) return videoCache.get(releaseId);
-  if (!TOKEN) {
-    videoCache.set(releaseId, []);
-    return [];
-  }
-  try {
-    const buf = await EleventyFetch(`https://api.discogs.com/releases/${releaseId}`, {
-      duration: "30d",
-      type: "buffer",
-      fetchOptions: {
-        headers: {
-          "User-Agent": USER_AGENT,
-          "Authorization": `Discogs token=${TOKEN}`,
-          "Accept": "application/json",
-        },
-      },
-    });
-    const data = JSON.parse(buf.toString("utf8"));
-    const videos = (data.videos || [])
-      .map(v => ({ title: v.title || "", youtube_id: extractYouTubeId(v.uri) }))
-      .filter(v => v.youtube_id);
-    videoCache.set(releaseId, videos);
-    return videos;
-  } catch (e) {
-    videoCache.set(releaseId, []);
-    return [];
-  }
-}
-
-function findVideoMatch(videos, trackTitle) {
-  const target = normalize(trackTitle);
-  if (!target) return null;
-  const direct = videos.find(v => normalize(v.title).includes(target));
-  return direct ? direct.youtube_id : null;
 }
 
 function yamlValue(v) {
@@ -171,8 +120,10 @@ async function injectMatches(content, index, discogs) {
     let youtubeAdded = false;
     let resolvedRelease = null;
 
-    // Direction 1: have artist+title, no discogs → add discogs
-    if (!fields.discogs && fields.artist && fields.title) {
+    // Direction 1: have artist+title, no discogs → add discogs.
+    // A hand-entered link means the track deliberately points elsewhere
+    // (e.g. a copy that isn't in the collection) — leave it alone.
+    if (!fields.discogs && !fields.buy_url && fields.artist && fields.title) {
       const key = normalize(fields.artist) + "|" + normalize(fields.title);
       const matches = index.get(key);
       if (matches && matches.length > 0) {
@@ -235,7 +186,7 @@ async function injectMatches(content, index, discogs) {
 
         // YouTube: skip if already set, else look up videos for matched release
         if (!fields.youtube) {
-          const videos = await fetchVideos(releaseId);
+          const videos = await releaseVideos(releaseId);
           const ytId = findVideoMatch(videos, fields.title || track.title);
           if (ytId) {
             if ("youtube" in fieldLine) {
