@@ -10,7 +10,11 @@ npm run go!        # Production build: clean → CSS → Eleventy
 npm run clean      # Remove public/ output directory
 npm run css        # Build Tailwind CSS once (minified)
 npm run eleventy   # Run Eleventy build once
+npm run discogs:sync   # Refresh src/_data/discogs*.yaml from Discogs (after new records)
+npm run discogs:match  # Optional: link typed Vinyl Vibes tracks to the collection
 ```
+
+Vinyl Vibes YouTube IDs are looked up at build time (`discogsYoutube` filter, `scripts/discogs-videos.mjs`) — see README "Discogs sync for Vinyl Vibes".
 
 No test suite exists in this project.
 

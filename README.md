@@ -8,7 +8,7 @@ Personal blog and photography portfolio at [anaru.nz](https://anaru.nz), built w
   - **[Pagefind](https://pagefind.app/)** — static search
 - **[Eleventy](https://www.11ty.dev/)** — static site generator
   - [eleventy-img](https://github.com/11ty/eleventy-img) — image optimisation (AVIF, WebP, JPEG at multiple widths)
-  - [eleventy-fetch](https://github.com/11ty/eleventy-fetch) — cached build-time HTTP fetching (used for Bandcamp artwork)
+  - [eleventy-fetch](https://github.com/11ty/eleventy-fetch) — cached build-time HTTP fetching (used for Bandcamp artwork and Discogs YouTube lookups)
   - [eleventy-plugin-rss](https://github.com/11ty/eleventy-plugin-rss) — RSS feed
   - [eleventy-navigation](https://github.com/11ty/eleventy-navigation) — site navigation
   - [eleventy-plugin-time-to-read](https://github.com/JKC-Codes/eleventy-plugin-time-to-read) — read time estimates
@@ -28,7 +28,9 @@ Personal blog and photography portfolio at [anaru.nz](https://anaru.nz), built w
   - EXIF data (camera, lens, film, ISO) stored in YAML data files and editable via CloudCannon
   - EXIF info button (ⓘ) on article figcaptions and inside the lightbox caption area
 - Curated Music page — grid of posts opted in via a `music_featured: true` frontmatter toggle, with a layered image fallback (hero image → thumbnail → first inline image → Bandcamp artwork). Each tile has a ▶ play button on hover that pops a modal Bandcamp player; tiles' empty-row gap is filled with a "More music →" tile pointing at the music tag
-- Two-column homepage: latest photography hero image + recent posts list with post-type icons
+- Two-column homepage: hero image from the latest post that has one + recent posts list with post-type icons
+  - Image source: the show post's `hero_image` / `hero_alt` (Vinyl Vibes, A Certain Sound), else `thumbnail`; posts with no image are skipped
+  - Optimised via eleventy-img (AVIF/WebP/JPEG at 400/800/1200w), loaded eagerly with high priority, and links to its post
 - Static search via Pagefind, opened from a magnifying-glass icon next to the site title (lazy-loaded dialog modal)
 - Scheduled posts — posts with a future date are excluded from production builds until that date
 - RSS feed, XML sitemap, and `llms.txt` for AEO
@@ -45,6 +47,8 @@ Personal blog and photography portfolio at [anaru.nz](https://anaru.nz), built w
   - Two DJ sets per event, each with an ordered tracklist
   - YouTube thumbnails with zoom-on-hover and lazy-loaded embeds (click to expand, click title to close)
   - Per-track data auto-populated from a synced Discogs collection (see below); manual fields kept as per-field overrides
+  - YouTube videos looked up automatically at build time for Discogs-linked tracks
+  - Two track types when adding a track in CloudCannon: **From my Discogs collection** (picker) or **Not in my collection** (artist, title, year, duration, YouTube, link)
   - Hero image with optional photographer caption
   - Facebook group link footer on every Vinyl Vibes post
   - Full CloudCannon schema with typed inputs for all fields
@@ -54,14 +58,14 @@ Personal blog and photography portfolio at [anaru.nz](https://anaru.nz), built w
 
 ## Discogs sync for Vinyl Vibes
 
-Track data on Vinyl Vibes posts is sourced from a local snapshot of Andrew's Discogs collection. Two scripts work together:
+Track data on Vinyl Vibes posts is sourced from a local snapshot of Andrew's Discogs collection.
 
 ```bash
-npm run discogs:sync    # fetch Discogs collection + tracklists
-npm run discogs:match   # walk Vinyl Vibes posts, fill missing data
+npm run discogs:sync    # fetch Discogs collection + tracklists — run after adding records
+npm run discogs:match   # optional — link manually typed tracks to the collection
 ```
 
-Both require `.env` with `DISCOGS_TOKEN=...` (personal access token from [discogs.com/settings/developers](https://www.discogs.com/settings/developers)).
+Both read `DISCOGS_TOKEN=...` from `.env` (personal access token from [discogs.com/settings/developers](https://www.discogs.com/settings/developers)). `discogs:sync` requires it; the matcher and the build work without it at a lower Discogs rate limit.
 
 ### `discogs:sync`
 
@@ -70,30 +74,43 @@ Writes two YAML files:
 - `src/_data/discogs.yaml` — full release/track data, used by the Eleventy template at build time
 - `src/_data/discogs_picker.yaml` — slim `{value, label}` list, the only file CloudCannon loads for the dropdown
 
+Names are tidied on every save (`scripts/discogs-clean.mjs`), including already-cached releases: Discogs's artist disambiguation suffixes (`The Twerps (2)` → `The Twerps`, 1–3 digits only so years survive) and stray whitespace in titles are stripped.
+
 Rate-limited to ~55 req/min (Discogs auth ceiling is 60). Checkpoints every 25 releases so a Ctrl+C is recoverable. The first sync of a ~1000-record collection takes ~20 min; subsequent syncs are incremental (only new releases since last run) and finish in seconds.
+
+### At build time (no script needed)
+
+For each track with a `discogs:` reference, the template fills artist, title, year, duration and the Discogs link from `discogs.yaml` — any value typed on the track wins.
+
+If the track has no `youtube:` ID, the `discogsYoutube` filter looks one up from the release's Discogs video list (`scripts/discogs-videos.mjs`) and uses the first video whose title contains the track title. Responses are cached 30 days in `.cache/` via eleventy-fetch, one request per release. A failed or unmatched lookup renders the track without a video; it never fails the build. A hand-entered `youtube:` ID always wins.
 
 ### `discogs:match`
 
-Walks `src/blog/vinyl-vibes-*.md` and works bi-directionally on each track:
+Walks `src/blog/vinyl-vibes-*.md`. Since the build handles display and YouTube, its main use is linking manually typed tracks:
 
-- **Has typed artist + title, no `discogs:` ref** — looks the track up in the synced collection, picks the first match, inserts a `discogs: "release_id:position"` line at the top of the block.
-- **Has a `discogs:` ref but missing artist / title / year / duration / buy_url** — fills them in from the synced data. The Discogs release page URL is set as `buy_url`. Existing manual values are never overwritten.
-- **Has a `discogs:` ref but no `youtube:`** — fetches the release's Discogs videos (cached 30 days via eleventy-fetch — only releases referenced by posts ever get queried) and injects a YouTube ID if a video title matches the track title.
+- **Has typed artist + title, no `discogs:` ref, no `buy_url`** — looks the track up in the synced collection and inserts `discogs: "release_id:position"`. Tracks with their own `buy_url` are left alone, as that marks a deliberate link elsewhere (e.g. a copy not in the collection).
+- **Has a `discogs:` ref** — writes missing artist / title / year / duration / buy_url and a matching YouTube ID into the file. Existing values are never overwritten.
 
-The script preserves YAML idiosyncrasies — multi-line scalars (`buy_url: >- … `) and existing quoting are left alone. Tracks that already have everything set are untouched.
+The script preserves YAML idiosyncrasies — multi-line scalars (`buy_url: >- … `) and existing quoting are left alone.
 
-### The CloudCannon picker
+### In CloudCannon
 
-Each Vinyl Vibes track has a **Track (from Discogs collection)** dropdown that searches the synced collection and stores a `release_id:position` reference. The labels are formatted `Artist – Position: Track Title (Duration) — Album [Year]` so you can disambiguate duplicates (same song on multiple releases) by release year.
+**Add track** offers two types:
 
-Picks store only the reference. Running `npm run discogs:match` after CC edits fills the human-readable fields in the YAML so they're visible in the editor and the rendered post.
+- **From my Discogs collection** — a **Track** dropdown that searches the synced collection and stores a `release_id:position` reference. Labels are `Artist – Position: Track Title (Duration) — Album [Year]` so duplicates (same song on multiple releases) can be told apart by year.
+- **Not in my collection** — artist and title (required), year, duration, YouTube and link fields.
 
 ### Typical workflow
 
 1. Add new records to your Discogs collection
-2. `npm run discogs:sync` — picks them up
-3. In CloudCannon, edit a Vinyl Vibes post and pick tracks via the dropdown
-4. `git pull` locally → `npm run discogs:match` → `git push` — fills artist/title/year/duration/buy_url and tries to auto-add YouTube IDs from Discogs's linked videos
+2. `npm run discogs:sync` and push — the picker picks them up
+3. In CloudCannon, create the Vinyl Vibes post and add tracks of either type
+4. Save — the build fills track details and YouTube videos. Add a YouTube ID by hand only where none is found or you want a different video
+
+### CloudCannon build settings
+
+- **Preserved paths** includes `.cache` so Discogs and Bandcamp lookups are reused between builds
+- **Environment variable** `DISCOGS_TOKEN` (optional) raises the Discogs rate limit for build-time lookups — set in CloudCannon, never committed
 
 ## Local development
 
