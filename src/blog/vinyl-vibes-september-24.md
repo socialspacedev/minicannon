@@ -16,18 +16,20 @@ vinyl_vibes:
     - dj: DJ Skrub Daddy
       slot: 8:45pm
       tracks:
-        - discogs:
-          youtube:
-          duration:
+        - artist: Secret Machines
+          title: Nowhere again
+          year: '2004'
+          youtube: ftzmOV79N3A
+          duration: 4:07
         - discogs: 1461153:A1
-          youtube:
-          duration:
+          youtube: MpMwMDqOprc
+          duration: 3:34
         - discogs: 373060:2
-          youtube:
-          duration:
+          youtube: CkaPytOiVrw
+          duration: 2:04
         - discogs: 36391084:B5
-          youtube:
-          duration:
+          youtube: c4u6UymEju0
+          duration: 6:19
     - dj: DJ Skrub Mommy
       slot: 9:00pm
       tracks:
@@ -43,7 +45,9 @@ vinyl_vibes:
         - discogs: 23719583:A6
           youtube:
           duration:
-        - discogs: ''
-          youtube:
-          duration:
+        - artist: Nirvana
+          title: Sliver
+          year: '1990'
+          youtube: QECJ9pCyhns
+          duration: 2:10
 ---
