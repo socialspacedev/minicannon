@@ -1,7 +1,7 @@
 {%- assign shareUrl = meta.url | append: page.url -%}
 {%- assign shareText = title | append: ' ' | append: shareUrl -%}
 {%- comment -%} ACS/Vinyl Vibes posts render the trigger inside their own footer row instead {%- endcomment -%}
-{%- unless a_certain_sound or vinyl_vibes -%}
+{%- unless certain_sound or vinyl_vibes -%}
 <div class="share">
   {% include "share-trigger.liquid" %}
 </div>

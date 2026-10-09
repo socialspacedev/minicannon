@@ -411,14 +411,14 @@ export default function (eleventyConfig) {
 
   // Home page hero — the photo from the most recent post that has one.
   // Show posts keep their photo under their own block (vinyl_vibes /
-  // a_certain_sound hero_image + hero_alt); everything else uses `thumbnail`.
+  // certain_sound hero_image + hero_alt); everything else uses `thumbnail`.
   // Posts without any image are skipped so the hero is never empty.
   eleventyConfig.addCollection("homeHero", async function(collection) {
     const items = collection.getFilteredByTag("post");
     items.sort((a, b) => b.date - a.date);
 
     for (const item of items) {
-      const show = item.data.vinyl_vibes || item.data.a_certain_sound;
+      const show = item.data.vinyl_vibes || item.data.certain_sound;
       const src = (show && show.hero_image) || item.data.thumbnail;
       if (!src) continue;
       const alt = (show && show.hero_alt) || `Photo from ${item.data.title}`;
