@@ -6,4 +6,6 @@ pagination:
 permalink: /tags/{{ tag | slugify }}/
 layout: tag.liquid
 eleventyExcludeFromCollections: true
+eleventyComputed:
+  title: "Tagged: {{ tag }}"
 ---

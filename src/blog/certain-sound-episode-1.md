@@ -1,14 +1,14 @@
 ---
-_schema: a_certain_sound
-title: A Certain Sound (Episode 1)
+_schema: certain_sound
+title: Certain Sound (Episode 1)
 description: Originally broadcast on June 20th, 2026 on Otago Access Radio 105.4FM.
 date: 2026-06-22T12:23:00+12:00
 type: article
 layout: article.liquid
 tags:
   - music
-  - a-certain-sound
-a_certain_sound:
+  - certain-sound
+certain_sound:
   hero_image: /img/vinyl-vibes-us.jpg
   hero_alt: Photo of us at the turntables for Vinyl Vibes
   hero_caption: 'Photograph: Grant McDougall'

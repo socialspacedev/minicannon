@@ -1,14 +1,14 @@
 ---
-_schema: a_certain_sound
-title: A Certain Sound (Episode 3)
+_schema: certain_sound
+title: Certain Sound (Episode 3)
 description: Originally broadcast on August 15, 2026 on Otago Access Radio 105.4FM.
 date: 2026-08-16T14:05:00+12:00
 type: article
 layout: article.liquid
 tags:
   - music
-  - a-certain-sound
-a_certain_sound:
+  - certain-sound
+certain_sound:
   hero_image: /img/certain-sound-3.png
   hero_alt: Photo of the Skrubz in the studio
   hero_caption: Skrubz in action

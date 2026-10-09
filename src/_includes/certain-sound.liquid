@@ -1,17 +1,17 @@
-{%- if a_certain_sound -%}
+{%- if certain_sound -%}
 <section class="acs">
-  {%- if a_certain_sound.hero_image -%}
+  {%- if certain_sound.hero_image -%}
   <figure class="acs-hero">
-    {% image a_certain_sound.hero_image, a_certain_sound.hero_alt %}
-    {%- if a_certain_sound.hero_caption -%}
-    <figcaption>{{ a_certain_sound.hero_caption }}</figcaption>
+    {% image certain_sound.hero_image, certain_sound.hero_alt %}
+    {%- if certain_sound.hero_caption -%}
+    <figcaption>{{ certain_sound.hero_caption }}</figcaption>
     {%- endif -%}
   </figure>
   {%- endif -%}
 
-  {%- if a_certain_sound.tracks and a_certain_sound.tracks.size > 0 -%}
+  {%- if certain_sound.tracks and certain_sound.tracks.size > 0 -%}
   <ol class="acs-tracklist">
-    {%- for track in a_certain_sound.tracks -%}
+    {%- for track in certain_sound.tracks -%}
     <li class="acs-track">
       <div class="acs-track-main">
         <span class="acs-artist">{{ track.artist }}</span>
@@ -39,10 +39,10 @@
 
   <footer class="acs-footer">
     <div class="acs-footer__links">
-      {%- if a_certain_sound.oar_url -%}
-      <a class="acs-link" href="{{ a_certain_sound.oar_url }}" target="_blank" rel="noopener noreferrer">Listen to this episode on OAR &rarr;</a>
+      {%- if certain_sound.oar_url -%}
+      <a class="acs-link" href="{{ certain_sound.oar_url }}" target="_blank" rel="noopener noreferrer">Listen to this episode on OAR &rarr;</a>
       {%- endif -%}
-      <a class="acs-link" href="https://oar.org.nz/shows/certain-sound/" target="_blank" rel="noopener noreferrer">A Certain Sound on Otago Access Radio &rarr;</a>
+      <a class="acs-link" href="https://oar.org.nz/shows/certain-sound/" target="_blank" rel="noopener noreferrer">Certain Sound on Otago Access Radio &rarr;</a>
     </div>
     {% include "share-trigger.liquid" %}
   </footer>
