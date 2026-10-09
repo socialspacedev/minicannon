@@ -11,6 +11,12 @@ eleventyNavigation:
   key: '{{ title | slugify }}'
   title: Crocus
   order: 4
+software_app:
+  operating_system: macOS 14 or later
+  category: MultimediaApplication
+  download_url: https://github.com/socialspacedev/crocus/releases/latest
+  source_url: https://github.com/socialspacedev/crocus
+  screenshot: /img/crocus-on-air.png
 ---
 Crocus is a minimal DJ deck for radio, for macOS. I built it to run [Certain Sound](/tags/certain-sound/) on Otago Access Radio, and it's now set up so anyone can use it for their own show. It's free, and the source is on [GitHub](https://github.com/socialspacedev/crocus).
 
@@ -23,6 +29,8 @@ It's designed to be a much better alternative to a clunky streaming app or a com
 Crocus plays short **groups** of two or three songs. They crossfade into each other and then the music stops, which is your cue to back-announce. You build a rundown of groups for the episode, then trigger them one at a time.
 
 A big countdown shows exactly when the music will stop, and turns red for the last ten seconds.
+
+It plays files from your Mac: **MP3, AAC/M4A (including Apple Lossless), WAV, AIFF, FLAC and CAF**. Drop in single songs or whole folders.
 
 ## What else it does
 
@@ -70,6 +78,12 @@ Because it's a download and isn't notarised, macOS refuses it the first time wit
 4. Authenticate, then confirm
 
 It opens normally from then on.
+
+## Where the name comes from
+
+Crocus is named after the song of the same name by the [Victor Dimisich Band](https://thebigcity.co.nz/artists/v/victor-dimisich-band/). The most recent version is on [An Afternoon With Victor Dimisich](/blog/an-afternoon-with-victor-dimisich.html), the collection of 1981 demos that Siltbreeze released this year.
+
+{% bandcamp "https://siltbreeze.bandcamp.com/track/crocus" %}
 
 ## Give it a crack
 
