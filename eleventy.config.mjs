@@ -194,6 +194,26 @@ export default function (eleventyConfig) {
     return html;
   });
 
+  // App screenshots (e.g. the Crocus page): keep full resolution and use lossless
+  // WebP/PNG, since the photo pipeline's lossy AVIF blurs small UI text
+  eleventyConfig.addShortcode("screenshot", async (srcFilePath, alt, caption) => {
+    let inputFilePath = path.join(eleventyConfig.dir.input, srcFilePath);
+    let metadata = await Image(inputFilePath, {
+      widths: [800, "auto"],
+      formats: ["webp", "png"],
+      outputDir: "./public/img/",
+      urlPath: "/img/",
+      sharpWebpOptions: { lossless: true },
+    });
+    const html = Image.generateHTML(metadata, {
+      alt,
+      sizes: "(min-width: 1024px) 768px, 100vw",
+      loading: "lazy",
+      decoding: "async",
+    });
+    return caption ? `<figure>${html}<figcaption>${caption}</figcaption></figure>` : html;
+  });
+
   // Centered/constrained image for use in page content (e.g. about page camera photo)
   eleventyConfig.addShortcode("image_centered", async (srcFilePath, alt) => {
     let inputFilePath = path.join(eleventyConfig.dir.input, srcFilePath);

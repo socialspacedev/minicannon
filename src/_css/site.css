@@ -71,7 +71,7 @@
     @apply flex flex-row items-center justify-center gap-4 text-center;
   }
   nav > ul {
-    @apply flex flex-row gap-5;
+    @apply flex flex-row flex-wrap justify-center gap-x-3 gap-y-1;
   }
   #search-dialog {
     width: min(560px, 92vw);
