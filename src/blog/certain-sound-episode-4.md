@@ -1,14 +1,14 @@
 ---
-_schema: a_certain_sound
-title: A Certain Sound (Episode 4)
+_schema: certain_sound
+title: Certain Sound (Episode 4)
 description: Originally broadcast on September 12th, 2026 on Otago Access Radio 105.4FM.
 date: 2026-09-12T18:10:38+12:00
 type: article
 layout: article.liquid
 tags:
   - music
-  - a-certain-sound
-a_certain_sound:
+  - certain-sound
+certain_sound:
   hero_image: /img/certain-sound-4.jpeg
   hero_alt: DJs in the studio
   hero_caption: The Skrubs in action for show number 4

@@ -135,7 +135,7 @@
     Social share image — fallback chain: thumbnail → hero image → site default
   {% endcomment %}
   {%- assign ogImage = thumbnail -%}
-  {%- if ogImage == blank and a_certain_sound.hero_image -%}{%- assign ogImage = a_certain_sound.hero_image -%}{%- endif -%}
+  {%- if ogImage == blank and certain_sound.hero_image -%}{%- assign ogImage = certain_sound.hero_image -%}{%- endif -%}
   {%- if ogImage == blank -%}{%- assign ogImage = meta.defaultImage -%}{%- endif -%}
 
   {% comment %}

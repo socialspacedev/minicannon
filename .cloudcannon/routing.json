@@ -1,0 +1,9 @@
+{
+  "routes": [
+    { "from": "/blog/a-certain-sound-episode-1/?", "to": "/blog/certain-sound-episode-1/", "status": 301 },
+    { "from": "/blog/a-certain-sound-episode-2/?", "to": "/blog/certain-sound-episode-2/", "status": 301 },
+    { "from": "/blog/a-certain-sound-3/?", "to": "/blog/certain-sound-episode-3/", "status": 301 },
+    { "from": "/blog/a-certain-sound-episode-4/?", "to": "/blog/certain-sound-episode-4/", "status": 301 },
+    { "from": "/tags/a-certain-sound/?", "to": "/tags/certain-sound/", "status": 301 }
+  ]
+}

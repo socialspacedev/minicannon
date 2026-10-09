@@ -1,14 +1,14 @@
 ---
-_schema: a_certain_sound
-title: A Certain Sound (Episode 2)
+_schema: certain_sound
+title: Certain Sound (Episode 2)
 description: Originally broadcast on July 18th, 2026 on Otago Access Radio 105.4FM.
 date: 2026-07-18T23:00:00+12:00
 type: article
 layout: article.liquid
 tags:
   - music
-  - a-certain-sound
-a_certain_sound:
+  - certain-sound
+certain_sound:
   hero_image: /img/certain-sound-2.jpeg
   hero_alt: Mrs Skrub in the zone
   hero_caption: Mrs Skrub by Mr Scrub
