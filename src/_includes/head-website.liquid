@@ -9,28 +9,57 @@
 
 {% include "head.liquid" %}
 <!-- Schema json -->
+{%- comment %} Values go through `json` so quotes and ampersands are escaped; no trailing commas {% endcomment %}
 <script type="application/ld+json">
   {
-    "@context": "http://schema.org",
-    "@type": "Webpage",
-    "url": "{{ pageUrls }}",
-    "name": "{{ meta.siteName }}",
-    "headline": "{{ pageTitle }}",
-    "description": "{{ pageDescription }}",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "{{ pageUrls }}"
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": {{ pageUrls | json }},
+    "url": {{ pageUrls | json }},
+    "name": {{ pageTitle | json }},
+    "description": {{ pageDescription | json }},
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": {{ meta.siteName | json }},
+      "url": {{ meta.url | json }}
     },
     "publisher": {
       "@type": "Organization",
-      "name": "{{ meta.authorName }}",
+      "name": {{ meta.authorName | json }},
       "logo": {
-        "url": "{{ meta.url }}/img/chill-ape.png",
+        "@type": "ImageObject",
+        "url": {{ meta.url | append: "/img/chill-ape.png" | json }},
         "width": 1200,
-        "height": 900,
-        "@type": "ImageObject"
+        "height": 900
       }
-    },
+    }
   }
 </script>
+{%- if software_app %}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": {{ title | json }},
+    "description": {{ pageDescription | json }},
+    "url": {{ pageUrls | json }},
+    "operatingSystem": {{ software_app.operating_system | json }},
+    "applicationCategory": {{ software_app.category | json }},
+    "downloadUrl": {{ software_app.download_url | json }},
+    "sameAs": {{ software_app.source_url | json }},
+    "screenshot": {{ meta.url | append: software_app.screenshot | json }},
+    "isAccessibleForFree": true,
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "NZD"
+    },
+    "author": {
+      "@type": "Person",
+      "name": {{ meta.authorName | json }},
+      "url": {{ meta.url | json }}
+    }
+  }
+</script>
+{%- endif %}
 <!-- End Head - Page -->
