@@ -1,7 +1,7 @@
 ---
 _schema: certain_sound
-title: Certain Sound (Episode 5)
-description: "Theme: Hodge podge. Originally broadcast on October 10, 2026 on Otago Access Radio 105.4FM."
+title: Certain Sound Episode 5
+description: "Originally broadcast on October 10, 2026 on Otago Access Radio 105.4FM."
 date: 2026-10-10T09:43:19+13:00
 type: article
 layout: article.liquid
