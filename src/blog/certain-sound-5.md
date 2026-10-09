@@ -2,7 +2,7 @@
 _schema: certain_sound
 title: Certain Sound Episode 5
 description: Originally broadcast on October 10, 2026 on Otago Access Radio 105.4FM.
-date: 2026-10-10T09:43:19+13:00
+date: 2026-10-10T23:00:00+13:00
 type: article
 layout: article.liquid
 tags:
