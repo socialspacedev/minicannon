@@ -395,6 +395,11 @@
 .film-frame {
   display: block;
 }
+/* Strips sit flush against the photo (prose's 2em img margin left a gap) */
+.film-frame img {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .film-frame::before,
 .film-frame::after {
   content: '';

@@ -13,7 +13,7 @@ Personal blog and photography portfolio at [anaru.nz](https://anaru.nz), built w
   - [eleventy-navigation](https://github.com/11ty/eleventy-navigation) — site navigation
   - [eleventy-plugin-time-to-read](https://github.com/JKC-Codes/eleventy-plugin-time-to-read) — read time estimates
   - [eleventy-plugin-youtube-embed](https://github.com/gfscott/eleventy-plugin-youtube-embed) — YouTube embeds
-- **[Tailwind CSS](https://tailwindcss.com/) v4** — styling, configured in CSS (`@theme` in `src/_css/site.css`)
+- **[Tailwind CSS](https://tailwindcss.com/) v4** — styling, configured in CSS (`@theme` in `src/_css/site.css`), built with `@tailwindcss/cli`. Needs Safari/iOS 16.4+, Chrome 111+, Firefox 128+
   - [@tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin) — prose styles
 - **[PhotoSwipe](https://photoswipe.com/)** — photo lightbox with filmstrip
 - **[Jampack](https://jampack.divriots.com/)** — post-build asset optimisation
@@ -22,7 +22,7 @@ Personal blog and photography portfolio at [anaru.nz](https://anaru.nz), built w
 ## Features
 
 - Light/dark mode
-- Visual editing via CloudCannon
+- Editing via CloudCannon's Content Editor, with snippets for images, screenshots, YouTube, Bandcamp and audio
 - Film photography gallery with EXIF data tooltip and lightbox
   - Keyboard accessible (Tab to image, Enter/Space to open)
   - EXIF data (camera, lens, film, ISO) stored in YAML data files and editable via CloudCannon
@@ -34,7 +34,8 @@ Personal blog and photography portfolio at [anaru.nz](https://anaru.nz), built w
 - Static search via Pagefind, opened from a magnifying-glass icon next to the site title (lazy-loaded dialog modal)
 - Scheduled posts — posts with a future date are excluded from production builds until that date
 - RSS feed, XML sitemap, and `llms.txt` for AEO
-- Rich social sharing — Open Graph + Twitter/X (`summary_large_image`) card tags and BlogPosting JSON-LD, with a share-image fallback chain (`thumbnail` → post `hero_image` → site `defaultImage` in `meta.yaml`) so every post gets a preview image
+- Structured data — BlogPosting JSON-LD on posts, WebPage on every other page, plus SoftwareApplication on pages with a `software_app:` front-matter block (the Crocus page)
+- Rich social sharing — Open Graph + Twitter/X (`summary_large_image`) card tags, with a share-image fallback chain (`thumbnail` → post `hero_image` → site `defaultImage` in `meta.yaml`) so every post gets a preview image
 - Per-post "Share" button — a single Tabler share glyph at the foot of every post opens a `<dialog>` modal with Facebook, Bluesky, Threads, copy-link, and (on mobile) native Web Share; links are server-rendered so they work without JS. On Certain Sound and Vinyl Vibes posts the glyph aligns into the post's footer link row
 - Optimised images served in AVIF/WebP with layout-aware `sizes` attributes; all article images are full width regardless of orientation
 - Tag-context-aware pagination — navigating from a tag page carries the tag through prev/next links
@@ -55,6 +56,8 @@ Personal blog and photography portfolio at [anaru.nz](https://anaru.nz), built w
 - **Certain Sound** — radio show playlist post type for the OAR show
   - Per-episode hero image, OAR on-demand link, and a minimal artist/title/year/note tracklist
 - **Audio shortcode** — `{% audio %}` shortcode for self-hosted M4A/MP3, with a styled HTML5 player and optional caption; CloudCannon snippet picks files from `src/audio/`
+- **Screenshot shortcode** — `{% screenshot %}` for app/UI screenshots: full resolution, lossless WebP/PNG (the photo pipeline's lossy AVIF blurs small text); CloudCannon snippet included
+- **Crocus page** — `/crocus.html`, the page for [Crocus](https://github.com/socialspacedev/crocus), the macOS DJ deck that runs Certain Sound
 
 ## Discogs sync for Vinyl Vibes
 
