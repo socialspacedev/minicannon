@@ -545,6 +545,32 @@ _snippets:
       Image:
         type: image
         cascade: true
+  my_screenshot_snippet:
+    template: eleventy_liquid_shortcode_positional_args
+    inline: false
+    preview:
+      text: Screenshot
+    definitions:
+      shortcode_name: screenshot
+      positional_args:
+        - editor_key: Image
+          type: string
+        - editor_key: Alt
+          type: string
+        - editor_key: Caption
+          type: string
+    _inputs:
+      Image:
+        type: image
+        comment: "App or website screenshot — kept full size and sharp (use Block image for photos)"
+        cascade: true
+      Alt:
+        type: text
+        comment: "Describe what's on screen for people using screen readers"
+        cascade: true
+      Caption:
+        type: text
+        cascade: true
   my_youtube_snippet:
     template: eleventy_liquid_shortcode_positional_args
     inline: false
