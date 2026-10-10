@@ -1,6 +1,115 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* Tailwind v4 scans the repo automatically (skipping .gitignore'd paths
+   like public/); shortcodes in eleventy.config.mjs emit classes too */
+@source "../../eleventy.config.mjs";
+
+@theme {
+  /* All in px: v4 sorts breakpoints by value, so mixing px with its rem
+     defaults puts them in the wrong order */
+  --breakpoint-sm: 430px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1600px;
+
+  /* v3's rem line heights. v4 makes them relative to the font size, which
+     changes every line because html's own font size grows at sm/md */
+  --text-xs--line-height: 1rem;
+  --text-sm--line-height: 1.25rem;
+  --text-base--line-height: 1.5rem;
+  --text-lg--line-height: 1.75rem;
+  --text-xl--line-height: 1.75rem;
+  --text-2xl--line-height: 2rem;
+  --text-3xl--line-height: 2.25rem;
+  --text-4xl--line-height: 2.5rem;
+  --text-5xl--line-height: 1;
+  --text-6xl--line-height: 1;
+  --text-7xl--line-height: 1;
+  --text-8xl--line-height: 1;
+  --text-9xl--line-height: 1;
+
+  --font-serif: "Roboto Serif", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+
+  /* v3 hex values for the families the site uses, so colours don't shift
+     with v4's OKLCH palette (gray is the typography plugin's default) */
+  --color-slate-50: #f8fafc;
+  --color-slate-100: #f1f5f9;
+  --color-slate-200: #e2e8f0;
+  --color-slate-300: #cbd5e1;
+  --color-slate-400: #94a3b8;
+  --color-slate-500: #64748b;
+  --color-slate-600: #475569;
+  --color-slate-700: #334155;
+  --color-slate-800: #1e293b;
+  --color-slate-900: #0f172a;
+  --color-slate-950: #020617;
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+  --color-gray-950: #030712;
+  --color-zinc-50: #fafafa;
+  --color-zinc-100: #f4f4f5;
+  --color-zinc-200: #e4e4e7;
+  --color-zinc-300: #d4d4d8;
+  --color-zinc-400: #a1a1aa;
+  --color-zinc-500: #71717a;
+  --color-zinc-600: #52525b;
+  --color-zinc-700: #3f3f46;
+  --color-zinc-800: #27272a;
+  --color-zinc-900: #18181b;
+  --color-zinc-950: #09090b;
+  --color-sky-50: #f0f9ff;
+  --color-sky-100: #e0f2fe;
+  --color-sky-200: #bae6fd;
+  --color-sky-300: #7dd3fc;
+  --color-sky-400: #38bdf8;
+  --color-sky-500: #0ea5e9;
+  --color-sky-600: #0284c7;
+  --color-sky-700: #0369a1;
+  --color-sky-800: #075985;
+  --color-sky-900: #0c4a6e;
+  --color-sky-950: #082f49;
+}
+
+/* v4 changed these defaults; keep the v3 behaviour */
+@layer base {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+  button:not(:disabled), [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  /* v4's preflight zeroes dialog margins, which un-centres modals */
+  dialog {
+    margin: auto;
+  }
+}
+
+/* Typography 0.5.20 added a <picture> rule (block + 2em margins) and moved
+   image spacing off <picture> > <img>. Undo both so images sit as they did on
+   0.5.4. :where keeps these low-specificity, so the site's own picture/img
+   rules further down still win */
+:is(main, article) :where(picture) {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+:is(main, article) :where(picture > img) {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
 
 @layer base {
   .skip-link {
@@ -9,7 +118,7 @@
     left: 1rem;
     z-index: 9999;
     padding: 0.5rem 1rem;
-    background: theme('colors.sky.600');
+    background: var(--color-sky-600);
     color: #fff;
     border-radius: 0 0 4px 4px;
     font-size: 0.875rem;
@@ -77,11 +186,11 @@
     width: min(560px, 92vw);
     max-height: 80vh;
     overflow-y: auto;
-    border: 1px solid theme('colors.zinc.300');
+    border: 1px solid var(--color-zinc-300);
     border-radius: 0.5rem;
     padding: 2.5rem 1.25rem 1.5rem;
-    background: theme('colors.zinc.100');
-    color: theme('colors.slate.900');
+    background: var(--color-zinc-100);
+    color: var(--color-slate-900);
     box-shadow: 0 20px 60px rgba(0,0,0,0.25);
     position: relative;
   }
@@ -90,9 +199,9 @@
   }
   @media (prefers-color-scheme: dark) {
     #search-dialog {
-      border-color: theme('colors.zinc.700');
-      background: theme('colors.zinc.900');
-      color: theme('colors.slate.100');
+      border-color: var(--color-zinc-700);
+      background: var(--color-zinc-900);
+      color: var(--color-slate-100);
     }
   }
   .search-close-btn {
@@ -144,7 +253,7 @@
     font-size: 0.72rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: theme('colors.slate.400');
+    color: var(--color-slate-400);
     font-style: normal;
     font-family: ui-monospace, 'SF Mono', monospace;
   }
@@ -175,7 +284,17 @@
     @apply mt-2;
   }
   .list-posts {
-    @apply flex flex-col gap-5 divide-y divide-solid divide-zinc-300 dark:divide-zinc-800 list-none list-outside pl-0;
+    @apply flex flex-col gap-5 list-none list-outside pl-0;
+  }
+  /* v3's divide-y: a line on top of every item but the first (v4's divide-y
+     puts it under the previous item instead, which shifts it within the gap) */
+  .list-posts > :not([hidden]) ~ :not([hidden]) {
+    border-top: 1px solid var(--color-zinc-300);
+  }
+  @media (prefers-color-scheme: dark) {
+    .list-posts > :not([hidden]) ~ :not([hidden]) {
+      border-top-color: var(--color-zinc-800);
+    }
   }
   .posts > h2 > a {
     @apply no-underline font-extrabold;
@@ -275,6 +394,11 @@
 }
 .film-frame {
   display: block;
+}
+/* Strips sit flush against the photo (prose's 2em img margin left a gap) */
+.film-frame img {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .film-frame::before,
 .film-frame::after {
@@ -991,7 +1115,7 @@ main figure, article figure {
   opacity: 1;
 }
 .music-item__link:focus-visible {
-  outline: 2px solid theme('colors.sky.500');
+  outline: 2px solid var(--color-sky-500);
   outline-offset: 2px;
 }
 .music-item__play {
@@ -1023,7 +1147,7 @@ main figure, article figure {
   transform: scale(1.05);
 }
 .music-item__play.is-playing {
-  background: theme('colors.sky.600');
+  background: var(--color-sky-600);
 }
 .music-item:last-child:nth-child(3n + 1) {
   grid-column: 2;
@@ -1270,7 +1394,7 @@ main figure, article figure {
   text-decoration: underline;
 }
 
-@screen sm {
+@media (width >= theme(--breakpoint-sm)) {
   html {
     @apply px-6 text-lg;
   }
@@ -1298,7 +1422,7 @@ main figure, article figure {
   }
 }
 
-@screen md {
+@media (width >= theme(--breakpoint-md)) {
   html {
     @apply px-7 text-xl;
   }
@@ -1343,7 +1467,7 @@ main figure, article figure {
   }
 }
 
-@screen xl {
+@media (width >= theme(--breakpoint-xl)) {
   html {
     @apply px-8 text-xl;
   }
@@ -1356,14 +1480,14 @@ main figure, article figure {
   main,
   article,
   .paginate {
-    @apply max-w-screen-md my-4;
+    @apply max-w-(--breakpoint-md) my-4;
   }
   .social {
     @apply grow-0 gap-8 justify-end;
   }
 }
 
-@screen 2xl {
+@media (width >= theme(--breakpoint-2xl)) {
   html {
     @apply px-9 text-xl;
   }
@@ -1376,7 +1500,7 @@ main figure, article figure {
   main,
   article,
   .paginate {
-    @apply max-w-screen-lg my-5;
+    @apply max-w-(--breakpoint-lg) my-5;
   }
   .social {
     @apply grow-0 gap-9 justify-end;

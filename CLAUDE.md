@@ -43,7 +43,7 @@ No test suite exists in this project.
 
 - **`eleventy.config.mjs`** — Main config (ESM): plugins (navigation, RSS, YouTube embeds, image optimization, time-to-read, Pagefind search), image processing pipeline (AVIF/WebP/JPEG at multiple widths), draft filtering in production, custom Liquid filters
 - **`cloudcannon.config.yml`** — CMS collections (`posts`, `pages`, `data`), input types, editorial tools; timezone is Pacific/Auckland
-- **`tailwind.config.js`** — Custom breakpoints (`sm: 430px`, `md: 768px`, `lg: 1024px`), full color/spacing palette, Typography plugin, dark mode via `media`
+- **Tailwind v4 (CSS-first, no `tailwind.config.js`)** — theme lives in the `@theme` block at the top of `src/_css/site.css`: breakpoints all in px (`sm: 430px`, `md: 768px`, `lg: 1024px`, `xl: 1280px`, `2xl: 1600px` — never mix in rem, v4 sorts by value), v3 rem line heights, Roboto Serif, and v3 hex values pinned for the slate/gray/zinc/sky families. Typography via `@plugin`. Dark mode via `prefers-color-scheme` (v4 default). Built with `@tailwindcss/cli`. Note: CSS outside `@layer` beats all Tailwind utilities in v4
 - **`jampack.config.js`** — Post-build asset optimization: HTML minification, CSS inlining, image compression (WebP/PNG/JPEG), JS minification via esbuild
 
 ### Content authoring
