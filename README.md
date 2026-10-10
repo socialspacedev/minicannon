@@ -16,6 +16,7 @@ Personal blog and photography portfolio at [anaru.nz](https://anaru.nz), built w
 - **[Tailwind CSS](https://tailwindcss.com/) v4** — styling, configured in CSS (`@theme` in `src/_css/site.css`), built with `@tailwindcss/cli`. Needs Safari/iOS 16.4+, Chrome 111+, Firefox 128+
   - [@tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin) — prose styles
 - **[PhotoSwipe](https://photoswipe.com/)** — photo lightbox with filmstrip
+- **Roboto Serif** — self-hosted as a single variable font (`src/fonts/roboto-serif-variable.woff2`, weights 300–800, 115 KB), preloaded with `font-display: optional` so text never shifts. Cut down from Google's variable font with fonttools: optical size pinned at 14 (matches the old static files), width 100, grade 0, Latin + Latin Extended (includes macrons)
 - **[Jampack](https://jampack.divriots.com/)** — post-build asset optimisation
 - **[Luxon](https://moment.github.io/luxon/)** — date formatting
 

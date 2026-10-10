@@ -41,57 +41,22 @@
       Fonts
     {% endcomment %}
   <style>
+{%- comment %}
+  One variable file for every weight (300–800), so the medium/bold weights
+  arrive with the regular one instead of missing the `optional` window.
+  Built from Google's Roboto Serif variable font: opsz pinned at 14 (matches
+  the old static files' metrics), wdth 100, GRAD 0, latin + latin-ext only.
+{% endcomment %}
 @font-face {
   font-display: optional;
   font-family: 'Roboto Serif';
   font-style: normal;
-  font-weight: 300;
+  font-weight: 300 800;
   font-stretch: 100%;
-  src: url('/fonts/roboto-serif-v13-latin_latin-ext-300.woff2') format('woff2');
-}
-@font-face {
-  font-display: optional;
-  font-family: 'Roboto Serif';
-  font-style: normal;
-  font-weight: 400;
-  font-stretch: 100%;
-  src: url('/fonts/roboto-serif-v13-latin_latin-ext-regular.woff2') format('woff2');
-}
-@font-face {
-  font-display: optional;
-  font-family: 'Roboto Serif';
-  font-style: normal;
-  font-weight: 500;
-  font-stretch: 100%;
-  src: url('/fonts/roboto-serif-v13-latin_latin-ext-500.woff2') format('woff2');
-}
-@font-face {
-  font-display: optional;
-  font-family: 'Roboto Serif';
-  font-style: normal;
-  font-weight: 600;
-  font-stretch: 100%;
-  src: url('/fonts/roboto-serif-v13-latin_latin-ext-600.woff2') format('woff2');
-}
-@font-face {
-  font-display: optional;
-  font-family: 'Roboto Serif';
-  font-style: normal;
-  font-weight: 700;
-  font-stretch: 100%;
-  src: url('/fonts/roboto-serif-v13-latin_latin-ext-700.woff2') format('woff2');
-}
-@font-face {
-  font-display: optional;
-  font-family: 'Roboto Serif';
-  font-style: normal;
-  font-weight: 800;
-  font-stretch: 100%;
-  src: url('/fonts/roboto-serif-v13-latin_latin-ext-800.woff2') format('woff2');
+  src: url('/fonts/roboto-serif-variable.woff2') format('woff2');
 }
   </style>
-  <link rel="preload" as="font" href="/fonts/roboto-serif-v13-latin_latin-ext-regular.woff2" crossorigin="anonymous" fetchpriority="high">
-  <link rel="preload" as="font" href="/fonts/roboto-serif-v13-latin_latin-ext-800.woff2" crossorigin="anonymous" fetchpriority="high">
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/roboto-serif-variable.woff2" crossorigin="anonymous" fetchpriority="high">
   
   {% comment %}
     CSS
