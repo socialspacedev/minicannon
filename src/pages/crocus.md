@@ -1,7 +1,7 @@
 ---
 _schema: default
 title: Crocus
-description: A minimal, reliable DJ deck for radio — free and open source
+description: A minimal, reliable DJ deck for radio that's free and open source.
 type: website
 layout: page.liquid
 keyword: crocus
@@ -34,13 +34,13 @@ It plays files from your Mac: **MP3, AAC/M4A (including Apple Lossless), WAV, AI
 
 ## What else it does
 
-- **Fade to Talk** ducks the music to a bed level and holds it there while you talk
-- **Fade Out** (the O key) takes a song out early when it runs long
-- **Loudness matching** across the whole show, plus an output fader with the level meter built into the fader itself
-- **A waveform with trim markers**, so you can drag to cut a long intro or outro
-- **A second screen** a co-host can open on their phone
-- **Exports**: a running order for the station, detailed notes, and a Markdown episode page from a template you control (the Certain Sound posts on this site are made this way)
-- **Keeps the display awake** for the whole show, including while you're back-announcing
+* **Fade to Talk** ducks the music to a bed level and holds it there while you talk
+* **Fade Out** (the O key) takes a song out early when it runs long
+* **Loudness matching** across the whole show, plus an output fader with the level meter built into the fader itself
+* **A waveform with trim markers**, so you can drag to cut a long intro or outro
+* **A second screen** a co-host can open on their phone
+* **Exports**: a running order for the station, detailed notes, and a Markdown episode page from a template you control (the Certain Sound posts on this site are made this way)
+* **Keeps the display awake** for the whole show, including while you're back-announcing
 
 {% screenshot "/img/crocus-talk.png" "Crocus with music ducked: the status reads 'Talk, music ducked', the countdown is labelled 'Bed ends in', and the Fade to Talk button has become 'Music Up'." "Fade to Talk. The music drops to a bed under your voice until you bring it back up." %}
 
