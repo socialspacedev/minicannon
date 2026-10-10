@@ -8,9 +8,9 @@
     "go!": "NODE_ENV=production run-s clean css eleventy",
     "build": "NODE_ENV=production run-s css eleventy",
     "clean": "rimraf public",
-    "css": "npx tailwindcss -i src/_css/site.css -o public/css/style.css --minify",
+    "css": "npx @tailwindcss/cli -i src/_css/site.css -o public/css/style.css --minify",
     "eleventy": "npx @11ty/eleventy",
-    "dev:css": "npx tailwindcss -i src/_css/site.css -o public/css/style.css --watch --minify",
+    "dev:css": "npx @tailwindcss/cli -i src/_css/site.css -o public/css/style.css --watch --minify",
     "dev:11ty": "eleventy --serve --watch",
     "discogs:sync": "node --env-file=.env scripts/discogs-sync.mjs",
     "discogs:match": "node --env-file=.env scripts/discogs-match.mjs"
@@ -29,13 +29,14 @@
     "@11ty/eleventy": "^3.1.5",
     "@11ty/eleventy-navigation": "^1.0.5",
     "@11ty/eleventy-plugin-rss": "^3.1.0",
-    "@tailwindcss/typography": "^0.5.2",
+    "@tailwindcss/cli": "^4.3.3",
+    "@tailwindcss/typography": "^0.5.20",
     "html-minifier-terser": "^7.2.0",
     "js-yaml": "^4.2.0",
     "luxon": "^3.7.2",
     "npm-run-all2": "^8.0.4",
     "rimraf": "^6.1.3",
-    "tailwindcss": "^3.4.19"
+    "tailwindcss": "^4.3.3"
   },
   "dependencies": {
     "@11ty/eleventy-fetch": "^5.1.2",
@@ -43,5 +44,10 @@
     "eleventy-plugin-time-to-read": "^1.3.0",
     "eleventy-plugin-youtube-embed": "^1.13.2",
     "pagefind": "^1.5.2"
+  },
+  "overrides": {
+    "@tailwindcss/typography": {
+      "postcss-selector-parser": "^7.1.6"
+    }
   }
 }

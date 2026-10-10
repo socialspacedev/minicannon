@@ -13,7 +13,7 @@ Personal blog and photography portfolio at [anaru.nz](https://anaru.nz), built w
   - [eleventy-navigation](https://github.com/11ty/eleventy-navigation) — site navigation
   - [eleventy-plugin-time-to-read](https://github.com/JKC-Codes/eleventy-plugin-time-to-read) — read time estimates
   - [eleventy-plugin-youtube-embed](https://github.com/gfscott/eleventy-plugin-youtube-embed) — YouTube embeds
-- **[Tailwind CSS](https://tailwindcss.com/)** — styling
+- **[Tailwind CSS](https://tailwindcss.com/) v4** — styling, configured in CSS (`@theme` in `src/_css/site.css`)
   - [@tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin) — prose styles
 - **[PhotoSwipe](https://photoswipe.com/)** — photo lightbox with filmstrip
 - **[Jampack](https://jampack.divriots.com/)** — post-build asset optimisation
