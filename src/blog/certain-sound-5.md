@@ -17,12 +17,15 @@ certain_sound:
     - artist: Peter Jefferies
       title: Day They Let You Out
       year: 2026
+      link: https://grapefruit1.bandcamp.com/album/the-day-they-let-you-out-is-the-day-they-might-not-let-you-come-back
     - artist: Roy Montgomery & Martha Skye Murphy
       title: At Dawn
       year: 2026
+      link: https://marthaskyemurphy.bandcamp.com/album/nebular
     - artist: Cash Guitar
       title: Climb the fence to steal the cactus
       year: 2026
+      link: https://cashguitar.bandcamp.com/track/climb-the-fence-to-steal-the-cactus
     - artist: Headless Chickens
       title: Run, Sheep, Run
       year: 2021
@@ -49,7 +52,7 @@ certain_sound:
     - artist: Skeptics
       title: If I will I can
       year: 1993
-      note: Recorded at Writhe 1990.
+      note: Recorded live at The Gluepot in 1990.
     - artist: Micronism
       title: Constructing space
       year: 2017

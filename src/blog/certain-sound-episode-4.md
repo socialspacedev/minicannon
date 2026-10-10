@@ -12,7 +12,7 @@ certain_sound:
   hero_image: /img/certain-sound-4.jpeg
   hero_alt: DJs in the studio
   hero_caption: The Skrubs in action for show number 4
-  oar_url:
+  oar_url: https://accessmedia.nz/player?EID=cbb49dc3-03ef-4f88-bc53-4022a43b19e9&audioOnlyMode=true
   tracks:
     - artist: Ana Hato and Deane Waretini
       title: Pokarekare Ana

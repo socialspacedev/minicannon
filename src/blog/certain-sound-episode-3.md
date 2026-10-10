@@ -12,7 +12,7 @@ certain_sound:
   hero_image: /img/certain-sound-3.png
   hero_alt: Photo of the Skrubz in the studio
   hero_caption: Skrubz in action
-  oar_url:
+  oar_url: https://accessmedia.nz/player?EID=0fb3a4ab-c330-414c-b2c9-5bd6d096682c&audioOnlyMode=true
   tracks:
     - artist: Bilders
       title: Strange Nights
