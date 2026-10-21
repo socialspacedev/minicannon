@@ -11,7 +11,7 @@ type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
 ---
-Here's the start of what I hope will become a series of more regular posts highlighting tunes and albums I like. I have posted music before, which you can find on the [Music](/music.html "Aggregated music posts")page, but only sporadically.
+Here's the start of what I hope will become a series of more regular posts highlighting tunes and albums I like. I have posted music before, which you can find on the [Music](/music.html "Aggregated music posts") page, but only sporadically.
 
 This tune comes care of a sunny evening of <a href="https://www.undertheradar.co.nz/gig/92587/Aaron-Hawkins.utr" title="Aaron's DJ gig at The Duck" target="_blank" rel="noopener">music curation</a> by one Aaron Hawkins (esquire) at The Duck in Macandrew Bay. He still remains open and inquisitive in his music discovery despite abandoning his regular radio gig for local politics and parenting.
 
