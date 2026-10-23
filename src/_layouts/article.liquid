@@ -19,8 +19,8 @@ type: "article"
         <time datetime="{{ page.date }}">{{ page.date | readableDate }}</time>&nbsp;&ndash;&nbsp;
         {{ content | timeToRead }}&nbsp;to&nbsp;read
       </small>
-      <h1 cms-edit="source">{{ title }}</h1>
-      <div class="content" cms-edit="source">
+      <h1 data-editable="text" data-prop="title" data-type="span">{{ title }}</h1>
+      <div class="content" data-editable="text" data-prop="@content">
         {{ content }}
       </div>
       {% include "photo-dump.liquid" %}

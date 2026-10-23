@@ -11,7 +11,7 @@ type: website
   <body>
     {% include "nav.liquid" %}
     <main id="main-content">
-      <div class="content" cms-edit="source">
+      <div class="content" data-editable="text" data-prop="@content">
         {{ content }}
       </div>
       {%- assign recentPosts = collections.post | reverse | slice: 0, ui.recentPostsDesktop -%}
@@ -27,7 +27,7 @@ type: website
             <h2 class="font-bold mb-2">Recent Posts</h2>
             <div class="recent-posts flex flex-col gap-2">
               {%- for post in recentPosts -%}
-                <a href="{{ post.url }}" class="{% if forloop.index > ui.recentPostsMobile %}hidden sm:flex{% else %}flex{% endif %} items-center gap-3" cms-edit="source">
+                <a href="{{ post.url }}" class="{% if forloop.index > ui.recentPostsMobile %}hidden sm:flex{% else %}flex{% endif %} items-center gap-3">
                   {%- if post.data.tags contains 'photography' -%}
                   <svg xmlns="http://www.w3.org/2000/svg" class="icon shrink-0" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
