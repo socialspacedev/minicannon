@@ -4,11 +4,16 @@ import pluginRss from "@11ty/eleventy-plugin-rss";
 import timeToRead from "eleventy-plugin-time-to-read";
 import yaml from "js-yaml";
 import path from "node:path";
-import { readFile } from "node:fs/promises";
+import { readFile, cp } from "node:fs/promises";
 import Image from "@11ty/eleventy-img";
 import embedYouTube from "eleventy-plugin-youtube-embed";
 import { DateTime } from "luxon";
 import { releaseVideos, findVideoMatch } from "./scripts/discogs-videos.mjs";
+
+// Resized images are written here, not straight into public/, so they survive
+// between CloudCannon builds (.cache is a preserved path) and eleventy-img can
+// skip re-encoding them. Copied into public/img/ like the originals.
+const IMAGE_CACHE = "./.cache/img/";
 
 export default function (eleventyConfig) {
   // Enable 11ty plugins
@@ -31,6 +36,12 @@ export default function (eleventyConfig) {
     .addPassthroughCopy({ "src/audio": "audio" })
     .addPassthroughCopy({ "src/_js": "js" })
     .addPassthroughCopy({ "src/_css/pagefind.css": "css/pagefind.css" });
+
+  // Copy the resized images in once every shortcode has finished writing them
+  // (a passthrough copy can run before they exist on a cold build)
+  eleventyConfig.on("eleventy.after", async ({ directories }) => {
+    await cp(IMAGE_CACHE, path.join(directories.output, "img"), { recursive: true, force: false });
+  });
 
   // Show the year in the footer
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
@@ -114,11 +125,20 @@ export default function (eleventyConfig) {
 </div>`;
   });
 
-  // YouTube embed — accepts a full YouTube URL or bare video ID
+  // YouTube embed — accepts a full YouTube URL or bare video ID. A start time in
+  // the URL (t=90, t=1m30s or start=90) is kept; captions start off.
   eleventyConfig.addShortcode("youtube", (urlOrId) => {
-    const match = String(urlOrId).match(/(?:youtube\.com\/(?:watch\?v=|embed\/|shorts\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
-    const id = match ? match[1] : urlOrId;
-    return `<div class="youtube-embed"><iframe src="https://www.youtube.com/embed/${id}?rel=0" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>`;
+    const url = String(urlOrId);
+    const match = url.match(/(?:youtube\.com\/(?:watch\?v=|embed\/|shorts\/|live\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
+    const id = match ? match[1] : url;
+    const time = url.match(/[?&#](?:t|start)=([0-9hms]+)/);
+    let start = 0;
+    if (time) {
+      const [, h = 0, m = 0, s = 0] = time[1].match(/^(?:(\d+)h)?(?:(\d+)m)?(?:(\d+)s?)?$/) || [];
+      start = h * 3600 + m * 60 + Number(s);
+    }
+    const params = `rel=0&cc_load_policy=0${start ? `&start=${start}` : ""}`;
+    return `<div class="youtube-embed"><iframe src="https://www.youtube.com/embed/${id}?${params}" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>`;
   });
 
   // Vinyl Vibes: YouTube ID for a Discogs-linked track that has none set,
@@ -159,7 +179,7 @@ export default function (eleventyConfig) {
     let metadata = await Image(inputFilePath, {
       widths: [400, 800, 1000],
       formats: ["avif", "webp", "svg", "jpeg"],
-      outputDir: "./public/img/",
+      outputDir: IMAGE_CACHE,
       urlPath: "/img/",
       svgShortCiruit: "size",
       // svgCompressionSize: "br",
@@ -201,7 +221,7 @@ export default function (eleventyConfig) {
     let metadata = await Image(inputFilePath, {
       widths: [800, "auto"],
       formats: ["webp", "png"],
-      outputDir: "./public/img/",
+      outputDir: IMAGE_CACHE,
       urlPath: "/img/",
       sharpWebpOptions: { lossless: true },
     });
@@ -220,7 +240,7 @@ export default function (eleventyConfig) {
     let metadata = await Image(inputFilePath, {
       widths: [400, 800, 1000],
       formats: ["avif", "webp", "svg", "jpeg"],
-      outputDir: "./public/img/",
+      outputDir: IMAGE_CACHE,
       urlPath: "/img/",
       svgShortCiruit: "size",
     });
@@ -273,7 +293,7 @@ export default function (eleventyConfig) {
         try {
           const metadata = await Image(path.join('./src/', srcPath), {
             widths: [400, 1000], formats: ["jpeg"],
-            outputDir: "./public/img/", urlPath: "/img/",
+            outputDir: IMAGE_CACHE, urlPath: "/img/",
           });
           const jpegs = metadata.jpeg || [];
           const full = jpegs[jpegs.length - 1], thumb = jpegs[0];
@@ -290,7 +310,7 @@ export default function (eleventyConfig) {
         try {
           const metadata = await Image(path.join('./src/', src), {
             widths: [400, 1000], formats: ["jpeg"],
-            outputDir: "./public/img/", urlPath: "/img/",
+            outputDir: IMAGE_CACHE, urlPath: "/img/",
           });
           const jpegs = metadata.jpeg || [];
           const full = jpegs[jpegs.length - 1], thumb = jpegs[0];
@@ -307,7 +327,7 @@ export default function (eleventyConfig) {
           try {
             const metadata = await Image(path.join('./src/', photo.image_file), {
               widths: [400, 1000], formats: ["jpeg"],
-              outputDir: "./public/img/", urlPath: "/img/",
+              outputDir: IMAGE_CACHE, urlPath: "/img/",
             });
             const jpegs = metadata.jpeg || [];
             const full = jpegs[jpegs.length - 1], thumb = jpegs[0];
@@ -403,7 +423,7 @@ export default function (eleventyConfig) {
         const metadata = await Image(imageInput, {
           widths: [400, 800],
           formats: ["jpeg"],
-          outputDir: "./public/img/",
+          outputDir: IMAGE_CACHE,
           urlPath: "/img/",
           cacheOptions: { duration: "30d", type: "buffer" },
         });
@@ -447,7 +467,7 @@ export default function (eleventyConfig) {
         const metadata = await Image(path.join('./src/', src), {
           widths: [400, 800, 1200],
           formats: ["avif", "webp", "jpeg"],
-          outputDir: "./public/img/",
+          outputDir: IMAGE_CACHE,
           urlPath: "/img/",
         });
         // Above the fold, so load eagerly with high priority (it's the LCP image)
