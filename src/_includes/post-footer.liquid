@@ -1,0 +1,20 @@
+{%- comment -%}
+  One footer for every post: show links (Certain Sound / Vinyl Vibes) on the
+  left, the Share button on the right. Plain posts just get the Share button.
+{%- endcomment -%}
+<footer class="post-footer">
+  {%- if certain_sound or vinyl_vibes -%}
+  <ul class="post-footer__links">
+    {%- if certain_sound -%}
+    {%- if certain_sound.oar_url -%}
+    <li><a href="{{ certain_sound.oar_url }}" target="_blank" rel="noopener noreferrer">Listen to this episode on OAR</a></li>
+    {%- endif -%}
+    <li><a href="https://oar.org.nz/shows/certain-sound/" target="_blank" rel="noopener noreferrer">Certain Sound on Otago Access Radio</a></li>
+    {%- endif -%}
+    {%- if vinyl_vibes -%}
+    <li><a href="https://www.facebook.com/share/g/1BMZqvXHzP/" target="_blank" rel="noopener noreferrer">Vinyl Vibes on Facebook</a></li>
+    {%- endif -%}
+  </ul>
+  {%- endif -%}
+  {% include "share-trigger.liquid" %}
+</footer>

@@ -1,11 +1,7 @@
 {%- assign shareUrl = meta.url | append: page.url -%}
 {%- assign shareText = title | append: ' ' | append: shareUrl -%}
-{%- comment -%} ACS/Vinyl Vibes posts render the trigger inside their own footer row instead {%- endcomment -%}
-{%- unless certain_sound or vinyl_vibes -%}
-<div class="share">
-  {% include "share-trigger.liquid" %}
-</div>
-{%- endunless -%}
+{%- comment -%} The trigger button lives in post-footer.liquid {%- endcomment -%}
+{% include "post-footer.liquid" %}
 
 <dialog id="share-modal" class="share-modal" aria-label="Share this post" data-url="{{ shareUrl }}" data-text="{{ shareText | escape }}" data-title="{{ title | escape }}">
   <button class="share-modal__close" type="button" aria-label="Close">
