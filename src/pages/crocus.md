@@ -10,7 +10,7 @@ permalink: '{{ title | slugify }}.html'
 eleventyNavigation:
   key: '{{ title | slugify }}'
   title: Crocus
-  order: 4
+  order: 5
 software_app:
   operating_system: macOS 14 or later
   category: MultimediaApplication
