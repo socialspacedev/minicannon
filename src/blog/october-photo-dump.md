@@ -53,7 +53,7 @@ photos:
     film: ''
     iso:
 ---
-Here are some of the better photos taken using the Kodak VISION3 500T Colour film. I picked this stock up from the same lab I got the [Double-X](/blog/may-photo-dump.html "Post showing Double-X photos"), and while I really liked Double-X, I'm not as keen on this emulsion.
+Here are some of the better photos taken using the <a href="https://fivethirty.nz/store-2" title="Online store to buy the film" target="_blank" rel="noopener">Kodak VISION3 500T</a> Colour film. I picked this stock up from the same lab I got the [Double-X](/blog/may-photo-dump.html "Post showing Double-X photos"), and while I really liked Double-X, I'm not as keen on this emulsion.
 
 I typically favour black and white but thought I'd give an old colour film a try. VISION 3 is a high-speed, tungsten-balanced colour negative motion picture film. It has a rem-jet carbon backing layer (which needs to be scraped off) and requires ECN-2 chemistry to develop. This meant development took a few extra weeks.
 
