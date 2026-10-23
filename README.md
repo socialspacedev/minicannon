@@ -38,7 +38,7 @@ Personal blog and photography portfolio at [anaru.nz](https://anaru.nz), built w
 - RSS feed, XML sitemap, and `llms.txt` for AEO
 - Structured data — BlogPosting JSON-LD on posts, WebPage on every other page, plus SoftwareApplication on pages with a `software_app:` front-matter block (the Crocus page)
 - Rich social sharing — Open Graph + Twitter/X (`summary_large_image`) card tags, with a share-image fallback chain (`thumbnail` → post `hero_image` → site `defaultImage` in `meta.yaml`) so every post gets a preview image
-- Per-post footer (`post-footer.liquid`) — show links on the left (Certain Sound / Vinyl Vibes) and a labelled Share button on the right. Share opens a `<dialog>` modal with Facebook, Bluesky, Threads, copy-link, and (on mobile) native Web Share; links are server-rendered so they work without JS
+- Per-post footer (`post-footer.liquid`) — show links (Certain Sound: Listen, The show; Vinyl Vibes: Facebook) on the left and Share on the right, all as matching pill buttons with the full wording in `title`/`aria-label`. Share opens a `<dialog>` modal with Facebook, Bluesky, Threads, copy-link, and (on mobile) native Web Share; links are server-rendered so they work without JS
 - Optimised images served in AVIF/WebP with layout-aware `sizes` attributes; all article images are full width regardless of orientation
 - Tag-context-aware pagination — navigating from a tag page carries the tag through prev/next links
 - Pagination and tag-filtered post pages
