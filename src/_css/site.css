@@ -658,26 +658,6 @@ summary.vv-track-row:hover .vv-play-icon,
   height: 120px;
   border: 0;
 }
-.vv-footer {
-  margin-top: 2rem;
-  padding-top: 1.25rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.12);
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem 2rem;
-  align-items: center;
-  font-size: 0.85rem;
-}
-.vv-footer .share__trigger,
-.acs-footer .share__trigger {
-  flex: 0 0 auto;
-  margin-left: auto;
-}
-@media (prefers-color-scheme: dark) {
-  .vv-footer {
-    border-top-color: rgba(255, 255, 255, 0.12);
-  }
-}
 .acs-hero {
   margin: 0 0 1.5rem;
 }
@@ -745,30 +725,10 @@ summary.vv-track-row:hover .vv-play-icon,
   vertical-align: -0.22em;
   margin-left: 0.2em;
 }
-.acs-footer {
-  margin-top: 2rem;
-  padding-top: 1.25rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.12);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  font-size: 0.9rem;
-}
-.acs-footer__links {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  min-width: 0;
-}
 @media (prefers-color-scheme: dark) {
   .acs-track,
   .acs-track:first-child {
     border-color: rgba(255, 255, 255, 0.1);
-  }
-  .acs-footer {
-    border-top-color: rgba(255, 255, 255, 0.12);
   }
 }
 .audio-player {
@@ -1214,31 +1174,83 @@ main figure, article figure {
 }
 .bc-modal__post-link:hover { color: #fff; }
 
-/* Share button + modal */
-.share {
+/* Post footer: show links on the left, Share button on the right */
+/* (a <footer>, so override the site footer's column layout and padding) */
+.post-footer {
   display: flex;
-  justify-content: flex-end;
-  margin: 1.5rem 0 0.5rem;
-}
-.share__trigger {
-  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: left;
   align-items: center;
-  justify-content: center;
-  width: 2.5rem;
-  height: 2.5rem;
-  padding: 0;
-  background: none;
-  border: 0;
-  color: inherit;
-  opacity: 0.5;
-  cursor: pointer;
-  border-radius: 50%;
-  transition: opacity 0.15s;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 3rem;
+  padding: 1.5rem 0 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  font-size: 0.9rem;
 }
-.share__trigger:hover,
-.share__trigger:focus-visible {
+.post-footer__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.post-footer__links li {
+  margin: 0;
+  padding: 0;
+}
+@media (prefers-color-scheme: dark) {
+  .post-footer {
+    border-top-color: rgba(255, 255, 255, 0.12);
+  }
+}
+
+/* Pill buttons in the post footer: show links and Share look the same */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  box-sizing: border-box;
+  height: 2.25rem;
+  padding: 0 1rem;
+  background: none;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  color: inherit;
+  font: inherit;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  font-weight: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: opacity 0.15s, color 0.15s;
+}
+.pill:hover,
+.pill:focus-visible {
   opacity: 1;
-  color: #0284c7;
+  color: var(--color-sky-600);
+}
+@media (prefers-color-scheme: dark) {
+  .pill:hover,
+  .pill:focus-visible {
+    color: var(--color-sky-400);
+  }
+}
+
+/* Three pills fit one row on a phone */
+@media (width < 430px) {
+  .pill {
+    padding: 0 0.75rem;
+  }
+}
+
+/* Share button + modal */
+.share__trigger {
+  margin-left: auto;
 }
 .share-modal {
   width: min(340px, 90vw);

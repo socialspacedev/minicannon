@@ -4,7 +4,7 @@
   <figure class="acs-hero">
     {% image certain_sound.hero_image, certain_sound.hero_alt %}
     {%- if certain_sound.hero_caption -%}
-    <figcaption>{{ certain_sound.hero_caption }}</figcaption>
+    <figcaption data-editable="text" data-prop="certain_sound.hero_caption" data-type="span">{{ certain_sound.hero_caption }}</figcaption>
     {%- endif -%}
   </figure>
   {%- endif -%}
@@ -36,15 +36,5 @@
     {%- endfor -%}
   </ol>
   {%- endif -%}
-
-  <footer class="acs-footer">
-    <div class="acs-footer__links">
-      {%- if certain_sound.oar_url -%}
-      <a class="acs-link" href="{{ certain_sound.oar_url }}" target="_blank" rel="noopener noreferrer">Listen to this episode on OAR &rarr;</a>
-      {%- endif -%}
-      <a class="acs-link" href="https://oar.org.nz/shows/certain-sound/" target="_blank" rel="noopener noreferrer">Certain Sound on Otago Access Radio &rarr;</a>
-    </div>
-    {% include "share-trigger.liquid" %}
-  </footer>
 </section>
 {%- endif -%}
