@@ -34,7 +34,7 @@ Personal blog and photography portfolio at [anaru.nz](https://anaru.nz), built w
   - Image source: the show post's `hero_image` / `hero_alt` (Vinyl Vibes, Certain Sound), else `thumbnail`; posts with no image are skipped
   - Optimised via eleventy-img (AVIF/WebP/JPEG at 400/800/1200w), loaded eagerly with high priority, and links to its post
 - Static search via Pagefind, opened from a magnifying-glass icon next to the site title (lazy-loaded dialog modal)
-- Scheduled posts — posts with a future date are excluded from production builds until that date
+- Scheduled posts — posts with a future date are excluded from production builds until that date. Only the live site hides them: it is the one CloudCannon site with `ELEVENTY_ENV=production`, so branch/preview sites and local builds show future posts (`src/blog/blog.11tydata.js`). Keep that variable on the main site and off branch sites
 - RSS feed, XML sitemap, and `llms.txt` for AEO
 - Structured data — BlogPosting JSON-LD on posts, WebPage on every other page, plus SoftwareApplication on pages with a `software_app:` front-matter block (the Crocus page)
 - Rich social sharing — Open Graph + Twitter/X (`summary_large_image`) card tags, with a share-image fallback chain (`thumbnail` → post `hero_image` → site `defaultImage` in `meta.yaml`) so every post gets a preview image
