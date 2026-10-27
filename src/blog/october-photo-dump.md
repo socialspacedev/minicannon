@@ -53,11 +53,11 @@ photos:
     film: Kodak VISION3 500T Color
     iso: '500'
 ---
-Here are some of the better photos taken using the <a href="https://fivethirty.nz/store-2" title="Online store to buy the film" target="_blank" rel="noopener">Kodak VISION3 500T</a> colour film. I picked this stock up from the same lab I got the [Double-X](/blog/may-photo-dump.html "Post showing Double-X photos"), and while I really liked Double-X, I'm not as keen on this emulsion.
+Here are some of the better photos taken using the <a href="https://fivethirty.nz/store-2" title="Online store to buy the film" target="_blank" rel="noopener">Kodak VISION3 500T</a> colour film. I picked this film up from the same lab I got the [Double-X](/blog/may-photo-dump.html "Post showing Double-X photos"), and while I really liked Double-X, I'm not as keen on this emulsion.
 
 I typically favour black and white but thought I'd give an old colour film a try. VISION 3 is a high-speed, tungsten-balanced colour negative motion picture film. It has a rem-jet carbon backing layer (which needs to be scraped off) and requires ECN-2 chemistry to develop. This meant development took a few extra weeks.
 
-This film is tungsten-balanced too and a filter is recommended outside. I had no filter and was keen to see what weird effects might emerge. Ultimately you get a washed out old fashioned looking photo which is kind of interesting but it's not a film stock I'll use again.
+Because of the tungsten, a filter is recommended when taking shots outside. I had no filter and was keen to see what weird effects might emerge. Ultimately you get a washed out old fashioned looking photo which is kind of interesting but not much else.
 
 &nbsp;
 
