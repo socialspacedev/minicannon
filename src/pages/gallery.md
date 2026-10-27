@@ -9,5 +9,5 @@ permalink: photos.html
 eleventyNavigation:
   key: photos
   title: Photos
-  order: 5
+  order: 4
 ---
