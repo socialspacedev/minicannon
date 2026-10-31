@@ -11,7 +11,7 @@ type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
 ---
-I heard this tune for the first time last night while watching season 2, episode 7 of Mobland. It's used to accompany the criminal Harrigan family as they rove around London locking down their extortion territory.
+I heard this tune for the first time last night while watching season 2, episode 7 of <a href="https://www.youtube.com/watch?v=VvYl1a1Px5Y" title="Mobland season 2 trailer on YouTube" target="_blank" rel="noopener">Mobland</a>. It's used to accompany the criminal Harrigan family as they rove around London locking down their extortion territory.
 
 The song is by Getdown Services on their 2024 ep <a href="https://getdownservices.bandcamp.com/album/your-medals-in-the-post" title="Link to Getdown Services ep on Bandcamp" target="_blank" rel="noopener">Your Medal's in the Post</a>. I've never heard of Getdown Services but it appears to be two lads from Manchester who describe their genre of music as "art-disco".
 
