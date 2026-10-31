@@ -55,10 +55,13 @@ export default function (eleventyConfig) {
   });
 
   // "album=123" / "track=123" from a Bandcamp embed code or ID; a bare number takes
-  // its kind from the page URL. Null when there's no ID.
+  // its kind from the page URL. Null when there's no ID. A track's embed code carries
+  // its album too ("album=1/…/track=2"), so track wins: that's the song the post means.
   const bandcampId = (pageUrl, embed = "") => {
-    const pair = String(embed).match(/(album|track)=(\d+)/);
-    if (pair) return `${pair[1]}=${pair[2]}`;
+    const track = String(embed).match(/track=(\d+)/);
+    if (track) return `track=${track[1]}`;
+    const album = String(embed).match(/album=(\d+)/);
+    if (album) return `album=${album[1]}`;
     const bare = String(embed).match(/^\s*(\d+)\s*$/);
     if (bare) return `${/\/album\//.test(pageUrl) ? "album" : "track"}=${bare[1]}`;
     return null;
