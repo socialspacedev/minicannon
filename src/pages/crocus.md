@@ -83,7 +83,7 @@ It opens normally from then on.
 
 Crocus is named after the song of the same name by the [Victor Dimisich Band](https://thebigcity.co.nz/artists/v/victor-dimisich-band/). The most recent version is on [An Afternoon With Victor Dimisich](/blog/an-afternoon-with-victor-dimisich.html), the collection of 1981 demos that Siltbreeze released this year.
 
-{% bandcamp "https://siltbreeze.bandcamp.com/track/crocus" %}
+{% bandcamp "https://siltbreeze.bandcamp.com/track/crocus", "track=793473480" %}
 
 ## Give it a crack
 

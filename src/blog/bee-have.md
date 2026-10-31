@@ -18,4 +18,4 @@ He says this about it:
 
 Bee Sides is gentle and beautiful and I recommend listening to the whole thing when you need something contemplative to quiet a noisy mind.
 
-{% bandcamp, "https://peterhobbs.bandcamp.com/album/bee-sides" %}
+{% bandcamp, "https://peterhobbs.bandcamp.com/album/bee-sides", "album=3556003011" %}
