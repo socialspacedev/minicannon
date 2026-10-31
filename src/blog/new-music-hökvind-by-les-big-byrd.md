@@ -15,4 +15,4 @@ permalink: blog/{{ title | slugify }}.html
 
 The lead track is <a href="https://lesbigbyrd.bandcamp.com/track/h-kvind" title="Check out Hökvind on Bandcamp" target="_blank" rel="noopener">Hökvind</a> which is a delightful slice of motorik-driven psychedelia. Plenty of fuzzy strange sounds over a rock solid bed of propulsive percussion and groove.
 
-{% bandcamp, "https://lesbigbyrd.bandcamp.com/track/h-kvind" %}
+{% bandcamp, "https://lesbigbyrd.bandcamp.com/track/h-kvind", "track=3584749263" %}

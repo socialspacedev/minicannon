@@ -8,7 +8,7 @@ Personal blog and photography portfolio at [anaru.nz](https://anaru.nz), built w
   - **[Pagefind](https://pagefind.app/)** — static search
 - **[Eleventy](https://www.11ty.dev/)** — static site generator
   - [eleventy-img](https://github.com/11ty/eleventy-img) — image optimisation (AVIF, WebP, JPEG at multiple widths)
-  - [eleventy-fetch](https://github.com/11ty/eleventy-fetch) — cached build-time HTTP fetching (used for Bandcamp artwork and Discogs YouTube lookups)
+  - [eleventy-fetch](https://github.com/11ty/eleventy-fetch) — cached build-time HTTP fetching (used for Discogs YouTube lookups)
   - [eleventy-plugin-rss](https://github.com/11ty/eleventy-plugin-rss) — RSS feed
   - [eleventy-navigation](https://github.com/11ty/eleventy-navigation) — site navigation
   - [eleventy-plugin-time-to-read](https://github.com/JKC-Codes/eleventy-plugin-time-to-read) — read time estimates
@@ -29,7 +29,7 @@ Personal blog and photography portfolio at [anaru.nz](https://anaru.nz), built w
   - Keyboard accessible (Tab to image, Enter/Space to open)
   - EXIF data (camera, lens, film, ISO) stored in YAML data files and editable via CloudCannon
   - EXIF info button (ⓘ) on article figcaptions and inside the lightbox caption area
-- Curated Music page — grid of posts opted in via a `music_featured: true` frontmatter toggle, with a layered image fallback (hero image → thumbnail → first inline image → Bandcamp artwork). Each tile has a ▶ play button on hover that pops a modal Bandcamp player; tiles' empty-row gap is filled with a "More music →" tile pointing at the music tag
+- Curated Music page — grid of posts opted in via a `music_featured: true` frontmatter toggle, with a layered image fallback (hero image → thumbnail → first inline image). Each tile has a ▶ play button on hover that pops a modal Bandcamp player; tiles' empty-row gap is filled with a "More music →" tile pointing at the music tag
 - Two-column homepage: hero image from the latest post that has one + recent posts list with post-type icons
   - Image source: the show post's `hero_image` / `hero_alt` (Vinyl Vibes, Certain Sound), else `thumbnail`; posts with no image are skipped
   - Optimised via eleventy-img (AVIF/WebP/JPEG at 400/800/1200w), loaded eagerly with high priority, and links to its post
@@ -46,7 +46,7 @@ Personal blog and photography portfolio at [anaru.nz](https://anaru.nz), built w
 - 404 and offline pages
 - WCAG 2.1 AA accessibility: skip-to-content link, ARIA landmarks, keyboard navigation throughout
 - **YouTube embeds** — `{% youtube %}` shortcode accepts a full URL or bare video ID; a start time in the URL (`t=90`, `t=1m30s`, `start=90`) is honoured and captions start off; CloudCannon snippet included
-- **Bandcamp embeds** — `{% bandcamp %}` shortcode accepts a Bandcamp page URL, fetches album artwork and embed details at build time (cached for 30 days via eleventy-fetch), and renders full-width artwork with the Bandcamp player overlaid at the bottom
+- **Bandcamp embeds** — `{% bandcamp, "page URL", "track=123" %}` renders the post's `thumbnail` full width with Bandcamp's compact player overlaid at the bottom, or Bandcamp's large player (with its own artwork) when there's no thumbnail. The second value is the ID from Bandcamp's **Share / Embed** code (`album=…` or `track=…`); the Music page's ▶ player uses it too. Nothing is fetched from Bandcamp at build time: since late October 2026 it answers automated requests with a bot check, so scraping it stopped working. Without an ID, the post shows a plain "Listen on Bandcamp" link
 - **Vinyl Vibes** — dedicated post type for vinyl record night playlists
   - Two DJ sets per event, each with an ordered tracklist
   - YouTube thumbnails with zoom-on-hover and lazy-loaded embeds (click to expand, click title to close)
@@ -115,7 +115,7 @@ The script preserves YAML idiosyncrasies — multi-line scalars (`buy_url: >- �
 
 ### CloudCannon build settings
 
-- **Preserved paths** includes `.cache` so Discogs and Bandcamp lookups are reused between builds, and so are resized images: eleventy-img writes to `.cache/img/` and the build copies them into `public/img/`, so only new or changed photos are encoded (CloudCannon builds dropped from ~4 min to 23–26 s)
+- **Preserved paths** includes `.cache` so Discogs lookups are reused between builds, and so are resized images: eleventy-img writes to `.cache/img/` and the build copies them into `public/img/`, so only new or changed photos are encoded (CloudCannon builds dropped from ~4 min to 23–26 s)
 - **Environment variable** `DISCOGS_TOKEN` (optional) raises the Discogs rate limit for build-time lookups — set in CloudCannon, never committed
 
 ## Local development
