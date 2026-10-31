@@ -34,12 +34,13 @@ Personal blog and photography portfolio at [anaru.nz](https://anaru.nz), built w
   - Image source: the show post's `hero_image` / `hero_alt` (Vinyl Vibes, Certain Sound), else `thumbnail`; posts with no image are skipped
   - Optimised via eleventy-img (AVIF/WebP/JPEG at 400/800/1200w), loaded eagerly with high priority, and links to its post
 - Static search via Pagefind, opened from a magnifying-glass icon next to the site title (lazy-loaded dialog modal)
-- Scheduled posts — posts with a future date are excluded from production builds until that date
+- Scheduled posts — posts with a future date are excluded from production builds until that date. Only the live site hides them: it is the one CloudCannon site with `ELEVENTY_ENV=production`, so branch/preview sites and local builds show future posts (`src/blog/blog.11tydata.js`). Keep that variable on the main site and off branch sites
 - RSS feed, XML sitemap, and `llms.txt` for AEO
 - Structured data — BlogPosting JSON-LD on posts, WebPage on every other page, plus SoftwareApplication on pages with a `software_app:` front-matter block (the Crocus page)
 - Rich social sharing — Open Graph + Twitter/X (`summary_large_image`) card tags, with a share-image fallback chain (`thumbnail` → post `hero_image` → site `defaultImage` in `meta.yaml`) so every post gets a preview image
 - Per-post footer (`post-footer.liquid`) — show links (Certain Sound: Listen, The show; Vinyl Vibes: Facebook) on the left and Share on the right, all as matching pill buttons with the full wording in `title`/`aria-label`. Share opens a `<dialog>` modal with Facebook, Bluesky, Threads, copy-link, and (on mobile) native Web Share; links are server-rendered so they work without JS
 - Optimised images served in AVIF/WebP with layout-aware `sizes` attributes; all article images are full width regardless of orientation
+- Cookieless, badge-free analytics via Cloudflare Web Analytics (beacon in `head.liquid`)
 - Tag-context-aware pagination — navigating from a tag page carries the tag through prev/next links
 - Pagination and tag-filtered post pages
 - 404 and offline pages
@@ -114,7 +115,7 @@ The script preserves YAML idiosyncrasies — multi-line scalars (`buy_url: >- �
 
 ### CloudCannon build settings
 
-- **Preserved paths** includes `.cache` so Discogs and Bandcamp lookups are reused between builds, and so are resized images: eleventy-img writes to `.cache/img/` and the build copies them into `public/img/`, so only new or changed photos are encoded (a cold build is ~2 min, a warm one ~10 s)
+- **Preserved paths** includes `.cache` so Discogs and Bandcamp lookups are reused between builds, and so are resized images: eleventy-img writes to `.cache/img/` and the build copies them into `public/img/`, so only new or changed photos are encoded (CloudCannon builds dropped from ~4 min to 23–26 s)
 - **Environment variable** `DISCOGS_TOKEN` (optional) raises the Discogs rate limit for build-time lookups — set in CloudCannon, never committed
 
 ## Local development
