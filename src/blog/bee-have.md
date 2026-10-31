@@ -5,6 +5,7 @@ description: Peter Hobb's latest field recordings based exploration featuring be
 tags:
   - music
 date: 2024-07-12T13:48:45+12:00
+thumbnail: /img/bee-have-bandcamp.jpg
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html

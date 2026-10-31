@@ -5,6 +5,7 @@ description: New tune from Dummy on their upcoming album Free Energy.
 tags:
   - music
 date: 2024-07-15T13:48:00+12:00
+thumbnail: /img/spit-the-dummy-bandcamp.jpg
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html

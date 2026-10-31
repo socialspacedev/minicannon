@@ -5,6 +5,7 @@ description: Pumping track that updates M|A|R|R|S' classic Pump up the Volume.
 tags:
   - music
 date: 2024-07-12T13:48:45+12:00
+thumbnail: /img/pump-up-the-volume-bandcamp.jpg
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html

@@ -54,6 +54,16 @@ export default function (eleventyConfig) {
     return `<figure class="audio-player"><audio controls preload="metadata" src="${esc(src)}">Your browser does not support the audio element. <a href="${esc(src)}">Download the file</a>.</audio>${captionHtml}</figure>`;
   });
 
+  // "album=123" / "track=123" from a Bandcamp embed code or ID; a bare number takes
+  // its kind from the page URL. Null when there's no ID.
+  const bandcampId = (pageUrl, embed = "") => {
+    const pair = String(embed).match(/(album|track)=(\d+)/);
+    if (pair) return `${pair[1]}=${pair[2]}`;
+    const bare = String(embed).match(/^\s*(\d+)\s*$/);
+    if (bare) return `${/\/album\//.test(pageUrl) ? "album" : "track"}=${bare[1]}`;
+    return null;
+  };
+
   // Bandcamp player. Nothing is fetched from Bandcamp: it now answers automated
   // page requests with a bot check, so scraping it at build time stopped working.
   // The player is built from the ID in Bandcamp's own embed code ("album=123" or
@@ -62,18 +72,15 @@ export default function (eleventyConfig) {
     const esc = s => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
     const link = `<a href="${esc(pageUrl)}" target="_blank" rel="noopener noreferrer">Listen on Bandcamp ↗</a>`;
 
-    const pair = String(embed).match(/(album|track)=(\d+)/);
-    const bare = String(embed).match(/^\s*(\d+)\s*$/);
-    if (!pair && !bare) {
+    const bc = bandcampId(pageUrl, embed);
+    if (!bc) {
       if (embed) console.warn(`[bandcamp] No album= or track= ID in "${embed}" for ${pageUrl}`);
       return `<p>${link}</p>`;
     }
-    const kind = pair ? pair[1] : (/\/album\//.test(pageUrl) ? "album" : "track");
-    const id = pair ? pair[2] : bare[1];
 
     const data = this.ctx?.environments ?? {};
     const label = esc(data.title || "Bandcamp player");
-    const player = `https://bandcamp.com/EmbeddedPlayer/${kind}=${id}/bgcol=1a1a1a/linkcol=ffffff/tracklist=false/`;
+    const player = `https://bandcamp.com/EmbeddedPlayer/${bc}/bgcol=1a1a1a/linkcol=ffffff/tracklist=false/`;
 
     if (data.thumbnail) {
       return `<div class="bc-embed">
@@ -311,8 +318,6 @@ export default function (eleventyConfig) {
     items.sort((a, b) => b.date - a.date);
     const result = [];
 
-    const { default: EleventyFetch } = await import("@11ty/eleventy-fetch");
-
     for (const item of items) {
       let content;
       try { content = await readFile(item.inputPath, 'utf8'); } catch(e) { continue; }
@@ -320,52 +325,12 @@ export default function (eleventyConfig) {
       let imageInput = null;
       let bandcampEmbed = null;
 
-      // Always probe for a Bandcamp shortcode in the body — we want the embed
-      // URL for the music page's player panel, regardless of whether we use
-      // the og:image as the thumbnail.
-      const bcMatch = content.match(/\{%-?\s*bandcamp,?\s+"([^"]+)"/);
-      let bandcampOgImage = null;
-      if (bcMatch) {
-        try {
-          const buf = await EleventyFetch(bcMatch[1], {
-            duration: "30d",
-            type: "buffer",
-            fetchOptions: {
-              headers: {
-                "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-              }
-            }
-          });
-          const html = buf.toString('utf8');
-          const imgMatch = html.match(/<meta\s+property="og:image"\s+content="([^"]+)"/i)
-                        || html.match(/<meta\s+content="([^"]+)"\s+property="og:image"/i);
-          if (imgMatch) bandcampOgImage = imgMatch[1];
-
-          let embedSrc = null;
-          const embedMatch = html.match(/https:\/\/bandcamp\.com\/EmbeddedPlayer\/[^\s"'<\\]+/);
-          if (embedMatch) {
-            embedSrc = embedMatch[0].replace(/\\"/g, '');
-          } else {
-            const albumIdMatch = html.match(/"album_id"\s*:\s*(\d+)/);
-            const trackIdMatch = html.match(/"track_id"\s*:\s*(\d+)/);
-            if (albumIdMatch) embedSrc = `https://bandcamp.com/EmbeddedPlayer/album=${albumIdMatch[1]}/`;
-            else if (trackIdMatch) embedSrc = `https://bandcamp.com/EmbeddedPlayer/track=${trackIdMatch[1]}/`;
-          }
-          if (embedSrc) {
-            // Music-page player: bigger than the in-post overlay, artwork visible
-            embedSrc = embedSrc
-              .replace(/size=\w+\//i, '')
-              .replace(/artwork=\w+\//i, '')
-              .replace(/tracklist=\w+\//i, '')
-              .replace(/bgcol=[a-f0-9]+\//i, '')
-              .replace(/linkcol=[a-f0-9]+\//i, '')
-              .replace(/transparent=true\//i, '');
-            if (!embedSrc.endsWith('/')) embedSrc += '/';
-            embedSrc += 'size=large/artwork=big/tracklist=false/bgcol=1a1a1a/linkcol=ffffff/';
-            bandcampEmbed = embedSrc;
-          }
-        } catch(e) {}
+      // The music page's pop-up player comes from the post's {% bandcamp %} shortcode
+      // and its album=/track= ID — built locally, since Bandcamp blocks build-time fetches.
+      const bcMatch = content.match(/\{%-?\s*bandcamp,?\s+"([^"]+)"\s*(?:,\s*"([^"]*)")?/);
+      const bc = bcMatch && bandcampId(bcMatch[1], bcMatch[2]);
+      if (bc) {
+        bandcampEmbed = `https://bandcamp.com/EmbeddedPlayer/${bc}/size=large/artwork=big/tracklist=false/bgcol=1a1a1a/linkcol=ffffff/`;
       }
 
       // Image fallback chain
@@ -376,7 +341,6 @@ export default function (eleventyConfig) {
       } else {
         const imageMatch = content.match(/\{%-?\s*image,?\s+"([^"]+)"/);
         if (imageMatch) imageInput = path.join('./src/', imageMatch[1]);
-        else if (bandcampOgImage) imageInput = bandcampOgImage;
       }
 
       if (!imageInput) continue;
