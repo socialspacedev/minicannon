@@ -19,4 +19,4 @@ Here's a blurb taken from the ep on Bandcamp:
 
 > Your Medal's In The Post' is the brand new EP from art-disco duo Getdown Services, a follow-up to their debut album 'Crisps' released last year. To be honest, it's a a small wonder that between endless festival dates and headline shows, they have found time to record the new EP, a six track excursion that sees the pair experiment with a more measured and introspective approach to songwriting, albeit one still brimming with their incisive wit and sharp ear for production.
 
-{% bandcamp, "https://getdownservices.bandcamp.com/track/dog-dribble-2" %}
+{% bandcamp, "https://getdownservices.bandcamp.com/track/dog-dribble-2", "track=3492209940" %}
