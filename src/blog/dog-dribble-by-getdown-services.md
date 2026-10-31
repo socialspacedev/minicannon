@@ -15,7 +15,7 @@ I heard this tune for the first time last night while watching season 2, episode
 
 The song is by Getdown Services on their 2024 ep <a href="https://getdownservices.bandcamp.com/album/your-medals-in-the-post" title="Link to Getdown Services ep on Bandcamp" target="_blank" rel="noopener">Your Medal's in the Post</a>. I've never heard of Getdown Services but it appears to be two lads from Manchester who describe their genre of music as "art-disco".
 
-Here's a blurb taken from the ep on Bandcamp:
+Here's a blurb taken from Bandcamp:
 
 > Your Medal's In The Post' is the brand new EP from art-disco duo Getdown Services, a follow-up to their debut album 'Crisps' released last year. To be honest, it's a a small wonder that between endless festival dates and headline shows, they have found time to record the new EP, a six track excursion that sees the pair experiment with a more measured and introspective approach to songwriting, albeit one still brimming with their incisive wit and sharp ear for production.
 
