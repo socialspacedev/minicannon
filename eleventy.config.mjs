@@ -407,7 +407,9 @@ export default function (eleventyConfig) {
           decoding: "async",
           fetchpriority: "high",
         });
-        return [{ html, url: item.url, title: item.data.title }];
+        // Its shape, so the homepage can size it to the post list without cropping square art
+        const largest = Object.values(metadata)[0].at(-1);
+        return [{ html, url: item.url, title: item.data.title, ratio: `${largest.width} / ${largest.height}` }];
       } catch(e) {
         console.warn(`[homeHero] ${item.inputPath}: ${e.message}`);
       }
