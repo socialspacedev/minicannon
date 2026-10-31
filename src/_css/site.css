@@ -921,15 +921,31 @@ main figure, article figure {
 .home-posts h2 {
   margin-top: 0;
 }
+/* Desktop: the post list sets the row height; the photo matches it and takes its
+   width from its own shape (--hero-ratio, set by the template), up to half the
+   row. Square album art shows whole, and no image can stretch the row and leave
+   a gap under the list. Wider-than-room photos are cropped to fit, as before. */
 @media (min-width: 768px) {
   .home-grid {
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     gap: 3rem;
     align-items: stretch;
   }
   .home-photo {
-    aspect-ratio: auto;
-    height: 100%;
+    position: relative;
+    flex: 0 0 auto;
+    aspect-ratio: var(--hero-ratio, 3 / 2);
+    max-width: 50%;
+    min-height: 14rem;
+  }
+  .home-photo picture,
+  .home-photo img {
+    position: absolute;
+    inset: 0;
+  }
+  .home-posts {
+    flex: 1 1 0;
+    min-width: 0;
   }
 }
 .align-left { text-align: left; }
