@@ -979,6 +979,15 @@ main figure, article figure {
   width: 100%;
   height: auto;
 }
+.bc-embed--large {
+  max-width: 400px;
+}
+.bc-iframe-large {
+  display: block;
+  width: 100%;
+  aspect-ratio: 350 / 470;
+  border: 0;
+}
 .bc-iframe {
   position: absolute;
   bottom: 1rem;
