@@ -30,7 +30,7 @@ Personal blog and photography portfolio at [anaru.nz](https://anaru.nz), built w
   - EXIF data (camera, lens, film, ISO) stored in YAML data files and editable via CloudCannon
   - EXIF info button (ⓘ) on article figcaptions and inside the lightbox caption area
 - Curated Music page — grid of posts opted in via a `music_featured: true` frontmatter toggle, with a layered image fallback (hero image → thumbnail → first inline image). Each tile has a ▶ play button on hover that pops a modal Bandcamp player; tiles' empty-row gap is filled with a "More music →" tile pointing at the music tag
-- Two-column homepage: hero image from the latest post that has one + recent posts list with post-type icons
+- Two-column homepage: hero image from the latest post that has one + recent posts list with post-type icons. On desktop the list sets the row height and the image matches it, taking its width from its own shape (up to half the row), so square album art shows whole and never leaves a gap under the list
   - Image source: the show post's `hero_image` / `hero_alt` (Vinyl Vibes, Certain Sound), else `thumbnail`; posts with no image are skipped
   - Optimised via eleventy-img (AVIF/WebP/JPEG at 400/800/1200w), loaded eagerly with high priority, and links to its post
 - Static search via Pagefind, opened from a magnifying-glass icon next to the site title (lazy-loaded dialog modal)
@@ -115,7 +115,7 @@ The script preserves YAML idiosyncrasies — multi-line scalars (`buy_url: >- �
 
 ### CloudCannon build settings
 
-- **Preserved paths** includes `.cache` so Discogs lookups are reused between builds, and so are resized images: eleventy-img writes to `.cache/img/` and the build copies them into `public/img/`, so only new or changed photos are encoded (CloudCannon builds dropped from ~4 min to 23–26 s)
+- **Preserved paths** includes `.cache` so Discogs lookups are reused between builds, and so are resized images: eleventy-img writes to `.cache/img/` and the build copies them into `public/img/`, so only new or changed photos are encoded (CloudCannon builds dropped from ~4 min to 23–26 s, and to ~19 s once Bandcamp pages were no longer fetched)
 - **Environment variable** `DISCOGS_TOKEN` (optional) raises the Discogs rate limit for build-time lookups — set in CloudCannon, never committed
 
 ## Local development
