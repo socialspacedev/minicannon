@@ -143,3 +143,14 @@ JavaScript source files live in `src/_js/` and are copied to `public/js/` at bui
 ## Deployment
 
 Pushes to `main` trigger a CloudCannon build automatically.
+
+- **Staging:** the `staging` branch has its own CloudCannon site (preview at `unique-spoon.cloudvent.net`). Test risky changes, such as redirects, there before `main`
+- **If a push doesn't deploy** within ~10 minutes, run Pull then Build on the site in CloudCannon (it occasionally misses a push)
+
+### Domains and redirects
+
+- **www → apex:** `www.anaru.nz` is a CloudCannon *Redirect Subdomain* that sends visitors to `anaru.nz` with a 301, keeping the path and query string (Site Settings → Custom Domain). CloudCannon manages the DNS side
+- **Redirect rules** live in `.cloudcannon/routing.json` (regex `from`, `$1` substitutions, first match wins):
+  - `…/index.html` and `…/index.php` → their folder, 301. CloudCannon's built-in index redirect is a temporary 307
+  - `/blog/` → `/pages/blog/` (the blog listing), 301
+  - Old "A Certain Sound" post and tag URLs → their "Certain Sound" equivalents, 301
