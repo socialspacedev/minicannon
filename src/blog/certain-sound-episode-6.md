@@ -13,7 +13,7 @@ certain_sound:
   hero_alt: Photo of DJs figuring stuff out
   hero_caption: The Skrubs under control
   oar_url: https://accessmedia.nz/player?EID=890e2b54-214d-4935-b535-8e6ebb219616&audioOnlyMode=true
-    tracks:
+  tracks:
     - artist: Fang
       title: Employee of The Month
       year: 2011
