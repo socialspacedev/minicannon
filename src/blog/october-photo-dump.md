@@ -58,7 +58,3 @@ Here are some of the better photos taken using the <a href="https://fivethirty.n
 I typically favour black and white but thought I'd give an old colour film a try. VISION 3 is a high-speed, tungsten-balanced colour negative motion picture film. It has a rem-jet carbon backing layer (which needs to be scraped off) and requires ECN-2 chemistry to develop. This meant development took a few extra weeks.
 
 Because of the tungsten, a filter is recommended when taking shots outside. I had no filter and was keen to see what weird effects might emerge. Ultimately you get a washed out old fashioned looking photo which is kind of interesting but not much else.
-
-&nbsp;
-
-&nbsp;
