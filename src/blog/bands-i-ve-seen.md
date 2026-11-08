@@ -5,6 +5,7 @@ description: Some bands I've seen over the years
 tags:
   - music
 date: 2014-01-01T14:19:00+13:00
+thumbnail: /img/lof-2025-slightly-imperfect.jpg
 type: article
 layout: article.liquid
 permalink: blog/{{ title | slugify }}.html
@@ -98,6 +99,7 @@ music_featured: false
 
 ### **International acts**
 
+* Shonen Knife
 * Supergrass
 * Holy Fuck
 * Stereolab
@@ -143,5 +145,5 @@ music_featured: false
 * Pavement
 
 ```
-Last updated: 3/5/2026
+Last updated: 9/11/2026
 ```

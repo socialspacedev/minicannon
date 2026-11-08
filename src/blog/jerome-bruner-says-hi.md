@@ -23,13 +23,13 @@ Anyway, in 2009 I saw that Bruner was still on the faculty at NYU. On a whim, I 
 
 On the very same night, he replied back to me (he was in his 90s at this point!) with the following kind words:
 
-> From: Jerome S Bruner<br>Sent: Tue 21/07/2009 2:17 a.m.<br>To: Andrew Long<br>Subject: Re: Life is tweet.
+> From: Jerome S Bruner<br />Sent: Tue 21/07/2009 2:17 a.m.<br />To: Andrew Long<br />Subject: Re: Life is tweet.
 >
 > Dear Mr. Long:
 >
 > Thanks for those thoughtful reflections on self-defining narratives. It’s a rich topic and I hope you’ll go on pursuing it. I’m delighted that my writings have been of some help to you.
 >
-> Best wishes. <br>jb
+> Best wishes. <br />jb
 
 I printed this out and stuck it on my office wall for inspiration. Sadly it wasn’t quite enough to get me there.
 
