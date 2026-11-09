@@ -1547,3 +1547,54 @@ main figure, article figure {
 header {
   padding-top: 1.25rem;
 }
+
+/* Apps page: one card per app (icon + name + one line), and the icon atop each app's page */
+.app-list {
+  display: grid;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+main a.app-card {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1rem 1.25rem 1rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  color: inherit;
+  line-height: 1.6;
+  transition: border-color 0.15s, background-color 0.15s;
+}
+main a.app-card:hover {
+  border-color: #0284c7;
+  background-color: #f0f9ff;
+}
+.app-card img {
+  flex: none;
+  width: 80px;
+  height: 80px;
+  margin: 0;
+}
+.app-card strong {
+  display: block;
+  font-size: 1.25rem;
+  color: #0284c7;
+}
+main img.app-icon {
+  display: block;
+  width: 128px;
+  height: 128px;
+  margin: 0 auto 1.5rem;
+}
+@media (prefers-color-scheme: dark) {
+  main a.app-card {
+    border-color: #334155;
+  }
+  main a.app-card:hover {
+    border-color: #0ea5e9;
+    background-color: #0f172a;
+  }
+  .app-card strong {
+    color: #0ea5e9;
+  }
+}
