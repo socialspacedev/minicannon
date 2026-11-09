@@ -8,9 +8,9 @@ keyword: crocus
 tags: pages
 permalink: '{{ title | slugify }}.html'
 eleventyNavigation:
-  key: '{{ title | slugify }}'
+  key: crocus
+  parent: apps
   title: Crocus
-  order: 5
 software_app:
   operating_system: macOS 14 or later
   category: MultimediaApplication
@@ -79,14 +79,8 @@ Because it's a download and isn't notarised, macOS refuses it the first time wit
 
 It opens normally from then on.
 
-## Where the name comes from
-
-Crocus is named after the song of the same name by the [Victor Dimisich Band](https://thebigcity.co.nz/artists/v/victor-dimisich-band/). The most recent version is on [An Afternoon With Victor Dimisich](/blog/an-afternoon-with-victor-dimisich.html), the collection of 1981 demos that Siltbreeze released this year.
-
-{% bandcamp "https://siltbreeze.bandcamp.com/track/crocus", "track=793473480" %}
-
 ## Give it a crack
 
 If you like community radio and good music, give it a crack. I made Crocus for my own radio show and thought others might be interested too, so it comes with no guarantees.
 
-If you find any problems, add them to [Issues on GitHub](https://github.com/socialspacedev/crocus/issues).
+If you find any problems, add them to [Issues on GitHub](https://github.com/socialspacedev/crocus/issues). The name comes from a Victor Dimisich Band song, like all [my apps](/apps.html).
