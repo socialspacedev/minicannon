@@ -31,14 +31,10 @@ I make small Mac apps for things I need myself, then tidy them up so anyone can 
   </a>
 </div>
 
-Both need **macOS 14 (Sonoma) or newer**. Neither is signed or notarised by Apple, so each page explains the easiest way to install it.
+Both need **macOS 14 (Sonoma) or newer**.
 
 ## Where the names come from
 
-Every app here is named after a song by the [Victor Dimisich Band](https://thebigcity.co.nz/artists/v/victor-dimisich-band/), home to some of my favourite songs by [Stephen Cogle and Peter Stapleton](/blog/an-afternoon-with-victor-dimisich.html).
+Crocus and Jonah are both named after songs by the [Victor Dimisich Band](https://thebigcity.co.nz/artists/v/victor-dimisich-band/). The most recent versions of both are on [An Afternoon With Victor Dimisich](/blog/an-afternoon-with-victor-dimisich.html), the collection of 1981 demos that Siltbreeze released this year.
 
-**Crocus** is named after the song of the same name. The most recent version is on [An Afternoon With Victor Dimisich](/blog/an-afternoon-with-victor-dimisich.html), the collection of 1981 demos that Siltbreeze released this year.
-
-{% bandcamp "https://siltbreeze.bandcamp.com/track/crocus", "track=793473480" %}
-
-**Jonah** is named after the Victor Dimisich Band song "Jonah".
+{% bandcamp "https://siltbreeze.bandcamp.com/album/stephen-cogle-w-peter-stapleton-an-afternoon-with-victor-dimisich", "album=684066604" %}

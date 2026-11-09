@@ -18,6 +18,8 @@ software_app:
   source_url: https://github.com/socialspacedev/crocus
   screenshot: /img/crocus-on-air.png
 ---
+<img class="app-icon" src="/img/crocus-icon.png" alt="The Crocus app icon: a green crocus flower" width="128" height="128">
+
 Crocus is a minimal DJ deck for radio, for macOS. I built it to run [Certain Sound](/tags/certain-sound/) on Otago Access Radio, and it's now set up so anyone can use it for their own show. It's free, and the source is on [GitHub](https://github.com/socialspacedev/crocus).
 
 It's designed to be a much better alternative to a clunky streaming app or a complex DJ app. No browsing, no clutter, no network mid-show. Just local audio files, played cleanly.
@@ -48,8 +50,6 @@ It plays files from your Mac: **MP3, AAC/M4A (including Apple Lossless), WAV, AI
 
 Crocus needs **macOS 14 (Sonoma) or newer**. It's a native Mac app, so there's no Windows or Linux version.
 
-It's free, and there's no paid Apple Developer certificate behind it, so it isn't signed or notarised by Apple. That makes building it yourself the easier way in.
-
 ### Build it yourself (recommended)
 
 Paste this into Terminal:
@@ -60,27 +60,16 @@ cd crocus
 ./install.sh
 ```
 
-It needs the Xcode Command Line Tools, a free Apple download. If they're missing, the script tells you how to get them. It takes a minute or two and installs Crocus to your Applications folder.
-
-Why this is the easy option: macOS only quarantines software that's downloaded through a browser. An app compiled on your own Mac isn't quarantined, so it opens with a double-click and no warnings.
-
-To update later, run `git pull` and then `./install.sh` again in the same folder. Your library, shows and settings aren't touched.
+It needs the Xcode Command Line Tools; the script tells you how to get them if they're missing. Built this way, Crocus opens without any warnings. To update later, run `git pull` and `./install.sh` again. Your library, shows and settings aren't touched.
 
 ### Download the app
 
 Get the DMG from [the latest release](https://github.com/socialspacedev/crocus/releases/latest) and drag Crocus to Applications.
 
-Because it's a download and isn't notarised, macOS refuses it the first time with "Apple could not verify Crocus is free of malware". To allow it (you only need to do this once):
-
-1. Try to open Crocus, and let it be refused
-2. Open **System Settings ▸ Privacy & Security**
-3. Scroll to the bottom and click **Open Anyway** next to Crocus
-4. Authenticate, then confirm
-
-It opens normally from then on.
+It isn't notarised by Apple, so macOS refuses it the first time. Open **System Settings ▸ Privacy & Security**, scroll down and click **Open Anyway** next to Crocus. You only need to do this once.
 
 ## Give it a crack
 
 If you like community radio and good music, give it a crack. I made Crocus for my own radio show and thought others might be interested too, so it comes with no guarantees.
 
-If you find any problems, add them to [Issues on GitHub](https://github.com/socialspacedev/crocus/issues). The name comes from a Victor Dimisich Band song, like all [my apps](/apps.html).
+If you find any problems, add them to [Issues on GitHub](https://github.com/socialspacedev/crocus/issues).
