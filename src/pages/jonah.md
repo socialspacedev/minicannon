@@ -1,6 +1,6 @@
 ---
 _schema: default
-title: Jonah
+title: jonah
 description: Get your songs back out of an old iPod, and put new ones on. Free and open source, for macOS.
 type: website
 layout: page.liquid
@@ -10,7 +10,7 @@ permalink: '{{ title | slugify }}.html'
 eleventyNavigation:
   key: jonah
   parent: apps
-  title: Jonah
+  title: jonah
 software_app:
   operating_system: macOS 14 or later
   category: MultimediaApplication
@@ -18,11 +18,11 @@ software_app:
   source_url: https://github.com/socialspacedev/jonah
   screenshot: /img/jonah-icon.png
 ---
-<img class="app-icon" src="/img/jonah-icon.png" alt="The Jonah app icon: a simplified amber 3rd-generation iPod" width="128" height="128">
+<img class="app-icon" src="/img/jonah-icon.png" alt="The jonah app icon: a simplified amber 3rd-generation iPod" width="128" height="128">
 
-Jonah gets your songs back out of an old iPod, and puts new ones on, without iTunes. It's free, and the source is on [GitHub](https://github.com/socialspacedev/jonah).
+jonah gets your songs back out of an old iPod, and puts new ones on, without iTunes. It's free, and the source is on [GitHub](https://github.com/socialspacedev/jonah).
 
-Old iPods hide your music under random file names, so you can't just copy it off in Finder. Jonah reads the iPod's own song list, so you see your library as it was.
+Old iPods hide your music under random file names, so you can't just copy it off in Finder. jonah reads the iPod's own song list, so you see your library as it was.
 
 ## What it does
 
@@ -46,7 +46,7 @@ It backs up the iPod's song list before every change.
 
 ## Install
 
-Jonah needs **macOS 14 (Sonoma) or newer**.
+jonah needs **macOS 14 (Sonoma) or newer**.
 
 ### Build it yourself (recommended)
 
@@ -58,13 +58,13 @@ cd jonah
 ./install.sh
 ```
 
-It needs the Xcode Command Line Tools; the script tells you how to get them if they're missing. Built this way, Jonah opens without any warnings.
+It needs the Xcode Command Line Tools; the script tells you how to get them if they're missing. Built this way, jonah opens without any warnings.
 
 ### Download the app
 
-Get the zip from [the latest release](https://github.com/socialspacedev/jonah/releases/latest), unzip it and drag Jonah to Applications.
+Get the DMG from [the latest release](https://github.com/socialspacedev/jonah/releases/latest) and drag jonah to Applications.
 
-It isn't notarised by Apple, so macOS refuses it the first time. Open **System Settings ▸ Privacy & Security**, scroll down and click **Open Anyway** next to Jonah. You only need to do this once.
+It isn't notarised by Apple, so macOS refuses it the first time. Open **System Settings ▸ Privacy & Security**, scroll down and click **Open Anyway** next to jonah. You only need to do this once.
 
 ## Give it a crack
 
