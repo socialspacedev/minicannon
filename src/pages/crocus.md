@@ -3,7 +3,10 @@ _schema: default
 title: crocus
 description: A minimal, reliable DJ deck for radio that's free and open source.
 type: website
+thumbnail: /img/crocus-icon.png
 layout: page.liquid
+heading: true
+icon: /img/crocus-icon.png
 keyword: crocus
 tags: pages
 permalink: '{{ title | slugify }}.html'
@@ -16,15 +19,13 @@ software_app:
   category: MultimediaApplication
   download_url: https://github.com/socialspacedev/crocus/releases/latest
   source_url: https://github.com/socialspacedev/crocus
-  screenshot: /img/crocus-on-air.png
+  screenshot: /img/crocus-now-playing.png
 ---
-<img class="app-icon" src="/img/crocus-icon.png" alt="The crocus app icon: a green crocus flower" width="128" height="128">
-
 crocus is a minimal DJ deck for radio, for macOS. I built it to run [Certain Sound](/tags/certain-sound/) on Otago Access Radio, and it's now set up so anyone can use it for their own show. It's free, and the source is on [GitHub](https://github.com/socialspacedev/crocus).
 
 It's designed to be a much better alternative to a clunky streaming app or a complex DJ app. No browsing, no clutter, no network mid-show. Just local audio files, played cleanly.
 
-{% screenshot "/img/crocus-on-air.png" "The crocus console on air: now playing with artwork and a 7:07 countdown, the song's waveform, the library, and a rundown of song groups above the transport controls." "On air. The countdown shows exactly when the music will stop." %}
+{% screenshot "/img/crocus-now-playing.png" "crocus on air: P.I.T. Song by Sneaky Feelings playing, an 8:40 countdown to when the music stops, and the song's waveform with trim markers." "On air. The countdown shows exactly when the music will stop." %}
 
 ## How it works
 
@@ -43,8 +44,6 @@ It plays files from your Mac: **MP3, AAC/M4A (including Apple Lossless), WAV, AI
 * **A second screen** a co-host can open on their phone
 * **Exports**: a running order for the station, detailed notes, and a Markdown episode page from a template you control (the Certain Sound posts on this site are made this way)
 * **Keeps the display awake** for the whole show, including while you're back-announcing
-
-{% screenshot "/img/crocus-talk.png" "crocus with music ducked: the status reads 'Talk, music ducked', the countdown is labelled 'Bed ends in', and the Fade to Talk button has become 'Music Up'." "Fade to Talk. The music drops to a bed under your voice until you bring it back up." %}
 
 ## Install
 
