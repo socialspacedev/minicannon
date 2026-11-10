@@ -3,7 +3,10 @@ _schema: default
 title: jonah
 description: Get your songs back out of an old iPod, and put new ones on. Free and open source, for macOS.
 type: website
+thumbnail: /img/jonah-icon.png
 layout: page.liquid
+heading: true
+icon: /img/jonah-icon.png
 keyword: jonah
 tags: pages
 permalink: '{{ title | slugify }}.html'
@@ -16,13 +19,13 @@ software_app:
   category: MultimediaApplication
   download_url: https://github.com/socialspacedev/jonah/releases/latest
   source_url: https://github.com/socialspacedev/jonah
-  screenshot: /img/jonah-icon.png
+  screenshot: /img/jonah-library.png
 ---
-<img class="app-icon" src="/img/jonah-icon.png" alt="The jonah app icon: a simplified amber 3rd-generation iPod" width="128" height="128">
-
 jonah gets your songs back out of an old iPod, and puts new ones on, without iTunes. It's free, and the source is on [GitHub](https://github.com/socialspacedev/jonah).
 
 Old iPods hide your music under random file names, so you can't just copy it off in Finder. jonah reads the iPod's own song list, so you see your library as it was.
+
+{% screenshot "/img/jonah-library.png" "jonah showing an iPod's library: thirteen songs by Dunedin bands such as Sneaky Feelings, The Clean and the Victor Dimisich Band, with title, artist, album, time, bitrate and format columns, and two playlists in the sidebar." "Your iPod's library as it was, playlists and all." %}
 
 ## What it does
 

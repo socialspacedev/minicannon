@@ -36,7 +36,7 @@ Personal blog and photography portfolio at [anaru.nz](https://anaru.nz), built w
 - Static search via Pagefind, opened from a magnifying-glass icon next to the site title (lazy-loaded dialog modal)
 - Scheduled posts — posts with a future date are excluded from production builds until that date. Only the live site hides them: it is the one CloudCannon site with `ELEVENTY_ENV=production`, so branch/preview sites and local builds show future posts (`src/blog/blog.11tydata.js`). Keep that variable on the main site and off branch sites
 - RSS feed, XML sitemap, and `llms.txt` for AEO
-- Structured data — BlogPosting JSON-LD on posts, WebPage on every other page, plus SoftwareApplication on pages with a `software_app:` front-matter block (the Crocus and Jonah pages)
+- Structured data — BlogPosting JSON-LD on posts, WebPage on every other page, plus SoftwareApplication on pages with a `software_app:` front-matter block (the app pages)
 - Rich social sharing — Open Graph + Twitter/X (`summary_large_image`) card tags, with a share-image fallback chain (`thumbnail` → post `hero_image` → site `defaultImage` in `meta.yaml`) so every post gets a preview image
 - Per-post footer (`post-footer.liquid`) — show links (Certain Sound: Listen, The show; Vinyl Vibes: Facebook) on the left and Share on the right, all as matching pill buttons with the full wording in `title`/`aria-label`. Share opens a `<dialog>` modal with Facebook, Bluesky, Threads, copy-link, and (on mobile) native Web Share; links are server-rendered so they work without JS
 - Optimised images served in AVIF/WebP with layout-aware `sizes` attributes; all article images are full width regardless of orientation
@@ -63,6 +63,9 @@ Personal blog and photography portfolio at [anaru.nz](https://anaru.nz), built w
 - **Apps** — `/apps.html` (in the nav) lists the apps, with a card per app and where their Victor Dimisich Band names come from. Each app has its own page under it, `parent: apps` in its `eleventyNavigation`, which keeps it out of the top-level nav and keeps Apps highlighted there:
   - `/crocus.html` — [Crocus](https://github.com/socialspacedev/crocus), the macOS DJ deck that runs Certain Sound
   - `/jonah.html` — [Jonah](https://github.com/socialspacedev/jonah), the macOS app for getting music on and off old iPods
+  - `/mekong.html` — [Mekong](https://github.com/socialspacedev/mekong), real-time projection visuals for live guitar over drones
+  - App pages set `icon:` and `heading: true`, so `page.liquid` puts the icon and the app's name (an h1, like Photos and Music) above the text; Apps sets `heading: true` only
+  - App pages set `thumbnail:` to their icon for link previews, and get a square `summary` card (`software_app` pages, in `head.liquid`); Apps shares `apps-share.png`, the three icons side by side
 
 ## Discogs sync for Vinyl Vibes
 

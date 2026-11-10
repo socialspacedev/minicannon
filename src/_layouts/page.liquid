@@ -11,7 +11,14 @@ type: "website"
   <!-- Start Body -->
   <body>
     {% include "nav.liquid" %}
-    <main data-pagefind-body>
+    <main id="main-content" data-pagefind-body>
+      {%- comment %} App pages show their icon above the title; `heading: true` adds the title as an h1, like Photos and Music. {% endcomment -%}
+      {%- if icon %}
+      <img class="app-icon" src="{{ icon }}" alt="" width="128" height="128">
+      {%- endif %}
+      {%- if heading %}
+      <h1{% if icon %} class="app-title"{% endif %}>{{ title }}</h1>
+      {%- endif %}
       <div class="content" data-editable="text" data-prop="@content">
         {{ content }}
       </div>
