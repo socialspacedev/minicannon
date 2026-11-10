@@ -3,9 +3,7 @@ _schema: default
 title: Apps
 description: Small, free and open-source Mac apps for radio, old iPods and live visuals.
 type: website
-thumbnail: /img/apps-share.png
 layout: page.liquid
-heading: true
 keyword: apps
 tags: pages
 permalink: '{{ title | slugify }}.html'
@@ -13,31 +11,33 @@ eleventyNavigation:
   key: apps
   title: Apps
   order: 5
+thumbnail: /img/apps-share.png
+heading: true
 ---
-I make small Mac apps for things I need myself, then tidy them up so anyone can use them. They're free, and the source code is on [GitHub](https://github.com/socialspacedev).
+I make small Mac apps for things I need, then tidy them up so anyone can use them. They're free, and the source code is on [GitHub](https://github.com/socialspacedev).
 
 <div class="app-list">
-  <a class="app-card" href="/crocus.html">
-    <img src="/img/crocus-icon.png" alt="" width="96" height="96" loading="lazy">
-    <span>
-      <strong>crocus</strong>
-      A minimal, reliable DJ deck for radio. Plays short groups of songs with a big countdown to when the music stops.
-    </span>
-  </a>
-  <a class="app-card" href="/jonah.html">
-    <img src="/img/jonah-icon.png" alt="" width="96" height="96" loading="lazy">
-    <span>
-      <strong>jonah</strong>
-      Get your songs back out of an old iPod, and put new ones on. Export, play, add, delete and edit playlists, without iTunes.
-    </span>
-  </a>
-  <a class="app-card" href="/mekong.html">
-    <img src="/img/mekong-icon.png" alt="" width="96" height="96" loading="lazy">
-    <span>
-      <strong>mekong</strong>
-      Real-time visuals for projecting behind live guitar over drones. Abstract scenes that follow every note you play.
-    </span>
-  </a>
+<a class="app-card" href="/crocus.html">
+<img src="/img/crocus-icon.png" alt="" width="96" height="96" loading="lazy" />
+<span>
+<strong>crocus</strong>
+A minimal, reliable DJ deck for radio. Plays short groups of songs with a big countdown to when the music stops.
+</span>
+</a>
+<a class="app-card" href="/jonah.html">
+<img src="/img/jonah-icon.png" alt="" width="96" height="96" loading="lazy" />
+<span>
+<strong>jonah</strong>
+Get your songs back out of an old iPod, and put new ones on. Export, play, add, delete and edit playlists, without iTunes.
+</span>
+</a>
+<a class="app-card" href="/mekong.html">
+<img src="/img/mekong-icon.png" alt="" width="96" height="96" loading="lazy" />
+<span>
+<strong>mekong</strong>
+Real-time visuals for projecting behind live guitar or noise. Abstract scenes that follow every note you play.
+</span>
+</a>
 </div>
 
 They all need **macOS 14 (Sonoma) or newer**.

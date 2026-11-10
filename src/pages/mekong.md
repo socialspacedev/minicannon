@@ -1,19 +1,21 @@
 ---
 _schema: default
 title: mekong
-description: Real-time visuals for projecting behind live guitar over drones. Free and open source, for macOS.
+description: Real-time visuals for projecting behind live guitar over drones.
+  Free and open source, for macOS.
 type: website
-thumbnail: /img/mekong-icon.png
 layout: page.liquid
-heading: true
-icon: /img/mekong-icon.png
 keyword: mekong
 tags: pages
 permalink: '{{ title | slugify }}.html'
 eleventyNavigation:
   key: mekong
-  parent: apps
   title: mekong
+  order: 2
+  parent: apps
+thumbnail: /img/mekong-icon.png
+heading: true
+icon: /img/mekong-icon.png
 software_app:
   operating_system: macOS 14 or later
   category: MultimediaApplication
@@ -21,7 +23,7 @@ software_app:
   source_url: https://github.com/socialspacedev/mekong
   screenshot: /img/mekong-barcode.png
 ---
-mekong makes real-time visuals for projecting behind improvised guitar over drones. They're abstract and data-driven, after Ryoji Ikeda: no waveforms, no EQ bars. It's free, and the source is on [GitHub](https://github.com/socialspacedev/mekong).
+mekong makes real-time visuals for projecting behind improvised guitar, noise, and drones. They're abstract and data-driven, kinda based originally on Ryoji Ikeda. It's free, and the source is on [GitHub](https://github.com/socialspacedev/mekong).
 
 Plug in your instrument and put the visuals on a projector. They follow what you play: the drone shapes them slowly, and each picked note sets something off.
 
