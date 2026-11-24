@@ -4,6 +4,8 @@
     { "from": "/blog/a-certain-sound-episode-2/?", "to": "/blog/certain-sound-episode-2/", "status": 301 },
     { "from": "/blog/a-certain-sound-3/?", "to": "/blog/certain-sound-episode-3/", "status": 301 },
     { "from": "/blog/a-certain-sound-episode-4/?", "to": "/blog/certain-sound-episode-4/", "status": 301 },
-    { "from": "/tags/a-certain-sound/?", "to": "/tags/certain-sound/", "status": 301 }
+    { "from": "/tags/a-certain-sound/?", "to": "/tags/certain-sound/", "status": 301 },
+    { "from": "^/blog/?$", "to": "/pages/blog/", "status": 301 },
+    { "from": "^(.*/)index\\.(html|php)$", "to": "$1", "status": 301 }
   ]
 }

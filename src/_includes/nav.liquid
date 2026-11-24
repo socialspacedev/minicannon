@@ -15,7 +15,10 @@
         <ul>
             {%- for entry in navPages %}
              {% if not entry.hide %}
-            <li {% if entry.url == page.url %} class="active" aria-current="page" {% endif %}>
+            {%- comment %} A section stays highlighted on its child pages (Apps on /crocus.html). {% endcomment -%}
+            {%- assign inSection = false -%}
+            {%- for child in entry.children -%}{%- if child.url == page.url -%}{%- assign inSection = true -%}{%- endif -%}{%- endfor %}
+            <li {% if entry.url == page.url %} class="active" aria-current="page" {% elsif inSection %} class="active" {% endif %}>
                 <a href="{{ entry.url | url }}">{{ entry.title }}</a>
             </li>
             {% endif %}

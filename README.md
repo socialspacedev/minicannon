@@ -30,13 +30,13 @@ Personal blog and photography portfolio at [anaru.nz](https://anaru.nz), built w
   - EXIF data (camera, lens, film, ISO) stored in YAML data files and editable via CloudCannon
   - EXIF info button (ⓘ) on article figcaptions and inside the lightbox caption area
 - Curated Music page — grid of posts opted in via a `music_featured: true` frontmatter toggle, with a layered image fallback (hero image → thumbnail → first inline image). Each tile has a ▶ play button on hover that pops a modal Bandcamp player; tiles' empty-row gap is filled with a "More music →" tile pointing at the music tag
-- Two-column homepage: hero image from the latest post that has one + recent posts list with post-type icons
+- Two-column homepage: hero image from the latest post that has one + recent posts list with post-type icons. On desktop the list sets the row height and the image matches it, taking its width from its own shape (up to half the row), so square album art shows whole and never leaves a gap under the list
   - Image source: the show post's `hero_image` / `hero_alt` (Vinyl Vibes, Certain Sound), else `thumbnail`; posts with no image are skipped
   - Optimised via eleventy-img (AVIF/WebP/JPEG at 400/800/1200w), loaded eagerly with high priority, and links to its post
 - Static search via Pagefind, opened from a magnifying-glass icon next to the site title (lazy-loaded dialog modal)
 - Scheduled posts — posts with a future date are excluded from production builds until that date. Only the live site hides them: it is the one CloudCannon site with `ELEVENTY_ENV=production`, so branch/preview sites and local builds show future posts (`src/blog/blog.11tydata.js`). Keep that variable on the main site and off branch sites
 - RSS feed, XML sitemap, and `llms.txt` for AEO
-- Structured data — BlogPosting JSON-LD on posts, WebPage on every other page, plus SoftwareApplication on pages with a `software_app:` front-matter block (the Crocus page)
+- Structured data — BlogPosting JSON-LD on posts, WebPage on every other page, plus SoftwareApplication on pages with a `software_app:` front-matter block (the app pages)
 - Rich social sharing — Open Graph + Twitter/X (`summary_large_image`) card tags, with a share-image fallback chain (`thumbnail` → post `hero_image` → site `defaultImage` in `meta.yaml`) so every post gets a preview image
 - Per-post footer (`post-footer.liquid`) — show links (Certain Sound: Listen, The show; Vinyl Vibes: Facebook) on the left and Share on the right, all as matching pill buttons with the full wording in `title`/`aria-label`. Share opens a `<dialog>` modal with Facebook, Bluesky, Threads, copy-link, and (on mobile) native Web Share; links are server-rendered so they work without JS
 - Optimised images served in AVIF/WebP with layout-aware `sizes` attributes; all article images are full width regardless of orientation
@@ -60,7 +60,12 @@ Personal blog and photography portfolio at [anaru.nz](https://anaru.nz), built w
   - Per-episode hero image, OAR on-demand link, and a minimal artist/title/year/note tracklist
 - **Audio shortcode** — `{% audio %}` shortcode for self-hosted M4A/MP3, with a styled HTML5 player and optional caption; CloudCannon snippet picks files from `src/audio/`
 - **Screenshot shortcode** — `{% screenshot %}` for app/UI screenshots: full resolution, lossless WebP/PNG (the photo pipeline's lossy AVIF blurs small text); CloudCannon snippet included
-- **Crocus page** — `/crocus.html`, the page for [Crocus](https://github.com/socialspacedev/crocus), the macOS DJ deck that runs Certain Sound
+- **Apps** — `/apps.html` (in the nav) lists the apps, with a card per app and where their Victor Dimisich Band names come from. Each app has its own page under it, `parent: apps` in its `eleventyNavigation`, which keeps it out of the top-level nav and keeps Apps highlighted there:
+  - `/crocus.html` — [Crocus](https://github.com/socialspacedev/crocus), the macOS DJ deck that runs Certain Sound
+  - `/jonah.html` — [Jonah](https://github.com/socialspacedev/jonah), the macOS app for getting music on and off old iPods
+  - `/mekong.html` — [Mekong](https://github.com/socialspacedev/mekong), real-time projection visuals for live guitar over drones
+  - App pages set `icon:` and `heading: true`, so `page.liquid` puts the icon and the app's name (an h1, like Photos and Music) above the text; Apps sets `heading: true` only
+  - App pages set `thumbnail:` to their icon for link previews, and get a square `summary` card (`software_app` pages, in `head.liquid`); Apps shares `apps-share.png`, the three icons side by side
 
 ## Discogs sync for Vinyl Vibes
 
@@ -115,7 +120,7 @@ The script preserves YAML idiosyncrasies — multi-line scalars (`buy_url: >- �
 
 ### CloudCannon build settings
 
-- **Preserved paths** includes `.cache` so Discogs lookups are reused between builds, and so are resized images: eleventy-img writes to `.cache/img/` and the build copies them into `public/img/`, so only new or changed photos are encoded (CloudCannon builds dropped from ~4 min to 23–26 s)
+- **Preserved paths** includes `.cache` so Discogs lookups are reused between builds, and so are resized images: eleventy-img writes to `.cache/img/` and the build copies them into `public/img/`, so only new or changed photos are encoded (CloudCannon builds dropped from ~4 min to 23–26 s, and to ~19 s once Bandcamp pages were no longer fetched)
 - **Environment variable** `DISCOGS_TOKEN` (optional) raises the Discogs rate limit for build-time lookups — set in CloudCannon, never committed
 
 ## Local development
@@ -143,3 +148,14 @@ JavaScript source files live in `src/_js/` and are copied to `public/js/` at bui
 ## Deployment
 
 Pushes to `main` trigger a CloudCannon build automatically.
+
+- **Staging:** the `staging` branch has its own CloudCannon site (preview at `unique-spoon.cloudvent.net`). Test risky changes, such as redirects, there before `main`
+- **If a push doesn't deploy** within ~10 minutes, run Pull then Build on the site in CloudCannon (it occasionally misses a push)
+
+### Domains and redirects
+
+- **www → apex:** `www.anaru.nz` is a CloudCannon *Redirect Subdomain* that sends visitors to `anaru.nz` with a 301, keeping the path and query string (Site Settings → Custom Domain). CloudCannon manages the DNS side
+- **Redirect rules** live in `.cloudcannon/routing.json` (regex `from`, `$1` substitutions, first match wins):
+  - `…/index.html` and `…/index.php` → their folder, 301. CloudCannon's built-in index redirect is a temporary 307
+  - `/blog/` → `/pages/blog/` (the blog listing), 301
+  - Old "A Certain Sound" post and tag URLs → their "Certain Sound" equivalents, 301
