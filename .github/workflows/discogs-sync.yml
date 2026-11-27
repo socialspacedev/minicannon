@@ -1,0 +1,50 @@
+# Nightly Discogs sync: fetches any records added to the Discogs collection and
+# commits the updated data files to main, so the Vinyl Vibes picker in
+# CloudCannon stays current. Can also be run by hand from the Actions tab.
+# Only commits when records changed (the last_synced timestamp alone doesn't count).
+name: Discogs sync
+
+on:
+  schedule:
+    - cron: "0 14 * * *" # 14:00 UTC = 3am NZDT (2am NZST)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: discogs-sync
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Sync Discogs collection
+        run: node scripts/discogs-sync.mjs
+        env:
+          DISCOGS_TOKEN: ${{ secrets.DISCOGS_TOKEN }}
+
+      - name: Commit and push if records changed
+        run: |
+          files="src/_data/discogs.yaml src/_data/discogs_picker.yaml"
+          if git diff --quiet -I '^last_synced:' -- $files; then
+            echo "No new records."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add $files
+          git commit -m "Discogs sync: new records (automated)"
+          git pull --rebase
+          git push
