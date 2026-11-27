@@ -28,7 +28,7 @@ A minimal, reliable DJ deck for radio. Plays short groups of songs with a big co
 <img src="/img/jonah-icon.png" alt="" width="96" height="96" loading="lazy" />
 <span>
 <strong>jonah</strong>
-Get your songs back out of an old iPod, and put new ones on. Export, play, add, delete and edit playlists, without iTunes.
+Get your songs back out of an old iPod, and put new ones on. Export, play, add, delete, edit playlists, and even out volume and gaps between songs, without iTunes.
 </span>
 </a>
 <a class="app-card" href="/mekong.html">

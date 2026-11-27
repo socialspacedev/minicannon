@@ -34,6 +34,7 @@ Old iPods hide your music under random file names, so you can't just copy it off
 * **Adds** songs by drag and drop, converting formats the iPod can't play
 * **Deletes** songs, and finds duplicates
 * **Edits playlists**
+* **Evens out volume and skips silence** between songs, using the iPod's own Sound Check and start and stop times. Old iPods can't play gaplessly; this gets them closer
 
 It backs up the iPod's song list before every change.
 
