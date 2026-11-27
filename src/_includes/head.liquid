@@ -96,11 +96,16 @@
     sizes="any" />
 
   {% comment %}
-    Social share image — fallback chain: thumbnail → hero image → site default
+    Social share image — fallback chain: thumbnail → show hero image (Certain
+    Sound / Vinyl Vibes) → first image in the post → site default, then
+    resized to 1200px wide. head-article.liquid reuses ogImage for JSON-LD.
   {% endcomment %}
   {%- assign ogImage = thumbnail -%}
   {%- if ogImage == blank and certain_sound.hero_image -%}{%- assign ogImage = certain_sound.hero_image -%}{%- endif -%}
+  {%- if ogImage == blank and vinyl_vibes.hero_image -%}{%- assign ogImage = vinyl_vibes.hero_image -%}{%- endif -%}
+  {%- if ogImage == blank and type == "article" -%}{%- assign ogImage = page.inputPath | firstImage -%}{%- endif -%}
   {%- if ogImage == blank -%}{%- assign ogImage = meta.defaultImage -%}{%- endif -%}
+  {%- assign ogImage = ogImage | shareImage -%}
 
   {% comment %}
     Open Graph
