@@ -60,6 +60,7 @@ async function fetchCollection() {
         artists: (bi.artists || []).map(a => a.name).join(", ") || "Unknown Artist",
         title: bi.title || "Untitled",
         year: bi.year || null,
+        master_id: bi.master_id || null,
       });
     }
     page++;
@@ -79,6 +80,27 @@ async function fetchTracklist(releaseId) {
       duration: t.duration || "",
       artist: t.artists ? t.artists.map(a => a.name).join(", ") : null,
     }));
+}
+
+// Some pressings have no release date on Discogs (common for old records and
+// reissues), but the master release usually has the original year. Fill those
+// in once; `year_checked` stops a master with no year being asked again.
+async function fillMissingYears(releases, collection) {
+  const masters = new Map(collection.map(r => [String(r.id), r.master_id]));
+  const missing = Object.entries(releases)
+    .filter(([id, rel]) => !rel.year && !rel.year_checked && masters.get(id));
+  if (missing.length === 0) return;
+  console.log(`→ Looking up original year for ${missing.length} releases with no date...`);
+  for (const [id, rel] of missing) {
+    try {
+      const master = await api(`/masters/${masters.get(id)}`);
+      if (master.year) rel.year = master.year;
+      rel.year_checked = true;
+    } catch (e) {
+      console.warn(`  ⚠ Master lookup failed for release ${id}: ${e.message}`);
+    }
+    await sleep(RATE_LIMIT_MS);
+  }
 }
 
 async function loadExisting() {
@@ -166,6 +188,7 @@ async function main() {
   console.log(`→ ${toFetch.length} tracklists to fetch (${collection.length - toFetch.length} already cached).`);
 
   if (toFetch.length === 0) {
+    await fillMissingYears(releases, collection);
     await save(releases);
     console.log(`✓ Nothing new. Saved ${OUT_PATH}.`);
     return;
@@ -190,9 +213,10 @@ async function main() {
     }
     await sleep(RATE_LIMIT_MS);
   }
-
-  await save(releases);
   process.stdout.write("\n");
+
+  await fillMissingYears(releases, collection);
+  await save(releases);
   const counts = {
     releases: Object.keys(releases).length,
     tracks: Object.values(releases).reduce((n, r) => n + r.tracks.length, 0),
