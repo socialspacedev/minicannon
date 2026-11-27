@@ -1,8 +1,8 @@
-last_synced: '2026-09-27T01:42:24.239Z'
+last_synced: '2026-11-27T02:34:40.207Z'
 username: socialspacious
 counts:
-  releases: 1079
-  tracks: 10646
+  releases: 1095
+  tracks: 10794
 releases:
   '18663':
     artist: Eric B. & Rakim
@@ -20,6 +20,27 @@ releases:
       - position: B2
         title: Eric B. Is On The Cut
         duration: ''
+        artist: null
+  '51538':
+    artist: M|A|R|R|S
+    title: Pump Up The Volume
+    year: 1987
+    tracks:
+      - position: A1
+        title: Pump Up The Volume
+        duration: '7:10'
+        artist: null
+      - position: A2
+        title: Pump Up The Volume (Bonus Beat)
+        duration: '4:49'
+        artist: null
+      - position: B1
+        title: Pump Up The Volume (Instrumental)
+        duration: '5:04'
+        artist: null
+      - position: B2
+        title: Anitina (First Time I See She Dance)
+        duration: '4:20'
         artist: null
   '53989':
     artist: The Future Sound Of London
@@ -5491,6 +5512,23 @@ releases:
         title: Trouble
         duration: ''
         artist: null
+  '785795':
+    artist: Kim Wilde
+    title: You Keep Me Hangin' On (Extended Mix)
+    year: 1986
+    tracks:
+      - position: A
+        title: You Keep Me Hangin' On (W.C.H. Club Mix)
+        duration: '9:02'
+        artist: null
+      - position: B1
+        title: Loving You
+        duration: '4:57'
+        artist: null
+      - position: B2
+        title: You Keep Me Hangin' On
+        duration: '4:13'
+        artist: null
   '786637':
     artist: Straitjacket Fits
     title: Done
@@ -7346,6 +7384,23 @@ releases:
         artist: null
       - position: B7
         title: Rain
+        duration: ''
+        artist: null
+  '838530':
+    artist: Fine Young Cannibals
+    title: She Drives Me Crazy (The Monie Love Remix)
+    year: 1988
+    tracks:
+      - position: A
+        title: She Drives Me Crazy (The Monie Love Remix)
+        duration: ''
+        artist: null
+      - position: B1
+        title: Pull The Sucker Off
+        duration: ''
+        artist: null
+      - position: B2
+        title: She Drives Me Crazy
         duration: ''
         artist: null
   '841914':
@@ -18206,6 +18261,119 @@ releases:
         title: Enter Sandman (Demo)
         duration: '5:05'
         artist: null
+  '2526795':
+    artist: The Ventures
+    title: The Ventures Collection
+    year: 1986
+    tracks:
+      - position: A1
+        title: Walk Don't Run
+        duration: '2:01'
+        artist: null
+      - position: A2
+        title: Memphis
+        duration: '2:29'
+        artist: null
+      - position: A3
+        title: Rebel Rouser
+        duration: '2:40'
+        artist: null
+      - position: A4
+        title: Apache
+        duration: '3:00'
+        artist: null
+      - position: A5
+        title: Bulldog
+        duration: '2:19'
+        artist: null
+      - position: A6
+        title: Pipeline
+        duration: '2:19'
+        artist: null
+      - position: A7
+        title: Telstar
+        duration: '2:32'
+        artist: null
+      - position: B1
+        title: Hawaii Five O
+        duration: '2:35'
+        artist: null
+      - position: B2
+        title: Tequila
+        duration: '2:44'
+        artist: null
+      - position: B3
+        title: Wheels
+        duration: '1:59'
+        artist: null
+      - position: B4
+        title: Bumble Bee Rock
+        duration: '2:25'
+        artist: null
+      - position: B5
+        title: Slaughter On 10th Avenue
+        duration: '2:01'
+        artist: null
+      - position: B6
+        title: Ghost Riders In The Sky
+        duration: '2:37'
+        artist: null
+      - position: B7
+        title: Perfidia
+        duration: '2:05'
+        artist: null
+      - position: C1
+        title: Let's Go
+        duration: '2:41'
+        artist: null
+      - position: C2
+        title: Green Onions
+        duration: '2:25'
+        artist: null
+      - position: C3
+        title: Raunchy
+        duration: '2:42'
+        artist: null
+      - position: C4
+        title: House Of The Rising Sun
+        duration: '4:20'
+        artist: null
+      - position: C5
+        title: Rock Nuts
+        duration: '2:04'
+        artist: null
+      - position: C6
+        title: Walk Don't Run '64
+        duration: '2:01'
+        artist: null
+      - position: D1
+        title: Wipe Out
+        duration: '3:59'
+        artist: null
+      - position: D2
+        title: Secret Agent Man
+        duration: '2:02'
+        artist: null
+      - position: D3
+        title: Guitar Boogie Shuffle
+        duration: '2:32'
+        artist: null
+      - position: D4
+        title: Caravan
+        duration: '2:42'
+        artist: null
+      - position: D5
+        title: Diamond Head
+        duration: '2:03'
+        artist: null
+      - position: D6
+        title: Driving Guitars
+        duration: '1:51'
+        artist: null
+      - position: D7
+        title: Sleepwalk
+        duration: '2:08'
+        artist: null
   '2583178':
     artist: Mission Of Burma
     title: Vs.
@@ -19260,6 +19428,59 @@ releases:
         artist: null
       - position: B2
         title: Wizard
+        duration: ''
+        artist: null
+  '2941639':
+    artist: Stray Cats
+    title: Stray Cats
+    year: 1981
+    tracks:
+      - position: A1
+        title: Runaway Boys
+        duration: ''
+        artist: null
+      - position: A2
+        title: Fishnet Stockings
+        duration: ''
+        artist: null
+      - position: A3
+        title: Ubangi Stomp
+        duration: ''
+        artist: null
+      - position: A4
+        title: Jeanie, Jeanie, Jeanie
+        duration: ''
+        artist: null
+      - position: A5
+        title: Storm The Embassy
+        duration: ''
+        artist: null
+      - position: A6
+        title: Rock This Town
+        duration: ''
+        artist: null
+      - position: B1
+        title: Rumble In Brighton
+        duration: ''
+        artist: null
+      - position: B2
+        title: Stray Cat Strut
+        duration: ''
+        artist: null
+      - position: B3
+        title: Crawl Up And Die
+        duration: ''
+        artist: null
+      - position: B4
+        title: Double Talkin' Baby
+        duration: ''
+        artist: null
+      - position: B5
+        title: My One Desire
+        duration: ''
+        artist: null
+      - position: B6
+        title: Wild Saxaphone
         duration: ''
         artist: null
   '2946916':
@@ -27045,6 +27266,55 @@ releases:
         title: Empty Road
         duration: '5:17'
         artist: null
+  '6612285':
+    artist: Go-Go's
+    title: Beauty And The Beat
+    year: 1981
+    tracks:
+      - position: A1
+        title: Our Lips Are Sealed
+        duration: '2:45'
+        artist: null
+      - position: A2
+        title: How Much More
+        duration: '3:03'
+        artist: null
+      - position: A3
+        title: Tonite
+        duration: '3:33'
+        artist: null
+      - position: A4
+        title: Lust To Love
+        duration: '4:00'
+        artist: null
+      - position: A5
+        title: This Town
+        duration: '3:15'
+        artist: null
+      - position: B1
+        title: We Got The Beat
+        duration: '2:36'
+        artist: null
+      - position: B2
+        title: Fading Fast
+        duration: '3:32'
+        artist: null
+      - position: B3
+        title: Automatic
+        duration: '2:34'
+        artist: null
+      - position: B4
+        title: You Can't Walk In Your Sleep (If You Can't Sleep)
+        duration: '3:00'
+        artist: null
+      - position: B5
+        title: Skidmarks On My Heart
+        duration: '3:13'
+        artist: null
+      - position: B6
+        title: Can't Stop The World
+        duration: '3:22'
+        artist: null
   '6633124':
     artist: Various
     title: Last Of The Garage Punk Unknowns Volume 1
@@ -28410,6 +28680,55 @@ releases:
       - position: B5
         title: Radio Silence
         duration: '4:38'
+        artist: null
+  '7614258':
+    artist: The Monkees
+    title: The Monkees Greatest Hits
+    year: 1977
+    tracks:
+      - position: A1
+        title: Monkee's Theme
+        duration: ''
+        artist: null
+      - position: A2
+        title: Last Train To Clarksville
+        duration: ''
+        artist: null
+      - position: A3
+        title: She
+        duration: ''
+        artist: null
+      - position: A4
+        title: Daydream Believer
+        duration: ''
+        artist: null
+      - position: A5
+        title: Listen To The Band
+        duration: ''
+        artist: null
+      - position: A6
+        title: A Little Bit Me, A Little Bit You
+        duration: ''
+        artist: null
+      - position: B1
+        title: I'm A Believer
+        duration: ''
+        artist: null
+      - position: B2
+        title: I Wanna Be Free
+        duration: ''
+        artist: null
+      - position: B3
+        title: Pleasant Valley Sunday
+        duration: ''
+        artist: null
+      - position: B4
+        title: (I'm Not Your) Steppin' Stone
+        duration: ''
+        artist: null
+      - position: B5
+        title: Shades Of Grey
+        duration: ''
         artist: null
   '7658341':
     artist: The Chills
@@ -29995,6 +30314,43 @@ releases:
         artist: null
       - position: B3
         title: Boat With No Ocean
+        duration: ''
+        artist: null
+  '8684374':
+    artist: Rotorua Maori Choir
+    title: Rotorua Maori Choir No. 2
+    year: 1955
+    tracks:
+      - position: A1
+        title: Karu Karu (A Fishing Chant)
+        duration: ''
+        artist: null
+      - position: A2
+        title: Te Ope Tuatahi; I Runga O Nga Puke (Marching Song)
+        duration: ''
+        artist: null
+      - position: A3
+        title: Te Taniwha (Maori Love Ditty)
+        duration: ''
+        artist: null
+      - position: A4
+        title: Aroha Pumai (I Love You Truly)
+        duration: ''
+        artist: null
+      - position: B1
+        title: E Hara Te Waea (Love Never Dies)
+        duration: ''
+        artist: null
+      - position: B2
+        title: He Moke Moke (My Lover Is Far Away)
+        duration: ''
+        artist: null
+      - position: B3
+        title: Maringa Ai (I Grieve For You)
+        duration: ''
+        artist: null
+      - position: B4
+        title: Warutia; Putiputi Pai (Maori Love Ditties)
         duration: ''
         artist: null
   '8689731':
@@ -33011,6 +33367,23 @@ releases:
         title: The Slide
         duration: '3:48'
         artist: Tall Dwarfs
+  '11142272':
+    artist: Bananarama
+    title: Venus
+    year: 1986
+    tracks:
+      - position: A
+        title: Venus (Extended Version)
+        duration: '7:20'
+        artist: null
+      - position: B1
+        title: Venus (Dub)
+        duration: '8:25'
+        artist: null
+      - position: B2
+        title: White Train
+        duration: '3:51'
+        artist: null
   '11204426':
     artist: Flying Saucer Attack
     title: In Search Of Spaces
@@ -34360,6 +34733,55 @@ releases:
       - position: B3
         title: Landfall
         duration: '6:00'
+        artist: null
+  '12433778':
+    artist: The Muppets
+    title: The Muppet Movie - Original Soundtrack Recording
+    year: 1979
+    tracks:
+      - position: A1
+        title: Rainbow Connection
+        duration: '3:10'
+        artist: null
+      - position: A2
+        title: Movin' Right Along
+        duration: '2:54'
+        artist: null
+      - position: A3
+        title: Never Before, Never Again
+        duration: '2:32'
+        artist: null
+      - position: A4
+        title: Never Before, Never Again (Instrumental)
+        duration: '3:50'
+        artist: null
+      - position: A5
+        title: I Hope That Somethin' Better Comes Along
+        duration: '3:55'
+        artist: null
+      - position: B1
+        title: Can You Picture That
+        duration: '2:30'
+        artist: null
+      - position: B2
+        title: I Hope That Somethin' Better Comes Along (Instrumental)
+        duration: '2:27'
+        artist: null
+      - position: B3
+        title: I'm Going To Go Back There Someday
+        duration: '2:50'
+        artist: null
+      - position: B4
+        title: God Bless America
+        duration: '0:54'
+        artist: null
+      - position: B5
+        title: Animal... Come Back Animal
+        duration: '1:28'
+        artist: null
+      - position: B6
+        title: 'Finale: The Magic Store'
+        duration: '5:30'
         artist: null
   '12435921':
     artist: Burt Bacharach
@@ -43034,6 +43456,63 @@ releases:
         title: Jewel
         duration: ''
         artist: null
+  '21690364':
+    artist: Fujiya & Miyagi
+    title: Lightbulbs
+    year: 2022
+    tracks:
+      - position: A1
+        title: Knickerbocker
+        duration: ''
+        artist: null
+      - position: A2
+        title: Uh
+        duration: ''
+        artist: null
+      - position: A3
+        title: Pickpocket
+        duration: ''
+        artist: null
+      - position: A4
+        title: Goosebumps
+        duration: ''
+        artist: null
+      - position: A5
+        title: Rook To Queen's Pawn Six
+        duration: ''
+        artist: null
+      - position: A6
+        title: Sore Thumb
+        duration: ''
+        artist: null
+      - position: A7
+        title: Dishwasher
+        duration: ''
+        artist: null
+      - position: B1
+        title: Pterodactyls
+        duration: ''
+        artist: null
+      - position: B2
+        title: Pussyfooting
+        duration: ''
+        artist: null
+      - position: B3
+        title: Lightbulbs
+        duration: ''
+        artist: null
+      - position: B4
+        title: Hundreds & Thousands
+        duration: ''
+        artist: null
+      - position: B5
+        title: Je Ne Comprends Pas
+        duration: ''
+        artist: null
+      - position: B6
+        title: One Trick Pony
+        duration: ''
+        artist: null
   '22093558':
     artist: Trentemøller
     title: Memoria
@@ -43093,6 +43572,67 @@ releases:
         artist: null
       - position: D3
         title: Linger
+        duration: ''
+        artist: null
+  '22110052':
+    artist: Shocking Blue
+    title: Shocking Blue
+    year: 1972
+    tracks:
+      - position: A1
+        title: Out Of Sight, Out Of Mind
+        duration: ''
+        artist: null
+      - position: A2
+        title: A Serenade
+        duration: ''
+        artist: null
+      - position: A3
+        title: Long And Lonesome Road
+        duration: ''
+        artist: null
+      - position: A4
+        title: Sally Was A Good Old Girl
+        duration: ''
+        artist: null
+      - position: A5
+        title: Pickin' Tomatoes
+        duration: ''
+        artist: null
+      - position: A6
+        title: The Bird Of Paradise
+        duration: ''
+        artist: null
+      - position: A7
+        title: Never Marry A Railroad Man
+        duration: ''
+        artist: null
+      - position: B1
+        title: Blossom Lady
+        duration: ''
+        artist: null
+      - position: B2
+        title: Mighty Joe
+        duration: ''
+        artist: null
+      - position: B3
+        title: Hello Darkness
+        duration: ''
+        artist: null
+      - position: B4
+        title: Hot Sand
+        duration: ''
+        artist: null
+      - position: B5
+        title: Shocking You
+        duration: ''
+        artist: null
+      - position: B6
+        title: Send Me A Postcard
+        duration: ''
+        artist: null
+      - position: B7
+        title: Venus
         duration: ''
         artist: null
   '22127755':
@@ -44744,6 +45284,55 @@ releases:
         title: Christian Dale
         duration: ''
         artist: null
+  '25559923':
+    artist: Dick Dale & His Del-Tones
+    title: Greatest Hits
+    year: 1986
+    tracks:
+      - position: A1
+        title: Misirlou
+        duration: '2:38'
+        artist: null
+      - position: A2
+        title: Surf Beat
+        duration: '2:02'
+        artist: null
+      - position: A3
+        title: Sloop John B.
+        duration: '2:49'
+        artist: null
+      - position: A4
+        title: King Of The Surf Guitar
+        duration: '2:17'
+        artist: null
+      - position: A5
+        title: The Wedge
+        duration: '2:19'
+        artist: null
+      - position: A6
+        title: Those Memories Of You
+        duration: '2:23'
+        artist: null
+      - position: B1
+        title: Let's Go Trippin
+        duration: '2:30'
+        artist: null
+      - position: B2
+        title: The Victor
+        duration: '3:13'
+        artist: null
+      - position: B3
+        title: Peppermint Man
+        duration: '4:38'
+        artist: null
+      - position: B4
+        title: Get Back The Feelin'
+        duration: '2:48'
+        artist: null
+      - position: B5
+        title: Peter Gunn 1986
+        duration: '3:29'
+        artist: null
   '25694923':
     artist: The Velvet Underground
     title: Loaded
@@ -45689,6 +46278,27 @@ releases:
         artist: null
       - position: B4
         title: The Slab
+        duration: ''
+        artist: null
+  '28543711':
+    artist: Cuticles
+    title: Pavlova
+    year: 2023
+    tracks:
+      - position: A1
+        title: Discarded Cream Pavlova
+        duration: ''
+        artist: null
+      - position: A2
+        title: Mattress 2
+        duration: ''
+        artist: null
+      - position: B1
+        title: Gasp Aghast
+        duration: ''
+        artist: null
+      - position: B2
+        title: Handbag, Crutch, Artwork
         duration: ''
         artist: null
   '28582051':
@@ -47982,4 +48592,66 @@ releases:
       - position: B11
         title: Speed Only
         duration: '10:38'
+        artist: null
+  '38388393':
+    artist: Immersion
+    title: What Is Lost Will Return
+    year: 2026
+    tracks:
+      - position: A1
+        title: Nephology
+        duration: ''
+        artist: null
+      - position: A2
+        title: Breaking Free, Diversity, Evolution
+        duration: ''
+        artist: null
+      - position: A3
+        title: We Don't Need Your Validation
+        duration: ''
+        artist: null
+      - position: A4
+        title: Megafauna
+        duration: ''
+        artist: null
+      - position: B1
+        title: What Is Lost Will Return
+        duration: ''
+        artist: null
+      - position: B2
+        title: Childs Play
+        duration: ''
+        artist: null
+      - position: B3
+        title: Radio Signals
+        duration: ''
+        artist: null
+      - position: B4
+        title: Frequencies & Echoes
+        duration: ''
+        artist: null
+  '38597223':
+    artist: Thee Oh Sees
+    title: Off Course
+    year: 2026
+    tracks:
+      - position: A1
+        title: Off Course
+        duration: ''
+        artist: null
+      - position: A2
+        title: Hecate's Reflection Is A Trick
+        duration: ''
+        artist: null
+      - position: B1
+        title: The Trick
+        duration: ''
+        artist: null
+      - position: B2
+        title: Syringe
+        duration: ''
+        artist: null
+      - position: B3
+        title: The Brute On His Knees
+        duration: ''
         artist: null
