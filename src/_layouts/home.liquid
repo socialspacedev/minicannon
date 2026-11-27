@@ -18,7 +18,7 @@ type: website
       {%- assign hero = collections.homeHero | first -%}
       <div class="home-grid">
         {%- if hero -%}
-          <a href="{{ hero.url }}" class="home-photo" aria-label="Read {{ hero.title }}">
+          <a href="{{ hero.url }}" class="home-photo" style="--hero-ratio: {{ hero.ratio }}" aria-label="Read {{ hero.title }}">
             {{ hero.html }}
           </a>
         {%- endif -%}

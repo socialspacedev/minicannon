@@ -17,4 +17,4 @@ They have a new album called <a href="https://siltbreeze.bandcamp.com/album/cuti
 
 <a href="https://siltbreeze.bandcamp.com/track/ogled-moat" title="Link to Ogled Moat on Bandcamp" target="_blank" rel="noopener">Ogled Moat</a> is the third track off the album and sums up both the band and album well. I like it a lot and so should you. Go buy their record and see them if they come by.
 
-{% bandcamp, "https://siltbreeze.bandcamp.com/track/ogled-moat" %}
+{% bandcamp, "https://siltbreeze.bandcamp.com/track/ogled-moat", "track=3364403459" %}

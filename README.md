@@ -4,62 +4,73 @@ Personal blog and photography portfolio at [anaru.nz](https://anaru.nz), built w
 
 ## Tech stack
 
-- **[CloudCannon](https://cloudcannon.com/)** — Git-based CMS and hosting
-  - **[Pagefind](https://pagefind.app/)** — static search
-- **[Eleventy](https://www.11ty.dev/)** — static site generator
-  - [eleventy-img](https://github.com/11ty/eleventy-img) — image optimisation (AVIF, WebP, JPEG at multiple widths)
-  - [eleventy-fetch](https://github.com/11ty/eleventy-fetch) — cached build-time HTTP fetching (used for Bandcamp artwork and Discogs YouTube lookups)
-  - [eleventy-plugin-rss](https://github.com/11ty/eleventy-plugin-rss) — RSS feed
-  - [eleventy-navigation](https://github.com/11ty/eleventy-navigation) — site navigation
-  - [eleventy-plugin-time-to-read](https://github.com/JKC-Codes/eleventy-plugin-time-to-read) — read time estimates
-  - [eleventy-plugin-youtube-embed](https://github.com/gfscott/eleventy-plugin-youtube-embed) — YouTube embeds
-- **[Tailwind CSS](https://tailwindcss.com/) v4** — styling, configured in CSS (`@theme` in `src/_css/site.css`), built with `@tailwindcss/cli`. Needs Safari/iOS 16.4+, Chrome 111+, Firefox 128+
-  - [@tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin) — prose styles
-- **[PhotoSwipe](https://photoswipe.com/)** — photo lightbox with filmstrip
-- **Roboto Serif** — self-hosted as a single variable font (`src/fonts/roboto-serif-variable.woff2`, weights 300–800, 115 KB), preloaded with `font-display: optional` so text never shifts. Cut down from Google's variable font with fonttools: optical size pinned at 14 (matches the old static files), width 100, grade 0, Latin + Latin Extended (includes macrons)
-- **[Jampack](https://jampack.divriots.com/)** — post-build asset optimisation
-- **[Luxon](https://moment.github.io/luxon/)** — date formatting
+* [**CloudCannon**](https://cloudcannon.com/) — Git-based CMS and hosting
+  * [**Pagefind**](https://pagefind.app/) — static search
+* [**Eleventy**](https://www.11ty.dev/) — static site generator
+  * [eleventy-img](https://github.com/11ty/eleventy-img) — image optimisation (AVIF, WebP, JPEG at multiple widths)
+  * [eleventy-fetch](https://github.com/11ty/eleventy-fetch) — cached build-time HTTP fetching (used for Discogs YouTube lookups)
+  * [eleventy-plugin-rss](https://github.com/11ty/eleventy-plugin-rss) — RSS feed
+  * [eleventy-navigation](https://github.com/11ty/eleventy-navigation) — site navigation
+  * [eleventy-plugin-time-to-read](https://github.com/JKC-Codes/eleventy-plugin-time-to-read) — read time estimates
+  * [eleventy-plugin-youtube-embed](https://github.com/gfscott/eleventy-plugin-youtube-embed) — YouTube embeds
+* [**Tailwind CSS**](https://tailwindcss.com/) **v4** — styling, configured in CSS (`@theme` in `src/_css/site.css`), built with `@tailwindcss/cli`. Needs Safari/iOS 16.4+, Chrome 111+, Firefox 128+
+  * [@tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin) — prose styles
+* [**PhotoSwipe**](https://photoswipe.com/) — photo lightbox with filmstrip
+* **Roboto Serif** — self-hosted as a single variable font (`src/fonts/roboto-serif-variable.woff2`, weights 300–800, 115 KB), preloaded with `font-display: optional` so text never shifts. Cut down from Google's variable font with fonttools: optical size pinned at 14 (matches the old static files), width 100, grade 0, Latin + Latin Extended (includes macrons)
+* [**Jampack**](https://jampack.divriots.com/) — post-build asset optimisation
+* [**Luxon**](https://moment.github.io/luxon/) — date formatting
 
 ## Features
 
-- Light/dark mode
-- Editing via CloudCannon's Content Editor, with snippets for images, screenshots, YouTube, Bandcamp and audio
-- Visual Editor regions (`data-editable`) on every post and page: click the title or body to edit in place, snippets included; Certain Sound hero captions too
-- Film photography gallery with EXIF data tooltip and lightbox
-  - Keyboard accessible (Tab to image, Enter/Space to open)
-  - EXIF data (camera, lens, film, ISO) stored in YAML data files and editable via CloudCannon
-  - EXIF info button (ⓘ) on article figcaptions and inside the lightbox caption area
-- Curated Music page — grid of posts opted in via a `music_featured: true` frontmatter toggle, with a layered image fallback (hero image → thumbnail → first inline image → Bandcamp artwork). Each tile has a ▶ play button on hover that pops a modal Bandcamp player; tiles' empty-row gap is filled with a "More music →" tile pointing at the music tag
-- Two-column homepage: hero image from the latest post that has one + recent posts list with post-type icons
-  - Image source: the show post's `hero_image` / `hero_alt` (Vinyl Vibes, Certain Sound), else `thumbnail`; posts with no image are skipped
-  - Optimised via eleventy-img (AVIF/WebP/JPEG at 400/800/1200w), loaded eagerly with high priority, and links to its post
-- Static search via Pagefind, opened from a magnifying-glass icon next to the site title (lazy-loaded dialog modal)
-- Scheduled posts — posts with a future date are excluded from production builds until that date. Only the live site hides them: it is the one CloudCannon site with `ELEVENTY_ENV=production`, so branch/preview sites and local builds show future posts (`src/blog/blog.11tydata.js`). Keep that variable on the main site and off branch sites
-- RSS feed, XML sitemap, and `llms.txt` for AEO
-- Structured data — BlogPosting JSON-LD on posts, WebPage on every other page, plus SoftwareApplication on pages with a `software_app:` front-matter block (the Crocus page)
-- Rich social sharing — Open Graph + Twitter/X (`summary_large_image`) card tags, with a share-image fallback chain (`thumbnail` → post `hero_image` → site `defaultImage` in `meta.yaml`) so every post gets a preview image
-- Per-post footer (`post-footer.liquid`) — show links (Certain Sound: Listen, The show; Vinyl Vibes: Facebook) on the left and Share on the right, all as matching pill buttons with the full wording in `title`/`aria-label`. Share opens a `<dialog>` modal with Facebook, Bluesky, Threads, copy-link, and (on mobile) native Web Share; links are server-rendered so they work without JS
-- Optimised images served in AVIF/WebP with layout-aware `sizes` attributes; all article images are full width regardless of orientation
-- Tag-context-aware pagination — navigating from a tag page carries the tag through prev/next links
-- Pagination and tag-filtered post pages
-- 404 and offline pages
-- WCAG 2.1 AA accessibility: skip-to-content link, ARIA landmarks, keyboard navigation throughout
-- **YouTube embeds** — `{% youtube %}` shortcode accepts a full URL or bare video ID; a start time in the URL (`t=90`, `t=1m30s`, `start=90`) is honoured and captions start off; CloudCannon snippet included
-- **Bandcamp embeds** — `{% bandcamp %}` shortcode accepts a Bandcamp page URL, fetches album artwork and embed details at build time (cached for 30 days via eleventy-fetch), and renders full-width artwork with the Bandcamp player overlaid at the bottom
-- **Vinyl Vibes** — dedicated post type for vinyl record night playlists
-  - Two DJ sets per event, each with an ordered tracklist
-  - YouTube thumbnails with zoom-on-hover and lazy-loaded embeds (click to expand, click title to close)
-  - Per-track data auto-populated from a synced Discogs collection (see below); manual fields kept as per-field overrides
-  - YouTube videos looked up automatically at build time for Discogs-linked tracks
-  - Two track types when adding a track in CloudCannon: **From my Discogs collection** (picker) or **Not in my collection** (artist, title, year, duration, YouTube, link)
-  - Hero image with optional photographer caption
-  - Facebook group link footer on every Vinyl Vibes post
-  - Full CloudCannon schema with typed inputs for all fields
-- **Certain Sound** — radio show playlist post type for the OAR show
-  - Per-episode hero image, OAR on-demand link, and a minimal artist/title/year/note tracklist
-- **Audio shortcode** — `{% audio %}` shortcode for self-hosted M4A/MP3, with a styled HTML5 player and optional caption; CloudCannon snippet picks files from `src/audio/`
-- **Screenshot shortcode** — `{% screenshot %}` for app/UI screenshots: full resolution, lossless WebP/PNG (the photo pipeline's lossy AVIF blurs small text); CloudCannon snippet included
-- **Crocus page** — `/crocus.html`, the page for [Crocus](https://github.com/socialspacedev/crocus), the macOS DJ deck that runs Certain Sound
+* Light/dark mode
+* Editing via CloudCannon's Content Editor, with snippets for images, screenshots, YouTube, Bandcamp and audio
+* Visual Editor regions (`data-editable`) on every post and page: click the title or body to edit in place, snippets included; Certain Sound hero captions too
+* Film photography gallery with EXIF data tooltip and lightbox
+  * Keyboard accessible (Tab to image, Enter/Space to open)
+  * EXIF data (camera, lens, film, ISO) stored in YAML data files and editable via CloudCannon
+  * EXIF info button (ⓘ) on article figcaptions and inside the lightbox caption area
+* Curated Music page — grid of posts opted in via a `music_featured: true` frontmatter toggle, with a layered image fallback (hero image → thumbnail → first inline image). Each tile has a ▶ play button on hover that pops a modal Bandcamp player; tiles' empty-row gap is filled with a "More music →" tile pointing at the music tag
+* Two-column homepage: hero image from the latest post that has one + recent posts list with post-type icons. On desktop the list sets the row height and the image matches it, taking its width from its own shape (up to half the row), so square album art shows whole and never leaves a gap under the list
+  * Image source: the show post's `hero_image` / `hero_alt` (Vinyl Vibes, Certain Sound), else `thumbnail`; posts with no image are skipped
+  * Optimised via eleventy-img (AVIF/WebP/JPEG at 400/800/1200w), loaded eagerly with high priority, and links to its post
+* Static search via Pagefind, opened from a magnifying-glass icon next to the site title (lazy-loaded dialog modal)
+* Scheduled posts — posts with a future date are excluded from production builds until that date. Only the live site hides them: it is the one CloudCannon site with `ELEVENTY_ENV=production`, so branch/preview sites and local builds show future posts (`src/blog/blog.11tydata.js`). Keep that variable on the main site and off branch sites
+* RSS feed, XML sitemap, and `llms.txt` for AEO
+* Structured data — BlogPosting JSON-LD on posts, WebPage on every other page, plus SoftwareApplication on pages with a `software_app:` front-matter block (the app pages)
+* Rich social sharing — Open Graph + Twitter/X (`summary_large_image`) card tags, with a share-image fallback chain (`thumbnail` → Certain Sound / Vinyl Vibes `hero_image` → first image in the post → site `defaultImage` in `meta.yaml`) so every post gets a preview image. The chosen image is resized to 1200px wide (`shareImage` filter; PNGs stay PNG for transparency), since social sites ignore images over 5–8 MB
+* Per-post footer (`post-footer.liquid`) — show links (Certain Sound: Listen, The show; Vinyl Vibes: Facebook) on the left and Share on the right, all as matching pill buttons with the full wording in `title`/`aria-label`. Share opens a `<dialog>` modal with Facebook, Bluesky, Threads, copy-link, and (on mobile) native Web Share; links are server-rendered so they work without JS
+* Optimised images served in AVIF/WebP with layout-aware `sizes` attributes; all article images are full width regardless of orientation
+* Cookieless, badge-free analytics via Cloudflare Web Analytics (beacon in `head.liquid`)
+* Tag-context-aware pagination — navigating from a tag page carries the tag through prev/next links
+* Pagination and tag-filtered post pages
+* 404 and offline pages
+* WCAG 2.1 AA accessibility: skip-to-content link, ARIA landmarks, keyboard navigation throughout
+* **YouTube embeds** — `{% youtube %}` shortcode accepts a full URL or bare video ID; a start time in the URL (`t=90`, `t=1m30s`, `start=90`) is honoured and captions start off; CloudCannon snippet included
+* **Bandcamp embeds** —
+
+  {% bandcamp, "page URL", "track=123" %}
+
+  renders the post's `thumbnail` full width with Bandcamp's compact player overlaid at the bottom, or Bandcamp's large player (with its own artwork) when there's no thumbnail. The second value is the ID from Bandcamp's **Share / Embed** code (`album=…` or `track=…`); the Music page's ▶ player uses it too. Nothing is fetched from Bandcamp at build time: since late October 2026 it answers automated requests with a bot check, so scraping it stopped working. Without an ID, the post shows a plain "Listen on Bandcamp" link
+
+* **Vinyl Vibes** — dedicated post type for vinyl record night playlists
+  * Two DJ sets per event, each with an ordered tracklist
+  * YouTube thumbnails with zoom-on-hover and lazy-loaded embeds (click to expand, click title to close)
+  * Per-track data auto-populated from a synced Discogs collection (see below); manual fields kept as per-field overrides
+  * YouTube videos looked up automatically at build time for Discogs-linked tracks
+  * Two track types when adding a track in CloudCannon: **From my Discogs collection** (picker) or **Not in my collection** (artist, title, year, duration, YouTube, link)
+  * Hero image with optional photographer caption
+  * Facebook group link footer on every Vinyl Vibes post
+  * Full CloudCannon schema with typed inputs for all fields
+* **Certain Sound** — radio show playlist post type for the OAR show
+  * Per-episode hero image, OAR on-demand link, and a minimal artist/title/year/note tracklist
+* **Audio shortcode** — `{% audio %}` shortcode for self-hosted M4A/MP3, with a styled HTML5 player and optional caption; CloudCannon snippet picks files from `src/audio/`
+* **Screenshot shortcode** — `{% screenshot %}` for app/UI screenshots: full resolution, lossless WebP/PNG (the photo pipeline's lossy AVIF blurs small text); CloudCannon snippet included
+* **Apps** — `/apps.html` (in the nav) lists the apps, with a card per app and where their Victor Dimisich Band names come from. Each app has its own page under it, `parent: apps` in its `eleventyNavigation`, which keeps it out of the top-level nav and keeps Apps highlighted there:
+  * `/crocus.html` — [Crocus](https://github.com/socialspacedev/crocus), the macOS DJ deck that runs Certain Sound
+  * `/jonah.html` — [Jonah](https://github.com/socialspacedev/jonah), the macOS app for getting music on and off old iPods
+  * `/mekong.html` — [Mekong](https://github.com/socialspacedev/mekong), real-time projection visuals for live guitar over drones
+  * App pages set `icon:` and `heading: true`, so `page.liquid` puts the icon and the app's name (an h1, like Photos and Music) above the text; Apps sets `heading: true` only
+  * App pages set `thumbnail:` to their icon for link previews, and get a square `summary` card (`software_app` pages, in `head.liquid`); Apps shares `apps-share.png`, the three icons side by side
 
 ## Discogs sync for Vinyl Vibes
 
@@ -72,12 +83,14 @@ npm run discogs:match   # optional — link manually typed tracks to the collect
 
 Both read `DISCOGS_TOKEN=...` from `.env` (personal access token from [discogs.com/settings/developers](https://www.discogs.com/settings/developers)). `discogs:sync` requires it; the matcher and the build work without it at a lower Discogs rate limit.
 
+**Automated:** a GitHub Action (`.github/workflows/discogs-sync.yml`) runs the sync nightly at 3:17am NZ time and commits to `main` only when records changed (the `last_synced` timestamp alone doesn’t count). When a pressing has no release date on Discogs, the sync uses the original (master) release year instead. Run it on demand from the repo's **Actions** tab → *Discogs sync* → *Run workflow*. It uses the `DISCOGS_TOKEN` repository secret; if the token is regenerated on Discogs, update that secret too. Then update your CloudCannon branch (e.g. `new-tunes`) from `main` to get the new records in the picker.
+
 ### `discogs:sync`
 
 Writes two YAML files:
 
-- `src/_data/discogs.yaml` — full release/track data, used by the Eleventy template at build time
-- `src/_data/discogs_picker.yaml` — slim `{value, label}` list, the only file CloudCannon loads for the dropdown
+* `src/_data/discogs.yaml` — full release/track data, used by the Eleventy template at build time
+* `src/_data/discogs_picker.yaml` — slim `{value, label}` list, the only file CloudCannon loads for the dropdown
 
 Names are tidied on every save (`scripts/discogs-clean.mjs`), including already-cached releases: Discogs's artist disambiguation suffixes (`The Twerps (2)` → `The Twerps`, 1–3 digits only so years survive) and stray whitespace in titles are stripped.
 
@@ -93,8 +106,8 @@ If the track has no `youtube:` ID, the `discogsYoutube` filter looks one up from
 
 Walks `src/blog/vinyl-vibes-*.md`. Since the build handles display and YouTube, its main use is linking manually typed tracks:
 
-- **Has typed artist + title, no `discogs:` ref, no `buy_url`** — looks the track up in the synced collection and inserts `discogs: "release_id:position"`. Tracks with their own `buy_url` are left alone, as that marks a deliberate link elsewhere (e.g. a copy not in the collection).
-- **Has a `discogs:` ref** — writes missing artist / title / year / duration / buy_url and a matching YouTube ID into the file. Existing values are never overwritten.
+* **Has typed artist + title, no `discogs:` ref, no `buy_url`** — looks the track up in the synced collection and inserts `discogs: "release_id:position"`. Tracks with their own `buy_url` are left alone, as that marks a deliberate link elsewhere (e.g. a copy not in the collection).
+* **Has a `discogs:` ref** — writes missing artist / title / year / duration / buy\_url and a matching YouTube ID into the file. Existing values are never overwritten.
 
 The script preserves YAML idiosyncrasies — multi-line scalars (`buy_url: >- … `) and existing quoting are left alone.
 
@@ -102,8 +115,8 @@ The script preserves YAML idiosyncrasies — multi-line scalars (`buy_url: >- �
 
 **Add track** offers two types:
 
-- **From my Discogs collection** — a **Track** dropdown that searches the synced collection and stores a `release_id:position` reference. Labels are `Artist – Position: Track Title (Duration) — Album [Year]` so duplicates (same song on multiple releases) can be told apart by year.
-- **Not in my collection** — artist and title (required), year, duration, YouTube and link fields.
+* **From my Discogs collection** — a **Track** dropdown that searches the synced collection and stores a `release_id:position` reference. Labels are `Artist – Position: Track Title (Duration) — Album [Year]` so duplicates (same song on multiple releases) can be told apart by year.
+* **Not in my collection** — artist and title (required), year, duration, YouTube and link fields.
 
 ### Typical workflow
 
@@ -114,8 +127,8 @@ The script preserves YAML idiosyncrasies — multi-line scalars (`buy_url: >- �
 
 ### CloudCannon build settings
 
-- **Preserved paths** includes `.cache` so Discogs and Bandcamp lookups are reused between builds, and so are resized images: eleventy-img writes to `.cache/img/` and the build copies them into `public/img/`, so only new or changed photos are encoded (a cold build is ~2 min, a warm one ~10 s)
-- **Environment variable** `DISCOGS_TOKEN` (optional) raises the Discogs rate limit for build-time lookups — set in CloudCannon, never committed
+* **Preserved paths** includes `.cache` so Discogs lookups are reused between builds, and so are resized images: eleventy-img writes to `.cache/img/` and the build copies them into `public/img/`, so only new or changed photos are encoded (CloudCannon builds dropped from ~4 min to 23–26 s, and to ~19 s once Bandcamp pages were no longer fetched)
+* **Environment variable** `DISCOGS_TOKEN` (optional) raises the Discogs rate limit for build-time lookups — set in CloudCannon, never committed
 
 ## Local development
 
@@ -142,3 +155,14 @@ JavaScript source files live in `src/_js/` and are copied to `public/js/` at bui
 ## Deployment
 
 Pushes to `main` trigger a CloudCannon build automatically.
+
+* **Staging:** the `staging` branch has its own CloudCannon site (preview at `unique-spoon.cloudvent.net`). Test risky changes, such as redirects, there before `main`
+* **If a push doesn't deploy** within ~10 minutes, run Pull then Build on the site in CloudCannon (it occasionally misses a push)
+
+### Domains and redirects
+
+* **www → apex:** `www.anaru.nz` is a CloudCannon *Redirect Subdomain* that sends visitors to `anaru.nz` with a 301, keeping the path and query string (Site Settings → Custom Domain). CloudCannon manages the DNS side
+* **Redirect rules** live in `.cloudcannon/routing.json` (regex `from`, `$1` substitutions, first match wins):
+  * `…/index.html` and `…/index.php` → their folder, 301. CloudCannon's built-in index redirect is a temporary 307
+  * `/blog/` → `/pages/blog/` (the blog listing), 301
+  * Old "A Certain Sound" post and tag URLs → their "Certain Sound" equivalents, 301

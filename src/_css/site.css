@@ -921,15 +921,31 @@ main figure, article figure {
 .home-posts h2 {
   margin-top: 0;
 }
+/* Desktop: the post list sets the row height; the photo matches it and takes its
+   width from its own shape (--hero-ratio, set by the template), up to half the
+   row. Square album art shows whole, and no image can stretch the row and leave
+   a gap under the list. Wider-than-room photos are cropped to fit, as before. */
 @media (min-width: 768px) {
   .home-grid {
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     gap: 3rem;
     align-items: stretch;
   }
   .home-photo {
-    aspect-ratio: auto;
-    height: 100%;
+    position: relative;
+    flex: 0 0 auto;
+    aspect-ratio: var(--hero-ratio, 3 / 2);
+    max-width: 50%;
+    min-height: 14rem;
+  }
+  .home-photo picture,
+  .home-photo img {
+    position: absolute;
+    inset: 0;
+  }
+  .home-posts {
+    flex: 1 1 0;
+    min-width: 0;
   }
 }
 .align-left { text-align: left; }
@@ -978,6 +994,15 @@ main figure, article figure {
   display: block;
   width: 100%;
   height: auto;
+}
+.bc-embed--large {
+  max-width: 400px;
+}
+.bc-iframe-large {
+  display: block;
+  width: 100%;
+  aspect-ratio: 350 / 470;
+  border: 0;
 }
 .bc-iframe {
   position: absolute;
@@ -1521,4 +1546,58 @@ main figure, article figure {
 
 header {
   padding-top: 1.25rem;
+}
+
+/* Apps page: one card per app (icon + name + one line), and the icon atop each app's page */
+.app-list {
+  display: grid;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+main a.app-card {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1rem 1.25rem 1rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  color: inherit;
+  line-height: 1.6;
+  transition: border-color 0.15s, background-color 0.15s;
+}
+main a.app-card:hover {
+  border-color: #0284c7;
+  background-color: #f0f9ff;
+}
+.app-card img {
+  flex: none;
+  width: 80px;
+  height: 80px;
+  margin: 0;
+}
+.app-card strong {
+  display: block;
+  font-size: 1.25rem;
+  color: #0284c7;
+}
+main img.app-icon {
+  display: block;
+  width: 128px;
+  height: 128px;
+  margin: 0 auto 0.75rem;
+}
+main h1.app-title {
+  text-align: center;
+}
+@media (prefers-color-scheme: dark) {
+  main a.app-card {
+    border-color: #334155;
+  }
+  main a.app-card:hover {
+    border-color: #0ea5e9;
+    background-color: #0f172a;
+  }
+  .app-card strong {
+    color: #0ea5e9;
+  }
 }

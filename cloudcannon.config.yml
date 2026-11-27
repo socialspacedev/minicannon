@@ -597,11 +597,20 @@ _snippets:
       positional_args:
         - editor_key: url
           type: string
+        - editor_key: embed
+          type: string
+          optional: true
     _inputs:
       url:
         type: url
         label: Bandcamp page URL
         comment: "Paste the Bandcamp album or track page URL — e.g. https://artist.bandcamp.com/album/title"
+        cascade: true
+      embed:
+        type: text
+        label: Bandcamp ID
+        comment: "On Bandcamp: Share / Embed → Embed this album/track. Copy the part like track=1234567890 (or album=…) from the code. Without it, the post shows a plain Bandcamp link."
+        required: true
         cascade: true
   my_audio_snippet:
     template: eleventy_liquid_shortcode_positional_args

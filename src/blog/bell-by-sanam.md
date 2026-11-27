@@ -17,6 +17,6 @@ This tune comes care of a sunny evening of <a href="https://www.undertheradar.co
 
 "Bell بل" by Beirut band "<a href="https://sanambeirut.bandcamp.com/music" title="More Sanam music on Bandcamp" target="_blank" rel="noopener">Sanam</a>" off their 2023 album "<a href="https://sanambeirut.bandcamp.com/album/aykathani-malakon" title="The album at Bandcamp" target="_blank" rel="noopener">Aykathani Malakon</a> صنم - أيقظني ملاكٌ" is powerful and propulsive. The band is known for "blending Arabic poetry and traditional folk songs with psychedelic rock, krautrock, free jazz, and electronics" and this song contains all that.
 
-{% bandcamp, "https://sanambeirut.bandcamp.com/track/bell" %}
+{% bandcamp, "https://sanambeirut.bandcamp.com/track/bell", "track=3836962917" %}
 
 Enjoy.

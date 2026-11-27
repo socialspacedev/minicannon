@@ -23,7 +23,7 @@ The chatter between songs suggests friends simply hanging out in an afternoon, c
 
 Over the years, <a href="https://siltbreeze.bandcamp.com/" title="Bandcamp homepage for Siltbreeze" target="_blank" rel="noopener">Siltbreeze</a> has been a great supporter of obscure and amazing NZ music, bringing to light hard to find classics such as this. Often featuring this songwriting team or others in their orbit.
 
-{% bandcamp, "https://siltbreeze.bandcamp.com/album/stephen-cogle-w-peter-stapleton-an-afternoon-with-victor-dimisich" %}
+{% bandcamp, "https://siltbreeze.bandcamp.com/album/stephen-cogle-w-peter-stapleton-an-afternoon-with-victor-dimisich", "album=684066604" %}
 
 This is a "one time pressing" that also features detailed liner notes from Bruce Russell. At time of writing, it isn't clear where you can buy this release other than directly from <a href="https://siltbreeze.bandcamp.com/album/stephen-cogle-w-peter-stapleton-an-afternoon-with-victor-dimisich" title="Buy this VDB release from the Siltbreeze Bandcamp" target="_blank" rel="noopener">Siltbreeze</a>.
 
