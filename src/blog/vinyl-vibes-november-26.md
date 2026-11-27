@@ -22,19 +22,31 @@ vinyl_vibes:
         - discogs: 4237249:A4
           youtube:
           duration:
+        - discogs: 2526795:B1
+          youtube:
+          duration:
         - discogs: 6188750:A4
           youtube:
           duration:
         - discogs: 8666514:B2
           youtube:
           duration:
-        - discogs:
+        - discogs: 25559923:A5
+          youtube:
+          duration:
+        - discogs: 2339075:A1
           youtube:
           duration:
     - dj: DJ Skrub Mommy
-      slot:
+      slot: 8:45pm
       tracks:
-        - discogs:
+        - discogs: 1189329:A
+          youtube:
+          duration:
+        - discogs: 10495472:C1
+          youtube:
+          duration:
+        - discogs: 6612285:B1
           youtube:
           duration:
 ---
