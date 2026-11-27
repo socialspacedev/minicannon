@@ -121,6 +121,40 @@ export default function (eleventyConfig) {
     return findVideoMatch(await releaseVideos(releaseId), trackTitle) || "";
   });
 
+  // Social share image: a 1200px-wide copy of the chosen image, since the
+  // originals can be 6–12 MB (X ignores images over 5 MB, Facebook over 8 MB).
+  // PNGs stay PNG so app icons keep their transparency. Falls back to the
+  // original path if the image can't be processed.
+  eleventyConfig.addAsyncFilter("shareImage", async (src) => {
+    if (!src || !src.startsWith("/img/") || src.endsWith(".svg")) return src;
+    try {
+      const format = /\.png$/i.test(src) ? "png" : "jpeg";
+      const metadata = await Image(path.join("./src/", src), {
+        widths: [1200],
+        formats: [format],
+        outputDir: IMAGE_CACHE,
+        urlPath: "/img/",
+      });
+      return metadata[format][0].url;
+    } catch (e) {
+      console.warn(`[shareImage] ${src}: ${e.message}`);
+      return src;
+    }
+  });
+
+  // First image in a post's source ({% image %} shortcode or Markdown), for
+  // posts with no thumbnail or hero image. "" when there isn't one.
+  eleventyConfig.addAsyncFilter("firstImage", async (inputPath) => {
+    try {
+      const body = await readFile(inputPath, "utf8");
+      const match = body.match(/\{%-?\s*image,?\s+"(\/img\/[^"]+)"/)
+                 || body.match(/!\[[^\]]*\]\((\/img\/[^\s)]+)/);
+      return match ? match[1] : "";
+    } catch (e) {
+      return "";
+    }
+  });
+
   // Prettify dates
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc+13" }).toFormat(
