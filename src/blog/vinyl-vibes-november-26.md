@@ -14,8 +14,20 @@ vinyl_vibes:
   hero_caption:
   sets:
     - dj: DJ Skrub Daddy
-      slot:
+      slot: 7:00pm
       tracks:
+        - discogs: 3518078:A2
+          youtube:
+          duration:
+        - discogs: 4237249:A4
+          youtube:
+          duration:
+        - discogs: 6188750:A4
+          youtube:
+          duration:
+        - discogs: 8666514:B2
+          youtube:
+          duration:
         - discogs:
           youtube:
           duration:
