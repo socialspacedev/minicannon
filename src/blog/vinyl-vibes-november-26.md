@@ -9,7 +9,7 @@ tags:
   - music
   - vinyl-vibes
 vinyl_vibes:
-  hero_image: /img/vinyl-vibes-nov-26.jpg
+  hero_image: /img/vinyl-vibes-nov-26-1.jpg
   hero_alt: Photo of Skrub Mommy on the decks
   hero_caption: 'Photo: Grant McDougall'
   sets:
