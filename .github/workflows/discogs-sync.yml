@@ -6,7 +6,7 @@ name: Discogs sync
 
 on:
   schedule:
-    - cron: "0 14 * * *" # 14:00 UTC = 3am NZDT (2am NZST)
+    - cron: "17 14 * * *" # 14:17 UTC = 3:17am NZDT (2:17am NZST); off the hour, when GitHub drops/delays scheduled runs
   workflow_dispatch:
 
 permissions:
