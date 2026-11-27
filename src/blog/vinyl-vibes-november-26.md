@@ -9,9 +9,9 @@ tags:
   - music
   - vinyl-vibes
 vinyl_vibes:
-  hero_image:
-  hero_alt:
-  hero_caption:
+  hero_image: /img/vinyl-vibes-nov-26.jpg
+  hero_alt: Photo of Skrub Mommy on the decks
+  hero_caption: 'Photo: Grant McDougall'
   sets:
     - dj: DJ Skrub Daddy
       slot: 7:00pm
@@ -43,10 +43,13 @@ vinyl_vibes:
         - discogs: 1189329:A
           youtube:
           duration:
+        - discogs: 6612285:B1
+          youtube:
+          duration:
         - discogs: 10495472:C1
           youtube:
           duration:
-        - discogs: 6612285:B1
+        - discogs: 678582:B5
           youtube:
           duration:
 ---
