@@ -83,7 +83,7 @@ npm run discogs:match   # optional — link manually typed tracks to the collect
 
 Both read `DISCOGS_TOKEN=...` from `.env` (personal access token from [discogs.com/settings/developers](https://www.discogs.com/settings/developers)). `discogs:sync` requires it; the matcher and the build work without it at a lower Discogs rate limit.
 
-**Automated:** a GitHub Action (`.github/workflows/discogs-sync.yml`) runs the sync nightly at 3am NZ time and commits to `main` only when records changed (the `last_synced` timestamp alone doesn't count). Run it on demand from the repo's **Actions** tab → *Discogs sync* → *Run workflow*. It uses the `DISCOGS_TOKEN` repository secret; if the token is regenerated on Discogs, update that secret too. Then update your CloudCannon branch (e.g. `new-tunes`) from `main` to get the new records in the picker.
+**Automated:** a GitHub Action (`.github/workflows/discogs-sync.yml`) runs the sync nightly at 3:17am NZ time and commits to `main` only when records changed (the `last_synced` timestamp alone doesn't count). Run it on demand from the repo's **Actions** tab → *Discogs sync* → *Run workflow*. It uses the `DISCOGS_TOKEN` repository secret; if the token is regenerated on Discogs, update that secret too. Then update your CloudCannon branch (e.g. `new-tunes`) from `main` to get the new records in the picker.
 
 ### `discogs:sync`
 
