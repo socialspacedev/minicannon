@@ -17,22 +17,22 @@ vinyl_vibes:
       slot: 7:00pm
       tracks:
         - discogs: 3518078:A2
-          youtube:
+          youtube: VOldJVHUpq8
           duration:
         - discogs: 4237249:A4
           youtube:
           duration:
         - discogs: 2526795:B1
-          youtube:
+          youtube: 0pZrxxvB66k
           duration:
         - discogs: 6188750:A4
-          youtube:
+          youtube: toTDC3E3uGU
           duration:
         - discogs: 8666514:B2
           youtube:
           duration:
         - discogs: 25559923:A5
-          youtube:
+          youtube: KOvTagcXAMQ
           duration:
         - discogs: 2339075:A1
           youtube:
@@ -41,13 +41,13 @@ vinyl_vibes:
       slot: 8:45pm
       tracks:
         - discogs: 1189329:A
-          youtube:
+          youtube: PuNYyNqCSSg
           duration:
         - discogs: 6612285:B1
           youtube:
           duration:
         - discogs: 10495472:C1
-          youtube:
+          youtube: Oug0WHo6vcY
           duration:
         - discogs: 678582:B5
           youtube:
