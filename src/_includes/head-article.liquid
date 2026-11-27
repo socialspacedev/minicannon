@@ -7,10 +7,8 @@
 {% assign pageDescription = pageDescription | default: meta.siteDescription -%}
 
 {% include "head.liquid" %}
-    <!-- Schema image — same fallback chain as the social share image -->
-    {%- assign ldImage = thumbnail -%}
-    {%- if ldImage == blank and certain_sound.hero_image -%}{%- assign ldImage = certain_sound.hero_image -%}{%- endif -%}
-    {%- if ldImage == blank -%}{%- assign ldImage = meta.defaultImage -%}{%- endif -%}
+    <!-- Schema image — the social share image chosen in head.liquid -->
+    {%- assign ldImage = ogImage -%}
     <!-- Schema JSON-LD -->
     <script type="application/ld+json">
         {
