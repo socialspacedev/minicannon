@@ -18,37 +18,39 @@ vinyl_vibes:
       tracks:
         - discogs: 3518078:A2
           youtube: VOldJVHUpq8
-          duration:
+          duration: 2:11
         - discogs: 4237249:A4
-          youtube:
-          duration:
+          youtube: iSav_wNKsLc
+          duration: 2:30
         - discogs: 2526795:B1
           youtube: 0pZrxxvB66k
           duration:
         - discogs: 6188750:A4
           youtube: toTDC3E3uGU
           duration:
+          year: 1963
         - discogs: 8666514:B2
           youtube:
-          duration:
+          duration: 2:07
         - discogs: 25559923:A5
           youtube: KOvTagcXAMQ
           duration:
         - discogs: 2339075:A1
           youtube:
           duration:
+          year: 1965
     - dj: DJ Skrub Mommy
       slot: 8:45pm
       tracks:
         - discogs: 1189329:A
           youtube: PuNYyNqCSSg
-          duration:
+          duration: 4:20
         - discogs: 6612285:B1
           youtube:
           duration:
         - discogs: 10495472:C1
           youtube: Oug0WHo6vcY
-          duration:
+          duration: 3:27
         - discogs: 678582:B5
           youtube:
           duration:
