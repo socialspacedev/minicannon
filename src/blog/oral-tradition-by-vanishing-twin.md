@@ -4,7 +4,7 @@ title: Oral Tradition by Vanishing Twin
 description: New release from Vanishing Twin for those who like Broadcast and Stereolab.
 tags:
   - music
-date: 2026-11-28T17:26:29+13:00
+date: 2026-11-29T17:26:00+13:00
 thumbnail: /img/vanishing-twin-archives.jpg
 music_featured: true
 type: article
